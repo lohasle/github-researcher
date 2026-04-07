@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-04-07 日报 | GitHub 趋势研究</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #24292e; background: #f6f8fa; }
+        table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+        th, td { border: 1px solid #d1d5da; padding: 8px 12px; text-align: left; }
+        th { background: #f6f8fa; font-weight: 600; }
+        a { color: #0366d6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        pre { background: #f6f8fa; padding: 15px; border-radius: 6px; overflow-x: auto; border: 1px solid #e1e4e8; }
+        .nav { background: white; padding: 15px; border-radius: 6px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .nav a { margin-right: 20px; font-weight: 500; }
+        h1 { border-bottom: 2px solid #0366d6; padding-bottom: 10px; }
+        h2 { border-bottom: 1px solid #e1e4e8; padding-bottom: 5px; margin-top: 30px; }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">首页</a>
+        <a href="daily.html">日报索引</a>
+        <a href="projects.html">重点项目</a>
+        <a href="trends.html">趋势追踪</a>
+    </div>
+    <h1 id="2026-04-07-github">2026-04-07 GitHub 趋势研究简报</h1>
+<blockquote>
+<p>架构视角 | 资深软件架构师视角</p>
+</blockquote>
+<hr />
+<h2 id="_1">本日核心判断</h2>
+<p><strong>今天是首次简报，无历史反馈可参考。</strong></p>
+<p>本日最显著趋势：<strong>Multi-Agent Orchestration 生态爆发</strong>。oh-my-claudecode、oh-my-codex、hermes-agent 三个项目同周爆发，代表"以团队为原子单位的多 Agent 协作"正在从概念走向工程化。</p>
+<hr />
+<h2 id="_2">热榜综合分析</h2>
+<h3 id="star-top5">今日 Star 增速 TOP5</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>今日 Star</th>
+<th>本周 Star</th>
+<th>语言</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>openscreen</td>
+<td>1,838</td>
+<td>14,396</td>
+<td>TypeScript</td>
+</tr>
+<tr>
+<td>hermes-agent</td>
+<td>1,574</td>
+<td>9,662</td>
+<td>Python</td>
+</tr>
+<tr>
+<td>google-ai-edge/gallery</td>
+<td>1,107</td>
+<td>2,008</td>
+<td>Kotlin</td>
+</tr>
+<tr>
+<td>shannon</td>
+<td>733</td>
+<td>—</td>
+<td>TypeScript</td>
+</tr>
+<tr>
+<td>GitNexus</td>
+<td>857</td>
+<td>—</td>
+<td>TypeScript</td>
+</tr>
+</tbody>
+</table>
+<h3 id="star-top5_1">本周 Star 总量 TOP5</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>本周 Star</th>
+<th>总 Star</th>
+<th>语言</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>openscreen</td>
+<td>14,396</td>
+<td>24,159</td>
+<td>TypeScript</td>
+</tr>
+<tr>
+<td>oh-my-codex</td>
+<td>14,247</td>
+<td>17,602</td>
+<td>TypeScript</td>
+</tr>
+<tr>
+<td>claude-howto</td>
+<td>12,085</td>
+<td>21,501</td>
+<td>Python</td>
+</tr>
+<tr>
+<td>hermes-agent</td>
+<td>9,662</td>
+<td>28,310</td>
+<td>Python</td>
+</tr>
+<tr>
+<td>VibeVoice</td>
+<td>8,392</td>
+<td>36,938</td>
+<td>Python</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_3">重点项目深度分析</h2>
+<h3 id="1-oh-my-claudecode-multi-agent-orchestration">1. oh-my-claudecode — Multi-Agent Orchestration 平台候选</h3>
+<p><strong>做什么：</strong> 在 Claude Code 上构建团队化多 Agent 编排层。用户以"团队"为原子单位定义任务角色（executor、reviewer 等），系统自动执行 <code>team-plan → team-prd → team-exec → team-verify → team-fix</code> 流水线。底层支持 Claude / Codex / Gemini 三路并发，通过 tmux 分屏真实启动子进程。</p>
+<p><strong>为什么火：</strong> Claude Code 的生态玩法。用户不再写单 Agent 指令，而是"组团队"。7832 stars/week，增长极其陡峭。</p>
+<p><strong>技术亮点：</strong>
+- <strong>团队即编排单元</strong>：不是给 Agent 写 Prompt，而是定义角色和团队拓扑
+- <strong>多 Provider 路由</strong>：同一任务自动分发到 Claude/Codex/Gemini，结果由 Claude 合成
+- <strong>流水线自愈</strong>：team-fix 循环让任务不会静默失败
+- <strong>Marketplace 插件机制</strong>：/<code>plugin marketplace add</code> 即可安装，工程化程度高</p>
+<p><strong>问题是否真实：</strong> 真实。单 Agent Copilot 的局限性已经很明显——复杂任务需要多角色协作，这是工程痛点。</p>
+<p><strong>是玩具还是平台：</strong> 更偏<strong>工具/平台之间</strong>。但护城河在于与 Claude Code 深度绑定，一旦 Claude Code 官方支持类似能力，项目价值会快速稀释。</p>
+<p><strong>短期还是中期趋势：</strong> 中期。Multi-Agent 协作是真实方向，但具体编排形态尚未收敛。</p>
+<p><strong>架构启发：</strong> 以"团队"而非"Agent"为原子是更符合工程直觉的抽象。这个设计模式值得在企业内部 Copilot 平台中借鉴。</p>
+<p><strong>评分：</strong>
+- 热度质量：9 | 技术创新度：7 | 工程成熟度：8 | 架构启发价值：8
+- 企业落地潜力：6 | 中期趋势概率：8 | 平台化潜力：7 | 基础设施潜力：5
+- <strong>总分：58/80</strong></p>
+<p><strong>归类：平台候选 | 建议持续跟踪</strong></p>
+<hr />
+<h3 id="2-hermes-agent-ai-agent">2. hermes-agent — 自进化 AI Agent，潜力基础设施</h3>
+<p><strong>做什么：</strong> NousResearch 出品的自进化 AI Agent。核心能力：Agent 每次任务完成后自动创建可复用 Skill，Skill 在使用中自我改进；跨会话 FTS5 检索；Honcho 用户画像建模；多平台 Messaging Gateway（Telegram/Discord/Slack/WhatsApp）；Cron 调度；多终端运行（VPS/Docker/SSH/Modal/Daytona）。从 OpenClaw 可一键迁移。</p>
+<p><strong>为什么火：</strong> 28k stars，9,662/week，增长稳健。它解决了"Personal AI Agent 记忆和学习"的核心问题，而且部署灵活（$5 VPS 即可）。</p>
+<p><strong>技术亮点：</strong>
+- <strong>自进化 Skill 系统</strong>：不是 RAG，是从经验中生成新能力单元并自动优化
+- <strong>跨会话连续性</strong>：FTS5 + LLM summarization 实现长期记忆检索
+- <strong>多终端部署</strong>：Modal/Daytona 实现 Serverless 持久化，idle 时几乎零成本
+- <strong>多 Provider 兼容</strong>：OpenRouter 200+ 模型、OpenAI、Kimi、GLM、MiniMax 等
+- <strong>OpenClaw 迁移路径</strong>：明确针对 OpenClaw 用户做迁移，降低迁移门槛</p>
+<p><strong>问题是否真实：</strong> 真实。所有 AI Agent 的核心问题之一就是"如何让 Agent 学习并记住"，而大多数方案只是 RAG，hermes-agent 走的是"从经验中生成技能"这条路。</p>
+<p><strong>是玩具还是基础设施：</strong> <strong>基础设施候选</strong>。Skill 系统、Memory 系统、多平台 Gateway 都是构建企业内部 AI Agent 平台需要解决的核心问题。</p>
+<p><strong>架构启发：</strong> Skill 自进化机制是值得深度研究的工程问题。如果能工程化落地，对企业内部 AI Agent 平台的设计有直接参考价值。</p>
+<p><strong>评分：</strong>
+- 热度质量：8 | 技术创新度：8 | 工程成熟度：7 | 架构启发价值：9
+- 企业落地潜力：7 | 中期趋势概率：8 | 平台化潜力：7 | 基础设施潜力：8
+- <strong>总分：62/80</strong></p>
+<p><strong>归类：基础设施候选 | 值得深度跟踪，值得做 PoC</strong></p>
+<hr />
+<h3 id="3-vibevoice-voice-aihuggingface-transformers">3. VibeVoice — 微软开源 Voice AI，HuggingFace Transformers 集成</h3>
+<p><strong>做什么：</strong> 微软开源的 Voice AI 家族，包括 ASR（60分钟长音频单遍处理，带说话人分离和时间戳）、TTS（90分钟长音频，4人对话）、Realtime TTS（0.5B 参数，实时流式）。核心创新：连续语音 Tokenizer 以 7.5 Hz 超低帧率运行，大幅提升长序列处理效率。</p>
+<p><strong>为什么火：</strong> 36.9k 总 stars，8,392/week，增长稳健。VibeVoice-ASR 已进入 HuggingFace Transformers v5.3.0，意味着已被官方认可为基础设施工具。</p>
+<p><strong>技术亮点：</strong>
+- <strong>60 分钟单遍 ASR</strong>：不是分段拼接，是真正的长上下文识别，对会议记录、播客转录有直接价值
+- <strong>7.5 Hz Tokenizer</strong>：极低帧率保持音频保真度同时大幅提升效率
+- <strong>Next-token Diffusion</strong>：LLM 理解语义 + Diffusion Head 生成高保真声学细节
+- <strong>已进 HF Transformers</strong>：这是基础设施级别的认可</p>
+<p><strong>问题是否真实：</strong> 真实。长音频转录、实时语音合成都是强需求，尤其在会议助手、播客工具、无障碍应用场景。</p>
+<p><strong>泡沫点：</strong> TTS 部分曾因滥用风险被 Microsoft 部分撤除（README 明确提及），说明该领域有社会责任风险。企业使用需评估合规性。</p>
+<p><strong>评分：</strong>
+- 热度质量：8 | 技术创新度：8 | 工程成熟度：7 | 架构启发价值：7
+- 企业落地潜力：7 | 中期趋势概率：7 | 平台化潜力：6 | 基础设施潜力：7
+- <strong>总分：57/80</strong></p>
+<p><strong>归类：生产可用 | 建议关注，ASR 部分可做 PoC</strong></p>
+<hr />
+<h3 id="4-shannon-ai">4. shannon — 源码 AI 渗透测试，白盒安全新范式</h3>
+<p><strong>做什么：</strong> KeygraphHQ 出品的自主式 AI 渗透测试工具。分析源码识别攻击向量，然后<strong>真实执行漏洞利用</strong>来证明漏洞存在。不是黑盒扫描，是白盒 + 真实攻击。</p>
+<p><strong>为什么突然火：</strong> 36.6k 总 stars，733 today（today 数据可能不完整）。AI + 安全是永恒热点，但 shannon 的"真实攻击"定位让它比普通 SAST 工具更有记忆点。</p>
+<p><strong>技术亮点：</strong> Graph RAG 架构 + 代码理解 + 漏洞利用验证。真实执行这点很有价值——传统 SAST 误报率高，shannon 通过真实攻击证明漏洞存在。</p>
+<p><strong>泡沫点：</strong> <strong>极高</strong>。这个领域需要高度专业安全知识，自动化漏洞利用面临巨大法律责任和伦理挑战。36k stars 很多，但大量是看热闹的开发者。</p>
+<p><strong>评分：</strong>
+- 热度质量：6 | 技术创新度：7 | 工程成熟度：5 | 架构启发价值：7
+- 企业落地潜力：3 | 中期趋势概率：5 | 平台化潜力：4 | 基础设施潜力：3
+- <strong>总分：40/80</strong></p>
+<p><strong>归类：泡沫型 / 学习型 | 不建议企业落地，持续关注技术思路即可</strong></p>
+<hr />
+<h2 id="_4">其他值得关注项目</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>亮点</th>
+<th>风险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>openscreen</td>
+<td>录制/剪辑一体化，Screen Studio 开源替代，1838 stars/day</td>
+<td>产品定位偏个人工具，非企业级</td>
+</tr>
+<tr>
+<td>oh-my-codex</td>
+<td>oh-my-claudecode 的 Codex 版本，14247 stars/week</td>
+<td>依赖 OpenAI Codex CLI 生态</td>
+</tr>
+<tr>
+<td>google-ai-edge/gallery</td>
+<td>端侧 ML 展示，1107 stars/day</td>
+<td>展示性质 &gt; 实用性</td>
+</tr>
+<tr>
+<td>LiteRT-LM</td>
+<td>Google Edge LLM 推理框架，C++ 高效</td>
+<td>Google 内部项目，外部生态待观察</td>
+</tr>
+<tr>
+<td>onyx</td>
+<td>开源 AI Chat 平台，支持任意 LLM，25507 stars</td>
+<td>类似产品较多，差异化不明显</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3">今日最值得跟踪的 3 个方向</h2>
+<ol>
+<li><strong>Multi-Agent Orchestration 团队化</strong>：oh-my-claudecode 代表以"团队"为原子的新范式。Claude Code 正在变成 Multi-Agent 开发平台，这个方向值得关注。</li>
+<li><strong>AI Agent 记忆与自进化</strong>：hermes-agent 的 Skill 自进化机制是少数真正触及"Agent 学习"核心的项目。</li>
+<li><strong>Voice AI 基础设施化</strong>：VibeVoice-ASR 进 HuggingFace Transformers 意味着 Voice AI 正在成为标准基础设施组件。</li>
+</ol>
+<hr />
+<h2 id="1">今日最值得关注的 1 个潜力基础设施项目</h2>
+<p><strong>hermes-agent</strong></p>
+<p>理由：它解决的是 AI Agent 的记忆与自进化问题，这是构建任何有长期价值的企业 AI Agent 平台必须解决的核心问题。Skill 自进化 + 多会话 FTS5 检索 + Honcho 用户建模，这套组合在开源生态中独一无二。部署灵活性（$5 VPS 到 Modal serverless）和多 Provider 路由降低了落地门槛。最值得关注的是它正在吸收 OpenClaw 的用户和设计理念，意味着它可能在"Personal AI Agent 平台"这个赛道上形成事实标准。</p>
+<hr />
+<h2 id="_5">本次新增项目档案</h2>
+<ul>
+<li><code>/projects/oh-my-claudecode.md</code></li>
+<li><code>/projects/hermes-agent.md</code></li>
+<li><code>/projects/VibeVoice.md</code></li>
+<li><code>/projects/shannon.md</code></li>
+</ul>
+<hr />
+<p><em>报告生成时间：2026-04-07 10:48 CST</em></p>
+    <div class="footer" style="text-align:center;margin-top:40px;padding-top:20px;border-top:1px solid #e1e4e8;color:#586069;">
+        <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 | <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub 趋势研究 | GitHub Researcher</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #24292e;
+            background: #f6f8fa;
+        }
+        h1, h2, h3 { color: #1a1a1a; }
+        h1 { border-bottom: 2px solid #0366d6; padding-bottom: 10px; }
+        h2 { border-bottom: 1px solid #e1e4e8; padding-bottom: 5px; margin-top: 30px; }
+        table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+        th, td { border: 1px solid #d1d5da; padding: 8px 12px; text-align: left; }
+        th { background: #f6f8fa; font-weight: 600; }
+        tr:nth-child(even) { background: #f6f8fa; }
+        a { color: #0366d6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .badge { 
+            display: inline-block; 
+            padding: 3px 8px; 
+            border-radius: 3px; 
+            font-size: 12px;
+            background: #28a745;
+            color: white;
+        }
+        pre { 
+            background: #f6f8fa; 
+            padding: 15px; 
+            border-radius: 6px;
+            overflow-x: auto;
+            border: 1px solid #e1e4e8;
+        }
+        code {
+            background: #f6f8fa;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: 'SFMono-Regular', Consolas, monospace;
+        }
+        blockquote {
+            border-left: 4px solid #0366d6;
+            margin: 15px 0;
+            padding: 10px 15px;
+            background: #f1f8ff;
+        }
+        .nav {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .nav a {
+            margin-right: 20px;
+            font-weight: 500;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e1e4e8;
+            color: #586069;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">首页</a>
+        <a href="daily.html">日报索引</a>
+        <a href="projects.html">重点项目</a>
+        <a href="trends.html">趋势追踪</a>
+    </div>
+    <div class="content">
+        <h1 id="github">GitHub 趋势研究仓库</h1>
+<blockquote>
+<p>面向资深软件架构师的 GitHub 趋势持续跟踪与深度分析项目</p>
+</blockquote>
+<hr />
+<h2 id="2026-04-07">今日研究摘要（2026-04-07）</h2>
+<p><strong>本日核心趋势：Multi-Agent Orchestration 生态爆发 + MCP 协议扩散</strong></p>
+<p>今日热榜新信号：
+- <strong>GitNexus</strong>（857 stars/day）：代码知识图谱 + MCP Server，让 AI Agent 获得深度代码库理解。CLI 一键索引，<code>npx gitnexus analyze</code> 即可为 Cursor/Claude Code/Codex 注入全代码库上下文。比 DeepWiki 更深，是 AI Coding Agent 的"感知层基础设施"。
+- <strong>qmd</strong>（394 stars/day）：本地 CLI 搜索工具，BM25 + 向量 + LLM 重排，全本地运行，通过 MCP 暴露工具给 Agent。全程离线，隐私优先。
+- <strong>LiteRT-LM</strong>：Google 生产级端侧 LLM 推理框架，已在 Chrome、Chromebook Plus、Pixel Watch 上跑。 Gemma 4 端侧部署，工具调用支持，跨 Android/iOS/Web/桌面/IoT。</p>
+<p>持续跟踪项目无重大变化，hermes-agent（1,574 stars/day）、VibeVoice、shannon 维持昨日判断。</p>
+<p><strong>→ <a href="daily/2026-04-07.md">查看今日完整简报</a></strong></p>
+<hr />
+<h2 id="7">最近 7 天日报索引</h2>
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th>核心主题</th>
+<th>重点项目数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="daily/2026-04-07.md">2026-04-07</a></td>
+<td>Multi-Agent Orchestration 爆发、MCP 协议扩散</td>
+<td>4 个深度分析 + 5 个关注</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_1">当前最值得关注的趋势</h2>
+<ol>
+<li><strong>Multi-Agent Orchestration 团队化</strong>：oh-my-claudecode 代表以"团队"为原子的新范式。Claude Code 正在变成 Multi-Agent 开发平台。</li>
+<li><strong>AI Agent 记忆与自进化</strong>：hermes-agent 的 Skill 自进化机制是少数真正触及"Agent 学习"核心的项目。</li>
+<li><strong>Voice AI 基础设施化</strong>：VibeVoice-ASR 进 HuggingFace Transformers 意味着 Voice AI 正在成为标准基础设施组件。</li>
+<li><strong>MCP 协议扩散</strong>：GitNexus、qmd 等项目将 MCP 作为核心接口，协议层基础设施地位确立。</li>
+</ol>
+<hr />
+<h2 id="_2">当前最值得跟踪的项目</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>分类</th>
+<th>核心价值</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="projects/hermes-agent.md">hermes-agent</a></td>
+<td>基础设施候选</td>
+<td>Agent 自进化 + 跨会话记忆</td>
+<td><strong>深度跟踪 + PoC</strong></td>
+</tr>
+<tr>
+<td><a href="projects/oh-my-claudecode.md">oh-my-claudecode</a></td>
+<td>平台候选</td>
+<td>Multi-Agent 团队化编排</td>
+<td>持续跟踪</td>
+</tr>
+<tr>
+<td><a href="projects/VibeVoice.md">VibeVoice</a></td>
+<td>生产可用</td>
+<td>微软 Voice AI，ASR 进 HF</td>
+<td>关注 ASR 部分</td>
+</tr>
+<tr>
+<td><a href="projects/shannon.md">shannon</a></td>
+<td>泡沫型/学习型</td>
+<td>AI 渗透测试</td>
+<td>关注技术思路即可</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_3">新增关注项目</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>今日 Star</th>
+<th>本周 Star</th>
+<th>核心价值</th>
+<th>建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="projects/GitNexus.md">GitNexus</a></td>
+<td>857</td>
+<td>—</td>
+<td>代码知识图谱 + MCP Server，AI Coding Agent 感知层</td>
+<td><strong>值得深挖</strong></td>
+</tr>
+<tr>
+<td><a href="projects/qmd.md">qmd</a></td>
+<td>394</td>
+<td>—</td>
+<td>本地文档搜索 + MCP 暴露，Agent 记忆基础设施</td>
+<td>持续跟踪</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_4">目录结构</h2>
+<p><code>/daily/YYYY-MM-DD.md    # 每日研究简报
+/indexes/trend-index.md  # 趋势指数（项目排名变化、关键判断）
+/projects/{name}.md     # 项目档案（深度分析、评分）
+/feedback/YYYY-MM-DD.md # 用户反馈记录</code></p>
+<hr />
+<h2 id="_5">核心关注领域</h2>
+<ul>
+<li>AI Agent / Multi-Agent / Coding Agent</li>
+<li>LLM Infra / RAG / 向量数据库 / 推理框架 / MCP / AI Runtime</li>
+<li>开发工具链 / IDE / CLI / Copilot / DevEx</li>
+<li>前端框架 / 全栈框架 / Serverless / Edge Runtime / BaaS</li>
+<li>云原生 / K8s / 网关 / Service Mesh / 可观测性</li>
+<li>自动化 / Browser Use / Workflow / RPA + AI</li>
+<li>数据基础设施 / 数据同步 / 缓存 / 存储 / 实时计算</li>
+<li>有潜力演变成平台、底座或基础设施标准的项目</li>
+</ul>
+<hr />
+<h2 id="_6">趋势历史索引</h2>
+<ul>
+<li><a href="indexes/trend-index.md">趋势指数总表</a></li>
+<li><a href="projects/">项目档案索引</a></li>
+</ul>
+<hr />
+<p><em>仓库初始化：2026-04-07 | 最后更新：2026-04-07</em></p>
+    </div>
+    <div class="footer">
+        <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 | 
+        <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a></p>
+    </div>
+</body>
+</html>

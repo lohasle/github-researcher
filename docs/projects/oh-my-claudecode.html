@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oh-my-claudecode | GitHub 趋势研究</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #24292e; background: #f6f8fa; }
+        table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+        th, td { border: 1px solid #d1d5da; padding: 8px 12px; text-align: left; }
+        th { background: #f6f8fa; font-weight: 600; }
+        a { color: #0366d6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        pre { background: #f6f8fa; padding: 15px; border-radius: 6px; overflow-x: auto; border: 1px solid #e1e4e8; }
+        .nav { background: white; padding: 15px; border-radius: 6px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .nav a { margin-right: 20px; font-weight: 500; }
+        h1 { border-bottom: 2px solid #0366d6; padding-bottom: 10px; }
+        h2 { border-bottom: 1px solid #e1e4e8; padding-bottom: 5px; margin-top: 30px; }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">首页</a>
+        <a href="daily.html">日报索引</a>
+        <a href="projects.html">重点项目</a>
+        <a href="trends.html">趋势追踪</a>
+    </div>
+    <h1 id="oh-my-claudecode">oh-my-claudecode</h1>
+<blockquote>
+<p>Teams-first Multi-agent orchestration for Claude Code</p>
+</blockquote>
+<h2 id="_1">基本信息</h2>
+<ul>
+<li><strong>仓库：</strong> <a href="https://github.com/Yeachan-Heo/oh-my-claudecode">Yeachan-Heo/oh-my-claudecode</a></li>
+<li><strong>Star：</strong> 25,133</li>
+<li><strong>本周新增：</strong> 7,832</li>
+<li><strong>语言：</strong> TypeScript</li>
+<li><strong>许可：</strong> MIT</li>
+<li><strong>归档状态：</strong> 活跃</li>
+</ul>
+<h2 id="_2">核心定位</h2>
+<p>在 Claude Code 上构建<strong>团队化多 Agent 编排</strong>。用户定义角色（executor、reviewer、architect），系统执行 <code>team-plan → team-prd → team-exec → team-verify → team-fix</code> 流水线。底层支持 Claude / Codex / Gemini 三路并发，通过 tmux 分屏真实启动子进程。</p>
+<h2 id="_3">技术亮点</h2>
+<ol>
+<li><strong>团队即编排单元</strong>：以"团队"而非"Agent"为原子，更符合工程直觉</li>
+<li><strong>多 Provider 路由</strong>：Claude + Codex + Gemini 并行，结果由 Claude 合成</li>
+<li><strong>流水线自愈</strong>：<code>team-fix</code> 循环确保任务不静默失败</li>
+<li><strong>Marketplace 插件机制</strong>：Claude Code 原生插件安装，工程化程度高</li>
+<li><strong>多种执行模式</strong>：Team（推荐）、Autopilot、Ultrawork、Ralph</li>
+</ol>
+<h2 id="_4">关键争议</h2>
+<ul>
+<li><strong>与 Claude Code 官方能力的关系</strong>：Claude Code 官方正在引入原生 Teams 功能（<code>CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS</code>），一旦官方能力追平，oh-my-claudecode 的差异化价值会快速稀释</li>
+<li><strong>平台绑定风险</strong>：严重依赖 Claude Code 的内部 API 和插件机制</li>
+</ul>
+<h2 id="_5">架构启发</h2>
+<p>以"团队"为原子的设计模式值得在企业内部 Copilot 平台中借鉴。这种设计让复杂任务可以自然地拆解为多个角色的协作，而非在一个 Prompt 里堆叠复杂指令。</p>
+<h2 id="_6">评分</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>得分</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热度质量</td>
+<td>9</td>
+<td>7832/week，极速增长</td>
+</tr>
+<tr>
+<td>技术创新度</td>
+<td>7</td>
+<td>编排模式有创新，具体技术基于现有组件</td>
+</tr>
+<tr>
+<td>工程成熟度</td>
+<td>8</td>
+<td>Marketplace、文档、Discord 社区完备</td>
+</tr>
+<tr>
+<td>架构启发价值</td>
+<td>8</td>
+<td>团队化抽象对内部门平台有直接参考价值</td>
+</tr>
+<tr>
+<td>企业落地潜力</td>
+<td>6</td>
+<td>依赖 Claude Code，企业内部定制化成本高</td>
+</tr>
+<tr>
+<td>中期趋势概率</td>
+<td>8</td>
+<td>Multi-Agent 是真实方向</td>
+</tr>
+<tr>
+<td>平台化潜力</td>
+<td>7</td>
+<td>平台依赖是双刃剑</td>
+</tr>
+<tr>
+<td>基础设施潜力</td>
+<td>5</td>
+<td>偏工具而非基础设施</td>
+</tr>
+<tr>
+<td><strong>总分</strong></td>
+<td><strong>58/80</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_7">归类</h2>
+<p><strong>平台候选 | 持续跟踪</strong></p>
+<h2 id="_8">关联项目</h2>
+<ul>
+<li><code>oh-my-codex</code> — 同作者的 Codex 版本</li>
+<li><code>hermes-agent</code> — 不同路径的 Agent 编排</li>
+</ul>
+<hr />
+<p><em>首次记录：2026-04-07</em></p>
+    <div class="footer" style="text-align:center;margin-top:40px;padding-top:20px;border-top:1px solid #e1e4e8;color:#586069;">
+        <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 | <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeVoice | GitHub 趋势研究</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #24292e; background: #f6f8fa; }
+        table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+        th, td { border: 1px solid #d1d5da; padding: 8px 12px; text-align: left; }
+        th { background: #f6f8fa; font-weight: 600; }
+        a { color: #0366d6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        pre { background: #f6f8fa; padding: 15px; border-radius: 6px; overflow-x: auto; border: 1px solid #e1e4e8; }
+        .nav { background: white; padding: 15px; border-radius: 6px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .nav a { margin-right: 20px; font-weight: 500; }
+        h1 { border-bottom: 2px solid #0366d6; padding-bottom: 10px; }
+        h2 { border-bottom: 1px solid #e1e4e8; padding-bottom: 5px; margin-top: 30px; }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">首页</a>
+        <a href="daily.html">日报索引</a>
+        <a href="projects.html">重点项目</a>
+        <a href="trends.html">趋势追踪</a>
+    </div>
+    <h1 id="vibevoice">VibeVoice</h1>
+<blockquote>
+<p>Open-Source Frontier Voice AI — Microsoft</p>
+</blockquote>
+<h2 id="_1">基本信息</h2>
+<ul>
+<li><strong>仓库：</strong> <a href="https://github.com/microsoft/VibeVoice">microsoft/VibeVoice</a></li>
+<li><strong>Star：</strong> 36,938</li>
+<li><strong>本周新增：</strong> 8,392</li>
+<li><strong>语言：</strong> Python</li>
+<li><strong>归档状态：</strong> 活跃</li>
+</ul>
+<h2 id="_2">核心定位</h2>
+<p>微软开源的 Voice AI 家族，包含三大模型：
+- <strong>VibeVoice-ASR-7B</strong>：60分钟长音频单遍 ASR，含说话人分离、时间戳、用户自定义热词
+- <strong>VibeVoice-TTS-1.5B</strong>：90分钟长音频 TTS，4人对话，支持中英文
+- <strong>VibeVoice-Realtime-0.5B</strong>：实时流式 TTS，0.5B 参数，300 tokens/s</p>
+<h2 id="_3">技术亮点</h2>
+<ol>
+<li><strong>连续 Tokenizer @ 7.5 Hz</strong>：超低帧率保持音频保真度，同时大幅提升长序列处理效率</li>
+<li><strong>Next-token Diffusion</strong>：LLM 理解语义 + Diffusion Head 生成高保真声学细节</li>
+<li><strong>60分钟单遍 ASR</strong>：不是分段拼接，是真正的长上下文识别</li>
+<li><strong>HuggingFace Transformers 官方集成</strong>：ASR 已进 v5.3.0，基础设施级别认可</li>
+<li><strong>vLLM 推理支持</strong>：生产级推理性能</li>
+</ol>
+<h2 id="_4">重要事件</h2>
+<ul>
+<li>2025-09-05：TTS 代码因"与开源初衷不符的使用案例"被移除，说明存在社会责任风险</li>
+<li>2026-03-06：ASR 被 HuggingFace Transformers 官方收录</li>
+<li>ICLR 2026 Oral：TTS 论文被接收</li>
+</ul>
+<h2 id="_5">泡沫点</h2>
+<ul>
+<li>TTS 曾被部分撤除，企业使用需评估合规性</li>
+<li>ASR 虽进 HF，但 7B 参数对端侧部署仍偏大</li>
+<li>Realtime TTS 的"experimental speakers"说明产品化程度有限</li>
+</ul>
+<h2 id="_6">架构启发</h2>
+<p>7.5 Hz Tokenizer 设计对音频 Tokenizer 研究有参考价值。连续 Tokenizer 思路可能是未来多模态融合的重要方向。</p>
+<h2 id="_7">评分</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>得分</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热度质量</td>
+<td>8</td>
+<td>稳健，37k 总数，大厂背书</td>
+</tr>
+<tr>
+<td>技术创新度</td>
+<td>8</td>
+<td>7.5 Hz Tokenizer + Next-token Diffusion，有研究价值</td>
+</tr>
+<tr>
+<td>工程成熟度</td>
+<td>7</td>
+<td>ASR 已进 HF，TTS 有合规问题待解</td>
+</tr>
+<tr>
+<td>架构启发价值</td>
+<td>7</td>
+<td>对语音模型设计有参考价值</td>
+</tr>
+<tr>
+<td>企业落地潜力</td>
+<td>7</td>
+<td>ASR 部分可直接用，TTS 需评估合规</td>
+</tr>
+<tr>
+<td>中期趋势概率</td>
+<td>7</td>
+<td>Voice AI 是持续趋势</td>
+</tr>
+<tr>
+<td>平台化潜力</td>
+<td>6</td>
+<td>更偏模型而非平台</td>
+</tr>
+<tr>
+<td>基础设施潜力</td>
+<td>7</td>
+<td>进 HF Transformers 说明已是事实基础设施</td>
+</tr>
+<tr>
+<td><strong>总分</strong></td>
+<td><strong>57/80</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_8">归类</h2>
+<p><strong>生产可用 | 关注 ASR 部分，合规评估后落地</strong></p>
+<hr />
+<p><em>首次记录：2026-04-07</em></p>
+    <div class="footer" style="text-align:center;margin-top:40px;padding-top:20px;border-top:1px solid #e1e4e8;color:#586069;">
+        <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 | <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a></p>
+    </div>
+</body>
+</html>

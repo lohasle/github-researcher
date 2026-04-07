@@ -4,11 +4,55 @@
 
 ---
 
-## 目的
+## 今日研究摘要（2026-04-07）
 
-持续跟踪 GitHub 最火的项目和技术趋势，从"架构设计、工程效率、AI Agent、开发范式、基础设施演进"的角度，输出高价值研究成果。
+**本日核心趋势：Multi-Agent Orchestration 生态爆发 + MCP 协议扩散**
 
-不是热榜搬运，而是**趋势判断 + 架构分析 + 泡沫识别 + 潜力评估**。
+今日热榜新信号：
+- **GitNexus**（857 stars/day）：代码知识图谱 + MCP Server，让 AI Agent 获得深度代码库理解。CLI 一键索引，`npx gitnexus analyze` 即可为 Cursor/Claude Code/Codex 注入全代码库上下文。比 DeepWiki 更深，是 AI Coding Agent 的"感知层基础设施"。
+- **qmd**（394 stars/day）：本地 CLI 搜索工具，BM25 + 向量 + LLM 重排，全本地运行，通过 MCP 暴露工具给 Agent。全程离线，隐私优先。
+- **LiteRT-LM**：Google 生产级端侧 LLM 推理框架，已在 Chrome、Chromebook Plus、Pixel Watch 上跑。 Gemma 4 端侧部署，工具调用支持，跨 Android/iOS/Web/桌面/IoT。
+
+持续跟踪项目无重大变化，hermes-agent（1,574 stars/day）、VibeVoice、shannon 维持昨日判断。
+
+**→ [查看今日完整简报](daily/2026-04-07.md)**
+
+---
+
+## 最近 7 天日报索引
+
+| 日期 | 核心主题 | 重点项目数 |
+|------|---------|----------|
+| [2026-04-07](daily/2026-04-07.md) | Multi-Agent Orchestration 爆发、MCP 协议扩散 | 4 个深度分析 + 5 个关注 |
+
+---
+
+## 当前最值得关注的趋势
+
+1. **Multi-Agent Orchestration 团队化**：oh-my-claudecode 代表以"团队"为原子的新范式。Claude Code 正在变成 Multi-Agent 开发平台。
+2. **AI Agent 记忆与自进化**：hermes-agent 的 Skill 自进化机制是少数真正触及"Agent 学习"核心的项目。
+3. **Voice AI 基础设施化**：VibeVoice-ASR 进 HuggingFace Transformers 意味着 Voice AI 正在成为标准基础设施组件。
+4. **MCP 协议扩散**：GitNexus、qmd 等项目将 MCP 作为核心接口，协议层基础设施地位确立。
+
+---
+
+## 当前最值得跟踪的项目
+
+| 项目 | 分类 | 核心价值 | 状态 |
+|------|------|---------|------|
+| [hermes-agent](projects/hermes-agent.md) | 基础设施候选 | Agent 自进化 + 跨会话记忆 | **深度跟踪 + PoC** |
+| [oh-my-claudecode](projects/oh-my-claudecode.md) | 平台候选 | Multi-Agent 团队化编排 | 持续跟踪 |
+| [VibeVoice](projects/VibeVoice.md) | 生产可用 | 微软 Voice AI，ASR 进 HF | 关注 ASR 部分 |
+| [shannon](projects/shannon.md) | 泡沫型/学习型 | AI 渗透测试 | 关注技术思路即可 |
+
+---
+
+## 新增关注项目
+
+| 项目 | 今日 Star | 本周 Star | 核心价值 | 建议 |
+|------|----------|----------|---------|------|
+| [GitNexus](projects/GitNexus.md) | 857 | — | 代码知识图谱 + MCP Server，AI Coding Agent 感知层 | **值得深挖** |
+| [qmd](projects/qmd.md) | 394 | — | 本地文档搜索 + MCP 暴露，Agent 记忆基础设施 | 持续跟踪 |
 
 ---
 
@@ -36,39 +80,11 @@
 
 ---
 
-## 判断原则
+## 趋势历史索引
 
-不只看 star。综合：
-- 热度质量（增速 vs 总量）
-- 技术创新度（真实创新 vs 概念包装）
-- 工程成熟度（文档、测试、部署可行性）
-- 架构启发价值（对架构师有价值的思路）
-- 企业落地潜力（能否进生产）
-- 中期趋势概率（6-18个月后还在吗）
+- [趋势指数总表](indexes/trend-index.md)
+- [项目档案索引](projects/)
 
 ---
 
-## 当前重点跟踪
-
-| 项目 | 分类 | 核心价值 | 状态 |
-|------|------|---------|------|
-| hermes-agent | 基础设施候选 | Agent 自进化 + 跨会话记忆 | **深度跟踪 + PoC** |
-| oh-my-claudecode | 平台候选 | Multi-Agent 团队化编排 | 持续跟踪 |
-| VibeVoice | 生产可用 | 微软 Voice AI，ASR 进 HF | 关注 ASR 部分 |
-
----
-
-## 历史趋势判断
-
-### 2026-04-07 — Multi-Agent Orchestration 爆发
-
-三大项目同周爆发：
-- oh-my-claudecode（7832/week）
-- oh-my-codex（14247/week）
-- hermes-agent（9662/week）
-
-判断：**以"团队"为原子的多 Agent 协作正在从概念走向工程化**
-
----
-
-*仓库初始化：2026-04-07*
+*仓库初始化：2026-04-07 | 最后更新：2026-04-07*

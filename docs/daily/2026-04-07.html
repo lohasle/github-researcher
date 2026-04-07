@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026-04-07 日报 | GitHub 趋势研究</title>
+    <title>2026-04-07 GitHub 趋势研究简报（第二版） | GitHub 趋势研究</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📅</text></svg>">
     <style>
-        /* === CSS Variables / Design Tokens === */
         :root {
             --primary: #7C3AED;
             --primary-light: #A78BFA;
@@ -15,7 +14,6 @@
             --cta-light: #67E8F9;
             --bg: #FAF5FF;
             --bg-card: #FFFFFF;
-            --bg-dark: #1E1B4B;
             --text: #1E1B4B;
             --text-muted: #6B7280;
             --border: #E9D5FF;
@@ -26,8 +24,6 @@
             --radius: 12px;
             --radius-sm: 8px;
         }
-
-        /* === Reset & Base === */
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         html { scroll-behavior: smooth; }
         body {
@@ -37,8 +33,6 @@
             line-height: 1.7;
             min-height: 100vh;
         }
-
-        /* === Navigation === */
         .nav {
             background: rgba(255,255,255,0.85);
             backdrop-filter: blur(12px);
@@ -84,28 +78,11 @@
             font-weight: 500;
             transition: all 0.2s;
         }
-        .nav-links a:hover {
-            background: var(--primary);
-            color: white;
-        }
+        .nav-links a:hover { background: var(--primary); color: white; }
         .nav-links a svg { width: 16px; height: 16px; }
-        .nav-links a.active {
-            background: var(--primary);
-            color: white;
-        }
-
-        /* === Main Container === */
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 40px 24px 60px;
-        }
-
-        /* === Hero Section === */
-        .hero {
-            text-align: center;
-            padding: 60px 0 50px;
-        }
+        .nav-links a.active { background: var(--primary); color: white; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 40px 24px 60px; }
+        .hero { text-align: center; padding: 60px 0 50px; }
         .hero-badge {
             display: inline-flex;
             align-items: center;
@@ -119,451 +96,85 @@
             margin-bottom: 24px;
             letter-spacing: 0.5px;
         }
-        .hero-badge .dot {
-            width: 6px; height: 6px;
-            background: var(--cta-light);
-            border-radius: 50%;
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.6; transform: scale(0.8); }
-        }
-        .hero h1 {
-            font-size: 42px;
-            font-weight: 800;
-            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 16px;
-            letter-spacing: -1px;
-        }
-        .hero p {
-            font-size: 17px;
-            color: var(--text-muted);
-            max-width: 560px;
-            margin: 0 auto 36px;
-        }
-        .hero-actions {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-        .btn-primary {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: var(--primary);
-            color: white;
-            padding: 12px 24px;
-            border-radius: var(--radius-sm);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 15px;
-            transition: all 0.2s;
-            border: none;
-            cursor: pointer;
-            box-shadow: var(--shadow);
-        }
-        .btn-primary:hover {
-            background: var(--primary-dark);
-            transform: translateY(-1px);
-            box-shadow: var(--shadow-lg);
-        }
-        .btn-secondary {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: white;
-            color: var(--primary);
-            padding: 12px 24px;
-            border-radius: var(--radius-sm);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 15px;
-            transition: all 0.2s;
-            border: 2px solid var(--border);
-        }
-        .btn-secondary:hover {
-            border-color: var(--primary);
-            background: var(--bg);
-        }
-
-        /* === Stats Row === */
-        .stats-row {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 16px;
-            margin-bottom: 48px;
-        }
-        .stat-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            padding: 24px 20px;
-            text-align: center;
-            transition: all 0.2s;
-            box-shadow: var(--shadow);
-        }
-        .stat-card:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-            border-color: var(--primary-light);
-        }
-        .stat-icon {
-            width: 44px; height: 44px;
-            background: linear-gradient(135deg, var(--primary), var(--primary-light));
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 12px;
-            font-size: 20px;
-        }
-        .stat-number {
-            font-size: 28px;
-            font-weight: 800;
-            color: var(--primary);
-            margin-bottom: 4px;
-        }
-        .stat-label {
-            font-size: 13px;
-            color: var(--text-muted);
-            font-weight: 500;
-        }
-
-        /* === Section Header === */
-        .section-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-        .section-title {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 20px;
-            font-weight: 700;
-            color: var(--text);
-        }
-        .section-title .icon {
-            width: 36px; height: 36px;
-            background: linear-gradient(135deg, var(--primary), var(--cta));
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
-        }
-        .section-link {
-            font-size: 13px;
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
+        .hero-badge .dot { width: 6px; height: 6px; background: var(--cta-light); border-radius: 50%; animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.6; transform: scale(0.8); } }
+        .hero h1 { font-size: 42px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 16px; letter-spacing: -1px; }
+        .hero p { font-size: 17px; color: var(--text-muted); max-width: 560px; margin: 0 auto 36px; }
+        .hero-actions { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; }
+        .btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--primary); color: white; padding: 12px 24px; border-radius: var(--radius-sm); text-decoration: none; font-weight: 600; font-size: 15px; transition: all 0.2s; border: none; cursor: pointer; box-shadow: var(--shadow); }
+        .btn-primary:hover { background: var(--primary-dark); transform: translateY(-1px); box-shadow: var(--shadow-lg); }
+        .btn-secondary { display: inline-flex; align-items: center; gap: 8px; background: white; color: var(--primary); padding: 12px 24px; border-radius: var(--radius-sm); text-decoration: none; font-weight: 600; font-size: 15px; transition: all 0.2s; border: 2px solid var(--border); }
+        .btn-secondary:hover { border-color: var(--primary); background: var(--bg); }
+        .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 48px; }
+        .stat-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 20px; text-align: center; transition: all 0.2s; box-shadow: var(--shadow); }
+        .stat-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); border-color: var(--primary-light); }
+        .stat-icon { width: 44px; height: 44px; background: linear-gradient(135deg, var(--primary), var(--primary-light)); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; font-size: 20px; }
+        .stat-number { font-size: 28px; font-weight: 800; color: var(--primary); margin-bottom: 4px; }
+        .stat-label { font-size: 13px; color: var(--text-muted); font-weight: 500; }
+        .section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+        .section-title { display: flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700; color: var(--text); }
+        .section-title .icon { width: 36px; height: 36px; background: linear-gradient(135deg, var(--primary), var(--cta)); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+        .section-link { font-size: 13px; color: var(--primary); text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 4px; }
         .section-link:hover { text-decoration: underline; }
-
-        /* === Card Grid === */
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 16px;
-            margin-bottom: 48px;
-        }
-        .card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            padding: 24px;
-            transition: all 0.2s;
-            box-shadow: var(--shadow);
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-        .card:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-lg);
-            border-color: var(--primary-light);
-        }
-        .card-top {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            margin-bottom: 14px;
-        }
-        .card-emoji {
-            font-size: 32px;
-            line-height: 1;
-        }
-        .card-stars {
-            background: linear-gradient(135deg, var(--primary), var(--primary-light));
-            color: white;
-            padding: 4px 10px;
-            border-radius: 100px;
-            font-size: 12px;
-            font-weight: 700;
-        }
-        .card-title {
-            font-size: 16px;
-            font-weight: 700;
-            margin-bottom: 8px;
-            color: var(--text);
-        }
-        .card-desc {
-            font-size: 13px;
-            color: var(--text-muted);
-            line-height: 1.6;
-            margin-bottom: 14px;
-        }
-        .card-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-        }
-        .tag {
-            padding: 3px 10px;
-            border-radius: 100px;
-            font-size: 11px;
-            font-weight: 600;
-            border: 1px solid;
-        }
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; margin-bottom: 48px; }
+        .card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; transition: all 0.2s; box-shadow: var(--shadow); text-decoration: none; color: inherit; display: block; }
+        .card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: var(--primary-light); }
+        .card-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 14px; }
+        .card-emoji { font-size: 32px; line-height: 1; }
+        .card-stars { background: linear-gradient(135deg, var(--primary), var(--primary-light)); color: white; padding: 4px 10px; border-radius: 100px; font-size: 12px; font-weight: 700; }
+        .card-title { font-size: 16px; font-weight: 700; margin-bottom: 8px; color: var(--text); }
+        .card-desc { font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 14px; }
+        .card-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+        .tag { padding: 3px 10px; border-radius: 100px; font-size: 11px; font-weight: 600; border: 1px solid; }
         .tag-purple { background: #F3E8FF; color: var(--primary); border-color: var(--border); }
         .tag-cyan { background: #ECFEFF; color: #0891B2; border-color: #A5F3FC; }
         .tag-green { background: #ECFDF5; color: #059669; border-color: #A7F3D0; }
         .tag-orange { background: #FFF7ED; color: #C2410C; border-color: #FED7AA; }
-
-        /* === Trend List === */
-        .trend-list {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            overflow: hidden;
-            margin-bottom: 48px;
-            box-shadow: var(--shadow);
-        }
-        .trend-item {
-            display: flex;
-            align-items: center;
-            padding: 16px 20px;
-            border-bottom: 1px solid var(--border);
-            gap: 16px;
-            transition: background 0.15s;
-        }
+        .trend-list { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; margin-bottom: 48px; box-shadow: var(--shadow); }
+        .trend-item { display: flex; align-items: center; padding: 16px 20px; border-bottom: 1px solid var(--border); gap: 16px; transition: background 0.15s; }
         .trend-item:last-child { border-bottom: none; }
         .trend-item:hover { background: var(--bg); }
-        .trend-rank {
-            width: 28px;
-            height: 28px;
-            border-radius: 6px;
-            background: var(--primary);
-            color: white;
-            font-size: 12px;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
+        .trend-rank { width: 28px; height: 28px; border-radius: 6px; background: var(--primary); color: white; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
         .trend-rank.top { background: linear-gradient(135deg, #F59E0B, #EF4444); }
         .trend-content { flex: 1; min-width: 0; }
-        .trend-title {
-            font-size: 15px;
-            font-weight: 600;
-            color: var(--text);
-            margin-bottom: 2px;
-        }
-        .trend-meta {
-            font-size: 12px;
-            color: var(--text-muted);
-        }
-        .trend-score {
-            padding: 4px 12px;
-            border-radius: 100px;
-            font-size: 12px;
-            font-weight: 700;
-            background: #F3E8FF;
-            color: var(--primary);
-            border: 1px solid var(--border);
-            flex-shrink: 0;
-        }
+        .trend-title { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
+        .trend-meta { font-size: 12px; color: var(--text-muted); }
+        .trend-score { padding: 4px 12px; border-radius: 100px; font-size: 12px; font-weight: 700; background: #F3E8FF; color: var(--primary); border: 1px solid var(--border); flex-shrink: 0; }
         .trend-score.high { background: #ECFDF5; color: #059669; border-color: #A7F3D0; }
-
-        /* === Daily Brief === */
-        .brief-card {
-            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
-            border-radius: var(--radius);
-            padding: 36px 40px;
-            color: white;
-            margin-bottom: 48px;
-            position: relative;
-            overflow: hidden;
-            box-shadow: var(--shadow-lg);
-        }
-        .brief-card::before {
-            content: '';
-            position: absolute;
-            top: -60px; right: -60px;
-            width: 200px; height: 200px;
-            background: rgba(255,255,255,0.08);
-            border-radius: 50%;
-        }
-        .brief-card::after {
-            content: '';
-            position: absolute;
-            bottom: -40px; left: 40px;
-            width: 120px; height: 120px;
-            background: rgba(255,255,255,0.05);
-            border-radius: 50%;
-        }
-        .brief-date {
-            font-size: 13px;
-            opacity: 0.75;
-            margin-bottom: 8px;
-            font-weight: 500;
-        }
-        .brief-title {
-            font-size: 24px;
-            font-weight: 800;
-            margin-bottom: 16px;
-        }
-        .brief-text {
-            font-size: 15px;
-            opacity: 0.9;
-            line-height: 1.7;
-            max-width: 700px;
-            margin-bottom: 24px;
-        }
-        .brief-cta {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: white;
-            color: var(--primary);
-            padding: 10px 20px;
-            border-radius: var(--radius-sm);
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 14px;
-            transition: all 0.2s;
-            position: relative;
-            z-index: 1;
-        }
+        .brief-card { background: linear-gradient(135deg, var(--primary-dark), var(--primary)); border-radius: var(--radius); padding: 36px 40px; color: white; margin-bottom: 48px; position: relative; overflow: hidden; box-shadow: var(--shadow-lg); }
+        .brief-card::before { content: ''; position: absolute; top: -60px; right: -60px; width: 200px; height: 200px; background: rgba(255,255,255,0.08); border-radius: 50%; }
+        .brief-card::after { content: ''; position: absolute; bottom: -40px; left: 40px; width: 120px; height: 120px; background: rgba(255,255,255,0.05); border-radius: 50%; }
+        .brief-date { font-size: 13px; opacity: 0.75; margin-bottom: 8px; font-weight: 500; }
+        .brief-title { font-size: 24px; font-weight: 800; margin-bottom: 16px; }
+        .brief-text { font-size: 15px; opacity: 0.9; line-height: 1.7; max-width: 700px; margin-bottom: 24px; }
+        .brief-cta { display: inline-flex; align-items: center; gap: 8px; background: white; color: var(--primary); padding: 10px 20px; border-radius: var(--radius-sm); text-decoration: none; font-weight: 700; font-size: 14px; transition: all 0.2s; position: relative; z-index: 1; }
         .brief-cta:hover { transform: translateY(-1px); }
-
-        /* === Category Pills === */
-        .category-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 48px;
-        }
-        .category-pill {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            padding: 8px 16px;
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 100px;
-            font-size: 13px;
-            font-weight: 500;
-            color: var(--text);
-            text-decoration: none;
-            transition: all 0.2s;
-            box-shadow: var(--shadow);
-        }
-        .category-pill:hover {
-            background: var(--primary);
-            color: white;
-            border-color: var(--primary);
-        }
+        .category-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 48px; }
+        .category-pill { display: flex; align-items: center; gap: 6px; padding: 8px 16px; background: white; border: 1px solid var(--border); border-radius: 100px; font-size: 13px; font-weight: 500; color: var(--text); text-decoration: none; transition: all 0.2s; box-shadow: var(--shadow); }
+        .category-pill:hover { background: var(--primary); color: white; border-color: var(--primary); }
         .category-pill .emoji { font-size: 15px; }
-
-        /* === Footer === */
-        .footer {
-            text-align: center;
-            padding: 32px 0;
-            border-top: 1px solid var(--border);
-            color: var(--text-muted);
-            font-size: 13px;
-        }
+        .footer { text-align: center; padding: 32px 0; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 13px; }
         .footer a { color: var(--primary); text-decoration: none; }
         .footer a:hover { text-decoration: underline; }
-
-        /* === Responsive === */
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 30px; }
-            .stats-row { grid-template-columns: repeat(2, 1fr); }
-            .nav-links span { display: none; }
-            .brief-card { padding: 28px 24px; }
-        }
-        @media (max-width: 480px) {
-            .stats-row { grid-template-columns: repeat(2, 1fr); }
-            .card-grid { grid-template-columns: 1fr; }
-        }
-
-        /* === Animations === */
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .hero, .stats-row, .brief-card, .card-grid, .trend-list {
-            animation: fadeInUp 0.5s ease-out;
-        }
+        @media (max-width: 768px) { .hero h1 { font-size: 30px; } .stats-row { grid-template-columns: repeat(2, 1fr); } .nav-links span { display: none; } .brief-card { padding: 28px 24px; } }
+        @media (max-width: 480px) { .card-grid { grid-template-columns: 1fr; } }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .hero, .stats-row, .brief-card, .card-grid, .trend-list { animation: fadeInUp 0.5s ease-out; }
         .stats-row { animation-delay: 0.1s; animation-fill-mode: both; }
         .brief-card { animation-delay: 0.15s; animation-fill-mode: both; }
         .card-grid { animation-delay: 0.2s; animation-fill-mode: both; }
         .trend-list { animation-delay: 0.25s; animation-fill-mode: both; }
     </style>
     <style>
-        .daily-content {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            padding: 40px 48px;
-            box-shadow: var(--shadow);
-            margin-bottom: 48px;
-            max-width: 860px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .daily-content h1 {
-            font-size: 28px;
-            font-weight: 800;
-            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 8px;
-        }
-        .daily-content h2 {
-            font-size: 20px;
-            font-weight: 700;
-            color: var(--primary);
-            border-left: 4px solid var(--primary);
-            padding-left: 12px;
-            margin: 28px 0 14px;
-        }
+        .daily-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 48px; box-shadow: var(--shadow); margin-bottom: 48px; max-width: 860px; margin-left: auto; margin-right: auto; }
+        .daily-content h1 { font-size: 28px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 8px; }
+        .daily-content h2 { font-size: 20px; font-weight: 700; color: var(--primary); border-left: 4px solid var(--primary); padding-left: 12px; margin: 28px 0 14px; }
         .daily-content h3 { font-size: 16px; font-weight: 700; color: var(--text); margin: 20px 0 10px; }
         .daily-content table { border-collapse: collapse; width: 100%; margin: 14px 0; }
         .daily-content th, .daily-content td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; font-size: 13px; }
         .daily-content th { background: var(--primary); color: white; font-weight: 600; }
         .daily-content tr:nth-child(even) td { background: var(--bg); }
-        .daily-content blockquote {
-            background: linear-gradient(135deg, #F3E8FF, #ECFEFF);
-            border-left: 4px solid var(--primary);
-            padding: 14px 18px;
-            margin: 14px 0;
-            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-        }
+        .daily-content blockquote { background: linear-gradient(135deg, #F3E8FF, #ECFEFF); border-left: 4px solid var(--primary); padding: 14px 18px; margin: 14px 0; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
         .daily-content ul, .daily-content ol { padding-left: 22px; margin: 10px 0; }
         .daily-content li { margin: 6px 0; font-size: 14px; }
         .daily-content p { font-size: 14px; margin-bottom: 12px; line-height: 1.7; }
@@ -580,10 +191,10 @@
                 GitHub 趋势研究
             </a>
             <div class="nav-links">
-                <a href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>首页</span></a>
-                <a href="daily.html" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg><span>日报</span></a>
-                <a href="projects.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
-                <a href="trends.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>趋势</span></a>
+                <a href="index.html" id="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>首页</span></a>
+                <a href="daily.html" id="nav-daily" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg><span>日报</span></a>
+                <a href="projects.html" id="nav-projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
+                <a href="trends.html" id="nav-trends"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>趋势</span></a>
             </div>
         </div>
     </nav>
@@ -596,8 +207,9 @@
 </blockquote>
 <hr />
 <h2 id="_1">本日核心判断</h2>
-<p><strong>今天是首次简报，无历史反馈可参考。</strong></p>
-<p>本日最显著趋势：<strong>Multi-Agent Orchestration 生态爆发</strong>。oh-my-claudecode、oh-my-codex、hermes-agent 三个项目同周爆发，代表"以团队为原子单位的多 Agent 协作"正在从概念走向工程化。</p>
+<p>本日新增显著趋势：<strong>MCP 协议扩散 + 端侧 LLM 推理生产化</strong></p>
+<p>昨日首次简报（Multi-Agent Orchestration 爆发）的核心判断持续有效。hermes-agent、oh-my-claudecode、VibeVoice 维持昨日判断，无重大修正。</p>
+<p>本日新增关键信号：热榜新增项目深度分析</p>
 <hr />
 <h2 id="_2">热榜综合分析</h2>
 <h3 id="star-top5">今日 Star 增速 TOP5</h3>
@@ -688,127 +300,45 @@
 </table>
 <hr />
 <h2 id="_3">重点项目深度分析</h2>
-<h3 id="1-oh-my-claudecode-multi-agent-orchestration">1. oh-my-claudecode — Multi-Agent Orchestration 平台候选</h3>
-<p><strong>做什么：</strong> 在 Claude Code 上构建团队化多 Agent 编排层。用户以"团队"为原子单位定义任务角色（executor、reviewer 等），系统自动执行 <code>team-plan → team-prd → team-exec → team-verify → team-fix</code> 流水线。底层支持 Claude / Codex / Gemini 三路并发，通过 tmux 分屏真实启动子进程。</p>
-<p><strong>为什么火：</strong> Claude Code 的生态玩法。用户不再写单 Agent 指令，而是"组团队"。7832 stars/week，增长极其陡峭。</p>
-<p><strong>技术亮点：</strong>
-- <strong>团队即编排单元</strong>：不是给 Agent 写 Prompt，而是定义角色和团队拓扑
-- <strong>多 Provider 路由</strong>：同一任务自动分发到 Claude/Codex/Gemini，结果由 Claude 合成
-- <strong>流水线自愈</strong>：team-fix 循环让任务不会静默失败
-- <strong>Marketplace 插件机制</strong>：/<code>plugin marketplace add</code> 即可安装，工程化程度高</p>
-<p><strong>问题是否真实：</strong> 真实。单 Agent Copilot 的局限性已经很明显——复杂任务需要多角色协作，这是工程痛点。</p>
-<p><strong>是玩具还是平台：</strong> 更偏<strong>工具/平台之间</strong>。但护城河在于与 Claude Code 深度绑定，一旦 Claude Code 官方支持类似能力，项目价值会快速稀释。</p>
-<p><strong>短期还是中期趋势：</strong> 中期。Multi-Agent 协作是真实方向，但具体编排形态尚未收敛。</p>
-<p><strong>架构启发：</strong> 以"团队"而非"Agent"为原子是更符合工程直觉的抽象。这个设计模式值得在企业内部 Copilot 平台中借鉴。</p>
-<p><strong>评分：</strong>
-- 热度质量：9 | 技术创新度：7 | 工程成熟度：8 | 架构启发价值：8
-- 企业落地潜力：6 | 中期趋势概率：8 | 平台化潜力：7 | 基础设施潜力：5
-- <strong>总分：58/80</strong></p>
-<p><strong>归类：平台候选 | 建议持续跟踪</strong></p>
-<hr />
-<h3 id="2-hermes-agent-ai-agent">2. hermes-agent — 自进化 AI Agent，潜力基础设施</h3>
-<p><strong>做什么：</strong> NousResearch 出品的自进化 AI Agent。核心能力：Agent 每次任务完成后自动创建可复用 Skill，Skill 在使用中自我改进；跨会话 FTS5 检索；Honcho 用户画像建模；多平台 Messaging Gateway（Telegram/Discord/Slack/WhatsApp）；Cron 调度；多终端运行（VPS/Docker/SSH/Modal/Daytona）。从 OpenClaw 可一键迁移。</p>
-<p><strong>为什么火：</strong> 28k stars，9,662/week，增长稳健。它解决了"Personal AI Agent 记忆和学习"的核心问题，而且部署灵活（$5 VPS 即可）。</p>
-<p><strong>技术亮点：</strong>
-- <strong>自进化 Skill 系统</strong>：不是 RAG，是从经验中生成新能力单元并自动优化
-- <strong>跨会话连续性</strong>：FTS5 + LLM summarization 实现长期记忆检索
-- <strong>多终端部署</strong>：Modal/Daytona 实现 Serverless 持久化，idle 时几乎零成本
-- <strong>多 Provider 兼容</strong>：OpenRouter 200+ 模型、OpenAI、Kimi、GLM、MiniMax 等
-- <strong>OpenClaw 迁移路径</strong>：明确针对 OpenClaw 用户做迁移，降低迁移门槛</p>
-<p><strong>问题是否真实：</strong> 真实。所有 AI Agent 的核心问题之一就是"如何让 Agent 学习并记住"，而大多数方案只是 RAG，hermes-agent 走的是"从经验中生成技能"这条路。</p>
-<p><strong>是玩具还是基础设施：</strong> <strong>基础设施候选</strong>。Skill 系统、Memory 系统、多平台 Gateway 都是构建企业内部 AI Agent 平台需要解决的核心问题。</p>
-<p><strong>架构启发：</strong> Skill 自进化机制是值得深度研究的工程问题。如果能工程化落地，对企业内部 AI Agent 平台的设计有直接参考价值。</p>
-<p><strong>评分：</strong>
+<h3 id="gitnexus-mcp-server857-starsday236k-total">GitNexus — 代码知识图谱 + MCP Server（857 stars/day，23.6k total）</h3>
+<p>做什么： 将任意代码库索引为知识图谱（依赖关系、调用链、代码簇、执行流），通过 MCP Server 暴露给 AI Agent，让 Claude Code/Cursor/Codex/Windsurf 获得深度代码库感知，而非只做全文检索。CLI 一键索引：<code>npx gitnexus analyze</code>。</p>
+<p>为什么火： AI Coding Agent 的"感知饥渴"是真实痛点——AI 会漏掉依赖、改错调用方、引入隐藏副作用。GitNexus 从根本上解决这个结构理解问题，且 MCP 原生集成，零配置。</p>
+<p>真正的技术亮点：
+- 知识图谱追踪的是每个依赖关系，而非只是文本描述。AI 可以问"哪些模块依赖了这个函数"这类结构化问题
+- Bridge 模式：CLI 本地索引 + Web UI 远程展示，数据隔离但体验连续
+- Enterprise 版：PR Review 爆炸半径分析、Auto-updating Wiki、Multi-repo 统一知识图谱</p>
+<p>评分：
 - 热度质量：8 | 技术创新度：8 | 工程成熟度：7 | 架构启发价值：9
-- 企业落地潜力：7 | 中期趋势概率：8 | 平台化潜力：7 | 基础设施潜力：8
-- <strong>总分：62/80</strong></p>
-<p><strong>归类：基础设施候选 | 值得深度跟踪，值得做 PoC</strong></p>
-<hr />
-<h3 id="3-vibevoice-voice-aihuggingface-transformers">3. VibeVoice — 微软开源 Voice AI，HuggingFace Transformers 集成</h3>
-<p><strong>做什么：</strong> 微软开源的 Voice AI 家族，包括 ASR（60分钟长音频单遍处理，带说话人分离和时间戳）、TTS（90分钟长音频，4人对话）、Realtime TTS（0.5B 参数，实时流式）。核心创新：连续语音 Tokenizer 以 7.5 Hz 超低帧率运行，大幅提升长序列处理效率。</p>
-<p><strong>为什么火：</strong> 36.9k 总 stars，8,392/week，增长稳健。VibeVoice-ASR 已进入 HuggingFace Transformers v5.3.0，意味着已被官方认可为基础设施工具。</p>
-<p><strong>技术亮点：</strong>
-- <strong>60 分钟单遍 ASR</strong>：不是分段拼接，是真正的长上下文识别，对会议记录、播客转录有直接价值
-- <strong>7.5 Hz Tokenizer</strong>：极低帧率保持音频保真度同时大幅提升效率
-- <strong>Next-token Diffusion</strong>：LLM 理解语义 + Diffusion Head 生成高保真声学细节
-- <strong>已进 HF Transformers</strong>：这是基础设施级别的认可</p>
-<p><strong>问题是否真实：</strong> 真实。长音频转录、实时语音合成都是强需求，尤其在会议助手、播客工具、无障碍应用场景。</p>
-<p><strong>泡沫点：</strong> TTS 部分曾因滥用风险被 Microsoft 部分撤除（README 明确提及），说明该领域有社会责任风险。企业使用需评估合规性。</p>
-<p><strong>评分：</strong>
-- 热度质量：8 | 技术创新度：8 | 工程成熟度：7 | 架构启发价值：7
-- 企业落地潜力：7 | 中期趋势概率：7 | 平台化潜力：6 | 基础设施潜力：7
-- <strong>总分：57/80</strong></p>
-<p><strong>归类：生产可用 | 建议关注，ASR 部分可做 PoC</strong></p>
-<hr />
-<h3 id="4-shannon-ai">4. shannon — 源码 AI 渗透测试，白盒安全新范式</h3>
-<p><strong>做什么：</strong> KeygraphHQ 出品的自主式 AI 渗透测试工具。分析源码识别攻击向量，然后<strong>真实执行漏洞利用</strong>来证明漏洞存在。不是黑盒扫描，是白盒 + 真实攻击。</p>
-<p><strong>为什么突然火：</strong> 36.6k 总 stars，733 today（today 数据可能不完整）。AI + 安全是永恒热点，但 shannon 的"真实攻击"定位让它比普通 SAST 工具更有记忆点。</p>
-<p><strong>技术亮点：</strong> Graph RAG 架构 + 代码理解 + 漏洞利用验证。真实执行这点很有价值——传统 SAST 误报率高，shannon 通过真实攻击证明漏洞存在。</p>
-<p><strong>泡沫点：</strong> <strong>极高</strong>。这个领域需要高度专业安全知识，自动化漏洞利用面临巨大法律责任和伦理挑战。36k stars 很多，但大量是看热闹的开发者。</p>
-<p><strong>评分：</strong>
-- 热度质量：6 | 技术创新度：7 | 工程成熟度：5 | 架构启发价值：7
-- 企业落地潜力：3 | 中期趋势概率：5 | 平台化潜力：4 | 基础设施潜力：3
-- <strong>总分：40/80</strong></p>
-<p><strong>归类：泡沫型 / 学习型 | 不建议企业落地，持续关注技术思路即可</strong></p>
-<hr />
-<h2 id="_4">其他值得关注项目</h2>
-<table>
-<thead>
-<tr>
-<th>项目</th>
-<th>亮点</th>
-<th>风险</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>openscreen</td>
-<td>录制/剪辑一体化，Screen Studio 开源替代，1838 stars/day</td>
-<td>产品定位偏个人工具，非企业级</td>
-</tr>
-<tr>
-<td>oh-my-codex</td>
-<td>oh-my-claudecode 的 Codex 版本，14247 stars/week</td>
-<td>依赖 OpenAI Codex CLI 生态</td>
-</tr>
-<tr>
-<td>google-ai-edge/gallery</td>
-<td>端侧 ML 展示，1107 stars/day</td>
-<td>展示性质 &gt; 实用性</td>
-</tr>
-<tr>
-<td>LiteRT-LM</td>
-<td>Google Edge LLM 推理框架，C++ 高效</td>
-<td>Google 内部项目，外部生态待观察</td>
-</tr>
-<tr>
-<td>onyx</td>
-<td>开源 AI Chat 平台，支持任意 LLM，25507 stars</td>
-<td>类似产品较多，差异化不明显</td>
-</tr>
-</tbody>
-</table>
+- 企业落地潜力：7 | 中期趋势概率：8 | 平台化潜力：6 | 基础设施潜力：7
+- <strong>总分：60/80</strong></p>
+<p>归类：<strong>基础设施候选 | 建议持续跟踪，值得做 PoC</strong></p>
+<h3 id="qmd-mcp-394-starsday188k-total">qmd — 本地文档搜索 + MCP 暴露（394 stars/day，18.8k total）</h3>
+<p>做什么： 本地 CLI 文档搜索引擎，BM25 + 向量语义 + LLM 重排三层混合，全本地跑 GGUF 模型（node-llama-cpp）。通过 MCP Server 暴露 query/get/multi_get/status 四个工具给 Claude Desktop/Claude Code。</p>
+<p>为什么火： 隐私优先 + 全离线 + AI Agent 集成，三个需求一次满足。最有特色的设计是"context 树"——返回结果带着文档层级上下文，让 LLM 能理解"这份文档在哪里、它和什么相关"。</p>
+<p>真正的技术亮点：
+- context 树机制：检索结果不只是相关文档列表，而是带层级上下文的树状结构。Agent 能做更智能的上下文选择
+- 全本地 LLM：纯 npm 安装，零门槛，不需要 GPU
+- MCP-native 输出格式：<code>--json</code>、<code>--all --files --min-score</code> 等专为 Agent 设计</p>
+<p>泡沫点： 竞品（pagefind、ripgrep + LLM）成熟后差异化会缩小；不支持多用户协作；index 更新成本随文档量增长。</p>
+<p>评分：
+- 热度质量：7 | 技术创新度：7 | 工程成熟度：7 | 架构启发价值：8
+- 企业落地潜力：5 | 中期趋势概率：7 | 平台化潜力：4 | 基础设施潜力：6
+- <strong>总分：51/80</strong></p>
+<p>归类：<strong>工具型 | 建议持续跟踪</strong></p>
+<h3 id="litert-lm-google-llm-483-starsday">LiteRT-LM — Google 生产级端侧 LLM 推理框架（483 stars/day）</h3>
+<p>做什么： Google 的生产级端侧 LLM 推理框架，C++ 高性能，跨 Android/iOS/Web/桌面/IoT/Raspberry Pi。已在 Chrome、Chromebook Plus、Pixel Watch 生产落地。Gemma 4 端侧部署，工具调用（Function Calling）支持。</p>
+<p>为什么值得关注： 端侧 LLM 推理不再是 Demo，开始进入真实产品。LiteRT-LM 是 Google AI Edge 生态的核心基础设施，与 google-ai-edge/gallery（端侧 ML 展示 App）共同构成完整生态。</p>
+<p>泡沫点： Google 内部项目，外部生态建设尚需时间；与竞品（llama.cpp、MLC-LLM）的差异化在于 Google 生态绑定。</p>
 <hr />
 <h2 id="3">今日最值得跟踪的 3 个方向</h2>
 <ol>
-<li><strong>Multi-Agent Orchestration 团队化</strong>：oh-my-claudecode 代表以"团队"为原子的新范式。Claude Code 正在变成 Multi-Agent 开发平台，这个方向值得关注。</li>
-<li><strong>AI Agent 记忆与自进化</strong>：hermes-agent 的 Skill 自进化机制是少数真正触及"Agent 学习"核心的项目。</li>
-<li><strong>Voice AI 基础设施化</strong>：VibeVoice-ASR 进 HuggingFace Transformers 意味着 Voice AI 正在成为标准基础设施组件。</li>
+<li><strong>MCP 协议扩散</strong>：GitNexus、qmd、hermes-agent 三路 MCP，协议层基础设施地位确立。MCP 正在从"AI Agent 协议"演化为"AI Native 应用协议层"。</li>
+<li><strong>端侧 LLM 推理生产化</strong>：LiteRT-LM 已在 Chrome/Pixel Watch 落地，Gemma 4 端侧部署，Function Calling 支持。端侧推理不再是 Demo。</li>
+<li><strong>AI Agent 记忆系统</strong>：hermes-agent（Skill 自进化）、qmd（本地文档搜索）代表两种不同的 Agent 记忆路径，值得对比研究。</li>
 </ol>
-<hr />
 <h2 id="1">今日最值得关注的 1 个潜力基础设施项目</h2>
-<p><strong>hermes-agent</strong></p>
-<p>理由：它解决的是 AI Agent 的记忆与自进化问题，这是构建任何有长期价值的企业 AI Agent 平台必须解决的核心问题。Skill 自进化 + 多会话 FTS5 检索 + Honcho 用户建模，这套组合在开源生态中独一无二。部署灵活性（$5 VPS 到 Modal serverless）和多 Provider 路由降低了落地门槛。最值得关注的是它正在吸收 OpenClaw 的用户和设计理念，意味着它可能在"Personal AI Agent 平台"这个赛道上形成事实标准。</p>
-<hr />
-<h2 id="_5">本次新增项目档案</h2>
-<ul>
-<li><code>/projects/oh-my-claudecode.md</code></li>
-<li><code>/projects/hermes-agent.md</code></li>
-<li><code>/projects/VibeVoice.md</code></li>
-<li><code>/projects/shannon.md</code></li>
-</ul>
-<hr />
-<p><em>报告生成时间：2026-04-07 10:48 CST</em></p>
+<p><strong>GitNexus</strong></p>
+<p>理由：它解决的是 AI Coding Agent 的结构感知问题，这是当前 AI 编程工具最核心的痛点之一。知识图谱 + MCP 原生集成 + Enterprise 级功能，让它从"Demo"直接跳到"产品级"。如果 MCP 协议成为标准，它就是 AI Coding Agent 的"感知层基础设施"。值得深挖，值得做 PoC。</p>
     </div>
 </main>
     <footer class="footer">

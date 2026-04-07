@@ -1,3 +1,18 @@
+---
+category: 工具型
+date_added: '2026-04-07'
+emoji: 📄
+github_url: https://github.com/qmd-project/qmd
+mcp: true
+poc_recommend: false
+score: 51
+stars_per_day: 394
+summary: 本地 CLI 文档搜索引擎，BM25 + 向量 + LLM 重排，全本地跑 GGUF 模型。
+tech_stack: TypeScript
+title: qmd
+total_stars: 18.8k
+---
+
 # qmd — 本地 CLI 搜索引擎
 
 > 2026-04-07 新增跟踪

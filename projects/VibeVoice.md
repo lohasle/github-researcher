@@ -1,3 +1,18 @@
+---
+category: 生产可用
+date_added: '2026-04-07'
+emoji: 🎙️
+github_url: https://github.com/yyuueexxiinngg/VibeVoice
+mcp: false
+poc_recommend: false
+score: 50
+stars_per_day: 0
+summary: 微软 Voice AI，ASR 进 HuggingFace Transformers，Voice AI 正在成为标准基础设施组件。
+tech_stack: Python
+title: VibeVoice
+total_stars: 36.9k
+---
+
 # VibeVoice
 
 > Open-Source Frontier Voice AI — Microsoft

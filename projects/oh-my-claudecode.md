@@ -1,3 +1,18 @@
+---
+category: 平台候选
+date_added: '2026-04-07'
+emoji: 👥
+github_url: https://github.com/tycrek/oh-my-claudecode
+mcp: false
+poc_recommend: false
+score: 56
+stars_per_day: 7832
+summary: 以团队为原子的 Multi-Agent 编排平台，多 Provider 路由 + 流水线自愈。
+tech_stack: TypeScript
+title: oh-my-claudecode
+total_stars: 17.6k
+---
+
 # oh-my-claudecode
 
 > Teams-first Multi-agent orchestration for Claude Code

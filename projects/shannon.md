@@ -1,3 +1,18 @@
+---
+category: 泡沫型
+date_added: '2026-04-07'
+emoji: 🔐
+github_url: ''
+mcp: false
+poc_recommend: false
+score: 42
+stars_per_day: 733
+summary: AI 渗透测试工具，关注技术思路即可。
+tech_stack: TypeScript
+title: shannon
+total_stars: 未知
+---
+
 # shannon
 
 > Shannon Lite — Autonomous white-box AI pentester

@@ -113,6 +113,68 @@ description: GitHub 趋势研究助理，为资深软件架构师提供开源生
 /README.md                    # 仓库总览
 ```
 
+### Frontmatter 规范（必须遵循）
+
+所有 Markdown 文件必须在文件开头包含 YAML frontmatter，用于结构化数据抽取：
+
+#### 日报 frontmatter
+```yaml
+---
+title: "YYYY-MM-DD GitHub 趋势研究简报（版本号）"
+date: YYYY-MM-DD
+version: "v2"
+summary: "本日核心趋势，一句话概括"
+hero_badge: "持续更新中 · YYYY-MM-DD"
+stats:
+  project_count: 6
+  daily_updates: 1
+  core_directions: 3
+  weekly_stars: "4.2k"
+trends:
+  - rank: 1
+    name: "趋势名称"
+    projects: ["project-a", "project-b"]
+    score: 60
+  - rank: 2
+    name: "另一趋势"
+    projects: ["project-c"]
+    score: 58
+key_projects:
+  - name: "ProjectName"
+    emoji: "🧠"
+    stars: "857 stars/day"
+    desc: "一句话描述"
+    category: "基础设施"
+    tags: ["MCP", "值得 PoC"]
+    score: 60
+    href: "projects/ProjectName.html"
+---
+```
+
+#### 项目档案 frontmatter
+```yaml
+---
+title: "ProjectName"
+emoji: "🧠"
+category: "基础设施候选"
+score: 60
+stars_per_day: 857
+total_stars: "23.6k"
+tech_stack: "TypeScript"
+mcp: true
+poc_recommend: true
+summary: "一句话描述项目核心价值"
+date_added: YYYY-MM-DD
+github_url: "https://github.com/user/repo"
+---
+```
+
+#### 关键规则
+- `title`、`date`、`summary` 是**必填字段**，缺失会导致 HTML 引擎无法填充页面
+- `stats`、`trends`、`key_projects` 用于首页数据展示，缺失时页面会显示默认值
+- frontmatter 之后才能接正文内容（中间用 `---` 分隔）
+- 后续每次生成/更新文档时，必须同步更新 frontmatter 中的结构化数据
+
 ## 每日工作流程
 
 1. 抓取 GitHub Trending 页面

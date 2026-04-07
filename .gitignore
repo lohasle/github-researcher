@@ -39,3 +39,8 @@ HEARTBEAT.md
 
 # OpenClaw 工作区配置（按需）
 .openclaw/
+
+# Clawhub (third-party skills)
+.clawhub/
+skills/ui-ux-pro-max/
+

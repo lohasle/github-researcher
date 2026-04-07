@@ -1,3 +1,9 @@
+---
+date: '2026-04-07'
+summary: GitHub 趋势项目排名变化追踪，持续更新
+title: Trend Index — 趋势指数
+---
+
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正

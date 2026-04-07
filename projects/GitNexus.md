@@ -1,3 +1,18 @@
+---
+category: 基础设施候选
+date_added: '2026-04-07'
+emoji: 🧠
+github_url: https://github.com/abhigyanpatwari/GitNexus
+mcp: true
+poc_recommend: true
+score: 60
+stars_per_day: 857
+summary: 代码知识图谱 + MCP Server，AI Coding Agent 的感知层基础设施。CLI 一键索引，零配置接入 Claude Code/Cursor。
+tech_stack: TypeScript
+title: GitNexus
+total_stars: 23.6k
+---
+
 # GitNexus — 代码知识图谱 + MCP Server
 
 > 2026-04-07 新增深度跟踪

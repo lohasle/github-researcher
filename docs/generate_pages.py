@@ -182,15 +182,15 @@ CSS = '''    <style>
 
 NAV = '''    <nav class="nav">
         <div class="nav-inner">
-            <a href="index.html" class="nav-brand">
+            <a href="/github-researcher/index.html" class="nav-brand">
                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
                 GitHub 趋势研究
             </a>
             <div class="nav-links">
-                <a href="index.html" id="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>首页</span></a>
-                <a href="daily.html" id="nav-daily"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg><span>日报</span></a>
-                <a href="projects.html" id="nav-projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
-                <a href="trends.html" id="nav-trends"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>趋势</span></a>
+                <a href="/github-researcher/index.html" id="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>首页</span></a>
+                <a href="/github-researcher/daily.html" id="nav-daily"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg><span>日报</span></a>
+                <a href="/github-researcher/projects.html" id="nav-projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
+                <a href="/github-researcher/trends.html" id="nav-trends"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>趋势</span></a>
             </div>
         </div>
     </nav>'''
@@ -322,7 +322,7 @@ def generate_index():
         href = p.get('href', f"projects/{name.replace(' ', '-')}.html")
         tag_html = ''.join([f'<span class="tag {tag_class(t)}">{t}</span>' for t in tags[:3]])
         project_cards += f'''
-                <a href="{href}" class="card">
+                <a href="/github-researcher/{href}" class="card">
                     <div class="card-top">
                         <div class="card-emoji">{emoji}</div>
                         <div class="card-stars">{stars}</div>
@@ -374,11 +374,11 @@ def generate_index():
             <h1>GitHub 趋势研究</h1>
             <p>{summary}</p>
             <div class="hero-actions">
-                <a href="{daily_date_filename}" class="btn-primary">
+                <a href="/github-researcher/{daily_date_filename}" class="btn-primary">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
                     今日简报
                 </a>
-                <a href="projects.html" class="btn-secondary">
+                <a href="/github-researcher/projects.html" class="btn-secondary">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="14" y="0" width="7" height="7"/><rect x="0" y="14" width="7" height="7"/></svg>
                     重点项目
                 </a>
@@ -390,7 +390,7 @@ def generate_index():
             <div class="brief-date">{brief_date}</div>
             <h2 class="brief-title">{brief_title}</h2>
             <p class="brief-text">{brief_text}</p>
-            <a href="{daily_date_filename}" class="brief-cta">阅读完整简报 →</a>
+            <a href="/github-researcher/{daily_date_filename}" class="brief-cta">阅读完整简报 →</a>
         </section>
         <section>
             <div class="section-header">
@@ -398,7 +398,7 @@ def generate_index():
                     <div class="icon">⭐</div>
                     重点跟踪项目
                 </div>
-                <a href="projects.html" class="section-link">查看全部 →</a>
+                <a href="/github-researcher/projects.html" class="section-link">查看全部 →</a>
             </div>
             <div class="card-grid">{project_cards}
             </div>
@@ -409,7 +409,7 @@ def generate_index():
                     <div class="icon">📈</div>
                     趋势热榜
                 </div>
-                <a href="trends.html" class="section-link">完整趋势表 →</a>
+                <a href="/github-researcher/trends.html" class="section-link">完整趋势表 →</a>
             </div>
             <div class="trend-list">{trend_rows}
             </div>
@@ -422,14 +422,14 @@ def generate_index():
                 </div>
             </div>
             <div class="category-row">
-                <a href="projects.html" class="category-pill"><span class="emoji">🤖</span> AI Agent / Multi-Agent</a>
-                <a href="projects.html" class="category-pill"><span class="emoji">⚡</span> LLM Infra / MCP / AI Runtime</a>
-                <a href="projects.html" class="category-pill"><span class="emoji">🛠️</span> 开发工具链 / IDE / Copilot</a>
-                <a href="projects.html" class="category-pill"><span class="emoji">🌐</span> 前端框架 / Serverless / Edge</a>
-                <a href="projects.html" class="category-pill"><span class="emoji">☸️</span> 云原生 / K8s / Service Mesh</a>
-                <a href="projects.html" class="category-pill"><span class="emoji">🔄</span> 自动化 / Browser Use / RPA+AI</a>
-                <a href="projects.html" class="category-pill"><span class="emoji">💾</span> 数据基础设施 / RAG / 向量 DB</a>
-                <a href="projects.html" class="category-pill"><span class="emoji">🔌</span> 基础设施标准 / 平台潜力</a>
+                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🤖</span> AI Agent / Multi-Agent</a>
+                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">⚡</span> LLM Infra / MCP / AI Runtime</a>
+                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🛠️</span> 开发工具链 / IDE / Copilot</a>
+                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🌐</span> 前端框架 / Serverless / Edge</a>
+                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">☸️</span> 云原生 / K8s / Service Mesh</a>
+                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔄</span> 自动化 / Browser Use / RPA+AI</a>
+                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">💾</span> 数据基础设施 / RAG / 向量 DB</a>
+                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔌</span> 基础设施标准 / 平台潜力</a>
             </div>
         </section>
 </main>
@@ -461,7 +461,7 @@ def generate_daily_list():
         rows += f'''        <tr>
             <td style="font-weight:600;">{date}</td>
             <td>{topic}</td>
-            <td><a href="daily/{date}.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
+            <td><a href="/github-researcher/daily/{date}.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
         </tr>
 '''
     
@@ -558,7 +558,7 @@ def generate_daily_page(filepath):
 <body>
 {NAV.replace('id="nav-daily"', 'id="nav-daily" class="active"')}
 <main class="container">
-    <a href="daily.html" class="back-link">← 返回日报索引</a>
+    <a href="/github-researcher/daily.html" class="back-link">← 返回日报索引</a>
     <div class="daily-content">
         {html_body}
     </div>
@@ -600,7 +600,7 @@ def generate_projects_list():
         
         tag_html = ''.join([f'<span class="tag {tag_class(t)}">{t}</span>' for t in tags[:2]])
         
-        cards += f'''                <a href="{href}" class="card">
+        cards += f'''                <a href="/github-researcher/{href}" class="card">
                     <div class="card-top">
                         <div class="card-emoji">{emoji}</div>
                         <div class="trend-score {"high" if score_int >= 55 else ""}" style="font-size:13px;padding:4px 12px;">{score}/80</div>
@@ -690,7 +690,7 @@ def generate_project_page(filepath):
 <body>
 {NAV.replace('id="nav-projects"', 'id="nav-projects" class="active"')}
 <main class="container">
-    <a href="projects.html" class="back-link">← 返回重点项目</a>
+    <a href="/github-researcher/projects.html" class="back-link">← 返回重点项目</a>
     <div class="project-content">
         {html_body}
     </div>

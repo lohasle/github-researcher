@@ -205,16 +205,16 @@ def parse_frontmatter(content):
     """Parse YAML frontmatter from markdown content."""
     if not content.startswith('---'):
         return {}, content
-    
+
     parts = content.split('---', 2)
     if len(parts) < 3:
         return {}, content
-    
+
     try:
         fm = yaml.safe_load(parts[1]) or {}
     except:
         fm = {}
-    
+
     return fm, parts[2]
 
 
@@ -238,14 +238,14 @@ def tag_class(tag):
 def generate_index():
     # Read latest daily
     daily_files = sorted(glob.glob(os.path.join(DAILY_DIR, '*.md')), reverse=True)
-    
+
     latest_daily_fm = {}
     latest_daily_content = ''
     if daily_files:
         with open(daily_files[0], 'r') as f:
             content = f.read()
         latest_daily_fm, latest_daily_content = parse_frontmatter(content)
-    
+
     # Read all projects for key_projects
     project_files = sorted(glob.glob(os.path.join(PROJECTS_DIR, '*.md')))
     all_projects = []
@@ -256,27 +256,27 @@ def generate_index():
         if fm:
             fm['href'] = fm.get('href', f"projects/{os.path.basename(pf).replace('.md', '.html')}")
             all_projects.append(fm)
-    
+
     # Use frontmatter data or provide defaults
     title = get_fm(latest_daily_fm, 'title', 'GitHub 趋势研究')
     summary = get_fm(latest_daily_fm, 'summary', '持续跟踪 GitHub 热门项目与开源趋势')
     hero_badge = get_fm(latest_daily_fm, 'hero_badge', '持续更新中')
     date_str = get_fm(latest_daily_fm, 'date', datetime.now().strftime('%Y-%m-%d'))
-    
+
     stats = get_fm(latest_daily_fm, 'stats', {
         'project_count': len(all_projects),
         'daily_updates': 1,
         'core_directions': 3,
         'weekly_stars': '4.2k'
     })
-    
+
     trends = get_fm(latest_daily_fm, 'trends', [
         {'rank': 1, 'name': 'Multi-Agent Orchestration', 'projects': ['hermes-agent'], 'score': 60},
         {'rank': 2, 'name': 'MCP 协议扩散', 'projects': ['GitNexus', 'qmd'], 'score': 58},
     ])
-    
+
     key_projects = get_fm(latest_daily_fm, 'key_projects', all_projects[:3])
-    
+
     # Stats HTML
     stats_html = f'''
             <div class="stat-card">
@@ -299,17 +299,17 @@ def generate_index():
                 <div class="stat-number">{stats.get('weekly_stars', '4.2k')}</div>
                 <div class="stat-label">本周总 Star 增速</div>
             </div>'''
-    
+
     # Brief card
     brief_date = f"📅 {date_str} · 今日核心判断"
     brief_title = summary
     # Dynamic brief_text from latest daily
     trends_latest = get_fm(latest_daily_fm, 'trends', [])
     top_trend = trends_latest[0]['name'] if trends_latest else summary
-    brief_text = summary + (f" 今日头条趋势：{top_trend}。" if trends_latest else "")
-    
+    brief_text = summary + (f" 今日头条趋势:{top_trend}。" if trends_latest else "")
+
     daily_date_filename = f"daily/{os.path.basename(daily_files[0]).replace('.md', '.html')}" if daily_files else 'daily/2026-04-07.html'
-    
+
     # Key projects cards
     project_cards = ''
     for p in key_projects[:3]:
@@ -322,7 +322,7 @@ def generate_index():
         category = p.get('category', '')
         tags = p.get('tags', [category]) if isinstance(p.get('tags'), list) else [category]
         score = p.get('score', 'N/A')
-        href = p.get('href', f"projects/{name.replace(' ', '-')}.html")
+        href = p.get('href', f"projects/{make_slug(name)}.html")
         tag_html = ''.join([f'<span class="tag {tag_class(t)}">{t}</span>' for t in tags[:3]])
         project_cards += f'''
                 <a href="/github-researcher/{href}" class="card">
@@ -334,7 +334,7 @@ def generate_index():
                     <div class="card-desc">{desc}</div>
                     <div class="card-tags">{tag_html}</div>
                 </a>'''
-    
+
     # Trend list
     trend_rows = ''
     for t in trends[:4]:
@@ -355,7 +355,7 @@ def generate_index():
                     </div>
                     <div class="trend-score {score_class}">{score_val}/80</div>
                 </div>'''
-    
+
     html = f'''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -439,7 +439,7 @@ def generate_index():
 {FOOTER}
 </body>
 </html>'''
-    
+
     os.makedirs(DOCS_DIR, exist_ok=True)
     with open(os.path.join(DOCS_DIR, 'index.html'), 'w') as f:
         f.write(html)
@@ -449,7 +449,7 @@ def generate_index():
 # === Generate daily listing ===
 def generate_daily_list():
     daily_files = sorted(glob.glob(os.path.join(DAILY_DIR, '*.md')), reverse=True)
-    
+
     rows = ''
     for f in daily_files:
         date = os.path.basename(f).replace('.md', '')
@@ -460,14 +460,14 @@ def generate_daily_list():
         summary = fm.get('summary', '')
         # Extract first line of summary
         topic = summary.split('。')[0] if summary else date
-        
+
         rows += f'''        <tr>
             <td style="font-weight:600;">{date}</td>
             <td>{topic}</td>
             <td><a href="/github-researcher/daily/{date}.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
         </tr>
 '''
-    
+
     html = f'''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -494,7 +494,7 @@ def generate_daily_list():
 <main class="container">
     <div class="page-header">
         <h1>📅 日报索引</h1>
-        <p>每日 GitHub 趋势研究简报，持续跟踪不间断</p>
+        <p>每日 GitHub 趋势研究简报,持续跟踪不间断</p>
     </div>
     <div class="daily-table">
         <table>
@@ -514,7 +514,7 @@ def generate_daily_list():
 {FOOTER}
 </body>
 </html>'''
-    
+
     with open(os.path.join(DOCS_DIR, 'daily.html'), 'w') as f:
         f.write(html)
     print(f"Generated daily.html with {len(daily_files)} entries")
@@ -523,15 +523,15 @@ def generate_daily_list():
 # === Generate individual daily page ===
 def generate_daily_page(filepath):
     date = os.path.basename(filepath).replace('.md', '')
-    
+
     with open(filepath, 'r') as f:
         content = f.read()
-    
+
     fm, body = parse_frontmatter(content)
     html_body = markdown.markdown(body, extensions=['tables', 'toc'])
-    
+
     title = fm.get('title', f'{date} 日报')
-    
+
     html = f'''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -569,7 +569,7 @@ def generate_daily_page(filepath):
 {FOOTER}
 </body>
 </html>'''
-    
+
     daily_html_dir = os.path.join(DOCS_DIR, 'daily')
     os.makedirs(daily_html_dir, exist_ok=True)
     with open(os.path.join(daily_html_dir, f'{date}.html'), 'w') as f:
@@ -581,6 +581,7 @@ def generate_daily_page(filepath):
 def aggregate_all_projects():
     """Merge projects from daily key_projects + projects/*.md, dedup by name."""
     merged = {}  # name -> project dict
+    merged_by_slug = {}  # slug -> project dict
 
     # 1. Read projects/*.md for detailed profiles
     for pf in sorted(glob.glob(os.path.join(PROJECTS_DIR, '*.md'))):
@@ -591,7 +592,10 @@ def aggregate_all_projects():
             continue
         key = fm.get('name', fm.get('title', os.path.basename(pf).replace('.md', '')))
         fm['_has_profile'] = True
+        fm['_profile_slug'] = make_slug(key)
         merged[key] = fm
+        # Also register by slug for cross-matching
+        merged_by_slug[fm['_profile_slug']] = fm
 
     # 2. Walk daily/*.md newest-first, merge key_projects
     for df in sorted(glob.glob(os.path.join(DAILY_DIR, '*.md')), reverse=True):
@@ -604,12 +608,17 @@ def aggregate_all_projects():
             key = p.get('name', '')
             if not key:
                 continue
-            # Update fields if project already exists, else create
-            if key in merged:
+            daily_slug = make_slug(key)
+            # Try to match with existing profile by name or slug
+            profile = merged.get(key) or merged_by_slug.get(daily_slug)
+            if profile:
                 for k, v in p.items():
-                    if v is not None and k not in ('_has_profile',):
-                        merged[key][k] = v
-                merged[key]['last_seen_date'] = date_str
+                    if v is not None and k not in ('_has_profile', '_profile_slug'):
+                        profile[k] = v
+                profile['last_seen_date'] = date_str
+                # If matched by slug but daily has a richer name, update key
+                if key not in merged and profile in merged.values():
+                    merged[key] = profile
             else:
                 p = dict(p)
                 p['last_seen_date'] = date_str
@@ -625,7 +634,7 @@ def generate_projects_list():
     all_projects = aggregate_all_projects()
     # Sort by last_seen_date desc
     all_projects.sort(key=lambda p: p.get('last_seen_date', ''), reverse=True)
-    
+
     cards = ''
     for p in all_projects:
         name = p.get('title', p.get('name', 'Unknown'))
@@ -638,7 +647,7 @@ def generate_projects_list():
         verdict = p.get('verdict', '')
         last_seen = p.get('last_seen_date', '')
         has_profile = p.get('_has_profile', False)
-        
+
         # Build tags from language + verdict + category
         tags = []
         if language:
@@ -650,17 +659,17 @@ def generate_projects_list():
             tags.append(category)
         if not tags:
             tags = ['项目']
-        
+
         # Build href: link to profile page if exists, else to the daily page where last seen
         if has_profile:
-            slug = name.replace(' ', '-').lower()
+            slug = make_slug(name)
             href = f"projects/{slug}.html"
         else:
             href = f"daily/{last_seen}.html"
-        
+
         tag_html = ''.join([f'<span class="tag {tag_class(t)}">{t}</span>' for t in tags[:3]])
         seen_html = f'<div style="font-size:12px;color:var(--text-muted);margin-top:4px;">最近出现: {last_seen}</div>' if last_seen else ''
-        
+
         cards += f'''                <a href="/github-researcher/{href}" class="card">
                     <div class="card-top">
                         <div class="card-emoji">{emoji}</div>
@@ -672,7 +681,7 @@ def generate_projects_list():
                     {seen_html}
                 </a>
 '''
-    
+
     html = f'''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -693,7 +702,7 @@ def generate_projects_list():
 <main class="container">
     <div class="page-header">
         <h1>⭐ 重点项目</h1>
-        <p>聚合自所有日报的深度分析项目，持续跟踪</p>
+        <p>聚合自所有日报的深度分析项目,持续跟踪</p>
     </div>
     <div class="card-grid">
 {cards}
@@ -702,7 +711,7 @@ def generate_projects_list():
 {FOOTER}
 </body>
 </html>'''
-    
+
     with open(os.path.join(DOCS_DIR, 'projects.html'), 'w') as f:
         f.write(html)
     print(f"Generated projects.html with {len(all_projects)} projects")
@@ -710,16 +719,17 @@ def generate_projects_list():
 
 # === Generate individual project page ===
 def generate_project_page(filepath):
-    name = os.path.basename(filepath).replace('.md', '')
-    
+    raw_name = os.path.basename(filepath).replace('.md', '')
+    slug = make_slug(raw_name)
+
     with open(filepath, 'r') as f:
         content = f.read()
-    
+
     fm, body = parse_frontmatter(content)
     html_body = markdown.markdown(body, extensions=['tables', 'toc'])
-    
-    title = fm.get('title', name)
-    
+
+    title = fm.get('title', raw_name)
+
     project_style = '''
     <style>
         .project-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 48px; box-shadow: var(--shadow); margin-bottom: 48px; max-width: 860px; margin-left: auto; margin-right: auto; }
@@ -738,7 +748,7 @@ def generate_project_page(filepath):
         .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 24px; }
         .back-link:hover { text-decoration: underline; }
     </style>'''
-    
+
     html = f'''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -760,12 +770,12 @@ def generate_project_page(filepath):
 {FOOTER}
 </body>
 </html>'''
-    
+
     proj_html_dir = os.path.join(DOCS_DIR, 'projects')
     os.makedirs(proj_html_dir, exist_ok=True)
-    with open(os.path.join(proj_html_dir, f'{name}.html'), 'w') as f:
+    with open(os.path.join(proj_html_dir, f'{slug}.html'), 'w') as f:
         f.write(html)
-    print(f"Generated projects/{name}.html")
+    print(f"Generated projects/{slug}.html")
 
 
 def make_slug(name):
@@ -782,7 +792,7 @@ def generate_minimal_project_page(name, data, date_str):
     proj_html_dir = os.path.join(DOCS_DIR, 'projects')
     os.makedirs(proj_html_dir, exist_ok=True)
     filepath = os.path.join(proj_html_dir, f'{slug}.html')
-    
+
     url = data.get('url', '')
     desc = data.get('description', data.get('desc', ''))
     language = data.get('language', '')
@@ -790,14 +800,14 @@ def generate_minimal_project_page(name, data, date_str):
     stars_delta = data.get('stars_delta', '')
     analysis = data.get('analysis', '')
     verdict = data.get('verdict', '')
-    
+
     tags = []
     if language:
         tags.append(language)
     if verdict and '⭐' in verdict:
         tags.append('重点跟踪')
     tag_html = ''.join([f'<span class="tag {tag_class(t)}">{t}</span>' for t in tags])
-    
+
     meta_lines = ''
     if stars:
         meta_lines += f'<p><strong>Stars:</strong> {stars}</p>'
@@ -811,16 +821,16 @@ def generate_minimal_project_page(name, data, date_str):
         meta_lines += f'<p><strong>判断:</strong> {verdict}</p>'
     if date_str:
         meta_lines += f'<p><strong>来源日报:</strong> <a href="/github-researcher/daily/{date_str}.html">{date_str}</a></p>'
-    
+
     analysis_html = f'<h2>分析</h2>\n<p>{analysis}</p>' if analysis else ''
-    
+
     body_html = f'''<h1>{name}</h1>
 <div class="card-tags" style="margin-bottom:20px;">{tag_html}</div>
 {meta_lines}
 <h2>简介</h2>
 <p>{desc}</p>
 {analysis_html}'''
-    
+
     html = f'''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -850,7 +860,7 @@ def generate_minimal_project_page(name, data, date_str):
 {FOOTER}
 </body>
 </html>'''
-    
+
     with open(filepath, 'w') as f:
         f.write(html)
     print(f"  Generated minimal project page: projects/{slug}.html")
@@ -860,20 +870,20 @@ def generate_minimal_project_page(name, data, date_str):
 # === Generate trends page ===
 def generate_trends():
     daily_files = sorted(glob.glob(os.path.join(DAILY_DIR, '*.md')), reverse=True)
-    
+
     # Build set of existing project slugs from projects/*.md
     existing_slugs = set()
     for pf in glob.glob(os.path.join(PROJECTS_DIR, '*.md')):
-        existing_slugs.add(os.path.basename(pf).replace('.md', ''))
-    
+        existing_slugs.add(make_slug(os.path.basename(pf).replace('.md', '')))
+
     # Also check docs/projects/*.html for already-generated minimal pages
     existing_html_slugs = set()
     for pf in glob.glob(os.path.join(DOCS_DIR, 'projects', '*.html')):
-        existing_html_slugs.add(os.path.basename(pf).replace('.html', ''))
-    
+        existing_html_slugs.add(make_slug(os.path.basename(pf).replace('.html', '')))
+
     date_sections = ''
     idx = 0
-    
+
     for df in daily_files:
         date_str = os.path.basename(df).replace('.md', '')
         with open(df, 'r') as f:
@@ -882,7 +892,7 @@ def generate_trends():
         summary = fm.get('summary', '')
         trends = fm.get('trends', []) or []
         key_projects = fm.get('key_projects', []) or []
-        
+
         is_first = (idx == 0)
         date_sections += f'''
         <div class="date-section">
@@ -895,7 +905,7 @@ def generate_trends():
             </div>
             <div class="date-trends" id="ds-{date_str}" style="{'display:block;' if is_first else 'display:none;'}">
 '''
-        
+
         # Trend directions
         if trends:
             date_sections += '<div style="margin-bottom:16px;">'
@@ -915,7 +925,7 @@ def generate_trends():
                     <div class="trend-score {score_class}">{score_val}/80</div>
                 </div>'''
             date_sections += '</div>'
-        
+
         # Key projects as cards
         if key_projects:
             date_sections += '<div class="section-title" style="margin-bottom:12px;"><span>🎯 重点项目</span></div>\n'
@@ -927,12 +937,12 @@ def generate_trends():
                 language = p.get('language', '')
                 stars = p.get('stars', p.get('stars_delta', ''))
                 verdict = p.get('verdict', '')
-                
+
                 # Check if project page exists
                 if slug not in existing_slugs and slug not in existing_html_slugs:
                     generate_minimal_project_page(pname, p, date_str)
                     existing_html_slugs.add(slug)
-                
+
                 tags = []
                 if language:
                     tags.append(language)
@@ -941,7 +951,7 @@ def generate_trends():
                 if not tags:
                     tags = ['项目']
                 tag_html = ''.join([f'<span class="tag {tag_class(t)}">{t}</span>' for t in tags[:3]])
-                
+
                 date_sections += f'''
                 <a href="/github-researcher/projects/{slug}.html" class="card">
                     <div class="card-top">
@@ -953,13 +963,13 @@ def generate_trends():
                     <div class="card-tags">{tag_html}</div>
                 </a>'''
             date_sections += '</div>\n'
-        
+
         date_sections += '''
             </div>
         </div>
 '''
         idx += 1
-    
+
     toggle_js = '''
     <script>
     function toggleSection(id) {
@@ -975,7 +985,7 @@ def generate_trends():
     }
     </script>
 '''
-    
+
     html = f'''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -1011,7 +1021,7 @@ def generate_trends():
 {toggle_js}
 </body>
 </html>'''
-    
+
     with open(os.path.join(DOCS_DIR, 'trends.html'), 'w') as f:
         f.write(html)
     print(f"Generated trends.html with {len(daily_files)} daily entries")
@@ -1022,14 +1032,14 @@ if __name__ == '__main__':
     print("Generating GitHub Pages HTML...")
     generate_index()
     generate_daily_list()
-    
+
     for df in sorted(glob.glob(os.path.join(DAILY_DIR, '*.md'))):
         generate_daily_page(df)
-    
+
     generate_projects_list()
-    
+
     for pf in sorted(glob.glob(os.path.join(PROJECTS_DIR, '*.md'))):
         generate_project_page(pf)
-    
+
     generate_trends()
     print("Done! All HTML pages generated.")

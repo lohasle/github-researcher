@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>趋势追踪 | GitHub 趋势研究</title>
+    <title>趋势时间线 | GitHub 趋势研究</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📈</text></svg>">
     <style>
         :root {
@@ -176,14 +176,7 @@
         .date-summary { flex: 1; font-size: 14px; color: var(--text); font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
         .date-arrow { color: var(--text-muted); font-size: 12px; }
         .date-trends { padding: 0 20px 16px; }
-        .trend-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 36px 40px; box-shadow: var(--shadow); margin-bottom: 48px; }
-        .trend-content table { border-collapse: collapse; width: 100%; }
-        .trend-content th, .trend-content td { border: 1px solid var(--border); padding: 10px 14px; text-align: left; font-size: 14px; }
-        .trend-content th { background: linear-gradient(135deg, var(--primary-dark), var(--primary)); color: white; font-weight: 600; font-size: 13px; }
-        .trend-content tr:nth-child(even) td { background: var(--bg); }
-        .trend-content h1, .trend-content h2, .trend-content h3 { color: var(--primary); margin-top: 24px; margin-bottom: 12px; }
-        .trend-content p { margin-bottom: 12px; }
-        .trend-content ul { padding-left: 20px; margin-bottom: 12px; }
+        .section-title { display: flex; align-items: center; gap: 10px; font-size: 16px; font-weight: 700; color: var(--text); }
     </style>
 </head>
 <body>
@@ -203,8 +196,8 @@
     </nav>
 <main class="container">
     <div class="page-header">
-        <h1>📈 趋势追踪</h1>
-        <p>按日期浏览每日趋势排名 · 点击展开查看详情</p>
+        <h1>📈 Trend Timeline</h1>
+        <p>按日期浏览每日 GitHub 趋势研究报告</p>
     </div>
 
         <div class="date-section">
@@ -216,42 +209,100 @@
                 </div>
             </div>
             <div class="date-trends" id="ds-2026-04-08" style="display:block;">
-
+<div style="margin-bottom:16px;">
                 <div class="trend-item">
                     <div class="trend-rank top">1</div>
                     <div class="trend-content">
                         <div class="trend-title">AI Coding Agent 生态爆发</div>
-                        <div class="trend-meta">claw-code · oh-my-codex · oh-my-claudecode</div>
                     </div>
                     <div class="trend-score high">70/80</div>
                 </div>
-
                 <div class="trend-item">
                     <div class="trend-rank top">2</div>
                     <div class="trend-content">
                         <div class="trend-title">Edge AI / 端侧推理生产化</div>
-                        <div class="trend-meta">LiteRT · google-ai-edge/gallery · Gemma-4</div>
                     </div>
                     <div class="trend-score high">62/80</div>
                 </div>
-
                 <div class="trend-item">
                     <div class="trend-rank ">3</div>
                     <div class="trend-content">
                         <div class="trend-title">MCP 协议基础设施化</div>
-                        <div class="trend-meta">hermes-agent · GitNexus · qmd</div>
                     </div>
                     <div class="trend-score high">55/80</div>
                 </div>
-
                 <div class="trend-item">
                     <div class="trend-rank ">4</div>
                     <div class="trend-content">
                         <div class="trend-title">Voice AI 组件化</div>
-                        <div class="trend-meta">VibeVoice</div>
                     </div>
                     <div class="trend-score ">48/80</div>
-                </div>
+                </div></div><div class="section-title" style="margin-bottom:12px;"><span>🎯 重点项目</span></div>
+<div class="card-grid" style="animation:none;margin-bottom:8px;">
+
+                <a href="/github-researcher/projects/claw-code.html" class="card">
+                    <div class="card-top">
+                        <div class="card-emoji">📦</div>
+                        <div class="card-stars">168.7k</div>
+                    </div>
+                    <div class="card-title">claw-code (ultraworkers)</div>
+                    <div class="card-desc">史上最快突破 100K stars 的项目。Rust 构建，基于 oh-my-codex 生态，自主维护（非人工）。</div>
+                    <div class="card-tags"><span class="tag tag-purple">Rust</span><span class="tag tag-purple">重点跟踪</span></div>
+                </a>
+                <a href="/github-researcher/projects/oh-my-codex.html" class="card">
+                    <div class="card-top">
+                        <div class="card-emoji">📦</div>
+                        <div class="card-stars">18k</div>
+                    </div>
+                    <div class="card-title">oh-my-codex</div>
+                    <div class="card-desc">Claude Code 的 Codex 版本，AI Coding Agent 编排工具。</div>
+                    <div class="card-tags"><span class="tag tag-purple">TypeScript</span></div>
+                </a>
+                <a href="/github-researcher/projects/hermes-agent.html" class="card">
+                    <div class="card-top">
+                        <div class="card-emoji">📦</div>
+                        <div class="card-stars">28k</div>
+                    </div>
+                    <div class="card-title">hermes-agent</div>
+                    <div class="card-desc">Skill 自进化 + 多会话记忆的 AI Agent 框架，内置 MCP Gateway。</div>
+                    <div class="card-tags"><span class="tag tag-purple">TypeScript</span><span class="tag tag-purple">重点跟踪</span></div>
+                </a>
+                <a href="/github-researcher/projects/vibevoice.html" class="card">
+                    <div class="card-top">
+                        <div class="card-emoji">📦</div>
+                        <div class="card-stars">37k</div>
+                    </div>
+                    <div class="card-title">VibeVoice</div>
+                    <div class="card-desc">微软 Voice AI 项目，ASR 已进入 HuggingFace Transformers 主线。</div>
+                    <div class="card-tags"><span class="tag tag-purple">Python</span></div>
+                </a>
+                <a href="/github-researcher/projects/litert.html" class="card">
+                    <div class="card-top">
+                        <div class="card-emoji">📦</div>
+                        <div class="card-stars">2k+</div>
+                    </div>
+                    <div class="card-title">LiteRT (google-ai-edge)</div>
+                    <div class="card-desc">Google 端侧 ML 框架，TensorFlow Lite 继任者。已在 Chrome、Pixel Watch 等生产环境落地。</div>
+                    <div class="card-tags"><span class="tag tag-purple">C++</span></div>
+                </a>
+                <a href="/github-researcher/projects/gitnexus.html" class="card">
+                    <div class="card-top">
+                        <div class="card-emoji">📦</div>
+                        <div class="card-stars">23.6k</div>
+                    </div>
+                    <div class="card-title">GitNexus</div>
+                    <div class="card-desc">代码知识图谱 + MCP Server，为 AI Coding Agent 提供代码库感知层。</div>
+                    <div class="card-tags"><span class="tag tag-purple">TypeScript</span></div>
+                </a>
+                <a href="/github-researcher/projects/claw-code-parity.html" class="card">
+                    <div class="card-top">
+                        <div class="card-emoji">📦</div>
+                        <div class="card-stars">新项目</div>
+                    </div>
+                    <div class="card-title">claw-code-parity (ultraworkers)</div>
+                    <div class="card-desc">claw-code 的重写版本，自主维护。</div>
+                    <div class="card-tags"><span class="tag tag-purple">Rust</span></div>
+                </a></div>
 
             </div>
         </div>
@@ -265,248 +316,94 @@
                 </div>
             </div>
             <div class="date-trends" id="ds-2026-04-07" style="display:none;">
-
+<div style="margin-bottom:16px;">
                 <div class="trend-item">
                     <div class="trend-rank top">1</div>
                     <div class="trend-content">
                         <div class="trend-title">Multi-Agent Orchestration 团队化</div>
-                        <div class="trend-meta">oh-my-claudecode · hermes-agent · VibeVoice</div>
                     </div>
                     <div class="trend-score high">60/80</div>
                 </div>
-
                 <div class="trend-item">
                     <div class="trend-rank top">2</div>
                     <div class="trend-content">
                         <div class="trend-title">MCP 协议扩散</div>
-                        <div class="trend-meta">GitNexus · qmd · hermes-agent</div>
                     </div>
                     <div class="trend-score high">58/80</div>
                 </div>
-
                 <div class="trend-item">
                     <div class="trend-rank ">3</div>
                     <div class="trend-content">
                         <div class="trend-title">端侧 LLM 推理生产化</div>
-                        <div class="trend-meta">LiteRT-LM · Gemma-4</div>
                     </div>
                     <div class="trend-score ">52/80</div>
                 </div>
-
                 <div class="trend-item">
                     <div class="trend-rank ">4</div>
                     <div class="trend-content">
                         <div class="trend-title">AI Agent 记忆系统</div>
-                        <div class="trend-meta">hermes-agent · qmd</div>
                     </div>
                     <div class="trend-score ">48/80</div>
-                </div>
+                </div></div><div class="section-title" style="margin-bottom:12px;"><span>🎯 重点项目</span></div>
+<div class="card-grid" style="animation:none;margin-bottom:8px;">
+
+                <a href="/github-researcher/projects/gitnexus.html" class="card">
+                    <div class="card-top">
+                        <div class="card-emoji">📦</div>
+                        <div class="card-stars">857 stars/day</div>
+                    </div>
+                    <div class="card-title">GitNexus</div>
+                    <div class="card-desc">代码知识图谱 + MCP Server，AI Coding Agent 的感知层基础设施</div>
+                    <div class="card-tags"><span class="tag tag-purple">项目</span></div>
+                </a>
+                <a href="/github-researcher/projects/hermes-agent.html" class="card">
+                    <div class="card-top">
+                        <div class="card-emoji">📦</div>
+                        <div class="card-stars">1,574 stars/day</div>
+                    </div>
+                    <div class="card-title">hermes-agent</div>
+                    <div class="card-desc">Agent 自进化 + 跨会话记忆系统，触及 Agent 学习核心</div>
+                    <div class="card-tags"><span class="tag tag-purple">项目</span></div>
+                </a>
+                <a href="/github-researcher/projects/oh-my-claudecode.html" class="card">
+                    <div class="card-top">
+                        <div class="card-emoji">📦</div>
+                        <div class="card-stars">7,832 stars/day</div>
+                    </div>
+                    <div class="card-title">oh-my-claudecode</div>
+                    <div class="card-desc">以团队为原子的 Multi-Agent 编排平台</div>
+                    <div class="card-tags"><span class="tag tag-purple">项目</span></div>
+                </a>
+                <a href="/github-researcher/projects/qmd.html" class="card">
+                    <div class="card-top">
+                        <div class="card-emoji">📦</div>
+                        <div class="card-stars">394 stars/day</div>
+                    </div>
+                    <div class="card-title">qmd</div>
+                    <div class="card-desc">本地文档搜索 + MCP 暴露，Agent 记忆基础设施</div>
+                    <div class="card-tags"><span class="tag tag-purple">项目</span></div>
+                </a>
+                <a href="/github-researcher/projects/vibevoice.html" class="card">
+                    <div class="card-top">
+                        <div class="card-emoji">📦</div>
+                        <div class="card-stars">高活跃</div>
+                    </div>
+                    <div class="card-title">VibeVoice</div>
+                    <div class="card-desc">微软 Voice AI，ASR 进 HuggingFace Transformers</div>
+                    <div class="card-tags"><span class="tag tag-purple">项目</span></div>
+                </a>
+                <a href="/github-researcher/projects/shannon.html" class="card">
+                    <div class="card-top">
+                        <div class="card-emoji">📦</div>
+                        <div class="card-stars">活跃</div>
+                    </div>
+                    <div class="card-title">shannon</div>
+                    <div class="card-desc">AI 渗透测试工具</div>
+                    <div class="card-tags"><span class="tag tag-purple">项目</span></div>
+                </a></div>
 
             </div>
         </div>
-
-
-    <div class="trend-content">
-        <h2 style="color:var(--primary);font-size:20px;margin-bottom:16px;">📋 趋势综合索引</h2>
-        <h1 id="trend-index">Trend Index — 趋势指数</h1>
-<blockquote>
-<p>记录项目排名、趋势变化、关键判断修正</p>
-</blockquote>
-<hr />
-<h2 id="2026-04-07">2026-04-07（第二版）</h2>
-<h3 id="_1">本日新增项目</h3>
-<table>
-<thead>
-<tr>
-<th>项目</th>
-<th>分类</th>
-<th>热度信号</th>
-<th>核心判断</th>
-<th>建议</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>GitNexus</td>
-<td>工具型/基础设施候选</td>
-<td>857/day, 23.6k stars</td>
-<td>代码知识图谱 + MCP Server，AI Coding Agent 感知层</td>
-<td><strong>值得深挖</strong></td>
-</tr>
-<tr>
-<td>qmd</td>
-<td>工具型</td>
-<td>394/day, 18.8k stars</td>
-<td>本地文档搜索 BM25+向量+LLaMA.cpp，MCP 暴露</td>
-<td>持续跟踪</td>
-</tr>
-<tr>
-<td>LiteRT-LM</td>
-<td>基础设施候选</td>
-<td>483/day, 2k stars</td>
-<td>Google 生产级端侧 LLM 推理，已在 Chrome/Gemini 等落地</td>
-<td>关注 Google AI Edge 生态</td>
-</tr>
-</tbody>
-</table>
-<h3 id="_2">持续跟踪项目（无重大变化）</h3>
-<table>
-<thead>
-<tr>
-<th>项目</th>
-<th>分类</th>
-<th>热度信号</th>
-<th>核心判断</th>
-<th>状态</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>hermes-agent</td>
-<td>基础设施候选</td>
-<td>9662/week, 28k stars</td>
-<td>Skill 自进化 + 多会话记忆，触及 Agent 核心问题</td>
-<td><strong>深度跟踪 + PoC</strong></td>
-</tr>
-<tr>
-<td>oh-my-claudecode</td>
-<td>平台候选</td>
-<td>7832/week, 25k stars</td>
-<td>团队化 Multi-Agent 编排，Claude Code 生态</td>
-<td>持续跟踪</td>
-</tr>
-<tr>
-<td>VibeVoice</td>
-<td>生产可用</td>
-<td>8392/week, 37k stars</td>
-<td>微软 Voice AI，ASR 已进 HF Transformers</td>
-<td>关注 ASR 部分</td>
-</tr>
-<tr>
-<td>shannon</td>
-<td>泡沫型/学习型</td>
-<td>733/day(?), 37k stars</td>
-<td>白盒渗透测试，真实攻击噱头大于实用</td>
-<td>不建议企业落地</td>
-</tr>
-<tr>
-<td>openscreen</td>
-<td>工具型</td>
-<td>14396/week, 24k stars</td>
-<td>开源 Screen Studio 替代，录制工具</td>
-<td>轻量级分享工具定位</td>
-</tr>
-<tr>
-<td>oh-my-codex</td>
-<td>工具型</td>
-<td>14247/week, 18k stars</td>
-<td>oh-my-claudecode 的 Codex 版本</td>
-<td>关注与 claude 版的融合可能</td>
-</tr>
-<tr>
-<td>google-ai-edge/gallery</td>
-<td>学习型</td>
-<td>1107/day, 18k stars</td>
-<td>端侧 ML 展示，非实际工具</td>
-<td>了解端侧 AI 能力边界</td>
-</tr>
-<tr>
-<td>onyx</td>
-<td>工具型</td>
-<td>5240/week, 26k stars</td>
-<td>开源 AI Chat 平台，任意 LLM</td>
-<td>差异化不明显，观察为主</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="_3">趋势信号总结</h2>
-<h3 id="multi-agent-orchestration">Multi-Agent Orchestration 爆发（持续）</h3>
-<ul>
-<li>oh-my-claudecode (7832/week)</li>
-<li>oh-my-codex (14247/week)</li>
-<li>hermes-agent (9662/week)</li>
-</ul>
-<p><strong>判断：</strong> 多 Agent 协作从概念走向工程化，以"团队"为原子的编排方式正在形成新范式。</p>
-<h3 id="voice-ai">Voice AI 基础设施化（持续）</h3>
-<ul>
-<li>VibeVoice (ASR 进 HuggingFace Transformers)</li>
-<li>Realtime TTS (0.5B, streaming)</li>
-</ul>
-<p><strong>判断：</strong> Voice AI 正在从"能力展示"转向"基础设施组件"。</p>
-<h3 id="claude-code">Claude Code 生态扩张（持续）</h3>
-<ul>
-<li>oh-my-claudecode</li>
-<li>oh-my-codex</li>
-<li>claude-howto (模板/指南，12085/week)</li>
-</ul>
-<p><strong>判断：</strong> Claude Code 正在成为 AI Coding 平台，其生态周边价值显现。</p>
-<h3 id="mcp">MCP 协议扩散（新趋势）</h3>
-<ul>
-<li>GitNexus（MCP Server for codebase）</li>
-<li>qmd（MCP Server for local docs）</li>
-<li>hermes-agent（MCP Gateway）</li>
-</ul>
-<p><strong>判断：</strong> MCP 正在从"AI Agent 协议"演化为"AI Native 应用协议层"，协议层基础设施地位确立。</p>
-<h3 id="llm">端侧 LLM 推理生产化（新信号）</h3>
-<ul>
-<li>LiteRT-LM（Google，已在 Chrome/Pixel Watch 生产落地）</li>
-<li>Gemma 4 端侧部署</li>
-</ul>
-<p><strong>判断：</strong> 端侧 LLM 推理不再是 Demo，开始进入真实产品。值得持续关注端侧推理框架赛道。</p>
-<hr />
-<h2 id="_4">项目排名变化</h2>
-<table>
-<thead>
-<tr>
-<th>项目</th>
-<th>上期排名</th>
-<th>本期</th>
-<th>变化</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>hermes-agent</td>
-<td>-</td>
-<td>持续强势</td>
-<td>新增</td>
-</tr>
-<tr>
-<td>oh-my-claudecode</td>
-<td>-</td>
-<td>持续强势</td>
-<td>新增</td>
-</tr>
-<tr>
-<td>VibeVoice</td>
-<td>-</td>
-<td>持续强势</td>
-<td>新增</td>
-</tr>
-<tr>
-<td>GitNexus</td>
-<td>-</td>
-<td>新晋热榜</td>
-<td>新增</td>
-</tr>
-<tr>
-<td>qmd</td>
-<td>-</td>
-<td>新晋热榜</td>
-<td>新增</td>
-</tr>
-<tr>
-<td>LiteRT-LM</td>
-<td>-</td>
-<td>新晋热榜</td>
-<td>新增</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p><em>最后更新：2026-04-07</em></p>
-    </div>
 
 </main>
     <footer class="footer">

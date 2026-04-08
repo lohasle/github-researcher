@@ -768,13 +768,112 @@ def generate_project_page(filepath):
     print(f"Generated projects/{name}.html")
 
 
+def make_slug(name):
+    """Generate project slug: remove parenthesized content, lowercase, replace non-alnum with -."""
+    s = re.sub(r'\s*\([^)]*\)\s*', '', name).strip()
+    s = s.lower()
+    s = re.sub(r'[^a-z0-9]+', '-', s).strip('-')
+    return s
+
+
+def generate_minimal_project_page(name, data, date_str):
+    """Generate a minimal project detail page from daily report data."""
+    slug = make_slug(name)
+    proj_html_dir = os.path.join(DOCS_DIR, 'projects')
+    os.makedirs(proj_html_dir, exist_ok=True)
+    filepath = os.path.join(proj_html_dir, f'{slug}.html')
+    
+    url = data.get('url', '')
+    desc = data.get('description', data.get('desc', ''))
+    language = data.get('language', '')
+    stars = data.get('stars', '')
+    stars_delta = data.get('stars_delta', '')
+    analysis = data.get('analysis', '')
+    verdict = data.get('verdict', '')
+    
+    tags = []
+    if language:
+        tags.append(language)
+    if verdict and '⭐' in verdict:
+        tags.append('重点跟踪')
+    tag_html = ''.join([f'<span class="tag {tag_class(t)}">{t}</span>' for t in tags])
+    
+    meta_lines = ''
+    if stars:
+        meta_lines += f'<p><strong>Stars:</strong> {stars}</p>'
+    if stars_delta:
+        meta_lines += f'<p><strong>增速:</strong> {stars_delta}</p>'
+    if url:
+        meta_lines += f'<p><strong>GitHub:</strong> <a href="{url}" target="_blank">{url}</a></p>'
+    if language:
+        meta_lines += f'<p><strong>语言:</strong> {language}</p>'
+    if verdict:
+        meta_lines += f'<p><strong>判断:</strong> {verdict}</p>'
+    if date_str:
+        meta_lines += f'<p><strong>来源日报:</strong> <a href="/github-researcher/daily/{date_str}.html">{date_str}</a></p>'
+    
+    analysis_html = f'<h2>分析</h2>\n<p>{analysis}</p>' if analysis else ''
+    
+    body_html = f'''<h1>{name}</h1>
+<div class="card-tags" style="margin-bottom:20px;">{tag_html}</div>
+{meta_lines}
+<h2>简介</h2>
+<p>{desc}</p>
+{analysis_html}'''
+    
+    html = f'''<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{name} | GitHub 趋势研究</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>⭐</text></svg>">
+{CSS}
+    <style>
+        .project-content {{ background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 48px; box-shadow: var(--shadow); margin-bottom: 48px; max-width: 860px; margin-left: auto; margin-right: auto; }}
+        .project-content h1 {{ font-size: 26px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 6px; }}
+        .project-content h2 {{ font-size: 18px; font-weight: 700; color: var(--primary); border-left: 4px solid var(--primary); padding-left: 12px; margin: 28px 0 14px; }}
+        .project-content p {{ font-size: 14px; margin-bottom: 12px; line-height: 1.7; }}
+        .project-content a {{ color: var(--primary); }}
+        .back-link {{ display: inline-flex; align-items: center; gap: 6px; color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 24px; }}
+        .back-link:hover {{ text-decoration: underline; }}
+    </style>
+</head>
+<body>
+{NAV.replace('id="nav-projects"', 'id="nav-projects" class="active"')}
+<main class="container">
+    <a href="/github-researcher/trends.html" class="back-link">← 返回趋势时间线</a>
+    <div class="project-content">
+        {body_html}
+    </div>
+</main>
+{FOOTER}
+</body>
+</html>'''
+    
+    with open(filepath, 'w') as f:
+        f.write(html)
+    print(f"  Generated minimal project page: projects/{slug}.html")
+    return slug
+
+
 # === Generate trends page ===
 def generate_trends():
     daily_files = sorted(glob.glob(os.path.join(DAILY_DIR, '*.md')), reverse=True)
     
-    # Build date-indexed trend sections
+    # Build set of existing project slugs from projects/*.md
+    existing_slugs = set()
+    for pf in glob.glob(os.path.join(PROJECTS_DIR, '*.md')):
+        existing_slugs.add(os.path.basename(pf).replace('.md', ''))
+    
+    # Also check docs/projects/*.html for already-generated minimal pages
+    existing_html_slugs = set()
+    for pf in glob.glob(os.path.join(DOCS_DIR, 'projects', '*.html')):
+        existing_html_slugs.add(os.path.basename(pf).replace('.html', ''))
+    
     date_sections = ''
     idx = 0
+    
     for df in daily_files:
         date_str = os.path.basename(df).replace('.md', '')
         with open(df, 'r') as f:
@@ -782,8 +881,8 @@ def generate_trends():
         fm, _ = parse_frontmatter(content)
         summary = fm.get('summary', '')
         trends = fm.get('trends', []) or []
+        key_projects = fm.get('key_projects', []) or []
         
-        # Date index item
         is_first = (idx == 0)
         date_sections += f'''
         <div class="date-section">
@@ -797,49 +896,69 @@ def generate_trends():
             <div class="date-trends" id="ds-{date_str}" style="{'display:block;' if is_first else 'display:none;'}">
 '''
         
-        if not trends:
-            date_sections += '<p style="padding:12px 0;color:var(--text-muted);">该日无趋势数据</p>'
-        else:
+        # Trend directions
+        if trends:
+            date_sections += '<div style="margin-bottom:16px;">'
             for t in trends:
                 rank = t.get('rank', 0)
                 name = t.get('name', 'Unknown')
-                projects = t.get('projects', [])
                 score_val = t.get('score', 0)
                 is_high = score_val >= 55 if isinstance(score_val, int) else False
                 rank_class = 'top' if rank <= 2 else ''
                 score_class = 'high' if is_high else ''
-                projects_str = ' · '.join(str(p) for p in projects[:4])
                 date_sections += f'''
                 <div class="trend-item">
                     <div class="trend-rank {rank_class}">{rank}</div>
                     <div class="trend-content">
                         <div class="trend-title">{name}</div>
-                        <div class="trend-meta">{projects_str}</div>
                     </div>
                     <div class="trend-score {score_class}">{score_val}/80</div>
-                </div>
-'''
+                </div>'''
+            date_sections += '</div>'
+        
+        # Key projects as cards
+        if key_projects:
+            date_sections += '<div class="section-title" style="margin-bottom:12px;"><span>🎯 重点项目</span></div>\n'
+            date_sections += '<div class="card-grid" style="animation:none;margin-bottom:8px;">\n'
+            for p in key_projects:
+                pname = p.get('name', 'Unknown')
+                slug = make_slug(pname)
+                desc = (p.get('description', p.get('desc', '')) or '')[:80]
+                language = p.get('language', '')
+                stars = p.get('stars', p.get('stars_delta', ''))
+                verdict = p.get('verdict', '')
+                
+                # Check if project page exists
+                if slug not in existing_slugs and slug not in existing_html_slugs:
+                    generate_minimal_project_page(pname, p, date_str)
+                    existing_html_slugs.add(slug)
+                
+                tags = []
+                if language:
+                    tags.append(language)
+                if verdict and '⭐' in verdict:
+                    tags.append('重点跟踪')
+                if not tags:
+                    tags = ['项目']
+                tag_html = ''.join([f'<span class="tag {tag_class(t)}">{t}</span>' for t in tags[:3]])
+                
+                date_sections += f'''
+                <a href="/github-researcher/projects/{slug}.html" class="card">
+                    <div class="card-top">
+                        <div class="card-emoji">📦</div>
+                        <div class="card-stars">{stars}</div>
+                    </div>
+                    <div class="card-title">{pname}</div>
+                    <div class="card-desc">{desc}</div>
+                    <div class="card-tags">{tag_html}</div>
+                </a>'''
+            date_sections += '</div>\n'
         
         date_sections += '''
             </div>
         </div>
 '''
         idx += 1
-    
-    # Optional: append trend-index.md content if exists
-    extra_html = ''
-    trend_file = os.path.join(INDEXES_DIR, 'trend-index.md')
-    if os.path.exists(trend_file):
-        with open(trend_file, 'r') as f:
-            content = f.read()
-        _, body = parse_frontmatter(content)
-        if body.strip():
-            extra_html = f'''
-    <div class="trend-content">
-        <h2 style="color:var(--primary);font-size:20px;margin-bottom:16px;">📋 趋势综合索引</h2>
-        {markdown.markdown(body, extensions=['tables', 'toc'])}
-    </div>
-'''
     
     toggle_js = '''
     <script>
@@ -862,7 +981,7 @@ def generate_trends():
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>趋势追踪 | GitHub 趋势研究</title>
+    <title>趋势时间线 | GitHub 趋势研究</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📈</text></svg>">
 {CSS}
     <style>
@@ -876,25 +995,17 @@ def generate_trends():
         .date-summary {{ flex: 1; font-size: 14px; color: var(--text); font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
         .date-arrow {{ color: var(--text-muted); font-size: 12px; }}
         .date-trends {{ padding: 0 20px 16px; }}
-        .trend-content {{ background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 36px 40px; box-shadow: var(--shadow); margin-bottom: 48px; }}
-        .trend-content table {{ border-collapse: collapse; width: 100%; }}
-        .trend-content th, .trend-content td {{ border: 1px solid var(--border); padding: 10px 14px; text-align: left; font-size: 14px; }}
-        .trend-content th {{ background: linear-gradient(135deg, var(--primary-dark), var(--primary)); color: white; font-weight: 600; font-size: 13px; }}
-        .trend-content tr:nth-child(even) td {{ background: var(--bg); }}
-        .trend-content h1, .trend-content h2, .trend-content h3 {{ color: var(--primary); margin-top: 24px; margin-bottom: 12px; }}
-        .trend-content p {{ margin-bottom: 12px; }}
-        .trend-content ul {{ padding-left: 20px; margin-bottom: 12px; }}
+        .section-title {{ display: flex; align-items: center; gap: 10px; font-size: 16px; font-weight: 700; color: var(--text); }}
     </style>
 </head>
 <body>
 {NAV.replace('id="nav-trends"', 'id="nav-trends" class="active"')}
 <main class="container">
     <div class="page-header">
-        <h1>📈 趋势追踪</h1>
-        <p>按日期浏览每日趋势排名 · 点击展开查看详情</p>
+        <h1>📈 Trend Timeline</h1>
+        <p>按日期浏览每日 GitHub 趋势研究报告</p>
     </div>
 {date_sections}
-{extra_html}
 </main>
 {FOOTER}
 {toggle_js}

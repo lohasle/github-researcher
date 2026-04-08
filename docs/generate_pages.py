@@ -303,7 +303,10 @@ def generate_index():
     # Brief card
     brief_date = f"📅 {date_str} · 今日核心判断"
     brief_title = summary
-    brief_text = "今日热榜新信号：GitNexus、qmd 等项目代表 MCP 协议正在从 AI Agent 协议演化为 AI Native 应用协议层。持续跟踪 Multi-Agent Orchestration 爆发趋势。"
+    # Dynamic brief_text from latest daily
+    trends_latest = get_fm(latest_daily_fm, 'trends', [])
+    top_trend = trends_latest[0]['name'] if trends_latest else summary
+    brief_text = summary + (f" 今日头条趋势：{top_trend}。" if trends_latest else "")
     
     daily_date_filename = f"daily/{os.path.basename(daily_files[0]).replace('.md', '.html')}" if daily_files else 'daily/2026-04-07.html'
     
@@ -574,40 +577,99 @@ def generate_daily_page(filepath):
     print(f"Generated daily/{date}.html")
 
 
-# === Generate projects listing ===
-def generate_projects_list():
-    project_files = sorted(glob.glob(os.path.join(PROJECTS_DIR, '*.md')))
-    
-    cards = ''
-    for pf in project_files:
+# === Aggregate all projects from daily + projects dir ===
+def aggregate_all_projects():
+    """Merge projects from daily key_projects + projects/*.md, dedup by name."""
+    merged = {}  # name -> project dict
+
+    # 1. Read projects/*.md for detailed profiles
+    for pf in sorted(glob.glob(os.path.join(PROJECTS_DIR, '*.md'))):
         with open(pf, 'r') as f:
             content = f.read()
         fm, _ = parse_frontmatter(content)
-        
-        name = fm.get('title', os.path.basename(pf).replace('.md', ''))
-        emoji = fm.get('emoji', '📦')
-        stars = fm.get('stars', fm.get('stars_per_day', 'N/A'))
+        if not fm:
+            continue
+        key = fm.get('name', fm.get('title', os.path.basename(pf).replace('.md', '')))
+        fm['_has_profile'] = True
+        merged[key] = fm
+
+    # 2. Walk daily/*.md newest-first, merge key_projects
+    for df in sorted(glob.glob(os.path.join(DAILY_DIR, '*.md')), reverse=True):
+        date_str = os.path.basename(df).replace('.md', '')
+        with open(df, 'r') as f:
+            content = f.read()
+        fm, _ = parse_frontmatter(content)
+        kp_list = fm.get('key_projects', []) or []
+        for p in kp_list:
+            key = p.get('name', '')
+            if not key:
+                continue
+            # Update fields if project already exists, else create
+            if key in merged:
+                for k, v in p.items():
+                    if v is not None and k not in ('_has_profile',):
+                        merged[key][k] = v
+                merged[key]['last_seen_date'] = date_str
+            else:
+                p = dict(p)
+                p['last_seen_date'] = date_str
+                merged[key] = p
+            if 'first_seen_date' not in merged[key]:
+                merged[key]['first_seen_date'] = date_str
+
+    return list(merged.values())
+
+
+# === Generate projects listing ===
+def generate_projects_list():
+    all_projects = aggregate_all_projects()
+    # Sort by last_seen_date desc
+    all_projects.sort(key=lambda p: p.get('last_seen_date', ''), reverse=True)
+    
+    cards = ''
+    for p in all_projects:
+        name = p.get('title', p.get('name', 'Unknown'))
+        emoji = p.get('emoji', '📦')
+        stars = p.get('stars', p.get('stars_delta', p.get('stars_per_day', 'N/A')))
         if isinstance(stars, int):
             stars = f"{stars:,} stars/day"
-        desc = fm.get('desc', fm.get('summary', ''))[:100]
-        category = fm.get('category', '项目')
-        score = fm.get('score', 'N/A')
-        href = fm.get('href', f"projects/{os.path.basename(pf).replace('.md', '.html')}")
-        tags = fm.get('tags', [category]) if isinstance(fm.get('tags'), list) else [category]
+        desc = (p.get('desc', p.get('description', '')) or '')[:120]
+        language = p.get('language', '')
+        verdict = p.get('verdict', '')
+        last_seen = p.get('last_seen_date', '')
+        has_profile = p.get('_has_profile', False)
         
-        score_int = int(score) if isinstance(score, (int, str)) and str(score).replace('/', '').isdigit() else 0
-        score_class = 'high' if score_int >= 55 else ''
+        # Build tags from language + verdict + category
+        tags = []
+        if language:
+            tags.append(language)
+        if verdict and '⭐' in verdict:
+            tags.append('重点跟踪')
+        category = p.get('category', '')
+        if category:
+            tags.append(category)
+        if not tags:
+            tags = ['项目']
         
-        tag_html = ''.join([f'<span class="tag {tag_class(t)}">{t}</span>' for t in tags[:2]])
+        # Build href: link to profile page if exists, else to the daily page where last seen
+        if has_profile:
+            slug = name.replace(' ', '-').lower()
+            href = f"projects/{slug}.html"
+        else:
+            href = f"daily/{last_seen}.html"
+        
+        tag_html = ''.join([f'<span class="tag {tag_class(t)}">{t}</span>' for t in tags[:3]])
+        seen_html = f'<div style="font-size:12px;color:var(--text-muted);margin-top:4px;">最近出现: {last_seen}</div>' if last_seen else ''
         
         cards += f'''                <a href="/github-researcher/{href}" class="card">
                     <div class="card-top">
                         <div class="card-emoji">{emoji}</div>
-                        <div class="trend-score {"high" if score_int >= 55 else ""}" style="font-size:13px;padding:4px 12px;">{score}/80</div>
+                        <div class="card-stars">{stars}</div>
                     </div>
                     <div class="card-title">{name}</div>
                     <div class="card-desc">{desc}</div>
                     <div class="card-tags">{tag_html}</div>
+                    {seen_html}
                 </a>
 '''
     
@@ -631,7 +693,7 @@ def generate_projects_list():
 <main class="container">
     <div class="page-header">
         <h1>⭐ 重点项目</h1>
-        <p>每个项目均经过架构视角深度分析 + 评分，持续跟踪</p>
+        <p>聚合自所有日报的深度分析项目，持续跟踪</p>
     </div>
     <div class="card-grid">
 {cards}
@@ -643,7 +705,7 @@ def generate_projects_list():
     
     with open(os.path.join(DOCS_DIR, 'projects.html'), 'w') as f:
         f.write(html)
-    print(f"Generated projects.html with {len(project_files)} projects")
+    print(f"Generated projects.html with {len(all_projects)} projects")
 
 
 # === Generate individual project page ===
@@ -708,13 +770,92 @@ def generate_project_page(filepath):
 
 # === Generate trends page ===
 def generate_trends():
+    daily_files = sorted(glob.glob(os.path.join(DAILY_DIR, '*.md')), reverse=True)
+    
+    # Build date-indexed trend sections
+    date_sections = ''
+    idx = 0
+    for df in daily_files:
+        date_str = os.path.basename(df).replace('.md', '')
+        with open(df, 'r') as f:
+            content = f.read()
+        fm, _ = parse_frontmatter(content)
+        summary = fm.get('summary', '')
+        trends = fm.get('trends', []) or []
+        
+        # Date index item
+        is_first = (idx == 0)
+        date_sections += f'''
+        <div class="date-section">
+            <div class="date-toggle" onclick="toggleSection('ds-{date_str}')" style="cursor:pointer;">
+                <div class="date-header">
+                    <span class="date-badge">{date_str}</span>
+                    <span class="date-summary">{summary}</span>
+                    <span class="date-arrow" id="arrow-ds-{date_str}">{'▼' if is_first else '▶'}</span>
+                </div>
+            </div>
+            <div class="date-trends" id="ds-{date_str}" style="{'display:block;' if is_first else 'display:none;'}">
+'''
+        
+        if not trends:
+            date_sections += '<p style="padding:12px 0;color:var(--text-muted);">该日无趋势数据</p>'
+        else:
+            for t in trends:
+                rank = t.get('rank', 0)
+                name = t.get('name', 'Unknown')
+                projects = t.get('projects', [])
+                score_val = t.get('score', 0)
+                is_high = score_val >= 55 if isinstance(score_val, int) else False
+                rank_class = 'top' if rank <= 2 else ''
+                score_class = 'high' if is_high else ''
+                projects_str = ' · '.join(str(p) for p in projects[:4])
+                date_sections += f'''
+                <div class="trend-item">
+                    <div class="trend-rank {rank_class}">{rank}</div>
+                    <div class="trend-content">
+                        <div class="trend-title">{name}</div>
+                        <div class="trend-meta">{projects_str}</div>
+                    </div>
+                    <div class="trend-score {score_class}">{score_val}/80</div>
+                </div>
+'''
+        
+        date_sections += '''
+            </div>
+        </div>
+'''
+        idx += 1
+    
+    # Optional: append trend-index.md content if exists
+    extra_html = ''
     trend_file = os.path.join(INDEXES_DIR, 'trend-index.md')
+    if os.path.exists(trend_file):
+        with open(trend_file, 'r') as f:
+            content = f.read()
+        _, body = parse_frontmatter(content)
+        if body.strip():
+            extra_html = f'''
+    <div class="trend-content">
+        <h2 style="color:var(--primary);font-size:20px;margin-bottom:16px;">📋 趋势综合索引</h2>
+        {markdown.markdown(body, extensions=['tables', 'toc'])}
+    </div>
+'''
     
-    with open(trend_file, 'r') as f:
-        content = f.read()
-    
-    fm, body = parse_frontmatter(content)
-    html_body = markdown.markdown(body, extensions=['tables', 'toc'])
+    toggle_js = '''
+    <script>
+    function toggleSection(id) {
+        var el = document.getElementById(id);
+        var arrow = document.getElementById('arrow-' + id);
+        if (el.style.display === 'none') {
+            el.style.display = 'block';
+            arrow.textContent = '▼';
+        } else {
+            el.style.display = 'none';
+            arrow.textContent = '▶';
+        }
+    }
+    </script>
+'''
     
     html = f'''<!DOCTYPE html>
 <html lang="zh-CN">
@@ -728,6 +869,13 @@ def generate_trends():
         .page-header {{ padding: 48px 0 36px; text-align: center; }}
         .page-header h1 {{ font-size: 36px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 12px; }}
         .page-header p {{ color: var(--text-muted); font-size: 16px; }}
+        .date-section {{ background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; margin-bottom: 16px; box-shadow: var(--shadow); }}
+        .date-header {{ display: flex; align-items: center; gap: 12px; padding: 16px 20px; transition: background 0.15s; }}
+        .date-toggle:hover .date-header {{ background: var(--bg); }}
+        .date-badge {{ background: linear-gradient(135deg, var(--primary), var(--primary-light)); color: white; padding: 4px 12px; border-radius: 100px; font-size: 13px; font-weight: 700; white-space: nowrap; }}
+        .date-summary {{ flex: 1; font-size: 14px; color: var(--text); font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
+        .date-arrow {{ color: var(--text-muted); font-size: 12px; }}
+        .date-trends {{ padding: 0 20px 16px; }}
         .trend-content {{ background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 36px 40px; box-shadow: var(--shadow); margin-bottom: 48px; }}
         .trend-content table {{ border-collapse: collapse; width: 100%; }}
         .trend-content th, .trend-content td {{ border: 1px solid var(--border); padding: 10px 14px; text-align: left; font-size: 14px; }}
@@ -743,19 +891,19 @@ def generate_trends():
 <main class="container">
     <div class="page-header">
         <h1>📈 趋势追踪</h1>
-        <p>GitHub 热榜项目排名变化 · 趋势指数持续更新</p>
+        <p>按日期浏览每日趋势排名 · 点击展开查看详情</p>
     </div>
-    <div class="trend-content">
-        {html_body}
-    </div>
+{date_sections}
+{extra_html}
 </main>
 {FOOTER}
+{toggle_js}
 </body>
 </html>'''
     
     with open(os.path.join(DOCS_DIR, 'trends.html'), 'w') as f:
         f.write(html)
-    print("Generated trends.html")
+    print(f"Generated trends.html with {len(daily_files)} daily entries")
 
 
 # === Main ===

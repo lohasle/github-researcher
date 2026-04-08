@@ -169,6 +169,13 @@
         .page-header { padding: 48px 0 36px; text-align: center; }
         .page-header h1 { font-size: 36px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 12px; }
         .page-header p { color: var(--text-muted); font-size: 16px; }
+        .date-section { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; margin-bottom: 16px; box-shadow: var(--shadow); }
+        .date-header { display: flex; align-items: center; gap: 12px; padding: 16px 20px; transition: background 0.15s; }
+        .date-toggle:hover .date-header { background: var(--bg); }
+        .date-badge { background: linear-gradient(135deg, var(--primary), var(--primary-light)); color: white; padding: 4px 12px; border-radius: 100px; font-size: 13px; font-weight: 700; white-space: nowrap; }
+        .date-summary { flex: 1; font-size: 14px; color: var(--text); font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .date-arrow { color: var(--text-muted); font-size: 12px; }
+        .date-trends { padding: 0 20px 16px; }
         .trend-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 36px 40px; box-shadow: var(--shadow); margin-bottom: 48px; }
         .trend-content table { border-collapse: collapse; width: 100%; }
         .trend-content th, .trend-content td { border: 1px solid var(--border); padding: 10px 14px; text-align: left; font-size: 14px; }
@@ -197,9 +204,110 @@
 <main class="container">
     <div class="page-header">
         <h1>📈 趋势追踪</h1>
-        <p>GitHub 热榜项目排名变化 · 趋势指数持续更新</p>
+        <p>按日期浏览每日趋势排名 · 点击展开查看详情</p>
     </div>
+
+        <div class="date-section">
+            <div class="date-toggle" onclick="toggleSection('ds-2026-04-08')" style="cursor:pointer;">
+                <div class="date-header">
+                    <span class="date-badge">2026-04-08</span>
+                    <span class="date-summary">claw-code 爆炸式增长 · Edge AI 加速落地 · Claude Code 生态持续扩张</span>
+                    <span class="date-arrow" id="arrow-ds-2026-04-08">▼</span>
+                </div>
+            </div>
+            <div class="date-trends" id="ds-2026-04-08" style="display:block;">
+
+                <div class="trend-item">
+                    <div class="trend-rank top">1</div>
+                    <div class="trend-content">
+                        <div class="trend-title">AI Coding Agent 生态爆发</div>
+                        <div class="trend-meta">claw-code · oh-my-codex · oh-my-claudecode</div>
+                    </div>
+                    <div class="trend-score high">70/80</div>
+                </div>
+
+                <div class="trend-item">
+                    <div class="trend-rank top">2</div>
+                    <div class="trend-content">
+                        <div class="trend-title">Edge AI / 端侧推理生产化</div>
+                        <div class="trend-meta">LiteRT · google-ai-edge/gallery · Gemma-4</div>
+                    </div>
+                    <div class="trend-score high">62/80</div>
+                </div>
+
+                <div class="trend-item">
+                    <div class="trend-rank ">3</div>
+                    <div class="trend-content">
+                        <div class="trend-title">MCP 协议基础设施化</div>
+                        <div class="trend-meta">hermes-agent · GitNexus · qmd</div>
+                    </div>
+                    <div class="trend-score high">55/80</div>
+                </div>
+
+                <div class="trend-item">
+                    <div class="trend-rank ">4</div>
+                    <div class="trend-content">
+                        <div class="trend-title">Voice AI 组件化</div>
+                        <div class="trend-meta">VibeVoice</div>
+                    </div>
+                    <div class="trend-score ">48/80</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="date-section">
+            <div class="date-toggle" onclick="toggleSection('ds-2026-04-07')" style="cursor:pointer;">
+                <div class="date-header">
+                    <span class="date-badge">2026-04-07</span>
+                    <span class="date-summary">MCP 协议扩散 + 端侧 LLM 推理生产化</span>
+                    <span class="date-arrow" id="arrow-ds-2026-04-07">▶</span>
+                </div>
+            </div>
+            <div class="date-trends" id="ds-2026-04-07" style="display:none;">
+
+                <div class="trend-item">
+                    <div class="trend-rank top">1</div>
+                    <div class="trend-content">
+                        <div class="trend-title">Multi-Agent Orchestration 团队化</div>
+                        <div class="trend-meta">oh-my-claudecode · hermes-agent · VibeVoice</div>
+                    </div>
+                    <div class="trend-score high">60/80</div>
+                </div>
+
+                <div class="trend-item">
+                    <div class="trend-rank top">2</div>
+                    <div class="trend-content">
+                        <div class="trend-title">MCP 协议扩散</div>
+                        <div class="trend-meta">GitNexus · qmd · hermes-agent</div>
+                    </div>
+                    <div class="trend-score high">58/80</div>
+                </div>
+
+                <div class="trend-item">
+                    <div class="trend-rank ">3</div>
+                    <div class="trend-content">
+                        <div class="trend-title">端侧 LLM 推理生产化</div>
+                        <div class="trend-meta">LiteRT-LM · Gemma-4</div>
+                    </div>
+                    <div class="trend-score ">52/80</div>
+                </div>
+
+                <div class="trend-item">
+                    <div class="trend-rank ">4</div>
+                    <div class="trend-content">
+                        <div class="trend-title">AI Agent 记忆系统</div>
+                        <div class="trend-meta">hermes-agent · qmd</div>
+                    </div>
+                    <div class="trend-score ">48/80</div>
+                </div>
+
+            </div>
+        </div>
+
+
     <div class="trend-content">
+        <h2 style="color:var(--primary);font-size:20px;margin-bottom:16px;">📋 趋势综合索引</h2>
         <h1 id="trend-index">Trend Index — 趋势指数</h1>
 <blockquote>
 <p>记录项目排名、趋势变化、关键判断修正</p>
@@ -399,10 +507,26 @@
 <hr />
 <p><em>最后更新：2026-04-07</em></p>
     </div>
+
 </main>
     <footer class="footer">
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+
+    <script>
+    function toggleSection(id) {
+        var el = document.getElementById(id);
+        var arrow = document.getElementById('arrow-' + id);
+        if (el.style.display === 'none') {
+            el.style.display = 'block';
+            arrow.textContent = '▼';
+        } else {
+            el.style.display = 'none';
+            arrow.textContent = '▶';
+        }
+    }
+    </script>
+
 </body>
 </html>

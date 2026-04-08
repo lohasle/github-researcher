@@ -610,15 +610,14 @@ def aggregate_all_projects():
                 continue
             daily_slug = make_slug(key)
             # Try to match with existing profile by name or slug
-            profile = merged.get(key) or merged_by_slug.get(daily_slug)
-            if profile:
+            matched = merged.get(key) or merged_by_slug.get(daily_slug)
+            if matched:
                 for k, v in p.items():
                     if v is not None and k not in ('_has_profile', '_profile_slug'):
-                        profile[k] = v
-                profile['last_seen_date'] = date_str
-                # If matched by slug but daily has a richer name, update key
-                if key not in merged and profile in merged.values():
-                    merged[key] = profile
+                        matched[k] = v
+                matched['last_seen_date'] = date_str
+                # Ensure the daily key also points to the same profile
+                merged[key] = matched
             else:
                 p = dict(p)
                 p['last_seen_date'] = date_str
@@ -626,7 +625,15 @@ def aggregate_all_projects():
             if 'first_seen_date' not in merged[key]:
                 merged[key]['first_seen_date'] = date_str
 
-    return list(merged.values())
+    # Dedup: merged dict may contain same object under different keys
+    seen = set()
+    result = []
+    for p in merged.values():
+        pid = id(p)
+        if pid not in seen:
+            seen.add(pid)
+            result.append(p)
+    return result
 
 
 # === Generate projects listing ===

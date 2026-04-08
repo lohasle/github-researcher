@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>日报索引 | GitHub 趋势研究</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📊</text></svg>">
+    <title>2026-04-08 GitHub 趋势研究简报 | GitHub 趋势研究</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📅</text></svg>">
     <style>
         :root {
             --primary: #7C3AED;
@@ -166,15 +166,21 @@
         .trend-list { animation-delay: 0.25s; animation-fill-mode: both; }
     </style>
     <style>
-        .page-header { padding: 48px 0 36px; text-align: center; }
-        .page-header h1 { font-size: 36px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 12px; }
-        .page-header p { color: var(--text-muted); font-size: 16px; }
-        .daily-table { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); margin-bottom: 48px; }
-        .daily-table table { width: 100%; border-collapse: collapse; }
-        .daily-table th { background: linear-gradient(135deg, var(--primary-dark), var(--primary)); color: white; padding: 14px 20px; text-align: left; font-size: 13px; font-weight: 600; letter-spacing: 0.5px; }
-        .daily-table td { padding: 16px 20px; border-bottom: 1px solid var(--border); font-size: 14px; }
-        .daily-table tr:last-child td { border-bottom: none; }
-        .daily-table tr:hover td { background: var(--bg); }
+        .daily-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 48px; box-shadow: var(--shadow); margin-bottom: 48px; max-width: 860px; margin-left: auto; margin-right: auto; }
+        .daily-content h1 { font-size: 28px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 8px; }
+        .daily-content h2 { font-size: 20px; font-weight: 700; color: var(--primary); border-left: 4px solid var(--primary); padding-left: 12px; margin: 28px 0 14px; }
+        .daily-content h3 { font-size: 16px; font-weight: 700; color: var(--text); margin: 20px 0 10px; }
+        .daily-content table { border-collapse: collapse; width: 100%; margin: 14px 0; }
+        .daily-content th, .daily-content td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; font-size: 13px; }
+        .daily-content th { background: var(--primary); color: white; font-weight: 600; }
+        .daily-content tr:nth-child(even) td { background: var(--bg); }
+        .daily-content blockquote { background: linear-gradient(135deg, #F3E8FF, #ECFEFF); border-left: 4px solid var(--primary); padding: 14px 18px; margin: 14px 0; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+        .daily-content ul, .daily-content ol { padding-left: 22px; margin: 10px 0; }
+        .daily-content li { margin: 6px 0; font-size: 14px; }
+        .daily-content p { font-size: 14px; margin-bottom: 12px; line-height: 1.7; }
+        .daily-content strong { color: var(--primary-dark); }
+        .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 24px; }
+        .back-link:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -192,35 +198,24 @@
             </div>
         </div>
     </nav>
-<script>document.getElementById('nav-daily').classList.add('active');</script>
 <main class="container">
-    <div class="page-header">
-        <h1>📅 日报索引</h1>
-        <p>每日 GitHub 趋势研究简报，持续跟踪不间断</p>
-    </div>
-    <div class="daily-table">
-        <table>
-            <thead>
-                <tr>
-                    <th>日期</th>
-                    <th>核心主题</th>
-                    <th>操作</th>
-                </tr>
-            </thead>
-            <tbody>
-        <tr>
-            <td style="font-weight:600;">2026-04-08</td>
-            <td>claw-code 爆炸式增长 · Edge AI 加速落地 · Claude Code 生态持续扩张</td>
-            <td><a href="/github-researcher/daily/2026-04-08.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-07</td>
-            <td>MCP 协议扩散 + 端侧 LLM 推理生产化</td>
-            <td><a href="/github-researcher/daily/2026-04-07.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-
-            </tbody>
-        </table>
+    <a href="/github-researcher/daily.html" class="back-link">← 返回日报索引</a>
+    <div class="daily-content">
+        <h2 id="_1">今日趋势分析</h2>
+<h3 id="claw-code">🔥 头条：claw-code 的现象级增长</h3>
+<p>claw-code 以史上最快的速度突破 100K stars（2小时），目前已达 <strong>168.7K</strong>，全球排名 #34。两个并行仓库（ultraworkers 和 instructkr）同时爆发。这背后有几个关键信号：</p>
+<ol>
+<li><strong>AI Coding Agent 需求远未被满足</strong> — 开发者对 AI 辅助编程的热情持续高涨</li>
+<li><strong>Rust 生态正在成为 AI 工具的首选</strong> — 性能 + 安全性的组合</li>
+<li><strong>自主维护模式</strong> — 项目声称由 AI（lobsters/claws）而非人类维护，这本身就是一种实验</li>
+</ol>
+<h3 id="mcp">📊 MCP 协议从概念走向生产</h3>
+<p>GitNexus（代码知识图谱）、qmd（本地文档搜索）、hermes-agent（MCP Gateway）都在用 MCP 构建实际产品。MCP 正在从"AI Agent 协议"演化为"AI Native 应用协议层"。</p>
+<h3 id="edge-ai">🌐 Edge AI 加速落地</h3>
+<p>Google 的 LiteRT + google-ai-edge/gallery + Gemma-4 端侧部署，构成了完整的端侧 AI 推理栈。端侧 LLM 不再是 Demo，开始进入真实产品。</p>
+<hr />
+<p><em>数据来源：GitHub Trending、GitTrends、OSSInsight、Star History</em>
+<em>最后更新：2026-04-08</em></p>
     </div>
 </main>
     <footer class="footer">

@@ -1,5 +1,5 @@
 ---
-date: '2026-04-07'
+date: '2026-04-09'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -10,12 +10,15 @@ title: Trend Index — 趋势指数
 
 ---
 
-## 2026-04-07（第二版）
+## 2026-04-09（第四版）
 
-### 本日新增项目
+### 本日新增项目（2026-04-09）
 
 | 项目 | 分类 | 热度信号 | 核心判断 | 建议 |
 |------|------|---------|---------|------|
+| auto-deep-researcher-24x7 | **基础设施候选** | 123 stars, 快速增长 | 24/7 自动深度研究系统，AI 研究自动化突破 | **深度跟踪 + PoC** |
+| styleseed | 工具型 | 120 stars | AI 设计引擎，让 AI 代码像 UI/UX 设计师 | 持续跟踪 |
+| project-architect | 工具型 | 94 stars | 文档优先的项目规划代理技能，支持 40+ 编码代理 | 持续跟踪 |
 | GitNexus | 工具型/基础设施候选 | 857/day, 23.6k stars | 代码知识图谱 + MCP Server，AI Coding Agent 感知层 | **值得深挖** |
 | qmd | 工具型 | 394/day, 18.8k stars | 本地文档搜索 BM25+向量+LLaMA.cpp，MCP 暴露 | 持续跟踪 |
 | LiteRT-LM | 基础设施候选 | 483/day, 2k stars | Google 生产级端侧 LLM 推理，已在 Chrome/Gemini 等落地 | 关注 Google AI Edge 生态 |
@@ -85,4 +88,4 @@ title: Trend Index — 趋势指数
 
 ---
 
-*最后更新：2026-04-07*
+*最后更新：2026-04-09*

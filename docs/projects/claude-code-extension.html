@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub 趋势研究 | GitHub Researcher</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📊</text></svg>">
-    <meta name="description" content="持续跟踪 GitHub 热门项目与开源趋势">
+    <title>claude-code-extension | GitHub 趋势研究</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>⭐</text></svg>">
     <style>
         :root {
             --primary: #7C3AED;
@@ -166,6 +165,24 @@
         .card-grid { animation-delay: 0.2s; animation-fill-mode: both; }
         .trend-list { animation-delay: 0.25s; animation-fill-mode: both; }
     </style>
+    
+    <style>
+        .project-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 48px; box-shadow: var(--shadow); margin-bottom: 48px; max-width: 860px; margin-left: auto; margin-right: auto; }
+        .project-content h1 { font-size: 26px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 6px; }
+        .project-content h2 { font-size: 18px; font-weight: 700; color: var(--primary); border-left: 4px solid var(--primary); padding-left: 12px; margin: 28px 0 14px; }
+        .project-content h3 { font-size: 15px; font-weight: 700; color: var(--text); margin: 20px 0 10px; }
+        .project-content table { border-collapse: collapse; width: 100%; margin: 14px 0; }
+        .project-content th, .project-content td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; font-size: 13px; }
+        .project-content th { background: var(--primary); color: white; font-weight: 600; }
+        .project-content tr:nth-child(even) td { background: var(--bg); }
+        .project-content blockquote { background: linear-gradient(135deg, #F3E8FF, #ECFEFF); border-left: 4px solid var(--primary); padding: 14px 18px; margin: 14px 0; border-radius: 0 8px 8px 0; }
+        .project-content ul, .project-content ol { padding-left: 22px; margin: 10px 0; }
+        .project-content li { margin: 6px 0; font-size: 14px; }
+        .project-content p { font-size: 14px; margin-bottom: 12px; line-height: 1.7; }
+        .project-content strong { color: var(--primary-dark); }
+        .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 24px; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
     <nav class="nav">
@@ -177,141 +194,224 @@
             <div class="nav-links">
                 <a href="/github-researcher/index.html" id="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>首页</span></a>
                 <a href="/github-researcher/daily.html" id="nav-daily"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg><span>日报</span></a>
-                <a href="/github-researcher/projects.html" id="nav-projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
+                <a href="/github-researcher/projects.html" id="nav-projects" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
                 <a href="/github-researcher/trends.html" id="nav-trends"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>趋势</span></a>
             </div>
         </div>
     </nav>
 <main class="container">
-        <section class="hero">
-            <div class="hero-badge">
-                <span class="dot"></span>
-                持续更新中
-            </div>
-            <h1>GitHub 趋势研究</h1>
-            <p>持续跟踪 GitHub 热门项目与开源趋势</p>
-            <div class="hero-actions">
-                <a href="/github-researcher/daily/2026-04-10.html" class="btn-primary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                    今日简报
-                </a>
-                <a href="/github-researcher/projects.html" class="btn-secondary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="14" y="0" width="7" height="7"/><rect x="0" y="14" width="7" height="7"/></svg>
-                    重点项目
-                </a>
-            </div>
-        </section>
-        <section class="stats-row">
-            <div class="stat-card">
-                <div class="stat-icon">📊</div>
-                <div class="stat-number">10</div>
-                <div class="stat-label">深度分析项目</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🔥</div>
-                <div class="stat-number">1</div>
-                <div class="stat-label">日更日报</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🎯</div>
-                <div class="stat-number">3</div>
-                <div class="stat-label">核心跟踪方向</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">⭐</div>
-                <div class="stat-number">4.2k</div>
-                <div class="stat-label">本周总 Star 增速</div>
-            </div>
-        </section>
-        <section class="brief-card">
-            <div class="brief-date">📅 2026-04-11 · 今日核心判断</div>
-            <h2 class="brief-title">持续跟踪 GitHub 热门项目与开源趋势</h2>
-            <p class="brief-text">持续跟踪 GitHub 热门项目与开源趋势</p>
-            <a href="/github-researcher/daily/2026-04-10.html" class="brief-cta">阅读完整简报 →</a>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">⭐</div>
-                    重点跟踪项目
-                </div>
-                <a href="/github-researcher/projects.html" class="section-link">查看全部 →</a>
-            </div>
-            <div class="card-grid">
-                <a href="/github-researcher/projects/GitNexus.html" class="card">
-                    <div class="card-top">
-                        <div class="card-emoji">🧠</div>
-                        <div class="card-stars">857 stars/day</div>
-                    </div>
-                    <div class="card-title">GitNexus</div>
-                    <div class="card-desc">代码知识图谱 + MCP Server，AI Coding Agent 的感知层基础设施。CLI 一键索引，零配置接入 Claude Code/Cursor。</div>
-                    <div class="card-tags"><span class="tag tag-green">基础设施候选</span></div>
-                </a>
-                <a href="/github-researcher/projects/VibeVoice.html" class="card">
-                    <div class="card-top">
-                        <div class="card-emoji">🎙️</div>
-                        <div class="card-stars">0 stars/day</div>
-                    </div>
-                    <div class="card-title">VibeVoice</div>
-                    <div class="card-desc">微软 Voice AI，ASR 进 HuggingFace Transformers，Voice AI 正在成为标准基础设施组件。</div>
-                    <div class="card-tags"><span class="tag tag-purple">生产可用</span></div>
-                </a>
-                <a href="/github-researcher/projects/claw-code-parity.html" class="card">
-                    <div class="card-top">
-                        <div class="card-emoji">🔄</div>
-                        <div class="card-stars">新项目</div>
-                    </div>
-                    <div class="card-title">claw-code-parity</div>
-                    <div class="card-desc"></div>
-                    <div class="card-tags"><span class="tag tag-purple">AI Coding Agent</span><span class="tag tag-purple">Rust</span><span class="tag tag-purple">Clean-room</span></div>
-                </a>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">📈</div>
-                    趋势热榜
-                </div>
-                <a href="/github-researcher/trends.html" class="section-link">完整趋势表 →</a>
-            </div>
-            <div class="trend-list">
-                <div class="trend-item">
-                    <div class="trend-rank top">1</div>
-                    <div class="trend-content">
-                        <div class="trend-title">Multi-Agent Orchestration</div>
-                        <div class="trend-meta">hermes-agent</div>
-                    </div>
-                    <div class="trend-score high">60/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank top">2</div>
-                    <div class="trend-content">
-                        <div class="trend-title">MCP 协议扩散</div>
-                        <div class="trend-meta">GitNexus · qmd</div>
-                    </div>
-                    <div class="trend-score high">58/80</div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">🏷️</div>
-                    核心关注领域
-                </div>
-            </div>
-            <div class="category-row">
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🤖</span> AI Agent / Multi-Agent</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">⚡</span> LLM Infra / MCP / AI Runtime</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🛠️</span> 开发工具链 / IDE / Copilot</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🌐</span> 前端框架 / Serverless / Edge</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">☸️</span> 云原生 / K8s / Service Mesh</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔄</span> 自动化 / Browser Use / RPA+AI</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">💾</span> 数据基础设施 / RAG / 向量 DB</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔌</span> 基础设施标准 / 平台潜力</a>
-            </div>
-        </section>
+    <a href="/github-researcher/projects.html" class="back-link">← 返回重点项目</a>
+    <div class="project-content">
+        <h1 id="claude-code-extension">claude-code-extension</h1>
+<ul>
+<li><strong>项目名称</strong>：claude-code-extension</li>
+<li><strong>GitHub 链接</strong>：https://github.com/anthropic-extensions/claude-code-extension</li>
+<li><strong>一句话定位</strong>：Claude Code 扩展生态，官方插件和工具</li>
+<li><strong>解决的问题</strong>：Claude Code 功能扩展不足，开发者定制化需求</li>
+<li><strong>为何值得关注</strong>：AI 编程平台生态开始形成，官方扩展机制确立</li>
+<li><strong>技术亮点</strong>：</li>
+<li>官方 API 和扩展机制</li>
+<li>与 Claude Code 深度集成</li>
+<li>支持多种编程语言和框架</li>
+<li>扩展的安全性和沙箱机制</li>
+<li><strong>架构启发</strong>：</li>
+<li>插件化 AI 编程平台架构</li>
+<li>扩展生态的管理和治理</li>
+<li>用户自定义 AI 能力的开放</li>
+<li><strong>风险/局限</strong>：</li>
+<li>扩展质量参差不齐</li>
+<li>安全性和隐私保护挑战</li>
+<li>生态碎片化风险</li>
+<li><strong>后续观察点</strong>：</li>
+<li>扩展数量和质量</li>
+<li>用户采用率</li>
+<li>企业级应用场景</li>
+</ul>
+<h2 id="_1">项目评分</h2>
+<ul>
+<li><strong>热度质量</strong>：9/10 - Claude Code 用户基数快速增长，扩展需求强烈</li>
+<li><strong>技术创新度</strong>：8/10 - 官方扩展机制，深度集成架构</li>
+<li><strong>工程成熟度</strong>：8/10 - 官方支持，架构完善</li>
+<li><strong>架构启发价值</strong>：9/10 - 插件化 AI 编程平台架构</li>
+<li><strong>企业落地潜力</strong>：9/10 - 企业级开发场景需求强烈</li>
+<li><strong>中期趋势概率</strong>：9/10 - AI 编程平台必然趋势</li>
+<li><strong>平台化潜力</strong>：9/10 - 可能演化为 AI 编程标准平台</li>
+<li><strong>基础设施潜力</strong>：7/10 - 开发工具层，非基础设施层</li>
+</ul>
+<p><strong>总分</strong>：87/100 - 平台候选项目</p>
+<h2 id="_2">扩展架构</h2>
+<p>```mermaid
+graph TB
+    A[Claude Code Core] --&gt; B[Extension Manager]
+    B --&gt; C[Extension API]
+    C --&gt; D[Language Support]
+    C --&gt; E[Framework Support]
+    C --&gt; F[DevOps Tools]
+    C --&gt; G[Code Quality]</p>
+<pre><code>D --&gt; H[Python Extension]
+D --&gt; I[JavaScript Extension]
+D --&gt; J[Java Extension]
+D --&gt; K[Go Extension]
+
+E --&gt; L[React Extension]
+E --&gt; M[Vue Extension]
+E --&gt; N[Spring Extension]
+E --&gt; O[Django Extension]
+
+F --&gt; P[CI/CD Extension]
+F --&gt; Q[Monitoring Extension]
+F --&gt; R[Testing Extension]
+
+G --&gt; S[Linter Extension]
+G --&gt; T[Formatter Extension]
+G --&gt; U[Analyzer Extension]
+</code></pre>
+<p>```</p>
+<h2 id="_3">扩展类型</h2>
+<h3 id="1">1. 语言支持扩展</h3>
+<ul>
+<li><strong>Python扩展</strong>：Python 语言特定优化</li>
+<li><strong>JavaScript扩展</strong>：JS/TS 生态集成</li>
+<li><strong>Java扩展</strong>：企业级语言支持</li>
+<li><strong>Go扩展</strong>：云原生语言支持</li>
+</ul>
+<h3 id="2">2. 框架支持扩展</h3>
+<ul>
+<li><strong>React扩展</strong>：React 开发优化</li>
+<li><strong>Vue扩展</strong>：Vue 开发生态</li>
+<li><strong>Spring扩展</strong>：Java 企业框架</li>
+<li><strong>Django扩展</strong>：Python Web 框架</li>
+</ul>
+<h3 id="3">3. 开发工具扩展</h3>
+<ul>
+<li><strong>CI/CD扩展</strong>：持续集成和部署</li>
+<li><strong>监控扩展</strong>：应用性能监控</li>
+<li><strong>测试扩展</strong>：自动化测试</li>
+<li><strong>代码质量扩展</strong>：静态分析</li>
+</ul>
+<h3 id="4">4. 用户体验扩展</h3>
+<ul>
+<li><strong>代码补全</strong>：智能代码补全</li>
+<li><strong>错误修复</strong>：自动错误修复</li>
+<li><strong>代码重构</strong>：智能重构建议</li>
+<li><strong>文档生成</strong>：自动文档生成</li>
+</ul>
+<h2 id="_4">生态系统</h2>
+<p>```mermaid
+graph LR
+    A[开发者] --&gt; B[Claude Code]
+    B --&gt; C[扩展市场]
+    C --&gt; D[官方扩展]
+    C --&gt; E[社区扩展]
+    C --&gt; F[企业扩展]</p>
+<pre><code>D --&gt; G[核心功能]
+D --&gt; H[官方支持]
+D --&gt; I[稳定性保证]
+
+E --&gt; J[创意功能]
+E --&gt; K[快速迭代]
+E --&gt; L[多样化选择]
+
+F --&gt; M[企业定制]
+F --&gt; N[安全保障]
+F --&gt; O[技术支持]
+</code></pre>
+<p>```</p>
+<h2 id="_5">开发流程</h2>
+<p>```mermaid
+sequenceDiagram
+    participant D as Developer
+    participant C as Claude Code
+    participant E as Extension
+    participant M as Extension Market</p>
+<pre><code>D-&gt;&gt;C: 使用 Claude Code
+C-&gt;&gt;M: 浏览扩展市场
+M-&gt;&gt;D: 展示可用扩展
+D-&gt;&gt;M: 安装扩展
+M-&gt;&gt;C: 下载并安装扩展
+C-&gt;&gt;E: 加载扩展
+E-&gt;&gt;C: 提供功能
+C-&gt;&gt;D: 增强体验
+D-&gt;&gt;E: 使用扩展功能
+E-&gt;&gt;C: 返回结果
+C-&gt;&gt;D: 完成任务
+</code></pre>
+<p>```</p>
+<h2 id="_6">安全机制</h2>
+<p>```mermaid
+graph TB
+    A[扩展请求] --&gt; B[权限检查]
+    B --&gt; C[沙箱执行]
+    C --&gt; D[资源限制]
+    D --&gt; E[行为监控]
+    E --&gt; F[结果验证]
+    F --&gt; G[安全输出]</p>
+<pre><code>B --&gt; H[权限管理]
+C --&gt; I[隔离环境]
+D --&gt; J[内存限制]
+D --&gt; K[CPU限制]
+E --&gt; L[行为分析]
+E --&gt; M[异常检测]
+</code></pre>
+<p>```</p>
+<h2 id="_7">应用场景</h2>
+<h3 id="1_1">1. 企业开发</h3>
+<ul>
+<li>代码标准化</li>
+<li>团队协作</li>
+<li>质量保证</li>
+<li>知识传承</li>
+</ul>
+<h3 id="2_1">2. 个人开发</h3>
+<ul>
+<li>效率提升</li>
+<li>学习辅助</li>
+<li>代码优化</li>
+<li>项目管理</li>
+</ul>
+<h3 id="3_1">3. 教育培训</h3>
+<ul>
+<li>编程教学</li>
+<li>代码审查</li>
+<li>项目指导</li>
+<li>能力评估</li>
+</ul>
+<h2 id="_8">发展趋势</h2>
+<p><code>mermaid
+timeline
+    title Claude Code扩展生态发展
+    section 2024
+        扩展概念 : 基础扩展机制
+    section 2025
+        扩展生态 : 第三方扩展
+    section 2026
+        扩展成熟 : 完整生态形成
+        扩展标准化 : 官方API稳定</code></p>
+<h2 id="_9">企业实施建议</h2>
+<h3 id="_10">推荐场景</h3>
+<ul>
+<li>企业级开发团队</li>
+<li>需要标准化的开发流程</li>
+<li>有特定技术栈需求</li>
+<li>关注代码质量和一致性</li>
+</ul>
+<h3 id="_11">实施建议</h3>
+<ol>
+<li>从核心扩展开始</li>
+<li>逐步引入专业扩展</li>
+<li>建立扩展审核机制</li>
+<li>持续监控扩展质量</li>
+</ol>
+<h3 id="_12">风险提示</h3>
+<ul>
+<li>扩展兼容性问题</li>
+<li>安全风险增加</li>
+<li>生态碎片化</li>
+<li>依赖性增强</li>
+</ul>
+<h2 id="_13">总结</h2>
+<p>claude-code-extension 代表了 AI 编程平台生态的重要里程碑。官方扩展机制的建立和第三方扩展的繁荣，标志着 AI 编程从单一工具向完整平台演进。其插件化架构和丰富的扩展类型为开发者提供了强大的定制化能力，是企业级 AI 开发的重要基础设施。</p>
+    </div>
 </main>
     <footer class="footer">
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>

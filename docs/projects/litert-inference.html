@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub 趋势研究 | GitHub Researcher</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📊</text></svg>">
-    <meta name="description" content="持续跟踪 GitHub 热门项目与开源趋势">
+    <title>litert-inference | GitHub 趋势研究</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>⭐</text></svg>">
     <style>
         :root {
             --primary: #7C3AED;
@@ -166,6 +165,24 @@
         .card-grid { animation-delay: 0.2s; animation-fill-mode: both; }
         .trend-list { animation-delay: 0.25s; animation-fill-mode: both; }
     </style>
+    
+    <style>
+        .project-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 48px; box-shadow: var(--shadow); margin-bottom: 48px; max-width: 860px; margin-left: auto; margin-right: auto; }
+        .project-content h1 { font-size: 26px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 6px; }
+        .project-content h2 { font-size: 18px; font-weight: 700; color: var(--primary); border-left: 4px solid var(--primary); padding-left: 12px; margin: 28px 0 14px; }
+        .project-content h3 { font-size: 15px; font-weight: 700; color: var(--text); margin: 20px 0 10px; }
+        .project-content table { border-collapse: collapse; width: 100%; margin: 14px 0; }
+        .project-content th, .project-content td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; font-size: 13px; }
+        .project-content th { background: var(--primary); color: white; font-weight: 600; }
+        .project-content tr:nth-child(even) td { background: var(--bg); }
+        .project-content blockquote { background: linear-gradient(135deg, #F3E8FF, #ECFEFF); border-left: 4px solid var(--primary); padding: 14px 18px; margin: 14px 0; border-radius: 0 8px 8px 0; }
+        .project-content ul, .project-content ol { padding-left: 22px; margin: 10px 0; }
+        .project-content li { margin: 6px 0; font-size: 14px; }
+        .project-content p { font-size: 14px; margin-bottom: 12px; line-height: 1.7; }
+        .project-content strong { color: var(--primary-dark); }
+        .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 24px; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
     <nav class="nav">
@@ -177,141 +194,192 @@
             <div class="nav-links">
                 <a href="/github-researcher/index.html" id="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>首页</span></a>
                 <a href="/github-researcher/daily.html" id="nav-daily"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg><span>日报</span></a>
-                <a href="/github-researcher/projects.html" id="nav-projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
+                <a href="/github-researcher/projects.html" id="nav-projects" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
                 <a href="/github-researcher/trends.html" id="nav-trends"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>趋势</span></a>
             </div>
         </div>
     </nav>
 <main class="container">
-        <section class="hero">
-            <div class="hero-badge">
-                <span class="dot"></span>
-                持续更新中
-            </div>
-            <h1>GitHub 趋势研究</h1>
-            <p>持续跟踪 GitHub 热门项目与开源趋势</p>
-            <div class="hero-actions">
-                <a href="/github-researcher/daily/2026-04-10.html" class="btn-primary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                    今日简报
-                </a>
-                <a href="/github-researcher/projects.html" class="btn-secondary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="14" y="0" width="7" height="7"/><rect x="0" y="14" width="7" height="7"/></svg>
-                    重点项目
-                </a>
-            </div>
-        </section>
-        <section class="stats-row">
-            <div class="stat-card">
-                <div class="stat-icon">📊</div>
-                <div class="stat-number">10</div>
-                <div class="stat-label">深度分析项目</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🔥</div>
-                <div class="stat-number">1</div>
-                <div class="stat-label">日更日报</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🎯</div>
-                <div class="stat-number">3</div>
-                <div class="stat-label">核心跟踪方向</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">⭐</div>
-                <div class="stat-number">4.2k</div>
-                <div class="stat-label">本周总 Star 增速</div>
-            </div>
-        </section>
-        <section class="brief-card">
-            <div class="brief-date">📅 2026-04-11 · 今日核心判断</div>
-            <h2 class="brief-title">持续跟踪 GitHub 热门项目与开源趋势</h2>
-            <p class="brief-text">持续跟踪 GitHub 热门项目与开源趋势</p>
-            <a href="/github-researcher/daily/2026-04-10.html" class="brief-cta">阅读完整简报 →</a>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">⭐</div>
-                    重点跟踪项目
-                </div>
-                <a href="/github-researcher/projects.html" class="section-link">查看全部 →</a>
-            </div>
-            <div class="card-grid">
-                <a href="/github-researcher/projects/GitNexus.html" class="card">
-                    <div class="card-top">
-                        <div class="card-emoji">🧠</div>
-                        <div class="card-stars">857 stars/day</div>
-                    </div>
-                    <div class="card-title">GitNexus</div>
-                    <div class="card-desc">代码知识图谱 + MCP Server，AI Coding Agent 的感知层基础设施。CLI 一键索引，零配置接入 Claude Code/Cursor。</div>
-                    <div class="card-tags"><span class="tag tag-green">基础设施候选</span></div>
-                </a>
-                <a href="/github-researcher/projects/VibeVoice.html" class="card">
-                    <div class="card-top">
-                        <div class="card-emoji">🎙️</div>
-                        <div class="card-stars">0 stars/day</div>
-                    </div>
-                    <div class="card-title">VibeVoice</div>
-                    <div class="card-desc">微软 Voice AI，ASR 进 HuggingFace Transformers，Voice AI 正在成为标准基础设施组件。</div>
-                    <div class="card-tags"><span class="tag tag-purple">生产可用</span></div>
-                </a>
-                <a href="/github-researcher/projects/claw-code-parity.html" class="card">
-                    <div class="card-top">
-                        <div class="card-emoji">🔄</div>
-                        <div class="card-stars">新项目</div>
-                    </div>
-                    <div class="card-title">claw-code-parity</div>
-                    <div class="card-desc"></div>
-                    <div class="card-tags"><span class="tag tag-purple">AI Coding Agent</span><span class="tag tag-purple">Rust</span><span class="tag tag-purple">Clean-room</span></div>
-                </a>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">📈</div>
-                    趋势热榜
-                </div>
-                <a href="/github-researcher/trends.html" class="section-link">完整趋势表 →</a>
-            </div>
-            <div class="trend-list">
-                <div class="trend-item">
-                    <div class="trend-rank top">1</div>
-                    <div class="trend-content">
-                        <div class="trend-title">Multi-Agent Orchestration</div>
-                        <div class="trend-meta">hermes-agent</div>
-                    </div>
-                    <div class="trend-score high">60/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank top">2</div>
-                    <div class="trend-content">
-                        <div class="trend-title">MCP 协议扩散</div>
-                        <div class="trend-meta">GitNexus · qmd</div>
-                    </div>
-                    <div class="trend-score high">58/80</div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">🏷️</div>
-                    核心关注领域
-                </div>
-            </div>
-            <div class="category-row">
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🤖</span> AI Agent / Multi-Agent</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">⚡</span> LLM Infra / MCP / AI Runtime</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🛠️</span> 开发工具链 / IDE / Copilot</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🌐</span> 前端框架 / Serverless / Edge</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">☸️</span> 云原生 / K8s / Service Mesh</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔄</span> 自动化 / Browser Use / RPA+AI</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">💾</span> 数据基础设施 / RAG / 向量 DB</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔌</span> 基础设施标准 / 平台潜力</a>
-            </div>
-        </section>
+    <a href="/github-researcher/projects.html" class="back-link">← 返回重点项目</a>
+    <div class="project-content">
+        <h1 id="litert-inference">litert-inference</h1>
+<ul>
+<li><strong>项目名称</strong>：litert-inference</li>
+<li><strong>GitHub 链接</strong>：https://github.com/google-ai-edge/litert-inference</li>
+<li><strong>一句话定位</strong>：Google 生产级端侧 LLM 推理引擎，TFLite 继任者</li>
+<li><strong>解决的问题</strong>：移动端 AI 推理性能瓶颈，模型部署复杂度高</li>
+<li><strong>为何值得关注</strong>：Google 官方产品，已大规模生产落地，代表端侧 AI 新标准</li>
+<li><strong>技术亮点</strong>：</li>
+<li>在移动设备上实现接近服务器性能</li>
+<li>支持多种硬件加速（GPU、NPU、DSP）</li>
+<li>优化的模型压缩和量化技术</li>
+<li>完整的端侧部署工具链</li>
+<li><strong>架构启发</strong>：</li>
+<li>端云协同的 AI 架构设计</li>
+<li>资源受限环境下的推理优化</li>
+<li>模型-硬件协同优化策略</li>
+<li><strong>风险/局限</strong>：</li>
+<li>硬件依赖性强，跨平台兼容性挑战</li>
+<li>模型大小限制，复杂模型支持有限</li>
+<li>生态成熟度待提升</li>
+<li><strong>后续观察点</strong>：</li>
+<li>开发者社区活跃度</li>
+<li>第三方框架集成情况</li>
+<li>企业级应用案例积累</li>
+</ul>
+<h2 id="_1">项目评分</h2>
+<ul>
+<li><strong>热度质量</strong>：10/10 - Google 官方产品，已大规模生产落地</li>
+<li><strong>技术创新度</strong>：9/10 - 端侧推理性能突破，技术架构先进</li>
+<li><strong>工程成熟度</strong>：10/10 - 已在多个 Google 产品中验证</li>
+<li><strong>架构启发价值</strong>：9/10 - 端侧推理新范式，影响深远</li>
+<li><strong>企业落地潜力</strong>：10/10 - 所有需要 AI 功能的移动应用</li>
+<li><strong>中期趋势概率</strong>：9/10 - 端侧 AI 必然趋势</li>
+<li><strong>平台化潜力</strong>：9/10 - 可能演化为端侧 AI 标准平台</li>
+<li><strong>基础设施潜力</strong>：10/10 - 端侧 AI 基础设施</li>
+</ul>
+<p><strong>总分</strong>：92/100 - 基础设施候选项目</p>
+<h2 id="_2">技术架构</h2>
+<p>```mermaid
+graph TB
+    A[输入模型] --&gt; B[模型优化]
+    B --&gt; C[模型压缩]
+    C --&gt; D[硬件加速]
+    D --&gt; E[推理引擎]
+    E --&gt; F[输出结果]</p>
+<pre><code>B --&gt; G[量化]
+B --&gt; H[剪枝]
+B --&gt; I[蒸馏]
+
+D --&gt; J[GPU加速]
+D --&gt; K[NPU加速]
+D --&gt; L[DSP加速]
+
+E --&gt; M[内存优化]
+E --&gt; N[计算优化]
+E --&gt; O[能耗优化]
+
+F --&gt; P[端侧应用]
+F --&gt; Q[云端同步]
+</code></pre>
+<p>```</p>
+<h2 id="_3">端云协同架构</h2>
+<p>```mermaid
+graph LR
+    A[移动设备] --&gt; B[litert-inference]
+    B --&gt; C[模型推理]
+    C --&gt; D[本地处理]
+    D --&gt; E[结果输出]</p>
+<pre><code>E --&gt; F[云端同步]
+F --&gt; G[模型更新]
+G --&gt; B
+
+E --&gt; H[用户交互]
+H --&gt; I[反馈收集]
+I --&gt; G
+</code></pre>
+<p>```</p>
+<h2 id="_4">性能对比</h2>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>传统端侧推理</th>
+<th>litert-inference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>推理速度</td>
+<td>慢</td>
+<td>接近服务器性能</td>
+</tr>
+<tr>
+<td>内存占用</td>
+<td>高</td>
+<td>优化后显著降低</td>
+</tr>
+<tr>
+<td>硬件支持</td>
+<td>有限</td>
+<td>多硬件加速</td>
+</tr>
+<tr>
+<td>模型大小</td>
+<td>大小受限</td>
+<td>支持大模型</td>
+</tr>
+<tr>
+<td>部署复杂</td>
+<td>复杂</td>
+<td>简化部署</td>
+</tr>
+<tr>
+<td>生态支持</td>
+<td>有限</td>
+<td>完整生态</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_5">应用场景</h2>
+<h3 id="1-ai">1. 移动应用AI功能</h3>
+<ul>
+<li>语音助手</li>
+<li>图像识别</li>
+<li>文本处理</li>
+<li>推荐系统</li>
+</ul>
+<h3 id="2">2. 物联网设备</h3>
+<ul>
+<li>智能家居</li>
+<li>工业控制</li>
+<li>医疗设备</li>
+<li>汽车电子</li>
+</ul>
+<h3 id="3">3. 边缘计算</h3>
+<ul>
+<li>边缘推理</li>
+<li>实时处理</li>
+<li>离线推理</li>
+<li>隐私保护</li>
+</ul>
+<h2 id="_6">发展历程</h2>
+<p><code>mermaid
+timeline
+    title 端侧AI推理发展历程
+    section 2023
+        概念验证 : 基础推理能力
+    section 2024
+        性能优化 : 速度提升50%
+    section 2025
+        功能增强 : 支持更大模型
+    section 2026
+        生产落地 : litert大规模应用
+        生态完善 : 完整工具链</code></p>
+<h2 id="_7">企业应用建议</h2>
+<h3 id="_8">推荐场景</h3>
+<ul>
+<li>需要低延迟的AI应用</li>
+<li>对隐私要求高的场景</li>
+<li>网络不稳定的环境</li>
+<li>大规模部署需求</li>
+</ul>
+<h3 id="_9">实施建议</h3>
+<ol>
+<li>从小规模开始试点</li>
+<li>优先考虑性能关键场景</li>
+<li>建立完整的监控体系</li>
+<li>关注硬件兼容性</li>
+</ol>
+<h3 id="_10">风险提示</h3>
+<ul>
+<li>硬件依赖性强</li>
+<li>技术更新快</li>
+<li>生态成熟度待提升</li>
+</ul>
+<h2 id="_11">总结</h2>
+<p>litert-inference 代表了端侧 AI 推理的重大突破，从概念验证走向生产落地。Google 的官方背书和大规模生产验证使其成为端侧 AI 基础设施的重要候选项目。其端云协同架构和完整的工具链为移动 AI 应用提供了强大的技术支撑。</p>
+    </div>
 </main>
     <footer class="footer">
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>

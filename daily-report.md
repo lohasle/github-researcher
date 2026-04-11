@@ -1,146 +1,74 @@
-# 2026-04-09 GitHub 趋势研究简报
+# GitHub 趋势研究 · 日报索引
 
-## 今日重点趋势
+> 每日 GitHub 趋势研究简报，持续跟踪不间断
 
-### 🚀 AI Agent 与自主智能系统
+---
 
-**1. auto-deep-researcher-24x7** - Xiangyue-Zhang
-- ⭐ 123 stars (创建于 2 天前)
-- 🐍 Python 实现，支持 GPU 和超参数调优
-- 🎯 24/7 自动深度研究系统，支持实验自动化
-- 🔥 项目特点：完全自主的研究流程，无需人工干预
+## 2026-04-11
 
-**2. llm-wiki** - mduongvandinh  
-- ⭐ 119 stars (创建于 2 天前)
-- 🌐 HTML 知识库系统，基于 LLM Wiki 模式
-- 🎯 完全自动化的个人知识库，基于 Andrej Karpathy 模式
+**核心主题：** AI Agent 技能框架爆发 · 托管式 Agent 平台兴起 · Copilot Workspace 多仓库上下文
 
-**3. MindAct** - KeploreAI-Lab
-- ⭐ 114 stars (创建于 2 天前)
-- 🧠 AI Agent + 特定知识 = 真正的自主 AI
-- 🔥 TypeScript 实现，强调知识融合
+**关键项目：**
+- ⚡ superpowers (121K stars) — AI 编程 Agent 技能框架，强制 TDD
+- 🤝 multica-ai (6,000+ stars) — 开源托管式 Agent 平台
+- 🦙 ollama (167.7K stars) — 本地 LLM 部署工具
 
-### 💻 开发工具链与 AI 编程
+→ [查看完整日报](daily/2026-04-11.html)
 
-**4. styleseed** - bitjaru
-- ⭐ 120 stars (创建于 2 天前)  
-- 🎨 AI 设计引擎，让 AI 代码像 UI/UX 设计师
-- 🔥 TypeScript 开发，支持品牌皮肤选择
+---
 
-**5. tui-use** - onesuper
-- ⭐ 94 stars (创建于 2 天前)
-- 🖥️ 终端用户界面代理，突破 bash 的限制
-- 🔥 让 AI 访问 REPL、安装器和 TUI 应用
+## 2026-04-10
 
-**6. coderaft** - pithings
-- ⭐ 95 stars (创建于 2 天前)
-- 💻 在任何机器上运行 VS Code，25MB npm 包
-- 🔥 轻量级远程开发环境
+**核心主题：** 端侧AI推理生产化 · AI编程平台生态成熟 · 多代理协作标准化
 
-**7. project-architect** - ersinkoc  
-- ⭐ 94 stars (创建于 2 天前)
-- 📋 文档优先的项目规划代理技能
-- 🔥 支持 40+ 编码代理，兼容 Claude Code、Cursor、Codex
+**关键项目：**
+- 🚀 litert-inference (2,341 stars) — Google 生产级端侧 LLM 推理引擎
+- 🔧 claude-code-extension (8,942 stars) — Claude Code 扩展生态
+- 🎼 agent-orchestra (678 stars) — 多代理协作编排平台
 
-### 📊 科研与数据分析
+→ [查看完整日报](daily/2026-04-10.html)
 
-**8. Auto-Resubmit** - LilanOvO
-- ⭐ 98 stars (创建于 2 天前)
-- 📄 LaTeX 论文自动迁移工具
-- 🔥 一键转换顶会论文格式，支持 NeurIPS、ICLR、ACL 等
+---
 
-**9. repo-analyzer** - yzddmr6
-- ⭐ 79 stars (创建于 2 天前)  
-- 🔍 AI 编码代理技能，深度架构分析
-- 🔥 一句话生成专业级分析报告
+## 2026-04-09
 
-**10. CIK-Bench** - UCSC-VLAA
-- ⭐ 76 stars (创建于 2 天前)
-- 📊 架构基准测试系统
-- 🔥 用于大规模系统性能评估
+**核心主题：** 自主 AI Agent 系统爆发 · AI 原生开发工具革新 · 科研自动化
 
-## 今日最值得关注的方向
+**关键项目：**
+- 🚀 auto-deep-researcher-24x7 (123 stars) — 24/7 自动深度研究系统
+- 🎨 styleseed (120 stars) — AI 设计引擎
+- 📋 project-architect (94 stars) — 文档优先的项目规划代理技能
 
-### 🔥 最值得跟踪的 3 个方向：
+→ [查看完整日报](daily/2026-04-09.html)
 
-1. **自主 AI Agent 系统** - 从简单工具向完全自主的智能体演进
-2. **AI 原生开发工具链** - 从传统 IDE 向 AI 驱动的编程环境转变  
-3. **科研自动化** - 从人工处理到全流程自动化的研究范式变革
+---
 
-### 🚀 最值得关注的潜力基础设施项目：
+## 2026-04-08
 
-**auto-deep-researcher-24x7** (Xiangyue-Zhang)
-- 总分：85/100 - 基础设施候选项目
-- 热度质量：9/10 - 完全自主的 24/7 研究系统
-- 技术创新度：9/10 - 实验自动化 + 超参数调优
-- 工程成熟度：8/10 - Python 实现，支持 GPU
-- 架构启发价值：9/10 - 可扩展的自主研究框架
-- 企业落地潜力：8/10 - 研究机构和企业 R&D 团队
-- 中期趋势概率：9/10 - 代表 AI 研究自动化方向
-- 平台化潜力：8/10 - 可能演化为研究自动化平台
-- 基础设施潜力：9/10 - 底层研究基础设施
+**核心主题：** claw-code 爆炸式增长 · Edge AI 加速落地 · Claude Code 生态持续扩张
 
-## 重点分析
+**关键项目：**
+- 🔥 claw-code (168.7K stars) — 史上最快突破 100K stars
+- ⚡ oh-my-codex (18K stars) — Claude Code Codex 版
+- 🧙 hermes-agent (28K stars) — Agent 自进化 + MCP Gateway
+- 🌐 LiteRT (2K+ stars) — Google 端侧 ML 框架
 
-### auto-deep-researcher-24x7 - 深度研究自动化突破
+→ [查看完整日报](daily/2026-04-08.html)
 
-**定位**：24/7 自动深度研究系统，支持实验自动化和超参数调优
+---
 
-**为何火爆**：
-- 代表 AI 研究自动化的前沿方向
-- 解决了研究流程中的重复性工作
-- 支持完整的实验生命周期管理
+## 2026-04-07
 
-**技术亮点**：
-- 完全自主的研究流程设计
-- GPU 支持和超参数优化
-- 自动化实验执行和监控
+**核心主题：** MCP 协议扩散 + 端侧 LLM 推理生产化
 
-**架构启发**：
-- 可扩展的智能体架构
-- 研究-实验-验证的闭环系统
-- 知识积累和经验复用机制
+**关键项目：**
+- 🧠 GitNexus (23.6K stars) — 代码知识图谱 + MCP Server
+- 🧙 hermes-agent (28K stars) — Agent 自进化 + 跨会话记忆
+- 📋 oh-my-claudecode (25K stars) — Multi-Agent 编排平台
 
-### styleseed - AI 设计引擎新范式
+→ [查看完整日报](daily/2026-04-07.html)
 
-**定位**：让 AI 代码具备 UI/UX 设计能力的开发引擎
+---
 
-**为何火爆**：
-- 解决开发者设计能力短板
-- 提供品牌一致性保障
-- 降低专业设计门槛
-
-**技术亮点**：
-- 基于 TypeScript 的现代化架构
-- 支持品牌皮肤系统
-- 与 shadcn-ui 生态深度集成
-
-### project-architect - 项目规划代理
-
-**定位**：文档优先的项目规划代理技能
-
-**为何火爆**：
-- 填补项目规划 AI 工具空白
-- 支持 40+ 编码代理生态
-- 极大提升项目启动效率
-
-**技术亮点**：
-- 生成式项目规划文档
-- 多平台兼容性
-- 单次提示即可完成完整规划
-
-## 风险与机遇
-
-### 机遇：
-1. **研究自动化** - AI 研究效率指数级提升
-2. **开发工具革新** - 从代码生成到设计生成
-3. **知识管理升级** - 从静态知识到动态知识库
-
-### 风险：
-1. **过度自动化** - 研究质量依赖系统设计
-2. **工具依赖** - 开发者能力可能退化
-3. **生态碎片化** - 工具链过于分散
-
-## 总结
-
-今日 GitHub 趋势显示，AI 正从简单工具向完全自主的智能体系统演进。自主研究系统、AI 原生开发工具和科研自动化成为三大核心趋势。auto-deep-researcher-24x7 代表了基础设施层的突破，有望演化为下一代研究自动化平台。
+*数据来源：GitHub Trending、MapoDev、GitTrends、ByteIota、OSSInsight*
+*持续跟踪 · 每日更新 · 架构视角*

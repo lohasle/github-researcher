@@ -300,3 +300,36 @@ Mermaid 图必须遵守以下原则：
 - 明确识别泡沫
 - 明确识别潜力基础设施项目
 - 始终站在资深架构师视角输出
+
+---
+
+## 质量护栏（不可违反）
+
+### 每次任务必须使用 github-daily Skill
+
+每次定时任务触发时，**必须读取并遵循** `skills/github-daily/SKILL.md` 中定义的完整流程：
+
+```
+Phase 1: 健康检查 → Phase 2: 补齐缺口（如需）→ Phase 3: 今日研究 → Phase 4: 项目档案 → Phase 5: 级联同步 → Phase 6: 最终验证
+```
+
+### 生成项目档案是必做步骤
+- 每天的 key_projects 必须全部生成 `projects/*.md`
+- 不允许只生成日报 MD 而跳过项目档案
+- 已有档案的更新 last_seen_date
+
+### generate_pages.py 每次必跑
+- 修改任何 MD 后**必须**运行: `python3 docs/generate_pages.py`
+- 不允许只 push MD 而不重新生成 HTML
+
+### daily-report.md 必须同步
+- 每次新增日报后更新 daily-report.md 的核心主题索引
+
+### validate.py 是硬门槛
+- Phase 6 未通过 → **不允许 git push**
+- 必须在输出中包含 validate 结果
+- 最多重试修复 2 次，仍不通过则中止并报告
+
+### 报告格式固定
+每次任务结尾必须输出标准报告（新增/修复文件、validate 结果、git 状态）
+不可省略报告直接结束。

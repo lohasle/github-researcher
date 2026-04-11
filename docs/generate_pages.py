@@ -263,12 +263,36 @@ def generate_index():
     hero_badge = get_fm(latest_daily_fm, 'hero_badge', '持续更新中')
     date_str = get_fm(latest_daily_fm, 'date', datetime.now().strftime('%Y-%m-%d'))
 
-    stats = get_fm(latest_daily_fm, 'stats', {
-        'project_count': len(all_projects),
-        'daily_updates': 1,
-        'core_directions': 3,
-        'weekly_stars': '4.2k'
-    })
+    # === Dynamic stats: always compute from actual data ===
+    # Use aggregate_all_projects() for consistency with projects page
+    aggregated = aggregate_all_projects()
+    real_project_count = len(aggregated)
+
+    # Count daily reports (daily/*.md)
+    daily_files_for_stats = sorted(glob.glob(os.path.join(DAILY_DIR, '*.md')))
+    real_daily_count = len(daily_files_for_stats)
+
+    # Count unique trend directions across all dailies
+    unique_directions = set()
+    for df in daily_files_for_stats:
+        with open(df, 'r') as fp:
+            c = fp.read()
+        fm_d, _ = parse_frontmatter(c)
+        for t in (fm_d.get('trends') or []):
+            if t.get('name'):
+                unique_directions.add(t['name'])
+    real_directions_count = len(unique_directions)
+
+    # Sum weekly stars from latest daily's weekly_stars field (keep as-is if string)
+    weekly_stars = get_fm(latest_daily_fm, 'stats', {}).get('weekly_stars', 'N/A')
+
+    # Override stats with real computed values (ignores frontmatter project_count)
+    stats = {
+        'project_count': real_project_count,
+        'daily_updates': real_daily_count,
+        'core_directions': real_directions_count,
+        'weekly_stars': weekly_stars
+    }
 
     trends = get_fm(latest_daily_fm, 'trends', [
         {'rank': 1, 'name': 'Multi-Agent Orchestration', 'projects': ['hermes-agent'], 'score': 60},
@@ -281,22 +305,22 @@ def generate_index():
     stats_html = f'''
             <div class="stat-card">
                 <div class="stat-icon">📊</div>
-                <div class="stat-number">{stats.get('project_count', len(all_projects))}</div>
+                <div class="stat-number">{stats['project_count']}</div>
                 <div class="stat-label">深度分析项目</div>
             </div>
             <div class="stat-card">
                 <div class="stat-icon">🔥</div>
-                <div class="stat-number">{stats.get('daily_updates', 1)}</div>
+                <div class="stat-number">{stats['daily_updates']}</div>
                 <div class="stat-label">日更日报</div>
             </div>
             <div class="stat-card">
                 <div class="stat-icon">🎯</div>
-                <div class="stat-number">{stats.get('core_directions', 3)}</div>
+                <div class="stat-number">{stats['core_directions']}</div>
                 <div class="stat-label">核心跟踪方向</div>
             </div>
             <div class="stat-card">
                 <div class="stat-icon">⭐</div>
-                <div class="stat-number">{stats.get('weekly_stars', '4.2k')}</div>
+                <div class="stat-number">{stats['weekly_stars']}</div>
                 <div class="stat-label">本周总 Star 增速</div>
             </div>'''
 

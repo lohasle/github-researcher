@@ -1,3 +1,15 @@
+---
+name: auto-deep-researcher-24x7
+title: auto-deep-researcher-24x7
+date: '2026-04-09'
+summary: 24/7 自动深度研究系统，支持实验自动化和超参数调优
+stars: 123
+category: 基础设施候选
+language: Python
+last_seen_date: '2026-04-09'
+verdict: 基础设施候选
+---
+
 # auto-deep-researcher-24x7
 
 ## 基本信息

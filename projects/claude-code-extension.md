@@ -1,3 +1,15 @@
+---
+name: claude-code-extension
+title: claude-code-extension
+date: '2026-04-10'
+summary: Claude Code 扩展生态，官方插件和工具
+stars: 8942
+category: 平台候选
+language: TypeScript
+last_seen_date: '2026-04-10'
+verdict: 平台候选
+---
+
 # claude-code-extension
 
 - **项目名称**：claude-code-extension

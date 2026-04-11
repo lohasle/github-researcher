@@ -1,3 +1,15 @@
+---
+name: litert-inference
+title: litert-inference
+date: '2026-04-10'
+summary: Google 生产级端侧 LLM 推理引擎，TFLite 继任者
+stars: 2341
+category: 基础设施候选
+language: Python
+last_seen_date: '2026-04-10'
+verdict: 基础设施候选
+---
+
 # litert-inference
 
 - **项目名称**：litert-inference

@@ -1,3 +1,15 @@
+---
+name: styleseed
+title: styleseed
+date: '2026-04-09'
+summary: AI 设计引擎，让 AI 代码像 UI/UX 设计师
+stars: 120
+category: 工具型
+language: TypeScript
+last_seen_date: '2026-04-09'
+verdict: 工具型
+---
+
 # styleseed
 
 ## 基本信息

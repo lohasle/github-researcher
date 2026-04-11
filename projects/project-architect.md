@@ -1,3 +1,15 @@
+---
+name: project-architect
+title: project-architect
+date: '2026-04-09'
+summary: 文档优先的项目规划代理技能
+stars: 94
+category: 工具型
+language: 无特定语言
+last_seen_date: '2026-04-09'
+verdict: 工具型
+---
+
 # project-architect
 
 ## 基本信息

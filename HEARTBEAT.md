@@ -1,7 +1,13 @@
-# HEARTBEAT.md Template
+# HEARTBEAT.md
 
-```markdown
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
+## 每日巡检
 
-# Add tasks below when you want the agent to check something periodically.
-```
+1. 检查是否已完成今日 GitHub 趋势研究
+2. 如未完成，提醒用户今日趋势报告缺失
+3. 检查 GitHub Pages 是否同步
+
+## 周常检查（每周末）
+
+1. 整理本周热门项目趋势变化
+2. 检查是否有过时的项目档案需要更新
+3. 检查 GitHub Pages 是否正常

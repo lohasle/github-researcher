@@ -4,6 +4,20 @@
 
 ---
 
+## 2026-04-12
+
+**核心主题：** AI记忆系统破局 · Agent知识脑标配化 · 人格蒸馏Skill生态爆发
+
+**关键项目：**
+- 🧠 mempalace (41,755 stars) — 史上最高分 AI 记忆系统，LongMemEval 96.6%
+- 🕸️ graphify (22,086 stars) — 代码/文档转知识图谱的 Agent Skill
+- 🧠 GBrain (15,432 stars) — Agent 知识脑系统
+- 👆 clicky (3,774 stars) — 光标旁的 AI 老师
+
+→ [查看完整日报](daily/2026-04-12.html)
+
+---
+
 ## 2026-04-11
 
 **核心主题：** AI Agent 技能框架爆发 · 托管式 Agent 平台兴起 · Copilot Workspace 多仓库上下文

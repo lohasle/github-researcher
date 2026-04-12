@@ -70,14 +70,17 @@ for df in daily_files:
         for kp in key_projects:
             pname = kp.get('name', '')
             if pname:
-                # 检查是否有对应的 project profile
-                slug = pname.lower().replace(' ', '-')
+                # 去掉括号内的 org 信息，如 "claw-code (ultraworkers)" → "claw-code"
+                clean_name = re.sub(r'\s*\([^)]*\)', '', pname).strip()
+                slug = clean_name.lower().replace(' ', '-')
                 profile_path = os.path.join(PROJECTS, f'{slug}.md')
                 if not os.path.exists(profile_path):
-                    # 尝试其他可能的文件名
+                    # 尝试模糊匹配：去掉所有分隔符后比较
                     found = False
+                    clean_key = clean_name.lower().replace('-', '').replace(' ', '').replace('_', '')
                     for pf in os.listdir(PROJECTS) if os.path.isdir(PROJECTS) else []:
-                        if pname.lower().replace('-', '').replace(' ', '') in pf.lower().replace('-', '').replace('_', ''):
+                        pf_key = pf.replace('.md', '').lower().replace('-', '').replace(' ', '').replace('_', '')
+                        if clean_key in pf_key or pf_key in clean_key:
                             found = True
                             break
                     if not found:

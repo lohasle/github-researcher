@@ -136,16 +136,22 @@ key_projects:
 - 在文件开头添加今日核心主题
 - 保持按日期倒序排列
 
-### 5.3 运行 HTML 生成器
+### 5.3 更新 README.md
+```bash
+python3 scripts/generate_readme.py
+```
+这会从 daily/ 和 projects/ 数据自动生成 README.md，确保与实际数据同步。
+
+### 5.4 运行 HTML 生成器
 ```bash
 python3 docs/generate_pages.py
 ```
 这会重新生成所有 HTML（index.html、daily.html、trends.html、projects.html、各项目页）。
 
-### 5.4 验证生成结果
-检查生成的 HTML 非空：
+### 5.5 验证生成结果
+检查生成的文件非空：
 ```bash
-wc -c docs/index.html docs/daily.html docs/trends.html docs/projects.html
+wc -c README.md docs/index.html docs/daily.html docs/trends.html docs/projects.html
 ```
 
 ## Phase 6: 最终验证

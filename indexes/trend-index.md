@@ -29,6 +29,33 @@ title: Trend Index — 趋势指数
 
 ---
 
+## 2026-04-13（第八版）
+
+### 本日新增项目（2026-04-13）
+
+| 项目 | 分类 | 热度信号 | 核心判断 | 建议 |
+|------|------|---------|---------|------|
+| Archon | **平台候选** | 16,000+ stars, 4天达成 | 首个AI Coding harness builder，用YAML标准化Agent编程工作流 | **深度跟踪 + PoC** |
+| MiroFish | 学习型 | 25,000+ stars, 月trending前列 | 通用群体智能引擎，学术→工程尝试 | 观望 |
+| agency-agents | 工具型（泡沫嫌疑） | 68,906 stars, 月增67K | Shell Agent工具箱，star数据异常 | 短期关注 |
+| EmDash | **平台候选** | 8,500+ stars, Cloudflare官方 | WordPress精神继任者，插件沙箱架构创新 | **深度跟踪 + PoC** |
+
+### 趋势信号更新
+
+- **AI Agent工业化**：Archon 的 harness 概念标志着AI Coding从"能力探索"进入"工程标准化"阶段
+- **群体智能觉醒**：MiroFish 把学术概念推向工程化，但距离生产仍有距离
+- **CMS架构创新**：EmDash 的 Worker Isolate 插件沙箱是CMS领域十年未见的技术突破
+- **端侧AI生态成型**：Gemma 4 + AI Edge Gallery + LiteRT-LM 构成完整闭环
+
+### 持续跟踪项目状态更新
+
+| 项目 | 上次判断 | 本次调整 | 理由 |
+|------|---------|---------|------|
+| EmDash | 新增跟踪 | 升级为平台候选 | Cloudflare战略级投入 + 架构创新 |
+| GitNexus | 持续跟踪 | 关注度上升 | 25K+ stars, trending首位 |
+
+---
+
 ## 2026-04-10（第五版）
 
 ### 本日新增项目（2026-04-10）

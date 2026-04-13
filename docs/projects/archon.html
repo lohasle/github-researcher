@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026-04-13 GitHub 趋势研究简报 | GitHub Researcher</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📊</text></svg>">
-    <meta name="description" content="AI Agent工业化 · Harness工程新范式 · 群体智能觉醒 · 端侧AI生态成型">
+    <title>Archon | GitHub 趋势研究</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>⭐</text></svg>">
     <style>
         :root {
             --primary: #7C3AED;
@@ -166,6 +165,24 @@
         .card-grid { animation-delay: 0.2s; animation-fill-mode: both; }
         .trend-list { animation-delay: 0.25s; animation-fill-mode: both; }
     </style>
+    
+    <style>
+        .project-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 48px; box-shadow: var(--shadow); margin-bottom: 48px; max-width: 860px; margin-left: auto; margin-right: auto; }
+        .project-content h1 { font-size: 26px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 6px; }
+        .project-content h2 { font-size: 18px; font-weight: 700; color: var(--primary); border-left: 4px solid var(--primary); padding-left: 12px; margin: 28px 0 14px; }
+        .project-content h3 { font-size: 15px; font-weight: 700; color: var(--text); margin: 20px 0 10px; }
+        .project-content table { border-collapse: collapse; width: 100%; margin: 14px 0; }
+        .project-content th, .project-content td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; font-size: 13px; }
+        .project-content th { background: var(--primary); color: white; font-weight: 600; }
+        .project-content tr:nth-child(even) td { background: var(--bg); }
+        .project-content blockquote { background: linear-gradient(135deg, #F3E8FF, #ECFEFF); border-left: 4px solid var(--primary); padding: 14px 18px; margin: 14px 0; border-radius: 0 8px 8px 0; }
+        .project-content ul, .project-content ol { padding-left: 22px; margin: 10px 0; }
+        .project-content li { margin: 6px 0; font-size: 14px; }
+        .project-content p { font-size: 14px; margin-bottom: 12px; line-height: 1.7; }
+        .project-content strong { color: var(--primary-dark); }
+        .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 24px; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
     <nav class="nav">
@@ -177,157 +194,107 @@
             <div class="nav-links">
                 <a href="/github-researcher/index.html" id="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>首页</span></a>
                 <a href="/github-researcher/daily.html" id="nav-daily"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg><span>日报</span></a>
-                <a href="/github-researcher/projects.html" id="nav-projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
+                <a href="/github-researcher/projects.html" id="nav-projects" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
                 <a href="/github-researcher/trends.html" id="nav-trends"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>趋势</span></a>
             </div>
         </div>
     </nav>
 <main class="container">
-        <section class="hero">
-            <div class="hero-badge">
-                <span class="dot"></span>
-                2026-04-13
-            </div>
-            <h1>GitHub 趋势研究</h1>
-            <p>AI Agent工业化 · Harness工程新范式 · 群体智能觉醒 · 端侧AI生态成型</p>
-            <div class="hero-actions">
-                <a href="/github-researcher/daily/2026-04-13.html" class="btn-primary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                    今日简报
-                </a>
-                <a href="/github-researcher/projects.html" class="btn-secondary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="14" y="0" width="7" height="7"/><rect x="0" y="14" width="7" height="7"/></svg>
-                    重点项目
-                </a>
-            </div>
-        </section>
-        <section class="stats-row">
-            <div class="stat-card">
-                <div class="stat-icon">📊</div>
-                <div class="stat-number">27</div>
-                <div class="stat-label">深度分析项目</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🔥</div>
-                <div class="stat-number">7</div>
-                <div class="stat-label">日更日报</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🎯</div>
-                <div class="stat-number">24</div>
-                <div class="stat-label">核心跟踪方向</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">⭐</div>
-                <div class="stat-number">80k+</div>
-                <div class="stat-label">本周总 Star 增速</div>
-            </div>
-        </section>
-        <section class="brief-card">
-            <div class="brief-date">📅 2026-04-13 · 今日核心判断</div>
-            <h2 class="brief-title">AI Agent工业化 · Harness工程新范式 · 群体智能觉醒 · 端侧AI生态成型</h2>
-            <p class="brief-text">AI Agent工业化 · Harness工程新范式 · 群体智能觉醒 · 端侧AI生态成型 今日头条趋势:AI Agent 工业化：Harness 工程范式确立。</p>
-            <a href="/github-researcher/daily/2026-04-13.html" class="brief-cta">阅读完整简报 →</a>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">⭐</div>
-                    重点跟踪项目
-                </div>
-                <a href="/github-researcher/projects.html" class="section-link">查看全部 →</a>
-            </div>
-            <div class="card-grid">
-                <a href="/github-researcher/projects/archon.html" class="card">
-                    <div class="card-top">
-                        <div class="card-emoji">🏗️</div>
-                        <div class="card-stars">16,000+ stars</div>
-                    </div>
-                    <div class="card-title">Archon</div>
-                    <div class="card-desc">首个开源 AI Coding harness builder，用 YAML 工作流让 Agent 编程可确定、可重复</div>
-                    <div class="card-tags"><span class="tag tag-purple">AI Coding</span><span class="tag tag-purple">Harness Builder</span><span class="tag tag-purple">YAML Workflow</span></div>
-                </a>
-                <a href="/github-researcher/projects/mirofish.html" class="card">
-                    <div class="card-top">
-                        <div class="card-emoji">🐟</div>
-                        <div class="card-stars">25,000+ stars</div>
-                    </div>
-                    <div class="card-title">MiroFish</div>
-                    <div class="card-desc">通用群体智能引擎，预测+优化+协作一体化</div>
-                    <div class="card-tags"><span class="tag tag-purple">Swarm Intelligence</span><span class="tag tag-purple">多Agent</span><span class="tag tag-purple">优化引擎</span></div>
-                </a>
-                <a href="/github-researcher/projects/agency-agents.html" class="card">
-                    <div class="card-top">
-                        <div class="card-emoji">🎭</div>
-                        <div class="card-stars">68,906 stars</div>
-                    </div>
-                    <div class="card-title">agency-agents</div>
-                    <div class="card-desc">完整 AI Agency 工具箱，月增 67K+ stars，Shell 脚本即可部署专业 Agent</div>
-                    <div class="card-tags"><span class="tag tag-purple">AI Agency</span><span class="tag tag-purple">Shell Agent</span><span class="tag tag-purple">专业化Agent</span></div>
-                </a>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">📈</div>
-                    趋势热榜
-                </div>
-                <a href="/github-researcher/trends.html" class="section-link">完整趋势表 →</a>
-            </div>
-            <div class="trend-list">
-                <div class="trend-item">
-                    <div class="trend-rank top">1</div>
-                    <div class="trend-content">
-                        <div class="trend-title">AI Agent 工业化：Harness 工程范式确立</div>
-                        <div class="trend-meta">Archon · agency-agents · superpowers</div>
-                    </div>
-                    <div class="trend-score high">85/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank top">2</div>
-                    <div class="trend-content">
-                        <div class="trend-title">群体智能与自进化 Agent 觉醒</div>
-                        <div class="trend-meta">MiroFish · agency-agents</div>
-                    </div>
-                    <div class="trend-score high">72/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">3</div>
-                    <div class="trend-content">
-                        <div class="trend-title">端侧 AI 生态加速成型</div>
-                        <div class="trend-meta">Gemma 4 · LiteRT-LM · AI Edge Gallery</div>
-                    </div>
-                    <div class="trend-score high">75/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">4</div>
-                    <div class="trend-content">
-                        <div class="trend-title">无服务器 CMS 新物种</div>
-                        <div class="trend-meta">EmDash</div>
-                    </div>
-                    <div class="trend-score high">68/80</div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">🏷️</div>
-                    核心关注领域
-                </div>
-            </div>
-            <div class="category-row">
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🤖</span> AI Agent / Multi-Agent</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">⚡</span> LLM Infra / MCP / AI Runtime</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🛠️</span> 开发工具链 / IDE / Copilot</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🌐</span> 前端框架 / Serverless / Edge</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">☸️</span> 云原生 / K8s / Service Mesh</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔄</span> 自动化 / Browser Use / RPA+AI</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">💾</span> 数据基础设施 / RAG / 向量 DB</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔌</span> 基础设施标准 / 平台潜力</a>
-            </div>
-        </section>
+    <a href="/github-researcher/projects.html" class="back-link">← 返回重点项目</a>
+    <div class="project-content">
+        <h1 id="archon-ai-coding-harness-builder">Archon — 首个开源 AI Coding Harness Builder</h1>
+<h2 id="_1">一句话定位</h2>
+<p>用 YAML 工作流让 AI 编程可确定、可重复——Dockerfile 标准化了基础设施，GitHub Actions 标准化了 CI/CD，Archon 标准化了 AI 编程。</p>
+<h2 id="_2">解决的问题</h2>
+<p>AI Coding Agent 的核心痛点不是能力不足，而是<strong>输出不可控</strong>。同一条 prompt 跑两次，结果可能天差地别。对企业而言，不可重复 = 不可信赖 = 不可用。</p>
+<p>Archon 把开发流程编码为 YAML harness：plan → implement → validate → code review → PR creation。每次执行走同样的流程，产出可审计、可比较、可回溯。</p>
+<h2 id="_3">为什么值得关注</h2>
+<ol>
+<li><strong>概念精准</strong>：harness builder 的类比（Dockerfile / GitHub Actions / AI Coding）击中认知空白</li>
+<li><strong>4 天 16K stars</strong>：增速健康，多渠道热议</li>
+<li><strong>多入口支持</strong>：CLI / Web / Slack / Discord / GitHub——说明定位是团队工具</li>
+<li><strong>V3 版本</strong>：经过多次迭代，不是概念验证而是持续演进的产品</li>
+<li><strong>支持 Claude Code + Codex</strong>：覆盖主流 AI Coding Agent</li>
+</ol>
+<h2 id="_4">热度来源判断</h2>
+<ul>
+<li>真实需求驱动：AI Coding 不确定性是开发者的普遍痛点</li>
+<li>叙事驱动：harness 概念自带传播性</li>
+<li>创作者影响力：coleam00 在 AI Coding 社区有知名度</li>
+<li>社区验证：MapoDev、ByteIota、PyShine 等多渠道覆盖</li>
+</ul>
+<h2 id="_5">关键技术亮点</h2>
+<h3 id="yaml">YAML 工作流引擎</h3>
+<p>```yaml</p>
+<h1 id="harness">示例 harness 结构</h1>
+<p>harness:
+  name: "feature-implementation"
+  steps:
+    - plan:
+        agent: claude-code
+        prompt: "分析需求并制定实现计划"
+    - implement:
+        agent: codex
+        based_on: plan.output
+    - validate:
+        command: "npm test"
+    - review:
+        agent: claude-code
+        focus: "代码质量、安全漏洞"
+    - pr:
+        auto_create: true
+```</p>
+<h3 id="_6">多入口执行</h3>
+<ul>
+<li>CLI：本地开发</li>
+<li>Web UI：可视化操作</li>
+<li>Slack/Discord：团队协作</li>
+<li>GitHub：CI/CD 集成</li>
+</ul>
+<h3 id="_7">架构设计</h3>
+<p><code>mermaid
+graph TB
+    A[Harness YAML&lt;br&gt;定义工作流] --&gt; B[Archon Engine&lt;br&gt;解析+调度]
+    B --&gt; C{Agent 选择}
+    C --&gt;|编码| D[Claude Code]
+    C --&gt;|编码| E[Codex]
+    C --&gt;|验证| F[自定义验证器]
+    D --&gt; G[Output Pipeline&lt;br&gt;validate → review → PR]
+    E --&gt; G
+    F --&gt; G</code></p>
+<h2 id="_8">架构启发</h2>
+<ol>
+<li><strong>确定性封装模式</strong>：对非确定性系统（LLM）用确定性框架（YAML 工作流）封装，是工程化的正确思路</li>
+<li><strong>分离关注点</strong>：harness 只管流程，Agent 只管执行——职责清晰</li>
+<li><strong>多入口统一执行</strong>：同一个 harness 可以从不同入口触发，说明核心引擎设计合理</li>
+</ol>
+<h2 id="_9">定位判断</h2>
+<p><strong>平台候选</strong>。如果 harness 概念被广泛接受，Archon 有潜力成为 AI Coding 工作流的事实标准层。类似于 GitHub Actions 之于 CI/CD。</p>
+<h2 id="_10">风险/局限/泡沫点</h2>
+<ol>
+<li><strong>LLM 不确定性是根本性的</strong>：harness 可以约束流程，但不能约束 LLM 输出。对"可确定性"的承诺可能过高</li>
+<li><strong>YAML 复杂度膨胀</strong>：真实开发流程远比 plan→implement→validate 复杂，YAML 可能很快变得难以维护</li>
+<li><strong>Agent 绑定风险</strong>：目前深度绑定 Claude Code 和 Codex，模型切换成本可能较高</li>
+<li><strong>竞品风险</strong>：harness 概念容易被复制，护城河不深</li>
+</ol>
+<h2 id="_11">与同类项目的关系</h2>
+<ul>
+<li><strong>vs Superpowers</strong>：Superpowers 侧重技能（Skill），Archon 侧重流程（Harness）。互补而非竞争。</li>
+<li><strong>vs oh-my-codex</strong>：oh-my-codex 是 Agent 增强框架，Archon 是工作流引擎。不同层。</li>
+<li><strong>vs agency-agents</strong>：agency-agents 是 Agent 模板集合，Archon 是执行引擎。agency-agents 的 harness 可以用 Archon 来运行。</li>
+</ul>
+<h2 id="_12">是否值得持续跟踪</h2>
+<p><strong>✅ 是</strong>。Harness 工程是 AI Agent 工业化的关键环节，Archon 目前是这个赛道的领先者。</p>
+<h2 id="poc">是否值得企业 PoC</h2>
+<p><strong>✅ 是</strong>。如果团队正在使用 AI Coding Agent 且被不确定性困扰，Archon 提供了一个低成本的标准化尝试。</p>
+<h2 id="_13">后续观察点</h2>
+<ol>
+<li>Harness 模板生态是否丰富——这将决定是否值得长期投入</li>
+<li>是否支持自定义 Agent（不限于 Claude Code/Codex）</li>
+<li>企业用户的真实反馈——尤其是"可确定性"是否真正提升</li>
+<li>竞品动态——OpenAI/Anthropic 是否可能推出类似功能</li>
+</ol>
+    </div>
 </main>
     <footer class="footer">
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>

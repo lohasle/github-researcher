@@ -29,6 +29,35 @@ title: Trend Index — 趋势指数
 
 ---
 
+## 2026-04-14（第九版）
+
+### 本日新增项目（2026-04-14）
+
+| 项目 | 分类 | 热度信号 | 核心判断 | 建议 |
+|------|------|---------|---------|------|
+| RustFS | **基础设施候选** | 23K+ stars, 4KB小对象2.3x MinIO | Rust重写MinIO替代，Apache 2.0，许可证优势明确 | **深度跟踪 + PoC** |
+| gstack | 工具型/平台候选 | 66K+ stars, YC总裁背书 | Claude Code工作流配置集合，技术门槛低但揭示趋势 | 观望趋势 |
+| Goose | 工具型 | 29K+ stars, Block内部60%采用 | 本地AI Coding Agent，Apache 2.0，模型无关 | **值得PoC** |
+| nuwa-skill | 学习型/工具型 | 20K+ combined stars | 人格蒸馏概念验证，技术深度有限 | 观望 |
+
+### 趋势信号更新
+
+- **Agent Skill 饱和信号**：本周 GitHub Trending 前100项目中近半数是 Claude Code skill/agent harness，赛道进入泡沫期
+- **存储基础设施 Rust 化**：RustFS 代表"Rust重写经典基础设施+友好许可证"模式，可能扩展到数据库、消息队列等领域
+- **本地 AI Coding Agent 赛道**：Goose（Apache 2.0）+ MCP 标准化 = Claude Code 的本地化替代路径
+- **语音 AI 生产化**：VibeVoice ASR 进入 HF Transformers，端侧语音交互闭环可落地
+
+### 持续跟踪项目状态更新
+
+| 项目 | 上次判断 | 本次调整 | 理由 |
+|------|---------|---------|------|
+| Hermes Agent | 基础设施候选 | 维持 | 65K+ stars，v0.8.0 Browser Use，持续霸榜 |
+| VibeVoice | 生产可用 | 落地价值↑ | ASR 进 HF Transformers，pip install 即可用 |
+| LiteRT-LM | 基础设施候选 | 生产验证↑ | 已在 Chrome/Pixel Watch 落地 |
+| Onyx | 工具型 | 关注度↑ | v3.2.2, 50+ 连接器 + MCP |
+
+---
+
 ## 2026-04-13（第八版）
 
 ### 本日新增项目（2026-04-13）

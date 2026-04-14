@@ -4,6 +4,20 @@
 
 ---
 
+## 2026-04-14
+
+**核心主题：** Hermes Agent 65K星霸榜 · Agent Skill生态饱和信号 · 存储基础设施Rust化 · 语音AI开源破局
+
+**关键项目：**
+- 🦀 RustFS (23K+ stars) — Rust S3 兼容存储，Apache 2.0 MinIO 替代
+- 🔷 gstack (66K+ stars) — YC 总裁的 Claude Code 虚拟团队工作流
+- 🪿 Goose (29K+ stars) — Block 本地 AI Coding Agent，Apache 2.0
+- 🏺 nuwa-skill (20K+ stars 生态) — 人格蒸馏 Claude Code Skill 框架
+
+→ [查看完整日报](daily/2026-04-14.html)
+
+---
+
 ## 2026-04-13
 
 **核心主题：** AI Agent工业化 · Harness工程新范式 · 群体智能觉醒 · 端侧AI生态成型

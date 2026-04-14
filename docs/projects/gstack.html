@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026-04-14 GitHub 趋势研究简报 | GitHub Researcher</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📊</text></svg>">
-    <meta name="description" content="Hermes Agent 65K星霸榜 · Agent Skill生态饱和信号 · 存储基础设施Rust化 · 语音AI开源破局">
+    <title>gstack | GitHub 趋势研究</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>⭐</text></svg>">
     <style>
         :root {
             --primary: #7C3AED;
@@ -166,6 +165,24 @@
         .card-grid { animation-delay: 0.2s; animation-fill-mode: both; }
         .trend-list { animation-delay: 0.25s; animation-fill-mode: both; }
     </style>
+    
+    <style>
+        .project-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 48px; box-shadow: var(--shadow); margin-bottom: 48px; max-width: 860px; margin-left: auto; margin-right: auto; }
+        .project-content h1 { font-size: 26px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 6px; }
+        .project-content h2 { font-size: 18px; font-weight: 700; color: var(--primary); border-left: 4px solid var(--primary); padding-left: 12px; margin: 28px 0 14px; }
+        .project-content h3 { font-size: 15px; font-weight: 700; color: var(--text); margin: 20px 0 10px; }
+        .project-content table { border-collapse: collapse; width: 100%; margin: 14px 0; }
+        .project-content th, .project-content td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; font-size: 13px; }
+        .project-content th { background: var(--primary); color: white; font-weight: 600; }
+        .project-content tr:nth-child(even) td { background: var(--bg); }
+        .project-content blockquote { background: linear-gradient(135deg, #F3E8FF, #ECFEFF); border-left: 4px solid var(--primary); padding: 14px 18px; margin: 14px 0; border-radius: 0 8px 8px 0; }
+        .project-content ul, .project-content ol { padding-left: 22px; margin: 10px 0; }
+        .project-content li { margin: 6px 0; font-size: 14px; }
+        .project-content p { font-size: 14px; margin-bottom: 12px; line-height: 1.7; }
+        .project-content strong { color: var(--primary-dark); }
+        .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 24px; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
     <nav class="nav">
@@ -177,157 +194,106 @@
             <div class="nav-links">
                 <a href="/github-researcher/index.html" id="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>首页</span></a>
                 <a href="/github-researcher/daily.html" id="nav-daily"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg><span>日报</span></a>
-                <a href="/github-researcher/projects.html" id="nav-projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
+                <a href="/github-researcher/projects.html" id="nav-projects" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
                 <a href="/github-researcher/trends.html" id="nav-trends"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>趋势</span></a>
             </div>
         </div>
     </nav>
 <main class="container">
-        <section class="hero">
-            <div class="hero-badge">
-                <span class="dot"></span>
-                2026-04-14
-            </div>
-            <h1>GitHub 趋势研究</h1>
-            <p>Hermes Agent 65K星霸榜 · Agent Skill生态饱和信号 · 存储基础设施Rust化 · 语音AI开源破局</p>
-            <div class="hero-actions">
-                <a href="/github-researcher/daily/2026-04-14.html" class="btn-primary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                    今日简报
-                </a>
-                <a href="/github-researcher/projects.html" class="btn-secondary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="14" y="0" width="7" height="7"/><rect x="0" y="14" width="7" height="7"/></svg>
-                    重点项目
-                </a>
-            </div>
-        </section>
-        <section class="stats-row">
-            <div class="stat-card">
-                <div class="stat-icon">📊</div>
-                <div class="stat-number">31</div>
-                <div class="stat-label">深度分析项目</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🔥</div>
-                <div class="stat-number">8</div>
-                <div class="stat-label">日更日报</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🎯</div>
-                <div class="stat-number">28</div>
-                <div class="stat-label">核心跟踪方向</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">⭐</div>
-                <div class="stat-number">100k+</div>
-                <div class="stat-label">本周总 Star 增速</div>
-            </div>
-        </section>
-        <section class="brief-card">
-            <div class="brief-date">📅 2026-04-14 · 今日核心判断</div>
-            <h2 class="brief-title">Hermes Agent 65K星霸榜 · Agent Skill生态饱和信号 · 存储基础设施Rust化 · 语音AI开源破局</h2>
-            <p class="brief-text">Hermes Agent 65K星霸榜 · Agent Skill生态饱和信号 · 存储基础设施Rust化 · 语音AI开源破局 今日头条趋势:Agent Skill 生态爆发与饱和并存。</p>
-            <a href="/github-researcher/daily/2026-04-14.html" class="brief-cta">阅读完整简报 →</a>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">⭐</div>
-                    重点跟踪项目
-                </div>
-                <a href="/github-researcher/projects.html" class="section-link">查看全部 →</a>
-            </div>
-            <div class="card-grid">
-                <a href="/github-researcher/projects/rustfs.html" class="card">
-                    <div class="card-top">
-                        <div class="card-emoji">🦀</div>
-                        <div class="card-stars">23,000+ stars</div>
-                    </div>
-                    <div class="card-title">RustFS</div>
-                    <div class="card-desc">Rust 构建的高性能 S3 兼容对象存储，2.3x 优于 MinIO，Apache 2.0 许可</div>
-                    <div class="card-tags"><span class="tag tag-purple">Object Storage</span><span class="tag tag-purple">S3</span><span class="tag tag-purple">Rust</span></div>
-                </a>
-                <a href="/github-researcher/projects/gstack.html" class="card">
-                    <div class="card-top">
-                        <div class="card-emoji">🔷</div>
-                        <div class="card-stars">66,000+ stars</div>
-                    </div>
-                    <div class="card-title">gstack</div>
-                    <div class="card-desc">YC 总裁 Garry Tan 的 Claude Code 工作流系统，23个专化角色将单人编程变为虚拟团队</div>
-                    <div class="card-tags"><span class="tag tag-purple">Claude Code</span><span class="tag tag-purple">Workflow</span><span class="tag tag-purple">AI Coding</span></div>
-                </a>
-                <a href="/github-researcher/projects/goose.html" class="card">
-                    <div class="card-top">
-                        <div class="card-emoji">🪿</div>
-                        <div class="card-stars">29,000+ stars</div>
-                    </div>
-                    <div class="card-title">Goose</div>
-                    <div class="card-desc">Block 开源的本地 AI Coding Agent，Apache 2.0，模型无关，支持 3000+ MCP 工具</div>
-                    <div class="card-tags"><span class="tag tag-purple">AI Coding Agent</span><span class="tag tag-cyan">MCP</span><span class="tag tag-purple">Apache 2.0</span></div>
-                </a>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">📈</div>
-                    趋势热榜
-                </div>
-                <a href="/github-researcher/trends.html" class="section-link">完整趋势表 →</a>
-            </div>
-            <div class="trend-list">
-                <div class="trend-item">
-                    <div class="trend-rank top">1</div>
-                    <div class="trend-content">
-                        <div class="trend-title">Agent Skill 生态爆发与饱和并存</div>
-                        <div class="trend-meta">Hermes Agent · nuwa-skill · gstack</div>
-                    </div>
-                    <div class="trend-score high">88/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank top">2</div>
-                    <div class="trend-content">
-                        <div class="trend-title">存储基础设施 Rust 化浪潮</div>
-                        <div class="trend-meta">RustFS</div>
-                    </div>
-                    <div class="trend-score high">82/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">3</div>
-                    <div class="trend-content">
-                        <div class="trend-title">语音 AI 开源化破局</div>
-                        <div class="trend-meta">VibeVoice · Goose</div>
-                    </div>
-                    <div class="trend-score high">78/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">4</div>
-                    <div class="trend-content">
-                        <div class="trend-title">端侧 LLM 推理进入生产阶段</div>
-                        <div class="trend-meta">LiteRT-LM · Onyx</div>
-                    </div>
-                    <div class="trend-score high">75/80</div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">🏷️</div>
-                    核心关注领域
-                </div>
-            </div>
-            <div class="category-row">
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🤖</span> AI Agent / Multi-Agent</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">⚡</span> LLM Infra / MCP / AI Runtime</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🛠️</span> 开发工具链 / IDE / Copilot</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🌐</span> 前端框架 / Serverless / Edge</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">☸️</span> 云原生 / K8s / Service Mesh</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔄</span> 自动化 / Browser Use / RPA+AI</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">💾</span> 数据基础设施 / RAG / 向量 DB</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔌</span> 基础设施标准 / 平台潜力</a>
-            </div>
-        </section>
+    <a href="/github-researcher/projects.html" class="back-link">← 返回重点项目</a>
+    <div class="project-content">
+        <h1 id="gstack">gstack</h1>
+<h2 id="_1">一句话定位</h2>
+<p>YC 总裁 Garry Tan 的 Claude Code 工作流配置系统，23 个专化角色将 AI 编程从单兵作战升级为虚拟团队。</p>
+<h2 id="_2">解决的问题</h2>
+<ol>
+<li><strong>AI Coding 角色混乱</strong>：单 Agent 承担所有职责，缺少专业分工</li>
+<li><strong>工作流一致性差</strong>：不同开发者使用 AI 的方式和质量差异大</li>
+<li><strong>最佳实践难以沉淀</strong>：个人经验无法规模化复用</li>
+</ol>
+<h2 id="_3">为什么值得关注</h2>
+<ul>
+<li>Garry Tan 声称 60 天写 60 万行代码，展示了 AI Coding 的生产力上限</li>
+<li>66K stars 说明市场对"AI Coding 工作流标准化"有强烈需求</li>
+<li>YC 生态影响力加持，会影响大量创业公司的工作方式</li>
+</ul>
+<h2 id="_4">热度来源判断</h2>
+<ul>
+<li><strong>Garry Tan 个人影响力</strong>：YC 总裁的背书效应远大于技术本身</li>
+<li><strong>AI Coding 工作流标准化需求真实</strong>：开发者确实需要方法论</li>
+<li><strong>部分粉丝效应</strong>：66K stars 中大量来自 YC 社区而非技术评估</li>
+</ul>
+<h2 id="_5">关键技术亮点</h2>
+<ol>
+<li><strong>23 个专化角色</strong>：CEO、设计师、工程经理、QA、文档工程师等</li>
+<li><strong>角色切换机制</strong>：同一 Agent 在不同上下文切换认知模式</li>
+<li><strong>可复用工作流</strong>：将个人最佳实践固化为可分享的配置</li>
+</ol>
+<h2 id="_6">架构启发</h2>
+<p><code>mermaid
+graph LR
+    D[开发者] --&gt;|触发任务| G[gstack]
+    G --&gt;|角色选择| R1[CEO角色&lt;br/&gt;产品决策]
+    G --&gt;|角色选择| R2[设计师&lt;br/&gt;UI/UX]
+    G --&gt;|角色选择| R3[工程经理&lt;br/&gt;任务拆解]
+    G --&gt;|角色选择| R4[QA&lt;br/&gt;测试验证]
+    R1 &amp; R2 &amp; R3 &amp; R4 --&gt;|输出| C[Claude Code]</code></p>
+<ul>
+<li>"单 Agent + 角色切换" 可能比 "多 Agent 编排" 更务实</li>
+<li>最佳实践可配置化是 AI Coding 工具的演进方向</li>
+</ul>
+<h2 id="_7">定位判断</h2>
+<p><strong>工具型偏平台候选</strong>。本质是配置文件集合，但揭示的"AI Coding 工作流标准化"趋势有平台化潜力。</p>
+<h2 id="_8">风险/局限/泡沫点</h2>
+<ol>
+<li><strong>技术门槛低</strong>：核心是一组 prompt 配置，护城河很浅</li>
+<li><strong>过度炒作</strong>：60 天 60 万行代码的数据缺乏验证</li>
+<li><strong>Cargo Cult 风险</strong>：开发者可能照搬而非理解背后的方法论</li>
+<li><strong>强绑定 Claude Code</strong>：限制了适用范围</li>
+</ol>
+<h2 id="_9">与同类项目的关系</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>定位</th>
+<th>Star</th>
+<th>核心差异</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gstack</td>
+<td>Claude Code 工作流</td>
+<td>66K</td>
+<td>角色切换 + YC 背书</td>
+</tr>
+<tr>
+<td>oh-my-claudecode</td>
+<td>Claude Code 多Agent</td>
+<td>27K</td>
+<td>多Agent编排 + 企业级</td>
+</tr>
+<tr>
+<td>Archon</td>
+<td>Harness Builder</td>
+<td>16K</td>
+<td>YAML 标准化 + 可重复</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_10">是否值得持续跟踪</h2>
+<p><strong>是</strong>，但关注重点不是项目本身，而是它代表的"AI Coding 工作流标准化"趋势。</p>
+<h2 id="poc">是否值得企业 PoC</h2>
+<p><strong>谨慎评估</strong>。思路值得借鉴，但直接采用需要适配团队实际情况。</p>
+<h2 id="_11">后续观察点</h2>
+<ol>
+<li>社区是否涌现更多 gstack 风格的工作流配置</li>
+<li>Claude Code 是否原生支持类似角色系统</li>
+<li>工作流标准是否开始形成共识</li>
+<li>其他 AI Coding 工具（Cursor、Copilot）是否跟进</li>
+</ol>
+    </div>
 </main>
     <footer class="footer">
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>

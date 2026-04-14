@@ -139,6 +139,10 @@ CSS = '''    <style>
         .card-title { font-size: 16px; font-weight: 700; margin-bottom: 8px; color: var(--text); }
         .card-desc { font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 14px; }
         .card-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+        .card-actions { display: flex; align-items: center; gap: 8px; margin-top: 12px; }
+        .btn-github { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: var(--radius-sm); font-size: 12px; font-weight: 600; background: var(--bg); color: var(--text); border: 1px solid var(--border); text-decoration: none; transition: all 0.2s; }
+        .btn-github:hover { background: var(--primary); color: white; border-color: var(--primary); }
+        .btn-github svg { width: 14px; height: 14px; }
         .tag { padding: 3px 10px; border-radius: 100px; font-size: 11px; font-weight: 600; border: 1px solid; }
         .tag-purple { background: #F3E8FF; color: var(--primary); border-color: var(--border); }
         .tag-cyan { background: #ECFEFF; color: #0891B2; border-color: #A5F3FC; }
@@ -348,6 +352,16 @@ def generate_index():
         score = p.get('score', 'N/A')
         href = p.get('href', f"projects/{make_slug(name)}.html")
         tag_html = ''.join([f'<span class="tag {tag_class(t)}">{t}</span>' for t in tags[:3]])
+        # Find GitHub URL from project data
+        github_url = None
+        for p_all in all_projects:
+            p_all_name = p_all.get('name', p_all.get('title', ''))
+            if p_all_name == name or make_slug(p_all_name) == make_slug(name):
+                github_url = p_all.get('url', p_all.get('github_url', None))
+                break
+        github_btn = ''
+        if github_url:
+            github_btn = f'<a href="{github_url}" target="_blank" rel="noopener" class="btn-github" onclick="event.stopPropagation();"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub</a>'
         project_cards += f'''
                 <a href="/github-researcher/{href}" class="card">
                     <div class="card-top">
@@ -357,6 +371,7 @@ def generate_index():
                     <div class="card-title">{name}</div>
                     <div class="card-desc">{desc}</div>
                     <div class="card-tags">{tag_html}</div>
+                    <div class="card-actions">{github_btn}</div>
                 </a>'''
 
     # Trend list
@@ -701,6 +716,12 @@ def generate_projects_list():
         tag_html = ''.join([f'<span class="tag {tag_class(t)}">{t}</span>' for t in tags[:3]])
         seen_html = f'<div style="font-size:12px;color:var(--text-muted);margin-top:4px;">最近出现: {last_seen}</div>' if last_seen else ''
 
+        # GitHub URL button
+        github_url = p.get('url', p.get('github_url', None))
+        github_btn = ''
+        if github_url:
+            github_btn = f'<a href="{github_url}" target="_blank" rel="noopener" class="btn-github" onclick="event.stopPropagation();"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub</a>'
+
         cards += f'''                <a href="/github-researcher/{href}" class="card">
                     <div class="card-top">
                         <div class="card-emoji">{emoji}</div>
@@ -709,6 +730,7 @@ def generate_projects_list():
                     <div class="card-title">{name}</div>
                     <div class="card-desc">{desc}</div>
                     <div class="card-tags">{tag_html}</div>
+                    <div class="card-actions">{github_btn}</div>
                     {seen_html}
                 </a>
 '''
@@ -761,6 +783,12 @@ def generate_project_page(filepath):
 
     title = fm.get('title', raw_name)
 
+    # GitHub URL for the header button
+    github_url = fm.get('url', fm.get('github_url', ''))
+    github_header_btn = ''
+    if github_url:
+        github_header_btn = f'<div style="margin-bottom:20px;"><a href="{github_url}" target="_blank" rel="noopener" class="btn-github" style="padding:10px 20px;font-size:14px;"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg> 查看 GitHub 项目</a></div>'
+
     project_style = '''
     <style>
         .project-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 48px; box-shadow: var(--shadow); margin-bottom: 48px; max-width: 860px; margin-left: auto; margin-right: auto; }
@@ -795,6 +823,7 @@ def generate_project_page(filepath):
 <main class="container">
     <a href="/github-researcher/projects.html" class="back-link">← 返回重点项目</a>
     <div class="project-content">
+        {github_header_btn}
         {html_body}
     </div>
 </main>
@@ -862,6 +891,11 @@ def generate_minimal_project_page(name, data, date_str):
 <p>{desc}</p>
 {analysis_html}'''
 
+    # Add GitHub button in header for minimal pages too
+    github_header_btn = ''
+    if url:
+        github_header_btn = f'<div style="margin-bottom:20px;"><a href="{url}" target="_blank" rel="noopener" class="btn-github" style="padding:10px 20px;font-size:14px;"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg> 查看 GitHub 项目</a></div>'
+
     html = f'''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -885,6 +919,7 @@ def generate_minimal_project_page(name, data, date_str):
 <main class="container">
     <a href="/github-researcher/trends.html" class="back-link">← 返回趋势时间线</a>
     <div class="project-content">
+        {github_header_btn}
         {body_html}
     </div>
 </main>
@@ -983,6 +1018,12 @@ def generate_trends():
                     tags = ['项目']
                 tag_html = ''.join([f'<span class="tag {tag_class(t)}">{t}</span>' for t in tags[:3]])
 
+                # GitHub URL button
+                github_url = p.get('url', p.get('github_url', None))
+                github_btn = ''
+                if github_url:
+                    github_btn = f'<a href="{github_url}" target="_blank" rel="noopener" class="btn-github" onclick="event.stopPropagation();"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub</a>'
+
                 date_sections += f'''
                 <a href="/github-researcher/projects/{slug}.html" class="card">
                     <div class="card-top">
@@ -992,6 +1033,7 @@ def generate_trends():
                     <div class="card-title">{pname}</div>
                     <div class="card-desc">{desc}</div>
                     <div class="card-tags">{tag_html}</div>
+                    <div class="card-actions">{github_btn}</div>
                 </a>'''
             date_sections += '</div>\n'
 

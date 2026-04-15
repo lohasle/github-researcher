@@ -59,6 +59,32 @@ title: Trend Index — 趋势指数
 | chrome-devtools-mcp | 新增跟踪 | 升级为基础设施候选 | MCP + DevTools 组合创新 |
 | Kronos | 新增跟踪 | 生产可用 | 垂直FM验证 |
 
+## 2026-04-16（第十一版）
+
+### 本日新增项目（2026-04-16）
+
+| 项目 | 分类 | 热度信号 | 核心判断 | 建议 |
+|------|------|---------|---------|------|
+| codeburn | 工具型/基础设施候选 | 1,698 stars, 2天 | AI Coding Token 成本 TUI 仪表盘，Agent 可观测性新方向 | 持续跟踪 |
+| paperclip | 平台候选 | 54,140 stars, 2,291 issues | Zero-Human Company 编排引擎，真实用户规模大 | 持续跟踪 |
+| llm-wiki | 工具型/平台候选 | 1,387 stars, 8天 | 持久化 Wiki 知识库，RAG 的替代范式 | 持续跟踪 |
+
+### 趋势信号更新
+
+- **Agent 成本可观测性觉醒**：codeburn 2天破千星，AI Coding token 成本管理成为真实痛点，预示 Agent Infra 可观测性层需求
+- **AI Memory 标准化竞赛**：MemPalace（46.5K）vs Claude-Mem（55.8K），3-6个月内将收敛到1-2个主导方案
+- **Zero-Human Company 从概念走向工程**：Paperclip 2,291 issues 暴露了全自动化编排的工程复杂度
+- **知识工程范式迁移**：LLM Wiki 提出 RAG → 持久化 Wiki 的迁移路径
+
+### 持续跟踪项目状态更新
+
+| 项目 | 上次判断 | 本次调整 | 理由 |
+|------|---------|---------|------|
+| MemPalace | 基础设施候选 | 维持，stars 41.8K→46.5K | 持续高速增长，AI Memory 赛道领先者 |
+| codeburn | 新增跟踪 | 工具型/基础设施候选 | Agent 可观测性早期信号 |
+| paperclip | 新增跟踪 | 平台候选 | 真实用户规模大，编排框架成熟度待验证 |
+| llm-wiki | 新增跟踪 | 工具型/平台候选 | 知识工程范式迁移的代表性项目 |
+
 ---
 
 ## 2026-04-14（第九版）

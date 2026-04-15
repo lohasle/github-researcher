@@ -1,0 +1,1 @@
+[github-researcher/sessions/26b74bb9-89e5-4f21-a472-f49eebce60d8.jsonl#L5] User: [cron:234619c8-3cae-42d8-ad26-7261bef5e6a7 GitHub晨间简报] 执行今日 GitHub 趋势研究任务。 先阅读 skills/github-daily/SKILL.md，严格按其中的 6 个 Phase 执行。 关键提醒： 1. Phase 4 的项目档案生成不可跳过 2. Phase 5 必须运行 python3 docs/generate_pages.py 3. Phase 6 validate 通过后才能 push 4. git push 失败重试 3 次，仍失败则保留

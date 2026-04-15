@@ -29,6 +29,38 @@ title: Trend Index — 趋势指数
 
 ---
 
+## 2026-04-15（第十版）
+
+### 本日新增项目（2026-04-15）
+
+| 项目 | 分类 | 热度信号 | 核心判断 | 建议 |
+|------|------|---------|---------|------|
+| claude-mem | **基础设施候选** | 55,797 stars, 日增2,997 | Agent 工作记忆系统，捕获→压缩→检索→注入范式 | **深度跟踪 + PoC** |
+| chrome-devtools-mcp | **基础设施候选** | 35,007 stars, MCP+DevTools | Agent 浏览器感知，MCP 协议扩展标志性项目 | **深度跟踪 + PoC** |
+| andrej-karpathy-skills | 工具型 | 33,801 stars, 日增9,263 | 心智模型蒸馏范式验证，方法论→AI配置 | 持续跟踪 |
+| cc-switch | 工具型/平台候选 | 44,702 stars, Rust+Tauri | 多AI编程工具统一管理桌面应用 | 持续跟踪 |
+| Kronos | 生产可用 | 17,799 stars, MIT | 金融市场Foundation Model，垂直FM路径验证 | 持续跟踪 |
+| PersonaPlex | 工具型 | 9,304 stars, NVIDIA | 人格复用框架，Agent人格模块化 | 观望 |
+
+### 趋势信号更新
+
+- **Claude 生态工具链深度整合**：Trending 前 12 名中 7 个项目直接服务 Claude Code 生态，工具链深度远超单点工具
+- **心智模型即技能**：andrej-karpathy-skills 验证了"专家方法论 → AI 行为配置"的蒸馏路径
+- **MCP 协议扩展**：chrome-devtools-mcp 证明 MCP 可覆盖浏览器/DevTools，Agent 感知边界扩大
+- **垂直 FM 路径验证**：Kronos（金融）+ DeepTutor（教育）代表垂直领域 Foundation Model 的可行性
+- **Agent 基础设施工具层成型**：microsandbox + plano + edgequake + opensre 构成完整工具链
+
+### 持续跟踪项目状态更新
+
+| 项目 | 上次判断 | 本次调整 | 理由 |
+|------|---------|---------|------|
+| Hermes Agent | 基础设施候选 | 维持 | 84.3K stars, 日增8,301, 持续霸榜 |
+| claude-mem | 新增跟踪 | 升级为基础设施候选 | Agent 工作记忆，55K+ stars |
+| chrome-devtools-mcp | 新增跟踪 | 升级为基础设施候选 | MCP + DevTools 组合创新 |
+| Kronos | 新增跟踪 | 生产可用 | 垂直FM验证 |
+
+---
+
 ## 2026-04-14（第九版）
 
 ### 本日新增项目（2026-04-14）

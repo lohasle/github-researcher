@@ -6,11 +6,11 @@ github_url: https://github.com/insinbusy/hermes-agent
 mcp: true
 poc_recommend: false
 score: 58
-stars_per_day: 1574
+stars_per_day: 8301
 summary: Agent 自进化 + 跨会话记忆系统，Skill 自进化机制触及 Agent 学习核心。
 tech_stack: Python
 title: hermes-agent
-total_stars: 28.3k
+total_stars: 84.3k
 ---
 
 # hermes-agent

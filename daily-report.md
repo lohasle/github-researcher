@@ -4,6 +4,20 @@
 
 ---
 
+## 2026-04-15
+
+**核心主题：** Karpathy Skills现象级爆发 · Claude生态工具链深度整合 · AI金融模型入场 · Agent基础设施工具层成型
+
+**关键项目：**
+- 🧠 andrej-karpathy-skills (33.8K stars) — 心智模型即技能，日增 9,263 stars
+- 💾 claude-mem (55.8K stars) — Agent 工作记忆基础设施，会话捕获+压缩+注入
+- 🔧 chrome-devtools-mcp (35K stars) — MCP 协议操作 Chrome DevTools
+- 📊 Kronos (17.8K stars) — 金融市场 Foundation Model
+
+→ [查看完整日报](daily/2026-04-15.html)
+
+---
+
 ## 2026-04-14
 
 **核心主题：** Hermes Agent 65K星霸榜 · Agent Skill生态饱和信号 · 存储基础设施Rust化 · 语音AI开源破局

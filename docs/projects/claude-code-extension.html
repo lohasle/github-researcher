@@ -245,33 +245,32 @@
 </ul>
 <p><strong>总分</strong>：87/100 - 平台候选项目</p>
 <h2 id="_2">扩展架构</h2>
-<p>```mermaid
-graph TB
-    A[Claude Code Core] --&gt; B[Extension Manager]
-    B --&gt; C[Extension API]
-    C --&gt; D[Language Support]
-    C --&gt; E[Framework Support]
-    C --&gt; F[DevOps Tools]
-    C --&gt; G[Code Quality]</p>
-<pre><code>D --&gt; H[Python Extension]
-D --&gt; I[JavaScript Extension]
-D --&gt; J[Java Extension]
-D --&gt; K[Go Extension]
-
-E --&gt; L[React Extension]
-E --&gt; M[Vue Extension]
-E --&gt; N[Spring Extension]
-E --&gt; O[Django Extension]
-
-F --&gt; P[CI/CD Extension]
-F --&gt; Q[Monitoring Extension]
-F --&gt; R[Testing Extension]
-
-G --&gt; S[Linter Extension]
-G --&gt; T[Formatter Extension]
-G --&gt; U[Analyzer Extension]
-</code></pre>
-<p>```</p>
+<pre class="mermaid">graph TB
+    A[Claude Code Core] --> B[Extension Manager]
+    B --> C[Extension API]
+    C --> D[Language Support]
+    C --> E[Framework Support]
+    C --> F[DevOps Tools]
+    C --> G[Code Quality]
+    
+    D --> H[Python Extension]
+    D --> I[JavaScript Extension]
+    D --> J[Java Extension]
+    D --> K[Go Extension]
+    
+    E --> L[React Extension]
+    E --> M[Vue Extension]
+    E --> N[Spring Extension]
+    E --> O[Django Extension]
+    
+    F --> P[CI/CD Extension]
+    F --> Q[Monitoring Extension]
+    F --> R[Testing Extension]
+    
+    G --> S[Linter Extension]
+    G --> T[Formatter Extension]
+    G --> U[Analyzer Extension]
+</pre>
 <h2 id="_3">扩展类型</h2>
 <h3 id="1">1. 语言支持扩展</h3>
 <ul>
@@ -302,63 +301,60 @@ G --&gt; U[Analyzer Extension]
 <li><strong>文档生成</strong>：自动文档生成</li>
 </ul>
 <h2 id="_4">生态系统</h2>
-<p>```mermaid
-graph LR
-    A[开发者] --&gt; B[Claude Code]
-    B --&gt; C[扩展市场]
-    C --&gt; D[官方扩展]
-    C --&gt; E[社区扩展]
-    C --&gt; F[企业扩展]</p>
-<pre><code>D --&gt; G[核心功能]
-D --&gt; H[官方支持]
-D --&gt; I[稳定性保证]
-
-E --&gt; J[创意功能]
-E --&gt; K[快速迭代]
-E --&gt; L[多样化选择]
-
-F --&gt; M[企业定制]
-F --&gt; N[安全保障]
-F --&gt; O[技术支持]
-</code></pre>
-<p>```</p>
+<pre class="mermaid">graph LR
+    A[开发者] --> B[Claude Code]
+    B --> C[扩展市场]
+    C --> D[官方扩展]
+    C --> E[社区扩展]
+    C --> F[企业扩展]
+    
+    D --> G[核心功能]
+    D --> H[官方支持]
+    D --> I[稳定性保证]
+    
+    E --> J[创意功能]
+    E --> K[快速迭代]
+    E --> L[多样化选择]
+    
+    F --> M[企业定制]
+    F --> N[安全保障]
+    F --> O[技术支持]
+</pre>
 <h2 id="_5">开发流程</h2>
-<p>```mermaid
-sequenceDiagram
+<pre class="mermaid">sequenceDiagram
     participant D as Developer
     participant C as Claude Code
     participant E as Extension
-    participant M as Extension Market</p>
-<pre><code>D-&gt;&gt;C: 使用 Claude Code
-C-&gt;&gt;M: 浏览扩展市场
-M-&gt;&gt;D: 展示可用扩展
-D-&gt;&gt;M: 安装扩展
-M-&gt;&gt;C: 下载并安装扩展
-C-&gt;&gt;E: 加载扩展
-E-&gt;&gt;C: 提供功能
-C-&gt;&gt;D: 增强体验
-D-&gt;&gt;E: 使用扩展功能
-E-&gt;&gt;C: 返回结果
-C-&gt;&gt;D: 完成任务
-</code></pre>
-<p>```</p>
+    participant M as Extension Market
+    
+    D->>C: 使用 Claude Code
+    C->>M: 浏览扩展市场
+    M->>D: 展示可用扩展
+    D->>M: 安装扩展
+    M->>C: 下载并安装扩展
+    C->>E: 加载扩展
+    E->>C: 提供功能
+    C->>D: 增强体验
+    D->>E: 使用扩展功能
+    E->>C: 返回结果
+    C->>D: 完成任务
+</pre>
 <h2 id="_6">安全机制</h2>
-<p>```mermaid
-graph TB
-    A[扩展请求] --&gt; B[权限检查]
-    B --&gt; C[沙箱执行]
-    C --&gt; D[资源限制]
-    D --&gt; E[行为监控]
-    E --&gt; F[结果验证]
-    F --&gt; G[安全输出]</p>
-<pre><code>B --&gt; H[权限管理]
-C --&gt; I[隔离环境]
-D --&gt; J[内存限制]
-D --&gt; K[CPU限制]
-E --&gt; L[行为分析]
-E --&gt; M[异常检测]
-</code></pre>
-<p>```</p>
+<pre class="mermaid">graph TB
+    A[扩展请求] --> B[权限检查]
+    B --> C[沙箱执行]
+    C --> D[资源限制]
+    D --> E[行为监控]
+    E --> F[结果验证]
+    F --> G[安全输出]
+    
+    B --> H[权限管理]
+    C --> I[隔离环境]
+    D --> J[内存限制]
+    D --> K[CPU限制]
+    E --> L[行为分析]
+    E --> M[异常检测]
+</pre>
 <h2 id="_7">应用场景</h2>
 <h3 id="1_1">1. 企业开发</h3>
 <ul>
@@ -382,8 +378,7 @@ E --&gt; M[异常检测]
 <li>能力评估</li>
 </ul>
 <h2 id="_8">发展趋势</h2>
-<p><code>mermaid
-timeline
+<pre class="mermaid">timeline
     title Claude Code扩展生态发展
     section 2024
         扩展概念 : 基础扩展机制
@@ -391,7 +386,8 @@ timeline
         扩展生态 : 第三方扩展
     section 2026
         扩展成熟 : 完整生态形成
-        扩展标准化 : 官方API稳定</code></p>
+        扩展标准化 : 官方API稳定
+</pre>
 <h2 id="_9">企业实施建议</h2>
 <h3 id="_10">推荐场景</h3>
 <ul>
@@ -422,5 +418,7 @@ timeline
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

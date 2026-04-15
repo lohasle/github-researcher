@@ -207,9 +207,8 @@
     <div class="daily-content">
         <h1 id="2026-04-15-github">2026-04-15 GitHub 趋势研究简报</h1>
 <h2 id="_1">今日趋势概览</h2>
-<p><code>mermaid
-mindmap
-  root((2026-04-15&lt;br/&gt;趋势全景))
+<pre class="mermaid">mindmap
+  root((2026-04-15<br/>趋势全景))
     Karpathy Skills 现象
       andrej-karpathy-skills 33.8K 日增9.2K
       claude-code-best-practice 43.8K
@@ -220,7 +219,7 @@ mindmap
       cc-switch 44.7K 多Agent管理
       chrome-devtools-mcp 35K 浏览器工具
       claude-cookbooks 40.2K 官方案例集
-      信号：工具链深度 &gt; 单点工具
+      信号：工具链深度 > 单点工具
     AI 金融
       ai-hedge-fund 54.1K
       Kronos 17.8K 金融市场FM
@@ -229,7 +228,8 @@ mindmap
       microsandbox 沙箱化
       plano AI网关/数据面
       edgequake 高性能GraphRAG
-      opensre AI SRE工具包</code></p>
+      opensre AI SRE工具包
+</pre>
 <hr />
 <h2 id="karpathy-skills">趋势一：Karpathy Skills 现象 —— 个人心智模型即技能</h2>
 <p><strong>核心数据：</strong> <code>andrej-karpathy-skills</code> 今日日增 9,263 stars，周增 21,795 stars，总计 33,801 stars。一个单文件 CLAUDE.md 项目。</p>
@@ -287,16 +287,16 @@ mindmap
 <li><strong>claude-skills</strong>（11,098 stars）：232+ Claude Code 技能和 agent 插件集合，覆盖工程/营销/产品/合规</li>
 <li><strong>claude-cookbooks</strong>（40,248 stars）：Anthropic 官方案例集</li>
 </ul>
-<p><code>mermaid
-graph TB
+<pre class="mermaid">graph TB
     subgraph "Claude Skill 生态分层"
-        L1["知识层&lt;br/&gt;claude-code-best-practice&lt;br/&gt;andrej-karpathy-skills"]
-        L2["技能层&lt;br/&gt;claude-skills (232+)&lt;br/&gt;superpowers"]
-        L3["记忆层&lt;br/&gt;claude-mem&lt;br/&gt;会话捕获+注入"]
-        L4["工具层&lt;br/&gt;chrome-devtools-mcp&lt;br/&gt;cc-switch"]
-        L5["基础设施层&lt;br/&gt;microsandbox&lt;br/&gt;plano AI网关"]
+        L1["知识层<br/>claude-code-best-practice<br/>andrej-karpathy-skills"]
+        L2["技能层<br/>claude-skills (232+)<br/>superpowers"]
+        L3["记忆层<br/>claude-mem<br/>会话捕获+注入"]
+        L4["工具层<br/>chrome-devtools-mcp<br/>cc-switch"]
+        L5["基础设施层<br/>microsandbox<br/>plano AI网关"]
     end
-    L1 --&gt; L2 --&gt; L3 --&gt; L4 --&gt; L5</code></p>
+    L1 --> L2 --> L3 --> L4 --> L5
+</pre>
 <hr />
 <h2 id="claude">趋势二：Claude 生态工具链深度整合</h2>
 <p><strong>核心数据：</strong> 今日 Trending 前 12 名中，7 个项目直接服务于 Claude Code / AI Agent 生态。不再是单个工具，而是完整的工具链。</p>
@@ -342,18 +342,18 @@ graph TB
 <p>Rust 重写的 GraphRAG，灵感来自 LightRAG。高性能文档→知识图谱转换。</p>
 <h3 id="opensreai-sre-735-stars">opensre：AI SRE 工具包（735 stars）</h3>
 <p>构建 AI SRE Agent 的开源工具包，集成 Datadog/Grafana/Slack。</p>
-<p><code>mermaid
-graph LR
+<pre class="mermaid">graph LR
     subgraph "Agent 基础设施栈"
-        A[Agent 应用层&lt;br/&gt;Hermes/Claude Code]
-        B[网关/路由层&lt;br/&gt;plano/new-api]
-        C[安全/沙箱层&lt;br/&gt;microsandbox]
-        D[知识/记忆层&lt;br/&gt;edgequake/claude-mem]
-        E[可观测/SRE层&lt;br/&gt;opensre]
+        A[Agent 应用层<br/>Hermes/Claude Code]
+        B[网关/路由层<br/>plano/new-api]
+        C[安全/沙箱层<br/>microsandbox]
+        D[知识/记忆层<br/>edgequake/claude-mem]
+        E[可观测/SRE层<br/>opensre]
     end
-    A --&gt; B --&gt; C
-    A --&gt; D
-    B --&gt; E</code></p>
+    A --> B --> C
+    A --> D
+    B --> E
+</pre>
 <hr />
 <h2 id="_4">今日重点项目深度分析</h2>
 <h3 id="1-claude-memagent">1. claude-mem：Agent 工作记忆基础设施</h3>
@@ -576,5 +576,7 @@ graph LR
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

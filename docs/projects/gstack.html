@@ -235,14 +235,14 @@
 <li><strong>可复用工作流</strong>：将个人最佳实践固化为可分享的配置</li>
 </ol>
 <h2 id="_6">架构启发</h2>
-<p><code>mermaid
-graph LR
-    D[开发者] --&gt;|触发任务| G[gstack]
-    G --&gt;|角色选择| R1[CEO角色&lt;br/&gt;产品决策]
-    G --&gt;|角色选择| R2[设计师&lt;br/&gt;UI/UX]
-    G --&gt;|角色选择| R3[工程经理&lt;br/&gt;任务拆解]
-    G --&gt;|角色选择| R4[QA&lt;br/&gt;测试验证]
-    R1 &amp; R2 &amp; R3 &amp; R4 --&gt;|输出| C[Claude Code]</code></p>
+<pre class="mermaid">graph LR
+    D[开发者] -->|触发任务| G[gstack]
+    G -->|角色选择| R1[CEO角色<br/>产品决策]
+    G -->|角色选择| R2[设计师<br/>UI/UX]
+    G -->|角色选择| R3[工程经理<br/>任务拆解]
+    G -->|角色选择| R4[QA<br/>测试验证]
+    R1 & R2 & R3 & R4 -->|输出| C[Claude Code]
+</pre>
 <ul>
 <li>"单 Agent + 角色切换" 可能比 "多 Agent 编排" 更务实</li>
 <li>最佳实践可配置化是 AI Coding 工具的演进方向</li>
@@ -304,5 +304,7 @@ graph LR
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

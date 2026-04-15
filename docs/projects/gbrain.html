@@ -240,17 +240,17 @@
 <li><strong>Agent-first 部署</strong>：安装和配置全由 Agent 完成，人类只负责 API Key，这是 Agent 产品化的正确方向</li>
 <li><strong>渐进式架构</strong>：从本地 PGLite 到 Supabase 的迁移路径，适配不同规模</li>
 </ul>
-<p><code>mermaid
-graph TB
+<pre class="mermaid">graph TB
     subgraph "GBrain 知识模型"
-        A[数据源&lt;br&gt;邮件/会议/文档/推特] --&gt; B[导入管道]
-        B --&gt; C[知识页面]
-        C --&gt; D["顶部：编译真相&lt;br&gt;当前最佳理解&lt;br&gt;证据变化时重写"]
-        C --&gt; E["底部：证据时间线&lt;br&gt;只追加，永不修改&lt;br&gt;完整变更历史"]
-        D --&gt; F[混合搜索&lt;br&gt;向量+全文+元数据]
-        E --&gt; F
-        F --&gt; G[Agent 查询&lt;br&gt;最新结论 + 原始证据]
-    end</code></p>
+        A[数据源<br>邮件/会议/文档/推特] --> B[导入管道]
+        B --> C[知识页面]
+        C --> D["顶部：编译真相<br>当前最佳理解<br>证据变化时重写"]
+        C --> E["底部：证据时间线<br>只追加，永不修改<br>完整变更历史"]
+        D --> F[混合搜索<br>向量+全文+元数据]
+        E --> F
+        F --> G[Agent 查询<br>最新结论 + 原始证据]
+    end
+</pre>
 <h2 id="_6">定位判断</h2>
 <p><strong>平台候选</strong> — GBrain 的知识管理架构有平台级潜力，特别是 SkillPack 模式和渐进式存储方案。但当前更偏个人工具。</p>
 <h2 id="_7">风险 / 局限 / 泡沫点</h2>
@@ -283,5 +283,7 @@ graph TB
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

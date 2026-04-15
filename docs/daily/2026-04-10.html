@@ -417,31 +417,29 @@
 <h2 id="_11">总结</h2>
 <p>今日 GitHub 趋势显示，端侧 AI 推理进入生产化阶段，Google 的 litert-inference 代表了基础设施层的突破；AI 编程平台生态开始成熟，Claude Code 扩展生态繁荣；多代理协作从简单协作向复杂编排演进。端侧 AI、编程平台生态和多代理协作成为三大核心趋势。</p>
 <h2 id="_12">趋势关系图</h2>
-<p>```mermaid
-graph TD
-    A[端侧AI推理] --&gt; B[litert-inference]
-    A --&gt; C[gemma-4-mobile]
-    A --&gt; D[on-device-ml]</p>
-<pre><code>E[AI编程平台] --&gt; F[claude-code-extension]
-E --&gt; G[oh-my-claudecode-v2]
-E --&gt; H[coderaft-pro]
-
-I[多代理协作] --&gt; J[agent-orchestra]
-I --&gt; K[skill-chain]
-I --&gt; L[memory-palace]
-
-B --&gt; M[基础设施候选]
-F --&gt; N[平台候选]
-J --&gt; O[协作范式]
-
-M --&gt; P[端云协同AI]
-N --&gt; Q[AI编程生态]
-O --&gt; R[Agent协作标准化]
-</code></pre>
-<p>```</p>
+<pre class="mermaid">graph TD
+    A[端侧AI推理] --> B[litert-inference]
+    A --> C[gemma-4-mobile]
+    A --> D[on-device-ml]
+    
+    E[AI编程平台] --> F[claude-code-extension]
+    E --> G[oh-my-claudecode-v2]
+    E --> H[coderaft-pro]
+    
+    I[多代理协作] --> J[agent-orchestra]
+    I --> K[skill-chain]
+    I --> L[memory-palace]
+    
+    B --> M[基础设施候选]
+    F --> N[平台候选]
+    J --> O[协作范式]
+    
+    M --> P[端云协同AI]
+    N --> Q[AI编程生态]
+    O --> R[Agent协作标准化]
+</pre>
 <h2 id="_13">技术演进趋势</h2>
-<p><code>mermaid
-timeline
+<pre class="mermaid">timeline
     title 端侧AI推理技术演进
     section 2024
         端侧Demo : 简单推理，基础功能
@@ -449,12 +447,15 @@ timeline
         端侧优化 : 性能提升，模型压缩
     section 2026
         端侧生产化 : Google litert，大规模落地
-        端侧标准化 : 多框架统一，生态形成</code></p>
+        端侧标准化 : 多框架统一，生态形成
+</pre>
     </div>
 </main>
     <footer class="footer">
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

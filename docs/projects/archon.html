@@ -257,16 +257,16 @@
 <li>GitHub：CI/CD 集成</li>
 </ul>
 <h3 id="_7">架构设计</h3>
-<p><code>mermaid
-graph TB
-    A[Harness YAML&lt;br&gt;定义工作流] --&gt; B[Archon Engine&lt;br&gt;解析+调度]
-    B --&gt; C{Agent 选择}
-    C --&gt;|编码| D[Claude Code]
-    C --&gt;|编码| E[Codex]
-    C --&gt;|验证| F[自定义验证器]
-    D --&gt; G[Output Pipeline&lt;br&gt;validate → review → PR]
-    E --&gt; G
-    F --&gt; G</code></p>
+<pre class="mermaid">graph TB
+    A[Harness YAML<br>定义工作流] --> B[Archon Engine<br>解析+调度]
+    B --> C{Agent 选择}
+    C -->|编码| D[Claude Code]
+    C -->|编码| E[Codex]
+    C -->|验证| F[自定义验证器]
+    D --> G[Output Pipeline<br>validate → review → PR]
+    E --> G
+    F --> G
+</pre>
 <h2 id="_8">架构启发</h2>
 <ol>
 <li><strong>确定性封装模式</strong>：对非确定性系统（LLM）用确定性框架（YAML 工作流）封装，是工程化的正确思路</li>
@@ -305,5 +305,7 @@ graph TB
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

@@ -217,15 +217,15 @@
 2. <strong>agency-agents</strong> 单月暴涨 67K stars，证明市场对"开箱即用的 Agent 工具箱"有巨大需求
 3. <strong>MiroFish</strong> 把群体智能从学术概念变成可调用的引擎</p>
 <p>这标志着 2026 年 Q2 的核心叙事从"Agent 能做什么"转向"Agent 怎么可靠地做"。</p>
-<p><code>mermaid
-graph TB
+<pre class="mermaid">graph TB
     subgraph "AI Agent 工业化演进"
-        A[Phase 1: 2024-2025&lt;br&gt;Agent 能做什么？&lt;br&gt;能力探索期]
-        B[Phase 2: 2026 Q1&lt;br&gt;Agent 怎么编排？&lt;br&gt;Skill/Workflow 期]
-        C[Phase 3: 2026 Q2&lt;br&gt;Agent 怎么可靠地做？&lt;br&gt;Harness 工程期]
+        A[Phase 1: 2024-2025<br>Agent 能做什么？<br>能力探索期]
+        B[Phase 2: 2026 Q1<br>Agent 怎么编排？<br>Skill/Workflow 期]
+        C[Phase 3: 2026 Q2<br>Agent 怎么可靠地做？<br>Harness 工程期]
     end
-    A --&gt; B --&gt; C
-    C --&gt; D[关键项目&lt;br&gt;Archon · agency-agents · Superpowers]</code></p>
+    A --> B --> C
+    C --> D[关键项目<br>Archon · agency-agents · Superpowers]
+</pre>
 <hr />
 <h2 id="_2">今日重点趋势</h2>
 <h3 id="1ai-agent-harness">🏗️ 趋势 1：AI Agent 工业化 — Harness 工程范式确立</h3>
@@ -293,17 +293,17 @@ graph TB
 - 支持 Claude Code + Codex 的 harness 模板
 - TypeScript 实现，架构清晰</p>
 <p><strong>架构启发：</strong>
-<code>mermaid
-graph LR
-    A[YAML Harness&lt;br&gt;定义工作流] --&gt; B[Archon Engine&lt;br&gt;调度执行]
-    B --&gt; C[Claude Code&lt;br&gt;实现]
-    B --&gt; D[Codex&lt;br&gt;实现]
-    B --&gt; E[自定义 Agent&lt;br&gt;扩展]
-    C --&gt; F[Validate&lt;br&gt;验证]
-    D --&gt; F
-    E --&gt; F
-    F --&gt; G[Code Review&lt;br&gt;审查]
-    G --&gt; H[PR Creation&lt;br&gt;提交]</code></p>
+<pre class="mermaid">graph LR
+    A[YAML Harness<br>定义工作流] --> B[Archon Engine<br>调度执行]
+    B --> C[Claude Code<br>实现]
+    B --> D[Codex<br>实现]
+    B --> E[自定义 Agent<br>扩展]
+    C --> F[Validate<br>验证]
+    D --> F
+    E --> F
+    F --> G[Code Review<br>审查]
+    G --> H[PR Creation<br>提交]
+</pre></p>
 <p><strong>定位判断：</strong> 平台候选。如果 harness 概念被广泛接受，Archon 有潜力成为 AI Coding 工作流的事实标准。</p>
 <p><strong>风险：</strong> 过度依赖特定 Agent 实现；YAML 复杂度膨胀风险；LLM 不确定性是根本性挑战。</p>
 <hr />
@@ -325,18 +325,18 @@ graph LR
 - 全栈 TypeScript，类型安全
 - D1（SQLite）+ R2（对象存储）作为存储层
 - 边缘网络天然提供全球 CDN + DDoS 防护</p>
-<p><code>mermaid
-graph TB
+<pre class="mermaid">graph TB
     subgraph "EmDash 架构"
-        A[Astro 6.0&lt;br&gt;前端框架] --&gt; B[Cloudflare Workers&lt;br&gt;运行时]
-        B --&gt; C[D1&lt;br&gt;SQLite 数据库]
-        B --&gt; D[R2&lt;br&gt;对象存储]
-        B --&gt; E[Worker Isolate&lt;br&gt;插件沙箱]
+        A[Astro 6.0<br>前端框架] --> B[Cloudflare Workers<br>运行时]
+        B --> C[D1<br>SQLite 数据库]
+        B --> D[R2<br>对象存储]
+        B --> E[Worker Isolate<br>插件沙箱]
     end
-    E --&gt; F[插件 1]
-    E --&gt; G[插件 2]
-    E --&gt; H[插件 N]
-    style E fill:#ff9900,color:#000</code></p>
+    E --> F[插件 1]
+    E --> G[插件 2]
+    E --> H[插件 N]
+    style E fill:#ff9900,color:#000
+</pre>
 <p><strong>架构启发：</strong> 插件沙箱模型值得所有需要插件系统的项目学习。WordPress 的安全问题本质上是插件在进程内运行导致的，Worker Isolate 提供了操作系统级的隔离。</p>
 <p><strong>定位判断：</strong> 平台候选。CMS 是 Web 的基础设施层，Cloudflare 有能力构建平台生态。</p>
 <p><strong>风险：</strong> Beta 阶段；插件生态为零；Cloudflare 锁定风险；与 WordPress 43% 的市场份额差距巨大。</p>
@@ -613,5 +613,7 @@ graph TB
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

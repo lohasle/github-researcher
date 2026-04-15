@@ -229,26 +229,25 @@
 </ul>
 <h2 id="_5">关键技术亮点</h2>
 <h3 id="_6">插件沙箱架构</h3>
-<p>```mermaid
-graph TB
+<pre class="mermaid">graph TB
     subgraph "传统 CMS（WordPress）"
-        A1[主进程] --&gt; B1[插件 1<br>共享内存]
-        A1 --&gt; C1[插件 2<br>共享内存]
-        A1 --&gt; D1[插件 N<br>共享内存]
-        B1 -.-&gt;|可直接访问| C1
-    end</p>
-<pre><code>subgraph "EmDash"
-    A2[主服务&lt;br&gt;Cloudflare Worker] --&gt; B2[Worker Isolate&lt;br&gt;插件 1]
-    A2 --&gt; C2[Worker Isolate&lt;br&gt;插件 2]
-    A2 --&gt; D2[Worker Isolate&lt;br&gt;插件 N]
-    B2 -.-&gt;|隔离| C2
-end
-
-style B2 fill:#00cc66,color:#000
-style C2 fill:#00cc66,color:#000
-style D2 fill:#00cc66,color:#000
-</code></pre>
-<p>```</p>
+        A1[主进程] --> B1[插件 1<br>共享内存]
+        A1 --> C1[插件 2<br>共享内存]
+        A1 --> D1[插件 N<br>共享内存]
+        B1 -.->|可直接访问| C1
+    end
+    
+    subgraph "EmDash"
+        A2[主服务<br>Cloudflare Worker] --> B2[Worker Isolate<br>插件 1]
+        A2 --> C2[Worker Isolate<br>插件 2]
+        A2 --> D2[Worker Isolate<br>插件 N]
+        B2 -.->|隔离| C2
+    end
+    
+    style B2 fill:#00cc66,color:#000
+    style C2 fill:#00cc66,color:#000
+    style D2 fill:#00cc66,color:#000
+</pre>
 <h3 id="_7">技术栈</h3>
 <ul>
 <li><strong>前端</strong>：Astro 6.0（SSR + Islands 架构）</li>
@@ -301,5 +300,7 @@ style D2 fill:#00cc66,color:#000
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

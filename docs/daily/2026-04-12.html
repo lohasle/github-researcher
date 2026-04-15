@@ -214,16 +214,16 @@
 <p>本日最重要变化：<strong>AI 记忆系统从"锦上添花"变为"必备基础设施"</strong></p>
 <p>本周 GitHub 最大的结构性变化不是某个框架的更新，而是<strong>Agent 记忆层/知识层</strong> 作为一个独立基础设施赛道正式成型。MemPalace 以 41,755 stars（7 天从 0 到 4 万+）证明市场对 Agent 记忆的迫切需求；GBrain（Garry Tan 出品）把"Agent 知识脑"做成了可安装的产品；graphify 将知识图谱变成了 Coding Agent 的 Skill。</p>
 <p><strong>这不是三个独立项目，而是同一条赛道上的三个层次：</strong></p>
-<p><code>mermaid
-graph TB
+<pre class="mermaid">graph TB
     subgraph "Agent 记忆/知识基础设施分层"
-        A[原始记忆层&lt;br&gt;MemPalace&lt;br&gt;存储一切 + 语义检索]
-        B[知识脑层&lt;br&gt;GBrain&lt;br&gt;结构化知识 + 混合搜索]
-        C[感知/构建层&lt;br&gt;graphify / llm-wiki&lt;br&gt;从非结构化数据构建知识]
+        A[原始记忆层<br>MemPalace<br>存储一切 + 语义检索]
+        B[知识脑层<br>GBrain<br>结构化知识 + 混合搜索]
+        C[感知/构建层<br>graphify / llm-wiki<br>从非结构化数据构建知识]
     end
-    A --&gt; B
-    C --&gt; B
-    B --&gt; D[AI Agent&lt;br&gt;具备持久记忆和结构化知识]</code></p>
+    A --> B
+    C --> B
+    B --> D[AI Agent<br>具备持久记忆和结构化知识]
+</pre>
 <hr />
 <h2 id="_2">今日重点趋势</h2>
 <h3 id="1ai">🧠 趋势 1：AI 记忆系统破局</h3>
@@ -256,13 +256,13 @@ graph TB
 <h3 id="2agent">🧬 趋势 2：Agent 知识脑标配化</h3>
 <p><strong>核心判断：AI Agent 正在从"无状态工具"进化为"有记忆的知识工作者"</strong></p>
 <p>GBrain 的设计理念最有启发性：<strong>把每个知识页面当作情报评估报告</strong>——顶部是当前最佳理解（可重写），底部是只追加的时间线（证据链，永不修改）。这个模式借鉴了情报分析领域的方法论，非常适合 Agent 知识管理。</p>
-<p><code>mermaid
-flowchart LR
+<pre class="mermaid">flowchart LR
     subgraph "GBrain 知识模型"
-        A[顶部：编译真相&lt;br&gt;当前最佳理解&lt;br&gt;证据变化时重写] --&gt; B[混合搜索引擎]
-        C[底部：证据时间线&lt;br&gt;只追加，永不修改&lt;br&gt;完整的变更历史] --&gt; B
+        A[顶部：编译真相<br>当前最佳理解<br>证据变化时重写] --> B[混合搜索引擎]
+        C[底部：证据时间线<br>只追加，永不修改<br>完整的变更历史] --> B
     end
-    B --&gt; D[Agent 查询&lt;br&gt;获得最新结论 + 原始证据]</code></p>
+    B --> D[Agent 查询<br>获得最新结论 + 原始证据]
+</pre>
 <p><strong>graphify</strong> 更实用：将任何文件夹的代码、文档、论文、图片、视频、YouTube 链接转为可查询的知识图谱，支持 Claude Code、Codex、OpenCode、Cursor、Gemini CLI、OpenClaw 等几乎所有主流 Coding Agent。这种"Agent 无关"的 Skill 设计思路值得学习。</p>
 <hr />
 <h3 id="3-skill">🎭 趋势 3：人格蒸馏 Skill 生态爆发</h3>
@@ -511,5 +511,7 @@ flowchart LR
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

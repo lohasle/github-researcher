@@ -199,6 +199,9 @@ NAV = '''    <nav class="nav">
         </div>
     </nav>'''
 
+MERMAID_SCRIPT = '''    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>'''
+
 FOOTER = '''    <footer class="footer">
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
@@ -220,6 +223,29 @@ def parse_frontmatter(content):
         fm = {}
 
     return fm, parts[2]
+
+
+def render_markdown_with_mermaid(body):
+    """Render markdown, preserving mermaid code blocks as <pre class='mermaid'>."""
+    # Replace ```mermaid ... ``` blocks with <pre class="mermaid"> placeholders
+    # to prevent markdown from escaping them
+    import hashlib
+    placeholders = {}
+    
+    def replace_mermaid(match):
+        code = match.group(1)
+        key = f'MERMAID_PLACEHOLDER_{hashlib.md5(code.encode()).hexdigest()}'
+        placeholders[key] = f'<pre class="mermaid">{code}</pre>'
+        return key
+    
+    processed = re.sub(r'```mermaid\n(.*?)```', replace_mermaid, body, flags=re.DOTALL)
+    html = markdown.markdown(processed, extensions=['tables', 'toc'])
+    
+    for key, value in placeholders.items():
+        html = html.replace(f'<p>{key}</p>', value)
+        html = html.replace(key, value)
+    
+    return html
 
 
 def get_fm(fm, key, default):
@@ -567,7 +593,7 @@ def generate_daily_page(filepath):
         content = f.read()
 
     fm, body = parse_frontmatter(content)
-    html_body = markdown.markdown(body, extensions=['tables', 'toc'])
+    html_body = render_markdown_with_mermaid(body)
 
     title = fm.get('title', f'{date} 日报')
 
@@ -606,6 +632,7 @@ def generate_daily_page(filepath):
     </div>
 </main>
 {FOOTER}
+{MERMAID_SCRIPT}
 </body>
 </html>'''
 
@@ -779,7 +806,7 @@ def generate_project_page(filepath):
         content = f.read()
 
     fm, body = parse_frontmatter(content)
-    html_body = markdown.markdown(body, extensions=['tables', 'toc'])
+    html_body = render_markdown_with_mermaid(body)
 
     title = fm.get('title', raw_name)
 
@@ -828,6 +855,7 @@ def generate_project_page(filepath):
     </div>
 </main>
 {FOOTER}
+{MERMAID_SCRIPT}
 </body>
 </html>'''
 

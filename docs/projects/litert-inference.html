@@ -245,45 +245,43 @@
 </ul>
 <p><strong>总分</strong>：92/100 - 基础设施候选项目</p>
 <h2 id="_2">技术架构</h2>
-<p>```mermaid
-graph TB
-    A[输入模型] --&gt; B[模型优化]
-    B --&gt; C[模型压缩]
-    C --&gt; D[硬件加速]
-    D --&gt; E[推理引擎]
-    E --&gt; F[输出结果]</p>
-<pre><code>B --&gt; G[量化]
-B --&gt; H[剪枝]
-B --&gt; I[蒸馏]
-
-D --&gt; J[GPU加速]
-D --&gt; K[NPU加速]
-D --&gt; L[DSP加速]
-
-E --&gt; M[内存优化]
-E --&gt; N[计算优化]
-E --&gt; O[能耗优化]
-
-F --&gt; P[端侧应用]
-F --&gt; Q[云端同步]
-</code></pre>
-<p>```</p>
+<pre class="mermaid">graph TB
+    A[输入模型] --> B[模型优化]
+    B --> C[模型压缩]
+    C --> D[硬件加速]
+    D --> E[推理引擎]
+    E --> F[输出结果]
+    
+    B --> G[量化]
+    B --> H[剪枝]
+    B --> I[蒸馏]
+    
+    D --> J[GPU加速]
+    D --> K[NPU加速]
+    D --> L[DSP加速]
+    
+    E --> M[内存优化]
+    E --> N[计算优化]
+    E --> O[能耗优化]
+    
+    F --> P[端侧应用]
+    F --> Q[云端同步]
+</pre>
 <h2 id="_3">端云协同架构</h2>
-<p>```mermaid
-graph LR
-    A[移动设备] --&gt; B[litert-inference]
-    B --&gt; C[模型推理]
-    C --&gt; D[本地处理]
-    D --&gt; E[结果输出]</p>
-<pre><code>E --&gt; F[云端同步]
-F --&gt; G[模型更新]
-G --&gt; B
-
-E --&gt; H[用户交互]
-H --&gt; I[反馈收集]
-I --&gt; G
-</code></pre>
-<p>```</p>
+<pre class="mermaid">graph LR
+    A[移动设备] --> B[litert-inference]
+    B --> C[模型推理]
+    C --> D[本地处理]
+    D --> E[结果输出]
+    
+    E --> F[云端同步]
+    F --> G[模型更新]
+    G --> B
+    
+    E --> H[用户交互]
+    H --> I[反馈收集]
+    I --> G
+</pre>
 <h2 id="_4">性能对比</h2>
 <table>
 <thead>
@@ -349,8 +347,7 @@ I --&gt; G
 <li>隐私保护</li>
 </ul>
 <h2 id="_6">发展历程</h2>
-<p><code>mermaid
-timeline
+<pre class="mermaid">timeline
     title 端侧AI推理发展历程
     section 2023
         概念验证 : 基础推理能力
@@ -360,7 +357,8 @@ timeline
         功能增强 : 支持更大模型
     section 2026
         生产落地 : litert大规模应用
-        生态完善 : 完整工具链</code></p>
+        生态完善 : 完整工具链
+</pre>
 <h2 id="_7">企业应用建议</h2>
 <h3 id="_8">推荐场景</h3>
 <ul>
@@ -390,5 +388,7 @@ timeline
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

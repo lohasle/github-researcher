@@ -230,16 +230,16 @@
 <h2 id="_5">架构启发</h2>
 <p>MCP 协议的扩展方向清晰：文件系统 → 数据库 → API → 浏览器/DevTools。Agent 的感知边界正在从"代码编辑"扩展到"运行时调试"。</p>
 <p><strong>关键图示：</strong></p>
-<p><code>mermaid
-graph LR
-    A[AI Agent] --&gt; B[MCP Protocol]
-    B --&gt; C[文件系统]
-    B --&gt; D[数据库]
-    B --&gt; E[API/GitHub]
-    B --&gt; F[Chrome DevTools&lt;br/&gt;新增!]
-    F --&gt; G[DOM/CSS]
-    F --&gt; H[Console/Network]
-    F --&gt; I[Performance]</code></p>
+<pre class="mermaid">graph LR
+    A[AI Agent] --> B[MCP Protocol]
+    B --> C[文件系统]
+    B --> D[数据库]
+    B --> E[API/GitHub]
+    B --> F[Chrome DevTools<br/>新增!]
+    F --> G[DOM/CSS]
+    F --> H[Console/Network]
+    F --> I[Performance]
+</pre>
 <h2 id="_6">定位判断</h2>
 <p>Agent 工具层基础设施。不是 Agent 框架本身，而是 Agent 的"眼睛"——让 Agent 能看到和操作浏览器运行时。</p>
 <h2 id="_7">风险 / 局限 / 泡沫点</h2>
@@ -269,5 +269,7 @@ graph LR
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

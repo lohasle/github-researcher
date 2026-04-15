@@ -234,15 +234,15 @@
 </ul>
 <h2 id="_6">架构启发</h2>
 <p>群体智能如果成功工程化，可能成为多 Agent 框架的"算法层"：</p>
-<p><code>mermaid
-graph TB
+<pre class="mermaid">graph TB
     subgraph "多 Agent 系统分层"
-        A[应用层&lt;br&gt;具体业务场景]
-        B[编排层&lt;br&gt;CrewAI / LangGraph]
-        C[算法层&lt;br&gt;MiroFish?&lt;br&gt;群体智能]
-        D[模型层&lt;br&gt;GPT / Claude / Gemma]
+        A[应用层<br>具体业务场景]
+        B[编排层<br>CrewAI / LangGraph]
+        C[算法层<br>MiroFish?<br>群体智能]
+        D[模型层<br>GPT / Claude / Gemma]
     end
-    A --&gt; B --&gt; C --&gt; D</code></p>
+    A --> B --> C --> D
+</pre>
 <h2 id="_7">定位判断</h2>
 <p><strong>学习型 → 平台候选的过渡阶段</strong>。目前缺乏足够的工程验证，但概念方向正确。如果 API 设计得当且有 benchmark 数据支撑，可能升级为平台候选。</p>
 <h2 id="_8">风险/局限/泡沫点</h2>
@@ -274,5 +274,7 @@ graph TB
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

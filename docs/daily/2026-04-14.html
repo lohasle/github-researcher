@@ -207,9 +207,8 @@
     <div class="daily-content">
         <h1 id="2026-04-14-github">2026-04-14 GitHub 趋势研究简报</h1>
 <h2 id="_1">今日趋势概览</h2>
-<p><code>mermaid
-mindmap
-  root((2026-04-14&lt;br/&gt;趋势全景))
+<pre class="mermaid">mindmap
+  root((2026-04-14<br/>趋势全景))
     Agent Skill 生态
       Hermes Agent 65K+ stars
       nuwa-skill 人格蒸馏
@@ -227,7 +226,8 @@ mindmap
     端侧LLM推理
       LiteRT-LM Google生产级
       Onyx 开源AI平台
-      Goose 本地Coding Agent</code></p>
+      Goose 本地Coding Agent
+</pre>
 <hr />
 <h2 id="agent-skill">趋势一：Agent Skill 生态爆发与饱和并存</h2>
 <p><strong>核心数据：</strong> 本周 GitHub Trending 前 100 个项目中，近半数是 Claude Code Skills、Agent Harness 或 Skill Registry。这是一个明确的信号：<strong>Agent Skill 领域正在从创新期进入泡沫期。</strong></p>
@@ -254,16 +254,16 @@ mindmap
 - ⚠️ 实质是对公开资料的 prompt 模板化，技术深度有限
 - 📌 信号价值大于工具价值：它表明市场对"可迁移 AI 人格"的需求正在浮现</p>
 <h3 id="_2">饱和信号分析</h3>
-<p><code>mermaid
-graph LR
-    A[Agent Skill 爆发] --&gt; B{分化方向}
-    B --&gt; C[工具层：Claude Code Skills&lt;br/&gt;饱和度高]
-    B --&gt; D[平台层：oh-my-claudecode&lt;br/&gt;harness 标准化]
-    B --&gt; E[基础设施层：Hermes&lt;br/&gt;Skill 生命周期]
-    B --&gt; F[泡沫区：nuwa-skill 等&lt;br/&gt;概念验证型项目]
-    C --&gt;|淘汰率高| G[短期泡沫]
-    D --&gt;|有壁垒| H[中期趋势]
-    E --&gt;|核心问题| I[长期价值]</code></p>
+<pre class="mermaid">graph LR
+    A[Agent Skill 爆发] --> B{分化方向}
+    B --> C[工具层：Claude Code Skills<br/>饱和度高]
+    B --> D[平台层：oh-my-claudecode<br/>harness 标准化]
+    B --> E[基础设施层：Hermes<br/>Skill 生命周期]
+    B --> F[泡沫区：nuwa-skill 等<br/>概念验证型项目]
+    C -->|淘汰率高| G[短期泡沫]
+    D -->|有壁垒| H[中期趋势]
+    E -->|核心问题| I[长期价值]
+</pre>
 <hr />
 <h2 id="rust">趋势二：存储基础设施 Rust 化浪潮</h2>
 <p><strong>RustFS</strong> 本周在 GitHub Trending 上表现抢眼：23K+ stars，声称 4KB 小对象性能是 MinIO 的 2.3x。</p>
@@ -341,22 +341,22 @@ graph LR
 <h2 id="llm">趋势四：端侧 LLM 推理进入生产阶段</h2>
 <p>Google 的 <strong>LiteRT-LM</strong> 已经在 Chrome、Chromebook Plus、Pixel Watch 等产品中落地。这不是实验项目，是生产级运行时。</p>
 <p>配合 <strong>Onyx</strong>（开源 AI 平台，v3.2.2 发布于 4 月 11 日，50+ 连接器 + MCP 支持）和 <strong>Goose</strong>（Block 出品的本地 Coding Agent），端侧 AI 生态正在形成完整技术栈：</p>
-<p><code>mermaid
-graph TB
+<pre class="mermaid">graph TB
     subgraph 端侧AI技术栈
-        L[LiteRT-LM&lt;br/&gt;推理运行时] --&gt; O[Onyx&lt;br/&gt;AI平台/连接层]
-        L --&gt; G[Goose&lt;br/&gt;本地Coding Agent]
-        O --&gt; M[MCP协议&lt;br/&gt;工具连接]
-        G --&gt; M
+        L[LiteRT-LM<br/>推理运行时] --> O[Onyx<br/>AI平台/连接层]
+        L --> G[Goose<br/>本地Coding Agent]
+        O --> M[MCP协议<br/>工具连接]
+        G --> M
     end
     subgraph 云端参照
         C[Claude Code] 
         CC[oh-my-claudecode]
         H[Hermes Agent]
     end
-    L -.-&gt;|替代/互补| C
-    O -.-&gt;|开源替代| CC
-    G -.-&gt;|本地化| H</code></p>
+    L -.->|替代/互补| C
+    O -.->|开源替代| CC
+    G -.->|本地化| H
+</pre>
 <hr />
 <h2 id="_5">今日重点项目深度分析</h2>
 <h3 id="1-rustfs-rust">1. RustFS：存储基础设施的 Rust 化标杆</h3>
@@ -490,5 +490,7 @@ graph TB
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

@@ -238,15 +238,15 @@
 <li><strong>共存与迁移</strong>：支持与现有 MinIO/Ceph 集群共存</li>
 </ol>
 <h2 id="_6">架构启发</h2>
-<p><code>mermaid
-graph TB
-    A[应用层] --&gt;|S3 API| B[RustFS]
-    B --&gt; C[Erasure Coding&lt;br/&gt;纠删码]
-    B --&gt; D[分布式一致性]
-    B --&gt; E[多租户/策略引擎]
-    C --&gt; F[磁盘池]
-    D --&gt; F
-    style B fill:#f9a825,stroke:#333,color:#000</code></p>
+<pre class="mermaid">graph TB
+    A[应用层] -->|S3 API| B[RustFS]
+    B --> C[Erasure Coding<br/>纠删码]
+    B --> D[分布式一致性]
+    B --> E[多租户/策略引擎]
+    C --> F[磁盘池]
+    D --> F
+    style B fill:#f9a825,stroke:#333,color:#000
+</pre>
 <ul>
 <li>"Rust 重写经典基础设施 + 更友好许可证" 是可复制的模式</li>
 <li>Drop-in 替换策略大幅降低迁移摩擦力</li>
@@ -315,5 +315,7 @@ graph TB
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

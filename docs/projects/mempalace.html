@@ -240,18 +240,18 @@
 <li><strong>诚实是最强的技术品牌</strong>：README 中的公开勘误（AAAK 回归、"30x lossless" 不实、"contradiction detection" 未集成）反而增强了可信度</li>
 <li><strong>宫殿隐喻的工程化</strong>：将古代记忆术转化为可计算的数据结构</li>
 </ul>
-<p><code>mermaid
-graph TB
+<pre class="mermaid">graph TB
     subgraph "MemPalace 架构"
-        A[原始对话数据] --&gt; B[ChromaDB&lt;br&gt;向量嵌入存储]
-        A --&gt; C[SQLite&lt;br&gt;实体关系图谱]
-        B --&gt; D[宫殿结构索引&lt;br&gt;Wings → Halls → Rooms]
-        C --&gt; D
-        D --&gt; E[语义搜索&lt;br&gt;96.6% R@5]
-        D --&gt; F[AAAK 压缩层&lt;br&gt;实验性，84.2% R@5]
-        E --&gt; G[MCP Server&lt;br&gt;Agent 集成]
-        F --&gt; G
-    end</code></p>
+        A[原始对话数据] --> B[ChromaDB<br>向量嵌入存储]
+        A --> C[SQLite<br>实体关系图谱]
+        B --> D[宫殿结构索引<br>Wings → Halls → Rooms]
+        C --> D
+        D --> E[语义搜索<br>96.6% R@5]
+        D --> F[AAAK 压缩层<br>实验性，84.2% R@5]
+        E --> G[MCP Server<br>Agent 集成]
+        F --> G
+    end
+</pre>
 <h2 id="_6">定位判断</h2>
 <p><strong>基础设施候选</strong> — Agent 记忆层是确定性需求，MemPalace 的"存一切 + 宫殿索引"模式有成为标准的潜力。但需要修复安全漏洞并验证大规模性能后才能成为生产基础设施。</p>
 <h2 id="_7">风险 / 局限 / 泡沫点</h2>
@@ -287,5 +287,7 @@ graph TB
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

@@ -183,7 +183,17 @@ if os.path.exists(DAILY_REPORT):
 else:
     results["warnings"].append("缺少 daily-report.md")
 
-# === 6. 首页 stats 动态计算验证 ===
+# === 6. HTML 嵌套 <a> 标签检查 ===
+nested_a_pattern = re.compile(r'<a[^>]*class="card"')
+for html_file in glob.glob(os.path.join(DOCS, '*.html')):
+    with open(html_file) as f:
+        content = f.read()
+    if nested_a_pattern.search(content):
+        page = os.path.basename(html_file)
+        results["errors"].append(f"{page}: 发现嵌套 <a> 标签（card wrapper 是 <a>），会导致 GitHub 链接变形")
+        results["pass"] = False
+
+# === 7. 首页 stats 动态计算验证 ===
 index_html = os.path.join(DOCS, 'index.html')
 if os.path.exists(index_html):
     with open(index_html) as f:

@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-04-16）
+## 最新研究摘要（2026-04-17）
 
-**Agent成本可观测性觉醒 · AI记忆系统标准化竞赛 · Zero-Human Company编排框架落地 · 知识工程从RAG走向持久化Wiki**
+**Agent Skill 自进化范式成形 · AI原生编程语言登场 · Token可观测性持续升温 · 端侧多模态推理加速**
 
 今日热榜新信号：
-- **codeburn**（1,698 stars）：AI Coding Token 消耗 TUI 仪表盘，支持 Claude Code / Codex / Cursor，2天破千星
-- **mempalace**（46,544 stars）：当前 benchmark 最强的开源 AI 记忆系统，11天破4.6万星，MCP 兼容
-- **paperclip**（54,140 stars）：零人类公司编排引擎，持续高活跃度，2291 个 open issues 显示真实使用规模
+- **darwin-skill**（952 stars）：让 Agent Skill 自主进化的系统：评估→改进→测试→保留或回滚，4天破900星
+- **weft**（638 stars）：专为 AI 系统设计的编程语言，Rust 实现，探索 Agent 编译层
+- **codeburn**（2,214 stars）：AI Coding Token 消耗 TUI 仪表盘，支持 Claude Code / Codex / Cursor，5天破2.2K星
 
+**→ [查看 2026-04-17 完整简报](daily/2026-04-17.md)**
 **→ [查看 2026-04-16 完整简报](daily/2026-04-16.md)**
 **→ [查看 2026-04-15 完整简报](daily/2026-04-15.md)**
 **→ [查看 2026-04-14 完整简报](daily/2026-04-14.md)**
-**→ [查看 2026-04-13 完整简报](daily/2026-04-13.md)**
 
 ---
 
@@ -24,22 +24,22 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-04-17](daily/2026-04-17.md) | Agent Skill 自进化范式成形 · AI原生编程语言登场 · Token | 6 个深度分析 |
 | [2026-04-16](daily/2026-04-16.md) | Agent成本可观测性觉醒 · AI记忆系统标准化竞赛 · Zero-Human | 4 个深度分析 |
 | [2026-04-15](daily/2026-04-15.md) | Karpathy Skills现象级爆发 · Claude生态工具链深度整合 · | 6 个深度分析 |
 | [2026-04-14](daily/2026-04-14.md) | Hermes Agent 65K星霸榜 · Agent Skill生态饱和信号  | 4 个深度分析 |
 | [2026-04-13](daily/2026-04-13.md) | AI Agent工业化 · Harness工程新范式 · 群体智能觉醒 · 端侧 | 4 个深度分析 |
 | [2026-04-12](daily/2026-04-12.md) | AI记忆系统破局 · Agent知识脑标配化 · 人格蒸馏Skill生态爆发 | 4 个深度分析 |
 | [2026-04-11](daily/2026-04-11.md) | AI Agent 技能框架爆发 · 托管式 Agent 平台兴起 · Copil | 3 个深度分析 |
-| [2026-04-10](daily/2026-04-10.md) | 端侧AI推理生产化 · AI编程平台生态成熟 · 多代理协作标准化 | 3 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **Agent 成本可观测性：从隐式消耗到显式管控**：相关项目 codeburn, plano。
-2. **AI 记忆系统进入标准化竞赛阶段**：相关项目 mempalace, claude-mem。
-3. **Zero-Human Company 编排框架加速落地**：相关项目 paperclip, autoagent。
-4. **知识工程范式迁移：从 RAG 到持久化 Wiki**：相关项目 llm-wiki, graphify。
+1. **Agent Skill 自进化：从静态模板到达尔文式迭代**：相关项目 darwin-skill, nuwa-skill。
+2. **AI 原生编程语言：为 Agent 系统设计的编译层**：相关项目 weft。
+3. **Token 可观测性持续升温，AI Coding 成本管控成刚需**：相关项目 codeburn。
+4. **端侧多模态推理加速：Apple Silicon 生态发力**：相关项目 parlor, dflash-mlx。
 
 ---
 
@@ -62,9 +62,9 @@
 
 ## 数据统计
 
-- 📊 项目档案：40 个
-- 📅 日报总数：10 期
-- 🔄 最近更新：2026-04-16
+- 📊 项目档案：45 个
+- 📅 日报总数：11 期
+- 🔄 最近更新：2026-04-17
 
 ---
 

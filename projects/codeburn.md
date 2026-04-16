@@ -2,11 +2,11 @@
 title: "Codeburn"
 slug: "codeburn"
 date_added: "2026-04-16"
-last_seen_date: "2026-04-16"
+last_seen_date: "2026-04-17"
 category: "工具型/基础设施候选"
 emoji: "🔥"
-stars: "1,698 stars"
-stars_delta: "2天从0到1,698"
+stars: "2,214 stars"
+stars_delta: "5天从0到2,214"
 language: "TypeScript"
 score: 78
 tags: ["AI Coding", "Token Observability", "TUI", "Cost Tracking", "Claude Code", "Codex", "Cursor"]

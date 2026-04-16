@@ -4,6 +4,22 @@
 
 ---
 
+## 2026-04-17
+
+**核心主题：** Agent Skill 自进化范式成形 · AI原生编程语言登场 · Token可观测性持续升温 · 端侧多模态推理加速
+
+**关键项目：**
+- 🧬 darwin-skill (952 stars) — Skill 自进化引擎：评估→改进→回滚
+- 🧵 weft (638 stars) — AI 系统编程语言，Rust 实现
+- 🔥 codeburn (2,214 stars) — Token 可观测性仪表盘，5天破2K
+- 🗣️ parlor (1,551 stars) — 端侧多模态 AI 对话
+- ⚡ dflash-mlx (443 stars) — MLX 无损推测解码
+- 🐘 xata (479 stars) — 开源云原生 Postgres
+
+→ [查看完整日报](daily/2026-04-17.html)
+
+---
+
 ## 2026-04-16
 
 **核心主题：** Agent成本可观测性觉醒 · AI记忆系统标准化竞赛 · Zero-Human Company编排框架落地 · 知识工程从RAG走向持久化Wiki

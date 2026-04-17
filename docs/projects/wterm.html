@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codeburn | GitHub 趋势研究</title>
+    <title>wterm | GitHub 趋势研究</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>⭐</text></svg>">
     <style>
         :root {
@@ -206,112 +206,55 @@
 <main class="container">
     <a href="/github-researcher/projects.html" class="back-link">← 返回重点项目</a>
     <div class="project-content">
-        <div style="margin-bottom:20px;"><a href="https://github.com/AgentSeal/codeburn" target="_blank" rel="noopener" class="btn-github" style="padding:10px 20px;font-size:14px;"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg> 查看 GitHub 项目</a></div>
-        <h1 id="codeburn">Codeburn</h1>
+        <div style="margin-bottom:20px;"><a href="https://github.com/vercel-labs/wterm" target="_blank" rel="noopener" class="btn-github" style="padding:10px 20px;font-size:14px;"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg> 查看 GitHub 项目</a></div>
+        <h1 id="wterm">wterm</h1>
 <h2 id="_1">一句话定位</h2>
-<p>AI Coding Token 消耗的实时 TUI 仪表盘，让开发者看清每个 Agent 会话的 token 去向和成本。</p>
+<p>Vercel Labs 出品的 Web 终端模拟器，核心用 Zig 编写编译为 ~12KB WASM，DOM 渲染实现原生可访问性。</p>
 <h2 id="_2">它解决的问题</h2>
-<p>AI Coding Agent（Claude Code、Codex、Cursor）在企业中规模化使用后，token 消耗是一个黑箱。开发者不知道 token 花在哪里，管理者无法做成本预算和优化。Codeburn 填补了 Agent 可观测性在成本维度的空白。</p>
-<h2 id="_3">为什么值得关注</h2>
+<p>Web 终端模拟器长期被 xterm.js 统治，Canvas 渲染在文本选择、可访问性、浏览器原生功能上有先天缺陷。wterm 用 DOM 渲染 + WASM 核心提供了一条不同的路径。</p>
+<p>目标用户：云 IDE 开发者、在线终端服务提供商、需要在浏览器中嵌入终端的应用。</p>
+<h2 id="2026-04-18">为什么值得关注（2026-04-18）</h2>
+<p>Vercel Labs 出品，4天破 1,310 星。技术栈组合（Zig + WASM + DOM 渲染）在终端模拟器领域是真正的创新。12KB 的 WASM 二进制大小表明工程功底扎实。</p>
+<h2 id="_3">热度来源判断</h2>
 <ul>
-<li>发布 2 天即破 1,698 stars，需求验证迅速</li>
-<li>跨 Agent 支持（Claude Code / Codex / Cursor），统一视图</li>
-<li>TUI 交互设计，开发者无需离开终端</li>
-<li>实时成本追踪，不是事后统计</li>
+<li>Vercel 品牌背书是主要驱动力</li>
+<li>Zig + WASM 的技术组合吸引了基础设施社区关注</li>
+<li>React 组件生态降低了采用门槛</li>
+<li>真实工程创新，非泡沫</li>
 </ul>
-<h2 id="_4">热度来源判断</h2>
-<p>真实需求驱动。AI Coding 的 token 成本是每个重度使用者都会遇到的痛点，尤其是企业场景。</p>
-<h2 id="_5">关键技术亮点</h2>
+<h2 id="_4">关键技术亮点</h2>
 <ol>
-<li><strong>TypeScript + Ink（React for CLI）</strong> — 组件化 TUI 开发，代码可维护</li>
-<li><strong>跨 Agent 统一接口</strong> — 抽象了不同 Agent 的 token 数据格式差异</li>
-<li><strong>实时仪表盘</strong> — 不依赖日志文件解析，实时捕获 token 使用</li>
+<li><strong>Zig 编写的 VT100/VT220/xterm 转义序列解析器</strong>，编译为 ~12KB WASM 二进制</li>
+<li><strong>DOM 渲染 + 脏行追踪</strong>：仅重绘变更行，requestAnimationFrame 驱动</li>
+<li><strong>Monorepo 包体系</strong>：@wterm/core、@wterm/dom、@wterm/react、@wterm/just-bash、@wterm/markdown</li>
+<li><strong>原生文本选择、复制粘贴、浏览器查找、屏幕阅读器支持</strong></li>
 </ol>
-<h2 id="_6">架构启发</h2>
-<p>Agent Infra 需要一个独立的可观测性层：
-- Token 消耗度量（Codeburn 做的）
-- API 调用链追踪
-- 模型选择策略监控
-- 成本告警和预算控制</p>
-<p>这类似于 K8s 生态中 Prometheus 之于容器的定位。</p>
-<h2 id="_7">定位判断</h2>
-<p>短期：工具型 — 实用的终端工具
-中期：有潜力成为 Agent 可观测性标准组件，但风险在于上游 Agent 框架可能内置类似功能</p>
-<h2 id="_8">风险/局限/泡沫点</h2>
+<h2 id="_5">架构启发</h2>
+<p>DOM 渲染看似性能劣势，但换来了原生可访问性和文本交互能力。在云 IDE 和协作编辑场景下，可访问性和原生交互是比极致渲染性能更有价值的 trade-off。脏行追踪机制弥补了 DOM 渲染的性能差距。</p>
+<h2 id="_6">定位判断</h2>
+<p>终端模拟器生态的挑战者。如果成功，可能成为 xterm.js 之外的第二个主流选择，特别是在需要原生 DOM 交互的场景。</p>
+<h2 id="_7">风险 / 局限 / 泡沫点</h2>
 <ol>
-<li><strong>壁垒不高</strong> — 核心功能（token 统计 + TUI 展示）技术难度有限</li>
-<li><strong>依赖上游数据暴露</strong> — 需要各 Agent 框架提供 token 使用数据</li>
-<li><strong>容易被内置</strong> — Anthropic/OpenAI 可能在自家产品中直接加入成本监控</li>
-<li><strong>企业场景受限</strong> — TUI 形态不适合企业级 Web Dashboard 需求</li>
+<li><strong>性能上限</strong>：DOM 渲染在大规模输出场景下可能不如 Canvas</li>
+<li><strong>生态迁移成本</strong>：xterm.js 已有庞大插件生态</li>
+<li><strong>Vercel Labs 定位</strong>：Lab 项目不保证长期维护</li>
 </ol>
-<h2 id="_9">与同类项目的关系</h2>
-<p>目前几乎没有直接竞品。间接竞品是各 Agent 框架自带的 token 统计功能。</p>
-<h2 id="_10">是否值得持续跟踪</h2>
-<p><strong>是。</strong> Agent 可观测性是一个正在形成的基础设施需求，Codeburn 是该方向的早期信号。</p>
-<h2 id="_11">后续观察点</h2>
+<h2 id="_8">与同类项目的关系</h2>
+<ul>
+<li><strong>xterm.js</strong>：incumbent，Canvas 渲染，插件生态成熟</li>
+<li><strong>libv86 terminal</strong>：x86 模拟器自带终端，定位不同</li>
+<li><strong>ttyd</strong>：C 实现的 Web 终端共享工具，更偏运维场景</li>
+</ul>
+<h2 id="_9">是否值得持续跟踪</h2>
+<p>是。Vercel 出品 + Zig+WASM 技术栈 + 终端基础设施定位。</p>
+<h2 id="_10">后续观察点</h2>
 <ol>
-<li>是否能扩展到 Web Dashboard 形态</li>
-<li>是否支持更多 Agent（OpenCode、OpenClaw 等）</li>
-<li>是否能做成本预测和预算告警</li>
-<li>上游 Agent 框架是否内置竞品功能</li>
+<li>是否被 Vercel 产品（如 v0/Next.js）集成</li>
+<li>性能基准测试 vs xterm.js</li>
+<li>社区是否开始贡献插件</li>
 </ol>
-<h2 id="_12">评分</h2>
-<table>
-<thead>
-<tr>
-<th>维度</th>
-<th>分数</th>
-<th>理由</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>热度质量</td>
-<td>8</td>
-<td>2天1.7k星，需求驱动真实</td>
-</tr>
-<tr>
-<td>技术创新度</td>
-<td>5</td>
-<td>技术实现常规，创新在产品定位</td>
-</tr>
-<tr>
-<td>工程成熟度</td>
-<td>5</td>
-<td>刚发布2天，128 forks，12 issues</td>
-</tr>
-<tr>
-<td>架构启发价值</td>
-<td>8</td>
-<td>填补 Agent 可观测性空白</td>
-</tr>
-<tr>
-<td>企业落地潜力</td>
-<td>6</td>
-<td>TUI 形态限制企业部署</td>
-</tr>
-<tr>
-<td>中期趋势概率</td>
-<td>7</td>
-<td>Agent 成本管控是必然需求</td>
-</tr>
-<tr>
-<td>平台化潜力</td>
-<td>5</td>
-<td>有潜力但壁垒有限</td>
-</tr>
-<tr>
-<td>基础设施潜力</td>
-<td>6</td>
-<td>可成为 Agent 可观测性层组件</td>
-</tr>
-</tbody>
-</table>
-<p><strong>总分：50/80</strong>
-<strong>归类：工具型 → 基础设施候选</strong>
-<strong>持续跟踪：是</strong></p>
 <hr />
-<p><em>最近更新：2026-04-18 | 2,553★ (+339)，6天持续高速增长，企业 FinOps 潜力显现</em></p>
+<p><em>首次记录：2026-04-18</em></p>
     </div>
 </main>
     <footer class="footer">

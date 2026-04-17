@@ -5,7 +5,7 @@ date_added: "2026-04-17"
 last_seen_date: "2026-04-17"
 category: "工具型/平台候选"
 emoji: "🧬"
-stars: "952"
+stars: "1,082"
 score: 76
 tags: ["Agent Skill", "Self-Evolution", "Claude Code", "Auto-optimize"]
 url: "https://github.com/alchaincyf/darwin-skill"
@@ -87,3 +87,6 @@ flowchart TD
 2. 评估指标的透明度和合理性
 3. 社区是否有其他开发者贡献 Skill 进化用例
 4. 是否会与 nuwa-skill 深度整合
+
+---
+*最近更新：2026-04-18 | 1,082★ (+130)，但最后推送 4/14，活跃度需关注*

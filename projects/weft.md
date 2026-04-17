@@ -5,7 +5,7 @@ date_added: "2026-04-17"
 last_seen_date: "2026-04-17"
 category: "基础设施候选"
 emoji: "🧵"
-stars: "638"
+stars: "769"
 score: 74
 tags: ["AI Language", "Rust", "Agent Runtime", "Compiler"]
 url: "https://github.com/WeaveMindAI/weft"
@@ -74,3 +74,6 @@ url: "https://github.com/WeaveMindAI/weft"
 2. 是否有非 trivial 的示例程序
 3. 社区是否有编译器/PL 背景的贡献者
 4. 是否有实际的 Agent 系统用 weft 重写的案例
+
+---
+*最近更新：2026-04-18 | 769★ (+131)，保持活跃迭代（最新推送 4/17）*

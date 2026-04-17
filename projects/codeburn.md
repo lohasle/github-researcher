@@ -5,7 +5,7 @@ date_added: "2026-04-16"
 last_seen_date: "2026-04-17"
 category: "工具型/基础设施候选"
 emoji: "🔥"
-stars: "2,214 stars"
+stars: "2,553 stars"
 stars_delta: "5天从0到2,214"
 language: "TypeScript"
 score: 78
@@ -82,3 +82,6 @@ Agent Infra 需要一个独立的可观测性层：
 **总分：50/80**
 **归类：工具型 → 基础设施候选**
 **持续跟踪：是**
+
+---
+*最近更新：2026-04-18 | 2,553★ (+339)，6天持续高速增长，企业 FinOps 潜力显现*

@@ -4,6 +4,22 @@
 
 ---
 
+## 2026-04-18
+
+**核心主题：** Claude Code Skill 生态爆发 · 全场景协议分析+AI逆向成新范式 · Web终端基础设施加速 · Token可观测性进入平台化前夜
+
+**关键项目：**
+- 🖥️ wterm (1,310 stars) — Vercel 出品 Web 终端，Zig+WASM+DOM 渲染
+- 🔍 anything-analyzer (1,269 stars) — 全场景协议分析+MITM+AI+MCP
+- 🔥 codeburn (2,553 stars) — Token 可观测性仪表盘，6天持续高速增长
+- 🎬 video-use (903 stars) — browser-use 出品视频编辑 Skill
+- 🧬 darwin-skill (1,082 stars) — Skill 自进化系统
+- 🧵 weft (769 stars) — AI 系统编程语言，持续迭代
+
+→ [查看完整日报](daily/2026-04-18.html)
+
+---
+
 ## 2026-04-17
 
 **核心主题：** Agent Skill 自进化范式成形 · AI原生编程语言登场 · Token可观测性持续升温 · 端侧多模态推理加速

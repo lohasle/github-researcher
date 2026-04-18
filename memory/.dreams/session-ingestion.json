@@ -1,14 +1,14 @@
 {
   "version": 3,
   "files": {
-    "github-researcher:sessions/26b74bb9-89e5-4f21-a472-f49eebce60d8.jsonl.deleted.2026-04-16T00-02-19.212Z": {
-      "mtimeMs": 1776211276673,
-      "size": 3583,
-      "contentHash": "c6c84f889e6ac36f447e277da914d84cf02058e1568efd46e79e912925fb9a25",
-      "lineCount": 1,
-      "lastContentLine": 1
+    "github-researcher:sessions/4d838773-bc31-4604-ade6-2374a5abba3c.jsonl": {
+      "mtimeMs": 1776463577945,
+      "size": 379221,
+      "contentHash": "91910b37cd5d8782ef60acad89ff516e75caa64561a723e233af4f3424b687a7",
+      "lineCount": 17,
+      "lastContentLine": 17
     },
-    "github-researcher:sessions/63c400ea-80ae-4267-ae7f-642e0b1de39f.jsonl": {
+    "github-researcher:sessions/63c400ea-80ae-4267-ae7f-642e0b1de39f.jsonl.deleted.2026-04-17T22-06-25.779Z": {
       "mtimeMs": 1776377268837,
       "size": 162636,
       "contentHash": "6b76abb5a50b8b6892b9bc4af65125dbd24d7d591904f80f686499040b4081a3",
@@ -114,6 +114,25 @@
       "142532b8113147d2a7b0cde7a4bdc72440e8422d",
       "05ed0ba5a6e53bc9767d9bd8c661925373bbdd95",
       "9e75ffb2a0d4989c66b0372739ad3716751d8e66"
+    ],
+    "github-researcher:4d838773-bc31-4604-ade6-2374a5abba3c": [
+      "a480ad3d1964630107ade096bc644480580d6f2d",
+      "6566fef17fbccd666b56c8e4572582e9888815ed",
+      "354455d20f14405b635d2562ea81fa77684b991c",
+      "23c16c8960f7fc756f542024caff2bc0c9ca6e59",
+      "4c205977f66d99bfb7bade623eac4e6f04ab9ce7",
+      "0fab211c64771893baa3cf15bbfcb42d3f92ea8c",
+      "b9b854228877f11c57529f2396aed7d70fc4c692",
+      "1de65035e5defb5325fa91d7a25de32669052cfa",
+      "9a8d55e4617993b7dae9c12329dac61960565f78",
+      "c47b5b95ff7421ddadd99d40c4f981eebaf080e7",
+      "98d25a59072ffdaf983f1cbb44fcfdafb219a649",
+      "ef300eed4ab3e444c864e8cfb3c96525a50effcb",
+      "d8063d153eeca287762eb6357c6107c639e4024d",
+      "7bd9ae08e764a8c41614a632bf1a89e27b1ebab6",
+      "b8af1c6f66a7855162e017314b7772b28335b7b1",
+      "9b85376e70a5c6ccb110173e526f9d06a1331dcf",
+      "50e0e6729d433b1afa47a85165cf44e9c2ed4da1"
     ]
   }
 }

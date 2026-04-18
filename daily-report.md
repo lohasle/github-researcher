@@ -4,6 +4,21 @@
 
 ---
 
+## 2026-04-19
+
+**核心主题：** Agent 可移植性与Harness互操作成新焦点 · AI原生编程语言Weft首次进入视野 · 分布式DuckDB与云原生Postgres数据基座演进加速
+
+**关键项目：**
+- 🧠 agentic-stack (492 stars) — Agent 可移植性层，.agent/ 跨所有 harness
+- 🧵 weft (824 stars) — AI 系统编程语言，LLM/Human/API 作为一等原语
+- 🦆 openduck (447 stars) — 分布式 DuckDB，双执行引擎 + 差分存储
+- 🗺️ lingbot-map (1,778 stars) — 前馈 3D 基础模型，streaming 场景重建
+- 🔬 meta-harness (444 stars) — Stanford 出品，Harness 自动优化框架
+
+→ [查看完整日报](daily/2026-04-19.html)
+
+---
+
 ## 2026-04-18
 
 **核心主题：** Claude Code Skill 生态爆发 · 全场景协议分析+AI逆向成新范式 · Web终端基础设施加速 · Token可观测性进入平台化前夜

@@ -2,10 +2,11 @@
 title: "wterm"
 slug: "wterm"
 date_added: "2026-04-18"
+last_seen_date: "2026-04-20"
 category: "基础设施候选"
 emoji: "🖥️"
-stars: "1,310 stars"
-stars_delta: "4天1.3K星"
+stars: "2,050 stars"
+stars_delta: "6天2K星"
 language: "TypeScript/Zig"
 score: 78
 tags: ["Terminal", "WebAssembly", "Zig", "DOM Renderer", "Vercel"]

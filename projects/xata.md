@@ -2,11 +2,11 @@
 title: "xata"
 slug: "xata"
 date_added: "2026-04-17"
-last_seen_date: "2026-04-17"
+last_seen_date: "2026-04-20"
 category: "基础设施候选"
 emoji: "🐘"
-stars: "479"
-score: 70
+stars: "634"
+score: 74
 tags: ["PostgreSQL", "Cloud Native", "Serverless", "Branching"]
 url: "https://github.com/xataio/xata"
 ---

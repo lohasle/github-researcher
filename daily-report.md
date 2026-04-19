@@ -4,6 +4,21 @@
 
 ---
 
+## 2026-04-20
+
+**核心主题：** Browser Use 推出 Self-Healing Browser Harness · Vercel 开源 Web 终端 wterm · Agent Skill 生态持续爆发（设计提取/PPT/诊断）
+
+**关键项目：**
+- ♞ browser-harness (2031 stars) — Self-healing browser harness，agent 自写缺失函数
+- 🖥️ wterm (2050 stars) — Vercel Labs 出品 Web 终端模拟器
+- 🎨 design-extract (1084 stars) — 一键提取网站完整设计系统，MCP server
+- 📊 html-ppt-skill (1396 stars) — HTML PPT Studio AgentSkill
+- 🐘 xata (634 stars) — 云原生 Postgres 平台，CoW branching
+
+→ [查看完整日报](daily/2026-04-20.html)
+
+---
+
 ## 2026-04-19
 
 **核心主题：** Agent 可移植性与Harness互操作成新焦点 · AI原生编程语言Weft首次进入视野 · 分布式DuckDB与云原生Postgres数据基座演进加速

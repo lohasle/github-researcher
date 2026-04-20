@@ -4,6 +4,21 @@
 
 ---
 
+## 2026-04-21
+
+**核心主题：** OpenMythos 逆向重建 Claude 架构引爆关注 · Agentic Stack 定义跨 Harness 可移植 Agent 规范 · Weft 探索 AI 原生编程语言
+
+**关键项目：**
+- 🧠 OpenMythos (3995 stars) — 从公开文献逆向重建 Claude 架构的理论项目
+- 🔄 agentic-stack (750 stars) — 可移植 .agent/ 规范，跨 Harness 运行
+- 🧵 weft (906 stars) — AI 系统专用编程语言，Rust 实现
+- 🎨 design-extract (1138 stars) — 设计系统提取 + MCP + 多平台输出
+- ⚡ aube (318 stars) — Rust 实现的快速 Node.js 包管理器
+
+→ [查看完整日报](daily/2026-04-21.html)
+
+---
+
 ## 2026-04-20
 
 **核心主题：** Browser Use 推出 Self-Healing Browser Harness · Vercel 开源 Web 终端 wterm · Agent Skill 生态持续爆发（设计提取/PPT/诊断）

@@ -1,26 +1,19 @@
 {
   "version": 3,
   "files": {
-    "github-researcher:sessions/1610927f-14bf-4397-bce7-ab8d0432f850.jsonl": {
+    "github-researcher:sessions/10cf6e2e-aee1-489e-b546-36c24f4f6815.jsonl": {
+      "mtimeMs": 1776636376257,
+      "size": 170760,
+      "contentHash": "67f43246340f909bb4573072a0209f8801ed3674cc73f220fc64390d83849ea0",
+      "lineCount": 13,
+      "lastContentLine": 13
+    },
+    "github-researcher:sessions/1610927f-14bf-4397-bce7-ab8d0432f850.jsonl.deleted.2026-04-19T22-06-22.435Z": {
       "mtimeMs": 1776549944565,
       "size": 190551,
       "contentHash": "aee45ba011eba5f2a362d6b3439a7d56beff10d4fa0ae7aa145c0a4c1c45f167",
       "lineCount": 13,
       "lastContentLine": 13
-    },
-    "github-researcher:sessions/4d838773-bc31-4604-ade6-2374a5abba3c.jsonl.deleted.2026-04-18T22-05-50.793Z": {
-      "mtimeMs": 1776463577945,
-      "size": 379221,
-      "contentHash": "91910b37cd5d8782ef60acad89ff516e75caa64561a723e233af4f3424b687a7",
-      "lineCount": 17,
-      "lastContentLine": 17
-    },
-    "github-researcher:sessions/63c400ea-80ae-4267-ae7f-642e0b1de39f.jsonl.deleted.2026-04-17T22-06-25.779Z": {
-      "mtimeMs": 1776377268837,
-      "size": 162636,
-      "contentHash": "6b76abb5a50b8b6892b9bc4af65125dbd24d7d591904f80f686499040b4081a3",
-      "lineCount": 17,
-      "lastContentLine": 17
     }
   },
   "seenMessages": {
@@ -148,6 +141,21 @@
       "90857db817a5366a361d9a53539837bd5856e033",
       "376108da81d65b685dc6827597430d94c9272c36",
       "44b1c9c197ae8699fdaf5fecf2f521103e75072a"
+    ],
+    "github-researcher:10cf6e2e-aee1-489e-b546-36c24f4f6815": [
+      "1a9add66ac6ca635f7f888f983c3c7ff8717c909",
+      "0aa593cebc08943d82e074070de335a9fe815643",
+      "dd6992a50e8f4779a639a6f6c5a3e039274020d8",
+      "259d8e28ce9c303a5bf64e1dd72d6ada45d22134",
+      "aea6846a2ca0335de79814ee42505c8fb30f3d38",
+      "b2aedf404cc6901fa9e2da2a7066bb2d8e631ab6",
+      "6bef8b3bb8d3bdd23c6b25a79f0de6ca94db5eaa",
+      "bbe9ffef18eed0d34ca7ab5f2b65972d9909f1ed",
+      "26dbf83e0cb3b2ae17e3fb15a6f4f7f55f1f9238",
+      "b80b843c76dff851dec5effc2c3a02ff78196392",
+      "78bf3b2c7d08ac8adfe62f4227c104bbd0431291",
+      "280e9d93d9c2b1da4991ff3f55914a63bada3ac6",
+      "89a03719493edd8506003826ce40754d06c33bee"
     ]
   }
 }

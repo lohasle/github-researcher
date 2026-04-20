@@ -2,11 +2,11 @@
 title: "weft"
 slug: "weft"
 date_added: "2026-04-17"
-last_seen_date: "2026-04-19"
+last_seen_date: "2026-04-21"
 category: "基础设施候选"
 emoji: "🧵"
-stars: "824"
-score: 74
+stars: "906"
+score: 78
 tags: ["AI Language", "Rust", "Agent Runtime", "Compiler"]
 url: "https://github.com/WeaveMindAI/weft"
 ---

@@ -4,8 +4,8 @@ slug: "design-extract"
 date_added: "2026-04-20"
 category: "工具型"
 emoji: "🎨"
-stars: "1084 stars"
-stars_delta: "5天 1084⭐，增速 ~217⭐/天"
+stars: "1138 stars"
+stars_delta: "6天 1138⭐，增速 ~190⭐/天"
 language: "JavaScript"
 score: 78
 tags: ["design-system", "MCP", "skill", "multi-platform", "tokens"]

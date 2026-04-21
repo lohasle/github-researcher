@@ -2,10 +2,10 @@
 title: "Browser Harness"
 slug: "browser-harness"
 date_added: "2026-04-20"
-category: "工具型"
+category: "平台候选"
 emoji: "♞"
-stars: "2031 stars"
-stars_delta: "4天 2031⭐，增速 ~500⭐/天"
+stars: "4347 stars"
+stars_delta: "5天 4347⭐，增速 ~870⭐/天，加速增长"
 language: "Python"
 score: 85
 tags: ["browser", "CDP", "self-healing", "agent", "automation"]

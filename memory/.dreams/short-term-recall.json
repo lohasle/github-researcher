@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-20T19:07:03.596Z",
+  "updatedAt": "2026-04-21T19:07:28.504Z",
   "entries": {
     "memory:memory/.dreams/session-corpus/2026-04-13.txt:1:1": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-13.txt:1:1",
@@ -1476,12 +1476,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 44 memories.; confidence: 1.00; evidence: memory/.dreams/session-corpus/2026-04-13.txt:2-2, memory/.dreams/session-corpus/2026-04-13.txt:3-3, memory/.dreams/session-corpus/2026-04-13.txt:4-4; note: reflection",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-16T19:02:35.654Z",
-      "lastRecalledAt": "2026-04-20T19:04:27.461Z",
+      "lastRecalledAt": "2026-04-21T19:04:46.498Z",
       "queryHashes": [
         "b628913e3912"
       ],
@@ -1489,7 +1489,8 @@
         "2026-04-16",
         "2026-04-20",
         "2026-04-19",
-        "2026-04-21"
+        "2026-04-21",
+        "2026-04-22"
       ],
       "conceptTags": [
         "1.00",
@@ -1510,12 +1511,12 @@
       "source": "memory",
       "snippet": "Possible Lasting Truths: No strong candidate truths surfaced.",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-16T19:02:35.654Z",
-      "lastRecalledAt": "2026-04-20T19:04:27.461Z",
+      "lastRecalledAt": "2026-04-21T19:04:46.498Z",
       "queryHashes": [
         "b628913e3912"
       ],
@@ -1523,7 +1524,8 @@
         "2026-04-16",
         "2026-04-20",
         "2026-04-19",
-        "2026-04-21"
+        "2026-04-21",
+        "2026-04-22"
       ],
       "conceptTags": [
         "possible",
@@ -2053,19 +2055,20 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 61 memories.; confidence: 1.00; evidence: memory/.dreams/session-corpus/2026-04-13.txt:2-2, memory/.dreams/session-corpus/2026-04-13.txt:3-3, memory/.dreams/session-corpus/2026-04-13.txt:4-4; note: reflection",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T19:02:40.633Z",
-      "lastRecalledAt": "2026-04-20T19:04:27.461Z",
+      "lastRecalledAt": "2026-04-21T19:04:46.498Z",
       "queryHashes": [
         "500c0eda9949"
       ],
       "recallDays": [
         "2026-04-17",
         "2026-04-21",
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-22"
       ],
       "conceptTags": [
         "1.00",
@@ -2086,19 +2089,20 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `现在` kept surfacing across 27 memories.; confidence: 0.82; evidence: memory/.dreams/session-corpus/2026-04-13.txt:8-8, memory/.dreams/session-corpus/2026-04-13.txt:9-9, memory/.dreams/session-corpus/2026-04-13.txt:10-10; note: reflection",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T19:02:40.633Z",
-      "lastRecalledAt": "2026-04-20T19:04:27.461Z",
+      "lastRecalledAt": "2026-04-21T19:04:46.498Z",
       "queryHashes": [
         "500c0eda9949"
       ],
       "recallDays": [
         "2026-04-17",
         "2026-04-21",
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-22"
       ],
       "conceptTags": [
         "0.82",
@@ -2119,19 +2123,20 @@
       "source": "memory",
       "snippet": "Possible Lasting Truths: Assistant: ## Phase 5: 级联同步 ### 5.1 更新趋势指数 [confidence=0.49 evidence=memory/.dreams/session-corpus/2026-04-13.txt:12-12]; Assistant: ## Phase 5: 级联同步 ### 5.1 更新趋势指数 [confidence=0.49 evidence=memory/.dreams/session-corpus/2026-04-14.txt:19-19]; Assistant:",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T19:02:40.633Z",
-      "lastRecalledAt": "2026-04-20T19:04:27.461Z",
+      "lastRecalledAt": "2026-04-21T19:04:46.498Z",
       "queryHashes": [
         "500c0eda9949"
       ],
       "recallDays": [
         "2026-04-17",
         "2026-04-21",
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-22"
       ],
       "conceptTags": [
         "5.1",
@@ -2665,17 +2670,19 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 79 memories.; confidence: 1.00; evidence: memory/.dreams/session-corpus/2026-04-13.txt:2-2, memory/.dreams/session-corpus/2026-04-13.txt:3-3, memory/.dreams/session-corpus/2026-04-13.txt:4-4; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-18T19:02:39.763Z",
-      "lastRecalledAt": "2026-04-18T19:02:39.763Z",
+      "lastRecalledAt": "2026-04-21T19:04:46.498Z",
       "queryHashes": [
         "77ca9720ec15"
       ],
       "recallDays": [
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-22",
+        "2026-04-21"
       ],
       "conceptTags": [
         "1.00",
@@ -2696,17 +2703,19 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `现在` kept surfacing across 41 memories.; confidence: 0.95; evidence: memory/.dreams/session-corpus/2026-04-13.txt:8-8, memory/.dreams/session-corpus/2026-04-13.txt:9-9, memory/.dreams/session-corpus/2026-04-13.txt:10-10; note: reflection",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-18T19:02:39.763Z",
-      "lastRecalledAt": "2026-04-18T19:02:39.763Z",
+      "lastRecalledAt": "2026-04-21T19:04:46.498Z",
       "queryHashes": [
         "77ca9720ec15"
       ],
       "recallDays": [
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-22",
+        "2026-04-21"
       ],
       "conceptTags": [
         "0.95",
@@ -2727,17 +2736,19 @@
       "source": "memory",
       "snippet": "Possible Lasting Truths: Assistant: ## Phase 5: 级联同步 ### 5.1 更新趋势指数 [confidence=0.49 evidence=memory/.dreams/session-corpus/2026-04-13.txt:12-12]; Assistant: ## Phase 5: 级联同步 ### 5.1 更新趋势指数 [confidence=0.49 evidence=memory/.dreams/session-corpus/2026-04-14.txt:19-19]; Assistant:",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-18T19:02:39.763Z",
-      "lastRecalledAt": "2026-04-18T19:02:39.763Z",
+      "lastRecalledAt": "2026-04-21T19:04:46.498Z",
       "queryHashes": [
         "77ca9720ec15"
       ],
       "recallDays": [
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-22",
+        "2026-04-21"
       ],
       "conceptTags": [
         "5.1",
@@ -4173,6 +4184,309 @@
         "报告",
         "validate",
         "结果"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: [cron:234619c8-3cae-42d8-ad26-7261bef5e6a7 GitHub晨间简报] 执行今日 GitHub 趋势研究任务。 先阅读 skills/github-daily/SKILL.md，严格按其中的 6 个 Phase 执行。 关键提醒： 1. Phase 4 的项目档案生成不可跳过 2. Phase 5 必须运行 python3 docs/generate_pages.py 3. Phase 6 validate 通过后才能 push 4. git push 失败重试 3 次，仍失败则保留本地变更并报告 5.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:04:46.498Z",
+      "lastRecalledAt": "2026-04-21T19:04:46.498Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-22",
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "skills/github-daily/skill.md",
+        "docs/generate-pages.py",
+        "user",
+        "cron",
+        "234619c8",
+        "3cae",
+        "42d8",
+        "ad26"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: Phase 1 通过。进入 Phase 3：今日研究。先采集数据。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:04:46.498Z",
+      "lastRecalledAt": "2026-04-21T19:04:46.498Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-22",
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "phase",
+        "通过",
+        "进入",
+        "今日",
+        "研究",
+        "采集",
+        "数据"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: 现在我来检查今天已有的内容，并阅读项目简介模板：",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:04:46.498Z",
+      "lastRecalledAt": "2026-04-21T19:04:46.498Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-22",
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "现在",
+        "我来",
+        "检查",
+        "今天",
+        "已有",
+        "内容",
+        "阅读"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: 现在我来创建今日报告。日期是 2026-04-21。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:04:46.498Z",
+      "lastRecalledAt": "2026-04-21T19:04:46.498Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-22",
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "现在",
+        "我来",
+        "创建",
+        "今日",
+        "报告",
+        "日期"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: 阶段 4：生成项目档案。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:04:46.498Z",
+      "lastRecalledAt": "2026-04-21T19:04:46.498Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-22",
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "阶段",
+        "生成",
+        "项目",
+        "档案"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: 现在更新现有项目配置文件：",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:04:46.498Z",
+      "lastRecalledAt": "2026-04-21T19:04:46.498Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-22",
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "现在",
+        "更新",
+        "现有",
+        "项目",
+        "配置",
+        "文件"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: 阶段 5：级联同步。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:04:46.498Z",
+      "lastRecalledAt": "2026-04-21T19:04:46.498Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-22",
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "阶段",
+        "同步"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: Phase 6: 验证。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:04:46.498Z",
+      "lastRecalledAt": "2026-04-21T19:04:46.498Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-22",
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "phase",
+        "验证"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: 验证通过。执行 git 操作。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:04:46.498Z",
+      "lastRecalledAt": "2026-04-21T19:04:46.498Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-22",
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "验证",
+        "通过",
+        "执行",
+        "git",
+        "操作"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: Push 成功。 --- ## 执行报告 ### validate 结果 - Phase 1: **通过**（0 errors） - Phase 2: 无需修复 - Phase 6: **通过**（0 errors, 0 warnings） ### 今日研究 - 日期: 2026-04-21 - 分析项目数: 18 - 新增项目档案: OpenMythos, Aube - 更新项目档案: agentic-stack（492→750, 升级为平台候选）, weft（824→906）, design-extract（1084→1138）",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:04:46.498Z",
+      "lastRecalledAt": "2026-04-21T19:04:46.498Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-22",
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "agentic-stack",
+        "design-extract",
+        "assistant",
+        "push",
+        "成功",
+        "执行",
+        "报告",
+        "validate"
       ]
     }
   }

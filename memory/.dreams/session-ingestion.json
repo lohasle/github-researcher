@@ -1,7 +1,7 @@
 {
   "version": 3,
   "files": {
-    "github-researcher:sessions/10cf6e2e-aee1-489e-b546-36c24f4f6815.jsonl": {
+    "github-researcher:sessions/10cf6e2e-aee1-489e-b546-36c24f4f6815.jsonl.deleted.2026-04-20T22-05-04.895Z": {
       "mtimeMs": 1776636376257,
       "size": 170760,
       "contentHash": "67f43246340f909bb4573072a0209f8801ed3674cc73f220fc64390d83849ea0",
@@ -14,6 +14,13 @@
       "contentHash": "aee45ba011eba5f2a362d6b3439a7d56beff10d4fa0ae7aa145c0a4c1c45f167",
       "lineCount": 13,
       "lastContentLine": 13
+    },
+    "github-researcher:sessions/b642638f-4773-4448-a586-80acb87009d3.jsonl": {
+      "mtimeMs": 1776722699878,
+      "size": 145537,
+      "contentHash": "6b01ab7f86d04bfd4fea60591faf2a6fe5167654dd7a78a8dc10c0de66da6d0e",
+      "lineCount": 10,
+      "lastContentLine": 10
     }
   },
   "seenMessages": {
@@ -156,6 +163,18 @@
       "78bf3b2c7d08ac8adfe62f4227c104bbd0431291",
       "280e9d93d9c2b1da4991ff3f55914a63bada3ac6",
       "89a03719493edd8506003826ce40754d06c33bee"
+    ],
+    "github-researcher:b642638f-4773-4448-a586-80acb87009d3": [
+      "15a5292f394a1b1fc693785d4d1abf74329ef1c8",
+      "d87e41728eddb828a5c98e4427d58763748a6a89",
+      "326a8cd1a9f84f2b737caa6082736b60f3b38785",
+      "76dca33f3b9655610847732e0decaf852a152d82",
+      "cd430173b5e6b6ee6a6ef8b5998f7c4f774ddbdb",
+      "4d3c6c5a15aba84b2d4f2b6e75be826a3ecfb631",
+      "acbe0ff0fd6b57edd8bd0730f82dce89bf17b910",
+      "f395a6b43d1fb40663d55070529ad8d76940810e",
+      "81477eb241898af0df4985a2ba3e2bf7f6122daa",
+      "cf49fd91372077fee79ba4618939b473d4c32953"
     ]
   }
 }

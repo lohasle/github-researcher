@@ -4,6 +4,21 @@
 
 ---
 
+## 2026-04-22
+
+**核心主题：** Browser Harness 持续爆发验证 Browser Use 赛道 · Claude Code Skill 生态进入设计工具细分 · PgQue 代表极简主义基础设施思潮回归
+
+**关键项目：**
+- 🌐 browser-harness (4347 stars) — Self-healing 浏览器自动化框架
+- 📊 diagram-design (1303 stars) — 13 种编辑级图表 Claude Code Skill
+- 📄 Kami (1354 stars) — 内容优先的纸张设计工具
+- 🐘 PgQue (913 stars) — 零臃肿 Postgres 队列
+- 🔥 codeburn (3239 stars) — AI 编码 Token 成本追踪 TUI
+
+→ [查看完整日报](daily/2026-04-22.html)
+
+---
+
 ## 2026-04-21
 
 **核心主题：** OpenMythos 逆向重建 Claude 架构引爆关注 · Agentic Stack 定义跨 Harness 可移植 Agent 规范 · Weft 探索 AI 原生编程语言

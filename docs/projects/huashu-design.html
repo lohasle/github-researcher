@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026-04-23 GitHub 趋势研究简报 | GitHub Researcher</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📊</text></svg>">
-    <meta name="description" content="OpenMythos 重建 Claude 架构引发研究热潮 · Claude Code 设计工具生态全面爆发 · Browser Harness 验证自愈浏览器成为 Agent 标配能力">
+    <title>huashu-design | GitHub 趋势研究</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>⭐</text></svg>">
     <style>
         :root {
             --primary: #7C3AED;
@@ -170,6 +169,24 @@
         .card-grid { animation-delay: 0.2s; animation-fill-mode: both; }
         .trend-list { animation-delay: 0.25s; animation-fill-mode: both; }
     </style>
+    
+    <style>
+        .project-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 48px; box-shadow: var(--shadow); margin-bottom: 48px; max-width: 860px; margin-left: auto; margin-right: auto; }
+        .project-content h1 { font-size: 26px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 6px; }
+        .project-content h2 { font-size: 18px; font-weight: 700; color: var(--primary); border-left: 4px solid var(--primary); padding-left: 12px; margin: 28px 0 14px; }
+        .project-content h3 { font-size: 15px; font-weight: 700; color: var(--text); margin: 20px 0 10px; }
+        .project-content table { border-collapse: collapse; width: 100%; margin: 14px 0; }
+        .project-content th, .project-content td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; font-size: 13px; }
+        .project-content th { background: var(--primary); color: white; font-weight: 600; }
+        .project-content tr:nth-child(even) td { background: var(--bg); }
+        .project-content blockquote { background: linear-gradient(135deg, #F3E8FF, #ECFEFF); border-left: 4px solid var(--primary); padding: 14px 18px; margin: 14px 0; border-radius: 0 8px 8px 0; }
+        .project-content ul, .project-content ol { padding-left: 22px; margin: 10px 0; }
+        .project-content li { margin: 6px 0; font-size: 14px; }
+        .project-content p { font-size: 14px; margin-bottom: 12px; line-height: 1.7; }
+        .project-content strong { color: var(--primary-dark); }
+        .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 24px; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
     <nav class="nav">
@@ -181,164 +198,129 @@
             <div class="nav-links">
                 <a href="/github-researcher/index.html" id="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>首页</span></a>
                 <a href="/github-researcher/daily.html" id="nav-daily"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg><span>日报</span></a>
-                <a href="/github-researcher/projects.html" id="nav-projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
+                <a href="/github-researcher/projects.html" id="nav-projects" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
                 <a href="/github-researcher/trends.html" id="nav-trends"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>趋势</span></a>
             </div>
         </div>
     </nav>
 <main class="container">
-        <section class="hero">
-            <div class="hero-badge">
-                <span class="dot"></span>
-                2026-04-23
-            </div>
-            <h1>GitHub 趋势研究</h1>
-            <p>OpenMythos 重建 Claude 架构引发研究热潮 · Claude Code 设计工具生态全面爆发 · Browser Harness 验证自愈浏览器成为 Agent 标配能力</p>
-            <div class="hero-actions">
-                <a href="/github-researcher/daily/2026-04-23.html" class="btn-primary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                    今日简报
-                </a>
-                <a href="/github-researcher/projects.html" class="btn-secondary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="14" y="0" width="7" height="7"/><rect x="0" y="14" width="7" height="7"/></svg>
-                    重点项目
-                </a>
-            </div>
-        </section>
-        <section class="stats-row">
-            <div class="stat-card">
-                <div class="stat-icon">📊</div>
-                <div class="stat-number">63</div>
-                <div class="stat-label">深度分析项目</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🔥</div>
-                <div class="stat-number">17</div>
-                <div class="stat-label">日更日报</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🎯</div>
-                <div class="stat-number">64</div>
-                <div class="stat-label">核心跟踪方向</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">⭐</div>
-                <div class="stat-number">120k+</div>
-                <div class="stat-label">本周总 Star 增速</div>
-            </div>
-        </section>
-        <section class="brief-card">
-            <div class="brief-date">📅 2026-04-23 · 今日核心判断</div>
-            <h2 class="brief-title">OpenMythos 重建 Claude 架构引发研究热潮 · Claude Code 设计工具生态全面爆发 · Browser Harness 验证自愈浏览器成为 Agent 标配能力</h2>
-            <p class="brief-text">OpenMythos 重建 Claude 架构引发研究热潮 · Claude Code 设计工具生态全面爆发 · Browser Harness 验证自愈浏览器成为 Agent 标配能力 今日头条趋势:LLM 架构逆向工程热潮：OpenMythos 重建 Claude Mythos。</p>
-            <a href="/github-researcher/daily/2026-04-23.html" class="brief-cta">阅读完整简报 →</a>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">⭐</div>
-                    重点跟踪项目
-                </div>
-                <a href="/github-researcher/projects.html" class="section-link">查看全部 →</a>
-            </div>
-            <div class="card-grid">
-                <div class="card" onclick="window.location='/github-researcher/projects/openmythos.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🧠</div>
-                        <div class="card-stars">8.7k stars</div>
-                    </div>
-                    <div class="card-title">OpenMythos</div>
-                    <div class="card-desc">基于公开文献从第一性原理重建 Claude Mythos 架构的开源实现</div>
-                    <div class="card-tags"><span class="tag tag-purple">LLM</span><span class="tag tag-purple">Transformer</span><span class="tag tag-purple">Recurrent-Depth</span></div>
-                    <div class="card-actions"><a href="https://github.com/kyegomez/OpenMythos" target="_blank" rel="noopener" class="btn-github" onclick="event.stopPropagation();"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub</a></div>
-                </div>
-                <div class="card" onclick="window.location='/github-researcher/projects/huashu-design.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🎨</div>
-                        <div class="card-stars">4.4k stars</div>
-                    </div>
-                    <div class="card-title">huashu-design</div>
-                    <div class="card-desc">HTML 原生的 Claude Code 设计 Skill，支持高保真原型/幻灯片/动画</div>
-                    <div class="card-tags"><span class="tag tag-purple">Claude-Code</span><span class="tag tag-purple">Design</span><span class="tag tag-purple">HTML</span></div>
-                    <div class="card-actions"><a href="https://github.com/alchaincyf/huashu-design" target="_blank" rel="noopener" class="btn-github" onclick="event.stopPropagation();"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub</a></div>
-                </div>
-                <div class="card" onclick="window.location='/github-researcher/projects/open-codesign.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🖌️</div>
-                        <div class="card-stars">1.2k stars</div>
-                    </div>
-                    <div class="card-title">open-codesign</div>
-                    <div class="card-desc">开源 Claude Design 替代品，多模型 BYOK 本地优先</div>
-                    <div class="card-tags"><span class="tag tag-purple">Claude-Design</span><span class="tag tag-purple">BYOK</span><span class="tag tag-purple">Multi-model</span></div>
-                    <div class="card-actions"><a href="https://github.com/OpenCoworkAI/open-codesign" target="_blank" rel="noopener" class="btn-github" onclick="event.stopPropagation();"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub</a></div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">📈</div>
-                    趋势热榜
-                </div>
-                <a href="/github-researcher/trends.html" class="section-link">完整趋势表 →</a>
-            </div>
-            <div class="trend-list">
-                <div class="trend-item">
-                    <div class="trend-rank top">1</div>
-                    <div class="trend-content">
-                        <div class="trend-title">LLM 架构逆向工程热潮：OpenMythos 重建 Claude Mythos</div>
-                        <div class="trend-meta">OpenMythos</div>
-                    </div>
-                    <div class="trend-score high">82/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank top">2</div>
-                    <div class="trend-content">
-                        <div class="trend-title">Claude Code 设计工具生态大爆发：从原型到生产级 UI</div>
-                        <div class="trend-meta">huashu-design · open-codesign · Kami</div>
-                    </div>
-                    <div class="trend-score high">85/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">3</div>
-                    <div class="trend-content">
-                        <div class="trend-title">Browser Agent 自愈能力成为标配：browser-harness 延续爆发</div>
-                        <div class="trend-meta">browser-harness</div>
-                    </div>
-                    <div class="trend-score high">80/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">4</div>
-                    <div class="trend-content">
-                        <div class="trend-title">Coding Agent 赛道稳定：claw-code 187k stars 持续领跑</div>
-                        <div class="trend-meta">claw-code · opencode · hermes-agent</div>
-                    </div>
-                    <div class="trend-score high">78/80</div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">🏷️</div>
-                    核心关注领域
-                </div>
-            </div>
-            <div class="category-row">
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🤖</span> AI Agent / Multi-Agent</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">⚡</span> LLM Infra / MCP / AI Runtime</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🛠️</span> 开发工具链 / IDE / Copilot</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🌐</span> 前端框架 / Serverless / Edge</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">☸️</span> 云原生 / K8s / Service Mesh</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔄</span> 自动化 / Browser Use / RPA+AI</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">💾</span> 数据基础设施 / RAG / 向量 DB</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔌</span> 基础设施标准 / 平台潜力</a>
-            </div>
-        </section>
+    <a href="/github-researcher/projects.html" class="back-link">← 返回重点项目</a>
+    <div class="project-content">
+        <div style="margin-bottom:20px;"><a href="https://github.com/alchaincyf/huashu-design" target="_blank" rel="noopener" class="btn-github" style="padding:10px 20px;font-size:14px;"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg> 查看 GitHub 项目</a></div>
+        <h1 id="huashu-design">huashu-design</h1>
+<h2 id="_1">一句话定位</h2>
+<p>HTML 原生的 Claude Code 设计 Skill，支持高保真原型、幻灯片、动画，内置 20 个设计哲学和 5 维评审体系。</p>
+<h2 id="_2">它解决的问题</h2>
+<p>让 Claude Code 用户无需设计经验就能产出专业级 UI 原型。解决了"Agent 能写代码但做不好设计"的问题。</p>
+<h2 id="2026-04-23">为什么值得关注（2026-04-23）</h2>
+<p>4 天 4.4k stars，中文社区出品。代表了 Claude Code Skill 生态从"通用工具"向"专业设计能力"的细分深化。</p>
+<h2 id="_3">热度来源判断</h2>
+<ul>
+<li><strong>真实需求</strong>：Claude Code 用户确实需要设计能力</li>
+<li><strong>社区效应</strong>：中文 Claude Code 社区快速传播</li>
+<li><strong>泡沫成分</strong>：约 20%，本质是 prompt 模板 + HTML 结构化输出</li>
+<li><strong>差异化</strong>：20 个设计哲学 + 5 维评审是真正的增值内容</li>
+</ul>
+<h2 id="_4">关键技术亮点</h2>
+<ol>
+<li><strong>HTML 原生设计输出</strong>：Agent 输出即高保真 HTML，无需额外渲染</li>
+<li><strong>20 个设计哲学内置</strong>：将设计原则编码进 Skill</li>
+<li><strong>5 维评审体系</strong>：系统化评估设计质量</li>
+<li><strong>MP4 导出</strong>：支持动画导出为视频</li>
+<li><strong>Agent-agnostic</strong>：不绑定特定 Agent 实现</li>
+</ol>
+<h2 id="_5">架构启发</h2>
+<ul>
+<li>将"设计能力"编码为 Skill 而非代码，是 Agent 能力扩展的轻量模式</li>
+<li>HTML/CSS/SVG 作为 Agent 输出格式正在成为事实标准</li>
+</ul>
+<h2 id="_6">定位判断</h2>
+<p><strong>工具型。</strong> 是 Claude Code Skill 生态中的专业设计工具。不构成平台或基础设施。</p>
+<h2 id="_7">风险 / 局限 / 泡沫点</h2>
+<ol>
+<li><strong>高度依赖 Claude Code 生态</strong>：生态变化直接影响项目价值</li>
+<li><strong>同质化竞争激烈</strong>：设计类 Skill 本周集中爆发</li>
+<li><strong>长期维护不确定</strong>：个人项目，维护持续性待观察</li>
+</ol>
+<h2 id="_8">与同类项目的关系</h2>
+<ul>
+<li><strong>open-codesign</strong>：平台化路线，多模型 BYOK → huashu-design 更专注 Skill 质量</li>
+<li><strong>diagram-design</strong>：偏图表 → huashu-design 偏 UI 原型</li>
+<li><strong>Kami</strong>：偏内容呈现 → huashu-design 偏交互原型</li>
+</ul>
+<h2 id="_9">是否值得持续跟踪</h2>
+<p><strong>短期跟踪。</strong> 关注 Skill 生态设计工具的竞争格局变化。</p>
+<h2 id="_10">后续观察点</h2>
+<ol>
+<li>是否从 Skill 演进为独立工具/平台</li>
+<li>设计哲学和评审体系是否被社区广泛引用</li>
+</ol>
+<h3 id="_11">评分</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>分数</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热度质量</td>
+<td>7</td>
+<td>真实需求 + 中文社区效应</td>
+</tr>
+<tr>
+<td>技术创新度</td>
+<td>5</td>
+<td>本质是 prompt + 模板</td>
+</tr>
+<tr>
+<td>工程成熟度</td>
+<td>6</td>
+<td>可用但工程复杂度有限</td>
+</tr>
+<tr>
+<td>架构启发价值</td>
+<td>6</td>
+<td>Skill 化设计能力的模式值得借鉴</td>
+</tr>
+<tr>
+<td>企业落地潜力</td>
+<td>5</td>
+<td>可作为内部设计辅助工具</td>
+</tr>
+<tr>
+<td>中期趋势概率</td>
+<td>6</td>
+<td>设计 Skill 是趋势但项目本身未必</td>
+</tr>
+<tr>
+<td>平台化潜力</td>
+<td>3</td>
+<td>Skill 不构成平台</td>
+</tr>
+<tr>
+<td>基础设施潜力</td>
+<td>2</td>
+<td>不具备基础设施属性</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>总分</strong>：40/80</li>
+<li><strong>归类</strong>：工具型</li>
+<li><strong>建议持续跟踪</strong>：短期</li>
+</ul>
+<hr />
+<p><em>首次记录：2026-04-23</em></p>
+    </div>
 </main>
     <footer class="footer">
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

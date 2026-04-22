@@ -4,7 +4,7 @@ slug: "browser-harness"
 date_added: "2026-04-20"
 category: "平台候选"
 emoji: "♞"
-stars: "4347 stars"
+stars: "5.0k stars"
 stars_delta: "5天 4347⭐，增速 ~870⭐/天，加速增长"
 language: "Python"
 score: 85
@@ -67,3 +67,5 @@ url: "https://github.com/browser-use/browser-harness"
 
 ---
 *首次记录：2026-04-20*
+
+*最近更新：2026-04-23 — stars 增至 5.0k*

@@ -397,4 +397,17 @@ title: Trend Index — 趋势指数
 
 ---
 
-*最后更新：2026-04-12*
+### 2026-04-23 趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | LLM 架构逆向工程 | OpenMythos | 82 |
+| 2 | Claude Code 设计工具生态 | huashu-design, open-codesign, Kami | 85 |
+| 3 | Browser Agent 自愈能力 | browser-harness | 80 |
+| 4 | Coding Agent 格局稳定 | claw-code, opencode, hermes-agent | 78 |
+
+**新项目：** OpenMythos(8.7k), huashu-design(4.4k), open-codesign(1.2k)
+
+---
+
+*最后更新：2026-04-23*

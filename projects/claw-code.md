@@ -4,7 +4,7 @@ slug: "claw-code"
 date_added: "2026-04-08"
 category: "基础设施候选"
 emoji: "🦀"
-stars: "168.7k"
+stars: "187.5k stars"
 stars_delta: "+10k/week"
 language: "Rust"
 score: 75
@@ -89,3 +89,5 @@ claw-code 的核心架构决策是 **Rust + Clean-room**。这个组合的含义
 ---
 
 *首次记录：2026-04-08*
+
+*最近更新：2026-04-23 — stars 增至 187.5k，持续领跑 Coding Agent 赛道*

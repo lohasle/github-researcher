@@ -4,6 +4,21 @@
 
 ---
 
+## 2026-04-23
+
+**核心主题：** OpenMythos 重建 Claude 架构引发研究热潮 · Claude Code 设计工具生态全面爆发 · Browser Harness 验证自愈浏览器成为 Agent 标配能力
+
+**关键项目：**
+- 🧠 OpenMythos (8.7k stars) — 基于 RDT 重建 Claude Mythos 架构
+- 🎨 huashu-design (4.4k stars) — HTML 原生 Claude Code 设计 Skill
+- 🖌️ open-codesign (1.2k stars) — 开源多模型 BYOK 设计 Agent 平台
+- 🌐 browser-harness (5.0k stars) — 自愈浏览器 Harness
+- 🦞 claw-code (187.5k stars) — Rust Coding Agent 持续领跑
+
+→ [查看完整日报](daily/2026-04-23.html)
+
+---
+
 ## 2026-04-22
 
 **核心主题：** Browser Harness 持续爆发验证 Browser Use 赛道 · Claude Code Skill 生态进入设计工具细分 · PgQue 代表极简主义基础设施思潮回归

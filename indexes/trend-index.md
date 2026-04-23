@@ -397,6 +397,21 @@ title: Trend Index — 趋势指数
 
 ---
 
+### 2026-04-24 趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Claude Code Skill 生态分化为垂直子赛道 | huashu-design, html-ppt-skill, diagram-design, UZI-Skill | 84 |
+| 2 | AI Coding 成本可观测性刚需化 | codeburn, claude-doctor | 78 |
+| 3 | LLM 推理内核性能竞赛 | TileKernels, FlashKDA | 76 |
+| 4 | Coding Agent 行为治理 | agentic-stack, agents-md, skills-manage | 74 |
+
+**新项目：** TileKernels(592), FlashKDA(383), agents-md(489)
+
+**持续跟踪更新：** OpenMythos(9.7k), browser-harness(5.8k), codeburn(3.5k), agentic-stack(1.5k)
+
+---
+
 ### 2026-04-23 趋势
 
 | 排名 | 趋势方向 | 代表项目 | 趋势分 |
@@ -410,4 +425,4 @@ title: Trend Index — 趋势指数
 
 ---
 
-*最后更新：2026-04-23*
+*最后更新：2026-04-24*

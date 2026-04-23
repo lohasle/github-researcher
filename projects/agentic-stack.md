@@ -2,10 +2,10 @@
 title: "agentic-stack"
 slug: "agentic-stack"
 date_added: "2026-04-19"
-last_seen_date: "2026-04-21"
+last_seen_date: "2026-04-24"
 category: "平台候选"
 emoji: "🔄"
-stars: "750"
+stars: "1,489"
 score: 82
 tags: ["agent", "portability", "cross-harness", "memory", "skills"]
 url: "https://github.com/codejunkie99/agentic-stack"

@@ -4,6 +4,21 @@
 
 ---
 
+## 2026-04-24
+
+**核心主题：** Claude Code Skill 生态分化为垂直子赛道 · AI Coding 成本可观测性成为刚需 · LLM 推理内核性能优化进入白热化
+
+**关键项目：**
+- 🔥 codeburn (3.5k stars) — AI Coding Token 消耗可观测性 TUI Dashboard
+- ⚡ TileKernels (592 stars) — DeepSeek tilelang 推理内核库
+- 🚀 FlashKDA (383 stars) — Moonshot Kimi Delta Attention 内核
+- 📋 agents-md (489 stars) — 让 Coding Agent 表现如资深工程师的 AGENTS.md
+- 🧳 agentic-stack (1.5k stars) — 跨平台可移植 .agent/ 配置
+
+→ [查看完整日报](daily/2026-04-24.html)
+
+---
+
 ## 2026-04-23
 
 **核心主题：** OpenMythos 重建 Claude 架构引发研究热潮 · Claude Code 设计工具生态全面爆发 · Browser Harness 验证自愈浏览器成为 Agent 标配能力

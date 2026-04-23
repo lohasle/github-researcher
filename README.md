@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-04-23）
+## 最新研究摘要（2026-04-24）
 
-**OpenMythos 重建 Claude 架构引发研究热潮 · Claude Code 设计工具生态全面爆发 · Browser Harness 验证自愈浏览器成为 Agent 标配能力**
+**Claude Code Skill 生态分化为垂直子赛道 · AI Coding 成本可观测性成为刚需 · LLM 推理内核性能优化进入白热化**
 
 今日热榜新信号：
-- **OpenMythos**（8.7k stars）：基于公开文献从第一性原理重建 Claude Mythos 架构的开源实现
-- **huashu-design**（4.4k stars）：HTML 原生的 Claude Code 设计 Skill，支持高保真原型/幻灯片/动画
-- **open-codesign**（1.2k stars）：开源 Claude Design 替代品，多模型 BYOK 本地优先
+- **codeburn**（3.5k stars）：AI Coding Token 消耗可观测性 TUI Dashboard，支持 Claude Code/Codex/Cursor
+- **TileKernels**（592 stars）：DeepSeek 出品的 tilelang 高性能推理内核库
+- **FlashKDA**（383 stars）：Moonshot AI 出品的 Kimi Delta Attention 高性能内核
 
+**→ [查看 2026-04-24 完整简报](daily/2026-04-24.md)**
 **→ [查看 2026-04-23 完整简报](daily/2026-04-23.md)**
 **→ [查看 2026-04-22 完整简报](daily/2026-04-22.md)**
 **→ [查看 2026-04-21 完整简报](daily/2026-04-21.md)**
-**→ [查看 2026-04-20 完整简报](daily/2026-04-20.md)**
 
 ---
 
@@ -24,22 +24,22 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-04-24](daily/2026-04-24.md) | Claude Code Skill 生态分化为垂直子赛道 · AI Coding | 5 个深度分析 |
 | [2026-04-23](daily/2026-04-23.md) | OpenMythos 重建 Claude 架构引发研究热潮 · Claude C | 5 个深度分析 |
 | [2026-04-22](daily/2026-04-22.md) | Browser Harness 持续爆发验证 Browser Use 赛道 ·  | 5 个深度分析 |
 | [2026-04-21](daily/2026-04-21.md) | OpenMythos 逆向重建 Claude 架构引爆关注 · Agentic  | 5 个深度分析 |
 | [2026-04-20](daily/2026-04-20.md) | Browser Use 推出 Self-Healing Browser Harn | 5 个深度分析 |
 | [2026-04-19](daily/2026-04-19.md) | Agent 可移植性与 Harness 互操作成新焦点 · AI-native  | 5 个深度分析 |
 | [2026-04-18](daily/2026-04-18.md) | Claude Code Skill 生态爆发 · 全场景协议分析+AI 逆向成新 | 6 个深度分析 |
-| [2026-04-17](daily/2026-04-17.md) | Agent Skill 自进化范式成形 · AI原生编程语言登场 · Token | 6 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **LLM 架构逆向工程热潮：OpenMythos 重建 Claude Mythos**：相关项目 OpenMythos。
-2. **Claude Code 设计工具生态大爆发：从原型到生产级 UI**：相关项目 huashu-design, open-codesign, Kami。
-3. **Browser Agent 自愈能力成为标配：browser-harness 延续爆发**：相关项目 browser-harness。
-4. **Coding Agent 赛道稳定：claw-code 187k stars 持续领跑**：相关项目 claw-code, opencode, hermes-agent。
+1. **Claude Code Skill 生态分化：设计 → PPT → 图表 → Logo → 量化交易**：相关项目 huashu-design, html-ppt-skill, diagram-design。
+2. **AI Coding 成本可观测性刚需化：codeburn 引爆 Token 消耗监控**：相关项目 codeburn, claude-doctor。
+3. **LLM 推理内核性能竞赛：TileKernels + FlashKDA 两路并进**：相关项目 TileKernels, FlashKDA。
+4. **Coding Agent 行为治理：从 agentic-stack 到 agents-md**：相关项目 agentic-stack, agents-md, skills-manage。
 
 ---
 
@@ -62,9 +62,9 @@
 
 ## 数据统计
 
-- 📊 项目档案：62 个
-- 📅 日报总数：17 期
-- 🔄 最近更新：2026-04-23
+- 📊 项目档案：65 个
+- 📅 日报总数：18 期
+- 🔄 最近更新：2026-04-24
 
 ---
 

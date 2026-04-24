@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-04-24）
+## 最新研究摘要（2026-04-25）
 
-**Claude Code Skill 生态分化为垂直子赛道 · AI Coding 成本可观测性成为刚需 · LLM 推理内核性能优化进入白热化**
+**AI Agent 安全基础设施成型 · Memory 层竞争从 API 转向嵌入式 · Rust 正在成为 Agent Runtime 首选语言**
 
 今日热榜新信号：
-- **codeburn**（3.5k stars）：AI Coding Token 消耗可观测性 TUI Dashboard，支持 Claude Code/Codex/Cursor
-- **TileKernels**（592 stars）：DeepSeek 出品的 tilelang 高性能推理内核库
-- **FlashKDA**（383 stars）：Moonshot AI 出品的 Kimi Delta Attention 高性能内核
+- **ThinkWatch**（444 stars）：企业级 AI 堡垒主机，统一代理 OpenAI/Anthropic/Gemini/MCP，RBAC + 审计 + 限流 + 成本追踪
+- **CrabTrap**（424 stars）：LLM-as-a-Judge HTTP 代理，为生产环境 Agent 提供安全防护
+- **CubeSandbox**（3.9k stars）：腾讯出品的轻量级 AI Agent 沙箱，即时、并发、安全
 
+**→ [查看 2026-04-25 完整简报](daily/2026-04-25.md)**
 **→ [查看 2026-04-24 完整简报](daily/2026-04-24.md)**
 **→ [查看 2026-04-23 完整简报](daily/2026-04-23.md)**
 **→ [查看 2026-04-22 完整简报](daily/2026-04-22.md)**
-**→ [查看 2026-04-21 完整简报](daily/2026-04-21.md)**
 
 ---
 
@@ -24,22 +24,23 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-04-25](daily/2026-04-25.md) | AI Agent 安全基础设施成型 · Memory 层竞争从 API 转向嵌入 | 5 个深度分析 |
 | [2026-04-24](daily/2026-04-24.md) | Claude Code Skill 生态分化为垂直子赛道 · AI Coding | 5 个深度分析 |
 | [2026-04-23](daily/2026-04-23.md) | OpenMythos 重建 Claude 架构引发研究热潮 · Claude C | 5 个深度分析 |
 | [2026-04-22](daily/2026-04-22.md) | Browser Harness 持续爆发验证 Browser Use 赛道 ·  | 5 个深度分析 |
 | [2026-04-21](daily/2026-04-21.md) | OpenMythos 逆向重建 Claude 架构引爆关注 · Agentic  | 5 个深度分析 |
 | [2026-04-20](daily/2026-04-20.md) | Browser Use 推出 Self-Healing Browser Harn | 5 个深度分析 |
 | [2026-04-19](daily/2026-04-19.md) | Agent 可移植性与 Harness 互操作成新焦点 · AI-native  | 5 个深度分析 |
-| [2026-04-18](daily/2026-04-18.md) | Claude Code Skill 生态爆发 · 全场景协议分析+AI 逆向成新 | 6 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **Claude Code Skill 生态分化：设计 → PPT → 图表 → Logo → 量化交易**：相关项目 huashu-design, html-ppt-skill, diagram-design。
-2. **AI Coding 成本可观测性刚需化：codeburn 引爆 Token 消耗监控**：相关项目 codeburn, claude-doctor。
-3. **LLM 推理内核性能竞赛：TileKernels + FlashKDA 两路并进**：相关项目 TileKernels, FlashKDA。
-4. **Coding Agent 行为治理：从 agentic-stack 到 agents-md**：相关项目 agentic-stack, agents-md, skills-manage。
+1. **AI Agent 安全基础设施：从堡垒主机到 LLM-as-Judge 代理网关**：相关项目 ThinkWatch, CrabTrap, CubeSandbox。
+2. **AI Memory 层竞争白热化：MemPalace 逼近 50K · Graymatter 三行代码持久记忆**：相关项目 MemPalace, Graymatter。
+3. **Rust 成为 Agent Runtime / Sandbox 首选语言**：相关项目 CubeSandbox, ThinkWatch, Obscura。
+4. **Coding Agent 替代实现涌现：Go 版 Claude Code · Rust 沙箱**：相关项目 gopher-code, CubeSandbox。
+5. **Browser Automation 进入 Self-healing 阶段**：相关项目 browser-harness, obscura。
 
 ---
 
@@ -55,16 +56,16 @@
 | [andrej-karpathy-skills](projects/andrej-karpathy-skills.md) | 工具型 | 基于 Andrej Karpathy 对 LLM 编程陷阱的观察，提炼为单个 C | 持续跟踪 |
 | [Archon](projects/archon.md) | 平台候选 | 用 YAML 工作流让 AI 编程可确定、可重复——Dockerfile 标准化 | 持续跟踪 |
 | [OpenMythos](projects/openmythos.md) | 研究型 | 基于公开研究文献从第一性原理重建 Claude Mythos 架构的开源实现，实 | 持续跟踪 |
+| [ThinkWatch](projects/thinkwatch.md) | 基础设施候选 | 企业级 AI 堡垒主机，统一代理 OpenAI/Anthropic/Gemini | 持续跟踪 |
 | [chrome-devtools-mcp](projects/chrome-devtools-mcp.md) | 基础设施候选 | 通过 MCP 协议让 AI Coding Agent 直接操作 Chrome D | 深度跟踪 |
-| [Paperclip](projects/paperclip.md) | 平台候选 | 开源编排框架，目标是实现"零人类公司"（Zero-Human Company）的 | 持续跟踪 |
 
 ---
 
 ## 数据统计
 
-- 📊 项目档案：65 个
-- 📅 日报总数：18 期
-- 🔄 最近更新：2026-04-24
+- 📊 项目档案：69 个
+- 📅 日报总数：19 期
+- 🔄 最近更新：2026-04-25
 
 ---
 

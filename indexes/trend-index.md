@@ -397,6 +397,22 @@ title: Trend Index — 趋势指数
 
 ---
 
+### 2026-04-25 趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | AI Agent 安全基础设施成型 | ThinkWatch, CrabTrap, CubeSandbox | 82 |
+| 2 | AI Memory 层竞争白热化 | MemPalace, Graymatter | 80 |
+| 3 | Rust 成为 Agent Runtime/Sandbox 首选 | CubeSandbox, ThinkWatch, Obscura | 76 |
+| 4 | Coding Agent 替代实现涌现 | gopher-code, CubeSandbox | 72 |
+| 5 | Browser Automation Self-healing | browser-harness, Obscura | 74 |
+
+**新项目：** ThinkWatch(444), CrabTrap(424), CubeSandbox(3.9k), Graymatter(277)
+
+**持续跟踪更新：** MemPalace(49.5k), browser-harness(6.4k)
+
+---
+
 ### 2026-04-24 趋势
 
 | 排名 | 趋势方向 | 代表项目 | 趋势分 |
@@ -425,4 +441,4 @@ title: Trend Index — 趋势指数
 
 ---
 
-*最后更新：2026-04-24*
+*最后更新：2026-04-25*

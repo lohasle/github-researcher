@@ -4,6 +4,21 @@
 
 ---
 
+## 2026-04-25
+
+**核心主题：** AI Agent 安全基础设施成型 · Memory 层竞争从 API 转向嵌入式 · Rust 正在成为 Agent Runtime 首选语言
+
+**关键项目：**
+- 🛡️ ThinkWatch (444 stars) — 企业级 AI 堡垒主机，Rust 实现
+- 🦀 CrabTrap (424 stars) — LLM-as-a-Judge 安全代理
+- 📦 CubeSandbox (3.9k stars) — 腾讯出品 AI Agent 轻量沙箱，Rust
+- 🧠 Graymatter (277 stars) — 三行代码 Agent 持久记忆
+- 🏛️ MemPalace (49.5k stars) — 开源 AI 记忆系统逼近 50K
+
+→ [查看完整日报](daily/2026-04-25.html)
+
+---
+
 ## 2026-04-24
 
 **核心主题：** Claude Code Skill 生态分化为垂直子赛道 · AI Coding 成本可观测性成为刚需 · LLM 推理内核性能优化进入白热化

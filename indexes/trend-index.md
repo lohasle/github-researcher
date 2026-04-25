@@ -10,6 +10,28 @@ title: Trend Index — 趋势指数
 
 ---
 
+## 2026-04-26（第十七版）
+
+### 本日新增项目（2026-04-26）
+
+| 项目 | 分类 | 热度信号 | 核心判断 | 建议 |
+|------|------|---------|---------|------|
+| Graphify | 工具型→平台候选 | 34.8K stars | 跨 Agent 平台 GraphRAG Skill，Skill 标准化雏形 | **持续跟踪** |
+| Paperclip | 平台候选 | 58.8K stars | 零人类公司编排框架，工程成熟度高 | **PoC 推荐** |
+| autoresearch | 学习型 | 76.5K stars | Karpathy 研究自动化，名人效应显著 | 观察为主 |
+| CLI-Anything | 基础设施候选 | 32.6K stars | 万物 Agent-Native CLI，定位野心大 | **持续跟踪** |
+| Google Workspace CLI | 生产可用 | 25.4K stars | Google 官方 CLI，Rust 编写 | 企业可用 |
+| Kami | 工具型 | 3.2K stars | tw93 排版工具，与 AI 关联有限 | 短期观望 |
+| MasterHttpRelayVPN | 工具型 | 1.2K stars | 域前沿代理，非 AI 趋势 | 不跟踪 |
+
+### 持续跟踪项目状态更新
+
+| 项目 | 上次 Stars | 今日 Stars | 变化 | 判断 |
+|------|-----------|-----------|------|------|
+| Kami | 1,354 | 3,244 | +1,890 | 5天3K，增速符合预期 |
+
+---
+
 ## 2026-04-22（第十六版）
 
 ### 本日新增项目（2026-04-22）

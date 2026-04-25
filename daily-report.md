@@ -4,6 +4,21 @@
 
 ---
 
+## 2026-04-26
+
+**核心主题：** AI Agent Skill 生态爆发 · 零人类公司编排走出概念 · CLI 成为 Agent-Native 标准接口
+
+**关键项目：**
+- 🧠 Graphify (34.8k stars) — 跨 Agent 平台 GraphRAG 编排 Skill
+- 📎 Paperclip (58.8k stars) — 零人类公司开源编排框架
+- 🔬 autoresearch (76.5k stars) — Karpathy 研究自动化 Agent
+- 🔌 CLI-Anything (32.6k stars) — 万物 Agent-Native CLI
+- 📁 Google Workspace CLI (25.4k stars) — Google 官方统一 CLI
+
+→ [查看完整日报](daily/2026-04-26.html)
+
+---
+
 ## 2026-04-25
 
 **核心主题：** AI Agent 安全基础设施成型 · Memory 层竞争从 API 转向嵌入式 · Rust 正在成为 Agent Runtime 首选语言

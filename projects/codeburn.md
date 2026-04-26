@@ -2,7 +2,7 @@
 title: "Codeburn"
 slug: "codeburn"
 date_added: "2026-04-16"
-last_seen_date: "2026-04-24"
+last_seen_date: "2026-04-27"
 category: "工具型/基础设施候选"
 emoji: "🔥"
 stars: "3,475 stars"

@@ -10,6 +10,28 @@ title: Trend Index — 趋势指数
 
 ---
 
+## 2026-04-27（第十八版）
+
+### 本日新增项目（2026-04-27）
+
+| 项目 | 分类 | 热度信号 | 核心判断 | 建议 |
+|------|------|---------|---------|------|
+| MemPalace | 基础设施候选 | 49.8K stars | AI Memory 系统领跑者，MCP+ChromaDB | **PoC 推荐** |
+| Caveman | 工具型 | 47.1K stars | Token 压缩 meme，prompt 压缩有工程价值 | 低优先级跟踪 |
+| Obscura | 基础设施候选 | 6.0K stars | Rust Agent 专用无头浏览器 | **持续跟踪** |
+| Browser Harness | 平台候选 | 7.1K stars | 自愈式浏览器 Harness，生产化关键一步 | **持续跟踪** |
+| CubeSandbox | 基础设施候选 | 4.2K stars | 腾讯 Agent 沙箱，Rust 实现 | **PoC 推荐** |
+| Codeburn | 工具型 | 4.1K stars | Token 成本可观测性 TUI Dashboard | 持续跟踪 |
+
+### 持续跟踪项目状态更新
+
+| 项目 | 上次 Stars | 今日 Stars | 变化 | 判断 |
+|------|-----------|-----------|------|------|
+| MemPalace | 49.8K | 49.8K | 稳定 | 基础设施候选确认 |
+| Graphify | 34.8K | 35.5K | +700 | 持续增长 |
+
+---
+
 ## 2026-04-26（第十七版）
 
 ### 本日新增项目（2026-04-26）

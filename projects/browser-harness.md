@@ -2,6 +2,7 @@
 title: "Browser Harness"
 slug: "browser-harness"
 date_added: "2026-04-20"
+last_seen_date: "2026-04-27"
 category: "平台候选"
 emoji: "♞"
 stars: "5.0k stars"

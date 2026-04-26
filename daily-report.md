@@ -4,6 +4,21 @@
 
 ---
 
+## 2026-04-27
+
+**核心主题：** AI Memory 系统走向产品化 · Token 效率成为 Agent Skill 新焦点 · Agent 沙箱基础设施升温
+
+**关键项目：**
+- 🧠 MemPalace (49.8k stars) — 最高 benchmark 开源 AI 记忆系统
+- 🪨 Caveman (47.1k stars) — Token 压缩 Skill，prompt 效率新维度
+- 🕵️ Obscura (6.0k stars) — Rust Agent 专用无头浏览器
+- 🌐 Browser Harness (7.1k stars) — 自愈式浏览器 Harness
+- 📦 CubeSandbox (4.2k stars) — 腾讯 Agent 沙箱
+
+→ [查看完整日报](daily/2026-04-27.html)
+
+---
+
 ## 2026-04-26
 
 **核心主题：** AI Agent Skill 生态爆发 · 零人类公司编排走出概念 · CLI 成为 Agent-Native 标准接口

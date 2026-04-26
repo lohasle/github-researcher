@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-04-26）
+## 最新研究摘要（2026-04-27）
 
-**AI Agent Skill 生态爆发 · 零人类公司编排走出概念 · CLI 成为 Agent-Native 标准接口**
+**AI Memory 系统走向产品化 · Token 效率成为 Agent Skill 新焦点 · Agent 沙箱基础设施升温**
 
 今日热榜新信号：
-- **Graphify**（34.8k stars）：跨 Agent 平台的 GraphRAG 编排 Skill，统一 Claude Code / Codex / Cursor 等
-- **Paperclip**（58.8k stars）：零人类公司开源编排框架，自动化全链路商业流程
-- **Karpathy autoresearch**（76.5k stars）：Karpathy 新项目：单 GPU 自动运行研究实验的 AI Agent
+- **MemPalace**（49.8k stars）：最高 benchmark 开源 AI 记忆系统，支持 MCP + ChromaDB
+- **Caveman**（47.1k stars）：Claude Code Skill，用原始人语言砍 65% token 消耗
+- **Obscura**（6.0k stars）：Rust 写的 AI Agent 专用无头浏览器
 
+**→ [查看 2026-04-27 完整简报](daily/2026-04-27.md)**
 **→ [查看 2026-04-26 完整简报](daily/2026-04-26.md)**
 **→ [查看 2026-04-25 完整简报](daily/2026-04-25.md)**
 **→ [查看 2026-04-24 完整简报](daily/2026-04-24.md)**
-**→ [查看 2026-04-23 完整简报](daily/2026-04-23.md)**
 
 ---
 
@@ -24,22 +24,22 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-04-27](daily/2026-04-27.md) | AI Memory 系统走向产品化 · Token 效率成为 Agent Ski | 4 个深度分析 |
 | [2026-04-26](daily/2026-04-26.md) | AI Agent Skill 生态爆发 · 零人类公司编排走出概念 · CLI  | 7 个深度分析 |
 | [2026-04-25](daily/2026-04-25.md) | AI Agent 安全基础设施成型 · Memory 层竞争从 API 转向嵌入 | 5 个深度分析 |
 | [2026-04-24](daily/2026-04-24.md) | Claude Code Skill 生态分化为垂直子赛道 · AI Coding | 5 个深度分析 |
 | [2026-04-23](daily/2026-04-23.md) | OpenMythos 重建 Claude 架构引发研究热潮 · Claude C | 5 个深度分析 |
 | [2026-04-22](daily/2026-04-22.md) | Browser Harness 持续爆发验证 Browser Use 赛道 ·  | 5 个深度分析 |
 | [2026-04-21](daily/2026-04-21.md) | OpenMythos 逆向重建 Claude 架构引爆关注 · Agentic  | 5 个深度分析 |
-| [2026-04-20](daily/2026-04-20.md) | Browser Use 推出 Self-Healing Browser Harn | 5 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **AI Agent Skill 生态大爆发：从工具到可复用认知单元**：相关项目 Graphify, guizang-ppt-skill, garden-skills。
-2. **零人类公司编排从概念走向工程：Paperclip 58K Stars**：相关项目 Paperclip, Mercury Agent, Harmonist。
-3. **CLI 成为 Agent-Native 标准接口：CLI-Anything · Google Workspace CLI**：相关项目 CLI-Anything, Google Workspace CLI。
-4. **Karpathy autoresearch 76K：单人 GPU 研究自动化**：相关项目 autoresearch。
+1. **AI Memory 系统走向产品化：MemPalace 接近 50K Stars**：相关项目 MemPalace, Graphify。
+2. **Token 效率成为 Agent Skill 新焦点：Caveman 47K Stars**：相关项目 Caveman, Codeburn。
+3. **Agent 沙箱基础设施升温：Tencent CubeSandbox + Obscura**：相关项目 CubeSandbox, Obscura。
+4. **Browser Use 生态纵深发展：Browser Harness 7.1K**：相关项目 Browser Harness。
 
 ---
 
@@ -62,9 +62,9 @@
 
 ## 数据统计
 
-- 📊 项目档案：73 个
-- 📅 日报总数：20 期
-- 🔄 最近更新：2026-04-26
+- 📊 项目档案：75 个
+- 📅 日报总数：21 期
+- 🔄 最近更新：2026-04-27
 
 ---
 

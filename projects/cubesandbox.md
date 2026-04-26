@@ -2,6 +2,7 @@
 title: "CubeSandbox"
 slug: "cubesandbox"
 date_added: "2026-04-25"
+last_seen_date: "2026-04-27"
 category: "基础设施候选"
 emoji: "📦"
 stars: "3.9k stars"

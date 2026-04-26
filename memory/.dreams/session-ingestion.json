@@ -1,26 +1,19 @@
 {
   "version": 3,
   "files": {
-    "github-researcher:sessions/2944bf29-2a7d-4970-a696-3f9de1545761.jsonl": {
+    "github-researcher:sessions/2944bf29-2a7d-4970-a696-3f9de1545761.jsonl.deleted.2026-04-25T22-06-25.085Z": {
       "mtimeMs": 1777068377147,
       "size": 168299,
       "contentHash": "72aec0074867d5741b8d839471d6e57a2aa8b0adb1fe7f69952e2a63e388be46",
       "lineCount": 16,
       "lastContentLine": 16
     },
-    "github-researcher:sessions/31ec330a-1216-4b3f-8aa1-68180d97c1a9.jsonl.deleted.2026-04-23T22-06-44.121Z": {
-      "mtimeMs": 1776895616624,
-      "size": 145628,
-      "contentHash": "6561d085819bd143733e365bbab7f9b4ebdd6bc16a9c2c9c20bd33c8b71a8d1a",
-      "lineCount": 15,
-      "lastContentLine": 15
-    },
-    "github-researcher:sessions/3683a06e-40e7-430a-a390-21d86ca836ab.jsonl.deleted.2026-04-24T22-06-23.966Z": {
-      "mtimeMs": 1776981997007,
-      "size": 162124,
-      "contentHash": "68f84b961f44c0f1e13a046cbcb51a0cacd2045c374ca74ce414722fecef03ba",
-      "lineCount": 16,
-      "lastContentLine": 16
+    "github-researcher:sessions/b2b7dcdc-9e14-4832-911e-238a07109a50.jsonl": {
+      "mtimeMs": 1777154781013,
+      "size": 139372,
+      "contentHash": "199aacb90154b125ad672d0c573d208bd43178d08dca8f4201542d8de61a54dc",
+      "lineCount": 9,
+      "lastContentLine": 9
     }
   },
   "seenMessages": {
@@ -245,6 +238,17 @@
       "e0fa21f8c00be53f246dfb9c9b41d0e88a2917f0",
       "4ec9951986da214228d7d8ee4050ab93b398db57",
       "250e5d969f10a2752287a47deafc1b055312f50f"
+    ],
+    "github-researcher:b2b7dcdc-9e14-4832-911e-238a07109a50": [
+      "7de984874dd71adea200e8d56fb23be39f4d171b",
+      "80f2af1788a0331293b986a07d7f10214634798d",
+      "fc2b3c27637183cf47dda37abf80975f72e4a60c",
+      "f3f69fd40012b1dbb30ccd250faee07e5685dbf8",
+      "da9772dffa7a68bc65b8e89c6077816ab316d4e5",
+      "a21520870418b3a02d605ad899dd3878abd85878",
+      "9afbed5685eb9d1e48c051d7c13ac741d51e5836",
+      "b5b48b38ebd9192737244382df9b0ae2e3b3a499",
+      "99640ab15e0a9c5085f321bf13580a088b542411"
     ]
   }
 }

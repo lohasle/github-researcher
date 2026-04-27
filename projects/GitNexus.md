@@ -7,6 +7,7 @@ mcp: true
 poc_recommend: true
 score: 60
 stars_per_day: 857
+last_seen_date: "2026-04-28"
 summary: 代码知识图谱 + MCP Server，AI Coding Agent 的感知层基础设施。CLI 一键索引，零配置接入 Claude Code/Cursor。
 tech_stack: TypeScript
 title: GitNexus

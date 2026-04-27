@@ -72,12 +72,12 @@ for df in daily_files:
             if pname:
                 # 去掉括号内的 org 信息，如 "claw-code (ultraworkers)" → "claw-code"
                 clean_name = re.sub(r'\s*\([^)]*\)', '', pname).strip()
-                slug = clean_name.lower().replace(' ', '-')
+                slug = re.sub(r'[^a-z0-9]+', '-', clean_name.lower()).strip('-')
                 profile_path = os.path.join(PROJECTS, f'{slug}.md')
                 if not os.path.exists(profile_path):
                     # 尝试模糊匹配：去掉所有分隔符后比较
                     found = False
-                    clean_key = clean_name.lower().replace('-', '').replace(' ', '').replace('_', '')
+                    clean_key = clean_name.lower().replace('-', '').replace(' ', '').replace('_', '').replace('.', '')
                     for pf in os.listdir(PROJECTS) if os.path.isdir(PROJECTS) else []:
                         pf_key = pf.replace('.md', '').lower().replace('-', '').replace(' ', '').replace('_', '')
                         if clean_key in pf_key or pf_key in clean_key:

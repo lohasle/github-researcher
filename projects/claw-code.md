@@ -4,7 +4,7 @@ slug: "claw-code"
 date_added: "2026-04-08"
 category: "基础设施候选"
 emoji: "🦀"
-stars: "187.5k stars"
+stars: "188.8k stars"
 stars_delta: "+10k/week"
 language: "Rust"
 score: 75

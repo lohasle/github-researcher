@@ -4,7 +4,7 @@ slug: "huashu-design"
 date_added: "2026-04-23"
 category: "工具型"
 emoji: "🎨"
-stars: "4.4k stars"
+stars: "8.3k stars"
 stars_delta: "4天 4.4k"
 language: "HTML"
 score: 78

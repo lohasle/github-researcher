@@ -4,6 +4,21 @@
 
 ---
 
+## 2026-04-28
+
+**核心主题：** 国产大模型 MoE 密集发布（Hy3 + Kimi K2.6）· Code Intelligence 走向 MCP-Native · Claude Code Skill 生态爆发
+
+**关键项目：**
+- 🔮 Hy3 Preview (262 stars) — 腾讯混元 295B MoE，90 天重建基础设施
+- 🌙 Kimi K2.6 (10.7k stars) — SWE-Bench Pro 58.6% 登顶，300 Agent Swarm
+- 🕸️ GitNexus (28.6k stars) — Zero-Server Code Intelligence，MCP 原生
+- 🎨 Huashu Design (8.3k stars) — Claude Code HTML 原生设计 Skill
+- 🎵 Harmonist (741 stars) — 零依赖 Agent 编排，186 Agent
+
+→ [查看完整日报](daily/2026-04-28.html)
+
+---
+
 ## 2026-04-27
 
 **核心主题：** AI Memory 系统走向产品化 · Token 效率成为 Agent Skill 新焦点 · Agent 沙箱基础设施升温

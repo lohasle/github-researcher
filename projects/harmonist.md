@@ -4,7 +4,7 @@ slug: "harmonist"
 date_added: "2026-04-28"
 category: "观察型"
 emoji: "🎵"
-stars: "741 stars"
+stars: "825 stars"
 stars_delta: "新项目"
 language: "Python"
 score: 48

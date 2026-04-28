@@ -10,6 +10,39 @@ title: Trend Index — 趋势指数
 
 ---
 
+## 2026-04-29（第二十版）
+
+### 本日新增项目（2026-04-29）
+
+| 项目 | 分类 | 热度信号 | 核心判断 | 建议 |
+|------|------|---------|---------|------|
+| Stash | 观察型 | 502 stars | Go 单二进制 AI Memory，Postgres 后端 | 跟踪，等 2K |
+| Future-AGI | 观察型 | 701 stars | 全链路 Agent 可观测性，Apache 2.0 | 跟踪 |
+| Open-Design | 工具型 | 983 stars（1天） | Claude Design 开源替代，71 Design Systems | 关注 |
+
+### 持续跟踪项目状态更新
+
+| 项目 | 上次 Stars | 今日 Stars | 变化 | 判断 |
+|------|-----------|-----------|------|------|
+| MemPalace | 49.5K | 50.2K | +0.7K | 稳定增长，记忆赛道头部 |
+| CubeSandbox | 3.9K | 4.6K | +0.7K | 快速增长，腾讯背书 |
+| Browser Harness | 5.0K | 7.9K | +2.9K | 强力增长，Harness 范式 |
+| Graphify | 34.8K | 37.3K | +2.5K | 持续增长 |
+| CodeBurn | 3.5K | 4.5K | +1K | 稳定增长 |
+| Obscura | 6.0K | 7.6K | +1.6K | 稳步增长 |
+| Kami | 3.2K | 3.7K | +0.5K | 稳定 |
+| hermes-agent | 120.5K | 122.8K | +2.3K | 持续增长 |
+| superpowers | 170K | 171.5K | +1.5K | 稳定增长 |
+
+### 趋势判断修正
+
+- **新增判断**：AI Memory 赛道正在基础设施化，MemPalace 50K + Stash 入局，记忆层将成为 Agent 的标准组件
+- **新增判断**：Browser Agent 从「给 Agent 一个浏览器」转向「Harness 模式」（Self-Healing + Domain Skill 自动沉淀）
+- **新增判断**：Skill 生态进入长尾分化期，跨 Agent 兼容成为差异化关键
+- **风险提示**：QuipNetwork 4 个仓库（quip-protocol-rs / xq-rs / xq-py / quip-node-manager）stars 异常（均为 5.6-5.8K），疑似刷星
+
+---
+
 ## 2026-04-28（第十九版）
 
 ### 本日新增项目（2026-04-28）

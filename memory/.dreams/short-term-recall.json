@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-26T19:05:21.053Z",
+  "updatedAt": "2026-04-27T19:00:16.667Z",
   "entries": {
     "memory:memory/.dreams/session-corpus/2026-04-13.txt:1:1": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-13.txt:1:1",
@@ -26,12 +26,12 @@
       "conceptTags": [
         "skills/github-daily/skill.md",
         "docs/generate-pages.py",
-        "user",
         "cron",
         "234619c8",
         "3cae",
         "42d8",
-        "ad26"
+        "ad26",
+        "7261bef5e6a7"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-13.txt:2:2": {
@@ -57,13 +57,13 @@
       ],
       "conceptTags": [
         "skill.md",
-        "assistant",
         "好的",
         "阅读",
         "开始",
         "phase",
         "执行",
-        "健康"
+        "健康",
+        "检查"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-13.txt:3:3": {
@@ -91,11 +91,11 @@
         "trend-index",
         "daily-report",
         "3.1",
-        "assistant",
         "phase",
         "通过",
         "errors",
-        "warnings"
+        "warnings",
+        "提示"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-13.txt:4:4": {
@@ -120,7 +120,6 @@
         "2026-04-15"
       ],
       "conceptTags": [
-        "assistant",
         "多个",
         "来源",
         "获取",
@@ -153,7 +152,6 @@
       "conceptTags": [
         "web-fetch",
         "web-search",
-        "assistant",
         "限制",
         "更多",
         "获取",
@@ -185,12 +183,12 @@
       "conceptTags": [
         "web-fetch",
         "web-search",
-        "assistant",
         "完全",
         "不可",
         "继续",
         "获取",
-        "更多"
+        "更多",
+        "具体"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-13.txt:7:7": {
@@ -215,14 +213,14 @@
         "2026-04-15"
       ],
       "conceptTags": [
-        "assistant",
         "我先",
         "检查",
         "一下",
         "已有",
         "日报",
         "项目",
-        "文件"
+        "文件",
+        "确保"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-13.txt:8:8": {
@@ -247,7 +245,6 @@
         "2026-04-15"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "查找",
         "更多",
@@ -279,13 +276,13 @@
       ],
       "conceptTags": [
         "agency-agents",
-        "assistant",
         "现在",
         "获取",
         "足够",
         "数据",
         "我来",
-        "整理"
+        "整理",
+        "一下"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-13.txt:10:10": {
@@ -310,14 +307,14 @@
         "2026-04-15"
       ],
       "conceptTags": [
-        "assistant",
         "第四",
         "阶段",
         "项目",
         "档案",
         "生成",
         "现在",
-        "今天"
+        "今天",
+        "关键"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-13.txt:11:11": {
@@ -342,7 +339,6 @@
         "2026-04-15"
       ],
       "conceptTags": [
-        "assistant",
         "项目",
         "不存在",
         "我来",
@@ -373,7 +369,6 @@
       ],
       "conceptTags": [
         "5.1",
-        "assistant",
         "phase",
         "同步",
         "更新",
@@ -405,7 +400,6 @@
       "conceptTags": [
         "5.2",
         "daily-report.md",
-        "assistant",
         "更新",
         "report.md"
       ]
@@ -433,7 +427,6 @@
       ],
       "conceptTags": [
         "5.3",
-        "assistant",
         "同步",
         "远端",
         "更新",
@@ -462,14 +455,14 @@
         "2026-04-15"
       ],
       "conceptTags": [
-        "assistant",
         "好的",
         "成功",
         "没有",
         "冲突",
         "现在",
         "我来",
-        "生成"
+        "生成",
+        "readme"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-13.txt:16:16": {
@@ -495,7 +488,6 @@
       ],
       "conceptTags": [
         "5.4",
-        "assistant",
         "运行",
         "html",
         "生成"
@@ -524,7 +516,6 @@
       ],
       "conceptTags": [
         "5.5",
-        "assistant",
         "验证",
         "生成",
         "结果"
@@ -552,14 +543,14 @@
         "2026-04-15"
       ],
       "conceptTags": [
-        "assistant",
         "所有",
         "文件",
         "成功",
         "生成",
         "不为",
         "阶段",
-        "最终"
+        "最终",
+        "验证"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-13.txt:19:19": {
@@ -585,13 +576,13 @@
       ],
       "conceptTags": [
         "04-11",
-        "assistant",
         "phase",
         "通过",
         "errors",
         "一个",
         "历史",
-        "warning"
+        "warning",
+        "趋势"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-13.txt:20:20": {
@@ -617,13 +608,13 @@
       ],
       "conceptTags": [
         "agency-agents",
-        "assistant",
         "push",
         "成功",
         "执行",
         "报告",
         "validate",
-        "结果"
+        "结果",
+        "phase"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-14.txt:1:1": {
@@ -650,12 +641,12 @@
       "conceptTags": [
         "skills/github-daily/skill.md",
         "docs/generate-pages.py",
-        "user",
         "cron",
         "234619c8",
         "3cae",
         "42d8",
-        "ad26"
+        "ad26",
+        "7261bef5e6a7"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-14.txt:2:2": {
@@ -681,13 +672,13 @@
       ],
       "conceptTags": [
         "skill.md",
-        "assistant",
         "首先",
         "阅读",
         "文件",
         "然后",
         "执行",
-        "日常"
+        "日常",
+        "github"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-14.txt:3:3": {
@@ -712,14 +703,14 @@
         "2026-04-15"
       ],
       "conceptTags": [
-        "assistant",
         "好的",
         "了解",
         "完整",
         "工作",
         "流程",
         "现在",
-        "开始"
+        "开始",
+        "执行"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-14.txt:4:4": {
@@ -745,13 +736,13 @@
       ],
       "conceptTags": [
         "3.1",
-        "assistant",
         "第一",
         "阶段",
         "通过",
         "没有",
         "需要",
-        "填补"
+        "填补",
+        "空白"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-14.txt:5:5": {
@@ -776,14 +767,14 @@
         "2026-04-15"
       ],
       "conceptTags": [
-        "assistant",
         "找到",
         "一些",
         "不错",
         "来源",
         "相关",
         "几个",
-        "获取"
+        "获取",
+        "详细"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-14.txt:6:6": {
@@ -808,14 +799,14 @@
         "2026-04-15"
       ],
       "conceptTags": [
-        "assistant",
         "网页",
         "抓取",
         "屏蔽",
         "尝试",
         "其他",
         "来源",
-        "具体"
+        "具体",
+        "搜索"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-14.txt:7:7": {
@@ -840,7 +831,6 @@
         "2026-04-15"
       ],
       "conceptTags": [
-        "assistant",
         "可用",
         "来源",
         "获取",
@@ -870,14 +860,14 @@
         "2026-04-15"
       ],
       "conceptTags": [
-        "assistant",
         "网页",
         "抓取",
         "完全",
         "阻止",
         "有效",
         "利用",
-        "搜索"
+        "搜索",
+        "结果"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-14.txt:9:9": {
@@ -902,7 +892,6 @@
         "2026-04-15"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "搜索",
         "更多",
@@ -934,14 +923,14 @@
         "2026-04-15"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "我先",
         "检查",
         "一下",
         "现有",
         "仓库",
-        "状态"
+        "状态",
+        "参考"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-14.txt:11:11": {
@@ -966,14 +955,14 @@
         "2026-04-15"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "趋势",
         "有了",
         "很好",
         "了解",
         "我先",
-        "同步"
+        "同步",
+        "仓库"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-14.txt:12:12": {
@@ -998,14 +987,14 @@
         "2026-04-15"
       ],
       "conceptTags": [
-        "assistant",
         "好的",
         "仓库",
         "已是",
         "最新",
         "现在",
         "我来",
-        "搜索"
+        "搜索",
+        "具体"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-14.txt:13:13": {
@@ -1030,14 +1019,14 @@
         "2026-04-15"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "我来",
         "搜索",
         "更多",
         "近期",
         "项目",
-        "以及"
+        "以及",
+        "另外"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-14.txt:14:14": {
@@ -1062,14 +1051,14 @@
         "2026-04-15"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "我来",
         "搜索",
         "rustfs",
         "一个",
         "github",
-        "榜上"
+        "榜上",
+        "提到"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-14.txt:15:15": {
@@ -1094,14 +1083,14 @@
         "2026-04-15"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "有了",
         "全面",
         "数据",
         "阅读",
         "项目",
-        "配置"
+        "配置",
+        "文件"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-14.txt:16:16": {
@@ -1129,11 +1118,11 @@
         "4月5-14日",
         "v0.8.0",
         "oh-my-claudecode",
-        "assistant",
         "现在",
         "有了",
         "所有",
-        "数据"
+        "数据",
+        "我来"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-14.txt:17:17": {
@@ -1158,7 +1147,6 @@
         "2026-04-15"
       ],
       "conceptTags": [
-        "assistant",
         "phase",
         "项目",
         "档案",
@@ -1188,7 +1176,6 @@
       ],
       "conceptTags": [
         "last-seen-date",
-        "assistant",
         "现在",
         "更新",
         "跟踪",
@@ -1218,7 +1205,6 @@
       ],
       "conceptTags": [
         "5.1",
-        "assistant",
         "phase",
         "同步",
         "更新",
@@ -1250,7 +1236,6 @@
       "conceptTags": [
         "5.2",
         "daily-report.md",
-        "assistant",
         "更新",
         "report.md"
       ]
@@ -1278,7 +1263,6 @@
       ],
       "conceptTags": [
         "5.3",
-        "assistant",
         "运行",
         "readme",
         "生成"
@@ -1307,7 +1291,6 @@
       ],
       "conceptTags": [
         "5.4",
-        "assistant",
         "运行",
         "html",
         "生成"
@@ -1336,7 +1319,6 @@
       ],
       "conceptTags": [
         "5.5",
-        "assistant",
         "验证",
         "生成",
         "结果"
@@ -1364,14 +1346,14 @@
         "2026-04-15"
       ],
       "conceptTags": [
-        "assistant",
         "所有",
         "文件",
         "均已",
         "生成",
         "大小",
         "合理",
-        "现在"
+        "现在",
+        "执行"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-14.txt:25:25": {
@@ -1396,7 +1378,6 @@
         "2026-04-15"
       ],
       "conceptTags": [
-        "assistant",
         "验证",
         "通过",
         "现在",
@@ -1429,12 +1410,12 @@
       "conceptTags": [
         "nuwa-skill",
         "last-se",
-        "assistant",
         "push",
         "成功",
         "所有",
         "阶段",
-        "完成"
+        "完成",
+        "执行"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-15.txt:1:1": {
@@ -1460,12 +1441,12 @@
       "conceptTags": [
         "skills/github-daily/skill.md",
         "docs/generate-pages.py",
-        "user",
         "cron",
         "234619c8",
         "3cae",
         "42d8",
-        "ad26"
+        "ad26",
+        "7261bef5e6a7"
       ]
     },
     "memory:memory/2026-04-16.md:188:191": {
@@ -1501,8 +1482,8 @@
         "4-4",
         "reflections",
         "theme",
-        "assistant",
-        "kept"
+        "kept",
+        "surfacing"
       ]
     },
     "memory:memory/2026-04-16.md:194:194": {
@@ -1563,12 +1544,12 @@
       "conceptTags": [
         "skills/github-daily/skill.md",
         "docs/generate-pages.py",
-        "user",
         "cron",
         "234619c8",
         "3cae",
         "42d8",
-        "ad26"
+        "ad26",
+        "7261bef5e6a7"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-16.txt:2:2": {
@@ -1592,14 +1573,14 @@
         "2026-04-16"
       ],
       "conceptTags": [
-        "assistant",
         "phase",
         "通过",
         "进入",
         "今日",
         "研究",
         "采集",
-        "github"
+        "github",
+        "trending"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-16.txt:3:3": {
@@ -1623,7 +1604,6 @@
         "2026-04-16"
       ],
       "conceptTags": [
-        "assistant",
         "github",
         "阻断",
         "尝试",
@@ -1653,14 +1633,14 @@
         "2026-04-16"
       ],
       "conceptTags": [
-        "assistant",
         "获取",
         "近期",
         "热门",
         "仓库",
         "查找",
         "真正",
-        "趋势"
+        "趋势",
+        "项目"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-16.txt:5:5": {
@@ -1684,14 +1664,14 @@
         "2026-04-16"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "查看",
         "现有",
         "日报",
         "了解",
         "上下文",
-        "然后"
+        "然后",
+        "研究"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-16.txt:6:6": {
@@ -1715,14 +1695,14 @@
         "2026-04-16"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "检查",
         "一下",
         "哪些",
         "现有",
         "项目",
-        "避免"
+        "避免",
+        "重复"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-16.txt:7:7": {
@@ -1746,14 +1726,14 @@
         "2026-04-16"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "我有",
         "足够",
         "上下文",
         "下来",
         "创建",
-        "日报"
+        "日报",
+        "项目"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-16.txt:8:8": {
@@ -1778,13 +1758,13 @@
       ],
       "conceptTags": [
         "创建/更新项目档案",
-        "assistant",
         "现在",
         "阶段",
         "创建",
         "更新",
         "项目",
-        "档案"
+        "档案",
+        "检查"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-16.txt:9:9": {
@@ -1808,14 +1788,14 @@
         "2026-04-16"
       ],
       "conceptTags": [
-        "assistant",
         "好的",
         "了解",
         "格式",
         "现在",
         "创建",
         "缺失",
-        "项目"
+        "项目",
+        "档案"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-16.txt:10:10": {
@@ -1839,7 +1819,6 @@
         "2026-04-16"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "更新",
         "mempalace"
@@ -1870,10 +1849,10 @@
         "daily-report",
         "generate-readme",
         "generate-pages",
-        "assistant",
         "phase",
         "同步",
-        "更新"
+        "更新",
+        "trend"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-16.txt:12:12": {
@@ -1898,7 +1877,6 @@
       ],
       "conceptTags": [
         "daily-report.md",
-        "assistant",
         "现在",
         "更新",
         "report.md"
@@ -1927,7 +1905,6 @@
       "conceptTags": [
         "generate-readme.py",
         "generate-pages.py",
-        "assistant",
         "现在",
         "运行"
       ]
@@ -1953,7 +1930,6 @@
         "2026-04-16"
       ],
       "conceptTags": [
-        "assistant",
         "第五",
         "阶段",
         "完成",
@@ -1983,7 +1959,6 @@
         "2026-04-16"
       ],
       "conceptTags": [
-        "assistant",
         "验证",
         "通过",
         "现在",
@@ -2012,7 +1987,6 @@
         "2026-04-16"
       ],
       "conceptTags": [
-        "assistant",
         "所有",
         "文件",
         "现在",
@@ -2045,10 +2019,10 @@
         "daily-report",
         "4-16",
         "llm-wiki",
-        "assistant",
         "全部",
         "完成",
-        "输出"
+        "输出",
+        "执行"
       ]
     },
     "memory:memory/2026-04-17.md:258:261": {
@@ -2084,8 +2058,8 @@
         "4-4",
         "reflections",
         "theme",
-        "assistant",
-        "kept"
+        "kept",
+        "surfacing"
       ]
     },
     "memory:memory/2026-04-17.md:262:265": {
@@ -2159,7 +2133,7 @@
         "possible",
         "lasting",
         "truths",
-        "assistant"
+        "phase"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:1:1": {
@@ -2185,12 +2159,12 @@
       "conceptTags": [
         "skills/github-daily/skill.md",
         "docs/generate-pages.py",
-        "user",
         "cron",
         "234619c8",
         "3cae",
         "42d8",
-        "ad26"
+        "ad26",
+        "7261bef5e6a7"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:2:2": {
@@ -2214,14 +2188,14 @@
         "2026-04-17"
       ],
       "conceptTags": [
-        "assistant",
         "phase",
         "通过",
         "缺口",
         "进入",
         "今日",
         "研究",
-        "开始"
+        "开始",
+        "采集"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:3:3": {
@@ -2245,14 +2219,14 @@
         "2026-04-17"
       ],
       "conceptTags": [
-        "assistant",
         "好的",
         "已经有",
         "模板",
         "现在",
         "获取",
         "更多",
-        "关于"
+        "关于",
+        "今天"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:4:4": {
@@ -2276,14 +2250,14 @@
         "2026-04-17"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "我来",
         "获取",
         "更多",
         "关于",
         "热门",
-        "持续"
+        "持续",
+        "项目"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:5:5": {
@@ -2307,14 +2281,14 @@
         "2026-04-17"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "看看",
         "今天",
         "关键",
         "项目",
         "以便",
-        "更好"
+        "更好",
+        "理解"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:6:6": {
@@ -2338,14 +2312,14 @@
         "2026-04-17"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "有了",
         "足够",
         "数据",
         "我再",
         "检查",
-        "一下"
+        "一下",
+        "现有"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:7:7": {
@@ -2370,13 +2344,13 @@
       ],
       "conceptTags": [
         "generate-readme.py",
-        "assistant",
         "现在",
         "有了",
         "足够",
         "上下文",
         "我来",
-        "生成"
+        "生成",
+        "今日"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:8:8": {
@@ -2405,9 +2379,9 @@
         "weavemindai/weft",
         "xataio/xata",
         "darwin-skill",
-        "assistant",
         "现在",
-        "我来"
+        "我来",
+        "创建"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:9:9": {
@@ -2431,14 +2405,14 @@
         "2026-04-17"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "第四",
         "阶段",
         "生成",
         "项目",
         "档案",
-        "我来"
+        "我来",
+        "创建"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:10:10": {
@@ -2463,13 +2437,13 @@
       ],
       "conceptTags": [
         "last-seen-date",
-        "assistant",
         "现在",
         "更新",
         "codeburn",
         "现有",
         "项目",
-        "配置"
+        "配置",
+        "文件"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-17.txt:11:11": {
@@ -2494,7 +2468,6 @@
       ],
       "conceptTags": [
         "trend-index.md",
-        "assistant",
         "现在",
         "阶段",
         "同步",
@@ -2525,7 +2498,6 @@
       ],
       "conceptTags": [
         "daily-report.md",
-        "assistant",
         "现在",
         "更新",
         "report.md"
@@ -2554,7 +2526,6 @@
       "conceptTags": [
         "generate-readme.py",
         "generate-pages.py",
-        "assistant",
         "现在",
         "运行"
       ]
@@ -2580,7 +2551,6 @@
         "2026-04-17"
       ],
       "conceptTags": [
-        "assistant",
         "好的",
         "现在",
         "验证",
@@ -2609,7 +2579,6 @@
         "2026-04-17"
       ],
       "conceptTags": [
-        "assistant",
         "阶段",
         "验证"
       ]
@@ -2635,7 +2604,6 @@
         "2026-04-17"
       ],
       "conceptTags": [
-        "assistant",
         "验证",
         "通过",
         "现在",
@@ -2667,12 +2635,12 @@
       "conceptTags": [
         "darwin-skill",
         "dflash-mlx",
-        "assistant",
         "全部",
         "完成",
         "执行",
         "报告",
-        "validate"
+        "validate",
+        "结果"
       ]
     },
     "memory:memory/2026-04-18.md:333:336": {
@@ -2708,8 +2676,8 @@
         "4-4",
         "reflections",
         "theme",
-        "assistant",
-        "kept"
+        "kept",
+        "surfacing"
       ]
     },
     "memory:memory/2026-04-18.md:337:340": {
@@ -2783,7 +2751,7 @@
         "possible",
         "lasting",
         "truths",
-        "assistant"
+        "phase"
       ],
       "promotedAt": "2026-04-22T19:03:22.564Z"
     },
@@ -2810,12 +2778,12 @@
       "conceptTags": [
         "skills/github-daily/skill.md",
         "docs/generate-pages.py",
-        "user",
         "cron",
         "234619c8",
         "3cae",
         "42d8",
-        "ad26"
+        "ad26",
+        "7261bef5e6a7"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-18.txt:2:2": {
@@ -2839,14 +2807,14 @@
         "2026-04-18"
       ],
       "conceptTags": [
-        "assistant",
         "phase",
         "通过",
         "缺口",
         "进入",
         "今日",
         "研究",
-        "获取"
+        "获取",
+        "github"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-18.txt:3:3": {
@@ -2870,14 +2838,14 @@
         "2026-04-18"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "获取",
         "热门",
         "存储",
         "检查",
         "最新",
-        "每日"
+        "每日",
+        "报告"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-18.txt:4:4": {
@@ -2901,14 +2869,14 @@
         "2026-04-18"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "获取",
         "更多",
         "关于",
         "今天",
         "关键",
-        "项目"
+        "项目",
+        "数据"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-18.txt:5:5": {
@@ -2932,7 +2900,6 @@
         "2026-04-18"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "获取",
         "一些",
@@ -2963,14 +2930,14 @@
         "2026-04-18"
       ],
       "conceptTags": [
-        "assistant",
         "好的",
         "现在",
         "足够",
         "数据",
         "再来",
         "检查",
-        "一下"
+        "一下",
+        "昨天"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-18.txt:7:7": {
@@ -2994,14 +2961,14 @@
         "2026-04-18"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "有了",
         "足够",
         "数据",
         "项目",
         "模板",
-        "作为"
+        "作为",
+        "参考"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-18.txt:8:8": {
@@ -3027,12 +2994,12 @@
       "conceptTags": [
         "anything-analyzer",
         "darwin-skill",
-        "assistant",
         "好的",
         "现在",
         "我来",
         "创建",
-        "今日"
+        "今日",
+        "日报"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-18.txt:9:9": {
@@ -3059,11 +3026,11 @@
         "anything-analyzer",
         "video-use",
         "darwin-skill",
-        "assistant",
         "现在",
         "第四",
         "阶段",
-        "创建"
+        "创建",
+        "项目"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-18.txt:10:10": {
@@ -3088,13 +3055,13 @@
       ],
       "conceptTags": [
         "last-seen-date",
-        "assistant",
         "现在",
         "更新",
         "现有",
         "项目",
         "配置",
-        "文件"
+        "文件",
+        "包含"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-18.txt:11:11": {
@@ -3120,12 +3087,12 @@
       "conceptTags": [
         "trend-index.md",
         "daily-report.md",
-        "assistant",
         "现在",
         "阶段",
         "同步",
         "更新",
-        "trend"
+        "trend",
+        "index.md"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-18.txt:12:12": {
@@ -3150,7 +3117,6 @@
       ],
       "conceptTags": [
         "daily-report.md",
-        "assistant",
         "现在",
         "更新",
         "report.md"
@@ -3177,7 +3143,6 @@
         "2026-04-18"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "使用",
         "脚本",
@@ -3207,7 +3172,6 @@
         "2026-04-18"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "验证",
         "生成",
@@ -3235,14 +3199,14 @@
         "2026-04-18"
       ],
       "conceptTags": [
-        "assistant",
         "所有",
         "文件",
         "均已",
         "正确",
         "生成",
         "现在",
-        "阶段"
+        "阶段",
+        "验证"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-18.txt:16:16": {
@@ -3266,14 +3230,14 @@
         "2026-04-18"
       ],
       "conceptTags": [
-        "assistant",
         "验证",
         "通过",
         "现在",
         "执行",
         "git",
         "commit",
-        "push"
+        "push",
+        "操作"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-18.txt:17:17": {
@@ -3302,9 +3266,9 @@
         "anything-analyzer",
         "video-use",
         "darwin-skill",
-        "assistant",
         "全部",
-        "完成"
+        "完成",
+        "推送"
       ]
     },
     "memory:memory/2026-04-19.md:228:231": {
@@ -3341,8 +3305,8 @@
         "4-4",
         "reflections",
         "theme",
-        "assistant",
-        "kept"
+        "kept",
+        "surfacing"
       ]
     },
     "memory:memory/2026-04-19.md:232:235": {
@@ -3418,7 +3382,7 @@
         "possible",
         "lasting",
         "truths",
-        "assistant"
+        "phase"
       ],
       "promotedAt": "2026-04-23T19:03:19.958Z"
     },
@@ -3446,12 +3410,12 @@
       "conceptTags": [
         "skills/github-daily/skill.md",
         "docs/generate-pages.py",
-        "user",
         "cron",
         "234619c8",
         "3cae",
         "42d8",
-        "ad26"
+        "ad26",
+        "7261bef5e6a7"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:2:2": {
@@ -3476,14 +3440,14 @@
         "2026-04-19"
       ],
       "conceptTags": [
-        "assistant",
         "phase",
         "通过",
         "gaps",
         "进入",
         "今日",
         "研究",
-        "采集"
+        "采集",
+        "github"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:3:3": {
@@ -3508,14 +3472,14 @@
         "2026-04-19"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "我来",
         "获取",
         "几个",
         "关键",
         "项目",
-        "详细"
+        "详细",
+        "信息"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:4:4": {
@@ -3540,14 +3504,14 @@
         "2026-04-19"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "检查",
         "一下",
         "昨天",
         "跟踪",
         "项目",
-        "现有"
+        "现有",
+        "概况"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:5:5": {
@@ -3572,14 +3536,14 @@
         "2026-04-19"
       ],
       "conceptTags": [
-        "assistant",
         "好的",
         "现在",
         "最新",
         "代码",
         "开始",
         "创建",
-        "日报"
+        "日报",
+        "首先"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:6:6": {
@@ -3609,9 +3573,9 @@
         "ai-native",
         "llm/human/api",
         "one-shot",
-        "assistant",
         "现在",
-        "我来"
+        "我来",
+        "创建"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:7:7": {
@@ -3639,11 +3603,11 @@
         "agentic-stack",
         "lingbot-map",
         "meta-harness",
-        "assistant",
         "现在",
         "第四",
         "阶段",
-        "生成"
+        "生成",
+        "项目"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:8:8": {
@@ -3669,7 +3633,6 @@
       ],
       "conceptTags": [
         "last-seen-date",
-        "assistant",
         "现在",
         "更新",
         "weft",
@@ -3701,12 +3664,12 @@
       "conceptTags": [
         "trend-index",
         "daily-report",
-        "assistant",
         "phase",
         "同步",
         "更新",
         "trend",
-        "index"
+        "index",
+        "report"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-19.txt:10:10": {
@@ -3731,7 +3694,6 @@
         "2026-04-19"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "生成",
         "readme",
@@ -3760,7 +3722,6 @@
         "2026-04-19"
       ],
       "conceptTags": [
-        "assistant",
         "phase",
         "完成",
         "最终",
@@ -3789,7 +3750,6 @@
         "2026-04-19"
       ],
       "conceptTags": [
-        "assistant",
         "phase",
         "通过",
         "git",
@@ -3822,10 +3782,10 @@
         "lingbot-map",
         "meta-harness",
         "last-seen",
-        "assistant",
         "全部",
         "完成",
-        "执行"
+        "执行",
+        "报告"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:1:1": {
@@ -3852,12 +3812,12 @@
       "conceptTags": [
         "skills/github-daily/skill.md",
         "docs/generate-pages.py",
-        "user",
         "cron",
         "234619c8",
         "3cae",
         "42d8",
-        "ad26"
+        "ad26",
+        "7261bef5e6a7"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:2:2": {
@@ -3882,14 +3842,14 @@
         "2026-04-20"
       ],
       "conceptTags": [
-        "assistant",
         "phase",
         "通过",
         "进入",
         "今日",
         "研究",
         "采集",
-        "github"
+        "github",
+        "trending"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:3:3": {
@@ -3914,14 +3874,14 @@
         "2026-04-20"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "我来",
         "获取",
         "一些",
         "关键",
         "项目",
-        "详细"
+        "详细",
+        "信息"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:4:4": {
@@ -3946,14 +3906,14 @@
         "2026-04-20"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "有了",
         "足够",
         "数据",
         "检查",
         "一下",
-        "现有"
+        "现有",
+        "仓库"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:5:5": {
@@ -3982,10 +3942,10 @@
         "self-healing",
         "browser-use",
         "lingbot-map",
-        "assistant",
         "好的",
         "现在",
-        "已经有"
+        "已经有",
+        "上下文"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:6:6": {
@@ -4010,14 +3970,14 @@
         "2026-04-20"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "进入",
         "第四",
         "阶段",
         "生成",
         "项目",
-        "档案"
+        "档案",
+        "检查"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:7:7": {
@@ -4045,11 +4005,11 @@
         "browser-harness",
         "design-extract",
         "html-ppt-skill",
-        "assistant",
         "需要",
         "browser",
         "harness",
-        "design"
+        "design",
+        "extract"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:8:8": {
@@ -4074,7 +4034,6 @@
         "2026-04-20"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "更新",
         "wterm",
@@ -4106,12 +4065,12 @@
       "conceptTags": [
         "trend-index.md",
         "daily-report.md",
-        "assistant",
         "第五",
         "阶段",
         "同步",
         "更新",
-        "trend"
+        "trend",
+        "index.md"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-20.txt:10:10": {
@@ -4136,7 +4095,6 @@
         "2026-04-20"
       ],
       "conceptTags": [
-        "assistant",
         "下来",
         "生成",
         "readme"
@@ -4164,7 +4122,6 @@
         "2026-04-20"
       ],
       "conceptTags": [
-        "assistant",
         "phase",
         "完成",
         "验证"
@@ -4192,7 +4149,6 @@
         "2026-04-20"
       ],
       "conceptTags": [
-        "assistant",
         "验证",
         "通过",
         "git",
@@ -4224,11 +4180,11 @@
         "browser-harness",
         "design-extract",
         "html-ppt-skill",
-        "assistant",
         "执行",
         "报告",
         "validate",
-        "结果"
+        "结果",
+        "phase"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:1:1": {
@@ -4255,12 +4211,12 @@
       "conceptTags": [
         "skills/github-daily/skill.md",
         "docs/generate-pages.py",
-        "user",
         "cron",
         "234619c8",
         "3cae",
         "42d8",
-        "ad26"
+        "ad26",
+        "7261bef5e6a7"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:2:2": {
@@ -4285,7 +4241,6 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "assistant",
         "phase",
         "通过",
         "进入",
@@ -4317,14 +4272,14 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "我来",
         "检查",
         "今天",
         "已有",
         "内容",
-        "阅读"
+        "阅读",
+        "项目"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:4:4": {
@@ -4349,7 +4304,6 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "我来",
         "创建",
@@ -4380,7 +4334,6 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "assistant",
         "阶段",
         "生成",
         "项目",
@@ -4409,7 +4362,6 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "更新",
         "现有",
@@ -4440,7 +4392,6 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "assistant",
         "阶段",
         "同步"
       ]
@@ -4467,7 +4418,6 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "assistant",
         "phase",
         "验证"
       ]
@@ -4494,7 +4444,6 @@
         "2026-04-21"
       ],
       "conceptTags": [
-        "assistant",
         "验证",
         "通过",
         "执行",
@@ -4526,12 +4475,12 @@
       "conceptTags": [
         "agentic-stack",
         "design-extract",
-        "assistant",
         "push",
         "成功",
         "执行",
         "报告",
-        "validate"
+        "validate",
+        "结果"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:1:1": {
@@ -4558,12 +4507,12 @@
       "conceptTags": [
         "skills/github-daily/skill.md",
         "docs/generate-pages.py",
-        "user",
         "cron",
         "234619c8",
         "3cae",
         "42d8",
-        "ad26"
+        "ad26",
+        "7261bef5e6a7"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:2:2": {
@@ -4588,7 +4537,6 @@
         "2026-04-22"
       ],
       "conceptTags": [
-        "assistant",
         "phase",
         "通过",
         "进入",
@@ -4619,7 +4567,6 @@
       ],
       "conceptTags": [
         "key-projects",
-        "assistant",
         "现在",
         "获取",
         "具体",
@@ -4649,14 +4596,14 @@
         "2026-04-22"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "我来",
         "检查",
         "现有",
         "项目",
         "最近",
-        "日报"
+        "日报",
+        "了解"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:5:5": {
@@ -4687,8 +4634,8 @@
         "openmythos.md",
         "darwin-skill",
         "lingbot-map",
-        "assistant",
-        "好的"
+        "好的",
+        "现在"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:6:6": {
@@ -4713,14 +4660,14 @@
         "2026-04-22"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "我来",
         "检查",
         "昨天",
         "提及",
         "项目",
-        "最新"
+        "最新",
+        "查找"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:7:7": {
@@ -4749,10 +4696,10 @@
         "diagram-design",
         "cathrynlallery/diagram-design",
         "tw93/kami",
-        "assistant",
         "现在",
         "我来",
-        "收集"
+        "收集",
+        "今天"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:8:8": {
@@ -4777,14 +4724,14 @@
         "2026-04-22"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "有了",
         "所有",
         "数据",
         "我来",
         "创建",
-        "日报"
+        "日报",
+        "新的"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:9:9": {
@@ -4811,12 +4758,12 @@
       "conceptTags": [
         "diagram-design",
         "browser-harness",
-        "assistant",
         "现在",
         "进入",
         "阶段",
         "创建",
-        "新的"
+        "新的",
+        "项目"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:10:10": {
@@ -4841,14 +4788,14 @@
         "2026-04-22"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "使用",
         "最新",
         "数据",
         "更新",
         "现有",
-        "项目"
+        "项目",
+        "档案"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:11:11": {
@@ -4875,12 +4822,12 @@
       "conceptTags": [
         "trend-index",
         "daily-report",
-        "assistant",
         "现在",
         "阶段",
         "同步",
         "我来",
-        "更新"
+        "更新",
+        "trend"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-22.txt:12:12": {
@@ -4905,7 +4852,6 @@
         "2026-04-22"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "生成",
         "readme",
@@ -4934,7 +4880,6 @@
         "2026-04-22"
       ],
       "conceptTags": [
-        "assistant",
         "所有",
         "文件",
         "为非",
@@ -4964,7 +4909,6 @@
         "2026-04-22"
       ],
       "conceptTags": [
-        "assistant",
         "验证",
         "通过",
         "现在",
@@ -4999,10 +4943,10 @@
         "04-22",
         "diagram-design",
         "browser-harness",
-        "assistant",
         "push",
         "成功",
-        "执行"
+        "执行",
+        "报告"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:1:1": {
@@ -5029,12 +4973,12 @@
       "conceptTags": [
         "skills/github-daily/skill.md",
         "docs/generate-pages.py",
-        "user",
         "cron",
         "234619c8",
         "3cae",
         "42d8",
-        "ad26"
+        "ad26",
+        "7261bef5e6a7"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:2:2": {
@@ -5059,14 +5003,14 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "assistant",
         "开始",
         "执行",
         "每日",
         "github",
         "趋势",
         "研究",
-        "任务"
+        "任务",
+        "进行"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:3:3": {
@@ -5091,14 +5035,14 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "assistant",
         "phase",
         "通过",
         "进入",
         "今日",
         "研究",
         "开始",
-        "采集"
+        "采集",
+        "github"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:4:4": {
@@ -5124,7 +5068,6 @@
       ],
       "conceptTags": [
         "web-fetch",
-        "assistant",
         "阻止",
         "尝试",
         "替代",
@@ -5153,14 +5096,14 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "assistant",
         "数据",
         "采集",
         "完成",
         "现在",
         "查看",
         "最近",
-        "几天"
+        "几天",
+        "日报"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:6:6": {
@@ -5185,14 +5128,14 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "我先",
         "同步",
         "远程",
         "仓库",
         "然后",
-        "生成"
+        "生成",
+        "今日"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:7:7": {
@@ -5223,8 +5166,8 @@
         "huashu-design",
         "openmythos/kami/spec-kit",
         "claw-code",
-        "assistant",
-        "远程"
+        "远程",
+        "已是"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:8:8": {
@@ -5249,7 +5192,6 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "assistant",
         "数据",
         "充分",
         "现在",
@@ -5281,14 +5223,14 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "assistant",
         "phase",
         "完成",
         "进入",
         "生成",
         "项目",
         "档案",
-        "先看"
+        "先看",
+        "模板"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:10:10": {
@@ -5315,12 +5257,12 @@
       "conceptTags": [
         "browser-harness",
         "claw-code",
-        "assistant",
         "现在",
         "更新",
         "已有",
         "项目",
-        "档案"
+        "档案",
+        "browser"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-23.txt:11:11": {
@@ -5345,7 +5287,6 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "assistant",
         "phase",
         "完成",
         "进入",
@@ -5374,7 +5315,6 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "运行",
         "readme",
@@ -5404,7 +5344,6 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "assistant",
         "phase",
         "完成",
         "最终",
@@ -5433,7 +5372,6 @@
         "2026-04-23"
       ],
       "conceptTags": [
-        "assistant",
         "验证",
         "通过",
         "git",
@@ -5467,10 +5405,10 @@
         "open-codesign",
         "browser-harness",
         "claw-code",
-        "assistant",
         "推送",
         "成功",
-        "执行"
+        "执行",
+        "报告"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:1:1": {
@@ -5497,12 +5435,12 @@
       "conceptTags": [
         "skills/github-daily/skill.md",
         "docs/generate-pages.py",
-        "user",
         "cron",
         "234619c8",
         "3cae",
         "42d8",
-        "ad26"
+        "ad26",
+        "7261bef5e6a7"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:2:2": {
@@ -5527,7 +5465,6 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "assistant",
         "phase",
         "通过",
         "缺口",
@@ -5558,14 +5495,14 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "assistant",
         "good",
-        "the",
         "context",
         "now",
         "let",
         "gather",
-        "today's"
+        "today's",
+        "trending",
+        "data"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:4:4": {
@@ -5590,14 +5527,14 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "assistant",
         "now",
         "let",
         "check",
         "what",
         "projects",
         "already",
-        "profiles"
+        "profiles",
+        "know"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:5:5": {
@@ -5627,9 +5564,9 @@
         "browser-harness",
         "5.8k",
         "huashu-design",
-        "assistant",
         "good",
-        "now"
+        "now",
+        "clear"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:6:6": {
@@ -5654,7 +5591,6 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "assistant",
         "now",
         "let",
         "write",
@@ -5688,12 +5624,12 @@
       "conceptTags": [
         "agentic-stack",
         "agents-md",
-        "assistant",
         "now",
         "phase",
         "generate",
         "project",
-        "profiles"
+        "profiles",
+        "new"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:8:8": {
@@ -5720,12 +5656,12 @@
       "conceptTags": [
         "agentic-stack",
         "last-seen-date",
-        "assistant",
         "现在",
         "更新",
         "agentic",
         "stack",
-        "codeburn"
+        "codeburn",
+        "现有"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:9:9": {
@@ -5752,12 +5688,12 @@
       "conceptTags": [
         "trend-index",
         "daily-report",
-        "assistant",
         "第五",
         "阶段",
         "同步",
         "更新",
-        "trend"
+        "trend",
+        "index"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-24.txt:10:10": {
@@ -5782,7 +5718,6 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "assistant",
         "need",
         "check",
         "was",
@@ -5814,7 +5749,6 @@
       ],
       "conceptTags": [
         "daily-report.md",
-        "assistant",
         "现在",
         "更新",
         "report.md"
@@ -5842,7 +5776,6 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "生成",
         "readme"
@@ -5870,7 +5803,6 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "assistant",
         "我还",
         "生成",
         "新的",
@@ -5899,7 +5831,6 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "assistant",
         "很好",
         "阶段",
         "最终",
@@ -5928,7 +5859,6 @@
         "2026-04-24"
       ],
       "conceptTags": [
-        "assistant",
         "验证",
         "通过",
         "git",
@@ -5961,10 +5891,10 @@
         "daily-report",
         "agents-md",
         "agentic-stack",
-        "assistant",
         "push",
         "成功",
-        "执行"
+        "执行",
+        "报告"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:1:1": {
@@ -5991,12 +5921,12 @@
       "conceptTags": [
         "skills/github-daily/skill.md",
         "docs/generate-pages.py",
-        "user",
         "cron",
         "234619c8",
         "3cae",
         "42d8",
-        "ad26"
+        "ad26",
+        "7261bef5e6a7"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:2:2": {
@@ -6021,14 +5951,14 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "assistant",
         "phase",
         "通过",
         "进入",
         "今日",
         "研究",
         "开始",
-        "采集"
+        "采集",
+        "github"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:3:3": {
@@ -6054,13 +5984,13 @@
       ],
       "conceptTags": [
         "web-fetch",
-        "assistant",
         "阻断",
         "尝试",
         "通过",
         "搜索",
         "获取",
-        "趋势"
+        "趋势",
+        "数据"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:4:4": {
@@ -6085,7 +6015,6 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "检查",
         "一下",
@@ -6117,14 +6046,14 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "assistant",
         "好的",
         "可以",
         "看到",
         "已经",
         "存在",
         "内容",
-        "现在"
+        "现在",
+        "收集"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:6:6": {
@@ -6150,13 +6079,13 @@
       ],
       "conceptTags": [
         "vm/protocol",
-        "assistant",
         "现在",
         "有了",
         "足够",
         "数据",
         "我来",
-        "确定"
+        "确定",
+        "今天"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:7:7": {
@@ -6181,14 +6110,14 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "assistant",
         "需要",
         "创建",
         "新的",
         "项目",
         "配置",
         "文件",
-        "更新"
+        "更新",
+        "mempalace"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:8:8": {
@@ -6213,14 +6142,14 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "assistant",
         "好的",
         "格式",
         "已经",
         "了解",
         "得很",
         "清楚",
-        "现在"
+        "现在",
+        "项目"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:9:9": {
@@ -6245,14 +6174,14 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "拥有",
         "所需",
         "一切",
         "创建",
         "今天",
-        "每日"
+        "每日",
+        "报告"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:10:10": {
@@ -6277,7 +6206,6 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "创建",
         "新的",
@@ -6307,14 +6235,14 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "更新",
         "mempalace",
         "个人",
         "资料",
         "上次",
-        "看到"
+        "看到",
+        "日期"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:12:12": {
@@ -6341,12 +6269,12 @@
       "conceptTags": [
         "trend-index",
         "daily-report",
-        "assistant",
         "现在",
         "第五",
         "阶段",
         "同步",
-        "更新"
+        "更新",
+        "trend"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-25.txt:13:13": {
@@ -6371,7 +6299,6 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "assistant",
         "现在",
         "生成",
         "readme",
@@ -6400,7 +6327,6 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "assistant",
         "所有",
         "文件",
         "均已",
@@ -6431,7 +6357,6 @@
         "2026-04-25"
       ],
       "conceptTags": [
-        "assistant",
         "验证",
         "通过",
         "现在",
@@ -6465,11 +6390,11 @@
         "46.5k",
         "49.5k",
         "last-seen",
-        "assistant",
         "push",
         "成功",
         "执行",
-        "报告"
+        "报告",
+        "validate"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:1:1": {
@@ -6496,12 +6421,12 @@
       "conceptTags": [
         "skills/github-daily/skill.md",
         "docs/generate-pages.py",
-        "user",
         "cron",
         "234619c8",
         "3cae",
         "42d8",
-        "ad26"
+        "ad26",
+        "7261bef5e6a7"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:2:2": {
@@ -6526,7 +6451,6 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "assistant",
         "phase",
         "通过",
         "进入",
@@ -6557,7 +6481,6 @@
       ],
       "conceptTags": [
         "web-fetch",
-        "assistant",
         "阻止",
         "改用",
         "cli"
@@ -6585,14 +6508,14 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "assistant",
         "now",
         "enough",
         "data",
         "let",
         "create",
-        "the",
-        "report"
+        "report",
+        "project",
+        "profiles"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:5:5": {
@@ -6618,7 +6541,6 @@
       ],
       "conceptTags": [
         "key-projects",
-        "assistant",
         "now",
         "phase",
         "generate",
@@ -6649,7 +6571,6 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "assistant",
         "now",
         "phase",
         "cascade",
@@ -6678,14 +6599,14 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "assistant",
         "好的",
         "所有",
         "文件",
         "均已",
         "生成",
         "第六",
-        "阶段"
+        "阶段",
+        "验证"
       ]
     },
     "memory:memory/.dreams/session-corpus/2026-04-26.txt:8:8": {
@@ -6710,7 +6631,6 @@
         "2026-04-26"
       ],
       "conceptTags": [
-        "assistant",
         "验证",
         "通过",
         "git",
@@ -6740,13 +6660,13 @@
       ],
       "conceptTags": [
         "cli-anything",
-        "assistant",
         "执行",
         "报告",
         "validate",
         "结果",
         "phase",
-        "通过"
+        "通过",
+        "errors"
       ]
     }
   }

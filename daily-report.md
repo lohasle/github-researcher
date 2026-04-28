@@ -4,6 +4,21 @@
 
 ---
 
+## 2026-04-29
+
+**核心主题：** AI 记忆层基础设施竞赛升温 · Agent Skill 生态进入长尾分化期 · Browser Agent 向 Harness 模式收敛
+
+**关键项目：**
+- 🧠 MemPalace (50.2k stars) — 最强开源 AI 记忆系统，LongMemEval 96.6%
+- 🕸️ Graphify (37.3k stars) — 跨 Agent 知识图谱 Skill，10+ 平台兼容
+- 📦 CubeSandbox (4.6k stars) — 腾讯云 Rust+KVM 沙箱，60ms 冷启动
+- ♞ Browser Harness (7.9k stars) — Self-Healing 浏览器 Harness，CDP 直连
+- 🎵 Harmonist (825 stars) — 186 Agent 零依赖编排，机械协议执行
+
+→ [查看完整日报](daily/2026-04-29.html)
+
+---
+
 ## 2026-04-28
 
 **核心主题：** 国产大模型 MoE 密集发布（Hy3 + Kimi K2.6）· Code Intelligence 走向 MCP-Native · Claude Code Skill 生态爆发

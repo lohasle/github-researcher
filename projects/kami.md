@@ -4,7 +4,7 @@ slug: "kami"
 date_added: "2026-04-26"
 category: "工具型"
 emoji: "📄"
-stars: "3.2k stars"
+stars: "3,733 stars"
 stars_delta: "5天3K+，高速"
 language: "HTML"
 score: 68

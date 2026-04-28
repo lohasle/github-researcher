@@ -4,7 +4,7 @@ slug: "graphify"
 date_added: "2026-04-26"
 category: "工具型"
 emoji: "🧠"
-stars: "34.8k stars"
+stars: "37,280 stars"
 stars_delta: "持续高速增长"
 language: "Python"
 score: 82

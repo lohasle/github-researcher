@@ -1,19 +1,33 @@
 {
   "version": 3,
   "files": {
-    "github-researcher:sessions/2944bf29-2a7d-4970-a696-3f9de1545761.jsonl.deleted.2026-04-25T22-06-25.085Z": {
-      "mtimeMs": 1777068377147,
-      "size": 168299,
-      "contentHash": "72aec0074867d5741b8d839471d6e57a2aa8b0adb1fe7f69952e2a63e388be46",
-      "lineCount": 16,
-      "lastContentLine": 16
+    "github-researcher:sessions/ca8ae661-c121-4d40-afba-f5ccbe71074d.jsonl.deleted.2026-04-27T22-16-59.172Z": {
+      "mtimeMs": 1777241087250,
+      "size": 114758,
+      "contentHash": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
+      "lineCount": 0,
+      "lastContentLine": 0
     },
-    "github-researcher:sessions/b2b7dcdc-9e14-4832-911e-238a07109a50.jsonl": {
-      "mtimeMs": 1777154781013,
-      "size": 139372,
-      "contentHash": "199aacb90154b125ad672d0c573d208bd43178d08dca8f4201542d8de61a54dc",
-      "lineCount": 9,
-      "lastContentLine": 9
+    "github-researcher:sessions/d43258fe-76a5-4719-a9ab-cb42fb1a904c.checkpoint.820ffdb9-6aa1-43f5-af04-39476554827e.jsonl": {
+      "mtimeMs": 1777328114329,
+      "size": 475924,
+      "contentHash": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
+      "lineCount": 0,
+      "lastContentLine": 0
+    },
+    "github-researcher:sessions/d43258fe-76a5-4719-a9ab-cb42fb1a904c.jsonl": {
+      "mtimeMs": 1777328215753,
+      "size": 498687,
+      "contentHash": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
+      "lineCount": 0,
+      "lastContentLine": 0
+    },
+    "github-researcher:sessions/d43258fe-76a5-4719-a9ab-cb42fb1a904c.trajectory.jsonl": {
+      "mtimeMs": 1777328215977,
+      "size": 738885,
+      "contentHash": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
+      "lineCount": 0,
+      "lastContentLine": 0
     }
   },
   "seenMessages": {
@@ -249,6 +263,9 @@
       "9afbed5685eb9d1e48c051d7c13ac741d51e5836",
       "b5b48b38ebd9192737244382df9b0ae2e3b3a499",
       "99640ab15e0a9c5085f321bf13580a088b542411"
-    ]
+    ],
+    "github-researcher:ca8ae661-c121-4d40-afba-f5ccbe71074d": [],
+    "github-researcher:d43258fe-76a5-4719-a9ab-cb42fb1a904c.checkpoint.820ffdb9-6aa1-43f5-af04-39476554827e": [],
+    "github-researcher:d43258fe-76a5-4719-a9ab-cb42fb1a904c.trajectory": []
   }
 }

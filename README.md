@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-04-28）
+## 最新研究摘要（2026-04-29）
 
-**国产大模型 MoE 密集发布（Hy3 + Kimi K2.6）· Code Intelligence 走向 MCP-Native · Claude Code Skill 生态爆发**
+**AI 记忆层基础设施竞赛升温 · Agent Skill 生态进入长尾分化期 · Browser Agent 向 Harness 模式收敛**
 
 今日热榜新信号：
-- **Hy3-preview**（262 stars）：腾讯混元 295B MoE（21B 活跃参数），重建训练基础设施后首个模型
-- **Kimi K2.6**（10.7k stars）：月之暗面 1T MoE，300 Agent Swarm，SWE-Bench Pro 58.6% 登顶
-- **GitNexus**（28.6k stars）：Zero-Server Code Intelligence Engine，MCP 原生知识图谱
+- **MemPalace**（50.2k stars）：最强开源 AI 记忆系统，LongMemEval R@5 96.6%，本地优先零 API 调用
+- **Graphify**（37.3k stars）：跨 Agent 知识图谱 Skill，将代码/文档/论文转为可查询知识图谱
+- **CubeSandbox**（4.6k stars）：腾讯云 Rust+KVM 沙箱，60ms 冷启动，5MB 内存开销，E2B 兼容
 
+**→ [查看 2026-04-29 完整简报](daily/2026-04-29.md)**
 **→ [查看 2026-04-28 完整简报](daily/2026-04-28.md)**
 **→ [查看 2026-04-27 完整简报](daily/2026-04-27.md)**
 **→ [查看 2026-04-26 完整简报](daily/2026-04-26.md)**
-**→ [查看 2026-04-25 完整简报](daily/2026-04-25.md)**
 
 ---
 
@@ -24,22 +24,22 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-04-29](daily/2026-04-29.md) | AI 记忆层基础设施竞赛升温 · Agent Skill 生态进入长尾分化期 · | 5 个深度分析 |
 | [2026-04-28](daily/2026-04-28.md) | 国产大模型 MoE 密集发布（Hy3 + Kimi K2.6）· Code In | 5 个深度分析 |
 | [2026-04-27](daily/2026-04-27.md) | AI Memory 系统走向产品化 · Token 效率成为 Agent Ski | 4 个深度分析 |
 | [2026-04-26](daily/2026-04-26.md) | AI Agent Skill 生态爆发 · 零人类公司编排走出概念 · CLI  | 7 个深度分析 |
 | [2026-04-25](daily/2026-04-25.md) | AI Agent 安全基础设施成型 · Memory 层竞争从 API 转向嵌入 | 5 个深度分析 |
 | [2026-04-24](daily/2026-04-24.md) | Claude Code Skill 生态分化为垂直子赛道 · AI Coding | 5 个深度分析 |
 | [2026-04-23](daily/2026-04-23.md) | OpenMythos 重建 Claude 架构引发研究热潮 · Claude C | 5 个深度分析 |
-| [2026-04-22](daily/2026-04-22.md) | Browser Harness 持续爆发验证 Browser Use 赛道 ·  | 5 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **国产大模型 MoE 密集发布：Hy3 + Kimi K2.6 双雄并立**：相关项目 Hy3-preview, Kimi-K2.6。
-2. **Code Intelligence 走向 MCP-Native：GitNexus 28K+ Stars**：相关项目 GitNexus。
-3. **Claude Code Skill 生态爆发：PPT / Design / CAD 全覆盖**：相关项目 guizang-ppt-skill, huashu-design, text-to-cad。
-4. **Agent 编排协议化：Harmonist 零依赖 186 Agent**：相关项目 Harmonist, mercury-agent。
+1. **AI 记忆层基础设施竞赛：MemPalace 50K+ Stash 入局**：相关项目 MemPalace, stash。
+2. **Agent Skill 生态进入长尾分化：PPT / Design / CAD / Job-Search**：相关项目 guizang-ppt-skill, open-design, text-to-cad。
+3. **Browser Agent 向 Harness 模式收敛：Self-Healing + Domain Skill**：相关项目 browser-harness, obscura。
+4. **Agent 治理与可观测性：Harmonist + CodeBurn + Future-AGI**：相关项目 harmonist, codeburn, future-agi。
 
 ---
 
@@ -62,9 +62,9 @@
 
 ## 数据统计
 
-- 📊 项目档案：78 个
-- 📅 日报总数：22 期
-- 🔄 最近更新：2026-04-28
+- 📊 项目档案：81 个
+- 📅 日报总数：23 期
+- 🔄 最近更新：2026-04-29
 
 ---
 

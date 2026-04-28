@@ -2,10 +2,10 @@
 title: "MemPalace"
 slug: "mempalace"
 date_added: "2026-04-12"
-last_seen_date: "2026-04-27"
+last_seen_date: "2026-04-29"
 category: "基础设施候选"
 emoji: "🧠"
-stars: "49,458 stars"
+stars: "50,191 stars"
 stars_delta: "20天逼近5万"
 language: "Python"
 score: 88

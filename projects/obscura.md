@@ -4,7 +4,7 @@ slug: "obscura"
 date_added: "2026-04-27"
 category: "基础设施候选"
 emoji: "🕵️"
-stars: "6.0k stars"
+stars: "7,571 stars"
 stars_delta: "14天6K，稳步增长"
 language: "Rust"
 score: 78

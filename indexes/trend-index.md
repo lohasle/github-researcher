@@ -10,6 +10,40 @@ title: Trend Index — 趋势指数
 
 ---
 
+## 2026-04-30（第二十一版）
+
+### 本日新增项目（2026-04-30）
+
+| 项目 | 分类 | 热度信号 | 核心判断 | 建议 |
+|------|------|---------|---------|------|
+| OpenMythos | 学习型 | 11.2K stars（12天） | Claude Mythos RDT 架构理论重建，MLA+MoE | **高优先级跟踪** |
+| OpenChronicle | 基础设施候选 | 1.9K stars（9天） | 本地优先 Agent 记忆层，AX Tree 策略 | **高优先级跟踪** |
+| Open Design | 工具型 | 4.1K stars（2天） | Claude Design 开源替代，71 DS + 19 Skills | 关注 |
+| Agentic Stack | 基础设施候选 | 1.8K stars（15天） | .agent/ 标准目录，跨 Agent 可移植性 | 跟踪 |
+| Mercury Agent | 工具型 | 1.8K stars（10天） | Soul-Driven + 权限硬化 + Second Brain | 低优先级跟踪 |
+| Kami | 工具型 | 3.8K stars（10天） | 内容排版工具，tw93 出品 | 低优先级跟踪 |
+
+### 持续跟踪项目状态更新
+
+| 项目 | 上次 Stars | 今日 Stars | 变化 | 判断 |
+|------|-----------|-----------|------|------|
+| MemPalace | 50.2K | 50.5K | +0.3K | 稳定 |
+| Browser Harness | 7.9K | 8.4K | +0.5K | 稳定增长 |
+| Graphify | 37.3K | 37.5K | +0.2K | 稳定 |
+| CubeSandbox | 4.6K | 4.7K | +0.1K | 稳定 |
+| hermes-agent | 122.8K | 124.9K | +2.1K | 持续增长 |
+| superpowers | 171.5K | 173.0K | +1.5K | 稳定增长 |
+| Kami | 3.7K | 3.8K | +0.1K | 稳定 |
+
+### 趋势判断修正
+
+- **新增判断**：Claude Mythos 架构逆向工程引爆 ML 社区，RDT（Recurrent-Depth Transformer）代表推理时计算自适应方向
+- **新增判断**：Agent 记忆层进入本地优先时代，AX Tree 策略可能是成本最低的路径
+- **新增判断**：Agent 可移植性标准化窗口期 — `.agent/` 文件夹概念类似 `.env` 标准化
+- **延续判断**：Skill 生态从分化进入整合期，Open Design 将多个 Skill 纳入统一框架
+
+---
+
 ## 2026-04-29（第二十版）
 
 ### 本日新增项目（2026-04-29）

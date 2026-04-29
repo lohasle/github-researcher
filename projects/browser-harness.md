@@ -2,11 +2,11 @@
 title: "Browser Harness"
 slug: "browser-harness"
 date_added: "2026-04-20"
-last_seen_date: "2026-04-29"
+last_seen_date: "2026-04-30"
 category: "平台候选"
 emoji: "♞"
-stars: "7,882 stars"
-stars_delta: "10天从5K到7.9K，持续加速"
+stars: "8,441 stars"
+stars_delta: "13天从5K到8.4K，持续稳定增长"
 language: "Python"
 score: 85
 tags: ["browser", "CDP", "self-healing", "agent", "automation"]
@@ -69,4 +69,4 @@ url: "https://github.com/browser-use/browser-harness"
 ---
 *首次记录：2026-04-20*
 
-*最近更新：2026-04-23 — stars 增至 5.0k*
+*最近更新：2026-04-30 — stars 增至 8.4K，稳定上升，持续 commit 活跃*

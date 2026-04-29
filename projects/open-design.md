@@ -1,66 +1,73 @@
 ---
 title: "Open Design"
 slug: "open-design"
-date_added: "2026-04-29"
-last_seen_date: "2026-04-29"
+date_added: "2026-04-30"
 category: "工具型"
 emoji: "🎨"
-stars: "983 stars"
-stars_delta: "1天近1K，爆发增长"
+stars: "4.1k stars"
+stars_delta: "2天4.1K，极速增长"
 language: "TypeScript"
-score: 68
-tags: ["claude-design", "design-systems", "claude-code", "codex", "cursor", "skills"]
+score: 77
+tags: ["design", "claude-code", "skill", "byok", "design-systems", "open-source"]
 url: "https://github.com/nexu-io/open-design"
 ---
 
 # Open Design
 
 ## 一句话定位
-Anthropic Claude Design 的开源本地替代品：19 Skills + 71 品牌级 Design Systems + 沙箱预览 + HTML/PDF/PPTX 导出。
+开源 Claude Design 替代 — 71 个品牌级 Design Systems + 19 个 Skills，让任何 Coding Agent 成为设计引擎。
 
 ## 它解决的问题
-Anthropic 的 Claude Design 是付费功能，且不支持自定义。Open Design 提供本地优先的开源替代，支持多种 Agent 平台（Claude Code、Codex、Cursor、Gemini CLI、OpenCode、Qwen）。
+Anthropic 发布 Claude Design 后引爆了"AI 做设计"的需求，但 Claude Design 闭源、付费、云锁定、只支持 Anthropic 模型。Open Design 提供同等能力但完全开放。
 
-## 为什么值得关注（2026-04-29）
-昨天（4/28）创建，第一天就接近 1K stars。71 套品牌级 Design Systems 是实际价值点。跨 Agent 兼容是 Skill 生态的趋势。
+目标用户：使用 Coding Agent 的设计师、前端开发者、产品经理。
+
+## 为什么值得关注（2026-04-30）
+- 2 天 4.1K stars，增速极快
+- 整合了 huashu-design、guizang-ppt-skill、open-codesign 等多个热门项目的成果
+- BYOK 全层，支持 Claude Code / Codex / Cursor / Gemini CLI / OpenCode / Qwen / Copilot
 
 ## 热度来源判断
-爆发增长来自两个因素：(1) Claude Design 付费墙外溢需求；(2) 71 套 Design Systems 的即时可用价值。不是泡沫，有实际用户需求。
+**真实需求 + 生态聚合效应**。Claude Design 验证了市场，Open Design 满足了"我也要但不想被锁定"的需求。增速中部分来自关联项目的 Star 互带。
 
 ## 关键技术亮点
-1. **19 Skills 覆盖设计全流程**：从品牌识别到 UI 组件到输出
-2. **71 套品牌级 Design Systems**：开箱即用的设计系统
-3. **沙箱预览**：安全的实时预览环境
-4. **多格式导出**：HTML / PDF / PPTX
-5. **跨 Agent 兼容**：6+ Agent 平台通用
+
+1. **71 个品牌级 Design Systems**：涵盖 Linear、Stripe、Vercel、Airbnb、Tesla、Notion、Apple 等，基于 awesome-design-md 导入。
+2. **19 个 Composable Skills**：prototype、deck、mobile、dashboard、pricing、docs、blog、SaaS landing 等，按需组合。
+3. **5 种视觉方向**（Editorial Monocle / Modern Minimal / Tech Utility / Brutalist / Soft Warm），每种自带 OKLch 色板 + 字体栈。
+4. **Agent Runtime 架构**：本地 daemon 启动 CLI，Agent 获得真实的 Read/Write/Bash/WebFetch 能力，操作真实文件系统。
 
 ## 架构启发
-- Design-as-Code 正在成为 Agent Skill 的重要方向
-- 「开源替代付费功能」是快速获取用户的经典策略
-- Design Systems 的数量（71 套）是网络效应的起点
+
+**设计哲学**：不造 Agent，利用现有最强的 Coding Agent。Open Design 只做 Skill 层 + Design System 层 + Runtime 层。
+
+**Trade-off**：依赖外部 Agent 的能力上限，设计质量受限于底层 LLM 的设计"品味"。
 
 ## 定位判断
-Claude Design 的开源替代。与 huashu-design（HTML 原生设计）、DESIGN.md（设计规范）处于同一赛道。差异化在于 Design Systems 数量和跨 Agent 兼容。
+**工具型**，有平台化潜力。目前是高质量工具，如果 Skill 生态持续繁荣，可能成为 Agent 设计工作流的标准框架。
 
-## 风险 / 屏限 / 泡沫点
-1. 创建仅 1 天，代码质量和维护可持续性完全未知
-2. 71 套 Design Systems 的质量参差不齐，可能大部分是模板填充
-3. 与 Anthropic 官方 Claude Design 功能差距未知
-4. 「开源替代」策略的风险在于 Anthropic 可能随时升级 Claude Design 导致差距拉大
+## 风险 / 局限 / 泡沫点
+
+1. **2 天 4K stars 的泡沫风险**：部分增长来自关联项目的 Star 互带，实际活跃用户数需要 2-4 周观察。
+2. **依赖 LLM 设计能力**：设计质量的"天花板"完全取决于底层模型的视觉理解力，Skill 只能引导不能创造。
+3. **维护负担**：71 个 Design Systems 的持续更新是长期挑战。
 
 ## 与同类项目的关系
-- **Claude Design**（Anthropic 官方）：付费功能，闭源
-- **huashu-design**（9.4K stars）：HTML 原生设计 Skill，更聚焦
-- **DESIGN.md**（9.8K stars）：设计规范格式，不是工具
-- **guizang-ppt-skill**（3.8K stars）：PPT 生成 Skill，输出不同
+
+| 项目 | 定位 | 差异 |
+|------|------|------|
+| Claude Design | Anthropic 官方 | 闭源，仅 Anthropic 模型 |
+| open-codesign | 桌面 Electron 应用 | 聚焦桌面端，Open Design 是 Web + CLI |
+| huashu-design | 单一设计 Skill | 被 Open Design 整合 |
 
 ## 是否值得持续跟踪
-是。如果 71 套 Design Systems 质量过硬且有活跃更新，可能成为设计类 Skill 的首选。
+**是，中优先级**。Skill 生态整合方向正确，需要观察用户留存和 Design System 更新节奏。
 
 ## 后续观察点
-1. Design Systems 质量是否经得起实际使用验证
-2. 社区是否贡献新的 Design Systems
-3. 是否有企业团队采用
+
+1. 2 周后的 star 增速是否回落
+2. 71 个 Design Systems 的实际使用率和反馈
+3. 是否出现企业级用户案例
 
 ---
-*首次记录：2026-04-29*
+*首次记录：2026-04-30*

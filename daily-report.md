@@ -4,6 +4,22 @@
 
 ---
 
+## 2026-04-30
+
+**核心主题：** Claude 架构逆向工程引爆 ML 社区 · AI Agent 记忆层进入本地优先时代 · Coding Agent Harness 标准化加速
+
+**关键项目：**
+- 🧬 OpenMythos (11.2k stars) — Claude Mythos RDT 架构理论重建，MLA+GQA+MoE
+- 📜 OpenChronicle (1.9k stars) — 开源本地优先 Agent 记忆层，AX Tree 策略
+- 🎨 Open Design (4.1k stars) — Claude Design 开源替代，71 DS + 19 Skills
+- ♞ Browser Harness (8.4k stars) — Self-Healing 浏览器 Harness，持续上升
+- 🧳 Agentic Stack (1.8k stars) — .agent/ 标准目录，跨 Agent 可移植
+- ☿ Mercury Agent (1.8k stars) — Soul-Driven Agent，权限硬化 + Second Brain
+
+→ [查看完整日报](daily/2026-04-30.html)
+
+---
+
 ## 2026-04-29
 
 **核心主题：** AI 记忆层基础设施竞赛升温 · Agent Skill 生态进入长尾分化期 · Browser Agent 向 Harness 模式收敛

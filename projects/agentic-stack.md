@@ -1,91 +1,72 @@
 ---
-title: "agentic-stack"
+title: "Agentic Stack"
 slug: "agentic-stack"
-date_added: "2026-04-19"
-last_seen_date: "2026-04-24"
-category: "平台候选"
-emoji: "🔄"
-stars: "1,489"
-score: 82
-tags: ["agent", "portability", "cross-harness", "memory", "skills"]
+date_added: "2026-04-30"
+category: "基础设施候选"
+emoji: "🧳"
+stars: "1.8k stars"
+stars_delta: "15天1.8K，稳步增长"
+language: "Python"
+score: 79
+tags: ["agent-portability", "memory", "skills", "interoperability", "coding-agent"]
 url: "https://github.com/codejunkie99/agentic-stack"
 ---
 
-# agentic-stack — Agent 可移植性层
+# Agentic Stack
 
 ## 一句话定位
+可移植的 `.agent/` 文件夹 — 一个 Agent 的人格、记忆、技能跨工具不丢失。
 
-Portable `.agent/` folder，一份记忆和技能跨 Claude Code / Cursor / Windsurf / OpenCode / OpenClaw / Hermes / Pi 等所有主流 coding agent harness。
+## 它解决的问题
+Coding Agent 生态碎片化：Claude Code、Cursor、Windsurf、OpenCode 等各有优势，但切换工具意味着丢失 Agent 积累的经验和技能配置。
 
-## 解决的问题
+目标用户：使用多种 Coding Agent 的开发者。
 
-当前开发者同时使用多个 coding agent（Claude Code、Cursor、Codex 等），每个工具的 memory、skills、配置互不兼容。切换工具意味着丢失上下文、重新配置。agentic-stack 把记忆和技能从具体工具中抽离出来，形成可移植的 `.agent/` 目录。
-
-## 为什么值得关注
-
-- 多 harness 并用已经是开发者的真实工作模式
-- 解决的是「工具锁定」这个平台经济层面的核心痛点
-- brew 一行安装 + 自动适配，工程体验好
-- 概念简洁，易于理解和传播
+## 为什么值得关注（2026-04-30）
+- 提出了 `.agent/` 标准目录概念，类似 `.env`、`.github/` 的定位
+- 跨 6+ 种主流 Coding Agent 兼容
+- 解决的是真实的迁移痛点
 
 ## 热度来源判断
-
-492⭐，4/15 创建，6 天增长合理。话题切中 AI coding 社区当前最大的痛点之一——多工具切换的成本。Twitter 传播效应明显（@AV1DLIVE 推文驱动）。
+**真实痛点驱动**。多 Agent 工具并存的开发者确实面临"切换成本高"的问题。
 
 ## 关键技术亮点
 
-- `.agent/` 目录结构：memory / skills / protocols 三层
-- harness adapter 模式：对每个目标工具生成对应配置格式
-- brew 分发 + PowerShell 安装器覆盖 macOS/Linux/Windows
-- 支持 7+ 主流 harness
+1. **`.agent/` 目录结构**：memory/（记忆）+ skills/（技能）+ protocols/（协议），标准化 Agent 的"家目录"。
+2. **多 Agent 兼容**：Claude Code、Cursor、Windsurf、OpenCode、OpenClaw、Hermes、DIY Python。
+3. **保留知识不重置**：切换工具时 Agent 的学习成果不丢失。
 
 ## 架构启发
 
-```mermaid
-graph LR
-    subgraph ".agent/"
-        M[memory/]
-        S[skills/]
-        P[protocols/]
-    end
+**设计哲学**：Agent 的核心价值不在工具，在积累的经验。标准化这个"经验载体"是让 Agent 生态走向成熟的关键一步。
 
-    M --> CC[Claude Code]
-    M --> CR[Cursor]
-    M --> WC[Windsurf]
-    M --> OC[OpenCode]
-    M --> OCL[OpenClaw]
-    M --> HM[Hermes]
-    M --> PI[Pi Agent]
-    
-    S --> CC
-    S --> CR
-    P --> CC
-```
-
-核心启发：**Agent 的记忆应该独立于运行时**。这与数据库的「数据独立于应用」是同一个抽象层次。
+**类比**：`.env` 标准化了环境变量 → 所有框架支持。`.agent/` 标准化了 Agent 配置 → 所有 Agent 工具支持。如果成功，价值巨大。
 
 ## 定位判断
+**基础设施候选**。如果被主流 Agent 工具采纳，将成为生态标准。
 
-工具型，但有潜力成为 Agent 记忆的事实标准（如果主流 harness 选择兼容此格式）。短期是工具，中期可能是生态层。
+## 风险 / 局限 / 泡沫点
 
-## 风险/局限/泡沫点
-
-- 无任何 harness 官方支持此格式，纯社区方案
-- 多 harness 适配层的维护成本随工具版本更新增长
-- 单人项目（@AV1DLIVE），长期可持续性存疑
-- 492 星还不足以说明广泛采用
+1. **需要 Agent 工具主动支持**：如果主流工具不采纳 `.agent/` 标准，这个项目将停留在理念层面。
+2. **记忆格式标准化难度大**：不同 Agent 的记忆结构差异巨大，统一接口是硬问题。
+3. **安全问题**：`.agent/` 包含所有技能和记忆，如果误提交到 Git 会泄露敏感信息。
 
 ## 与同类项目的关系
 
-- 与 cc-switch（跨 harness 切换工具）互补，cc-switch 切工具，agentic-stack 带记忆
-- 与 claude-mem（Claude Code 记忆管理）有部分重叠，但更通用
+| 项目 | 定位 | 差异 |
+|------|------|------|
+| OpenChronicle | Agent 记忆 | 聚焦记忆捕获，不涉及技能/协议 |
+| Mercury Agent | 完整 Agent | 内置记忆但非标准化格式 |
+| Agent Skills Spec | 技能标准 | 只管技能不管记忆 |
 
 ## 是否值得持续跟踪
-
-✅ 是。Agent 可移植性是中期刚需。
+**是，中优先级**。标准化方向的尝试值得观察，关键看主流工具是否采纳。
 
 ## 后续观察点
 
-- 是否有主流 harness 选择兼容 .agent/ 格式
-- 社区贡献者数量增长
-- 是否形成跨工具的记忆标准化讨论
+1. 是否有主流 Agent 工具宣布支持 `.agent/` 格式
+2. 记忆格式的跨 Agent 实际迁移测试结果
+3. 是否被 OpenClaw 或 Cursor 等项目参考
+
+---
+*首次记录：2026-04-30*

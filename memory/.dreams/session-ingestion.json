@@ -1,16 +1,16 @@
 {
   "version": 3,
   "files": {
-    "github-researcher:sessions/ca8ae661-c121-4d40-afba-f5ccbe71074d.jsonl.deleted.2026-04-27T22-16-59.172Z": {
-      "mtimeMs": 1777241087250,
-      "size": 114758,
-      "contentHash": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
-      "lineCount": 0,
-      "lastContentLine": 0
+    "github-researcher:sessions/78fe673a-31fb-4629-8a36-902be6b98f34.jsonl": {
+      "mtimeMs": 1777500734241,
+      "size": 225422,
+      "contentHash": "f5564b52e3e90e0d3c7ee3f68312b7d81ed3b700060aaccac12bf33b857e0139",
+      "lineCount": 23,
+      "lastContentLine": 23
     },
-    "github-researcher:sessions/d43258fe-76a5-4719-a9ab-cb42fb1a904c.jsonl.deleted.2026-04-28T22-12-03.584Z": {
-      "mtimeMs": 1777328215753,
-      "size": 498687,
+    "github-researcher:sessions/78fe673a-31fb-4629-8a36-902be6b98f34.trajectory.jsonl": {
+      "mtimeMs": 1777500734315,
+      "size": 397913,
       "contentHash": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
       "lineCount": 0,
       "lastContentLine": 0
@@ -22,7 +22,7 @@
       "lineCount": 0,
       "lastContentLine": 0
     },
-    "github-researcher:sessions/f7499b77-69dd-4c62-985b-321fc35ea00d.jsonl": {
+    "github-researcher:sessions/f7499b77-69dd-4c62-985b-321fc35ea00d.jsonl.deleted.2026-04-29T22-12-23.849Z": {
       "mtimeMs": 1777414315034,
       "size": 289230,
       "contentHash": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
@@ -271,7 +271,32 @@
       "b5b48b38ebd9192737244382df9b0ae2e3b3a499",
       "99640ab15e0a9c5085f321bf13580a088b542411"
     ],
-    "github-researcher:d43258fe-76a5-4719-a9ab-cb42fb1a904c": [],
-    "github-researcher:f7499b77-69dd-4c62-985b-321fc35ea00d.trajectory": []
+    "github-researcher:78fe673a-31fb-4629-8a36-902be6b98f34": [
+      "c0d31e575b61d95fa5017db860b3f1a840e7c462",
+      "a18b98817f189a1abc95c6c08a1dcfbb70e5260b",
+      "e36f9fceac77611fb5767deb01e93ac3eca2978f",
+      "2aa9ab04e8cbd61c9950e353967b92009601984c",
+      "cb5ce90b61a1872a1e1b70c055192e930c0d29cd",
+      "0df7fec1133406a4229846150152ec051cc6a661",
+      "88b0aa6abdce828511b781633eb90d774a88ca87",
+      "ac367205ab16fcd337f277a4d2431ba9b6d0b6d7",
+      "b482074382f91530e56f830a41fdc9b50b884e7e",
+      "d9512c5b31ed58f442837bbc529b485d5cf04e27",
+      "de81e804c0fa941c0631e29ad8ddb133d2930e20",
+      "d3e275dae58a22ccf032f6d20163b9c9d970602a",
+      "ce0c09561cff2df714daa3a112361dba6bd46007",
+      "5caed929843fb317f2c3adf6a983164adb5d3711",
+      "1fe5e629d41d9d1579bfdea00bd800489d0f4022",
+      "2061d680152637d538a777ef48f8ce2c15f4bd62",
+      "e5647948f464adf77aa39f532004d7feae992111",
+      "7851678542bf96de7308067584d1465d7336fd62",
+      "21830712552f27743961c983b777e57948167b10",
+      "597cb5c91b9610db48656fb3049fc8708ea4e80d",
+      "1ae99482f0a15d8f94911a89bd8ca74095402aa6",
+      "cd239eae5487f85449bcb990d9ddc3f4c4881779",
+      "fb5db854e6ffb85dbdbdb7c131519ce88c545176"
+    ],
+    "github-researcher:78fe673a-31fb-4629-8a36-902be6b98f34.trajectory": [],
+    "github-researcher:f7499b77-69dd-4c62-985b-321fc35ea00d": []
   }
 }

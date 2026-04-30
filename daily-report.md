@@ -4,6 +4,22 @@
 
 ---
 
+## 2026-05-01
+
+**核心主题：** Linux 内核 CVE-2026-31431 本地提权曝光 · Open Design 近 8K Stars 领跑 Agent Design 赛道 · DeepSeek TileKernels 输出 GPU Kernel 基础设施
+
+**关键项目：**
+- 🔴 Copy Fail CVE-2026-31431 (1.6k stars) — Linux 内核 AEAD 本地提权漏洞，影响主流发行版，P0 安全事件
+- 🎨 Open Design (8.0k stars) — Claude Design 开源替代，72 DS + 31 Skills，平台化加速
+- ⚡ TileKernels (1.4k stars) — DeepSeek 出品 GPU Kernel 库，MoE/量化/Engram 全覆盖
+- 🔒 Harmonist (945 stars) — 协议硬强制 Agent 框架，186 Agent + 零依赖
+- 🌐 FreeLLMAPI (783 stars) — 聚合14家免费 LLM Provider，OpenAI 兼容
+- 🌍 World2Agent (588 stars) — Agent 感知层开放协议，Sensor 标准化
+
+→ [查看完整日报](daily/2026-05-01.html)
+
+---
+
 ## 2026-04-30
 
 **核心主题：** Claude 架构逆向工程引爆 ML 社区 · AI Agent 记忆层进入本地优先时代 · Coding Agent Harness 标准化加速

@@ -2,12 +2,12 @@
 title: "TileKernels"
 slug: "tilekernels"
 date_added: "2026-04-24"
-last_seen_date: "2026-04-24"
-category: "AI Infra"
+last_seen_date: "2026-05-01"
+category: "基础设施候选"
 emoji: "⚡"
-stars: "592"
-score: 76
-tags: ["tilelang", "CUDA", "Inference", "DeepSeek", "GPU-Kernel"]
+stars: "1.4k stars"
+score: 80
+tags: ["tilelang", "CUDA", "Inference", "DeepSeek", "GPU-Kernel", "MoE", "Quantization", "Engram"]
 url: "https://github.com/deepseek-ai/TileKernels"
 ---
 

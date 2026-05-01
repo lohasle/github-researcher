@@ -15,6 +15,20 @@
       "lineCount": 0,
       "lastContentLine": 0
     },
+    "github-researcher:sessions/8ddc6dad-3cc6-4184-8ca1-890896957582.jsonl": {
+      "mtimeMs": 1777587076726,
+      "size": 260334,
+      "contentHash": "c63f93755e5a105a62574ab964e67d0b5226a5e4b521a33e42e73f81795f618f",
+      "lineCount": 22,
+      "lastContentLine": 22
+    },
+    "github-researcher:sessions/8ddc6dad-3cc6-4184-8ca1-890896957582.trajectory.jsonl": {
+      "mtimeMs": 1777587076809,
+      "size": 179686,
+      "contentHash": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
+      "lineCount": 0,
+      "lastContentLine": 0
+    },
     "github-researcher:sessions/d43258fe-76a5-4719-a9ab-cb42fb1a904c.trajectory.jsonl": {
       "mtimeMs": 1777328215977,
       "size": 738885,
@@ -296,7 +310,30 @@
       "cd239eae5487f85449bcb990d9ddc3f4c4881779",
       "fb5db854e6ffb85dbdbdb7c131519ce88c545176"
     ],
-    "github-researcher:78fe673a-31fb-4629-8a36-902be6b98f34.trajectory": [],
-    "github-researcher:f7499b77-69dd-4c62-985b-321fc35ea00d": []
+    "github-researcher:8ddc6dad-3cc6-4184-8ca1-890896957582": [
+      "ec790d6bca8d1f5fde4bc5f1f6df96f660231c59",
+      "75d8cf9a1063213f8723f81e01f6d6958a6bd391",
+      "6dd9ebdb518eea3e2b88de44a41aed0c6542e3d2",
+      "c25b4b41d7b149c10dce67bcc6b04e30baed285e",
+      "8fc3c1792de47530a7b96244b053aae5e52c1883",
+      "b8a31dddd7e29c2757f091cb0a2a5fd89e63254f",
+      "b08e4a304a6e385daefa26704994c979dce5986c",
+      "68dd96b2216a4f6d7feca6824bdb7c896122638d",
+      "bae3f9d53ddc8593306dbd879e83ff1af773927b",
+      "a0812d69a46d8bb4f9c29bc4211370caf9c2b132",
+      "90dd6165b6805a4a3957df28a0234b6f44aedc85",
+      "8c95915dd883603031114b7ba765ced759806c49",
+      "1ec322792eb384a47b26dd31853ee81e9b22f6a1",
+      "a7fb81ca0df861302756feb4486208ddaec16362",
+      "ca221b2254b9ae06c834226d958e347bd47ebdf3",
+      "c085bbcbb7f1dc418812815e2d1f1d4be4e36a93",
+      "0619d91b6b293d24ba166307f829d46eb8d7f84c",
+      "56969c1e37f2ecb3aa9820a47285c8abe81d8b51",
+      "6c5438c6b3d7a25fe5a989bdf72ae914df21067c",
+      "1c00495d874049c04769e22496268af52a7abaca",
+      "c7010dcf180038e979b6c3212fa72f468750c5ed",
+      "8a2cdac5b7ad53f14fdf7b768b93b3e19080966e"
+    ],
+    "github-researcher:8ddc6dad-3cc6-4184-8ca1-890896957582.trajectory": []
   }
 }

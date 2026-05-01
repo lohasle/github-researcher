@@ -4,8 +4,8 @@ slug: "graphify"
 date_added: "2026-04-26"
 category: "工具型"
 emoji: "🧠"
-stars: "37,280 stars"
-stars_delta: "持续高速增长"
+stars: "39,595 stars"
+stars_delta: "逼近40K，日增约460"
 language: "Python"
 score: 82
 tags: ["graphrag", "agent-skill", "claude-code", "codex", "cursor", "gemini-cli"]

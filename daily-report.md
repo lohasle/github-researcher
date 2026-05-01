@@ -4,6 +4,22 @@
 
 ---
 
+## 2026-05-02
+
+**核心主题：** Agent Design 赛道爆发：Open Design 4天翻倍至 11.4K · Graphify 跨 Agent 知识图谱逼近 40K · HeyGen HyperFrames 定义 Agent 原生视频生成范式
+
+**关键项目：**
+- 🎨 Open Design (11.4k stars) — Claude Design 开源替代，72 DS + 31 Skills，4天翻倍，平台化加速
+- 🕸️ Graphify (39.6k stars) — 跨 Agent 知识图谱 Skill，逼近 40K
+- 🎬 HyperFrames (13.6k stars) — HeyGen 出品，HTML→Video，Agent 原生视频生成
+- 🧠 MemPalace (50.7k stars) — 稳守 50K+，AI Memory 赛道领导者
+- 🕵️ Obscura (9.3k stars) — Rust 无头浏览器突破 9K
+- ⚛️ QuipNetwork (5.8k stars) — 疑似刷星，Star/Fork 比异常
+
+→ [查看完整日报](daily/2026-05-02.html)
+
+---
+
 ## 2026-05-01
 
 **核心主题：** Linux 内核 CVE-2026-31431 本地提权曝光 · Open Design 近 8K Stars 领跑 Agent Design 赛道 · DeepSeek TileKernels 输出 GPU Kernel 基础设施

@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-05-01）
+## 最新研究摘要（2026-05-02）
 
-**Linux 内核 CVE-2026-31431 本地提权曝光 · Open Design 近 8K Stars 领跑 Agent Design 赛道 · DeepSeek TileKernels 输出 GPU Kernel 基础设施**
+**Agent Design 赛道爆发：Open Design 4天翻倍至 11.4K · Graphify 跨 Agent 知识图谱逼近 40K · HeyGen HyperFrames 定义 Agent 原生视频生成范式**
 
 今日热榜新信号：
-- **Copy Fail CVE-2026-31431**（1.6k stars）：Linux 内核 algif_aead 本地提权，影响 Ubuntu/AL2/RHEL/SUSE
-- **Open Design**（8.0k stars）：Claude Design 开源替代，72 Design Systems + 31 Skills，BYOK
-- **TileKernels**（1.4k stars）：DeepSeek 出品 GPU Kernel 库，MoE/量化/Engram/MHC 全覆盖
+- **Open Design**（11.4k stars）：Claude Design 开源替代，72 Design Systems + 31 Skills，BYOK，4天翻倍
+- **Graphify**（39.6k stars）：跨 Agent 知识图谱 Skill，10+ 平台兼容，逼近 40K
+- **HyperFrames**（13.6k stars）：HeyGen 出品，Write HTML Render Video，Agent 原生视频生成
 
+**→ [查看 2026-05-02 完整简报](daily/2026-05-02.md)**
 **→ [查看 2026-05-01 完整简报](daily/2026-05-01.md)**
 **→ [查看 2026-04-30 完整简报](daily/2026-04-30.md)**
 **→ [查看 2026-04-29 完整简报](daily/2026-04-29.md)**
-**→ [查看 2026-04-28 完整简报](daily/2026-04-28.md)**
 
 ---
 
@@ -24,22 +24,22 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-05-02](daily/2026-05-02.md) | Agent Design 赛道爆发：Open Design 4天翻倍至 11.4 | 6 个深度分析 |
 | [2026-05-01](daily/2026-05-01.md) | Linux 内核 CVE-2026-31431 本地提权曝光 · Open De | 7 个深度分析 |
 | [2026-04-30](daily/2026-04-30.md) | Claude 架构逆向工程引爆 ML 社区 · AI Agent 记忆层进入本地 | 6 个深度分析 |
 | [2026-04-29](daily/2026-04-29.md) | AI 记忆层基础设施竞赛升温 · Agent Skill 生态进入长尾分化期 · | 5 个深度分析 |
 | [2026-04-28](daily/2026-04-28.md) | 国产大模型 MoE 密集发布（Hy3 + Kimi K2.6）· Code In | 5 个深度分析 |
 | [2026-04-27](daily/2026-04-27.md) | AI Memory 系统走向产品化 · Token 效率成为 Agent Ski | 4 个深度分析 |
 | [2026-04-26](daily/2026-04-26.md) | AI Agent Skill 生态爆发 · 零人类公司编排走出概念 · CLI  | 7 个深度分析 |
-| [2026-04-25](daily/2026-04-25.md) | AI Agent 安全基础设施成型 · Memory 层竞争从 API 转向嵌入 | 5 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **CVE-2026-31431 Copy Fail：Linux 内核 AEAD 本地提权漏洞曝光**：相关项目 copy-fail-CVE-2026-31431。
-2. **Open Design 72 Design Systems + 31 Skills：Agent Design Tool 平台化加速**：相关项目 open-design。
-3. **DeepSeek TileKernels：GPU Kernel 层开源基础设施浮出水面**：相关项目 tilekernels。
-4. **Agent 安全治理新范式：Harmonist 协议硬强制 + FreeLLMAPI 免费推理聚合**：相关项目 harmonist, freellmapi。
+1. **Agent Design 赛道爆发：Open Design 4天翻倍至 11.4K**：相关项目 open-design。
+2. **跨 Agent 知识图谱：Graphify 逼近 40K，成 Agent Skill 生态新基座**：相关项目 graphify。
+3. **Agent 原生视频生成：HeyGen HyperFrames 用 HTML 定义视频**：相关项目 hyperframes。
+4. **QuipNetwork 量子虚拟机项目群：高 Star 低 Fork 的可疑信号**：相关项目 quip-network。
 
 ---
 
@@ -62,9 +62,9 @@
 
 ## 数据统计
 
-- 📊 项目档案：87 个
-- 📅 日报总数：25 期
-- 🔄 最近更新：2026-05-01
+- 📊 项目档案：89 个
+- 📅 日报总数：26 期
+- 🔄 最近更新：2026-05-02
 
 ---
 

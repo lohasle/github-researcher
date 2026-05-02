@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>日报索引 | GitHub 趋势研究</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📊</text></svg>">
+    <title>2026-05-03 GitHub 趋势研究简报 | GitHub 趋势研究</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📅</text></svg>">
     <style>
         :root {
             --primary: #7C3AED;
@@ -170,15 +170,21 @@
         .trend-list { animation-delay: 0.25s; animation-fill-mode: both; }
     </style>
     <style>
-        .page-header { padding: 48px 0 36px; text-align: center; }
-        .page-header h1 { font-size: 36px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 12px; }
-        .page-header p { color: var(--text-muted); font-size: 16px; }
-        .daily-table { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); margin-bottom: 48px; }
-        .daily-table table { width: 100%; border-collapse: collapse; }
-        .daily-table th { background: linear-gradient(135deg, var(--primary-dark), var(--primary)); color: white; padding: 14px 20px; text-align: left; font-size: 13px; font-weight: 600; letter-spacing: 0.5px; }
-        .daily-table td { padding: 16px 20px; border-bottom: 1px solid var(--border); font-size: 14px; }
-        .daily-table tr:last-child td { border-bottom: none; }
-        .daily-table tr:hover td { background: var(--bg); }
+        .daily-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 48px; box-shadow: var(--shadow); margin-bottom: 48px; max-width: 860px; margin-left: auto; margin-right: auto; }
+        .daily-content h1 { font-size: 28px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 8px; }
+        .daily-content h2 { font-size: 20px; font-weight: 700; color: var(--primary); border-left: 4px solid var(--primary); padding-left: 12px; margin: 28px 0 14px; }
+        .daily-content h3 { font-size: 16px; font-weight: 700; color: var(--text); margin: 20px 0 10px; }
+        .daily-content table { border-collapse: collapse; width: 100%; margin: 14px 0; }
+        .daily-content th, .daily-content td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; font-size: 13px; }
+        .daily-content th { background: var(--primary); color: white; font-weight: 600; }
+        .daily-content tr:nth-child(even) td { background: var(--bg); }
+        .daily-content blockquote { background: linear-gradient(135deg, #F3E8FF, #ECFEFF); border-left: 4px solid var(--primary); padding: 14px 18px; margin: 14px 0; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+        .daily-content ul, .daily-content ol { padding-left: 22px; margin: 10px 0; }
+        .daily-content li { margin: 6px 0; font-size: 14px; }
+        .daily-content p { font-size: 14px; margin-bottom: 12px; line-height: 1.7; }
+        .daily-content strong { color: var(--primary-dark); }
+        .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 24px; }
+        .back-link:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -196,165 +202,289 @@
             </div>
         </div>
     </nav>
-<script>document.getElementById('nav-daily').classList.add('active');</script>
 <main class="container">
-    <div class="page-header">
-        <h1>📅 日报索引</h1>
-        <p>每日 GitHub 趋势研究简报,持续跟踪不间断</p>
-    </div>
-    <div class="daily-table">
-        <table>
-            <thead>
-                <tr>
-                    <th>日期</th>
-                    <th>核心主题</th>
-                    <th>操作</th>
-                </tr>
-            </thead>
-            <tbody>
-        <tr>
-            <td style="font-weight:600;">2026-05-03</td>
-            <td>Agent Skills 生态进入工具整合期：CC Switch 57K+ 稳守桌面基座 · Open Design 突破 15K · 3090 社区 LLM 部署方案崛起 · AI 语音输入 OpenLess 开辟新赛道</td>
-            <td><a href="/github-researcher/daily/2026-05-03.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-05-02</td>
-            <td>Agent Design 赛道爆发：Open Design 4天翻倍至 11.4K · Graphify 跨 Agent 知识图谱逼近 40K · HeyGen HyperFrames 定义 Agent 原生视频生成范式</td>
-            <td><a href="/github-researcher/daily/2026-05-02.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-05-01</td>
-            <td>Linux 内核 CVE-2026-31431 本地提权曝光 · Open Design 近 8K Stars 领跑 Agent Design 赛道 · DeepSeek TileKernels 输出 GPU Kernel 基础设施</td>
-            <td><a href="/github-researcher/daily/2026-05-01.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-30</td>
-            <td>Claude 架构逆向工程引爆 ML 社区 · AI Agent 记忆层进入本地优先时代 · Coding Agent Harness 标准化加速</td>
-            <td><a href="/github-researcher/daily/2026-04-30.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-29</td>
-            <td>AI 记忆层基础设施竞赛升温 · Agent Skill 生态进入长尾分化期 · Browser Agent 向 Harness 模式收敛</td>
-            <td><a href="/github-researcher/daily/2026-04-29.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-28</td>
-            <td>国产大模型 MoE 密集发布（Hy3 + Kimi K2.6）· Code Intelligence 走向 MCP-Native · Claude Code Skill 生态爆发</td>
-            <td><a href="/github-researcher/daily/2026-04-28.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-27</td>
-            <td>AI Memory 系统走向产品化 · Token 效率成为 Agent Skill 新焦点 · Agent 沙箱基础设施升温</td>
-            <td><a href="/github-researcher/daily/2026-04-27.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-26</td>
-            <td>AI Agent Skill 生态爆发 · 零人类公司编排走出概念 · CLI 成为 Agent-Native 标准接口</td>
-            <td><a href="/github-researcher/daily/2026-04-26.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-25</td>
-            <td>AI Agent 安全基础设施成型 · Memory 层竞争从 API 转向嵌入式 · Rust 正在成为 Agent Runtime 首选语言</td>
-            <td><a href="/github-researcher/daily/2026-04-25.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-24</td>
-            <td>Claude Code Skill 生态分化为垂直子赛道 · AI Coding 成本可观测性成为刚需 · LLM 推理内核性能优化进入白热化</td>
-            <td><a href="/github-researcher/daily/2026-04-24.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-23</td>
-            <td>OpenMythos 重建 Claude 架构引发研究热潮 · Claude Code 设计工具生态全面爆发 · Browser Harness 验证自愈浏览器成为 Agent 标配能力</td>
-            <td><a href="/github-researcher/daily/2026-04-23.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-22</td>
-            <td>Browser Harness 持续爆发验证 Browser Use 赛道 · Claude Code Skill 生态进入设计工具细分 · PgQue 代表极简主义基础设施思潮回归</td>
-            <td><a href="/github-researcher/daily/2026-04-22.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-21</td>
-            <td>OpenMythos 逆向重建 Claude 架构引爆关注 · Agentic Stack 定义跨 Harness 可移植 Agent 规范 · Weft 探索 AI 原生编程语言</td>
-            <td><a href="/github-researcher/daily/2026-04-21.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-20</td>
-            <td>Browser Use 推出 Self-Healing Browser Harness · Vercel 开源 Web 终端 wterm · Agent Skill 生态持续爆发（设计提取/PPT/诊断）</td>
-            <td><a href="/github-researcher/daily/2026-04-20.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-19</td>
-            <td>Agent 可移植性与 Harness 互操作成新焦点 · AI-native 编程语言 Weft 首次进入视野 · 分布式 DuckDB 与云原生 Postgres 数据基座演进加速</td>
-            <td><a href="/github-researcher/daily/2026-04-19.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-18</td>
-            <td>Claude Code Skill 生态爆发 · 全场景协议分析+AI 逆向成新范式 · Web 终端基础设施加速 · Token 可观测性进入平台化前夜</td>
-            <td><a href="/github-researcher/daily/2026-04-18.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-17</td>
-            <td>Agent Skill 自进化范式成形 · AI原生编程语言登场 · Token可观测性持续升温 · 端侧多模态推理加速</td>
-            <td><a href="/github-researcher/daily/2026-04-17.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-16</td>
-            <td>Agent成本可观测性觉醒 · AI记忆系统标准化竞赛 · Zero-Human Company编排框架落地 · 知识工程从RAG走向持久化Wiki</td>
-            <td><a href="/github-researcher/daily/2026-04-16.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-15</td>
-            <td>Karpathy Skills现象级爆发 · Claude生态工具链深度整合 · AI金融模型入场 · Agent基础设施工具层成型</td>
-            <td><a href="/github-researcher/daily/2026-04-15.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-14</td>
-            <td>Hermes Agent 65K星霸榜 · Agent Skill生态饱和信号 · 存储基础设施Rust化 · 语音AI开源破局</td>
-            <td><a href="/github-researcher/daily/2026-04-14.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-13</td>
-            <td>AI Agent工业化 · Harness工程新范式 · 群体智能觉醒 · 端侧AI生态成型</td>
-            <td><a href="/github-researcher/daily/2026-04-13.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-12</td>
-            <td>AI记忆系统破局 · Agent知识脑标配化 · 人格蒸馏Skill生态爆发</td>
-            <td><a href="/github-researcher/daily/2026-04-12.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-11</td>
-            <td>AI Agent 技能框架爆发 · 托管式 Agent 平台兴起 · Copilot Workspace 多仓库上下文</td>
-            <td><a href="/github-researcher/daily/2026-04-11.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-10</td>
-            <td>端侧AI推理生产化 · AI编程平台生态成熟 · 多代理协作标准化</td>
-            <td><a href="/github-researcher/daily/2026-04-10.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-09</td>
-            <td>自主 AI Agent 系统爆发 · AI 原生开发工具革新 · 科研自动化</td>
-            <td><a href="/github-researcher/daily/2026-04-09.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-08</td>
-            <td>claw-code 爆炸式增长 · Edge AI 加速落地 · Claude Code 生态持续扩张</td>
-            <td><a href="/github-researcher/daily/2026-04-08.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:600;">2026-04-07</td>
-            <td>MCP 协议扩散 + 端侧 LLM 推理生产化</td>
-            <td><a href="/github-researcher/daily/2026-04-07.html" style="color:var(--primary);text-decoration:none;font-weight:500;">查看 →</a></td>
-        </tr>
+    <a href="/github-researcher/daily.html" class="back-link">← 返回日报索引</a>
+    <div class="daily-content">
+        <h1 id="2026-05-03-github">2026-05-03 GitHub 趋势研究简报</h1>
+<h2 id="_1">今日趋势总览</h2>
+<pre class="mermaid">graph TB
+    subgraph "Agent Desktop / 工具整合层"
+        CCS[CC Switch<br/>57.8K ⭐]
+        CS[ChromeX<br/>753 ⭐]
+        MP2[Mattpocock Dictionary<br/>653 ⭐]
+    end
 
-            </tbody>
-        </table>
+    subgraph "Agent Design 赛道"
+        OD[Open Design<br/>15.7K ⭐]
+    end
+
+    subgraph "本地 LLM 部署"
+        CL[Club 3090<br/>354 ⭐]
+        KW[KWCode<br/>433 ⭐]
+    end
+
+    subgraph "AI 语音 / 交互"
+        OL[OpenLess<br/>345 ⭐]
+    end
+
+    subgraph "AI 记忆 / 知识"
+        MEMP[MemPalace<br/>50.7K ⭐]
+    end
+
+    subgraph "数据工具"
+        DBX[dbx<br/>707 ⭐]
+    end
+
+    CCS -->|"统一入口"| OD
+    CCS -->|"统一入口"| CL
+    CL -->|"本地推理"| KW
+    MEMP -->|"记忆注入"| CCS
+    OL -->|"语音交互"| CCS
+</pre>
+<hr />
+<h2 id="1agent-desktop-cc-switch-57k-agent">趋势 1：Agent Desktop 基座稳固：CC Switch 57K+，多 Agent 统一管理成刚需</h2>
+<p><strong>判断：中期趋势，平台化加速</strong></p>
+<p>CC Switch（farion1231/cc-switch）本周稳定在 57.8K stars，是 Agent 工具链整合的关键节点。它把 Claude Code、Codex、OpenCode、OpenClaw、Gemini CLI 等多个 Coding Agent 统一到同一个桌面应用中管理，支持 Provider 切换、MCP 管理、Skills 管理。</p>
+<p><strong>关键数据：</strong>
+- 57,825 ⭐，3,752 forks，116 subscribers
+- 日均 commit 活跃（最近 5 个 commit 均在 2 天内）
+- Tauri + Rust 技术栈，跨平台支持
+- Open Issues 703，社区活跃度高</p>
+<p><strong>架构师视角：</strong> CC Switch 的价值不在单一功能，而在于它正在成为 Agent 的"控制面板"。当开发者同时使用 Claude Code、Codex、OpenCode 等多个 Agent 时，统一管理 Provider、API Key、MCP Server、Skills 是真实的工程痛点。CC Switch 正在把这个痛点变成平台机会。</p>
+<p><strong>风险：</strong> CC Switch 本身不提供 Agent 能力，只是管理入口。如果 Agent 生态收敛到 1-2 个主导者，CC Switch 的价值会下降。目前 703 个 Open Issues 也暗示工程成熟度有待提升。</p>
+<hr />
+<h2 id="2open-design-157kagent-design">趋势 2：Open Design 持续爆发至 15.7K，Agent Design 赛道从概念到产品</h2>
+<p><strong>判断：中期趋势，平台化确认</strong></p>
+<p>Open Design（nexu-io/open-design）5 天内从 4.1K 增长到 15.7K（+283%），GitHub 上最热的 Agent 原生设计工具。71 套设计系统 + 19 Skills + 支持 10+ Agent CLI（Claude Code、Codex、Cursor、Gemini、OpenCode、Qwen、Copilot、Hermes、Kimi CLI）。</p>
+<p><strong>关键数据：</strong>
+- 15,738 ⭐，1,768 forks，57 subscribers
+- 最近 commit 非常活跃：Skills 扩展、PPTX 导出增强、日语文档、Pet Companion 集成
+- Apache-2.0 许可证</p>
+<p><strong>热度分析：</strong> Star 增速仍然保持在日增 1K+ 的水平，但 fork 数（1,768）与 star 的比例正常（约 11%），说明这不是刷星。commit 活跃度极高，多个贡献者在并行开发。Topics 覆盖了从 agent-skills 到 vibe-coding 的完整链路。</p>
+<p><strong>架构师视角：</strong> Open Design 代表的是"Agent 原生创作工具"这个品类。它不是 Figma 的替代品，而是 Agent 时代的 Canva — 用 Agent Skill 来驱动设计、原型、视频、PPT 的全链路生成。对架构师的启发是：<strong>当 Agent 成为用户界面时，创作的定义会从"操作工具"变成"描述意图"。</strong></p>
+<hr />
+<h2 id="3-gpu-llm-3090-club">趋势 3：消费级 GPU LLM 部署：3090 Club 社区方案快速迭代</h2>
+<p><strong>判断：短期热点，但代表真实需求</strong></p>
+<p>Club 3090（noonghunna/club-3090）是一个社区驱动的 LLM 部署方案，专门面向 RTX 3090 显卡用户。支持 vLLM、llama.cpp、SGLang 多引擎，当前主打 Qwen3.6-27B 的 1× 和 2× 卡配置。</p>
+<p><strong>关键数据：</strong>
+- 354 ⭐，19 forks，12 subscribers
+- 日均多 commit，非常活跃
+- 从 v7.65 到 v7.69 快速迭代
+- Apache-2.0 许可证</p>
+<p><strong>架构师视角：</strong> 这个项目 Star 不高，但信息密度极高。它代表了一个趋势：<strong>当模型小到可以在消费级 GPU 上运行时，部署知识的门槛会从"需要 ML 工程师"降到"需要一份 recipe"。</strong> Club 3090 本质上是一份精心调优的 recipe 集合。对企业内部的 AI 基础设施团队，这种"recipe as code"的模式值得参考。</p>
+<p><strong>风险：</strong> 项目极度依赖特定硬件（RTX 3090），受众有限。社区的长期维护能力存疑。</p>
+<hr />
+<h2 id="4ai-openless-wispr-flow">趋势 4：AI 语音输入新赛道：OpenLess 挑战 Wispr Flow</h2>
+<p><strong>判断：值得观察的早期信号</strong></p>
+<p>OpenLess（appergb/openless）是一个开源语音输入工具：按住快捷键说话，松开即得到 AI 润色后的文字，可插入任何应用。macOS 和 Windows 双平台支持。</p>
+<p><strong>关键数据：</strong>
+- 345 ⭐，30 forks
+- Rust + Tauri + Swift 技术栈
+- MIT 许可证
+- 最近在修复 LLM model 配置和 PR-Agent 流程</p>
+<p><strong>架构师视角：</strong> 语音输入是 AI 与操作系统交互的"最后一公里"。Wispr Flow 已经证明了这个品类的商业可行性。OpenLess 的技术栈选择（Rust + Tauri）保证了轻量和跨平台。但关键问题是：<strong>语音输入的核心竞争力不在 ASR（可以用 Whisper），而在 prompt engineering 和上下文理解。</strong> OpenLess 目前看起来更偏 ASR + LLM 的简单串联，护城河不深。</p>
+<hr />
+<h2 id="_2">重点项目深度分析</h2>
+<h3 id="top-1cc-switch-agent-desktop">Top 1：CC Switch — Agent Desktop 基座</h3>
+<p><strong>评分：</strong></p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>分数</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热度质量</td>
+<td>9</td>
+<td>57K+ stars，3.7K forks，比例健康</td>
+</tr>
+<tr>
+<td>技术创新度</td>
+<td>6</td>
+<td>技术栈扎实但无突破，创新在于产品定位</td>
+</tr>
+<tr>
+<td>工程成熟度</td>
+<td>6</td>
+<td>703 Open Issues，活跃但不稳定</td>
+</tr>
+<tr>
+<td>架构启发价值</td>
+<td>8</td>
+<td>多 Agent 统一管理是真实架构问题</td>
+</tr>
+<tr>
+<td>企业落地潜力</td>
+<td>7</td>
+<td>可用于内部 Agent 工具链管理</td>
+</tr>
+<tr>
+<td>中期趋势概率</td>
+<td>8</td>
+<td>Agent 生态碎片化短期不会收敛</td>
+</tr>
+<tr>
+<td>平台化潜力</td>
+<td>8</td>
+<td>已具备 MCP + Skills 管理的基座能力</td>
+</tr>
+<tr>
+<td>基础设施潜力</td>
+<td>6</td>
+<td>更偏工具/平台层，非基础设施</td>
+</tr>
+</tbody>
+</table>
+<p><strong>总分：58/80</strong>
+<strong>归类：平台候选</strong>
+<strong>建议：持续跟踪</strong></p>
+<hr />
+<h3 id="top-2open-design-agent">Top 2：Open Design — Agent 原生设计工具</h3>
+<p><strong>评分：</strong></p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>分数</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热度质量</td>
+<td>9</td>
+<td>15.7K stars（5天），增速惊人</td>
+</tr>
+<tr>
+<td>技术创新度</td>
+<td>7</td>
+<td>Skill 驱动设计是新模式，非技术突破</td>
+</tr>
+<tr>
+<td>工程成熟度</td>
+<td>7</td>
+<td>多人协作，commit 活跃</td>
+</tr>
+<tr>
+<td>架构启发价值</td>
+<td>8</td>
+<td>Agent 原生创作工具的范式参考</td>
+</tr>
+<tr>
+<td>企业落地潜力</td>
+<td>6</td>
+<td>BYOK 模式适合内部部署</td>
+</tr>
+<tr>
+<td>中期趋势概率</td>
+<td>8</td>
+<td>Vibe Design 需求真实且在增长</td>
+</tr>
+<tr>
+<td>平台化潜力</td>
+<td>9</td>
+<td>71 DS + 19 Skills + 10 Agent CLI 支持</td>
+</tr>
+<tr>
+<td>基础设施潜力</td>
+<td>5</td>
+<td>更偏应用层</td>
+</tr>
+</tbody>
+</table>
+<p><strong>总分：59/80</strong>
+<strong>归类：平台候选</strong>
+<strong>建议：持续跟踪</strong></p>
+<hr />
+<h3 id="top-3club-3090-gpu-llm">Top 3：Club 3090 — 消费级 GPU LLM 部署</h3>
+<p><strong>评分：</strong></p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>分数</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热度质量</td>
+<td>5</td>
+<td>354 stars，绝对值不高</td>
+</tr>
+<tr>
+<td>技术创新度</td>
+<td>5</td>
+<td>不算创新，但 engineering value 高</td>
+</tr>
+<tr>
+<td>工程成熟度</td>
+<td>6</td>
+<td>快速迭代中</td>
+</tr>
+<tr>
+<td>架构启发价值</td>
+<td>8</td>
+<td>Recipe-as-code 模式值得参考</td>
+</tr>
+<tr>
+<td>企业落地潜力</td>
+<td>4</td>
+<td>过于面向消费级硬件</td>
+</tr>
+<tr>
+<td>中期趋势概率</td>
+<td>7</td>
+<td>本地 LLM 部署是确定性趋势</td>
+</tr>
+<tr>
+<td>平台化潜力</td>
+<td>4</td>
+<td>Recipe 集合，非平台</td>
+</tr>
+<tr>
+<td>基础设施潜力</td>
+<td>5</td>
+<td>更偏知识库</td>
+</tr>
+</tbody>
+</table>
+<p><strong>总分：44/80</strong>
+<strong>归类：工具型</strong>
+<strong>建议：有限跟踪</strong></p>
+<hr />
+<h2 id="_3">风险与机遇</h2>
+<h3 id="_4">风险</h3>
+<ol>
+<li><strong>CVE-2026-31431 余波</strong>：theori-io/copy-fail-CVE-2026-31431 已达 2,876 stars，rootsecdev/cve_2026_31431 另有 424 stars。Linux 内核安全漏洞的 PoC 公开意味着攻击面暴露，企业需确认补丁状态。</li>
+<li><strong>刷星甄别</strong>：bonused/monthly-bonus-stake（416 stars）是明显的赌博推广 spam，github.com/trending 的数据需持续过滤。</li>
+<li><strong>Agent 工具碎片化</strong>：本周新出现 chromex（Codex Chrome side-panel）、codex-plusplus（Codex tweak）、kwcode（本地模型 coding 窗口）等项目，Agent 工具链正在快速碎片化，短期对开发者造成选择困难。</li>
+</ol>
+<h3 id="_5">机遇</h3>
+<ol>
+<li><strong>Agent Desktop 基座</strong>：CC Switch 的 57K+ stars 证明多 Agent 统一管理是刚需，这个品类的平台化机会确定。</li>
+<li><strong>Agent Design 赛道</strong>：Open Design 5 天翻 4 倍，Skill 驱动的设计工具正在成为新范式。对企业的启发是：内部设计系统可以用 Agent Skill 的方式标准化。</li>
+<li><strong>本地 LLM 部署 recipe 化</strong>：Club 3090 代表的趋势是"部署知识 → 可执行 recipe"，企业可以建立类似的内部 recipe 库。</li>
+</ol>
+<hr />
+<h2 id="_6">重点项目档案</h2>
+<p>今日重点关注以下项目档案更新：
+- <strong>CC Switch</strong>：更新 stars 至 57.8K，记录 Provider 管理和 MCP 集成进展
+- <strong>Open Design</strong>：更新 stars 至 15.7K，记录 Skills 和 Design Systems 扩展
+- <strong>Club 3090</strong>：新建档案，记录社区 LLM 部署方案
+- <strong>OpenLess</strong>：新建档案，记录 AI 语音输入工具
+- <strong>dbx</strong>：更新 stars 至 707，记录 SQL 补全增强
+- <strong>MemPalace</strong>：更新 MCP Server 集成修复记录</p>
     </div>
 </main>
     <footer class="footer">
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

@@ -4,6 +4,22 @@
 
 ---
 
+## 2026-05-03
+
+**核心主题：** Agent Skills 生态进入工具整合期：CC Switch 57K+ 稳守桌面基座 · Open Design 突破 15K · 3090 社区 LLM 部署方案崛起 · AI 语音输入 OpenLess 开辟新赛道
+
+**关键项目：**
+- 🎛️ CC Switch (57.8k stars) — Agent 桌面基座，统一管理 Claude Code/Codex/OpenCode/OpenClaw/Gemini CLI
+- 🎨 Open Design (15.7k stars) — Claude Design 开源替代，5天从 4K 到 15.7K
+- 🎮 Club 3090 (354 stars) — RTX 3090 社区 LLM 部署方案，多引擎 recipe
+- 🎙️ OpenLess (345 stars) — 开源语音输入，按住说话松开出文
+- 🧠 MemPalace (50.7k stars) — AI 记忆系统，MCP 集成修复
+- 🗄️ dbx (707 stars) — Tauri+Rust 轻量数据库客户端，SQL 增强
+
+→ [查看完整日报](daily/2026-05-03.html)
+
+---
+
 ## 2026-05-02
 
 **核心主题：** Agent Design 赛道爆发：Open Design 4天翻倍至 11.4K · Graphify 跨 Agent 知识图谱逼近 40K · HeyGen HyperFrames 定义 Agent 原生视频生成范式

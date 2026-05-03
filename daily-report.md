@@ -4,6 +4,24 @@
 
 ---
 
+## 2026-05-04
+
+**核心主题：** Agent Design 红海化 · Linux 内核 CVE-2026-31431 席卷安全社区 · Harmonist 协议级 Agent 编排至 1.2K · DeepSeek TileKernels 定义 LLM 底层算子新方向 · DPI 绕过方案激增
+
+**关键项目：**
+- 🎨 Open Design (19.1k stars) — 开源 Claude Design 替代，6天从 4K 到 19K
+- 🔴 Copy Fail CVE-2026-31431 (3.0k stars) — Linux 内核提权漏洞 PoC，衍生项目涌现
+- ⚡ TileKernels (1.4k stars) — DeepSeek GPU 算子库，MoE/量化/Engram
+- 🎵 Harmonist (1.2k stars) — 零依赖 Agent 编排，186 agents
+- 🌐 mhr-cfw (1.9k stars) — Domain Fronting DPI 绕过方案
+- 📝 OpenChronicle (2.1k stars) — OpenAI Chronicle 开源替代
+- 🗄️ dbx (773 stars) — Tauri+Rust 轻量数据库客户端
+- 📐 text-to-cad (1.4k stars) — 开源 Text-to-CAD 引擎
+
+→ [查看完整日报](daily/2026-05-04.html)
+
+---
+
 ## 2026-05-03
 
 **核心主题：** Agent Skills 生态进入工具整合期：CC Switch 57K+ 稳守桌面基座 · Open Design 突破 15K · 3090 社区 LLM 部署方案崛起 · AI 语音输入 OpenLess 开辟新赛道

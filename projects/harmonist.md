@@ -4,12 +4,13 @@ slug: "harmonist"
 date_added: "2026-04-28"
 category: "平台候选"
 emoji: "🎵"
-stars: "945 stars"
-stars_delta: "3天 945，稳步增长"
+stars: "1.2k stars"
+stars_delta: "11天 1.2K，稳步增长"
 language: "Python"
-score: 78
+score: 80
 tags: ["agent-orchestration", "protocol", "zero-dependency", "protocol-enforcement", "multi-agent", "security"]
 url: "https://github.com/GammaLabTechnologies/harmonist"
+last_seen_date: "2026-05-04"
 ---
 
 # Harmonist

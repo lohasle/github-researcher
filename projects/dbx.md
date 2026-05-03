@@ -4,13 +4,13 @@ slug: "dbx"
 date_added: "2026-05-01"
 category: "工具型"
 emoji: "🗄️"
-stars: "707 stars"
-stars_delta: "5天 707（+81%）"
+stars: "773 stars"
+stars_delta: "7天 773，持续增长"
 language: "Rust"
 score: 74
 tags: ["database-client", "tauri", "rust", "vue", "cross-platform", "gui"]
 url: "https://github.com/t8y2/dbx"
-last_seen_date: "2026-05-03"
+last_seen_date: "2026-05-04"
 ---
 
 # dbx

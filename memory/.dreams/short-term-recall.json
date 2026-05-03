@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-02T19:02:09.932Z",
+  "updatedAt": "2026-05-03T19:00:10.335Z",
   "entries": {
     "memory:memory/.dreams/session-corpus/2026-04-13.txt:1:1": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-13.txt:1:1",
@@ -8692,6 +8692,440 @@
         "值得",
         "内容",
         "open"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: Phase 1 通过，无缺口。进入 Phase 3 今日研究。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:08.611Z",
+      "lastRecalledAt": "2026-05-03T19:00:08.611Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "phase",
+        "通过",
+        "缺口",
+        "进入",
+        "今日",
+        "研究"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: web_search 不可用，改用 web_fetch 直接抓取 GitHub Trending 页面。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:08.611Z",
+      "lastRecalledAt": "2026-05-03T19:00:08.611Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "web-search",
+        "web-fetch",
+        "不可",
+        "改用",
+        "直接",
+        "抓取",
+        "github",
+        "trending"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: web_fetch 也被阻断。尝试通过 `gh` CLI 获取数据。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:08.611Z",
+      "lastRecalledAt": "2026-05-03T19:00:08.611Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "web-fetch",
+        "阻断",
+        "尝试",
+        "通过",
+        "cli",
+        "获取",
+        "数据"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: `gh` 已认证。用 GitHub API 搜索近期热门仓库。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:08.611Z",
+      "lastRecalledAt": "2026-05-03T19:00:08.611Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "认证",
+        "github",
+        "api",
+        "搜索",
+        "近期",
+        "热门",
+        "仓库"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: 现在我已经掌握了足够的数据。让我查看昨天的日报内容和项目参考格式，然后开始生成今天的研究。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:08.611Z",
+      "lastRecalledAt": "2026-05-03T19:00:08.611Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "现在",
+        "已经",
+        "掌握",
+        "足够",
+        "数据",
+        "查看",
+        "昨天",
+        "日报"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: 现在我有足够的数据来生成今日简报了。让我同步远端仓库并开始工作。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:08.611Z",
+      "lastRecalledAt": "2026-05-03T19:00:08.611Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "现在",
+        "我有",
+        "足够",
+        "数据",
+        "生成",
+        "今日",
+        "简报",
+        "同步"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: 好的，远端已同步。现在生成今日日报。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:08.611Z",
+      "lastRecalledAt": "2026-05-03T19:00:08.611Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "好的",
+        "远端",
+        "同步",
+        "现在",
+        "生成",
+        "今日",
+        "日报"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: Phase 3 完成。现在进入 Phase 4：项目档案生成。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:08.611Z",
+      "lastRecalledAt": "2026-05-03T19:00:08.611Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "phase",
+        "完成",
+        "现在",
+        "进入",
+        "项目",
+        "档案",
+        "生成"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: 现在更新已有项目档案：CC Switch、Open Design、dbx、MemPalace。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:08.611Z",
+      "lastRecalledAt": "2026-05-03T19:00:08.611Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "现在",
+        "更新",
+        "已有",
+        "项目",
+        "档案",
+        "switch",
+        "open",
+        "design"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: Phase 4 完成。进入 Phase 5：级联同步。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:08.611Z",
+      "lastRecalledAt": "2026-05-03T19:00:08.611Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "phase",
+        "完成",
+        "进入",
+        "同步"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: 所有页面非空且大小正常。进入 Phase 6：最终验证。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:08.611Z",
+      "lastRecalledAt": "2026-05-03T19:00:08.611Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "所有",
+        "大小",
+        "正常",
+        "进入",
+        "phase",
+        "最终",
+        "验证"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: 验证通过！Git 提交推送。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:08.611Z",
+      "lastRecalledAt": "2026-05-03T19:00:08.611Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "验证",
+        "通过",
+        "git",
+        "提交",
+        "推送"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: Push 成功！ ## 执行报告 ### validate 结果 - Phase 1: 通过（0 errors） - Phase 2: 无需修复 - Phase 6: 通过（0 errors, 0 warnings） ### 今日研究 - **日期:** 2026-05-03 - **分析项目数:** 8 - **新增项目档案:** Club 3090、OpenLess - **更新项目档案:** CC Switch（工具型→平台候选，44.7K→57.8K）、Open Design（11.4K→15.7K）、dbx（391→707",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:08.611Z",
+      "lastRecalledAt": "2026-05-03T19:00:08.611Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "44.7k",
+        "57.8k",
+        "11.4k",
+        "15.7k",
+        "push",
+        "成功",
+        "执行",
+        "报告"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: 趋势索引 | indexes/trend-index.md | | 日报索引 | daily-report.md | | README | README.md | | HTML 页面 | docs/index.html、docs/daily.html、docs/trends.html、docs/projects.html、docs/daily/2026-05-03.html、docs/projects/club-3090.html、docs/projects/openless.html、docs/projects/cc-switch",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:08.611Z",
+      "lastRecalledAt": "2026-05-03T19:00:08.611Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "indexes/trend-index.md",
+        "daily-report.md",
+        "readme.md",
+        "docs/index.html",
+        "docs/daily.html",
+        "docs/trends.html",
+        "docs/projects.html",
+        "docs/daily/2026-05-03.html"
       ]
     }
   }

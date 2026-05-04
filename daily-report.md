@@ -4,6 +4,23 @@
 
 ---
 
+## 2026-05-05
+
+**核心主题：** Agent 后端解耦趋势加速：DeepClaude 替换 Claude Code 后端 17x 降本 · Browser Agent 新形态 Chromex 入局 · Future AGI 开源 Agent 评估观测平台 · Reversa 遗留系统 Agent 化 · AI 编程术语标准化萌芽
+
+**关键项目：**
+- 🔀 DeepClaude (987 stars) — 用 DeepSeek V4 Pro 替换 Claude Code 后端，17x 降本
+- 🌐 Chromex (813 stars) — Codex 驱动 Chrome Side-Panel 助手
+- 📊 Future AGI (822 stars) — 开源 Agent 评估观测平台，Apache 2.0
+- 🔄 Reversa (565 stars) — 遗留系统转 Agent 可执行规格
+- 🎨 Open Design (23.7k stars) — Agent Design 赛道领跑者，持续爆发
+- 📽️ Open Slide (897 stars) — Agent 原生 PPT 生成框架
+- 📖 Dictionary of AI Coding (961 stars) — AI 编程术语词典
+
+→ [查看完整日报](daily/2026-05-05.html)
+
+---
+
 ## 2026-05-04
 
 **核心主题：** Agent Design 红海化 · Linux 内核 CVE-2026-31431 席卷安全社区 · Harmonist 协议级 Agent 编排至 1.2K · DeepSeek TileKernels 定义 LLM 底层算子新方向 · DPI 绕过方案激增

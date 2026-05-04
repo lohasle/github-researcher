@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-05-04）
+## 最新研究摘要（2026-05-05）
 
-**Agent Design 红海化 · Linux 内核 CVE-2026-31431 席卷安全社区 · Harmonist 协议级 Agent 编排至 1.2K · DeepSeek TileKernels 定义 LLM 底层算子新方向 · DPI 绕过方案激增**
+**Agent 后端解耦趋势加速：DeepClaude 替换 Claude Code 后端 17x 降本 · Browser Agent 新形态 Chromex 入局 · Future AGI 开源 Agent 评估观测平台 · Reversa 遗留系统 Agent 化 · AI 编程术语标准化萌芽**
 
 今日热榜新信号：
-- **Open Design**（19.1k stars）：开源 Claude Design 替代，19K stars，6天从 4K 到 19K，Agent Design 赛道领跑者
-- **Copy Fail CVE-2026-31431**（3.0k stars）：Linux 内核 algif_aead page-cache 提权漏洞 PoC，3天 3K stars
-- **TileKernels**（1.4k stars）：DeepSeek 开源 GPU 算子库，TileLang 构建，MoE/量化/Engram/MHC 全覆盖
+- **DeepClaude**（987 stars）：用 DeepSeek V4 Pro 替代 Claude Code 后端，保持相同 UX，成本降低 17 倍
+- **Chromex**（813 stars）：Codex 驱动的 Chrome Side-Panel 助手，页面上下文 + 标签 + 语音 + 图片全流程
+- **Future AGI**（822 stars）：开源 LLM/Agent 评估观测平台，Tracing + Evals + Simulations + Guardrails，Apache 2.0
 
+**→ [查看 2026-05-05 完整简报](daily/2026-05-05.md)**
 **→ [查看 2026-05-04 完整简报](daily/2026-05-04.md)**
 **→ [查看 2026-05-03 完整简报](daily/2026-05-03.md)**
 **→ [查看 2026-05-02 完整简报](daily/2026-05-02.md)**
-**→ [查看 2026-05-01 完整简报](daily/2026-05-01.md)**
 
 ---
 
@@ -24,22 +24,22 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-05-05](daily/2026-05-05.md) | Agent 后端解耦趋势加速：DeepClaude 替换 Claude Code | 7 个深度分析 |
 | [2026-05-04](daily/2026-05-04.md) | Agent Design 红海化 · Linux 内核 CVE-2026-314 | 8 个深度分析 |
 | [2026-05-03](daily/2026-05-03.md) | Agent Skills 生态进入工具整合期：CC Switch 57K+ 稳守 | 6 个深度分析 |
 | [2026-05-02](daily/2026-05-02.md) | Agent Design 赛道爆发：Open Design 4天翻倍至 11.4 | 6 个深度分析 |
 | [2026-05-01](daily/2026-05-01.md) | Linux 内核 CVE-2026-31431 本地提权曝光 · Open De | 7 个深度分析 |
 | [2026-04-30](daily/2026-04-30.md) | Claude 架构逆向工程引爆 ML 社区 · AI Agent 记忆层进入本地 | 6 个深度分析 |
 | [2026-04-29](daily/2026-04-29.md) | AI 记忆层基础设施竞赛升温 · Agent Skill 生态进入长尾分化期 · | 5 个深度分析 |
-| [2026-04-28](daily/2026-04-28.md) | 国产大模型 MoE 密集发布（Hy3 + Kimi K2.6）· Code In | 5 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **Open Design 突破 19K，Agent Design 赛道从蓝海变红海**：相关项目 open-design。
-2. **CVE-2026-31431 Copy Fail：Linux 内核级提权漏洞引爆安全社区**：相关项目 copy-fail-cve-2026-31431。
-3. **DeepSeek TileKernels：LLM 底层 GPU 算子库开源，MoE/量化/Engram 全覆盖**：相关项目 tile-kernels。
-4. **DPI 绕过方案集中爆发：mhr-cfw Domain Fronting 1.9K stars**：相关项目 mhr-cfw。
+1. **Agent 后端解耦：DeepClaude 用 DeepSeek V4 Pro 替换 Claude Code 后端，17x 降本**：相关项目 deepclaude。
+2. **Browser Agent 新形态：Chromex 以 Codex 驱动 Chrome Side-Panel，打通页面上下文**：相关项目 chromex。
+3. **Agent 可观测性赛道新增玩家：Future AGI 开源 LLM/Agent 评估观测全栈平台**：相关项目 future-agi。
+4. **遗留系统 Agent 化：Reversa 将传统代码转为 Agent 可执行的规格文档**：相关项目 reversa。
 
 ---
 
@@ -62,9 +62,9 @@
 
 ## 数据统计
 
-- 📊 项目档案：95 个
-- 📅 日报总数：28 期
-- 🔄 最近更新：2026-05-04
+- 📊 项目档案：100 个
+- 📅 日报总数：29 期
+- 🔄 最近更新：2026-05-05
 
 ---
 

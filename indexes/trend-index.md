@@ -10,6 +10,30 @@ title: Trend Index — 趋势指数
 
 ---
 
+## 2026-05-05（第二十六版）
+
+### 本日新增项目（2026-05-05）
+
+| 项目 | 分类 | 热度信号 | 核心判断 | 建议 |
+|------|------|---------|---------|------|
+| DeepClaude | 工具型 | 987 stars（2天） | Agent 后端解耦工具，用 DeepSeek V4 Pro 替换 Claude Code 后端 | 有限跟踪 |
+| Chromex | 工具型 | 813 stars（6天） | Codex 驱动 Chrome Side-Panel 助手，Browser Agent 轻量化新范式 | 有限跟踪 |
+| Future AGI | 平台候选 | 822 stars（12天） | 开源 LLM/Agent 评估观测平台，Apache 2.0，全栈覆盖 | 持续跟踪 |
+| Reversa | 工具型 | 565 stars（11天） | 遗留系统转 Agent 可执行规格，技术债务 Agent 化 | 有限跟踪 |
+| Open Slide | 工具型 | 897 stars（9天） | Agent 原生 PPT 生成框架 | 有限跟踪 |
+| Dictionary of AI Coding | 学习型 | 961 stars（4天） | AI 编程术语词典，Matt Pocock 出品 | 无需跟踪 |
+
+### 持续跟踪项目状态更新
+
+| 项目 | 上次 Stars | 今日 Stars | 变化 | 判断 |
+|------|-----------|-----------|------|------|
+| Open Design | 19.1K | 23.7K | +4.6K（+24%） | 持续爆发但增速放缓，赛道红海化 |
+| Copy Fail CVE-2026-31431 | 3.0K | 3.1K | +100 | 安全事件热度趋稳 |
+| Harmonist | 1.2K | 1.26K | +5% | 稳定，零依赖定位获认可 |
+| TileKernels | 1.4K | 1.4K | 持平 | 稳定，DeepSeek 基础设施方向 |
+
+---
+
 ## 2026-05-04（第二十五版）
 
 ### 本日新增项目（2026-05-04）

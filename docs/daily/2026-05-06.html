@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026-05-06 GitHub 趋势研究简报 | GitHub Researcher</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📊</text></svg>">
-    <meta name="description" content="Agent Design 赛道爆发：Open Design 7 天 27K 重新定义设计工具链 · Cursor 官方 Cookbook 出炉 · Linux 内核 9 年 LPE 漏洞曝光 · AI PPT 生成工具集中爆发 · Vercel Deepsec 用 Agent 找漏洞">
+    <title>2026-05-06 GitHub 趋势研究简报 | GitHub 趋势研究</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📅</text></svg>">
     <style>
         :root {
             --primary: #7C3AED;
@@ -170,6 +169,23 @@
         .card-grid { animation-delay: 0.2s; animation-fill-mode: both; }
         .trend-list { animation-delay: 0.25s; animation-fill-mode: both; }
     </style>
+    <style>
+        .daily-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 48px; box-shadow: var(--shadow); margin-bottom: 48px; max-width: 860px; margin-left: auto; margin-right: auto; }
+        .daily-content h1 { font-size: 28px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 8px; }
+        .daily-content h2 { font-size: 20px; font-weight: 700; color: var(--primary); border-left: 4px solid var(--primary); padding-left: 12px; margin: 28px 0 14px; }
+        .daily-content h3 { font-size: 16px; font-weight: 700; color: var(--text); margin: 20px 0 10px; }
+        .daily-content table { border-collapse: collapse; width: 100%; margin: 14px 0; }
+        .daily-content th, .daily-content td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; font-size: 13px; }
+        .daily-content th { background: var(--primary); color: white; font-weight: 600; }
+        .daily-content tr:nth-child(even) td { background: var(--bg); }
+        .daily-content blockquote { background: linear-gradient(135deg, #F3E8FF, #ECFEFF); border-left: 4px solid var(--primary); padding: 14px 18px; margin: 14px 0; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+        .daily-content ul, .daily-content ol { padding-left: 22px; margin: 10px 0; }
+        .daily-content li { margin: 6px 0; font-size: 14px; }
+        .daily-content p { font-size: 14px; margin-bottom: 12px; line-height: 1.7; }
+        .daily-content strong { color: var(--primary-dark); }
+        .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 24px; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
     <nav class="nav">
@@ -180,165 +196,264 @@
             </a>
             <div class="nav-links">
                 <a href="/github-researcher/index.html" id="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>首页</span></a>
-                <a href="/github-researcher/daily.html" id="nav-daily"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg><span>日报</span></a>
+                <a href="/github-researcher/daily.html" id="nav-daily" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg><span>日报</span></a>
                 <a href="/github-researcher/projects.html" id="nav-projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
                 <a href="/github-researcher/trends.html" id="nav-trends"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>趋势</span></a>
             </div>
         </div>
     </nav>
 <main class="container">
-        <section class="hero">
-            <div class="hero-badge">
-                <span class="dot"></span>
-                2026-05-06
-            </div>
-            <h1>GitHub 趋势研究</h1>
-            <p>Agent Design 赛道爆发：Open Design 7 天 27K 重新定义设计工具链 · Cursor 官方 Cookbook 出炉 · Linux 内核 9 年 LPE 漏洞曝光 · AI PPT 生成工具集中爆发 · Vercel Deepsec 用 Agent 找漏洞</p>
-            <div class="hero-actions">
-                <a href="/github-researcher/daily/2026-05-06.html" class="btn-primary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                    今日简报
-                </a>
-                <a href="/github-researcher/projects.html" class="btn-secondary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="14" y="0" width="7" height="7"/><rect x="0" y="14" width="7" height="7"/></svg>
-                    重点项目
-                </a>
-            </div>
-        </section>
-        <section class="stats-row">
-            <div class="stat-card">
-                <div class="stat-icon">📊</div>
-                <div class="stat-number">106</div>
-                <div class="stat-label">深度分析项目</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🔥</div>
-                <div class="stat-number">30</div>
-                <div class="stat-label">日更日报</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🎯</div>
-                <div class="stat-number">117</div>
-                <div class="stat-label">核心跟踪方向</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">⭐</div>
-                <div class="stat-number">120k+</div>
-                <div class="stat-label">本周总 Star 增速</div>
-            </div>
-        </section>
-        <section class="brief-card">
-            <div class="brief-date">📅 2026-05-06 · 今日核心判断</div>
-            <h2 class="brief-title">Agent Design 赛道爆发：Open Design 7 天 27K 重新定义设计工具链 · Cursor 官方 Cookbook 出炉 · Linux 内核 9 年 LPE 漏洞曝光 · AI PPT 生成工具集中爆发 · Vercel Deepsec 用 Agent 找漏洞</h2>
-            <p class="brief-text">Agent Design 赛道爆发：Open Design 7 天 27K 重新定义设计工具链 · Cursor 官方 Cookbook 出炉 · Linux 内核 9 年 LPE 漏洞曝光 · AI PPT 生成工具集中爆发 · Vercel Deepsec 用 Agent 找漏洞 今日头条趋势:Agent Design 赛道爆发：Open Design 7 天 27K stars，Claude Design 开源替代引爆设计工具变革。</p>
-            <a href="/github-researcher/daily/2026-05-06.html" class="brief-cta">阅读完整简报 →</a>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">⭐</div>
-                    重点跟踪项目
-                </div>
-                <a href="/github-researcher/projects.html" class="section-link">查看全部 →</a>
-            </div>
-            <div class="card-grid">
-                <div class="card" onclick="window.location='/github-researcher/projects/open-design.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🎨</div>
-                        <div class="card-stars">27.3k stars</div>
-                    </div>
-                    <div class="card-title">Open Design</div>
-                    <div class="card-desc">Claude Design 开源替代，19 Skills + 71 Design Systems，Agent 驱动设计全流程</div>
-                    <div class="card-tags"><span class="tag tag-purple">agent-design</span><span class="tag tag-purple">claude-code</span><span class="tag tag-purple">skill</span></div>
-                    <div class="card-actions"><a href="https://github.com/nexu-io/open-design" target="_blank" rel="noopener" class="btn-github" onclick="event.stopPropagation();"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub</a></div>
-                </div>
-                <div class="card" onclick="window.location='/github-researcher/projects/guizang-ppt-skill.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">📽️</div>
-                        <div class="card-stars">5k stars</div>
-                    </div>
-                    <div class="card-title">Guizang PPT Skill</div>
-                    <div class="card-desc">Claude Code Skill 一键生成杂志风 HTML 幻灯片，10 种布局 + WebGL 背景</div>
-                    <div class="card-tags"><span class="tag tag-purple">claude-code-skill</span><span class="tag tag-purple">ppt</span><span class="tag tag-purple">html-deck</span></div>
-                    <div class="card-actions"><a href="https://github.com/op7418/guizang-ppt-skill" target="_blank" rel="noopener" class="btn-github" onclick="event.stopPropagation();"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub</a></div>
-                </div>
-                <div class="card" onclick="window.location='/github-researcher/projects/cursor-cookbook.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">📖</div>
-                        <div class="card-stars">3.5k stars</div>
-                    </div>
-                    <div class="card-title">Cursor Cookbook</div>
-                    <div class="card-desc">Cursor 官方最佳实践 Cookbook，AI 编辑器使用范式标准化</div>
-                    <div class="card-tags"><span class="tag tag-purple">cursor</span><span class="tag tag-purple">ai-editor</span><span class="tag tag-purple">cookbook</span></div>
-                    <div class="card-actions"><a href="https://github.com/cursor/cookbook" target="_blank" rel="noopener" class="btn-github" onclick="event.stopPropagation();"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub</a></div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">📈</div>
-                    趋势热榜
-                </div>
-                <a href="/github-researcher/trends.html" class="section-link">完整趋势表 →</a>
-            </div>
-            <div class="trend-list">
-                <div class="trend-item">
-                    <div class="trend-rank top">1</div>
-                    <div class="trend-content">
-                        <div class="trend-title">Agent Design 赛道爆发：Open Design 7 天 27K stars，Claude Design 开源替代引爆设计工具变革</div>
-                        <div class="trend-meta">open-design · guizang-ppt-skill · ppt-master</div>
-                    </div>
-                    <div class="trend-score high">88/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank top">2</div>
-                    <div class="trend-content">
-                        <div class="trend-title">AI 编辑器生态成熟：Cursor 官方 Cookbook + Open Slide 为 Agent 构建演示框架</div>
-                        <div class="trend-meta">cursor-cookbook · open-slide</div>
-                    </div>
-                    <div class="trend-score high">80/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">3</div>
-                    <div class="trend-content">
-                        <div class="trend-title">安全领域 Agent 化：CVE-2026-31431 九年内核漏洞 + Deepsec Agent 驱动安全审计</div>
-                        <div class="trend-meta">copy-fail-cve-2026-31431 · deepsec</div>
-                    </div>
-                    <div class="trend-score high">82/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">4</div>
-                    <div class="trend-content">
-                        <div class="trend-title">AI 内容生产工业化：Waoowaoo 影视级 AI 视频平台 + OpenChronicle 开源时序</div>
-                        <div class="trend-meta">waoowaoo · open-chronicle</div>
-                    </div>
-                    <div class="trend-score high">76/80</div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">🏷️</div>
-                    核心关注领域
-                </div>
-            </div>
-            <div class="category-row">
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🤖</span> AI Agent / Multi-Agent</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">⚡</span> LLM Infra / MCP / AI Runtime</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🛠️</span> 开发工具链 / IDE / Copilot</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🌐</span> 前端框架 / Serverless / Edge</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">☸️</span> 云原生 / K8s / Service Mesh</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔄</span> 自动化 / Browser Use / RPA+AI</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">💾</span> 数据基础设施 / RAG / 向量 DB</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔌</span> 基础设施标准 / 平台潜力</a>
-            </div>
-        </section>
+    <a href="/github-researcher/daily.html" class="back-link">← 返回日报索引</a>
+    <div class="daily-content">
+        <h1 id="2026-05-06-github">2026-05-06 GitHub 趋势研究简报</h1>
+<h2 id="_1">今日趋势概览</h2>
+<pre class="mermaid">mindmap
+  root((2026-05-06 趋势))
+    Agent Design 爆发
+      Open Design 27K/7天
+      Guizang PPT Skill 5K
+      PPT Master 11.6K
+    AI 编辑器生态
+      Cursor Cookbook 官方
+      Open Slide Agent PPT
+    安全 Agent 化
+      CVE-2026-31431 LPE
+      Deepsec Agent 审计
+    内容工业化
+      Waoowaoo 影视平台
+      OpenChronicle
+</pre>
+<hr />
+<h2 id="1agent-design-88">趋势 1：Agent Design 赛道爆发（评分 88）</h2>
+<p><strong>核心信号：</strong> Open Design 7 天从 0 到 27.3K stars，fork 2987，Apache 2.0 许可证。这不仅仅是又一个设计工具——它标志着 <strong>Agent 作为设计工具的核心引擎</strong> 正在成为共识。</p>
+<p><strong>三层分析：</strong></p>
+<ol>
+<li><strong>表层热度</strong>：Claude Design 开源替代 + 支持 10 种 Agent CLI（Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen / Copilot / Hermes / Kimi CLI），覆盖面极广</li>
+<li><strong>技术实质</strong>：19 Skills + 71 brand-grade Design Systems + Sandboxed preview + 多格式导出（HTML/PDF/PPTX/MP4），工程完成度惊人——这不是 PoC，是接近生产可用的平台</li>
+<li><strong>架构意义</strong>：Agent-Design 作为一种模式，正在从"用 AI 画图"升级为"Agent 驱动的设计系统"——包含设计规范、组件库、输出管线的完整链路</li>
+</ol>
+<p><strong>关联项目：</strong>
+- <strong>Guizang PPT Skill</strong>（5K stars）：聚焦 Claude Code Skill，将 Agent 设计能力封装为可复用 Skill
+- <strong>PPT Master</strong>（11.6K stars）：从文档到原生 PPTX，证明 AI 内容生成已进入"输出格式工业化"阶段</p>
+<p><strong>架构师判断：</strong> Agent Design 不是短期热点。它正在形成独立的技术栈层：Agent Runtime → Design Skills → Design Systems → Output Pipeline。这个分层一旦稳定，将产生新的基础设施机会。</p>
+<hr />
+<h2 id="2ai-80">趋势 2：AI 编辑器生态成熟（评分 80）</h2>
+<p><strong>Cursor Cookbook</strong>（3.5K stars）是 Cursor 官方首次系统化输出 AI 编辑器最佳实践。它的意义不在于内容本身，而在于：
+- AI 编辑器的使用范式正在标准化
+- "Cookbook" 模式成为 AI 工具的标准文档形态
+- 标志着 AI 编辑器从"尝鲜工具"进入"工程化使用"阶段</p>
+<p><strong>Open Slide</strong>（1.3K stars）则为 Agent 构建了专用的演示框架——Agent 不再只是"生成 Markdown"，而是能输出结构化的演示内容。这是 Agent Output 格式多元化的一个缩影。</p>
+<hr />
+<h2 id="3-agent-82">趋势 3：安全领域 Agent 化（评分 82）</h2>
+<p><strong>CVE-2026-31431</strong>（3.3K stars）是一个 9 年之久的 Linux 内核本地提权漏洞，由 Theori 的 Xint Code 发现。单从 star 数看它不像传统安全研究项目，但它的热度说明：
+- 社区对底层安全漏洞的关注度正在上升
+- 漏洞发现工具（如 Xint Code）正在被重视</p>
+<p><strong>Deepsec</strong>（1K stars）是 Vercel 出品的 Coding Agent 驱动安全审计工具。用 Agent 扫代码找漏洞——这是安全工具 Agent 化的明确信号。</p>
+<p><strong>架构师关注点：</strong> 安全审计 Agent 化意味着 DevSecOps 流程可能被重塑。当前 Deepsec 还在早期，但方向正确。</p>
+<hr />
+<h2 id="4ai-76">趋势 4：AI 内容生产工业化（评分 76）</h2>
+<p><strong>Waoowaoo</strong>（12K stars）定位"工业级 AI 影视生产平台"，从短片到真人长片，好莱坞标准工作流。这是 AI 视频赛道的又一重磅玩家。</p>
+<p><strong>判断：</strong> AI 视频生产正在从"单点工具"向"全流程平台"演进。但当前阶段，大部分项目仍处于 PoC 到早期产品的过渡期，真正能产出商业级内容还需要时间。</p>
+<hr />
+<h2 id="_2">重点项目深度分析</h2>
+<h3 id="top-1open-design-agent-design">Top 1：Open Design — Agent Design 的标杆</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>评分</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热度质量</td>
+<td>9</td>
+<td>7天27K，fork 2987，增速惊人</td>
+</tr>
+<tr>
+<td>技术创新度</td>
+<td>8</td>
+<td>Agent + Design System + Multi-format pipeline</td>
+</tr>
+<tr>
+<td>工程成熟度</td>
+<td>8</td>
+<td>19 Skills + 71 Design Systems，完成度高</td>
+</tr>
+<tr>
+<td>架构启发价值</td>
+<td>9</td>
+<td>定义了 Agent-Design 技术栈的分层</td>
+</tr>
+<tr>
+<td>企业落地潜力</td>
+<td>7</td>
+<td>BYOK 模式适合企业，但设计系统本地化是挑战</td>
+</tr>
+<tr>
+<td>中期趋势概率</td>
+<td>9</td>
+<td>Agent Design 已成独立赛道</td>
+</tr>
+<tr>
+<td>平台化潜力</td>
+<td>8</td>
+<td>Design System + Skill 生态可扩展</td>
+</tr>
+<tr>
+<td>基础设施潜力</td>
+<td>7</td>
+<td>有潜力成为设计基础设施，但竞争激烈</td>
+</tr>
+</tbody>
+</table>
+<p><strong>总分：65/80</strong>
+<strong>归类：平台候选</strong>
+<strong>持续跟踪：是</strong></p>
+<h3 id="top-2ppt-master-ai-ppt">Top 2：PPT Master — AI PPT 生成的工业化标杆</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>评分</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热度质量</td>
+<td>8</td>
+<td>11.6K stars，半年稳定增长</td>
+</tr>
+<tr>
+<td>技术创新度</td>
+<td>7</td>
+<td>原生 PPTX 输出（非图片），有差异化</td>
+</tr>
+<tr>
+<td>工程成熟度</td>
+<td>8</td>
+<td>支持原生动画和形状，可用性高</td>
+</tr>
+<tr>
+<td>架构启发价值</td>
+<td>7</td>
+<td>文档解析 → 结构化 → PPTX 渲染的管线设计</td>
+</tr>
+<tr>
+<td>企业落地潜力</td>
+<td>8</td>
+<td>直接解决企业 PPT 制作痛点</td>
+</tr>
+<tr>
+<td>中期趋势概率</td>
+<td>7</td>
+<td>AI 生成内容（AIGC）是确定趋势</td>
+</tr>
+<tr>
+<td>平台化潜力</td>
+<td>6</td>
+<td>更偏工具，但可扩展为内容生成平台</td>
+</tr>
+<tr>
+<td>基础设施潜力</td>
+<td>4</td>
+<td>不太可能成为基础设施</td>
+</tr>
+</tbody>
+</table>
+<p><strong>总分：55/80</strong>
+<strong>归类：生产可用</strong>
+<strong>持续跟踪：是</strong></p>
+<h3 id="top-3cve-2026-31431">Top 3：CVE-2026-31431 — 安全研究里程碑</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>评分</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热度质量</td>
+<td>8</td>
+<td>3.3K stars，安全社区广泛讨论</td>
+</tr>
+<tr>
+<td>技术创新度</td>
+<td>9</td>
+<td>9年未发现的内核 LPE，Xint Code 工具创新</td>
+</tr>
+<tr>
+<td>工程成熟度</td>
+<td>6</td>
+<td>安全 PoC，非产品</td>
+</tr>
+<tr>
+<td>架构启发价值</td>
+<td>7</td>
+<td>揭示了内核安全审计的盲区</td>
+</tr>
+<tr>
+<td>企业落地潜力</td>
+<td>5</td>
+<td>直接影响：需要立即修补</td>
+</tr>
+<tr>
+<td>中期趋势概率</td>
+<td>7</td>
+<td>安全审计自动化是中期趋势</td>
+</tr>
+<tr>
+<td>平台化潜力</td>
+<td>3</td>
+<td>单一 CVE，无平台潜力</td>
+</tr>
+<tr>
+<td>基础设施潜力</td>
+<td>2</td>
+<td>无</td>
+</tr>
+</tbody>
+</table>
+<p><strong>总分：47/80</strong>
+<strong>归类：安全研究</strong>
+<strong>持续跟踪：关注 Xint Code 工具演进</strong></p>
+<hr />
+<h2 id="_3">风险与机遇</h2>
+<h3 id="_4">风险</h3>
+<ol>
+<li><strong>Agent Design 泡沫风险</strong>：Open Design 增速过快（7天27K），可能包含跟风 star。需观察 30 天留存率</li>
+<li><strong>PPT 工具同质化</strong>：Guizang PPT Skill + PPT Master + Open Slide 同时爆发，赛道拥挤</li>
+<li><strong>Waoowaoo 商业模式不明</strong>：12K stars 但许可证为 "Other"，需关注商业化路径</li>
+</ol>
+<h3 id="_5">机遇</h3>
+<ol>
+<li><strong>Agent Design 技术栈正在成型</strong>：这是继 Agent Runtime、Agent Memory 之后的第三个独立 Agent 子领域</li>
+<li><strong>AI 编辑器生态标准化</strong>：Cursor Cookbook 标志着 AI 编辑器进入"最佳实践"阶段</li>
+<li><strong>安全 Agent 化</strong>：Deepsec + CVE-2026-31431 表明安全审计 Agent 有真实需求</li>
+</ol>
+<hr />
+<h2 id="_6">项目档案</h2>
+<ul>
+<li><strong>Open Design</strong> → <a href="projects/open-design.html">projects/open-design.html</a></li>
+<li><strong>Guizang PPT Skill</strong> → <a href="projects/guizang-ppt-skill.html">projects/guizang-ppt-skill.html</a></li>
+<li><strong>Cursor Cookbook</strong> → <a href="projects/cursor-cookbook.html">projects/cursor-cookbook.html</a></li>
+<li><strong>CVE-2026-31431</strong> → <a href="projects/copy-fail-cve-2026-31431.html">projects/copy-fail-cve-2026-31431.html</a></li>
+<li><strong>PPT Master</strong> → <a href="projects/ppt-master.html">projects/ppt-master.html</a></li>
+<li><strong>Deepsec</strong> → <a href="projects/deepsec.html">projects/deepsec.html</a></li>
+<li><strong>Waoowaoo</strong> → <a href="projects/waoowaoo.html">projects/waoowaoo.html</a></li>
+<li><strong>OpenChronicle</strong> → <a href="projects/open-chronicle.html">projects/open-chronicle.html</a></li>
+</ul>
+    </div>
 </main>
     <footer class="footer">
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

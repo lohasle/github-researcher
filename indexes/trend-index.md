@@ -10,6 +10,37 @@ title: Trend Index — 趋势指数
 
 ---
 
+## 2026-05-06（第二十七版）
+
+### 本日新增项目（2026-05-06）
+
+| 项目 | 分类 | 热度信号 | 核心判断 | 建议 |
+|------|------|---------|---------|------|
+| Guizang PPT Skill | 工具型 | 5K stars（2周） | Claude Code Skill 生成杂志风 HTML 幻灯片 | 有限跟踪 |
+| Cursor Cookbook | 学习型 | 3.5K stars（1周） | Cursor 官方 AI 编辑器最佳实践 | 持续跟踪 |
+| PPT Master | 生产可用 | 11.6K stars（半年） | AI 生成原生可编辑 PPTX，格式工业化标杆 | 持续跟踪 |
+| Deepsec | 工具型 | 1K stars（1周） | Vercel 出品，Agent 驱动安全审计工具 | 持续跟踪 |
+| Waoowaoo | 平台候选 | 12K stars（4月） | 工业级 AI 影视生产平台，全流程覆盖 | 持续跟踪 |
+
+### 持续跟踪项目状态更新
+
+| 项目 | 上次 Stars | 今日 Stars | 变化 | 判断 |
+|------|-----------|-----------|------|------|
+| Open Design | 23.7K | 27.3K | +3.6K（+15%） | 持续爆发，Agent Design 赛道事实标准 |
+| Copy Fail CVE-2026-31431 | 3.1K | 3.3K | +200 | 安全事件热度趋稳 |
+| OpenChronicle | 2.1K | 2.1K | 持平 | 稳定 |
+| Harmonist | 1.26K | 1.26K | 持平 | 稳定 |
+| TileKernels | 1.4K | 1.4K | 持平 | 稳定 |
+
+### 趋势判断
+
+1. **Agent Design 赛道爆发**：Open Design 7天27K + Guizang + PPT Master + Open Slide 同时爆发，形成独立技术栈层
+2. **AI 编辑器生态标准化**：Cursor Cookbook 标志着 AI 编辑器从尝鲜进入工程化
+3. **安全审计 Agent 化**：Deepsec + CVE-2026-31431 双信号
+4. **AI 内容生产工业化**：Waoowaoo 代表视频赛道平台化
+
+---
+
 ## 2026-05-05（第二十六版）
 
 ### 本日新增项目（2026-05-05）

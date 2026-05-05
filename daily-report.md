@@ -4,6 +4,23 @@
 
 ---
 
+## 2026-05-06
+
+**核心主题：** Agent Design 赛道爆发：Open Design 7 天 27K 重新定义设计工具链 · Cursor 官方 Cookbook 出炉 · Linux 内核 9 年 LPE 漏洞曝光 · AI PPT 生成工具集中爆发 · Vercel Deepsec 用 Agent 找漏洞
+
+**关键项目：**
+- 🎨 Open Design (27.3k stars) — Agent Design 赛道事实标准，7天从0到27K
+- 📽️ Guizang PPT Skill (5k stars) — Claude Code Skill 生成杂志风 HTML 幻灯片
+- 📖 Cursor Cookbook (3.5k stars) — Cursor 官方 AI 编辑器最佳实践
+- 🔓 CVE-2026-31431 (3.3k stars) — Linux 内核 9 年本地提权漏洞
+- 📊 PPT Master (11.6k stars) — AI 生成原生可编辑 PPTX
+- 🛡️ Deepsec (1k stars) — Vercel 出品，Agent 驱动安全审计
+- 🎬 Waoowaoo (12k stars) — 工业级 AI 影视生产平台
+
+→ [查看完整日报](daily/2026-05-06.html)
+
+---
+
 ## 2026-05-05
 
 **核心主题：** Agent 后端解耦趋势加速：DeepClaude 替换 Claude Code 后端 17x 降本 · Browser Agent 新形态 Chromex 入局 · Future AGI 开源 Agent 评估观测平台 · Reversa 遗留系统 Agent 化 · AI 编程术语标准化萌芽

@@ -1,93 +1,51 @@
 {
   "version": 3,
   "files": {
-    "github-researcher:sessions/09a82b5c-b485-4e38-a5a4-84a93642ead0.jsonl": {
+    "github-researcher:sessions/github-researcher/09a82b5c-b485-4e38-a5a4-84a93642ead0.jsonl": {
       "mtimeMs": 1777759907290,
       "size": 225564,
       "contentHash": "4d83cf277f2f68e102a5746058d30a19d6d5feb3b1a134ea3c1b1696891ff8e3",
       "lineCount": 14,
       "lastContentLine": 14
     },
-    "github-researcher:sessions/09a82b5c-b485-4e38-a5a4-84a93642ead0.trajectory.jsonl": {
-      "mtimeMs": 1777759907369,
-      "size": 395531,
-      "contentHash": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
-      "lineCount": 0,
-      "lastContentLine": 0
+    "github-researcher:sessions/github-researcher/2971249b-a9a9-42d2-bfe0-d8520052dc23.jsonl": {
+      "mtimeMs": 1777932657313,
+      "size": 215928,
+      "contentHash": "6fe2aa5ce1bcd23a77d8bd86ad8e94e62827d203ea2a78b8acef24ada1887485",
+      "lineCount": 18,
+      "lastContentLine": 18
     },
-    "github-researcher:sessions/78fe673a-31fb-4629-8a36-902be6b98f34.jsonl": {
+    "github-researcher:sessions/github-researcher/78fe673a-31fb-4629-8a36-902be6b98f34.jsonl": {
       "mtimeMs": 1777500734241,
       "size": 225422,
       "contentHash": "f5564b52e3e90e0d3c7ee3f68312b7d81ed3b700060aaccac12bf33b857e0139",
       "lineCount": 23,
       "lastContentLine": 23
     },
-    "github-researcher:sessions/78fe673a-31fb-4629-8a36-902be6b98f34.trajectory.jsonl": {
-      "mtimeMs": 1777500734315,
-      "size": 397913,
-      "contentHash": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
-      "lineCount": 0,
-      "lastContentLine": 0
-    },
-    "github-researcher:sessions/8ddc6dad-3cc6-4184-8ca1-890896957582.jsonl": {
+    "github-researcher:sessions/github-researcher/8ddc6dad-3cc6-4184-8ca1-890896957582.jsonl": {
       "mtimeMs": 1777587076726,
       "size": 260334,
       "contentHash": "c63f93755e5a105a62574ab964e67d0b5226a5e4b521a33e42e73f81795f618f",
       "lineCount": 22,
       "lastContentLine": 22
     },
-    "github-researcher:sessions/8ddc6dad-3cc6-4184-8ca1-890896957582.trajectory.jsonl": {
-      "mtimeMs": 1777587076809,
-      "size": 179686,
-      "contentHash": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
-      "lineCount": 0,
-      "lastContentLine": 0
-    },
-    "github-researcher:sessions/939c4204-294c-4fee-bdee-41ec342d7542.jsonl": {
+    "github-researcher:sessions/github-researcher/939c4204-294c-4fee-bdee-41ec342d7542.jsonl": {
       "mtimeMs": 1777673344625,
       "size": 213013,
       "contentHash": "25b86e9a86717409cfd42f7dbc58c323366e04d11c965ece1018a707f83e5702",
       "lineCount": 21,
       "lastContentLine": 21
     },
-    "github-researcher:sessions/939c4204-294c-4fee-bdee-41ec342d7542.trajectory.jsonl": {
-      "mtimeMs": 1777673344700,
-      "size": 387125,
-      "contentHash": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
-      "lineCount": 0,
-      "lastContentLine": 0
-    },
-    "github-researcher:sessions/b9a0013f-502b-4bb9-ba2e-28ef9937ea83.jsonl": {
+    "github-researcher:sessions/github-researcher/b9a0013f-502b-4bb9-ba2e-28ef9937ea83.jsonl": {
       "mtimeMs": 1777846180933,
       "size": 208162,
       "contentHash": "801bd2cfd619e6250d6c502d32e8c2133b3a97cfa31f0b5c83a45a3de9dd87ae",
       "lineCount": 19,
       "lastContentLine": 19
     },
-    "github-researcher:sessions/b9a0013f-502b-4bb9-ba2e-28ef9937ea83.trajectory.jsonl": {
-      "mtimeMs": 1777846181004,
-      "size": 381444,
-      "contentHash": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
-      "lineCount": 0,
-      "lastContentLine": 0
-    },
-    "github-researcher:sessions/d43258fe-76a5-4719-a9ab-cb42fb1a904c.trajectory.jsonl": {
-      "mtimeMs": 1777328215977,
-      "size": 738885,
-      "contentHash": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
-      "lineCount": 0,
-      "lastContentLine": 0
-    },
-    "github-researcher:sessions/f7499b77-69dd-4c62-985b-321fc35ea00d.jsonl.deleted.2026-04-29T22-12-23.849Z": {
+    "github-researcher:sessions/github-researcher/f7499b77-69dd-4c62-985b-321fc35ea00d.jsonl.deleted.2026-04-29T22-12-23.849Z": {
       "mtimeMs": 1777414315034,
       "size": 289230,
-      "contentHash": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
-      "lineCount": 0,
-      "lastContentLine": 0
-    },
-    "github-researcher:sessions/f7499b77-69dd-4c62-985b-321fc35ea00d.trajectory.jsonl": {
-      "mtimeMs": 1777414315130,
-      "size": 174168,
       "contentHash": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
       "lineCount": 0,
       "lastContentLine": 0
@@ -436,6 +394,25 @@
       "4040f38893fd47e534abbf528bff2c08190b0d41",
       "6e60f9797ca7aecd72f8ed9259c772a292f46c74"
     ],
-    "github-researcher:b9a0013f-502b-4bb9-ba2e-28ef9937ea83.trajectory": []
+    "github-researcher:2971249b-a9a9-42d2-bfe0-d8520052dc23": [
+      "067670c74326d7ec5c93687fa864aaacfaead855",
+      "c7ed2d5a40d0432a1f071bbad766c1a6e6198e8a",
+      "eaee839bd062fe01f8ace5e69d6d1d90f13280a6",
+      "1b6f47fd5ae8c08d1a37dbbf1a4255f9c68f6328",
+      "a5ed2e4f89b0b5938451c06500f38b8a6971436d",
+      "fe2f94b9b8fb4e0e479059cac6e36b829f1f95b1",
+      "aa7a6fe0ac1b1feadeab1a5044bf8f8ac17c65f0",
+      "552ab25c488fbd3a1639cae2452e8e46f7c2f34f",
+      "d7cc84580984bf091a319a35aa210ba362d256b4",
+      "b4581300a718ba91222a13a6177ea80138cc0b35",
+      "981ee198986912248430e08dccc8de6f8a96c7c4",
+      "7b6c636417573453f76527baae76b523b6387d9f",
+      "8afbc5801aa7c0879e09ee0d602081f5782e2428",
+      "1dd912a153a011a90757a36bd27e1aa2fe678da6",
+      "2efa662a37d9ca008c18abd13337b0b8fffa096b",
+      "53cc53503f28f4793053f6da0a5a3e90a3f4bdb4",
+      "4eaec810db4f2ca0fd88c7397ea5c5f657d6e557",
+      "2b26dfdb8a292fbe28662e8dc6100585876ea076"
+    ]
   }
 }

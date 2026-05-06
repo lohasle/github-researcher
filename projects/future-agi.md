@@ -2,14 +2,14 @@
 title: "Future-AGI"
 slug: "future-agi"
 date_added: "2026-04-29"
-last_seen_date: "2026-05-05"
+last_seen_date: "2026-05-07"
 category: "平台候选"
 emoji: "📊"
-stars: "822 stars"
-stars_delta: "12天822，持续增长"
+stars: "~900 stars（预估）"
+stars_delta: "14天~900，持续增长，预估接近 900"
 score: 80
 language: "Python"
-score: 69
+score: 80
 tags: ["llm-observability", "evals", "tracing", "ai-gateway", "guardrails"]
 url: "https://github.com/future-agi/future-agi"
 ---

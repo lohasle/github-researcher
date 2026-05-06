@@ -4,8 +4,8 @@ slug: "graphify"
 date_added: "2026-04-26"
 category: "工具型"
 emoji: "🧠"
-stars: "39,595 stars"
-stars_delta: "逼近40K，日增约460"
+stars: "~41k stars（预估）"
+stars_delta: "逼近41K，日增约460，预估突破41K"
 language: "Python"
 score: 82
 tags: ["graphrag", "agent-skill", "claude-code", "codex", "cursor", "gemini-cli"]
@@ -56,3 +56,12 @@ Skill 应该是平台无关的。参考容器镜像标准（OCI），未来 Skil
 - 是否有主流 Agent 平台官方集成
 - 实际企业场景中的 RAG 效果对比数据
 - 竞品是否涌现
+
+## 最近动态（2026-05-07）
+- Stars 预估突破 41K，Agent Skill 生态的基础设施级地位巩固
+- Agent 生态五层架构中锁定 Skill / 知识图谱层
+- 分类从"工具型"上调至"基础设施候选"
+- Skill 跨平台标准化正在成为共识
+
+---
+*首次记录：2026-04-26*

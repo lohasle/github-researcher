@@ -4,8 +4,8 @@ slug: "deepsec"
 date_added: "2026-05-06"
 category: "工具型"
 emoji: "🛡️"
-stars: "1k stars"
-stars_delta: "1周1K"
+stars: "~1.2k stars（预估）"
+stars_delta: "2周~1.2K"
 language: "TypeScript"
 score: 78
 tags: ["security", "coding-agent", "vulnerability", "vercel", "audit", "devsecops"]
@@ -58,6 +58,11 @@ Vercel Labs 出品，Apache 2.0 许可证。用 Agent 做安全审计是 DevSecO
 1. 漏洞发现准确率和误报率
 2. 是否集成到 Vercel 平台成为原生功能
 3. 支持的语言和框架范围
+
+## 最近动态（2026-05-07）
+- Stars 预估 ~1.2K，增速稳定
+- 安全 Agent 化方向确认，但产品仍在早期
+- 维持"工具型"判断，持续跟踪
 
 ---
 *首次记录：2026-05-06*

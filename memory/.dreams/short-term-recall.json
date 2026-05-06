@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-05T19:01:17.049Z",
+  "updatedAt": "2026-05-06T19:00:58.473Z",
   "entries": {
     "memory:memory/.dreams/session-corpus/2026-04-13.txt:1:1": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-13.txt:1:1",
@@ -10274,6 +10274,739 @@
         "docs/index.html",
         "docs/daily.html",
         "docs/trends.html"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: Phase 1 通过。进入 Phase 3 今日研究。先同步远端代码，再采集数据。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "phase",
+        "通过",
+        "进入",
+        "今日",
+        "研究",
+        "同步",
+        "远端",
+        "代码"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: 现在进行数据采集，搜索 GitHub Trending 和相关热点。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "现在",
+        "进行",
+        "数据",
+        "采集",
+        "搜索",
+        "github",
+        "trending",
+        "相关"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: web_search 不可用，切换到 web_fetch 直接抓取 GitHub Trending 页面。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "web-search",
+        "web-fetch",
+        "不可",
+        "切换",
+        "直接",
+        "抓取",
+        "github",
+        "trending"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: `gh` 已认证。用 `gh` 搜索近期高 star 增速项目。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "认证",
+        "搜索",
+        "近期",
+        "star",
+        "项目"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: 数据丰富。继续搜索更多热门方向。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "数据",
+        "丰富",
+        "继续",
+        "搜索",
+        "更多",
+        "热门",
+        "方向"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: 数据采集完成。让我查看已有的最近日报格式作为参考。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "数据",
+        "采集",
+        "完成",
+        "查看",
+        "已有",
+        "最近",
+        "日报",
+        "格式"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: 现在让我获取今天重点项目的详细信息。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "现在",
+        "获取",
+        "今天",
+        "重点",
+        "项目",
+        "详细",
+        "信息"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: 字段名应该是 `stargazerCount`（无 s）。重新获取。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "应该",
+        "stargazercount",
+        "重新",
+        "获取"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: 数据采集充分。现在让我查看已存在的项目档案以避免重复创建。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "数据",
+        "采集",
+        "充分",
+        "现在",
+        "查看",
+        "存在",
+        "项目",
+        "档案"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: 很多项目已经有档案了。现在我分析今天的数据，确定今日重点项目。基于数据： **今日趋势分析：** 1. **Open Design** (nexu-io/open-design) - 27.3k stars，7天从0到27k，Agent Design赛道爆发 2. **Cursor Cookbook** (cursor/cookbook) - 3.5k stars，Cursor官方出品，AI编辑器最佳实践 3. **CVE-2026-31431** (theori-io/copy-fail) - 3.3k stars，9年Linux",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "nexu-io/open-design",
+        "27.3k",
+        "cursor/cookbook",
+        "3.5k",
+        "cve-2026-31431",
+        "theori-io/copy-fail",
+        "3.3k",
+        "很多"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: Phase 3 日报完成。现在进入 Phase 4：项目档案生成。检查哪些需要新建。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "phase",
+        "日报",
+        "完成",
+        "现在",
+        "进入",
+        "项目",
+        "档案",
+        "生成"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: 需要新建 5 个项目档案，更新 4 个已有档案。先更新已有档案的 last_seen_date，再创建新档案。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "last-seen-date",
+        "需要",
+        "新建",
+        "项目",
+        "档案",
+        "更新",
+        "已有",
+        "创建"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: 更新已有档案的 last_seen 和 stars 信息，然后创建新档案。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "last-seen",
+        "更新",
+        "已有",
+        "档案",
+        "stars",
+        "信息",
+        "然后",
+        "创建"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: 现在创建 5 个新项目档案。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "现在",
+        "创建",
+        "项目",
+        "档案"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: Phase 5 级联同步。先更新 trend-index.md。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "trend-index.md",
+        "phase",
+        "同步",
+        "更新",
+        "trend",
+        "index.md"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: 现在更新 daily-report.md。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "daily-report.md",
+        "现在",
+        "更新",
+        "report.md"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: 现在运行 README 生成脚本和 HTML 生成脚本。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "现在",
+        "运行",
+        "readme",
+        "生成",
+        "脚本",
+        "html"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: HTML 生成完成。验证关键文件非空。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "html",
+        "生成",
+        "完成",
+        "验证",
+        "关键",
+        "文件"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "Assistant: 所有文件非空。检查新项目页面是否也生成了。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "所有",
+        "文件",
+        "检查",
+        "项目",
+        "是否",
+        "生成"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "Assistant: Phase 5 完成。进入 Phase 6 最终验证。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "phase",
+        "完成",
+        "进入",
+        "最终",
+        "验证"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "Assistant: Phase 6 通过！现在执行 git commit 和 push。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "phase",
+        "通过",
+        "现在",
+        "执行",
+        "git",
+        "commit",
+        "push"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "Assistant: Push 成功。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "push",
+        "成功"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: ## 执行报告 ### validate 结果 - **Phase 1**: 通过（pass: true, 30 dailies, 100 projects） - **Phase 2**: 无需修复 - **Phase 6**: 通过（pass: true, 30 dailies, 105 projects） ### 今日研究 - **日期**: 2026-05-06 - **分析项目数**: 8 - **新增项目档案**: Guizang PPT Skill, Cursor Cookbook, PPT Master, Deepse",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "执行",
+        "报告",
+        "validate",
+        "结果",
+        "phase",
+        "通过",
+        "pass",
+        "true"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-06.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-06.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-05-06.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "Assistant: `projects/guizang-ppt-skill.md`, `projects/cursor-cookbook.md`, `projects/ppt-master.md`, `projects/deepsec.md`, `projects/waoowaoo.md` | | 更新项目档案 | `projects/open-design.md`, `projects/copy-fail-cve-2026-31431.md`, `projects/open-chronicle.md` | | 索引更新 | `indexes/tren",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-06T19:00:58.042Z",
+      "lastRecalledAt": "2026-05-06T19:00:58.042Z",
+      "queryHashes": [
+        "a4942137f8fd"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "projects/guizang-ppt-skill.md",
+        "projects/cursor-cookbook.md",
+        "projects/ppt-master.md",
+        "projects/deepsec.md",
+        "projects/waoowaoo.md",
+        "projects/open-design.md",
+        "projects/open-chronicle.md",
+        "indexes/tren"
       ]
     }
   }

@@ -4,6 +4,24 @@
 
 ---
 
+## 2026-05-08
+
+**核心主题：** Agent VFS 统一抽象层出现 · AI 设计赛道 32K 确认 · 推理引擎赛道新玩家入场 · 安全审计 Agent 学术化突破
+
+> ✅ 今日通过 GitHub API（`gh`）成功获取实时数据，star 数均为实测值。
+
+**关键项目：**
+- 🗂️ Mirage (925 stars) — AI Agent 统一虚拟文件系统，范式级创新
+- 🎨 Open Design (32,118 stars 实测) — 赛道领跑者确认
+- ⚡ TokenSpeed (621 stars) — 面向 Agentic Workload 的推理引擎
+- 🔧 ds4.c (456 stars) — antirez 的 DeepSeek V4 Flash 本地推理引擎
+- 🔍 SPECA (345 stars) — 规约锚定安全审计框架
+- 🛡️ Deepsec (1,638 stars) — 安全 Agent 增速验证
+
+→ [查看完整日报](daily/2026-05-08.html)
+
+---
+
 ## 2026-05-07
 
 **核心主题：** Agent 生态分层加速：Agent Design 进入平台整合期 · Agent 后端解耦工具链成熟 · 安全 Agent 化从概念到落地 · AI 视频赛道平台化竞争加剧 · Open Design 预估突破 30K

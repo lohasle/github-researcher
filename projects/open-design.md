@@ -4,13 +4,13 @@ slug: "open-design"
 date_added: "2026-04-30"
 category: "平台候选"
 emoji: "🎨"
-stars: "~31k stars（预估）"
-stars_delta: "10天预估31K（4.1K→8.0K→11.4K→15.7K→19.1K→23.7K→27.3K→~31K），增速放缓"
+stars: "32,118 stars（实测）"
+stars_delta: "10天从0到32K（4.1K→8.0K→11.4K→15.7K→19.1K→23.7K→27.3K→~31K→32.1K），增速趋于平稳"
 language: "TypeScript"
-score: 85
+score: 86
 tags: ["design", "claude-code", "skill", "byok", "design-systems", "open-source", "agent-design", "platform"]
 url: "https://github.com/nexu-io/open-design"
-last_seen_date: "2026-05-07"
+last_seen_date: "2026-05-08"
 ---
 
 # Open Design
@@ -73,13 +73,15 @@ Anthropic 发布 Claude Design 后引爆了"AI 做设计"的需求，但 Claude 
 ---
 *首次记录：2026-04-30*
 
-## 最近动态（2026-05-07）
-- Stars 预估突破 31K（基于日增 3-4K 增速外推）
-- **赛道进入整合期**：同质化项目（Guizang PPT Skill、Open Slide、PPT Master）同时存在，开始筛选
-- 核心竞争力从"能生成设计"转向"Design System 生态 + 输出格式工业化"
-- 架构师判断：Agent Design 作为独立技术栈层已确立（Runtime → Skills → Design Systems → Output Pipeline）
+## 最近动态（2026-05-08）
+- **Stars 实测 32,118**（forks 3,548，subscribers 115）
+- 10 天从 0 到 32K，日均 3.2K，赛道领跑地位确认
+- Skills 已更新至 31 个，Design Systems 72 个，Agent CLI 兼容 16 个
+- **赛道整合期信号明确**：同赛道项目增速远低于 OD
+- Open Design 已从"热点项目"升级为"赛道定义者"
 
 ## 历史动态
+- 2026-05-07: 预估 ~31K，赛道进入整合期
 - 2026-05-06: Stars 27.3K（fork 2987），7 天增速持续，Apache 2.0
 - 2026-05-05: Stars 23.7K，赛道红海化
 - 2026-05-04: Stars 19.1K，6天从4K到19K

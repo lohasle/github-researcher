@@ -4,13 +4,13 @@ slug: "open-design"
 date_added: "2026-04-30"
 category: "平台候选"
 emoji: "🎨"
-stars: "32,118 stars（实测）"
-stars_delta: "10天从0到32K（4.1K→8.0K→11.4K→15.7K→19.1K→23.7K→27.3K→~31K→32.1K），增速趋于平稳"
+stars: "33,880 stars（实测）"
+stars_delta: "11天从0到33.9K（4.1K→8.0K→11.4K→15.7K→19.1K→23.7K→27.3K→~31K→32.1K→33.9K），增速趋于平稳"
 language: "TypeScript"
 score: 86
 tags: ["design", "claude-code", "skill", "byok", "design-systems", "open-source", "agent-design", "platform"]
 url: "https://github.com/nexu-io/open-design"
-last_seen_date: "2026-05-08"
+last_seen_date: "2026-05-09"
 ---
 
 # Open Design
@@ -73,14 +73,15 @@ Anthropic 发布 Claude Design 后引爆了"AI 做设计"的需求，但 Claude 
 ---
 *首次记录：2026-04-30*
 
-## 最近动态（2026-05-08）
-- **Stars 实测 32,118**（forks 3,548，subscribers 115）
-- 10 天从 0 到 32K，日均 3.2K，赛道领跑地位确认
-- Skills 已更新至 31 个，Design Systems 72 个，Agent CLI 兼容 16 个
-- **赛道整合期信号明确**：同赛道项目增速远低于 OD
-- Open Design 已从"热点项目"升级为"赛道定义者"
+## 最近动态（2026-05-09）
+- **Stars 实测 33,880**（forks 3,783）
+- 11 天从 0 到 33.9K，增速趋于稳定但仍高（日 +1.7K）
+- 16 种 Coding Agent CLI + 31 Skills + 72 Design Systems + Seedance 2.0/HyperFrames
+- **平台地位确认**：已从赛道领跑者进化为平台级项目
+- 开放生态 + BYOK 全层可替换的定位正在获得验证
 
 ## 历史动态
+- 2026-05-08: Stars 32.1K，平台级确认
 - 2026-05-07: 预估 ~31K，赛道进入整合期
 - 2026-05-06: Stars 27.3K（fork 2987），7 天增速持续，Apache 2.0
 - 2026-05-05: Stars 23.7K，赛道红海化

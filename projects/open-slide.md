@@ -4,8 +4,8 @@ slug: "open-slide"
 date_added: "2026-05-05"
 category: "工具型"
 emoji: "📽️"
-stars: "897 stars"
-stars_delta: "9 天 897"
+stars: "2,624 stars（实测）"
+stars_delta: "10 天 2.6K，稳步增长"
 language: "TypeScript"
 score: 74
 tags: ["slides", "agent", "presentation", "react", "agent-native"]

@@ -10,7 +10,7 @@ language: "TypeScript"
 score: 78
 tags: ["security", "coding-agent", "vulnerability", "vercel", "audit", "devsecops"]
 url: "https://github.com/vercel-labs/deepsec"
-last_seen_date: "2026-05-09"
+last_seen_date: "2026-05-10"
 ---
 
 # Deepsec

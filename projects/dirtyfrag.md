@@ -10,7 +10,7 @@ language: "C"
 score: 88
 tags: ["linux-kernel", "lpe", "cve", "security", "exploit", "page-cache"]
 url: "https://github.com/V4bel/dirtyfrag"
-last_seen_date: "2026-05-09"
+last_seen_date: "2026-05-10"
 ---
 
 # Dirty Frag

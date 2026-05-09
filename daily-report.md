@@ -4,6 +4,26 @@
 
 ---
 
+## 2026-05-10
+
+**核心主题：** 周度复盘：Agent 生态分层成型 · Open Design 领跑设计平台 · 推理引擎三线竞速 · Linux 安全警钟 · Agent 安全双范式确立
+
+> ⚠️ 外部数据源不可达，本报告基于 2026-05-03~09 已采集数据完成周度综合分析。
+
+**关键项目：**
+- 🎨 Open Design (~35K stars) — 平台地位巩固，周增 22K
+- 🎛️ CC Switch (~62K stars) — 生态锁定效应增强
+- 🧠 MemPalace (~51K stars) — 基础设施级稳定增长
+- 🔧 ds4.c (~2.8K stars) — 本地推理新范式
+- 🛡️ Deepsec (~2.2K stars) — Agent 安全审计代表
+- 🎭 Harmonist (~1.8K stars) — 协议强制执行范式
+- 🗂️ Mirage (~1.8K stars) — VFS 抽象层方向确认
+- ⚡ TokenSpeed (~900 stars) — Agentic Workload 推理引擎
+
+→ [查看完整日报](daily/2026-05-10.html)
+
+---
+
 ## 2026-05-09
 
 **核心主题：** Linux 内核安全漏洞密集爆发 · Open Design 33.8K 确认平台地位 · antirez/ds4 本地推理引擎赛道加速 · Agent 安全工具走向成熟

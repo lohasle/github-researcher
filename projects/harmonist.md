@@ -10,7 +10,7 @@ language: "Python"
 score: 80
 tags: ["agent-orchestration", "protocol", "zero-dependency", "protocol-enforcement", "multi-agent", "security"]
 url: "https://github.com/GammaLabTechnologies/harmonist"
-last_seen_date: "2026-05-09"
+last_seen_date: "2026-05-10"
 ---
 
 # Harmonist

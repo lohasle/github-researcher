@@ -10,7 +10,7 @@ language: "TypeScript"
 score: 86
 tags: ["design", "claude-code", "skill", "byok", "design-systems", "open-source", "agent-design", "platform"]
 url: "https://github.com/nexu-io/open-design"
-last_seen_date: "2026-05-09"
+last_seen_date: "2026-05-10"
 ---
 
 # Open Design

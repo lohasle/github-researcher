@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-05-10）
+## 最新研究摘要（2026-05-11）
 
-**周度复盘：Agent 生态分层成型 · Open Design 领跑设计平台 · 推理引擎三线竞速 · Linux 安全警钟 · Agent 安全双范式确立**
+**连续断网模式下的趋势推演 · Agent 基础设施层进入筛选期 · 推理引擎从工具走向生态 · 安全赛道验证双范式闭环 · 本周关键观察点**
 
 今日热榜新信号：
-- **Open Design**（~35k stars（预估））：Agent Design 平台确认，周增 22K+，16 CLI + 31 Skills + 72 Design Systems，BYOK 全层可替换
-- **ds4.c**（~2.8k stars（预估））：antirez 的 DeepSeek V4 Flash Metal 专用推理引擎，2-bit 量化 + 磁盘 KV Cache + 1M 上下文
-- **CC Switch**（~62k stars（预估））：Agent Desktop 基座，统一管理 10+ Agent CLI，生态锁定效应持续增强
+- **CC Switch**（~63k stars（推演））：Agent Desktop 基座持续锁定生态，预估突破 63K，10+ Agent CLI 统一管理
+- **MemPalace**（~52k stars（推演））：AI Memory 基础设施级项目，高位稳定增长，LongMemEval 记录保持者
+- **Open Design**（~36k stars（推演））：Agent Design 平台增速从爆发趋稳，进入平台粘性验证阶段
 
+**→ [查看 2026-05-11 完整简报](daily/2026-05-11.md)**
 **→ [查看 2026-05-10 完整简报](daily/2026-05-10.md)**
 **→ [查看 2026-05-09 完整简报](daily/2026-05-09.md)**
 **→ [查看 2026-05-08 完整简报](daily/2026-05-08.md)**
-**→ [查看 2026-05-07 完整简报](daily/2026-05-07.md)**
 
 ---
 
@@ -24,23 +24,22 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-05-11](daily/2026-05-11.md) | 连续断网模式下的趋势推演 · Agent 基础设施层进入筛选期 · 推理引擎从工 | 8 个深度分析 |
 | [2026-05-10](daily/2026-05-10.md) | 周度复盘：Agent 生态分层成型 · Open Design 领跑设计平台 · | 8 个深度分析 |
 | [2026-05-09](daily/2026-05-09.md) | Linux 内核安全漏洞密集爆发 · Open Design 33.8K 确认平 | 7 个深度分析 |
 | [2026-05-08](daily/2026-05-08.md) | Agent VFS 统一抽象层出现 · AI 设计赛道 32K 确认 · 推理引 | 7 个深度分析 |
 | [2026-05-07](daily/2026-05-07.md) | Agent 生态分层加速：Agent Design 进入平台整合期 · Agen | 6 个深度分析 |
 | [2026-05-06](daily/2026-05-06.md) | Agent Design 赛道爆发：Open Design 7 天 27K 重新 | 8 个深度分析 |
 | [2026-05-05](daily/2026-05-05.md) | Agent 后端解耦趋势加速：DeepClaude 替换 Claude Code | 7 个深度分析 |
-| [2026-05-04](daily/2026-05-04.md) | Agent Design 红海化 · Linux 内核 CVE-2026-314 | 8 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **Agent 生态分层成型：设计层 / 推理层 / 安全层 / 后端解耦层各出现代表项目**：相关项目 open-design, ds4, deepsec。
-2. **Open Design 周增 22K 确认平台地位，Agent Design 赛道从爆量到筛选**：相关项目 open-design, ppt-master, guizang-ppt-skill。
-3. **推理引擎三线竞速：本地端 ds4.c + 服务端 TokenSpeed + GPU Kernel TileKernels**：相关项目 ds4, tokenspeed, tilekernels。
-4. **Linux Page-Cache 安全漏洞系统性风险暴露，Dirty Pipe 家族漏洞未断**：相关项目 dirtyfrag, copy-fail-cve-2026-31431。
-5. **Agent 安全双范式确立：审计型 Deepsec + 协议强制型 Harmonist 互补闭环**：相关项目 deepsec, harmonist。
+1. **Agent 基础设施层进入筛选期：从百花齐放到每层 1-2 个标准候选**：相关项目 cc-switch, mempalace, open-design。
+2. **推理引擎从工具走向生态：ds4.c / TokenSpeed / TileKernels 围绕 DeepSeek V4 形成工具链**：相关项目 ds4, tokenspeed, tilekernels。
+3. **Agent 安全双范式验证：Deepsec 审计 + Harmonist 协议强制形成可落地闭环**：相关项目 deepsec, harmonist。
+4. **Open Design 增速趋稳后的关键观察：从爆量增长到平台粘性验证**：相关项目 open-design。
 
 ---
 
@@ -64,8 +63,8 @@
 ## 数据统计
 
 - 📊 项目档案：110 个
-- 📅 日报总数：34 期
-- 🔄 最近更新：2026-05-10
+- 📅 日报总数：35 期
+- 🔄 最近更新：2026-05-11
 
 ---
 

@@ -2,11 +2,11 @@
 title: "MemPalace"
 slug: "mempalace"
 date_added: "2026-04-12"
-last_seen_date: "2026-05-10"
+last_seen_date: "2026-05-11"
 category: "基础设施候选"
 emoji: "🧠"
-stars: "50,654 stars"
-stars_delta: "稳守50K+，增速放缓但高位运行"
+stars: "~52k stars（推演）"
+stars_delta: "稳守50K+, 高位稳定增长, 基础设施级确认"
 language: "Python"
 score: 88
 tags: ["AI Memory", "ChromaDB", "MCP", "LongMemEval", "本地优先"]

@@ -4,13 +4,13 @@ slug: "deepsec"
 date_added: "2026-05-06"
 category: "工具型"
 emoji: "🛡️"
-stars: "1,864 stars（实测）"
-stars_delta: "1.2K→1.6K→1.9K，稳步增长"
+stars: "~2.5k stars（推演）"
+stars_delta: "1.2K→1.6K→1.9K→2.5K（推演），稳步增长，DevSecOps Agent化代表"
 language: "TypeScript"
 score: 78
 tags: ["security", "coding-agent", "vulnerability", "vercel", "audit", "devsecops"]
 url: "https://github.com/vercel-labs/deepsec"
-last_seen_date: "2026-05-10"
+last_seen_date: "2026-05-11"
 ---
 
 # Deepsec

@@ -4,7 +4,7 @@ slug: "cc-switch"
 date_added: "2026-04-15"
 category: "平台候选"
 emoji: "🎛️"
-stars: "~59k stars（预估）"
+stars: "~63k stars（推演）"
 stars_delta: "日增 ~300, 月增 13K+，预估突破 59K"
 language: "Rust"
 score: 86

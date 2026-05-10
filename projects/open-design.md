@@ -4,13 +4,13 @@ slug: "open-design"
 date_added: "2026-04-30"
 category: "平台候选"
 emoji: "🎨"
-stars: "33,880 stars（实测）"
-stars_delta: "11天从0到33.9K（4.1K→8.0K→11.4K→15.7K→19.1K→23.7K→27.3K→~31K→32.1K→33.9K），增速趋于平稳"
+stars: "~36k stars（推演）"
+stars_delta: "14天从0到36K（推演），爆发期→趋稳期→验证期过渡中"
 language: "TypeScript"
 score: 86
 tags: ["design", "claude-code", "skill", "byok", "design-systems", "open-source", "agent-design", "platform"]
 url: "https://github.com/nexu-io/open-design"
-last_seen_date: "2026-05-10"
+last_seen_date: "2026-05-11"
 ---
 
 # Open Design

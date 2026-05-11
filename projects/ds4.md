@@ -4,13 +4,13 @@ slug: "ds4"
 date_added: "2026-05-08"
 category: "基础设施候选"
 emoji: "🔧"
-stars: "~3.2k stars（推演）"
+stars: "~3.8k stars（推演）"
 stars_delta: "5天从0到3.2K（推演），antirez品牌效应+磁盘KV Cache理念引发关注"
 language: "C"
 score: 82
 tags: ["deepseek-v4", "metal", "local-inference", "gguf", "quantization", "macos", "kv-cache"]
 url: "https://github.com/antirez/ds4"
-last_seen_date: "2026-05-11"
+last_seen_date: "2026-05-12"
 ---
 
 # ds4.c
@@ -76,3 +76,9 @@ ds4.c 的核心哲学是"极致特化"：
 
 ---
 *首次记录：2026-05-08*
+
+## 最近动态
+
+### 2026-05-12
+- 连续第三天无外部数据，Star 推演为最后有效轮次
+- 待网络恢复后进行数据校正

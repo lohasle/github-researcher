@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026-05-12 GitHub 趋势研究简报 | GitHub Researcher</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📊</text></svg>">
-    <meta name="description" content="第三天断网推演 · Agent 筛选期关键拐点 · DeepSeek V4 推理生态已成型 · 安全双范式进入企业评估窗口 · 推演可信度开始下降">
+    <title>2026-05-12 GitHub 趋势研究简报 | GitHub 趋势研究</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📅</text></svg>">
     <style>
         :root {
             --primary: #7C3AED;
@@ -170,6 +169,23 @@
         .card-grid { animation-delay: 0.2s; animation-fill-mode: both; }
         .trend-list { animation-delay: 0.25s; animation-fill-mode: both; }
     </style>
+    <style>
+        .daily-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 48px; box-shadow: var(--shadow); margin-bottom: 48px; max-width: 860px; margin-left: auto; margin-right: auto; }
+        .daily-content h1 { font-size: 28px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 8px; }
+        .daily-content h2 { font-size: 20px; font-weight: 700; color: var(--primary); border-left: 4px solid var(--primary); padding-left: 12px; margin: 28px 0 14px; }
+        .daily-content h3 { font-size: 16px; font-weight: 700; color: var(--text); margin: 20px 0 10px; }
+        .daily-content table { border-collapse: collapse; width: 100%; margin: 14px 0; }
+        .daily-content th, .daily-content td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; font-size: 13px; }
+        .daily-content th { background: var(--primary); color: white; font-weight: 600; }
+        .daily-content tr:nth-child(even) td { background: var(--bg); }
+        .daily-content blockquote { background: linear-gradient(135deg, #F3E8FF, #ECFEFF); border-left: 4px solid var(--primary); padding: 14px 18px; margin: 14px 0; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+        .daily-content ul, .daily-content ol { padding-left: 22px; margin: 10px 0; }
+        .daily-content li { margin: 6px 0; font-size: 14px; }
+        .daily-content p { font-size: 14px; margin-bottom: 12px; line-height: 1.7; }
+        .daily-content strong { color: var(--primary-dark); }
+        .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 24px; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
     <nav class="nav">
@@ -180,165 +196,335 @@
             </a>
             <div class="nav-links">
                 <a href="/github-researcher/index.html" id="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>首页</span></a>
-                <a href="/github-researcher/daily.html" id="nav-daily"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg><span>日报</span></a>
+                <a href="/github-researcher/daily.html" id="nav-daily" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg><span>日报</span></a>
                 <a href="/github-researcher/projects.html" id="nav-projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
                 <a href="/github-researcher/trends.html" id="nav-trends"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>趋势</span></a>
             </div>
         </div>
     </nav>
 <main class="container">
-        <section class="hero">
-            <div class="hero-badge">
-                <span class="dot"></span>
-                2026-05-12
-            </div>
-            <h1>GitHub 趋势研究</h1>
-            <p>第三天断网推演 · Agent 筛选期关键拐点 · DeepSeek V4 推理生态已成型 · 安全双范式进入企业评估窗口 · 推演可信度开始下降</p>
-            <div class="hero-actions">
-                <a href="/github-researcher/daily/2026-05-12.html" class="btn-primary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                    今日简报
-                </a>
-                <a href="/github-researcher/projects.html" class="btn-secondary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="14" y="0" width="7" height="7"/><rect x="0" y="14" width="7" height="7"/></svg>
-                    重点项目
-                </a>
-            </div>
-        </section>
-        <section class="stats-row">
-            <div class="stat-card">
-                <div class="stat-icon">📊</div>
-                <div class="stat-number">111</div>
-                <div class="stat-label">深度分析项目</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🔥</div>
-                <div class="stat-number">36</div>
-                <div class="stat-label">日更日报</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🎯</div>
-                <div class="stat-number">142</div>
-                <div class="stat-label">核心跟踪方向</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">⭐</div>
-                <div class="stat-number">135k+</div>
-                <div class="stat-label">本周总 Star 增速</div>
-            </div>
-        </section>
-        <section class="brief-card">
-            <div class="brief-date">📅 2026-05-12 · 今日核心判断</div>
-            <h2 class="brief-title">第三天断网推演 · Agent 筛选期关键拐点 · DeepSeek V4 推理生态已成型 · 安全双范式进入企业评估窗口 · 推演可信度开始下降</h2>
-            <p class="brief-text">第三天断网推演 · Agent 筛选期关键拐点 · DeepSeek V4 推理生态已成型 · 安全双范式进入企业评估窗口 · 推演可信度开始下降 今日头条趋势:Agent 筛选期拐点：连续三天无新数据意味着本周是真实筛选窗口。</p>
-            <a href="/github-researcher/daily/2026-05-12.html" class="brief-cta">阅读完整简报 →</a>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">⭐</div>
-                    重点跟踪项目
-                </div>
-                <a href="/github-researcher/projects.html" class="section-link">查看全部 →</a>
-            </div>
-            <div class="card-grid">
-                <div class="card" onclick="window.location='/github-researcher/projects/cc-switch.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🎛️</div>
-                        <div class="card-stars">~65k stars（推演）</div>
-                    </div>
-                    <div class="card-title">CC Switch</div>
-                    <div class="card-desc">Agent Desktop 基座持续锁定生态，预估突破 65K，生态锁定效应强化</div>
-                    <div class="card-tags"><span class="tag tag-purple">agent-desktop</span><span class="tag tag-purple">claude-code</span><span class="tag tag-purple">codex</span></div>
-                    <div class="card-actions"><a href="https://github.com/farion1231/cc-switch" target="_blank" rel="noopener" class="btn-github" onclick="event.stopPropagation();"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub</a></div>
-                </div>
-                <div class="card" onclick="window.location='/github-researcher/projects/mempalace.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🧠</div>
-                        <div class="card-stars">~53k stars（推演）</div>
-                    </div>
-                    <div class="card-title">MemPalace</div>
-                    <div class="card-desc">AI Memory 基础设施级项目，高位稳定增长，架构地位不变</div>
-                    <div class="card-tags"><span class="tag tag-purple">ai-memory</span><span class="tag tag-purple">agent-memory</span><span class="tag tag-purple">knowledge-graph</span></div>
-                    <div class="card-actions"><a href="https://github.com/MemPalace/mempalace" target="_blank" rel="noopener" class="btn-github" onclick="event.stopPropagation();"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub</a></div>
-                </div>
-                <div class="card" onclick="window.location='/github-researcher/projects/open-design.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🎨</div>
-                        <div class="card-stars">~38k stars（推演）</div>
-                    </div>
-                    <div class="card-title">Open Design</div>
-                    <div class="card-desc">Agent Design 平台进入验证期第二周，增速预计进一步趋缓至日增 1.5-2K</div>
-                    <div class="card-tags"><span class="tag tag-purple">design</span><span class="tag tag-purple">claude-code</span><span class="tag tag-purple">skill</span></div>
-                    <div class="card-actions"><a href="https://github.com/nexu-io/open-design" target="_blank" rel="noopener" class="btn-github" onclick="event.stopPropagation();"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub</a></div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">📈</div>
-                    趋势热榜
-                </div>
-                <a href="/github-researcher/trends.html" class="section-link">完整趋势表 →</a>
-            </div>
-            <div class="trend-list">
-                <div class="trend-item">
-                    <div class="trend-rank top">1</div>
-                    <div class="trend-content">
-                        <div class="trend-title">Agent 筛选期拐点：连续三天无新数据意味着本周是真实筛选窗口</div>
-                        <div class="trend-meta">cc-switch · mempalace · open-design</div>
-                    </div>
-                    <div class="trend-score high">86/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank top">2</div>
-                    <div class="trend-content">
-                        <div class="trend-title">DeepSeek V4 推理生态三层架构已成型：本地端 + 服务端 + Kernel 层各就各位</div>
-                        <div class="trend-meta">ds4 · tokenspeed · tilekernels</div>
-                    </div>
-                    <div class="trend-score high">84/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">3</div>
-                    <div class="trend-content">
-                        <div class="trend-title">安全双范式进入企业评估窗口：预防 + 审计闭环可作为 PoC 基线</div>
-                        <div class="trend-meta">deepsec · harmonist</div>
-                    </div>
-                    <div class="trend-score high">81/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">4</div>
-                    <div class="trend-content">
-                        <div class="trend-title">推演可信度衰减警告：三天无实测数据，本轮推演为最后有效推演</div>
-                        <div class="trend-meta"></div>
-                    </div>
-                    <div class="trend-score high">75/80</div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">🏷️</div>
-                    核心关注领域
-                </div>
-            </div>
-            <div class="category-row">
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🤖</span> AI Agent / Multi-Agent</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">⚡</span> LLM Infra / MCP / AI Runtime</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🛠️</span> 开发工具链 / IDE / Copilot</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🌐</span> 前端框架 / Serverless / Edge</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">☸️</span> 云原生 / K8s / Service Mesh</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔄</span> 自动化 / Browser Use / RPA+AI</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">💾</span> 数据基础设施 / RAG / 向量 DB</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔌</span> 基础设施标准 / 平台潜力</a>
-            </div>
-        </section>
+    <a href="/github-researcher/daily.html" class="back-link">← 返回日报索引</a>
+    <div class="daily-content">
+        <h1 id="2026-05-12-github">2026-05-12 GitHub 趋势研究简报</h1>
+<blockquote>
+<p>⚠️ <strong>数据来源声明：</strong> 今日为连续第三天外部数据源不可达（GitHub API、GitHub Trending、Reddit、HN 等均因 TLS 连接失败）。本报告基于 2026-05-03 ~ 2026-05-10 已采集本地数据完成趋势推演分析。<strong>本轮为本系列推演的最后有效轮次</strong>——如果明天仍无法获取外部数据，后续报告将不再尝试 Star 数推演，转而聚焦于已有数据的深度分析。</p>
+</blockquote>
+<h2 id="agent-86">趋势一：Agent 筛选期拐点（热度 86）</h2>
+<p>连续三天无法获取新数据，这本身就构成了一个观察窗口。当我们恢复数据访问时，哪些项目还在增长、哪些已经停滞，将是最真实的筛选信号。</p>
+<h3 id="_1">拐点判断框架</h3>
+<pre class="mermaid">graph TB
+    subgraph 三天沉默期后的筛选逻辑
+        A["网络恢复后<br/>第一步：数据校正"] --> B{"Star 增速<br/>是否维持？"}
+        B -->|维持或加速| C["✅ 通过筛选<br/>确认趋势项目"]
+        B -->|明显放缓| D["⚠️ 进入观察<br/>可能是周期顶"]
+        B -->|骤降或停滞| E["❌ 筛选淘汰<br/>泡沫信号"]
+        
+        C --> F["立即更新档案<br/>考虑 PoC"]
+        D --> G["延长观察 1 周<br/>关注 issue 活跃度"]
+        E --> H["降低跟踪优先级<br/>标记泡沫"]
+    end
+</pre>
+<h3 id="_2">各项目筛选预判</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>05-09 实测</th>
+<th>05-12 推演</th>
+<th>恢复后核心观察点</th>
+<th>筛选预判</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CC Switch</strong></td>
+<td>~59K</td>
+<td>~65K</td>
+<td>是否维持日增 2-3K</td>
+<td>✅ 大概率通过</td>
+</tr>
+<tr>
+<td><strong>MemPalace</strong></td>
+<td>~50.6K</td>
+<td>~53K</td>
+<td>高位增速是否持续</td>
+<td>✅ 大概率通过</td>
+</tr>
+<tr>
+<td><strong>Open Design</strong></td>
+<td>~33.9K</td>
+<td>~38K</td>
+<td>日增是否跌破 1K</td>
+<td>⚠️ 关键观察</td>
+</tr>
+<tr>
+<td><strong>ds4.c</strong></td>
+<td>~2.3K</td>
+<td>~3.8K</td>
+<td>是否出现 CUDA Fork</td>
+<td>⚠️ 平台限制</td>
+</tr>
+<tr>
+<td><strong>Mirage</strong></td>
+<td>~1.4K</td>
+<td>~2.5K</td>
+<td>后端适配器数量增长</td>
+<td>⚠️ 早期高波动</td>
+</tr>
+<tr>
+<td><strong>Deepsec</strong></td>
+<td>~1.9K</td>
+<td>~2.8K</td>
+<td>企业采用案例</td>
+<td>✅ 赛道代表</td>
+</tr>
+<tr>
+<td><strong>Harmonist</strong></td>
+<td>~1.4K</td>
+<td>~2.3K</td>
+<td>社区 Fork/集成数</td>
+<td>✅ 赛道代表</td>
+</tr>
+<tr>
+<td><strong>TokenSpeed</strong></td>
+<td>~621</td>
+<td>~1.3K</td>
+<td>第三方基准测试</td>
+<td>⚠️ 需验证</td>
+</tr>
+</tbody>
+</table>
+<h2 id="deepseek-v4-84">趋势二：DeepSeek V4 推理生态三层架构成型（热度 84）</h2>
+<p>从 05-08 到 05-12，DeepSeek V4 的开源推理生态已经清晰分为三层：</p>
+<pre class="mermaid">flowchart TB
+    subgraph "DeepSeek V4 推理三层架构"
+        direction TB
+        L1["🔵 Kernel 层<br/>TileKernels<br/>MoE 量化 + GPU Kernel 优化"]
+        L2["🟢 推理引擎层"]
+        L2A["ds4.c — 本地端<br/>Metal + 2-bit + 磁盘 KV"]
+        L2B["TokenSpeed — 服务端<br/>Blackwell + Agentic Workload"]
+        L3["🟡 应用层<br/>GGUF 生态 / Ollama / 企业部署"]
+    end
+    
+    L1 --> L2A
+    L1 --> L2B
+    L2A --> L3
+    L2B --> L3
+    
+    style L1 fill:#bbf
+    style L2 fill:#bfb
+    style L3 fill:#ffb
+</pre>
+<p><strong>架构师判断：</strong></p>
+<ol>
+<li><strong>Kernel 层</strong>（TileKernels）— 做的是"让推理更快"，是底层优化，适合硬件厂商和大规模部署</li>
+<li><strong>引擎层</strong>（ds4.c + TokenSpeed）— 做的是"让推理可用"，覆盖本地和服务端两大场景</li>
+<li><strong>应用层</strong> — 做的是"让推理好用"，GGUF 生态已经成熟</li>
+</ol>
+<p><strong>企业落地路径已清晰：</strong>
+- <strong>开发/测试：</strong> ds4.c 本地推理（MacBook 直接跑）
+- <strong>生产/规模：</strong> TokenSpeed 服务端推理（Blackwell GPU 集群）
+- <strong>定制/极致性能：</strong> TileKernels Kernel 优化（自建推理集群）</p>
+<h2 id="81">趋势三：安全双范式进入企业评估窗口（热度 81）</h2>
+<pre class="mermaid">flowchart LR
+    subgraph "企业 Agent 安全 PoC 方案"
+        A["第一阶段<br/>（1-2 周）"] --> A1["Deepsec<br/>对现有代码库<br/>做 Agent 安全审计"]
+        A1 --> B["第二阶段<br/>（2-4 周）"]
+        B --> B1["Harmonist<br/>在新 Agent 项目中<br/>引入协议强制约束"]
+        B1 --> C["第三阶段<br/>（4-8 周）"]
+        C --> C1["闭环验证<br/>审计发现 → 协议加固<br/>协议约束 → 审计验证"]
+    end
+</pre>
+<p><strong>落地可行性更新（基于三天观察期反思）：</strong></p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>更新判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>技术风险</strong></td>
+<td>两个项目技术路线清晰，但都处于早期版本，API 稳定性存疑</td>
+</tr>
+<tr>
+<td><strong>集成成本</strong></td>
+<td>Deepsec 需要 Agent 运行环境；Harmonist 零依赖但需要理解协议设计</td>
+</tr>
+<tr>
+<td><strong>价值密度</strong></td>
+<td>Deepsec 价值密度更高（立即发现漏洞）；Harmonist 价值需要更长周期验证</td>
+</tr>
+<tr>
+<td><strong>建议</strong></td>
+<td>优先用 Deepsec 做一次性审计；Harmonist 可在 Greenfield 项目中同步试验</td>
+</tr>
+</tbody>
+</table>
+<h2 id="75">趋势四：推演可信度衰减警告（热度 75）</h2>
+<p><strong>这是本轮推演最重要的元判断。</strong></p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>05-10</th>
+<th>05-11</th>
+<th>05-12</th>
+<th>趋势</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>距最后实测天数</td>
+<td>1 天</td>
+<td>2 天</td>
+<td>3 天</td>
+<td>⚠️ 递增</td>
+</tr>
+<tr>
+<td>Star 推演误差预期</td>
+<td>±5%</td>
+<td>±10%</td>
+<td>±15-20%</td>
+<td>⚠️ 快速扩大</td>
+</tr>
+<tr>
+<td>新项目遗漏风险</td>
+<td>低</td>
+<td>中</td>
+<td>高</td>
+<td>❌ 不可控</td>
+</tr>
+<tr>
+<td>趋势方向判断可靠性</td>
+<td>高</td>
+<td>中</td>
+<td>中</td>
+<td>⚠️ 仍可参考</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键决定：</strong></p>
+<ol>
+<li>本轮推演的 Star 数值是本系列的最后一次数值更新</li>
+<li>如果 05-13 仍无法获取数据，报告将转为<strong>纯分析模式</strong>：</li>
+<li>不再推演具体 Star 数</li>
+<li>聚焦于已有项目的深度技术分析</li>
+<li>补充跨项目对比和架构设计模式提炼</li>
+<li>网络恢复后的第一件事是<strong>数据校正</strong>，更新所有项目档案中的实际数据</li>
+</ol>
+<h2 id="_3">本周关键观察点（更新）</h2>
+<p>在 05-11 基础上新增/调整：</p>
+<ol>
+<li><strong>🆕 网络恢复后的数据校正策略：</strong> 优先校正 CC Switch、MemPalace、Open Design 的实际 Star 数</li>
+<li><strong>Open Design 验证期关键指标：</strong> 周活跃贡献者数、Skills 增量、Design Systems 增量</li>
+<li><strong>ds4.c 生态突破：</strong> 是否出现 CUDA/Vulkan 社区 Fork 是该项目能否从"工具"升级为"基础设施"的关键</li>
+<li><strong>🆕 Mirage 后端适配器追踪：</strong> 后端数量是否从 6-8 个增长到 15+，是规模化信号</li>
+<li><strong>推理引擎性能基准：</strong> TokenSpeed 是否出现第三方独立基准测试</li>
+<li><strong>🆕 编排层动态：</strong> Harmonist + Agent Orchestra 是否出现整合信号或新竞争者</li>
+</ol>
+<h2 id="_4">持续跟踪项目状态（推演 — 最终轮次）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>最后实测 Stars</th>
+<th>今日推演 Stars</th>
+<th>推演增量（累计）</th>
+<th>可信度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CC Switch</td>
+<td>59K（05-07 预估）</td>
+<td>~65K</td>
+<td>+6K</td>
+<td>中（线性外推 3 天）</td>
+</tr>
+<tr>
+<td>MemPalace</td>
+<td>50.6K（05-10 预估）</td>
+<td>~53K</td>
+<td>+2.4K</td>
+<td>中（高位稳定）</td>
+</tr>
+<tr>
+<td>Open Design</td>
+<td>33.9K（05-09 实测）</td>
+<td>~38K</td>
+<td>+4.1K</td>
+<td>低（增速变化大）</td>
+</tr>
+<tr>
+<td>ds4.c</td>
+<td>2.3K（05-09 实测）</td>
+<td>~3.8K</td>
+<td>+1.5K</td>
+<td>低（早期波动大）</td>
+</tr>
+<tr>
+<td>Mirage</td>
+<td>1.4K（05-09 实测）</td>
+<td>~2.5K</td>
+<td>+1.1K</td>
+<td>低（早期波动大）</td>
+</tr>
+<tr>
+<td>Deepsec</td>
+<td>1.9K（05-09 实测）</td>
+<td>~2.8K</td>
+<td>+0.9K</td>
+<td>中（稳步增长）</td>
+</tr>
+<tr>
+<td>Harmonist</td>
+<td>1.4K（05-09 实测）</td>
+<td>~2.3K</td>
+<td>+0.9K</td>
+<td>中（稳步增长）</td>
+</tr>
+<tr>
+<td>TokenSpeed</td>
+<td>621（05-08 实测）</td>
+<td>~1.3K</td>
+<td>+0.7K</td>
+<td>低（早期高波动）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>最终推演轮次声明：</strong> 这是本系列推演的最后一份包含 Star 数值推演的报告。如果 05-13 仍无法获取外部数据，后续报告将取消 Star 数推演，改为纯趋势分析模式。所有推演值待网络恢复后将进行数据校正。</p>
+</blockquote>
+<h2 id="_5">风险与机遇</h2>
+<p><strong>风险：</strong>
+1. <strong>推演可信度已接近极限：</strong> 三天无实测数据，新增项目遗漏风险为"高"
+2. <strong>可能的盲区：</strong> 过去 72 小时内 GitHub 上可能已经出现新的爆发项目，我们完全不知道
+3. <strong>Open Design 增速拐点：</strong> 如果实际日增已跌破 1K，平台地位判断需要修正
+4. <strong>ds4.c 天花板：</strong> Metal-only 限制 + antirez 个人项目属性，增长持续性存疑</p>
+<p><strong>机遇：</strong>
+1. <strong>数据校正窗口价值：</strong> 网络恢复后的首次校正本身就是一次高质量的"真实筛选"
+2. <strong>DeepSeek V4 推理三层架构已可供企业评估：</strong> 不是单个工具，而是完整的技术选型图谱
+3. <strong>安全双范式 PoC 可立即启动：</strong> 不需要等新数据，两个项目技术路线已清晰
+4. <strong>Mirage 的 VFS 范式值得关注：</strong> 即使 Star 数不大，架构思想本身有独立价值</p>
+<h2 id="_6">重点项目档案</h2>
+<p>今日更新项目：
+- 🎛️ CC Switch → <code>projects/cc-switch.md</code>（更新 stars 推演 + 筛选预判）
+- 🧠 MemPalace → <code>projects/mempalace.md</code>（更新 stars 推演）
+- 🎨 Open Design → <code>projects/open-design.md</code>（更新 stars 推演 + 验证期观察点）
+- 🔧 ds4.c → <code>projects/ds4.md</code>（更新 stars 推演 + 天花板分析）
+- 🗂️ Mirage → <code>projects/mirage.md</code>（更新 stars 推演 + 后端适配器观察）
+- 🛡️ Deepsec → <code>projects/deepsec.md</code>（更新 stars 推演 + PoC 建议）
+- 🎭 Harmonist → <code>projects/harmonist.md</code>（更新 stars 推演 + 价值密度判断）
+- ⚡ TokenSpeed → <code>projects/tokenspeed.md</code>（更新 stars 推演 + 落地路径）</p>
+    </div>
 </main>
     <footer class="footer">
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

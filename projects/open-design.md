@@ -4,13 +4,13 @@ slug: "open-design"
 date_added: "2026-04-30"
 category: "平台候选"
 emoji: "🎨"
-stars: "~36k stars（推演）"
+stars: "~38k stars（推演）"
 stars_delta: "14天从0到36K（推演），爆发期→趋稳期→验证期过渡中"
 language: "TypeScript"
 score: 86
 tags: ["design", "claude-code", "skill", "byok", "design-systems", "open-source", "agent-design", "platform"]
 url: "https://github.com/nexu-io/open-design"
-last_seen_date: "2026-05-11"
+last_seen_date: "2026-05-12"
 ---
 
 # Open Design
@@ -74,6 +74,10 @@ Anthropic 发布 Claude Design 后引爆了"AI 做设计"的需求，但 Claude 
 *首次记录：2026-04-30*
 
 ## 最近动态（2026-05-09）
+
+### 2026-05-12
+- 连续第三天无外部数据，Star 推演为最后有效轮次
+- 待网络恢复后进行数据校正
 - **Stars 实测 33,880**（forks 3,783）
 - 11 天从 0 到 33.9K，增速趋于稳定但仍高（日 +1.7K）
 - 16 种 Coding Agent CLI + 31 Skills + 72 Design Systems + Seedance 2.0/HyperFrames

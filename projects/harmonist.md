@@ -4,13 +4,13 @@ slug: "harmonist"
 date_added: "2026-04-28"
 category: "平台候选"
 emoji: "🎵"
-stars: "~2.0k stars（推演）"
+stars: "~2.3k stars（推演）"
 stars_delta: "15天2.0K（推演），稳步增长，零依赖协议强制范式获认可"
 language: "Python"
 score: 80
 tags: ["agent-orchestration", "protocol", "zero-dependency", "protocol-enforcement", "multi-agent", "security"]
 url: "https://github.com/GammaLabTechnologies/harmonist"
-last_seen_date: "2026-05-11"
+last_seen_date: "2026-05-12"
 ---
 
 # Harmonist
@@ -86,3 +86,9 @@ Agent 编排可能正在经历类似微服务的演进路径：
 
 ---
 *首次记录：2026-04-28*
+
+## 最近动态
+
+### 2026-05-12
+- 连续第三天无外部数据，Star 推演为最后有效轮次
+- 待网络恢复后进行数据校正

@@ -2,11 +2,11 @@
 title: "MemPalace"
 slug: "mempalace"
 date_added: "2026-04-12"
-last_seen_date: "2026-05-11"
+last_seen_date: "2026-05-12"
 category: "基础设施候选"
 emoji: "🧠"
-stars: "~52k stars（推演）"
-stars_delta: "稳守50K+, 高位稳定增长, 基础设施级确认"
+stars: "~53k stars（推演）"
+stars_delta: "高位稳定增长，连续三天无实测数据"
 language: "Python"
 score: 88
 tags: ["AI Memory", "ChromaDB", "MCP", "LongMemEval", "本地优先"]
@@ -87,3 +87,9 @@ graph TB
 
 ---
 *首次记录：2026-04-12*
+
+## 最近动态
+
+### 2026-05-12
+- 连续第三天无外部数据，Star 推演为最后有效轮次
+- 待网络恢复后进行数据校正

@@ -4,7 +4,7 @@ slug: "mirage"
 date_added: "2026-05-08"
 category: "基础设施候选"
 emoji: "🗂️"
-stars: "~2.1k stars（推演）"
+stars: "~2.5k stars（推演）"
 stars_delta: "3 天 1.4K（5/6 创建），Agent 基础设施赛道热度"
 language: "TypeScript"
 score: 85
@@ -87,3 +87,9 @@ graph LR
 
 ---
 *首次记录：2026-05-08*
+
+## 最近动态
+
+### 2026-05-12
+- 连续第三天无外部数据，Star 推演为最后有效轮次
+- 待网络恢复后进行数据校正

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-11T19:00:10.345Z",
+  "updatedAt": "2026-05-12T19:00:22.997Z",
   "entries": {
     "memory:memory/.dreams/session-corpus/2026-04-13.txt:1:1": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-13.txt:1:1",
@@ -13851,6 +13851,949 @@
         "平台",
         "确认",
         "信号"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: 先同步远端代码，然后运行 Phase 1 健康检查。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "同步",
+        "远端",
+        "代码",
+        "然后",
+        "运行",
+        "phase",
+        "健康",
+        "检查"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: 网络暂时不通，先基于本地数据继续执行。先运行 Phase 1 健康检查。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "网络",
+        "暂时",
+        "不通",
+        "基于",
+        "本地",
+        "数据",
+        "继续",
+        "执行"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: Phase 1 通过。进入 Phase 3：今日研究。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "phase",
+        "通过",
+        "进入",
+        "今日",
+        "研究"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: web_search 不可用，直接抓取 GitHub Trending 页面。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "web-search",
+        "不可",
+        "直接",
+        "抓取",
+        "github",
+        "trending"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: GitHub 直连不通。尝试通过 gh API 或其他途径获取数据。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "github",
+        "不通",
+        "尝试",
+        "通过",
+        "api",
+        "其他",
+        "途径",
+        "获取"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: 所有外部网络访问被阻断。将基于本地已有数据和近期研究积累生成今日报告。先查看最近几天的日报。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "网络",
+        "所有",
+        "外部",
+        "访问",
+        "阻断",
+        "基于",
+        "本地",
+        "已有"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: 现在我对情况有了充分了解。已连续 4 天（05-09 到 05-12）无法访问外部数据源。今天将基于历史数据做第 3 天的趋势推演，但需要做出有意义的更新判断。让我检查项目档案的状态。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "05-09",
+        "05-12",
+        "现在",
+        "情况",
+        "有了",
+        "充分",
+        "了解",
+        "连续"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: 现在开始生成 2026-05-12 的日报。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "现在",
+        "开始",
+        "生成",
+        "日报"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: 现在生成 2026-05-12 的日报。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "现在",
+        "生成",
+        "日报"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: Phase 4：更新 8 个项目档案。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "phase",
+        "更新",
+        "项目",
+        "档案"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: 现在，将今天的观察记录添加到每个项目文件中。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "现在",
+        "今天",
+        "观察",
+        "记录",
+        "添加",
+        "项目",
+        "文件"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: Phase 4 完成。进入 Phase 5：级联同步。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "phase",
+        "完成",
+        "进入",
+        "同步"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: ### 5.1 更新 trend-index.md",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "5.1",
+        "trend-index.md",
+        "更新",
+        "trend",
+        "index.md"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: ### 5.2 更新 daily-report.md",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "5.2",
+        "daily-report.md",
+        "更新",
+        "report.md"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: ### 5.3 生成 README.md",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "5.3",
+        "readme.md",
+        "生成"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: ### 5.4 运行 HTML 生成器",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "5.4",
+        "运行",
+        "html",
+        "生成"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: Phase 1 通过。进入 Phase 3 今日研究。先同步远端代码，同时开始数据采集。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "phase",
+        "通过",
+        "进入",
+        "今日",
+        "研究",
+        "同步",
+        "远端",
+        "代码"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: 网络不稳定，git pull 失败。先重试 git pull，同时不带 freshness 搜索。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "网络",
+        "稳定",
+        "git",
+        "pull",
+        "失败",
+        "同时",
+        "freshness",
+        "搜索"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "Assistant: web_search 也不可用。尝试用 web_fetch 直接抓取 GitHub Trending 页面，同时再次重试 git pull。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "web-search",
+        "web-fetch",
+        "也不",
+        "可用",
+        "尝试",
+        "直接",
+        "抓取",
+        "github"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "Assistant: GitHub 网络完全不通。尝试 gh CLI 和检查网络状况。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "网络",
+        "github",
+        "完全",
+        "不通",
+        "尝试",
+        "cli",
+        "检查",
+        "状况"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "Assistant: GitHub 网络完全不通（TLS握手失败），gh token 也过期。让我尝试通过不同方式获取数据。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "网络",
+        "github",
+        "完全",
+        "不通",
+        "tls",
+        "握手",
+        "失败",
+        "token"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "Assistant: GitHub 解析到 198.18.0.11（代理地址），但 TLS 不通。这是本地网络/代理问题。让我尝试用其他途径获取数据。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "网络",
+        "198.18.0.11",
+        "这是本地网络/代理问题",
+        "github",
+        "解析",
+        "代理",
+        "地址",
+        "tls"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: 国内网络可用，外部 HTTPS 部分不通。让我尝试通过代理或者国内可访问的镜像获取 GitHub trending 数据。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "网络",
+        "国内",
+        "可用",
+        "外部",
+        "https",
+        "部分",
+        "不通",
+        "尝试"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "Assistant: TLS 握手在代理层失败。让我尝试通过国内可用的 Gitee 镜像或 API 获取数据。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "tls",
+        "握手",
+        "代理",
+        "失败",
+        "尝试",
+        "通过",
+        "国内",
+        "可用"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "Assistant: web_fetch 被 DNS 劫持阻塞了。但 curl 可以访问部分站点。让我用 curl 获取 Gitee 和其他可用数据源。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "web-fetch",
+        "dns",
+        "劫持",
+        "阻塞",
+        "curl",
+        "可以",
+        "访问",
+        "部分"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "Assistant: ### 5.5 验证生成结果",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "5.5",
+        "验证",
+        "生成",
+        "结果"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "Assistant: 所有文件非空，Phase 5 完成。进入 Phase 6。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "所有",
+        "文件",
+        "phase",
+        "完成",
+        "进入"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "Assistant: Phase 6 通过！执行 Git 操作。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "phase",
+        "通过",
+        "执行",
+        "git",
+        "操作"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "Assistant: Git push 3 次重试均失败，TLS 握手持续失败。本地变更已安全 commit，待网络恢复后推送。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "网络",
+        "git",
+        "push",
+        "失败",
+        "tls",
+        "握手",
+        "持续",
+        "本地"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "Assistant: ## 执行报告 ### validate 结果 - Phase 1: 通过 - 0 错误，2 警告（缺 05-12 条目，已在 Phase 3 中补齐） - Phase 2: 无需修复 - Phase 6: 通过 - 0 错误，0 警告，36 dailies，110 projects ### 今日研究 - 日期: 2026-05-12 - 分析项目数: 8 - 新增项目档案: 0（均为已有项目更新） - 更新项目档案: CC Switch, MemPalace, Open Design, ds4.c, Mirage, Deepsec",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "05-12",
+        "ds4.c",
+        "执行",
+        "报告",
+        "validate",
+        "结果",
+        "phase",
+        "通过"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-12.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-12.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-05-12.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "Assistant: docs/daily/2026-05-12.html（重新生成） - docs/projects/*.html（8 个项目页更新） ### 补救建议 网络恢复后执行： ```bash git pull origin main # 先同步远端可能的手动更新 git push origin main # 推送本地 commit ```",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-12T19:00:09.760Z",
+      "lastRecalledAt": "2026-05-12T19:00:09.760Z",
+      "queryHashes": [
+        "7842911a6fdb"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "网络",
+        "docs/daily/2026-05-12.html",
+        "docs/projects",
+        "docs",
+        "html",
+        "重新",
+        "生成",
+        "projects"
       ]
     }
   }

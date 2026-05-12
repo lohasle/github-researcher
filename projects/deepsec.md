@@ -4,13 +4,13 @@ slug: "deepsec"
 date_added: "2026-05-06"
 category: "工具型"
 emoji: "🛡️"
-stars: "2,356 stars"
-stars_delta: "1.2K→1.6K→1.9K→2.5K（推演），稳步增长，DevSecOps Agent化代表"
+stars: "2,415 stars"
+stars_delta: "稳步增长，DevSecOps Agent化代表，日增~60"
 language: "TypeScript"
 score: 78
 tags: ["security", "coding-agent", "vulnerability", "vercel", "audit", "devsecops"]
 url: "https://github.com/vercel-labs/deepsec"
-last_seen_date: "2026-05-12"
+last_seen_date: "2026-05-13"
 ---
 
 # Deepsec
@@ -62,12 +62,13 @@ Vercel Labs 出品，Apache 2.0 许可证。用 Agent 做安全审计是 DevSecO
 
 ## 最近动态（2026-05-07）
 
+### 2026-05-13（实测）
+- **Stars 实测 2,415** — 稳步增长
+- CVE-2026-31431（Linux kernel LPE 3.7K）推动安全赛道整体升温
+- 维持工具型判断
+
 ### 2026-05-12
 - 连续第三天无外部数据，Star 推演为最后有效轮次
-- 待网络恢复后进行数据校正
-- Stars 预估 ~1.2K，增速稳定
-- 安全 Agent 化方向确认，但产品仍在早期
-- 维持"工具型"判断，持续跟踪
 
 ---
 *首次记录：2026-05-06*

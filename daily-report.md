@@ -4,6 +4,21 @@
 
 ---
 
+## 2026-05-13
+
+**核心主题：** 断网结束实测回归 · Agent 工具链全面扩张 · GitHub Spec Kit 97K 官方入场 Spec-Driven Dev · Browser Harness 12.3K 突入核心 · GPT-Image-2 生态爆发
+
+**关键项目：**
+- 🎨 Open Design (38.4K stars) — 平台地位确认，增速趋稳
+- 🌐 Browser Harness (12.3K stars) — Agent 浏览器交互基础设施
+- 📋 GitHub Spec Kit (97.2K stars) — 官方入场 Spec-Driven Development
+- 🤖 Hermes Agent (147K stars) — Agent 从工具走向伙伴
+- 🔧 ds4.c (8K stars) — 本地推理 Metal+CUDA 双轨
+
+→ [查看完整日报](daily/2026-05-13.html)
+
+---
+
 ## 2026-05-12
 
 **核心主题：** 第三天断网推演 · Agent 筛选期关键拐点 · DeepSeek V4 推理三层架构成型 · 安全双范式企业评估窗口 · 推演可信度开始下降

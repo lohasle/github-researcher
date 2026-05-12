@@ -10,7 +10,7 @@ stars_per_day: 8301
 summary: Agent 自进化 + 跨会话记忆系统，Skill 自进化机制触及 Agent 学习核心。
 tech_stack: Python
 title: hermes-agent
-total_stars: 84.3k
+total_stars: 146.8k
 ---
 
 # hermes-agent
@@ -20,8 +20,8 @@ total_stars: 84.3k
 ## 基本信息
 
 - **仓库：** [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)
-- **Star：** 28,310
-- **本周新增：** 9,662
+- **Star：** 146,768
+- **本周新增：** ~8,000
 - **语言：** Python
 - **许可：** 需确认
 - **归档状态：** 活跃

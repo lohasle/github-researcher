@@ -4,7 +4,7 @@ slug: "ds4"
 date_added: "2026-05-08"
 category: "基础设施候选"
 emoji: "🔧"
-stars: "~3.8k stars（推演）"
+stars: "7,765 stars"
 stars_delta: "5天从0到3.2K（推演），antirez品牌效应+磁盘KV Cache理念引发关注"
 language: "C"
 score: 82

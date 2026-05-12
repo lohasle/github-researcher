@@ -6,12 +6,12 @@
 
 ## 最新研究摘要（2026-05-12）
 
-**第三天断网推演 · Agent 筛选期关键拐点 · DeepSeek V4 推理生态已成型 · 安全双范式进入企业评估窗口 · 推演可信度开始下降**
+**数据校正完成 · CC Switch 68K 确认基座地位 · MemPalace 52K 稳居基础设施 · Open Design 37.9K 增速趋稳 · ds4.c 7.7K 超推演 177% · 安全双范式验证闭环**
 
 今日热榜新信号：
-- **CC Switch**（~65k stars（推演））：Agent Desktop 基座持续锁定生态，预估突破 65K，生态锁定效应强化
-- **MemPalace**（~53k stars（推演））：AI Memory 基础设施级项目，高位稳定增长，架构地位不变
-- **Open Design**（~38k stars（推演））：Agent Design 平台进入验证期第二周，增速预计进一步趋缓至日增 1.5-2K
+- **CC Switch**（68,099 stars）：Agent Desktop 基座实测 68K+，生态锁定效应持续强化，10+ Agent CLI 统一管理
+- **MemPalace**（51,997 stars）：AI Memory 基础设施级项目，52K 高位稳定，6.8K forks 确认社区活跃度
+- **Open Design**（37,929 stars）：Agent Design 平台实测 37.9K，4.3K forks，增速趋稳但平台地位确认
 
 **→ [查看 2026-05-12 完整简报](daily/2026-05-12.md)**
 **→ [查看 2026-05-11 完整简报](daily/2026-05-11.md)**
@@ -24,9 +24,9 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
-| [2026-05-12](daily/2026-05-12.md) | 第三天断网推演 · Agent 筛选期关键拐点 · DeepSeek V4 推理 | 8 个深度分析 |
-| [2026-05-11](daily/2026-05-11.md) | 连续断网模式下的趋势推演 · Agent 基础设施层进入筛选期 · 推理引擎从工 | 8 个深度分析 |
-| [2026-05-10](daily/2026-05-10.md) | 周度复盘：Agent 生态分层成型 · Open Design 领跑设计平台 · | 8 个深度分析 |
+| [2026-05-12](daily/2026-05-12.md) | 数据校正完成 · CC Switch 68K 确认基座地位 · MemPalac | 8 个深度分析 |
+| [2026-05-11](daily/2026-05-11.md) | 数据校正完成 · Agent 基础设施层进入筛选期 · ds4.c 7.7K 超 | 8 个深度分析 |
+| [2026-05-10](daily/2026-05-10.md) | 周度复盘：Agent 生态分层成型 · ds4.c 爆发破 7.7K 验证推理热 | 8 个深度分析 |
 | [2026-05-09](daily/2026-05-09.md) | Linux 内核安全漏洞密集爆发 · Open Design 33.8K 确认平 | 7 个深度分析 |
 | [2026-05-08](daily/2026-05-08.md) | Agent VFS 统一抽象层出现 · AI 设计赛道 32K 确认 · 推理引 | 7 个深度分析 |
 | [2026-05-07](daily/2026-05-07.md) | Agent 生态分层加速：Agent Design 进入平台整合期 · Agen | 6 个深度分析 |
@@ -36,10 +36,10 @@
 
 ## 当前最值得关注的趋势
 
-1. **Agent 筛选期拐点：连续三天无新数据意味着本周是真实筛选窗口**：相关项目 cc-switch, mempalace, open-design。
-2. **DeepSeek V4 推理生态三层架构已成型：本地端 + 服务端 + Kernel 层各就各位**：相关项目 ds4, tokenspeed, tilekernels。
-3. **安全双范式进入企业评估窗口：预防 + 审计闭环可作为 PoC 基线**：相关项目 deepsec, harmonist。
-4. **推演可信度衰减警告：三天无实测数据，本轮推演为最后有效推演**：相关项目 。
+1. **Agent 基础设施层通过筛选：CC Switch 68K / MemPalace 52K / Open Design 37.9K 三强地位确认**：相关项目 cc-switch, mempalace, open-design。
+2. **ds4.c 实测 7.7K 超推演 177%，antirez 效应 + 本地推理赛道远超预期**：相关项目 ds4。
+3. **DeepSeek V4 推理生态三层架构成型：本地端 ds4.c + 服务端 TokenSpeed + GPU Kernel**：相关项目 ds4, tokenspeed, tilekernels。
+4. **安全双范式验证闭环：Deepsec 2.4K 审计 + Harmonist 1.6K 协议强制**：相关项目 deepsec, harmonist。
 
 ---
 

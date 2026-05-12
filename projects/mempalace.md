@@ -5,7 +5,7 @@ date_added: "2026-04-12"
 last_seen_date: "2026-05-12"
 category: "基础设施候选"
 emoji: "🧠"
-stars: "~53k stars（推演）"
+stars: "51,997 stars"
 stars_delta: "高位稳定增长，连续三天无实测数据"
 language: "Python"
 score: 88

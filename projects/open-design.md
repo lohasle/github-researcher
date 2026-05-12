@@ -4,7 +4,7 @@ slug: "open-design"
 date_added: "2026-04-30"
 category: "平台候选"
 emoji: "🎨"
-stars: "~38k stars（推演）"
+stars: "37,929 stars"
 stars_delta: "14天从0到36K（推演），爆发期→趋稳期→验证期过渡中"
 language: "TypeScript"
 score: 86

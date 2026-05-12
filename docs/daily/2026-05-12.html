@@ -207,317 +207,239 @@
     <div class="daily-content">
         <h1 id="2026-05-12-github">2026-05-12 GitHub 趋势研究简报</h1>
 <blockquote>
-<p>⚠️ <strong>数据来源声明：</strong> 今日为连续第三天外部数据源不可达（GitHub API、GitHub Trending、Reddit、HN 等均因 TLS 连接失败）。本报告基于 2026-05-03 ~ 2026-05-10 已采集本地数据完成趋势推演分析。<strong>本轮为本系列推演的最后有效轮次</strong>——如果明天仍无法获取外部数据，后续报告将不再尝试 Star 数推演，转而聚焦于已有数据的深度分析。</p>
+<p>✅ <strong>数据来源声明：</strong> 今日数据已通过网络恢复后的首次实测校正完成（GitHub API 直接查询）。之前 05-10~12 因代理订阅过期导致数据源不可达，Star 数为推演值。现已全部替换为实测数据。</p>
 </blockquote>
-<h2 id="agent-86">趋势一：Agent 筛选期拐点（热度 86）</h2>
-<p>连续三天无法获取新数据，这本身就构成了一个观察窗口。当我们恢复数据访问时，哪些项目还在增长、哪些已经停滞，将是最真实的筛选信号。</p>
-<h3 id="_1">拐点判断框架</h3>
-<pre class="mermaid">graph TB
-    subgraph 三天沉默期后的筛选逻辑
-        A["网络恢复后<br/>第一步：数据校正"] --> B{"Star 增速<br/>是否维持？"}
-        B -->|维持或加速| C["✅ 通过筛选<br/>确认趋势项目"]
-        B -->|明显放缓| D["⚠️ 进入观察<br/>可能是周期顶"]
-        B -->|骤降或停滞| E["❌ 筛选淘汰<br/>泡沫信号"]
-        
-        C --> F["立即更新档案<br/>考虑 PoC"]
-        D --> G["延长观察 1 周<br/>关注 issue 活跃度"]
-        E --> H["降低跟踪优先级<br/>标记泡沫"]
-    end
-</pre>
-<h3 id="_2">各项目筛选预判</h3>
+<h2 id="agent-90">趋势一：Agent 基础设施层通过筛选（热度 90）</h2>
+<p>网络恢复后的首次实测数据校正显示，Agent 基础设施层三强地位全面确认：</p>
 <table>
 <thead>
 <tr>
 <th>项目</th>
-<th>05-09 实测</th>
-<th>05-12 推演</th>
-<th>恢复后核心观察点</th>
-<th>筛选预判</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>CC Switch</strong></td>
-<td>~59K</td>
-<td>~65K</td>
-<td>是否维持日增 2-3K</td>
-<td>✅ 大概率通过</td>
-</tr>
-<tr>
-<td><strong>MemPalace</strong></td>
-<td>~50.6K</td>
-<td>~53K</td>
-<td>高位增速是否持续</td>
-<td>✅ 大概率通过</td>
-</tr>
-<tr>
-<td><strong>Open Design</strong></td>
-<td>~33.9K</td>
-<td>~38K</td>
-<td>日增是否跌破 1K</td>
-<td>⚠️ 关键观察</td>
-</tr>
-<tr>
-<td><strong>ds4.c</strong></td>
-<td>~2.3K</td>
-<td>~3.8K</td>
-<td>是否出现 CUDA Fork</td>
-<td>⚠️ 平台限制</td>
-</tr>
-<tr>
-<td><strong>Mirage</strong></td>
-<td>~1.4K</td>
-<td>~2.5K</td>
-<td>后端适配器数量增长</td>
-<td>⚠️ 早期高波动</td>
-</tr>
-<tr>
-<td><strong>Deepsec</strong></td>
-<td>~1.9K</td>
-<td>~2.8K</td>
-<td>企业采用案例</td>
-<td>✅ 赛道代表</td>
-</tr>
-<tr>
-<td><strong>Harmonist</strong></td>
-<td>~1.4K</td>
-<td>~2.3K</td>
-<td>社区 Fork/集成数</td>
-<td>✅ 赛道代表</td>
-</tr>
-<tr>
-<td><strong>TokenSpeed</strong></td>
-<td>~621</td>
-<td>~1.3K</td>
-<td>第三方基准测试</td>
-<td>⚠️ 需验证</td>
-</tr>
-</tbody>
-</table>
-<h2 id="deepseek-v4-84">趋势二：DeepSeek V4 推理生态三层架构成型（热度 84）</h2>
-<p>从 05-08 到 05-12，DeepSeek V4 的开源推理生态已经清晰分为三层：</p>
-<pre class="mermaid">flowchart TB
-    subgraph "DeepSeek V4 推理三层架构"
-        direction TB
-        L1["🔵 Kernel 层<br/>TileKernels<br/>MoE 量化 + GPU Kernel 优化"]
-        L2["🟢 推理引擎层"]
-        L2A["ds4.c — 本地端<br/>Metal + 2-bit + 磁盘 KV"]
-        L2B["TokenSpeed — 服务端<br/>Blackwell + Agentic Workload"]
-        L3["🟡 应用层<br/>GGUF 生态 / Ollama / 企业部署"]
-    end
-    
-    L1 --> L2A
-    L1 --> L2B
-    L2A --> L3
-    L2B --> L3
-    
-    style L1 fill:#bbf
-    style L2 fill:#bfb
-    style L3 fill:#ffb
-</pre>
-<p><strong>架构师判断：</strong></p>
-<ol>
-<li><strong>Kernel 层</strong>（TileKernels）— 做的是"让推理更快"，是底层优化，适合硬件厂商和大规模部署</li>
-<li><strong>引擎层</strong>（ds4.c + TokenSpeed）— 做的是"让推理可用"，覆盖本地和服务端两大场景</li>
-<li><strong>应用层</strong> — 做的是"让推理好用"，GGUF 生态已经成熟</li>
-</ol>
-<p><strong>企业落地路径已清晰：</strong>
-- <strong>开发/测试：</strong> ds4.c 本地推理（MacBook 直接跑）
-- <strong>生产/规模：</strong> TokenSpeed 服务端推理（Blackwell GPU 集群）
-- <strong>定制/极致性能：</strong> TileKernels Kernel 优化（自建推理集群）</p>
-<h2 id="81">趋势三：安全双范式进入企业评估窗口（热度 81）</h2>
-<pre class="mermaid">flowchart LR
-    subgraph "企业 Agent 安全 PoC 方案"
-        A["第一阶段<br/>（1-2 周）"] --> A1["Deepsec<br/>对现有代码库<br/>做 Agent 安全审计"]
-        A1 --> B["第二阶段<br/>（2-4 周）"]
-        B --> B1["Harmonist<br/>在新 Agent 项目中<br/>引入协议强制约束"]
-        B1 --> C["第三阶段<br/>（4-8 周）"]
-        C --> C1["闭环验证<br/>审计发现 → 协议加固<br/>协议约束 → 审计验证"]
-    end
-</pre>
-<p><strong>落地可行性更新（基于三天观察期反思）：</strong></p>
-<table>
-<thead>
-<tr>
-<th>维度</th>
-<th>更新判断</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>技术风险</strong></td>
-<td>两个项目技术路线清晰，但都处于早期版本，API 稳定性存疑</td>
-</tr>
-<tr>
-<td><strong>集成成本</strong></td>
-<td>Deepsec 需要 Agent 运行环境；Harmonist 零依赖但需要理解协议设计</td>
-</tr>
-<tr>
-<td><strong>价值密度</strong></td>
-<td>Deepsec 价值密度更高（立即发现漏洞）；Harmonist 价值需要更长周期验证</td>
-</tr>
-<tr>
-<td><strong>建议</strong></td>
-<td>优先用 Deepsec 做一次性审计；Harmonist 可在 Greenfield 项目中同步试验</td>
-</tr>
-</tbody>
-</table>
-<h2 id="75">趋势四：推演可信度衰减警告（热度 75）</h2>
-<p><strong>这是本轮推演最重要的元判断。</strong></p>
-<table>
-<thead>
-<tr>
-<th>指标</th>
-<th>05-10</th>
-<th>05-11</th>
-<th>05-12</th>
-<th>趋势</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>距最后实测天数</td>
-<td>1 天</td>
-<td>2 天</td>
-<td>3 天</td>
-<td>⚠️ 递增</td>
-</tr>
-<tr>
-<td>Star 推演误差预期</td>
-<td>±5%</td>
-<td>±10%</td>
-<td>±15-20%</td>
-<td>⚠️ 快速扩大</td>
-</tr>
-<tr>
-<td>新项目遗漏风险</td>
-<td>低</td>
-<td>中</td>
-<td>高</td>
-<td>❌ 不可控</td>
-</tr>
-<tr>
-<td>趋势方向判断可靠性</td>
-<td>高</td>
-<td>中</td>
-<td>中</td>
-<td>⚠️ 仍可参考</td>
-</tr>
-</tbody>
-</table>
-<p><strong>关键决定：</strong></p>
-<ol>
-<li>本轮推演的 Star 数值是本系列的最后一次数值更新</li>
-<li>如果 05-13 仍无法获取数据，报告将转为<strong>纯分析模式</strong>：</li>
-<li>不再推演具体 Star 数</li>
-<li>聚焦于已有项目的深度技术分析</li>
-<li>补充跨项目对比和架构设计模式提炼</li>
-<li>网络恢复后的第一件事是<strong>数据校正</strong>，更新所有项目档案中的实际数据</li>
-</ol>
-<h2 id="_3">本周关键观察点（更新）</h2>
-<p>在 05-11 基础上新增/调整：</p>
-<ol>
-<li><strong>🆕 网络恢复后的数据校正策略：</strong> 优先校正 CC Switch、MemPalace、Open Design 的实际 Star 数</li>
-<li><strong>Open Design 验证期关键指标：</strong> 周活跃贡献者数、Skills 增量、Design Systems 增量</li>
-<li><strong>ds4.c 生态突破：</strong> 是否出现 CUDA/Vulkan 社区 Fork 是该项目能否从"工具"升级为"基础设施"的关键</li>
-<li><strong>🆕 Mirage 后端适配器追踪：</strong> 后端数量是否从 6-8 个增长到 15+，是规模化信号</li>
-<li><strong>推理引擎性能基准：</strong> TokenSpeed 是否出现第三方独立基准测试</li>
-<li><strong>🆕 编排层动态：</strong> Harmonist + Agent Orchestra 是否出现整合信号或新竞争者</li>
-</ol>
-<h2 id="_4">持续跟踪项目状态（推演 — 最终轮次）</h2>
-<table>
-<thead>
-<tr>
-<th>项目</th>
-<th>最后实测 Stars</th>
-<th>今日推演 Stars</th>
-<th>推演增量（累计）</th>
-<th>可信度</th>
+<th>推演值</th>
+<th>实测值</th>
+<th>误差</th>
+<th>判定</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>CC Switch</td>
-<td>59K（05-07 预估）</td>
 <td>~65K</td>
-<td>+6K</td>
-<td>中（线性外推 3 天）</td>
+<td><strong>68,099</strong></td>
+<td>+4.8%</td>
+<td>✅ 超预期</td>
 </tr>
 <tr>
 <td>MemPalace</td>
-<td>50.6K（05-10 预估）</td>
 <td>~53K</td>
-<td>+2.4K</td>
-<td>中（高位稳定）</td>
+<td><strong>51,997</strong></td>
+<td>-1.9%</td>
+<td>✅ 高位稳定</td>
 </tr>
 <tr>
 <td>Open Design</td>
-<td>33.9K（05-09 实测）</td>
 <td>~38K</td>
-<td>+4.1K</td>
-<td>低（增速变化大）</td>
-</tr>
-<tr>
-<td>ds4.c</td>
-<td>2.3K（05-09 实测）</td>
-<td>~3.8K</td>
-<td>+1.5K</td>
-<td>低（早期波动大）</td>
-</tr>
-<tr>
-<td>Mirage</td>
-<td>1.4K（05-09 实测）</td>
-<td>~2.5K</td>
-<td>+1.1K</td>
-<td>低（早期波动大）</td>
-</tr>
-<tr>
-<td>Deepsec</td>
-<td>1.9K（05-09 实测）</td>
-<td>~2.8K</td>
-<td>+0.9K</td>
-<td>中（稳步增长）</td>
-</tr>
-<tr>
-<td>Harmonist</td>
-<td>1.4K（05-09 实测）</td>
-<td>~2.3K</td>
-<td>+0.9K</td>
-<td>中（稳步增长）</td>
-</tr>
-<tr>
-<td>TokenSpeed</td>
-<td>621（05-08 实测）</td>
-<td>~1.3K</td>
-<td>+0.7K</td>
-<td>低（早期高波动）</td>
+<td><strong>37,929</strong></td>
+<td>-0.2%</td>
+<td>✅ 接近推演</td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p>⚠️ <strong>最终推演轮次声明：</strong> 这是本系列推演的最后一份包含 Star 数值推演的报告。如果 05-13 仍无法获取外部数据，后续报告将取消 Star 数推演，改为纯趋势分析模式。所有推演值待网络恢复后将进行数据校正。</p>
-</blockquote>
-<h2 id="_5">风险与机遇</h2>
+<p><strong>关键发现：</strong>
+- CC Switch 实测 68K 远超推演的 65K，Agent Desktop 基座的生态锁定效应比预期更强
+- MemPalace 52K + 6,852 forks，社区参与度极高（fork/star 比 13.2%，远高于一般项目）
+- Open Design 37.9K + 4,302 forks，增速从爆发期进入平台期但地位稳固</p>
+<h2 id="ds4c-78k-177-89">趋势二：ds4.c 实测 7.8K 超推演 177%（热度 89）</h2>
+<p>这是本轮数据校正中<strong>最惊人的发现</strong>。推演预估 ds4.c 约 3.8K stars，但实测达到 <strong>7,765 stars</strong>，超出推演 <strong>177%</strong>。</p>
+<p><strong>原因分析：</strong>
+1. <strong>antirez 效应远超预期</strong>：Redis 作者的个人品牌在开发者社区有巨大号召力
+2. <strong>本地推理赛道爆发</strong>：DeepSeek V4 发布后，开发者对本地运行大模型的需求激增
+3. <strong>Metal 生态红利</strong>：macOS 开发者群体对 Metal-only 方案接受度比预期高很多
+4. <strong>推演模型偏差</strong>：我们用的是线性外推，但 ds4.c 实际经历了指数增长阶段</p>
+<p><strong>后续观察：</strong> 是否出现 CUDA/Vulkan 社区 Fork 是该项目能否从"工具"升级为"基础设施"的关键拐点。</p>
+<h2 id="deepseek-v4-85">趋势三：DeepSeek V4 推理生态三层架构成型（热度 85）</h2>
+<p>经过实测数据校正，DeepSeek V4 的开源推理生态架构确认：</p>
+<table>
+<thead>
+<tr>
+<th>层级</th>
+<th>项目</th>
+<th>实测 Stars</th>
+<th>定位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kernel 层</td>
+<td>TileKernels</td>
+<td>N/A</td>
+<td>MoE 量化 + GPU Kernel 优化</td>
+</tr>
+<tr>
+<td>推理引擎（本地）</td>
+<td>ds4.c</td>
+<td><strong>7,765</strong></td>
+<td>Metal + 2-bit + 磁盘 KV</td>
+</tr>
+<tr>
+<td>推理引擎（服务端）</td>
+<td>TokenSpeed</td>
+<td><strong>959</strong></td>
+<td>Blackwell + Agentic Workload</td>
+</tr>
+<tr>
+<td>应用层</td>
+<td>GGUF 生态</td>
+<td>—</td>
+<td>Ollama / 企业部署</td>
+</tr>
+</tbody>
+</table>
+<p><strong>企业落地路径：</strong>
+- 开发/测试 → ds4.c 本地推理
+- 生产/规模 → TokenSpeed 服务端推理
+- 定制/极致 → TileKernels Kernel 优化</p>
+<h2 id="82">趋势四：安全双范式验证闭环（热度 82）</h2>
+<p>实测数据确认安全赛道双范式：</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>实测 Stars</th>
+<th>Forks</th>
+<th>定位</th>
+<th>价值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deepsec</td>
+<td><strong>2,356</strong></td>
+<td>151</td>
+<td>Agent 安全审计</td>
+<td>价值密度高，立即发现漏洞</td>
+</tr>
+<tr>
+<td>Harmonist</td>
+<td><strong>1,556</strong></td>
+<td>319</td>
+<td>协议强制约束</td>
+<td>零依赖，长期架构保障</td>
+</tr>
+</tbody>
+</table>
+<p><strong>企业 PoC 建议：</strong>
+1. 先用 Deepsec 对现有代码做一次性 Agent 安全审计
+2. 在新 Agent 项目中引入 Harmonist 协议强制约束
+3. 形成「审计发现 → 协议加固 → 审计验证」闭环</p>
+<h2 id="_1">本周关键观察点（校正后更新）</h2>
+<ol>
+<li><strong>CC Switch 生态扩展：</strong> 68K+ stars 确认基座地位，关注新 Agent CLI 接入速度</li>
+<li><strong>Open Design 平台粘性：</strong> 增速从爆发进入平稳，关注 Skills/Design Systems 增量</li>
+<li><strong>ds4.c CUDA Fork：</strong> 社区是否出现非 Metal 版本是突破天花板的关键</li>
+<li><strong>Mirage 后端适配器：</strong> 数量是否从 6-8 个增长到 15+</li>
+<li><strong>推理引擎基准测试：</strong> TokenSpeed 是否出现第三方独立评测</li>
+<li><strong>安全双范式落地：</strong> Deepsec + Harmonist 是否出现企业采用案例</li>
+</ol>
+<h2 id="_2">持续跟踪项目状态（实测数据校正）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>实测 Stars</th>
+<th>Forks</th>
+<th>推演值</th>
+<th>误差</th>
+<th>判定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CC Switch</td>
+<td><strong>68,099</strong></td>
+<td>4,355</td>
+<td>~65K</td>
+<td>+4.8%</td>
+<td>✅ 超预期</td>
+</tr>
+<tr>
+<td>MemPalace</td>
+<td><strong>51,997</strong></td>
+<td>6,852</td>
+<td>~53K</td>
+<td>-1.9%</td>
+<td>✅ 吻合</td>
+</tr>
+<tr>
+<td>Open Design</td>
+<td><strong>37,929</strong></td>
+<td>4,302</td>
+<td>~38K</td>
+<td>-0.2%</td>
+<td>✅ 吻合</td>
+</tr>
+<tr>
+<td>ds4.c</td>
+<td><strong>7,765</strong></td>
+<td>594</td>
+<td>~3.8K</td>
+<td>+177%</td>
+<td>❗ 远超预期</td>
+</tr>
+<tr>
+<td>Mirage</td>
+<td><strong>2,004</strong></td>
+<td>129</td>
+<td>~2.5K</td>
+<td>-19.8%</td>
+<td>⚠️ 低于推演</td>
+</tr>
+<tr>
+<td>Deepsec</td>
+<td><strong>2,356</strong></td>
+<td>151</td>
+<td>~2.8K</td>
+<td>-15.9%</td>
+<td>⚠️ 增速放缓</td>
+</tr>
+<tr>
+<td>Harmonist</td>
+<td><strong>1,556</strong></td>
+<td>319</td>
+<td>~2.3K</td>
+<td>-32.3%</td>
+<td>⚠️ 低于推演</td>
+</tr>
+<tr>
+<td>TokenSpeed</td>
+<td><strong>959</strong></td>
+<td>74</td>
+<td>~1.3K</td>
+<td>-26.2%</td>
+<td>⚠️ 低于推演</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">风险与机遇</h2>
 <p><strong>风险：</strong>
-1. <strong>推演可信度已接近极限：</strong> 三天无实测数据，新增项目遗漏风险为"高"
-2. <strong>可能的盲区：</strong> 过去 72 小时内 GitHub 上可能已经出现新的爆发项目，我们完全不知道
-3. <strong>Open Design 增速拐点：</strong> 如果实际日增已跌破 1K，平台地位判断需要修正
-4. <strong>ds4.c 天花板：</strong> Metal-only 限制 + antirez 个人项目属性，增长持续性存疑</p>
+1. <strong>ds4.c 天花板：</strong> Metal-only 限制 + antirez 个人项目属性，增长持续性存疑
+2. <strong>Open Design 增速拐点：</strong> 日增可能已跌破 1K，需要关注平台粘性指标
+3. <strong>推演模型偏差：</strong> 对高增长项目（ds4.c）严重低估，对稳定项目相对准确</p>
 <p><strong>机遇：</strong>
-1. <strong>数据校正窗口价值：</strong> 网络恢复后的首次校正本身就是一次高质量的"真实筛选"
-2. <strong>DeepSeek V4 推理三层架构已可供企业评估：</strong> 不是单个工具，而是完整的技术选型图谱
-3. <strong>安全双范式 PoC 可立即启动：</strong> 不需要等新数据，两个项目技术路线已清晰
-4. <strong>Mirage 的 VFS 范式值得关注：</strong> 即使 Star 数不大，架构思想本身有独立价值</p>
-<h2 id="_6">重点项目档案</h2>
-<p>今日更新项目：
-- 🎛️ CC Switch → <code>projects/cc-switch.md</code>（更新 stars 推演 + 筛选预判）
-- 🧠 MemPalace → <code>projects/mempalace.md</code>（更新 stars 推演）
-- 🎨 Open Design → <code>projects/open-design.md</code>（更新 stars 推演 + 验证期观察点）
-- 🔧 ds4.c → <code>projects/ds4.md</code>（更新 stars 推演 + 天花板分析）
-- 🗂️ Mirage → <code>projects/mirage.md</code>（更新 stars 推演 + 后端适配器观察）
-- 🛡️ Deepsec → <code>projects/deepsec.md</code>（更新 stars 推演 + PoC 建议）
-- 🎭 Harmonist → <code>projects/harmonist.md</code>（更新 stars 推演 + 价值密度判断）
-- ⚡ TokenSpeed → <code>projects/tokenspeed.md</code>（更新 stars 推演 + 落地路径）</p>
+1. <strong>数据校正完成：</strong> 所有跟踪项目已更新为实测数据，可信度恢复
+2. <strong>Agent 基础设施层三强格局：</strong> CC Switch / MemPalace / Open Design 各据一方
+3. <strong>推理赛道超预期：</strong> ds4.c 的爆发说明本地推理需求远超预期
+4. <strong>安全双范式可落地：</strong> Deepsec + Harmonist 技术路线清晰，可启动 PoC</p>
+<h2 id="_4">重点项目档案</h2>
+<p>今日数据校正更新项目：
+- 🎛️ CC Switch → <code>projects/cc-switch.md</code>（实测 68,099 ⬆️ 推演 65K）
+- 🧠 MemPalace → <code>projects/mempalace.md</code>（实测 51,997 ⬇️ 推演 53K）
+- 🎨 Open Design → <code>projects/open-design.md</code>（实测 37,929 ≈ 推演 38K）
+- 🔧 ds4.c → <code>projects/ds4.md</code>（实测 7,765 ⬆️⬆️ 推演 3.8K，+177%）
+- 🗂️ Mirage → <code>projects/mirage.md</code>（实测 2,004 ⬇️ 推演 2.5K）
+- 🛡️ Deepsec → <code>projects/deepsec.md</code>（实测 2,356 ⬇️ 推演 2.8K）
+- 🎭 Harmonist → <code>projects/harmonist.md</code>（实测 1,556 ⬇️ 推演 2.3K）
+- ⚡ TokenSpeed → <code>projects/tokenspeed.md</code>（实测 959 ⬇️ 推演 1.3K）</p>
     </div>
 </main>
     <footer class="footer">

@@ -10,6 +10,60 @@ title: Trend Index — 趋势指数
 
 ---
 
+## 2026-05-14（第三十五版）
+
+### Windows 安全核弹 · 3D 打印社区反弹 · Zig 桌面新范式
+
+**✅ 数据来源：** GitHub API (gh CLI) 实测
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Windows BitLocker 绕过漏洞疑似后门 | YellowKey | 92 |
+| 2 | 3D 打印社区反弹 BambuNetwork | OrcaSlicer-bambulab | 85 |
+| 3 | Zig 桌面开发新范式 (Vercel Labs) | Zero Native | 84 |
+| 4 | Agent 人格化浪潮 | Goblin Agent | 78 |
+| 5 | 统一存储 SDK + Agent 工具链 | Files SDK | 80 |
+
+#### 持续跟踪项目状态（实测）
+
+| 项目 | 上次 Stars | 本次 Stars | 变化 | 状态 |
+|------|-----------|-----------|------|------|
+| Open Design | 38,354 | 39,300 | +946 | ✅ 稳步增长 |
+| Hermes Agent | 146,768 | 148,546 | +1,778 | ✅ 高速增长 |
+| Browser Harness (browser-use) | 12,304* | 93,774 | 修正 | ⚠️ 数据修正 |
+| ds4.c | 8,042 | 8,387 | +345 | ✅ 稳增 |
+| Spec Kit | 97,190 | 98,266 | +1,076 | ✅ 稳增 |
+
+> *Browser Harness 昨日报告 12,304 可能为数据源错误，实际 browser-use 已达 93.7K
+
+#### 新增项目
+
+| 项目 | Stars | 分类 | 判断 |
+|------|-------|------|------|
+| YellowKey | 927 | 安全研究 | 高优先级跟踪 |
+| OrcaSlicer-bambulab | 2,832 | 工具型 | 短期跟踪 |
+| Zero Native | 3,261 | 基础设施候选 | 持续跟踪 |
+| Files SDK | 642 | 工具型 | 短期观察 |
+| Goblin Agent | 437 | 观察型 | 短期关注 |
+| Pixal3D | 504 | 研究型 | 中期跟踪 |
+
+#### 关键判断
+
+1. **安全漏洞驱动社区关注度：** YellowKey 的后门指控将推动 Windows 安全审计浪潮
+2. **社区反抗厂商限制：** OrcaSlicer-bambulab 887 forks/3天说明硬件生态开放 vs 封闭矛盾加剧
+3. **Zig 进入桌面开发赛道：** Vercel Labs 的 zero-native 让 Zig 在桌面应用框架中有了标志性项目
+4. **Agent 人格化从边缘到主流：** Goblin Agent 的真实历史背景说明 Agent 人格正在成为产品特性
+
+#### 数据修正
+
+| 项目 | 原数据 | 修正数据 | 原因 |
+|------|--------|----------|------|
+| Browser Harness | 12,304 | 93,774 | 数据源修正，browser-use 实际已达 93.7K |
+
+---
+
 ## 2026-05-13（第三十四版）
 
 ### 断网结束，实测数据回归

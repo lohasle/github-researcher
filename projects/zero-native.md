@@ -1,68 +1,84 @@
 ---
 title: "Zero Native"
 slug: "zero-native"
-date_added: "2026-05-13"
-category: "观察型"
+date_added: "2026-05-14"
+category: "基础设施候选"
 emoji: "⚡"
-stars: "2,893 stars"
-stars_delta: "新项目，Vercel Labs 出品，Zig + Web UI 桌面/移动框架"
+stars: "3,261 stars"
+stars_delta: "6 天 3,261 stars，Vercel Labs 出品"
 language: "Zig"
-score: 74
-tags: ["zig", "desktop", "mobile", "web-ui", "vercel", "native", "cross-platform"]
+score: 83
+tags: ["zig", "desktop", "webview", "native", "vercel", "cross-platform", "cef"]
 url: "https://github.com/vercel-labs/zero-native"
-last_seen_date: "2026-05-13"
+last_seen_date: "2026-05-14"
 ---
 
 # Zero Native
 
 ## 一句话定位
-Vercel Labs 推出的 Zig + Web UI 桌面/移动端框架——用 Zig 做原生层，用 Web 技术做 UI 层。
+Vercel Labs 出品的 Zig 桌面应用 shell，用 Web UI 构建原生桌面应用，支持系统 WebView 和 Chromium/CEF 双引擎。
 
 ## 它解决的问题
-当前跨平台桌面/移动框架（Electron、Tauri、React Native）各有痛点：
-- Electron 体积大、内存占用高
-- Tauri 需要 Rust 技能
-- React Native 性能受限
+Electron 太重（打包 Chromium），Tauri 太复杂（Rust 学习曲线），原生开发太贵。Zero Native 用 Zig 作为原生层 + WebView 作为 UI 层，在轻量和能力之间找到平衡。
 
-Zero Native 用 Zig 做原生层（体积小、性能好、内存安全），Web 技术做 UI 层（开发者友好）。
-
-## 为什么值得关注（2026-05-13）
-1. **Vercel Labs 出品**——说明 Vercel 在 Web 开发之外布局桌面/移动
-2. **Zig 语言在跨平台框架中的实践**——Zig 社区一直在寻找杀手级应用
-3. 本地推理赛道"Zig 全栈"方向的代表
+## 为什么值得关注（2026-05-14）
+- **Vercel Labs 出品**：背后是 Web 开发工具链的领导者
+- **Zig 而非 Rust**：选择 Zig 的 C 互操作性和编译速度优势
+- **双引擎策略**：系统 WebView（极轻量）或 Chromium/CEF（渲染一致性）
+- **安全模型明确**：WebView 默认不信任，所有原生命令 opt-in
 
 ## 热度来源判断
-**40% Vercel 品牌效应 + 30% Zig 社区期待 + 30% 跨平台框架需求**。
-2.9K stars 中 Vercel 品牌效应占比过高，实际落地效果需要验证。
+热度有 Vercel 品牌加持，但技术选择合理。3.3K stars 在 6 天内不算爆发性增长，但稳步上升。Zig 生态的关注度在上升，Vercel 的背书增加了可信度。
 
 ## 关键技术亮点
-1. **Zig 原生层**：体积小、性能好、与 C 互操作无缝
-2. **Web UI 层**：用熟悉的 Web 技术开发界面
-3. **桌面 + 移动统一**：一套代码同时支持桌面和移动
+1. **Zig 原生层**：Zig 直接调用 C，平台 SDK、原生库、编解码器都触手可及，无需 heavy FFI
+2. **显式安全模型**：WebView 被视为不信任的，原生命令、权限、导航、外部链接全部 opt-in + 策略控制
+3. **快速原生重建**：Zig 编译速度快，原生层修改后秒级重编译
+4. **WebViewSource 抽象**：支持内联 HTML、URL 或打包前端资源
 
 ## 架构启发
-跨平台框架的演进路线：C++（Qt）→ JavaScript（Electron）→ Rust（Tauri）→ Zig（Zero Native）。每次演进都在追求更小的体积和更好的性能。
+- Web UI + 轻量原生壳的架构模式正在被重新定义
+- Zig 在系统编程领域的定位：不是替代 Rust，而是替代 C 的场景中更具竞争力
+- Vercel 的技术版图从 Web 延伸到桌面，全栈开发的"全"在扩大
+
+```mermaid
+graph LR
+    A[Zero Native] --> B[Zig Shell]
+    A --> C[Web Frontend]
+    B --> D[Runtime]
+    B --> E[Platform APIs]
+    C --> F[Next.js / React / Svelte]
+    D --> G[Event Loop + Bridge]
+    E --> H[macOS WKWebView]
+    E --> I[Linux WebKitGTK]
+    E --> J[Windows CEF]
+    style A fill:#e1f5fe
+    style B fill:#fff3e0
+    style C fill:#e8f5e9
+```
 
 ## 定位判断
-**观察型**。Zig 生态不成熟，2.9K stars 中品牌效应占比高。需要观察 Vercel 是否持续投入。
+基础设施候选。如果成熟，可能成为 Electron/Tauri 的替代方案。但当前仍为 pre-release。
 
-## 风险 / 局限 / 泡沫点
-1. **Zig 生态不成熟**：Zig 的包管理、工具链、社区规模都远不如 Rust
-2. **Vercel Labs 不等于 Vercel**：Labs 项目可能随时停止
-3. **Tauri 先发优势大**：Tauri 已经有 106K stars 和成熟生态
+## 风险 / 屧限 / 泡沫点
+1. **Pre-release 状态**：API 不稳定，不建议生产使用
+2. **Zig 生态不成熟**：相比 Rust，Zig 的库生态和社区较小
+3. **Vercel Labs 项目风险**：Labs 项目可能被放弃或大幅修改方向
+4. **CEF 路径尚未完全成熟**：系统 WebView 路径可用，但 CEF 打包体验还不完善
 
 ## 与同类项目的关系
-- **Tauri**（106.5K stars）：Rust + Web UI，最直接的竞品
-- **Electron**：JavaScript + Chromium，体积大但生态最强
-- **Zero Native** 用 Zig 差异化，但 Zig 生态是短板
+- **Electron**：重量级方案，打包 Chromium，内存占用大
+- **Tauri**：Rust + WebView，更成熟但 Rust 学习曲线陡峭
+- **WRY**：Rust WebView 库，Tauri 的底层
+- **Neutralinojs**：轻量级 Web 桌面框架，但社区较小
 
 ## 是否值得持续跟踪
-**有限跟踪**。技术路线有趣但生态风险大。如果 Vercel 持续投入并且 Zig 生态成熟，可能成为 Tauri 的有力竞争者。
+**是**。Vercel Labs 的技术判断力值得信任，Zig 在桌面开发的应用是值得关注的新方向。
 
 ## 后续观察点
-1. Vercel 是否持续 commit
-2. Zig 生态是否出现配套工具
-3. 是否有真实应用案例
+1. Vercel 是否将此项目从 Labs 毕业到正式产品
+2. Zig 生态中桌面应用框架的成熟速度
+3. 与 Tauri 的实际性能和开发体验对比
 
 ---
-*首次记录：2026-05-13*
+*首次记录：2026-05-14*

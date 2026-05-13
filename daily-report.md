@@ -4,6 +4,22 @@
 
 ---
 
+## 2026-05-14
+
+**核心主题：** Windows BitLocker 绕过漏洞引爆安全社区 · OrcaSlicer 恢复 BambuNetwork 驱动 3D 打印社区反弹 · Zero Native 3.3K Vercel 用 Zig 重定义桌面开发 · Files SDK 统一存储 API + Agent 工具链 · Agent 人格化 Goblin Agent 登场
+
+**关键项目：**
+- 🔑 YellowKey (927 stars) — Windows BitLocker 绕过漏洞，疑似 WinRE 后门
+- 🖨️ OrcaSlicer-bambulab (2,832 stars / 887 forks) — 3D 打印社区反弹，恢复 Bambu Lab 完整功能
+- ⚡ Zero Native (3,261 stars) — Vercel Labs Zig 桌面应用框架
+- 📁 Files SDK (642 stars) — 统一存储 SDK + AI Agent 工具封装
+- 👺 Goblin Agent (437 stars) — Hermes Agent 人格层，Agent 文化标志
+- 🎨 Pixal3D (504 stars) — 腾讯 SIGGRAPH 2026，图像到 3D
+
+→ [查看完整日报](daily/2026-05-14.html)
+
+---
+
 ## 2026-05-13
 
 **核心主题：** 断网结束实测回归 · Agent 工具链全面扩张 · GitHub Spec Kit 97K 官方入场 Spec-Driven Dev · Browser Harness 12.3K 突入核心 · GPT-Image-2 生态爆发

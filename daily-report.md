@@ -4,6 +4,26 @@
 
 ---
 
+## 2026-05-15
+
+**核心主题：** 网络受限日 · Agent 生态整合期深读 · Spec-Driven Dev 范式变迁架构分析 · 本地推理三赛道分化复盘 · 安全赛道从漏洞驱动到平台化演进
+
+> ⚠️ 外部网络不可达，Stars 数据基于 05-14 实测推算，趋势分析基于近 5 日连续数据。
+
+**关键项目：**
+- 🤖 Hermes Agent (~149K stars) — Agent 框架头部地位巩固
+- 📋 Spec Kit (~99K stars) — 逼近 100K 里程碑，开发范式级项目
+- 🌐 Browser Harness (~94K stars) — Agent-Web 交互基础设施化
+- 🎨 Open Design (~40K stars) — 从爆发期进入平台巩固期
+- ⚡ Zero Native (~3.5K stars) — Zig 桌面框架持续跟踪
+- 🔧 ds4.c (~8.6K stars) — 本地推理原生层代表
+- 🔑 YellowKey (~1.2K stars) — 安全赛道持续升温
+- 🖨️ OrcaSlicer-bambulab (~3.5K stars) — 硬件开放运动标志
+
+→ [查看完整日报](daily/2026-05-15.html)
+
+---
+
 ## 2026-05-14
 
 **核心主题：** Windows BitLocker 绕过漏洞引爆安全社区 · OrcaSlicer 恢复 BambuNetwork 驱动 3D 打印社区反弹 · Zero Native 3.3K Vercel 用 Zig 重定义桌面开发 · Files SDK 统一存储 API + Agent 工具链 · Agent 人格化 Goblin Agent 登场

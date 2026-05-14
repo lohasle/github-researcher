@@ -2,10 +2,10 @@
 title: "Browser Harness"
 slug: "browser-harness"
 date_added: "2026-04-20"
-last_seen_date: "2026-05-13"
+last_seen_date: "2026-05-15"
 category: "平台候选"
 emoji: "♞"
-stars: "12,304 stars"
+stars: "~94K stars (推算，数据源修正后)"
 stars_delta: 
 language: "Python"
 score: 85
@@ -70,3 +70,10 @@ url: "https://github.com/browser-use/browser-harness"
 *首次记录：2026-04-20*
 
 *最近更新：2026-05-13 — stars 实测 12,304，25 天从 0 到 12.3K 爆发增长，自愈浏览器 Harness 定位确认，Agent 工具链核心拼图*
+
+## 最近动态 (2026-05-15)
+
+- **2026-05-15:** 网络受限日，趋势延续分析。基于 05-14 实测数据推算，持续跟踪中。
+- Stars 数据为推算值，网络恢复后验证。
+
+---

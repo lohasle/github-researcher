@@ -10,7 +10,7 @@ language: "Zig"
 score: 83
 tags: ["zig", "desktop", "webview", "native", "vercel", "cross-platform", "cef"]
 url: "https://github.com/vercel-labs/zero-native"
-last_seen_date: "2026-05-14"
+last_seen_date: "2026-05-15"
 ---
 
 # Zero Native
@@ -82,3 +82,10 @@ graph LR
 
 ---
 *首次记录：2026-05-14*
+
+## 最近动态 (2026-05-15)
+
+- **2026-05-15:** 网络受限日，趋势延续分析。基于 05-14 实测数据推算，持续跟踪中。
+- Stars 数据为推算值，网络恢复后验证。
+
+---

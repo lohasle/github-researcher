@@ -4,13 +4,13 @@ slug: "ds4"
 date_added: "2026-05-08"
 category: "基础设施候选"
 emoji: "🔧"
-stars: "8,042 stars"
+stars: "~8.6K stars (推算)"
 stars_delta: "5天从0到8K（实测），日增~277，Metal+CUDA双轨推进"
 language: "C"
 score: 87
 tags: ["deepseek-v4", "metal", "local-inference", "gguf", "quantization", "macos", "kv-cache"]
 url: "https://github.com/antirez/ds4"
-last_seen_date: "2026-05-13"
+last_seen_date: "2026-05-15"
 ---
 
 # ds4.c
@@ -87,3 +87,10 @@ ds4.c 的核心哲学是"极致特化"：
 
 ### 2026-05-12
 - 连续第三天无外部数据，Star 推演为最后有效轮次
+
+## 最近动态 (2026-05-15)
+
+- **2026-05-15:** 网络受限日，趋势延续分析。基于 05-14 实测数据推算，持续跟踪中。
+- Stars 数据为推算值，网络恢复后验证。
+
+---

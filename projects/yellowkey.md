@@ -10,7 +10,7 @@ language: "N/A"
 score: 90
 tags: ["bitlocker", "windows", "vulnerability", "bypass", "security", "winre"]
 url: "https://github.com/Nightmare-Eclipse/YellowKey"
-last_seen_date: "2026-05-14"
+last_seen_date: "2026-05-15"
 ---
 
 # YellowKey
@@ -70,3 +70,10 @@ Windows BitLocker 绕过漏洞 PoC，声称在 WinRE 中发现疑似后门组件
 
 ---
 *首次记录：2026-05-14*
+
+## 最近动态 (2026-05-15)
+
+- **2026-05-15:** 网络受限日，趋势延续分析。基于 05-14 实测数据推算，持续跟踪中。
+- Stars 数据为推算值，网络恢复后验证。
+
+---

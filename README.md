@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-05-14）
+## 最新研究摘要（2026-05-15）
 
-**YellowKey BitLocker 绕过漏洞引爆安全社区 · OrcaSlicer 恢复 BambuNetwork 驱动 3D 打印社区反弹 · Zero Native 3.3K Vercel 用 Zig 重定义桌面开发 · Files SDK 统一存储 API + Agent 工具链 · Agent 人格化浪潮 Goblin Agent 登场**
+**网络受限日 · Agent 生态进入整合期深读 · Spec-Driven Dev 范式变迁架构分析 · 本地推理三赛道分化复盘 · 安全赛道从漏洞驱动到平台化演进 · 3D 打印开放 vs 封闭之争的长期意义**
 
 今日热榜新信号：
-- **YellowKey**（927 stars）：BitLocker 绕过漏洞 PoC，声称发现疑似 WinRE 后门组件，仅影响 Windows 11/Server 2022/2025
-- **OrcaSlicer-bambulab**（2,832 stars）：OrcaSlicer 社区分叉恢复 Bambu Lab 打印机完整网络功能，3 天 887 forks 创近期记录
-- **Zero Native**（3,261 stars）：Vercel Labs 出品，Zig 桌面 shell + WebView/CEF，重新定义跨平台桌面应用开发
+- **Hermes Agent**（~149K stars (推算)）：Agent 生态头部项目，147K→148K+ 日增 1.7K，定位从工具到长期伙伴
+- **GitHub Spec Kit**（~99K stars (推算)）：GitHub 官方 Spec-Driven Development 工具链，97K→98K+ 日增 1K，开发范式级项目
+- **Browser Harness**（~94K stars (推算)）：Self-healing 浏览器自动化，Agent 与 Web 交互层基础设施，25 天从 0 到 93K+
 
+**→ [查看 2026-05-15 完整简报](daily/2026-05-15.md)**
 **→ [查看 2026-05-14 完整简报](daily/2026-05-14.md)**
 **→ [查看 2026-05-13 完整简报](daily/2026-05-13.md)**
 **→ [查看 2026-05-12 完整简报](daily/2026-05-12.md)**
-**→ [查看 2026-05-11 完整简报](daily/2026-05-11.md)**
 
 ---
 
@@ -24,23 +24,23 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-05-15](daily/2026-05-15.md) | 网络受限日 · Agent 生态进入整合期深读 · Spec-Driven De | 8 个深度分析 |
 | [2026-05-14](daily/2026-05-14.md) | YellowKey BitLocker 绕过漏洞引爆安全社区 · OrcaSli | 6 个深度分析 |
 | [2026-05-13](daily/2026-05-13.md) | 断网结束实测回归 · Open Design 38.4K 增速趋稳确认平台地位  | 8 个深度分析 |
 | [2026-05-12](daily/2026-05-12.md) | 数据校正完成 · CC Switch 68K 确认基座地位 · MemPalac | 8 个深度分析 |
 | [2026-05-11](daily/2026-05-11.md) | 数据校正完成 · Agent 基础设施层进入筛选期 · ds4.c 7.7K 超 | 8 个深度分析 |
 | [2026-05-10](daily/2026-05-10.md) | 周度复盘：Agent 生态分层成型 · ds4.c 爆发破 7.7K 验证推理热 | 8 个深度分析 |
 | [2026-05-09](daily/2026-05-09.md) | Linux 内核安全漏洞密集爆发 · Open Design 33.8K 确认平 | 7 个深度分析 |
-| [2026-05-08](daily/2026-05-08.md) | Agent VFS 统一抽象层出现 · AI 设计赛道 32K 确认 · 推理引 | 7 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **Windows 安全核弹：YellowKey BitLocker 绕过漏洞疑似后门，影响 Win11/Server 2022/2025，安全社区地震**：相关项目 yellowkey。
-2. **3D 打印社区反弹：OrcaSlicer-bambulab 3 天 2.8K+ stars / 887 forks 恢复 BambuNetwork 完整功能**：相关项目 orcaslicer-bambulab。
-3. **Zig 桌面开发新范式：Vercel Labs zero-native 3.3K stars，Zig + WebView 原生桌面应用**：相关项目 zero-native。
-4. **Agent 人格化浪潮：Goblin Agent 为 Hermes 添加性格层，Agent 从工具到角色**：相关项目 goblin-agent。
-5. **统一存储 SDK 化 + Agent 工具链集成：files-sdk 642 stars，S3/GCS/Azure 一 API + AI SDK 封装**：相关项目 files-sdk。
+1. **Agent 生态整合期：Hermes 148K+ / Browser Harness 93K+ / Open Design 39K+，三巨头确立头部格局，中腰部项目面临洗牌**：相关项目 hermes-agent, browser-harness, open-design。
+2. **Spec-Driven Dev 范式变迁：Spec Kit 98K+ 确立新范式，从 prompt engineering 到 spec engineering 的架构级转变**：相关项目 spec-kit。
+3. **本地推理三赛道复盘：ds4.c 原生层 / Terax AI 终端层 / Zero Native 框架层，Zig + Metal + CUDA 三线并行**：相关项目 ds4, terax-ai, zero-native。
+4. **安全赛道平台化趋势：从 YellowKey 单漏洞到 DevSecOps Agent 链，安全研究从事件驱动转向工具链驱动**：相关项目 yellowkey, deepsec, copy-fail-cve-2026-31431。
+5. **硬件生态开放 vs 封闭：OrcaSlicer-bambulab 社区分叉模式成为硬件开放运动的标志性事件**：相关项目 orcaslicer-bambulab。
 
 ---
 
@@ -64,8 +64,8 @@
 ## 数据统计
 
 - 📊 项目档案：118 个
-- 📅 日报总数：38 期
-- 🔄 最近更新：2026-05-14
+- 📅 日报总数：39 期
+- 🔄 最近更新：2026-05-15
 
 ---
 

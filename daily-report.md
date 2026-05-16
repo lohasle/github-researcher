@@ -4,6 +4,20 @@
 
 ---
 
+## 2026-05-17
+
+**核心主题：** 本地推理双雄对决 · Agent VFS 基础设施化 · Agent 原生语言 Zero 问世 · AI 安全新物种 AiSOC · Token 效率成 Agent 新战场
+
+**关键项目：**
+- 🔥 ds4 (10,038 stars) — antirez 打造 DeepSeek V4 Flash 专用推理引擎，磁盘 KV 缓存范式
+- 🗂️ Mirage (2,312 stars) — Agent 统一虚拟文件系统，Unix 语义抹平多后端
+- 0️⃣ Zero (916 stars) — Vercel Labs 面向 Agent 的系统编程语言
+- ⚡ TokenSpeed (1,031 stars) — 光速 LLM 推理引擎，Blackwell MLA 极致性能
+- 🛡️ AiSOC (971 stars) — 开源 AI 安全运营中心
+
+→ [查看完整日报](daily/2026-05-17.html)\n
+---
+
 ## 2026-05-15
 
 **核心主题：** 网络受限日 · Agent 生态整合期深读 · Spec-Driven Dev 范式变迁架构分析 · 本地推理三赛道分化复盘 · 安全赛道从漏洞驱动到平台化演进

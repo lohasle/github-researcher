@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-05-15）
+## 最新研究摘要（2026-05-17）
 
-**网络受限日 · Agent 生态进入整合期深读 · Spec-Driven Dev 范式变迁架构分析 · 本地推理三赛道分化复盘 · 安全赛道从漏洞驱动到平台化演进 · 3D 打印开放 vs 封闭之争的长期意义**
+**本地推理双雄对决 · Agent VFS 基础设施化 · Agent 原生语言 Zero 问世 · AI 安全新物种 AiSOC · Token 效率成 Agent 新战场**
 
 今日热榜新信号：
-- **Hermes Agent**（~149K stars (推算)）：Agent 生态头部项目，147K→148K+ 日增 1.7K，定位从工具到长期伙伴
-- **GitHub Spec Kit**（~99K stars (推算)）：GitHub 官方 Spec-Driven Development 工具链，97K→98K+ 日增 1K，开发范式级项目
-- **Browser Harness**（~94K stars (推算)）：Self-healing 浏览器自动化，Agent 与 Web 交互层基础设施，25 天从 0 到 93K+
+- **ds4**（10,038 stars）：antirez (Redis 作者) 打造的 DeepSeek V4 Flash 专用本地推理引擎，Metal + CUDA，磁盘 KV 缓存
+- **Mirage**（2,312 stars）：AI Agent 统一虚拟文件系统，用 Unix 文件语义抹平 S3/Slack/GitHub/Gmail 等后端差异
+- **Zero**（916 stars）：Vercel Labs 推出的面向 Agent 的系统编程语言，显式 effect + 可预测内存
 
+**→ [查看 2026-05-17 完整简报](daily/2026-05-17.md)**
 **→ [查看 2026-05-15 完整简报](daily/2026-05-15.md)**
 **→ [查看 2026-05-14 完整简报](daily/2026-05-14.md)**
 **→ [查看 2026-05-13 完整简报](daily/2026-05-13.md)**
-**→ [查看 2026-05-12 完整简报](daily/2026-05-12.md)**
 
 ---
 
@@ -24,23 +24,23 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-05-17](daily/2026-05-17.md) | 本地推理双雄对决 · Agent VFS 基础设施化 · Agent 原生语言  | 9 个深度分析 |
 | [2026-05-15](daily/2026-05-15.md) | 网络受限日 · Agent 生态进入整合期深读 · Spec-Driven De | 8 个深度分析 |
 | [2026-05-14](daily/2026-05-14.md) | YellowKey BitLocker 绕过漏洞引爆安全社区 · OrcaSli | 6 个深度分析 |
 | [2026-05-13](daily/2026-05-13.md) | 断网结束实测回归 · Open Design 38.4K 增速趋稳确认平台地位  | 8 个深度分析 |
 | [2026-05-12](daily/2026-05-12.md) | 数据校正完成 · CC Switch 68K 确认基座地位 · MemPalac | 8 个深度分析 |
 | [2026-05-11](daily/2026-05-11.md) | 数据校正完成 · Agent 基础设施层进入筛选期 · ds4.c 7.7K 超 | 8 个深度分析 |
 | [2026-05-10](daily/2026-05-10.md) | 周度复盘：Agent 生态分层成型 · ds4.c 爆发破 7.7K 验证推理热 | 8 个深度分析 |
-| [2026-05-09](daily/2026-05-09.md) | Linux 内核安全漏洞密集爆发 · Open Design 33.8K 确认平 | 7 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **Agent 生态整合期：Hermes 148K+ / Browser Harness 93K+ / Open Design 39K+，三巨头确立头部格局，中腰部项目面临洗牌**：相关项目 hermes-agent, browser-harness, open-design。
-2. **Spec-Driven Dev 范式变迁：Spec Kit 98K+ 确立新范式，从 prompt engineering 到 spec engineering 的架构级转变**：相关项目 spec-kit。
-3. **本地推理三赛道复盘：ds4.c 原生层 / Terax AI 终端层 / Zero Native 框架层，Zig + Metal + CUDA 三线并行**：相关项目 ds4, terax-ai, zero-native。
-4. **安全赛道平台化趋势：从 YellowKey 单漏洞到 DevSecOps Agent 链，安全研究从事件驱动转向工具链驱动**：相关项目 yellowkey, deepsec, copy-fail-cve-2026-31431。
-5. **硬件生态开放 vs 封闭：OrcaSlicer-bambulab 社区分叉模式成为硬件开放运动的标志性事件**：相关项目 orcaslicer-bambulab。
+1. **本地推理双雄对决：ds4 (antirez) vs TokenSpeed，一个极简单模型深挖，一个通用高性能引擎，磁盘 KV 缓存范式被正式提出**：相关项目 ds4, tokenspeed。
+2. **Agent VFS 基础设施化：Mirage 2.3K⭐ 提出统一虚拟文件系统抽象，用 Unix 语义替代 N 个 SDK/MCP**：相关项目 mirage。
+3. **Agent 原生语言 Zero：Vercel Labs 推出面向 Agent 的系统级编程语言，显式 effect、可预测内存、结构化编译输出**：相关项目 zero。
+4. **AI 安全新物种：AiSOC 开源 AI 驱动安全运营中心，从事件驱动到平台化 SOC**：相关项目 aisoc。
+5. **Token 效率成为 Agent 新战场：OpenSquilla 893⭐ 主打同预算更高智能密度，Agent 竞争从能力转向效率**：相关项目 opensquilla。
 
 ---
 
@@ -63,9 +63,9 @@
 
 ## 数据统计
 
-- 📊 项目档案：118 个
-- 📅 日报总数：39 期
-- 🔄 最近更新：2026-05-15
+- 📊 项目档案：122 个
+- 📅 日报总数：40 期
+- 🔄 最近更新：2026-05-17
 
 ---
 

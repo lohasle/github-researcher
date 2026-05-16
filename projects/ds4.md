@@ -10,7 +10,7 @@ language: "C"
 score: 87
 tags: ["deepseek-v4", "metal", "local-inference", "gguf", "quantization", "macos", "kv-cache"]
 url: "https://github.com/antirez/ds4"
-last_seen_date: "2026-05-15"
+last_seen_date: "2026-05-17"
 ---
 
 # ds4.c

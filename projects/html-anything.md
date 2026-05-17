@@ -10,7 +10,7 @@ language: "HTML"
 score: 73
 tags: ["HTML", "Agent", "设计", "内容生成", "Skill", "BYOK"]
 url: "https://github.com/nexu-io/html-anything"
-last_seen_date: "2026-05-17"
+last_seen_date: "2026-05-18"
 ---
 
 # html-anything

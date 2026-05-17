@@ -4,6 +4,21 @@
 
 ---
 
+## 2026-05-18
+
+**核心主题：** Dirty Frag Linux LPE 席卷安全圈 · Agent 语言 Zero 一日暴涨 74% · AI 伴侣引擎浮出水面 · 统一存储抽象加速 · HTML Agent 工具链持续分化
+
+**关键项目：**
+- 🔴 Dirty Frag (4,611 stars) — 通用 Linux LPE 提权，确定性逻辑 bug，9 年影响窗口
+- 0️⃣ Zero (1,600 stars) — Vercel Labs Agent 语言单日暴涨 74%，市场验证
+- 🧠 grok-animus (573 stars) — 持久化 AI 伴侣引擎，人格/记忆/梦境/演化
+- 🤝 trustclaw (665 stars) — 自托管个人 AI Agent，向量记忆 + Composio + Telegram
+- 📁 files-sdk (772 stars) — 统一存储 SDK，Web 标准 I/O 抽象
+
+→ [查看完整日报](daily/2026-05-18.html)
+
+---
+
 ## 2026-05-17
 
 **核心主题：** 本地推理双雄对决 · Agent VFS 基础设施化 · Agent 原生语言 Zero 问世 · AI 安全新物种 AiSOC · Token 效率成 Agent 新战场

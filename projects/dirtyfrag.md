@@ -4,13 +4,13 @@ slug: "dirtyfrag"
 date_added: "2026-05-09"
 category: "安全研究"
 emoji: "🔴"
-stars: "2,775 stars"
-stars_delta: "2 天从 0 到 2.8K，安全漏洞类项目的高速传播"
+stars: "4,611 stars"
+stars_delta: "11 天从 0 到 4.6K，安全漏洞类项目持续高速传播"
 language: "C"
 score: 88
 tags: ["linux-kernel", "lpe", "cve", "security", "exploit", "page-cache"]
 url: "https://github.com/V4bel/dirtyfrag"
-last_seen_date: "2026-05-10"
+last_seen_date: "2026-05-18"
 ---
 
 # Dirty Frag

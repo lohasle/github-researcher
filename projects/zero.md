@@ -4,13 +4,13 @@ slug: "zero"
 date_added: "2026-05-17"
 category: "观察型"
 emoji: "0️⃣"
-stars: "916 stars"
+stars: "1,600 stars"
 stars_delta: "新项目，5月快速增长中"
 language: "C"
 score: 78
 tags: ["编程语言", "Agent", "系统编程", "Vercel", "effect系统"]
 url: "https://github.com/vercel-labs/zero"
-last_seen_date: "2026-05-17"
+last_seen_date: "2026-05-18"
 ---
 
 # Zero

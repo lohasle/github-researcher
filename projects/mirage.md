@@ -10,6 +10,7 @@ language: "TypeScript"
 score: 85
 tags: ["vfs", "ai-agent", "filesystem", "abstraction-layer", "multi-backend", "s3", "slack", "github"]
 url: "https://github.com/strukto-ai/mirage"
+last_seen_date: "2026-05-18"
 ---
 
 # Mirage

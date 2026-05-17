@@ -10,7 +10,7 @@ language: "Python"
 score: 74
 tags: ["Agent", "Token效率", "智能密度", "MCP", "Skills"]
 url: "https://github.com/opensquilla/opensquilla"
-last_seen_date: "2026-05-17"
+last_seen_date: "2026-05-18"
 ---
 
 # OpenSquilla

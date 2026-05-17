@@ -10,7 +10,7 @@ language: "Python"
 score: 76
 tags: ["3d-generation", "siggraph", "tencent", "computer-vision", "pixel-aligned"]
 url: "https://github.com/TencentARC/Pixal3D"
-last_seen_date: "2026-05-14"
+last_seen_date: "2026-05-18"
 ---
 
 # Pixal3D

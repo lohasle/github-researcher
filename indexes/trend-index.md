@@ -8,6 +8,45 @@ title: Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
 
+## 2026-05-19（第三十九版）
+
+### Agent Skills 生态大爆发 · CLI-Anything Agent-Native 范式 · RuView WiFi 传感突破 · Agent Memory 持久化成新基建
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agent Skills 生态大爆发 | anthropics/skills, mattpocock/skills, spec-kit | 95 |
+| 2 | CLI-Anything Agent-Native 范式 | CLI-Anything | 92 |
+| 3 | RuView WiFi 传感突破 | RuView | 88 |
+| 4 | Agent Memory 持久化成新基建 | agentmemory, Memori | 86 |
+| 5 | OSINT + AI Agent 融合 | Shadowbroker | 80 |
+
+#### 今日新增项目
+
+| 项目 | Stars | 分类 | 评分 | 备注 |
+|------|-------|------|------|------|
+| RuView | 59,842⭐ | 基础设施候选 | 88 | WiFi 信号空间智能 |
+| agentmemory | 12,712⭐ | 基础设施候选 | 86 | AI Coding Agent 持久记忆 |
+| Memori | 14,595⭐ | 基础设施候选 | 84 | Agent 原生记忆基础设施 |
+| CloakBrowser | 15,098⭐ | 工具型 | 82 | 隐身 Chromium 反检测 |
+| OpenHuman | 16,930⭐ | 观察型 | 80 | 个人 AI 超级智能 |
+| Shadowbroker | 7,676⭐ | 工具型 | 78 | OSINT 全球情报聚合 |
+| CodeGraph | 4,778⭐ | 工具型 | 79 | 代码知识图谱 |
+| React Doctor | 10,159⭐ | 工具型 | 77 | AI 编码质量守门 |
+| Pyrefly | 6,199⭐ | 工具型 | 76 | Meta Python 类型检查器 |
+
+#### 持续跟踪项目状态
+
+| 项目 | 上次 Stars | 本次 Stars | 变化 | 状态 |
+|------|-----------|-----------|------|------|
+| CLI-Anything | 33,200 | 36,562 | +3,362 | 🔥 稳增 |
+| anthropics/skills | 128,000 | 136,973 | +8,973 | 🔥 稳增 |
+| spec-kit | 97,000 | 102,079 | +5,079 | 🔥 稳增 |
+| llama.cpp | 108,000 | 110,980 | +2,980 | ✅ 稳增 |
+
+---
+
 ## 2026-05-18（第三十八版）
 
 ### Dirty Frag Linux LPE 席卷安全圈 · Agent 语言 Zero 一日暴涨 74% · AI 伴侣引擎浮出水面

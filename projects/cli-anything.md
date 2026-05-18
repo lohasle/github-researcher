@@ -10,6 +10,7 @@ language: "Python"
 score: 76
 tags: ["cli", "agent-native", "integration", "universal-adapter"]
 url: "https://github.com/HKUDS/CLI-Anything"
+last_seen_date: "2026-05-19"
 ---
 
 # CLI-Anything

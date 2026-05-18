@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026-05-19 GitHub 趋势研究简报 | GitHub Researcher</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📊</text></svg>">
-    <meta name="description" content="Agent Skills 生态大爆发：anthropics/skills 137K⭐ 领跑 · CLI-Anything 36.5K⭐ 重新定义 Agent-Native · RuView WiFi 传感 59.8K⭐ 突破感知边界 · Agent Memory 持久化成新基建">
+    <title>agentmemory | GitHub 趋势研究</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>⭐</text></svg>">
     <style>
         :root {
             --primary: #7C3AED;
@@ -170,6 +169,24 @@
         .card-grid { animation-delay: 0.2s; animation-fill-mode: both; }
         .trend-list { animation-delay: 0.25s; animation-fill-mode: both; }
     </style>
+    
+    <style>
+        .project-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 48px; box-shadow: var(--shadow); margin-bottom: 48px; max-width: 860px; margin-left: auto; margin-right: auto; }
+        .project-content h1 { font-size: 26px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 6px; }
+        .project-content h2 { font-size: 18px; font-weight: 700; color: var(--primary); border-left: 4px solid var(--primary); padding-left: 12px; margin: 28px 0 14px; }
+        .project-content h3 { font-size: 15px; font-weight: 700; color: var(--text); margin: 20px 0 10px; }
+        .project-content table { border-collapse: collapse; width: 100%; margin: 14px 0; }
+        .project-content th, .project-content td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; font-size: 13px; }
+        .project-content th { background: var(--primary); color: white; font-weight: 600; }
+        .project-content tr:nth-child(even) td { background: var(--bg); }
+        .project-content blockquote { background: linear-gradient(135deg, #F3E8FF, #ECFEFF); border-left: 4px solid var(--primary); padding: 14px 18px; margin: 14px 0; border-radius: 0 8px 8px 0; }
+        .project-content ul, .project-content ol { padding-left: 22px; margin: 10px 0; }
+        .project-content li { margin: 6px 0; font-size: 14px; }
+        .project-content p { font-size: 14px; margin-bottom: 12px; line-height: 1.7; }
+        .project-content strong { color: var(--primary-dark); }
+        .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 24px; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
     <nav class="nav">
@@ -181,164 +198,68 @@
             <div class="nav-links">
                 <a href="/github-researcher/index.html" id="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>首页</span></a>
                 <a href="/github-researcher/daily.html" id="nav-daily"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg><span>日报</span></a>
-                <a href="/github-researcher/projects.html" id="nav-projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
+                <a href="/github-researcher/projects.html" id="nav-projects" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
                 <a href="/github-researcher/trends.html" id="nav-trends"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>趋势</span></a>
             </div>
         </div>
     </nav>
 <main class="container">
-        <section class="hero">
-            <div class="hero-badge">
-                <span class="dot"></span>
-                2026-05-19
-            </div>
-            <h1>GitHub 趋势研究</h1>
-            <p>Agent Skills 生态大爆发：anthropics/skills 137K⭐ 领跑 · CLI-Anything 36.5K⭐ 重新定义 Agent-Native · RuView WiFi 传感 59.8K⭐ 突破感知边界 · Agent Memory 持久化成新基建</p>
-            <div class="hero-actions">
-                <a href="/github-researcher/daily/2026-05-19.html" class="btn-primary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                    今日简报
-                </a>
-                <a href="/github-researcher/projects.html" class="btn-secondary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="14" y="0" width="7" height="7"/><rect x="0" y="14" width="7" height="7"/></svg>
-                    重点项目
-                </a>
-            </div>
-        </section>
-        <section class="stats-row">
-            <div class="stat-card">
-                <div class="stat-icon">📊</div>
-                <div class="stat-number">135</div>
-                <div class="stat-label">深度分析项目</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🔥</div>
-                <div class="stat-number">42</div>
-                <div class="stat-label">日更日报</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🎯</div>
-                <div class="stat-number">172</div>
-                <div class="stat-label">核心跟踪方向</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">⭐</div>
-                <div class="stat-number">180k+</div>
-                <div class="stat-label">本周总 Star 增速</div>
-            </div>
-        </section>
-        <section class="brief-card">
-            <div class="brief-date">📅 2026-05-19 · 今日核心判断</div>
-            <h2 class="brief-title">Agent Skills 生态大爆发：anthropics/skills 137K⭐ 领跑 · CLI-Anything 36.5K⭐ 重新定义 Agent-Native · RuView WiFi 传感 59.8K⭐ 突破感知边界 · Agent Memory 持久化成新基建</h2>
-            <p class="brief-text">Agent Skills 生态大爆发：anthropics/skills 137K⭐ 领跑 · CLI-Anything 36.5K⭐ 重新定义 Agent-Native · RuView WiFi 传感 59.8K⭐ 突破感知边界 · Agent Memory 持久化成新基建 今日头条趋势:Agent Skills 生态大爆发：anthropics/skills 137K⭐ + mattpocock/skills 91.7K⭐ + github/spec-kit 102K⭐ + 多家 Skills 仓库齐登 Trending，Agent 技能注册/分发/标准化成为产业共识。</p>
-            <a href="/github-researcher/daily/2026-05-19.html" class="brief-cta">阅读完整简报 →</a>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">⭐</div>
-                    重点跟踪项目
-                </div>
-                <a href="/github-researcher/projects.html" class="section-link">查看全部 →</a>
-            </div>
-            <div class="card-grid">
-                <div class="card" onclick="window.location='/github-researcher/projects/cli-anything.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🖥️</div>
-                        <div class="card-stars">36,562 stars</div>
-                    </div>
-                    <div class="card-title">CLI-Anything</div>
-                    <div class="card-desc">让所有桌面软件 Agent-Native，通过 CLI 包装器让 Agent 操控任意应用，附 CLI-Hub 市场</div>
-                    <div class="card-tags"><span class="tag tag-purple">Agent-Native</span><span class="tag tag-purple">CLI</span><span class="tag tag-purple">自动化</span></div>
-                    <div class="card-actions"><a href="https://github.com/HKUDS/CLI-Anything" target="_blank" rel="noopener" class="btn-github" onclick="event.stopPropagation();"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub</a></div>
-                </div>
-                <div class="card" onclick="window.location='/github-researcher/projects/ruview.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">📡</div>
-                        <div class="card-stars">59,842 stars</div>
-                    </div>
-                    <div class="card-title">RuView</div>
-                    <div class="card-desc">WiFi 信号实时空间智能：生命体征监测、存在检测、空间感知，零视频零摄像头</div>
-                    <div class="card-tags"><span class="tag tag-purple">WiFi传感</span><span class="tag tag-purple">空间智能</span><span class="tag tag-purple">Rust</span></div>
-                    <div class="card-actions"><a href="https://github.com/ruvnet/RuView" target="_blank" rel="noopener" class="btn-github" onclick="event.stopPropagation();"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub</a></div>
-                </div>
-                <div class="card" onclick="window.location='/github-researcher/projects/openhuman.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🧬</div>
-                        <div class="card-stars">16,930 stars</div>
-                    </div>
-                    <div class="card-title">OpenHuman</div>
-                    <div class="card-desc">个人 AI 超级智能，私有、简单、极其强大，Rust 构建</div>
-                    <div class="card-tags"><span class="tag tag-purple">个人AI</span><span class="tag tag-purple">Rust</span><span class="tag tag-purple">隐私</span></div>
-                    <div class="card-actions"><a href="https://github.com/tinyhumansai/openhuman" target="_blank" rel="noopener" class="btn-github" onclick="event.stopPropagation();"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub</a></div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">📈</div>
-                    趋势热榜
-                </div>
-                <a href="/github-researcher/trends.html" class="section-link">完整趋势表 →</a>
-            </div>
-            <div class="trend-list">
-                <div class="trend-item">
-                    <div class="trend-rank top">1</div>
-                    <div class="trend-content">
-                        <div class="trend-title">Agent Skills 生态大爆发：anthropics/skills 137K⭐ + mattpocock/skills 91.7K⭐ + github/spec-kit 102K⭐ + 多家 Skills 仓库齐登 Trending，Agent 技能注册/分发/标准化成为产业共识</div>
-                        <div class="trend-meta">anthropics-skills · mattpocock-skills · spec-kit</div>
-                    </div>
-                    <div class="trend-score high">95/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank top">2</div>
-                    <div class="trend-content">
-                        <div class="trend-title">CLI-Anything 36.5K⭐ 重新定义 Agent-Native：让所有桌面软件通过 CLI 变成 Agent 可操控对象，HKUDS 出品，CLI-Hub 模式</div>
-                        <div class="trend-meta">cli-anything</div>
-                    </div>
-                    <div class="trend-score high">92/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">3</div>
-                    <div class="trend-content">
-                        <div class="trend-title">RuView 59.8K⭐ WiFi 传感突破：用普通 WiFi 信号实现空间感知、生命体征监测、存在检测，零视频零摄像头</div>
-                        <div class="trend-meta">ruview</div>
-                    </div>
-                    <div class="trend-score high">88/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">4</div>
-                    <div class="trend-content">
-                        <div class="trend-title">Agent Memory 持久化成新基建：agentmemory 12.7K⭐ 专注 AI Coding Agent 持久记忆，Memori 14.6K⭐ 提供生产级 Agent 原生记忆基础设施</div>
-                        <div class="trend-meta">agentmemory · memori</div>
-                    </div>
-                    <div class="trend-score high">86/80</div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">🏷️</div>
-                    核心关注领域
-                </div>
-            </div>
-            <div class="category-row">
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🤖</span> AI Agent / Multi-Agent</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">⚡</span> LLM Infra / MCP / AI Runtime</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🛠️</span> 开发工具链 / IDE / Copilot</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🌐</span> 前端框架 / Serverless / Edge</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">☸️</span> 云原生 / K8s / Service Mesh</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔄</span> 自动化 / Browser Use / RPA+AI</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">💾</span> 数据基础设施 / RAG / 向量 DB</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔌</span> 基础设施标准 / 平台潜力</a>
-            </div>
-        </section>
+    <a href="/github-researcher/projects.html" class="back-link">← 返回重点项目</a>
+    <div class="project-content">
+        <div style="margin-bottom:20px;"><a href="https://github.com/rohitg00/agentmemory" target="_blank" rel="noopener" class="btn-github" style="padding:10px 20px;font-size:14px;"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg> 查看 GitHub 项目</a></div>
+        <h1 id="agentmemory">agentmemory</h1>
+<h2 id="_1">一句话定位</h2>
+<p>AI Coding Agent 的持久记忆方案，基于真实世界基准测试排名第一，让 Agent 跨会话保持上下文。</p>
+<h2 id="_2">它解决的问题</h2>
+<p>当前 AI Coding Agent（Claude Code、Cursor、Copilot 等）每次会话从零开始，无法记住之前的决策、代码风格偏好、项目约定。agentmemory 提供结构化的持久记忆层，让 Agent 跨会话进化。</p>
+<p>目标用户：AI Coding Agent 开发者、IDE 插件开发者、企业内部 AI 工具团队。</p>
+<h2 id="2026-05-19">为什么值得关注（2026-05-19）</h2>
+<p>12.7K⭐，TypeScript 实现，GitHub Trending 本周上榜。「基于真实世界基准测试排名第一」的叙事极具说服力。Agent 记忆持久化是 Coding Agent 从「辅助工具」进化为「编程伙伴」的关键基础设施。</p>
+<h2 id="_3">热度来源判断</h2>
+<p>热度 80% 真实需求。Coding Agent 的记忆缺失是开发者日常痛点。Star 增速合理，Fork 数（1K+）表明有实际采用。</p>
+<h2 id="_4">关键技术亮点</h2>
+<ol>
+<li><strong>真实世界基准测试</strong>：不只是学术 benchmark，在真实 Coding Agent 场景中验证记忆检索质量</li>
+<li><strong>TypeScript 原生</strong>：与主流 Coding Agent 技术栈一致，集成成本低</li>
+<li><strong>结构化记忆存储</strong>：不是简单的 KV 存储，支持语义检索和上下文关联</li>
+</ol>
+<h2 id="_5">架构启发</h2>
+<ul>
+<li>Agent 记忆层的分化已开始：编码记忆（agentmemory）vs 通用记忆（Memori）</li>
+<li>基准测试驱动的开发方法值得学习：先定义质量标准，再优化实现</li>
+<li>Agent 基础设施的标准化窗口期：记忆接口可能成为 Agent 平台的标配能力</li>
+</ul>
+<h2 id="_6">定位判断</h2>
+<p>在 Agent 基础设施栈中定位为「Coding Agent 记忆层」，类似于数据库领域的 Redis（专用缓存 vs 通用存储）。与通用 Agent 记忆方案（如 Memori）形成互补。</p>
+<h2 id="_7">风险 / 局限 / 泡沫点</h2>
+<ol>
+<li><strong>基准测试透明度</strong>：「排名第一」的基准测试细节需要公开验证</li>
+<li><strong>与 Agent 平台绑定风险</strong>：如果 Claude Code/Cursor 官方推出内置记忆，第三方方案可能被替代</li>
+<li><strong>记忆膨胀</strong>：长期运行后记忆库可能变得庞大，检索效率需关注</li>
+</ol>
+<h2 id="_8">与同类项目的关系</h2>
+<ul>
+<li><strong>vs Memori</strong>：Memori 更通用（LLM 无关），agentmemory 专注 Coding Agent 场景优化</li>
+<li><strong>vs Claude Code 内置记忆</strong>：官方方案可能更深度集成，但开放性和可移植性不如第三方</li>
+<li><strong>vs 简单向量数据库</strong>：agentmemory 提供更高层的 Agent 语义抽象</li>
+</ul>
+<h2 id="_9">是否值得持续跟踪</h2>
+<p><strong>是。</strong> Agent 记忆是 Coding Agent 进化的必经之路，该项目在细分领域领先。</p>
+<h2 id="_10">后续观察点</h2>
+<ol>
+<li>是否被主流 Coding Agent（Claude Code/Cursor）集成或借鉴</li>
+<li>基准测试方法论是否成为行业标准</li>
+<li>记忆存储后端是否支持分布式部署</li>
+</ol>
+<hr />
+<p><em>首次记录：2026-05-19</em></p>
+    </div>
 </main>
     <footer class="footer">
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

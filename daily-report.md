@@ -4,6 +4,21 @@
 
 ---
 
+## 2026-05-19
+
+**核心主题：** Agent Skills 生态大爆发 · CLI-Anything Agent-Native 范式 · RuView WiFi 传感突破 · Agent Memory 持久化成新基建
+
+**关键项目：**
+- 🖥️ CLI-Anything (36,562 stars) — Agent-Native 桌面控制，CLI-Hub 市场
+- 📡 RuView (59,842 stars) — WiFi 信号空间智能，零视频零摄像头
+- 🧬 OpenHuman (16,930 stars) — Rust 个人 AI 超级智能
+- 🧠 agentmemory (12,712 stars) — AI Coding Agent 持久记忆
+- 💾 Memori (14,595 stars) — Agent 原生记忆基础设施
+- 🎭 CloakBrowser (15,098 stars) — 隐身 Chromium，30/30 反检测
+
+→ [查看完整日报](daily/2026-05-19.html)\n
+---
+
 ## 2026-05-18
 
 **核心主题：** Dirty Frag Linux LPE 席卷安全圈 · Agent 语言 Zero 一日暴涨 74% · AI 伴侣引擎浮出水面 · 统一存储抽象加速 · HTML Agent 工具链持续分化

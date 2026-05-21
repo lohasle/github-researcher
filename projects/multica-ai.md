@@ -4,12 +4,13 @@ slug: "multica-ai"
 date_added: "2026-04-11"
 category: "平台候选"
 emoji: "🤝"
-stars: "6,000+"
-stars_delta: "新晋热榜"
-language: "TypeScript"
+stars: "30,664 stars"
+stars_delta: "+511/日"
+language: "Go"
 score: 65
 tags: ["Multi-Agent", "托管式平台", "团队协作", "Agent 管理"]
 url: "https://github.com/multica-ai/multica"
+last_seen_date: "2026-05-22"
 ---
 
 # multica-ai

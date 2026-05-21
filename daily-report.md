@@ -4,6 +4,23 @@
 
 ---
 
+## 2026-05-22
+
+**核心主题：** Claude Skills 生态持续分化与专业化 · 12-Factor Agents 21.5K⭐ 定义 Agent 工程原则 · OpenHuman 24.7K⭐ 突破 2 万 · Agent-Native 浏览器层成基础设施
+
+**关键项目：**
+- 🕸️ CodeGraph (13,173 stars) — 预索引代码知识图谱，降低 Agent token 消耗
+- 🔌 Claude Plugins Official (22,237 stars) — Anthropic 官方插件目录
+- 📐 12-Factor Agents (21,551 stars) — Agent 工程化 12 条原则
+- 🧬 OpenHuman (24,770 stars) — Rust 个人 AI 超级智能，本周 +19K
+- 🤝 Multica (30,664 stars) — 开源托管 Agent 平台
+- 🎭 CloakBrowser (18,174 stars) — 隐身 Chromium，30/30 反检测
+- 🔊 Supertonic (9,142 stars) — 设备端多语言 TTS
+
+→ [查看完整日报](daily/2026-05-22.html)
+
+---
+
 ## 2026-05-19
 
 **核心主题：** Agent Skills 生态大爆发 · CLI-Anything Agent-Native 范式 · RuView WiFi 传感突破 · Agent Memory 持久化成新基建

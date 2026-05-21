@@ -8,6 +8,39 @@ title: Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
 
+## 2026-05-22（第四十版）
+
+### Claude Skills 生态持续分化 · 12-Factor Agents 工程原则确立 · OpenHuman 突破 2 万 · Agent 浏览器层成基础设施
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Claude Skills/Plugins 生态持续分化 | CodeGraph, Claude Plugins Official, Superpowers | 95 |
+| 2 | Agent 工程原则确立 | 12-Factor Agents, Multica | 90 |
+| 3 | 个人 AI 超级智能持续升温 | OpenHuman | 85 |
+| 4 | Agent-Native 浏览器与反检测 | CloakBrowser, Chrome DevTools MCP | 88 |
+| 5 | 端侧 TTS 与多模态突破 | Supertonic, ViMax | 78 |
+
+#### 新增项目
+
+| 项目 | Stars | 分类 | 首次出现 |
+|------|-------|------|----------|
+| Claude Plugins Official | 22.2K | 平台候选 | 2026-05-22 |
+| 12-Factor Agents | 21.5K | 基础设施候选 | 2026-05-22 |
+| Supertonic | 9.1K | 工具型 | 2026-05-22 |
+
+#### 持续跟踪项目更新
+
+| 项目 | 上次 Stars | 本次 Stars | 变化 |
+|------|-----------|-----------|------|
+| OpenHuman | 16.9K | 24.7K | +7.8K |
+| Multica | 6K+ | 30.7K | 大幅增长 |
+| CloakBrowser | 15.1K | 18.2K | +3.1K |
+| CodeGraph | 13K+ | 13.2K | 稳定 |
+
+---
+
 ## 2026-05-19（第三十九版）
 
 ### Agent Skills 生态大爆发 · CLI-Anything Agent-Native 范式 · RuView WiFi 传感突破 · Agent Memory 持久化成新基建

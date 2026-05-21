@@ -4,13 +4,13 @@ slug: "cloakbrowser"
 date_added: "2026-05-19"
 category: "工具型"
 emoji: "🎭"
-stars: "15,098 stars"
+stars: "18,174 stars"
 stars_delta: "周增 1.5K+"
 language: "Python"
 score: 82
 tags: ["反检测", "浏览器自动化", "Playwright", "爬虫", "Bot Detection"]
 url: "https://github.com/CloakHQ/CloakBrowser"
-last_seen_date: "2026-05-19"
+last_seen_date: "2026-05-22"
 ---
 
 # CloakBrowser

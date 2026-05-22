@@ -8,6 +8,43 @@ title: Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
 
+## 2026-05-23（第四十一版）
+
+### 小模型 Agent 工具链觉醒 · Agent 安全双线突破 · 团队级 Agent 基础设施
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | 小模型 Agent 工具链觉醒 | SmallCode, HRM-Text | 92 |
+| 2 | Agent 安全双线突破 | audit, Bumblebee | 88 |
+| 3 | 团队级 Agent 基础设施 | Centaur | 86 |
+| 4 | Agent Harness 赛道格局锁定 | ECC, OpenCode, Hermes Agent | 80 |
+| 5 | Claude Skills 生态持续细分 | 9arm-skills, PaperSpine | 75 |
+
+#### 新增项目
+
+| 项目 | Stars | 分类 | 首次出现 |
+|------|-------|------|----------|
+| SmallCode | 1.2K | 工具型 | 2026-05-23 |
+| Centaur | 364 | 基础设施候选 | 2026-05-23 |
+| audit (evilsocket) | 433 | 工具型 | 2026-05-23 |
+| HRM-Text | 650 | 学习型 | 2026-05-23 |
+| Bumblebee | 251 | 工具型 | 2026-05-23 |
+| 9arm-skills | 1.5K | 工具型 | 2026-05-23 |
+
+#### 持续跟踪项目动态
+
+| 项目 | 今日 Stars | 变化 | 备注 |
+|------|-----------|------|------|
+| ECC | 188.5K | ↑ | Agent Harness 性能优化，稳定增长 |
+| OpenCode | 164K | - | 5997 open issues，维护压力大 |
+| Hermes Agent | 163K | - | NousResearch 出品 |
+| Superpowers | 202.8K | ↑ | Skills 框架 |
+| cc-switch | 78.2K | - | Agent 桌面助手 |
+
+---
+
 ## 2026-05-22（第四十版）
 
 ### Claude Skills 生态持续分化 · 12-Factor Agents 工程原则确立 · OpenHuman 突破 2 万 · Agent 浏览器层成基础设施

@@ -4,6 +4,22 @@
 
 ---
 
+## 2026-05-23
+
+**核心主题：** 小模型 Agent 工具链觉醒：SmallCode 1.2K⭐ 专为 8B-35B 优化 · HRM-Text 650⭐ $1000 预训练基础模型 · Agent 安全双线突破：audit 433⭐ + Bumblebee 251⭐ · Centaur 364⭐ 团队级 Agent 基础设施
+
+**关键项目：**
+- 🔬 SmallCode (1,209 stars) — 专为 8B-35B 小模型优化的终端编码 Agent
+- 🐴 Centaur (364 stars) — Paradigm 出品的多人自托管 Agent 平台
+- 🔍 audit (433 stars) — 8 阶段漏洞发现 Agent，基于 Cloudflare Glasswing
+- 🧪 HRM-Text (650 stars) — $1000 预训练 1B 基础模型
+- 🐝 Bumblebee (251 stars) — Perplexity 供应链安全扫描器
+- 🦑 9arm-skills (1,487 stars) — Claude Code 技能集合
+
+→ [查看完整日报](daily/2026-05-23.html)
+
+---
+
 ## 2026-05-22
 
 **核心主题：** Claude Skills 生态持续分化与专业化 · 12-Factor Agents 21.5K⭐ 定义 Agent 工程原则 · OpenHuman 24.7K⭐ 突破 2 万 · Agent-Native 浏览器层成基础设施

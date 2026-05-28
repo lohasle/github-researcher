@@ -10,7 +10,7 @@ language: "Python"
 score: 80
 tags: ["HRM", "预训练", "小模型", "PyTorch", "FSDP2", "FlashAttention"]
 url: "https://github.com/sapientinc/HRM-Text"
-last_seen_date: "2026-05-23"
+last_seen_date: "2026-05-28"
 ---
 
 # HRM-Text

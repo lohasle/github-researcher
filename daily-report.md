@@ -4,6 +4,22 @@
 
 ---
 
+## 2026-05-28
+
+**核心主题：** 五日断网周度复盘 · Agent Harness 三强格局锁定（ECC 188.5K/Hermes 163K/OpenCode 164K）· Skills 垂直分化加速 · 小模型 Agent 工程化破局（SmallCode/HRM-Text）· 安全 Agent 攻防双线闭环
+
+> ⚠️ 外部数据源自 05-24 起连续 5 天不可达，Stars 为最后实测推算值。
+
+**关键项目：**
+- 🔬 SmallCode (~1,209 stars) — 专为 8B-35B 小模型优化的终端编码 Agent
+- 🐴 Centaur (~364 stars) — Paradigm 出品多人自托管 Agent 平台
+- 🔍 audit (~433 stars) — 8 阶段漏洞发现 Agent
+- 🧪 HRM-Text (~650 stars) — $1000 预训练基础模型
+
+→ [查看完整日报](daily/2026-05-28.html)
+
+---
+
 ## 2026-05-23
 
 **核心主题：** 小模型 Agent 工具链觉醒：SmallCode 1.2K⭐ 专为 8B-35B 优化 · HRM-Text 650⭐ $1000 预训练基础模型 · Agent 安全双线突破：audit 433⭐ + Bumblebee 251⭐ · Centaur 364⭐ 团队级 Agent 基础设施

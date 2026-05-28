@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-05-23）
+## 最新研究摘要（2026-05-28）
 
-**小模型 Agent 工具链觉醒：SmallCode 1.2K⭐ 专为 8B-35B 优化编码 · HRM-Text 650⭐ $1000 预训练基础模型 · Centaur 364⭐ 多人自托管 K8s Agent · evilsocket/audit 433⭐ 8 阶段漏洞发现 Agent · Perplexity Bumblebee 供应链安全扫描**
+**五日断网周度复盘 · Agent Harness 格局锁定 · Skills 生态分化加速 · 小模型 Agent 工程化破局 · 安全 Agent 双线闭环**
 
 今日热榜新信号：
-- **SmallCode**（1,209 stars）：专为 8B-35B 小模型优化的终端编码 Agent，budget-managed 上下文、forgiving tool calling、TODO-file 分步规划
-- **Centaur**（364 stars）：Paradigm 出品的多人自托管 Agent 平台，Slack 原生 + K8s 沙箱 + 持久工作流 + 凭证边界
-- **audit**（433 stars）：8 阶段漏洞发现 Agent，基于 Cloudflare Project Glasswing 论文实现，多窄 Agent 并行 + 故意反对 + 可达性门控
+- **SmallCode**（~1,209 stars）：专为 8B-35B 小模型优化的终端编码 Agent，budget-managed 上下文 + forgiving tool calling
+- **Centaur**（~364 stars）：Paradigm 出品多人自托管 Agent 平台，Slack 原生 + K8s 沙箱 + 持久工作流
+- **audit**（~433 stars）：8 阶段漏洞发现 Agent，基于 Cloudflare Glasswing 论文，多窄 Agent 并行
 
+**→ [查看 2026-05-28 完整简报](daily/2026-05-28.md)**
 **→ [查看 2026-05-23 完整简报](daily/2026-05-23.md)**
 **→ [查看 2026-05-22 完整简报](daily/2026-05-22.md)**
 **→ [查看 2026-05-19 完整简报](daily/2026-05-19.md)**
-**→ [查看 2026-05-18 完整简报](daily/2026-05-18.md)**
 
 ---
 
@@ -24,23 +24,23 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-05-28](daily/2026-05-28.md) | 五日断网周度复盘 · Agent Harness 格局锁定 · Skills 生 | 4 个深度分析 |
 | [2026-05-23](daily/2026-05-23.md) | 小模型 Agent 工具链觉醒：SmallCode 1.2K⭐ 专为 8B-35 | 6 个深度分析 |
 | [2026-05-22](daily/2026-05-22.md) | Claude Skills 生态持续分化：CodeGraph 13K⭐ 知识图谱 | 7 个深度分析 |
 | [2026-05-19](daily/2026-05-19.md) | Agent Skills 生态大爆发：anthropics/skills 137 | 10 个深度分析 |
 | [2026-05-18](daily/2026-05-18.md) | Dirty Frag Linux LPE 席卷安全圈 · Agent 语言 Ze | 8 个深度分析 |
 | [2026-05-17](daily/2026-05-17.md) | 本地推理双雄对决 · Agent VFS 基础设施化 · Agent 原生语言  | 9 个深度分析 |
 | [2026-05-15](daily/2026-05-15.md) | 网络受限日 · Agent 生态进入整合期深读 · Spec-Driven De | 8 个深度分析 |
-| [2026-05-14](daily/2026-05-14.md) | YellowKey BitLocker 绕过漏洞引爆安全社区 · OrcaSli | 6 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **小模型 Agent 工具链觉醒：SmallCode 1.2K⭐ 专为 8B-35B 本地模型优化编码 Agent、HRM-Text 650⭐ 展示 $1000 即可预训练基础模型 — 端侧/小模型 Agent 从概念走向工程**：相关项目 smallcode, hrm-text。
-2. **Agent 安全双线突破：evilsocket/audit 433⭐ 8 阶段漏洞发现 Agent（基于 Cloudflare Glasswing 论文）、Perplexity Bumblebee 251⭐ 供应链元数据扫描 — Agent 既是攻击者也是防御者**：相关项目 audit-evilsocket, bumblebee-perplexity。
-3. **团队级 Agent 基础设施：Centaur 364⭐（Paradigm 出品）Slack 原生 + K8s 沙箱 + 多人共享 Agent — Agent 从个人工具升级为团队基础设施**：相关项目 centaur。
-4. **Agent Harness 持续统治：ECC 188.5K⭐ 保持 GitHub Star Top 5、OpenCode 164K⭐、Hermes Agent 163K⭐ — Agent Harness 赛道格局基本锁定**：相关项目 ecc, opencode, hermes-agent。
-5. **Claude Skills 生态持续分化：9arm-skills 1.5K⭐ 技能集合、PaperSpine 428⭐ 论文学习技能 — Skills 正在按职能垂直细分**：相关项目 9arm-skills, paperspine。
+1. **Agent Harness 格局锁定：ECC 188.5K⭐、Hermes Agent 163K⭐、OpenCode 164K⭐ — 头部三强格局稳定，新入局者窗口关闭**：相关项目 ecc, hermes-agent, opencode。
+2. **Skills 生态垂直分化：9arm-skills 1.5K⭐、PaperSpine 428⭐、Claude Plugins Official 22K⭐ — 从通用框架走向按职能细分**：相关项目 9arm-skills, claude-plugins-official。
+3. **小模型 Agent 工程化破局：SmallCode 1.2K⭐ 专为 8B-35B 优化、HRM-Text 650⭐ $1000 预训练基础模型 — 端侧 Agent 从概念到工程**：相关项目 smallcode, hrm-text。
+4. **安全 Agent 双线闭环：audit 433⭐ 攻击 Agent、Bumblebee 251⭐ 防御 Agent — Agent 既是武器也是盾牌**：相关项目 audit-evilsocket, bumblebee-perplexity。
+5. **团队级 Agent 基础设施：Centaur 364⭐ 多人自托管 K8s Agent — Agent 从个人工具走向团队基础设施**：相关项目 centaur。
 
 ---
 
@@ -64,8 +64,8 @@
 ## 数据统计
 
 - 📊 项目档案：142 个
-- 📅 日报总数：44 期
-- 🔄 最近更新：2026-05-23
+- 📅 日报总数：45 期
+- 🔄 最近更新：2026-05-28
 
 ---
 

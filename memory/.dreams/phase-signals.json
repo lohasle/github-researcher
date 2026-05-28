@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-22T19:00:18.986Z",
+  "updatedAt": "2026-05-28T13:45:31.675Z",
   "entries": {
     "memory:memory/.dreams/session-corpus/2026-04-13.txt:1:1": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-13.txt:1:1",
@@ -3085,8 +3085,9 @@
     "memory:memory/.dreams/session-corpus/2026-05-22.txt:9:9": {
       "key": "memory:memory/.dreams/session-corpus/2026-05-22.txt:9:9",
       "lightHits": 1,
-      "remHits": 0,
-      "lastLightAt": "2026-05-22T19:00:18.986Z"
+      "remHits": 1,
+      "lastLightAt": "2026-05-22T19:00:18.986Z",
+      "lastRemAt": "2026-05-28T13:45:31.675Z"
     },
     "memory:memory/.dreams/session-corpus/2026-05-22.txt:10:10": {
       "key": "memory:memory/.dreams/session-corpus/2026-05-22.txt:10:10",
@@ -3105,6 +3106,18 @@
       "lightHits": 1,
       "remHits": 0,
       "lastLightAt": "2026-05-22T19:00:18.986Z"
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-22.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-22.txt:17:17",
+      "lightHits": 0,
+      "remHits": 1,
+      "lastRemAt": "2026-05-28T13:45:31.675Z"
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-22.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-22.txt:18:18",
+      "lightHits": 0,
+      "remHits": 1,
+      "lastRemAt": "2026-05-28T13:45:31.675Z"
     }
   }
 }

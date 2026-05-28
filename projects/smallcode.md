@@ -10,7 +10,7 @@ language: "JavaScript"
 score: 87
 tags: ["小模型", "编码Agent", "本地推理", "8B-35B", "终端工具"]
 url: "https://github.com/Doorman11991/smallcode"
-last_seen_date: "2026-05-23"
+last_seen_date: "2026-05-28"
 ---
 
 # SmallCode

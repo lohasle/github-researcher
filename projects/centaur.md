@@ -10,7 +10,7 @@ language: "Python"
 score: 84
 tags: ["Agent平台", "K8s", "Slack", "团队协作", "沙箱", "Paradigm"]
 url: "https://github.com/paradigmxyz/centaur"
-last_seen_date: "2026-05-23"
+last_seen_date: "2026-05-28"
 ---
 
 # Centaur

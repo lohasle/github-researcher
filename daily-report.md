@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-05-29
+
+**核心主题：** Agent Skills 大爆发（taste-skill 26K + stop-slop 6.3K）· agentmemory 冲刺 19K 锁定 Agent 记忆层 · oh-my-pi 8.2K 定义终端 Agent IDE 化 · Microsoft Agent Governance 覆盖 OWASP Top 10 · turbovec 3.4K 用 Rust 击败 FAISS
+
+**关键项目：**
+- 🎨 taste-skill (~26.2K) — 让 AI 有好品味，阻止生成无聊通用内容
+- 🧠 agentmemory (~19.3K) — Agent 持久记忆服务，全平台 MCP/Hooks/Plugin
+- ⌨️ oh-my-pi (~8.2K) — 终端 AI Coding Agent，IDE 级能力内置
+- 🛡️ agent-governance-toolkit (~3.2K) — Microsoft Agent 治理工具包
+- ⚡ turbovec (~3.4K) — Rust 向量索引，击败 FAISS
+
+→ [查看完整日报](daily/2026-05-29.html)
+
 ## 2026-05-28
 
 **核心主题：** 五日断网周度复盘 · Agent Harness 三强格局锁定（ECC 188.5K/Hermes 163K/OpenCode 164K）· Skills 垂直分化加速 · 小模型 Agent 工程化破局（SmallCode/HRM-Text）· 安全 Agent 攻防双线闭环

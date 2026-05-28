@@ -4,13 +4,13 @@ slug: "stop-slop"
 date_added: "2026-05-24"
 category: "工具型"
 emoji: "✂️"
-stars: "~6.1K stars"
+stars: "~6.3K stars"
 stars_delta: "本周 +1.7K，AI 写作去味工具"
 language: "Markdown"
 score: 76
 tags: ["AI", "Skills", "写作质量", "去AI味"]
 url: "https://github.com/hardikpandya/stop-slop"
-last_seen_date: "2026-05-28"
+last_seen_date: "2026-05-29"
 ---
 
 # stop-slop

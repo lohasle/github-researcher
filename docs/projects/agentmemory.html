@@ -209,50 +209,65 @@
         <div style="margin-bottom:20px;"><a href="https://github.com/rohitg00/agentmemory" target="_blank" rel="noopener" class="btn-github" style="padding:10px 20px;font-size:14px;"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg> 查看 GitHub 项目</a></div>
         <h1 id="agentmemory">agentmemory</h1>
 <h2 id="_1">一句话定位</h2>
-<p>AI Coding Agent 的持久记忆方案，基于真实世界基准测试排名第一，让 Agent 跨会话保持上下文。</p>
+<p>AI Coding Agent 的统一持久记忆服务，支持全平台（Claude Code / Codex / Cursor / Gemini CLI 等），通过 MCP / Hooks / Plugin 三种方式接入。</p>
 <h2 id="_2">它解决的问题</h2>
-<p>当前 AI Coding Agent（Claude Code、Cursor、Copilot 等）每次会话从零开始，无法记住之前的决策、代码风格偏好、项目约定。agentmemory 提供结构化的持久记忆层，让 Agent 跨会话进化。</p>
-<p>目标用户：AI Coding Agent 开发者、IDE 插件开发者、企业内部 AI 工具团队。</p>
-<h2 id="2026-05-19">为什么值得关注（2026-05-19）</h2>
-<p>12.7K⭐，TypeScript 实现，GitHub Trending 本周上榜。「基于真实世界基准测试排名第一」的叙事极具说服力。Agent 记忆持久化是 Coding Agent 从「辅助工具」进化为「编程伙伴」的关键基础设施。</p>
+<p>Agent 最大的工程缺陷是<strong>无状态</strong>：每次对话从零开始，不记得上次做过什么、用户偏好、项目上下文。agentmemory 提供统一的记忆服务层，让 Agent 具备跨会话记忆能力。</p>
+<p>目标用户：所有使用 AI Coding Agent 的开发者。</p>
+<h2 id="2026-05-29">为什么值得关注（2026-05-29）</h2>
+<ol>
+<li>19.3K stars，本周 +3.8K，增速极快</li>
+<li>支持 10+ Agent 平台（Claude Code、Codex CLI、Copilot CLI、Cursor、Gemini CLI、OpenClaw、Hermes、pi、OpenCode、Cline、Goose）</li>
+<li>三种接入方式（MCP Server / Hooks / Native Plugin），兼容性极强</li>
+<li>基于 iii 引擎，底层能力扎实</li>
+</ol>
 <h2 id="_3">热度来源判断</h2>
-<p>热度 80% 真实需求。Coding Agent 的记忆缺失是开发者日常痛点。Star 增速合理，Fork 数（1K+）表明有实际采用。</p>
+<ul>
+<li><strong>真实需求驱动。</strong> 记忆是 Agent 从「玩具」到「工具」的关键能力</li>
+<li>来自 ai-engineering-from-scratch 同一作者（rohitg00），有社区信任基础</li>
+<li>与 iii 引擎的结合提供了强有力的底层支持</li>
+<li>文档极其完善（11 种语言）</li>
+</ul>
 <h2 id="_4">关键技术亮点</h2>
 <ol>
-<li><strong>真实世界基准测试</strong>：不只是学术 benchmark，在真实 Coding Agent 场景中验证记忆检索质量</li>
-<li><strong>TypeScript 原生</strong>：与主流 Coding Agent 技术栈一致，集成成本低</li>
-<li><strong>结构化记忆存储</strong>：不是简单的 KV 存储，支持语义检索和上下文关联</li>
+<li><strong>统一记忆服务</strong>：所有 Agent 共享同一个记忆服务器（:3111），跨 Agent 记忆可互通</li>
+<li><strong>置信度评分 + 生命周期管理</strong>：不是简单存储，而是有质量评估的智能记忆</li>
+<li><strong>知识图谱 + 混合搜索</strong>：支持结构化和语义检索</li>
+<li><strong>实时 Viewer</strong>：可视化记忆内容和使用情况</li>
+<li><strong>8 个原生 Skills</strong>：Agent 自动知道何时使用记忆工具</li>
 </ol>
 <h2 id="_5">架构启发</h2>
 <ul>
-<li>Agent 记忆层的分化已开始：编码记忆（agentmemory）vs 通用记忆（Memori）</li>
-<li>基准测试驱动的开发方法值得学习：先定义质量标准，再优化实现</li>
-<li>Agent 基础设施的标准化窗口期：记忆接口可能成为 Agent 平台的标配能力</li>
+<li><strong>记忆即服务</strong>：Agent 记忆应该是一个独立的服务，而不是嵌入在 Agent 内部</li>
+<li><strong>MCP 作为统一接入协议</strong>：通过 MCP 实现跨平台兼容，是 Agent 基础设施设计的正确方向</li>
+<li><strong>置信度评分的必要性</strong>：不是所有记忆都等价，需要质量评估机制</li>
 </ul>
 <h2 id="_6">定位判断</h2>
-<p>在 Agent 基础设施栈中定位为「Coding Agent 记忆层」，类似于数据库领域的 Redis（专用缓存 vs 通用存储）。与通用 Agent 记忆方案（如 Memori）形成互补。</p>
-<h2 id="_7">风险 / 局限 / 泡沫点</h2>
+<ul>
+<li><strong>基础设施候选</strong>。记忆层是 Agent 的水电煤</li>
+<li>如果记忆服务标准化，可能成为 Agent 生态的基础组件</li>
+</ul>
+<h2 id="_7">风险/局限/泡沫点</h2>
 <ol>
-<li><strong>基准测试透明度</strong>：「排名第一」的基准测试细节需要公开验证</li>
-<li><strong>与 Agent 平台绑定风险</strong>：如果 Claude Code/Cursor 官方推出内置记忆，第三方方案可能被替代</li>
-<li><strong>记忆膨胀</strong>：长期运行后记忆库可能变得庞大，检索效率需关注</li>
+<li><strong>与 iii 引擎的强绑定</strong>：iii 是独立项目，如果 iii 出问题，agentmemory 受影响</li>
+<li><strong>记忆准确性</strong>：长期记忆的准确性衰减问题未解决</li>
+<li><strong>隐私风险</strong>：集中式记忆服务存储所有 Agent 交互历史</li>
+<li><strong>19.3K 的增速部分来自作者已有社区影响力</strong></li>
 </ol>
 <h2 id="_8">与同类项目的关系</h2>
 <ul>
-<li><strong>vs Memori</strong>：Memori 更通用（LLM 无关），agentmemory 专注 Coding Agent 场景优化</li>
-<li><strong>vs Claude Code 内置记忆</strong>：官方方案可能更深度集成，但开放性和可移植性不如第三方</li>
-<li><strong>vs 简单向量数据库</strong>：agentmemory 提供更高层的 Agent 语义抽象</li>
+<li><strong>vs Claude Mem / mem0</strong>：agentmemory 更通用，支持所有 Agent</li>
+<li><strong>vs honcho</strong>：honcho 更偏学术，agentmemory 更实用</li>
+<li><strong>vs mem0</strong>：mem0 是独立产品，agentmemory 更像 Agent 生态组件</li>
 </ul>
 <h2 id="_9">是否值得持续跟踪</h2>
-<p><strong>是。</strong> Agent 记忆是 Coding Agent 进化的必经之路，该项目在细分领域领先。</p>
+<p><strong>强烈建议。</strong> Agent 记忆是确定性需求，agentmemory 在标准化方向上走得最远。</p>
 <h2 id="_10">后续观察点</h2>
 <ol>
-<li>是否被主流 Coding Agent（Claude Code/Cursor）集成或借鉴</li>
-<li>基准测试方法论是否成为行业标准</li>
-<li>记忆存储后端是否支持分布式部署</li>
+<li>iii 引擎的独立健康度和社区活跃度</li>
+<li>是否被主流 Agent 平台（Claude Code / Codex）官方集成</li>
+<li>记忆准确性在长期使用中的表现</li>
+<li>企业级隐私和安全方案</li>
 </ol>
-<hr />
-<p><em>首次记录：2026-05-19</em></p>
     </div>
 </main>
     <footer class="footer">

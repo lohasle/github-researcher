@@ -4,13 +4,13 @@ slug: "openhuman"
 date_added: "2026-05-19"
 category: "观察型"
 emoji: "🧬"
-stars: "24,770 stars"
+stars: "~29.2K stars"
 stars_delta: "周增 1K+"
 language: "Rust"
 score: 80
 tags: ["个人AI", "Rust", "隐私", "超智能", "本地部署"]
 url: "https://github.com/tinyhumansai/openhuman"
-last_seen_date: "2026-05-22"
+last_seen_date: "2026-05-29"
 ---
 
 # OpenHuman

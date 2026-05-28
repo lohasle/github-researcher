@@ -8,6 +8,48 @@ title: Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
 
+## 2026-05-29（第四十三版）
+
+### Agent Skills 大爆发 · agentmemory 冲刺 19K · oh-my-pi 终端 IDE 化 · Microsoft Agent Governance · turbovec 击败 FAISS
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agent Skills 品质控制大爆发 | taste-skill, stop-slop, harness, openai/skills, anthropics/skills | 92 |
+| 2 | Agent 记忆层标准化 | agentmemory | 90 |
+| 3 | 终端 Agent IDE 化 | oh-my-pi | 88 |
+| 4 | Agent 安全治理基础设施 | agent-governance-toolkit | 85 |
+| 5 | Rust 向量索引新势力 | turbovec | 83 |
+
+#### 新增项目
+
+| 项目 | Stars | 分类 | 首次出现 |
+|------|-------|------|----------|
+| oh-my-pi | ~8.2K | 工具型 | 2026-05-29 |
+| agentmemory | ~19.3K | 基础设施候选 | 2026-05-29 |
+| agent-governance-toolkit | ~3.2K | 基础设施候选 | 2026-05-29 |
+| turbovec | ~3.4K | 基础设施候选 | 2026-05-29 |
+| anthropics/skills | 新增 | 平台候选 | 2026-05-29 |
+
+#### 更新项目（last_seen 更新）
+
+| 项目 | Stars | 分类 | 最近出现 |
+|------|-------|------|----------|
+| taste-skill | ~26.2K | 工具型 | 2026-05-29 |
+| stop-slop | ~6.3K | 工具型 | 2026-05-29 |
+| openhuman | ~29.2K | 观察型 | 2026-05-29 |
+
+#### 趋势判断修正
+
+- Agent 生态正式进入「品质工程」阶段：taste-skill + stop-slop + harness 同台竞技，品质控制成为刚需
+- agentmemory 19.3K 锁定 Agent 记忆层标准化方向，基于 iii 引擎的多平台兼容方案
+- 终端 Agent 竞争从 CLI wrapper 升级到 IDE 级（oh-my-pi 27K 行 Rust 核心）
+- Microsoft Agent Governance 覆盖 OWASP Agentic Top 10，确定性拦截 vs prompt 级安全
+- Rust 在 AI Infra 中的渗透加速（turbovec、oh-my-pi、RuView、iii）
+
+---
+
 ## 2026-05-28（第四十二版 — 网络受限日）
 
 ### 五日断网周度复盘 · Harness 三强锁定 · Skills 分化加速 · 小模型 Agent 工程化

@@ -10,7 +10,7 @@ language: "Rust"
 score: 88
 tags: ["WiFi传感", "空间智能", "Rust", "隐私计算", "边缘感知", "IoT"]
 url: "https://github.com/ruvnet/RuView"
-last_seen_date: "2026-05-19"
+last_seen_date: "2026-05-30"
 ---
 
 # RuView

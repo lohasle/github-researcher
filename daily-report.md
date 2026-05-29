@@ -4,6 +4,20 @@
 
 ---
 
+## 2026-05-30
+
+**核心主题：** Code Knowledge Graph 双雄争霸（Understand-Anything 44K + codegraph 33K 共享 45K 周增量） · ECC 198K 横空出世定义 Agent Harness 标杆 · Anthropic 三发 Plugin 生态 · RuView 68K WiFi CSI 空间智能 · Cursor 发布 Plugin 规范
+
+**关键项目：**
+- 🚀 ECC (~198.5K) — Agent Harness 性能优化系统，198K 星异常高需冷静
+- 🕸️ codegraph (~33.1K) — 预索引代码知识图谱，Agent 索引层
+- 🔌 claude-plugins-official (~28.6K) — Anthropic 官方插件目录
+- 📡 RuView (~68.2K) — WiFi CSI 空间智能，概念性感但需验证
+- 🎙️ dograh (~3.7K) — 开源语音 AI 平台，Vapi/Retell 自托管替代
+- 📄 liteparse (~7.2K) — run-llama 出品快速文档解析器
+
+→ [查看完整日报](daily/2026-05-30.html)
+
 ## 2026-05-29
 
 **核心主题：** Agent Skills 大爆发（taste-skill 26K + stop-slop 6.3K）· agentmemory 冲刺 19K 锁定 Agent 记忆层 · oh-my-pi 8.2K 定义终端 Agent IDE 化 · Microsoft Agent Governance 覆盖 OWASP Top 10 · turbovec 3.4K 用 Rust 击败 FAISS

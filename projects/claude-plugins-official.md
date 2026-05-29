@@ -10,7 +10,7 @@ language: "Python"
 score: 90
 tags: ["Claude", "插件", "Anthropic", "Agent生态", "技能注册"]
 url: "https://github.com/anthropics/claude-plugins-official"
-last_seen_date: "2026-05-22"
+last_seen_date: "2026-05-30"
 ---
 
 # Claude Plugins Official

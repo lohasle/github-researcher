@@ -8,6 +8,54 @@ title: Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
 
+## 2026-05-30（第四十四版）
+
+### Code Knowledge Graph 双雄争霸 · ECC 198K 横空出世 · Anthropic Plugin 三连发 · RuView WiFi 空间智能 · Cursor Plugin 规范
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Code Knowledge Graph 双雄争霸 | Understand-Anything, codegraph | 95 |
+| 2 | ECC 198K Agent Harness 标杆 | ECC | 92 |
+| 3 | Anthropic Plugin 生态三连发 | claude-plugins-official, knowledge-work-plugins, Anthropic-Cybersecurity-Skills | 90 |
+| 4 | WiFi CSI 空间智能 | RuView | 85 |
+| 5 | IDE/Agent 编排 Plugin 化 | cursor/plugins, routa | 82 |
+
+#### 新增项目
+
+| 项目 | Stars | 分类 | 首次出现 |
+|------|-------|------|----------|
+| dograh | ~3.7K | 平台候选 | 2026-05-30 |
+| liteparse | ~7.2K | 工具型 | 2026-05-30 |
+
+#### 更新项目（last_seen 更新）
+
+| 项目 | Stars | 分类 | 最近出现 |
+|------|-------|------|----------|
+| Understand-Anything | ~44.4K | 平台候选 | 2026-05-30 |
+| codegraph | ~33.1K | 工具型 | 2026-05-30 |
+| ECC | ~198.5K | 学习型 | 2026-05-30 |
+| claude-plugins-official | ~28.6K | 基础设施候选 | 2026-05-30 |
+| RuView | ~68.2K | 学习型 | 2026-05-30 |
+| knowledge-work-plugins | ~18K | 工具型 | 2026-05-30 |
+| taste-skill | ~28K | 工具型 | 2026-05-30 |
+| agentmemory | ~19.6K | 基础设施候选 | 2026-05-30 |
+| oh-my-pi | ~8.5K | 工具型 | 2026-05-30 |
+| agent-governance-toolkit | ~3.3K | 基础设施候选 | 2026-05-30 |
+
+#### 趋势判断修正
+
+- Code Knowledge Graph 正式成为赛道：Understand-Anything（交互式）+ codegraph（预索引）路径不同但需求同源
+- ECC 198K 星异常高，概念有参考价值但星数获取方式可疑，归类为学习型
+- Anthropic 一周三发 Plugin（官方目录 + 知识工作 + 安全），Claude 生态 Plugin-first 确认
+- RuView WiFi CSI 概念性感但 68K 星含推广成分，保持观察
+- Cursor 同步发布 Plugin 规范，IDE Plugin 化已成行业共识
+- Voice Agent 自托管需求升温（dograh 3.7K）
+- 文档解析 Rust 化（liteparse 7.2K），RAG Infra 持续优化
+
+---
+
 ## 2026-05-29（第四十三版）
 
 ### Agent Skills 大爆发 · agentmemory 冲刺 19K · oh-my-pi 终端 IDE 化 · Microsoft Agent Governance · turbovec 击败 FAISS

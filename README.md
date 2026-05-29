@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-05-29）
+## 最新研究摘要（2026-05-30）
 
-**Agent Skills 大爆发：taste-skill 26K + stop-slop 6.3K 同台竞技 · agentmemory 冲刺 19K 锁定 Agent 记忆层 · oh-my-pi 8.2K 定义终端 Agent IDE 化 · Microsoft Agent Governance 覆盖 OWASP Top 10 · turbovec 3.4K 用 Rust 击败 FAISS**
+**Code Knowledge Graph 双雄争霸：Understand-Anything 44K + codegraph 33K 共享 45K 周增量 · ECC 198K 横空出世定义 Agent Harness 标杆 · Anthropic 连发三弹 Plugin 生态 · RuView 68K 用 WiFi CSI 信号做空间智能 · Cursor 正式发布 Plugin 规范**
 
 今日热榜新信号：
-- **taste-skill**（~26.2K stars）：让 AI 有好品味，阻止生成无聊通用内容，Agent 输出质量控制
-- **agentmemory**（~19.3K stars）：Agent 持久记忆，基于 iii 引擎，全平台 MCP/Hooks/Plugin 支持
-- **oh-my-pi**（~8.2K stars）：终端 AI Coding Agent，IDE 级能力内置（LSP/DAP/Python/Browser），40+ providers
+- **ECC**（198.5K stars）：Agent Harness 性能优化系统，Skills/Instincts/Memory/Security 全链路，Claude Code/Codex/Cursor 通用
+- **codegraph**（33.1K stars）：预索引代码知识图谱，支持 Claude Code/Codex/Gemini/Cursor 等，减少 token 和 tool calls
+- **claude-plugins-official**（28.6K stars）：Anthropic 官方 Claude Code 插件目录，Plugin 生态标准化
 
+**→ [查看 2026-05-30 完整简报](daily/2026-05-30.md)**
 **→ [查看 2026-05-29 完整简报](daily/2026-05-29.md)**
 **→ [查看 2026-05-28 完整简报](daily/2026-05-28.md)**
 **→ [查看 2026-05-27 完整简报](daily/2026-05-27.md)**
-**→ [查看 2026-05-26 完整简报](daily/2026-05-26.md)**
 
 ---
 
@@ -24,23 +24,23 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-05-30](daily/2026-05-30.md) | Code Knowledge Graph 双雄争霸：Understand-Any | 8 个深度分析 |
 | [2026-05-29](daily/2026-05-29.md) | Agent Skills 大爆发：taste-skill 26K + stop- | 10 个深度分析 |
 | [2026-05-28](daily/2026-05-28.md) | 五日断网周度复盘 · Agent Harness 格局锁定 · Skills 生 | 4 个深度分析 |
 | [2026-05-27](daily/2026-05-27.md) | Understand-Anything 突破 42K 逼近趋势之巅 · Code | 9 个深度分析 |
 | [2026-05-26](daily/2026-05-26.md) | MoneyPrinterTurbo AI 短视频 65K⭐ 登顶 · Under | 9 个深度分析 |
 | [2026-05-25](daily/2026-05-25.md) | Understand-Anything 突破 40K⭐ · CodeGraph  | 8 个深度分析 |
 | [2026-05-24](daily/2026-05-24.md) | Skills 生态进入稳定分化期 · Understand-Anything 知 | 9 个深度分析 |
-| [2026-05-23](daily/2026-05-23.md) | 小模型 Agent 工具链觉醒：SmallCode 1.2K⭐ 专为 8B-35 | 6 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **Agent Skills 大爆发：taste-skill 26K + stop-slop 6.3K + harness 3.8K + openai/skills 20.7K + anthropics/skills 同时在榜，Agent 品质控制成为刚需**：相关项目 taste-skill, stop-slop, harness。
-2. **agentmemory 冲刺 19.3K：Agent 持久记忆层标准化，基于 iii 引擎，支持 Claude Code/Codex/Cursor/Gemini CLI 全平台**：相关项目 agentmemory。
-3. **oh-my-pi 8.2K +2.5K/week：终端 Coding Agent IDE 化，40+ providers · 32 工具 · LSP/DAP 全内置，Hash-Anchored Edits 创新范式**：相关项目 oh-my-pi。
-4. **Microsoft Agent Governance Toolkit 3.2K +1.3K/week：覆盖 OWASP Agentic Top 10，确定性安全拦截而非 prompt 级安全**：相关项目 agent-governance-toolkit。
-5. **turbovec 3.4K +2K/week：Rust 向量索引击败 FAISS，10M 文档 31GB→4GB，TurboQuant 算法落地**：相关项目 turbovec。
+1. **Code Knowledge Graph 双雄争霸：Understand-Anything 44K(+26K/week) + codegraph 33K(+19K/week)，代码理解进入知识图谱时代，两家路径不同但共享同一需求**：相关项目 Understand-Anything, codegraph。
+2. **ECC 198K 横空出世：Agent Harness 性能优化系统，Skills/Instincts/Memory/Security 全链路覆盖，Codex/Claude Code/Cursor 通用**：相关项目 ECC。
+3. **Anthropic Plugin 三连发：claude-plugins-official 28.6K + knowledge-work-plugins 18K + Anthropic-Cybersecurity-Skills 12K，Claude 生态全面 Plugin 化**：相关项目 claude-plugins-official, knowledge-work-plugins, anthropic-cybersecurity-skills。
+4. **RuView 68K：WiFi CSI 信号→空间智能/生命体征/存在检测，Rust 实现，零摄像头，概念颠覆但需验证**：相关项目 ruview。
+5. **Cursor Plugin 规范发布 + phodal/routa 多Agent协调平台：IDE 和 Agent 编排层同时在 Plugin 化**：相关项目 cursor-plugins, routa。
 
 ---
 
@@ -63,9 +63,9 @@
 
 ## 数据统计
 
-- 📊 项目档案：159 个
-- 📅 日报总数：53 期
-- 🔄 最近更新：2026-05-29
+- 📊 项目档案：162 个
+- 📅 日报总数：54 期
+- 🔄 最近更新：2026-05-30
 
 ---
 

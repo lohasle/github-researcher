@@ -10,7 +10,7 @@ language: "TypeScript / Rust"
 score: 88
 tags: ["Coding Agent", "终端", "LSP", "DAP", "Rust", "IDE化"]
 url: "https://github.com/can1357/oh-my-pi"
-last_seen_date: "2026-05-29"
+last_seen_date: "2026-05-30"
 ---
 
 # oh-my-pi

@@ -10,7 +10,7 @@ language: "Python"
 score: 88
 tags: ["Claude", "插件", "知识工作", "Anthropic", "Cowork"]
 url: "https://github.com/anthropics/knowledge-work-plugins"
-last_seen_date: "2026-05-28"
+last_seen_date: "2026-05-30"
 ---
 
 # knowledge-work-plugins

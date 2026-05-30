@@ -4,8 +4,8 @@ slug: "oh-my-pi"
 date_added: "2026-05-29"
 category: "工具型"
 emoji: "⌨️"
-stars: "~8.2K stars"
-stars_delta: "+2.5K/week"
+stars: "8.7K stars"
+stars_delta: "+2.3K/week"
 language: "TypeScript / Rust"
 score: 88
 tags: ["Coding Agent", "终端", "LSP", "DAP", "Rust", "IDE化"]

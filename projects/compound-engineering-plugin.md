@@ -4,10 +4,10 @@ slug: "compound-engineering-plugin"
 date_added: "2026-05-24"
 category: "工具型"
 emoji: "🔧"
-stars: "~17.6K stars"
-stars_delta: "EveryInc 官方复合工程插件，快速获得关注"
+stars: "18.4K stars"
+stars_delta: "+348/天，+1.2K/week，持续增长"
 language: "TypeScript"
-score: 84
+score: 78
 tags: ["Claude Code", "Codex", "Cursor", "工程插件", "复合工程"]
 url: "https://github.com/EveryInc/compound-engineering-plugin"
 last_seen_date: "2026-05-28"

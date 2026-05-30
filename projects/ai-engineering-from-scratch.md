@@ -2,12 +2,12 @@
 title: "ai-engineering-from-scratch"
 slug: "ai-engineering-from-scratch"
 date_added: "2026-05-26"
-category: "工具型"
+category: "学习型"
 emoji: "📚"
-stars: "~23.4K stars"
-stars_delta: "本周 +12.7K，AI 工程教育赛道"
+stars: "25.1K stars"
+stars_delta: "+13.1K/week，教育赛道 Top 1"
 language: "Python"
-score: 85
+score: 75
 tags: ["AI工程", "教育", "Python", "教程", "从零开始"]
 url: "https://github.com/rohitg00/ai-engineering-from-scratch"
 last_seen_date: "2026-05-28"

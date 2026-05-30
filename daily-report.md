@@ -4,6 +4,22 @@
 
 ---
 
+## 2026-05-31
+
+**核心主题：** AI Taste 元趋势爆发（taste-skill 29K + stop-slop 7.4K 共享“反 AI 味”需求）· ai-engineering-from-scratch 25K 周增 13K 领跑教育赛道 · LiteParse +929/天突破文档解析天花板 · Microsoft Agent Governance Toolkit 3.5K 覆盖 OWASP Top 10 · stable-worldmodel 世界模型研究平台
+
+**关键项目：**
+- 🎨 taste-skill (~29K) — AI Taste 控制，+9K/week，元趋势代表
+- 📚 ai-engineering-from-scratch (~25.1K) — AI 工程教育，周增 13.1K
+- 📄 liteparse (~7.9K) — Rust 文档解析器，日增 +929 加速中
+- 🛡️ agent-governance-toolkit (~3.5K) — Microsoft Agent 治理，基础设施候选
+- 🌍 stable-worldmodel (~1.4K) — 世界模型研究平台
+- ⚡ compound-engineering-plugin (~18.4K) — Compound Engineering 插件
+- 🏕️ project-nomad (~27.3K) — 离线 AI 生存计算机
+- ⌥ oh-my-pi (~8.7K) — 终端 AI Coding Agent
+
+→ [查看完整日报](daily/2026-05-31.html)
+
 ## 2026-05-30
 
 **核心主题：** Code Knowledge Graph 双雄争霸（Understand-Anything 44K + codegraph 33K 共享 45K 周增量） · ECC 198K 横空出世定义 Agent Harness 标杆 · Anthropic 三发 Plugin 生态 · RuView 68K WiFi CSI 空间智能 · Cursor 发布 Plugin 规范

@@ -4,8 +4,8 @@ slug: "taste-skill"
 date_added: "2026-05-24"
 category: "工具型"
 emoji: "🎨"
-stars: "~26.2K stars"
-stars_delta: "日增 2.2K，Skills 质量赛道领跑者"
+stars: "29K stars"
+stars_delta: "+9K/week，AI Taste 元趋势爆发"
 language: "Shell"
 score: 88
 tags: ["AI", "Skills", "质量", "品味", "内容生成"]

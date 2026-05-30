@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-05-30）
+## 最新研究摘要（2026-05-31）
 
-**Code Knowledge Graph 双雄争霸：Understand-Anything 44K + codegraph 33K 共享 45K 周增量 · ECC 198K 横空出世定义 Agent Harness 标杆 · Anthropic 连发三弹 Plugin 生态 · RuView 68K 用 WiFi CSI 信号做空间智能 · Cursor 正式发布 Plugin 规范**
+**AI Taste 元趋势爆发：taste-skill 29K + stop-slop 7.4K 共享 '反 AI 味' 需求 · ai-engineering-from-scratch 25K 周增 13K 领跑教育赛道 · LiteParse +929/天突破文档解析天花板 · Microsoft Agent Governance Toolkit 3.5K 覆盖 OWASP Top 10 · stable-worldmodel 世界模型研究平台**
 
 今日热榜新信号：
-- **ECC**（198.5K stars）：Agent Harness 性能优化系统，Skills/Instincts/Memory/Security 全链路，Claude Code/Codex/Cursor 通用
-- **codegraph**（33.1K stars）：预索引代码知识图谱，支持 Claude Code/Codex/Gemini/Cursor 等，减少 token 和 tool calls
-- **claude-plugins-official**（28.6K stars）：Anthropic 官方 Claude Code 插件目录，Plugin 生态标准化
+- **taste-skill**（29K stars）：给 AI 好 taste，阻止生成无聊的通用内容，Shell 实现，+9K/week
+- **ai-engineering-from-scratch**（25.1K stars）：AI 工程从零学起，周增 13.1K，教育赛道 Top 1
+- **liteparse**（7.9K stars）：run-llama 快速文档解析器，Rust 实现，日增 +929 持续加速
 
+**→ [查看 2026-05-31 完整简报](daily/2026-05-31.md)**
 **→ [查看 2026-05-30 完整简报](daily/2026-05-30.md)**
 **→ [查看 2026-05-29 完整简报](daily/2026-05-29.md)**
 **→ [查看 2026-05-28 完整简报](daily/2026-05-28.md)**
-**→ [查看 2026-05-27 完整简报](daily/2026-05-27.md)**
 
 ---
 
@@ -24,23 +24,23 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-05-31](daily/2026-05-31.md) | AI Taste 元趋势爆发：taste-skill 29K + stop-sl | 8 个深度分析 |
 | [2026-05-30](daily/2026-05-30.md) | Code Knowledge Graph 双雄争霸：Understand-Any | 8 个深度分析 |
 | [2026-05-29](daily/2026-05-29.md) | Agent Skills 大爆发：taste-skill 26K + stop- | 10 个深度分析 |
 | [2026-05-28](daily/2026-05-28.md) | 五日断网周度复盘 · Agent Harness 格局锁定 · Skills 生 | 4 个深度分析 |
 | [2026-05-27](daily/2026-05-27.md) | Understand-Anything 突破 42K 逼近趋势之巅 · Code | 9 个深度分析 |
 | [2026-05-26](daily/2026-05-26.md) | MoneyPrinterTurbo AI 短视频 65K⭐ 登顶 · Under | 9 个深度分析 |
 | [2026-05-25](daily/2026-05-25.md) | Understand-Anything 突破 40K⭐ · CodeGraph  | 8 个深度分析 |
-| [2026-05-24](daily/2026-05-24.md) | Skills 生态进入稳定分化期 · Understand-Anything 知 | 9 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **Code Knowledge Graph 双雄争霸：Understand-Anything 44K(+26K/week) + codegraph 33K(+19K/week)，代码理解进入知识图谱时代，两家路径不同但共享同一需求**：相关项目 Understand-Anything, codegraph。
-2. **ECC 198K 横空出世：Agent Harness 性能优化系统，Skills/Instincts/Memory/Security 全链路覆盖，Codex/Claude Code/Cursor 通用**：相关项目 ECC。
-3. **Anthropic Plugin 三连发：claude-plugins-official 28.6K + knowledge-work-plugins 18K + Anthropic-Cybersecurity-Skills 12K，Claude 生态全面 Plugin 化**：相关项目 claude-plugins-official, knowledge-work-plugins, anthropic-cybersecurity-skills。
-4. **RuView 68K：WiFi CSI 信号→空间智能/生命体征/存在检测，Rust 实现，零摄像头，概念颠覆但需验证**：相关项目 ruview。
-5. **Cursor Plugin 规范发布 + phodal/routa 多Agent协调平台：IDE 和 Agent 编排层同时在 Plugin 化**：相关项目 cursor-plugins, routa。
+1. **AI Taste/Slop Control 元趋势：taste-skill 29K(+9K/week) + stop-slop 7.4K(+3K/week)，'反 AI 味'成为 Skill 赛道新热点**：相关项目 taste-skill, stop-slop。
+2. **ai-engineering-from-scratch 25.1K 周增 13.1K：AI 工程教育赛道爆发，与 train-llm-from-scratch 形成学习矩阵**：相关项目 ai-engineering-from-scratch。
+3. **LiteParse +929/天加速突破：run-llama 文档解析器从 7.2K 涨到 7.9K，Rust 文档解析赛道确立**：相关项目 liteparse。
+4. **Microsoft Agent Governance Toolkit 3.5K(+1.5K/week)：覆盖 OWASP Agentic Top 10，Agent 治理从概念走向工具**：相关项目 agent-governance-toolkit。
+5. **stable-worldmodel 1.4K + project-nomad 27.3K：世界模型研究与离线 AI 生存计算机，Agent 能力边界持续扩展**：相关项目 stable-worldmodel, project-nomad。
 
 ---
 
@@ -63,9 +63,9 @@
 
 ## 数据统计
 
-- 📊 项目档案：162 个
-- 📅 日报总数：54 期
-- 🔄 最近更新：2026-05-30
+- 📊 项目档案：164 个
+- 📅 日报总数：55 期
+- 🔄 最近更新：2026-05-31
 
 ---
 

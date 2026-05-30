@@ -113,6 +113,13 @@
       "lineCount": 25,
       "lastContentLine": 25
     },
+    "github-researcher:sessions/github-researcher/75b8c203-c535-4646-bd75-90351e41801d.jsonl": {
+      "mtimeMs": 1780092404958,
+      "size": 179956,
+      "contentHash": "bb771bad5c479787ecc62b630c618ff55f895aab1fb21e36d38649202b9a4b7d",
+      "lineCount": 16,
+      "lastContentLine": 16
+    },
     "github-researcher:sessions/github-researcher/78fe673a-31fb-4629-8a36-902be6b98f34.jsonl": {
       "mtimeMs": 1777500734241,
       "size": 225422,
@@ -182,13 +189,6 @@
       "contentHash": "07ffb2e9eb9a7e9fe4264a21fc9af6f51beda7ecc36a2938632a98e226d263e0",
       "lineCount": 15,
       "lastContentLine": 15
-    },
-    "github-researcher:sessions/github-researcher/f7499b77-69dd-4c62-985b-321fc35ea00d.jsonl.deleted.2026-04-29T22-12-23.849Z": {
-      "mtimeMs": 1777414315034,
-      "size": 289230,
-      "contentHash": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
-      "lineCount": 0,
-      "lastContentLine": 0
     },
     "github-researcher:sessions/github-researcher/fd848ef7-cb68-42ca-b0ae-4a5e5fb189f9.jsonl": {
       "mtimeMs": 1778796396796,
@@ -915,6 +915,24 @@
       "39d81ff9ea9f4637f1b33281b3ea00dc24563b47",
       "1c3243201c3d59dc52f79c85b08b3813f8a02b70",
       "25c35f8802649407bb0789a38e253312ca3ae477"
+    ],
+    "github-researcher:75b8c203-c535-4646-bd75-90351e41801d": [
+      "c318819f690e231c77791ea49ca2278b7ca38b94",
+      "390c5bedc834cb336c7d3ae8d1dea4460e1874a3",
+      "0505985f18546c0a3c791814673f6d4083d655ad",
+      "d9ef97c5c89ae515b73eaf364a8d63f061cd4611",
+      "100e8ce82eae9f59380d3fe78db13841d39bd94a",
+      "4fe0d1e26bc5395d314130aa41b39d839cdfab5e",
+      "cc9becaa4f8a7b7d94a73b88a916f506cfd9beef",
+      "6d61e6495b4fea848a5369ca2a25fb13036988bf",
+      "6d4c1be6c9cca731f5116acf536ef42fc03612ec",
+      "1cb7860345efc8844f67281c9b09ea97615713c4",
+      "f5e35331cb7fe72134190e649b2ba2dfa1b7f0c6",
+      "64dbe00a1081e2d3d2b45e5d5ffda9d3543f5135",
+      "0f11bbfaa06d6fddc544a67cdff9d3ea94f8cd2c",
+      "619a4745ebaa7e991f6e32416d83eae031ad0d45",
+      "00423468941fd4f33e49657eb6d3644b708d5f0b",
+      "621328b6ae6cf5902180edc65b77c4b5edb466a3"
     ]
   }
 }

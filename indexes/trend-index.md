@@ -8,6 +8,49 @@ title: Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
 
+## 2026-05-31（第四十五版）
+
+### AI Taste 元趋势爆发 · ai-engineering-from-scratch 25K 教育赛道 · LiteParse +929/天加速 · Microsoft Agent Governance Toolkit · stable-worldmodel
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | AI Taste/Slop Control 元趋势 | taste-skill, stop-slop | 88 |
+| 2 | AI 工程教育赛道爆发 | ai-engineering-from-scratch | 85 |
+| 3 | LiteParse +929/天加速突破 | liteparse | 82 |
+| 4 | Agent Governance 工具化 | agent-governance-toolkit | 86 |
+| 5 | 世界模型与离线 AI | stable-worldmodel, project-nomad | 78 |
+
+#### 新增项目
+
+| 项目 | Stars | 分类 | 首次出现 |
+|------|-------|------|----------|
+| stable-worldmodel | ~1.4K | 学习型 | 2026-05-31 |
+| project-nomad | ~27.3K | 工具型 | 2026-05-31 |
+
+#### 更新项目（last_seen 更新）
+
+| 项目 | Stars | 分类 | 最近出现 |
+|------|-------|------|----------|
+| taste-skill | ~29K | 工具型 | 2026-05-31 |
+| liteparse | ~7.9K | 生产可用 | 2026-05-31 |
+| agent-governance-toolkit | ~3.5K | 基础设施候选 | 2026-05-31 |
+| compound-engineering-plugin | ~18.4K | 工具型 | 2026-05-31 |
+| oh-my-pi | ~8.7K | 工具型 | 2026-05-31 |
+| ai-engineering-from-scratch | ~25.1K | 学习型 | 2026-05-31 |
+
+#### 趋势判断修正
+
+- AI Taste/Slop Control 成为新元趋势：taste-skill 29K + stop-slop 7.4K，反映用户对 AI 输出质量控制的需求显式化
+- ai-engineering-from-scratch 25.1K 周增 13.1K，教育赛道需求巨大但热度回落风险高
+- LiteParse 日增 929 加速突破，Rust 文档解析赛道确立，归类从工具型调整为生产可用
+- Microsoft Agent Governance Toolkit 覆盖 OWASP Agentic Top 10，Agent 安全治理从概念走向工具
+- stable-worldmodel 代表世界模型评估标准化方向
+- project-nomad 27.3K 离线 AI 概念吸引社区但与核心关注方向重叠有限
+
+---
+
 ## 2026-05-30（第四十四版）
 
 ### Code Knowledge Graph 双雄争霸 · ECC 198K 横空出世 · Anthropic Plugin 三连发 · RuView WiFi 空间智能 · Cursor Plugin 规范

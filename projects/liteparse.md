@@ -2,12 +2,12 @@
 title: "liteparse"
 slug: "liteparse"
 date_added: "2026-05-30"
-category: "工具型"
+category: "生产可用"
 emoji: "📄"
-stars: "7.2K stars"
-stars_delta: "+1.5K/week"
+stars: "7.9K stars"
+stars_delta: "+929/天，持续加速中"
 language: "Rust"
-score: 80
+score: 82
 tags: ["文档解析", "Rust", "RAG", "llama", "PDF", "解析器"]
 url: "https://github.com/run-llama/liteparse"
 ---

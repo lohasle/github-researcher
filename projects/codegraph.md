@@ -4,13 +4,13 @@ slug: "codegraph"
 date_added: "2026-05-19"
 category: "工具型"
 emoji: "🕸️"
-stars: "4,778 stars"
-stars_delta: "周增 600+"
+stars: "35.3K stars"
+stars_delta: "周增 +15.9K，爆发式增长"
 language: "TypeScript"
-score: 79
+score: 88
 tags: ["代码图谱", "知识图谱", "Coding Agent", "Token优化", "代码理解"]
 url: "https://github.com/colbymchenry/codegraph"
-last_seen_date: "2026-05-30"
+last_seen_date: "2026-06-01"
 ---
 
 # CodeGraph

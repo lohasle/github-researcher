@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-06-01
+
+**核心主题：** Code Knowledge Graph 赛道爆发（Understand-Anything 47K + codegraph 35K 共享 41K 周增量，AI Agent 代码理解索引层成型）· google/ax 分布式 Agent Runtime 开源（Google 出品，K8s Native）· Microsoft AGT 覆盖 OWASP Top 10（确定性拦截而非 prompt 约束）· herdr Agent 终端多路复用器 · AI Coding Plugin 生态全面爆发（ECC 200K + 6 个 Plugin 项目同日 Trending）
+
+**关键项目：**
+- 🧠 Understand-Anything (47.1K) — Code Knowledge Graph 标杆，+25.6K/week
+- 🕸️ codegraph (35.3K) — 预索引代码图谱，57% token 节省，+15.9K/week
+- ⚡ google/ax (1.3K) — Google 分布式 Agent Runtime，基础设施候选
+- 🛡️ Agent Governance Toolkit (3.6K) — Microsoft Agent 治理，生产可用
+- 🐏 herdr (3.4K) — Agent 终端多路复用器，+923/week
+
+→ [查看完整日报](daily/2026-06-01.html)
+
 ## 2026-05-31
 
 **核心主题：** AI Taste 元趋势爆发（taste-skill 29K + stop-slop 7.4K 共享“反 AI 味”需求）· ai-engineering-from-scratch 25K 周增 13K 领跑教育赛道 · LiteParse +929/天突破文档解析天花板 · Microsoft Agent Governance Toolkit 3.5K 覆盖 OWASP Top 10 · stable-worldmodel 世界模型研究平台

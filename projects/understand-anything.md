@@ -4,13 +4,13 @@ slug: "understand-anything"
 date_added: "2026-05-24"
 category: "平台候选"
 emoji: "🔍"
-stars: "~42K stars"
-stars_delta: "本周 +23K，GitHub 周度 Trending Top 1"
+stars: "47.1K stars"
+stars_delta: "本周 +25.6K，GitHub 周度 Trending 连续霸榜"
 language: "TypeScript"
 score: 92
 tags: ["知识图谱", "代码理解", "Agent工具", "TypeScript", "交互式"]
 url: "https://github.com/Lum1104/Understand-Anything"
-last_seen_date: "2026-05-30"
+last_seen_date: "2026-06-01"
 ---
 
 # Understand-Anything

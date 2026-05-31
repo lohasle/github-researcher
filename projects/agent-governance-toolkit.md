@@ -4,13 +4,13 @@ slug: "agent-governance-toolkit"
 date_added: "2026-05-29"
 category: "基础设施候选"
 emoji: "🛡️"
-stars: "3.5K stars"
-stars_delta: "+1.5K/week，覆盖 OWASP Agentic Top 10"
+stars: "3.6K stars"
+stars_delta: "+1.5K/week，覆盖 OWASP Agentic Top 10，Public Preview"
 language: "Python"
 score: 86
 tags: ["Agent治理", "安全", "OWASP", "Microsoft", "合规"]
 url: "https://github.com/microsoft/agent-governance-toolkit"
-last_seen_date: "2026-05-30"
+last_seen_date: "2026-06-01"
 ---
 
 # Microsoft Agent Governance Toolkit

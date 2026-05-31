@@ -8,6 +8,41 @@ title: Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
 
+## 2026-06-01（第四十六版）
+
+### Code Knowledge Graph 赛道爆发 · google/ax 分布式 Agent Runtime 开源 · AI Coding Plugin 生态全面爆发 · Microsoft AGT 覆盖 OWASP Top 10 · herdr Agent 多路复用器
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Code Knowledge Graph 赛道爆发 | understand-anything, codegraph | 92 |
+| 2 | AI Coding Plugin 生态大爆发 | ecc, claude-plugins-official, openai-skills | 88 |
+| 3 | Agent Runtime 基础设施层浮现 | google-ax, agent-governance-toolkit, herdr | 90 |
+| 4 | Rust AI Infra 工具链 | liteparse, herdr, ruview, handy | 82 |
+| 5 | Voice AI 开源替代 | dograh, handy, moss-tts | 78 |
+
+#### 新增项目
+
+| 项目 | Stars | 分类 | 首次出现 |
+|------|-------|------|----------|
+| google/ax | ~1.3K | 基础设施候选 | 2026-06-01 |
+| herdr | ~3.4K | 工具型 | 2026-06-01 |
+
+#### 持续跟踪项目更新
+
+| 项目 | 上次 Stars | 今日 Stars | 变化 |
+|------|-----------|-----------|------|
+| Understand-Anything | ~44K | 47.1K | +3.1K ↗️ |
+| codegraph | ~33K | 35.3K | +2.3K ↗️ |
+| Agent Governance Toolkit | 3.5K | 3.6K | +0.1K → |
+| LiteParse | ~7.9K | 8.3K | +0.4K ↗️ |
+
+#### 趋势判断
+- Code Knowledge Graph 从"赛道观察"升级为"赛道确认"——两个项目周增共 41K star
+- google/ax + Microsoft AGT 标志着 Agent Runtime 层的标准化开始
+- AI Coding Plugin 生态进入"包管理器时刻"，但碎片化风险显著
+
 ## 2026-05-31（第四十五版）
 
 ### AI Taste 元趋势爆发 · ai-engineering-from-scratch 25K 教育赛道 · LiteParse +929/天加速 · Microsoft Agent Governance Toolkit · stable-worldmodel

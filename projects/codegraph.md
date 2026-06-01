@@ -10,7 +10,7 @@ language: "TypeScript"
 score: 88
 tags: ["代码图谱", "知识图谱", "Coding Agent", "Token优化", "代码理解"]
 url: "https://github.com/colbymchenry/codegraph"
-last_seen_date: "2026-06-01"
+last_seen_date: "2026-06-02"
 ---
 
 # CodeGraph

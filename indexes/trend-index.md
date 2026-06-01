@@ -8,6 +8,41 @@ title: Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
 
+## 2026-06-02（第四十七版）
+
+### AI Agent 上下文压缩赛道浮现 · TTS 开源模型爆发 · Agent Harness 深度竞争 · Agent 治理与安全持续升温 · AI 写作品质治理
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | AI Agent 上下文压缩赛道浮现 | headroom, understand-anything, codegraph | 91 |
+| 2 | TTS 开源模型爆发 | voxcpm, moss-tts, dograh | 86 |
+| 3 | Agent Harness 深度竞争与 Plugin 标准化 | ecc, oh-my-pi, harness, compound-engineering-plugin | 87 |
+| 4 | Agent 治理与安全持续升温 | agent-governance-toolkit, anthropic-cybersecurity-skills, heretic | 83 |
+| 5 | AI 写作品质治理 | stop-slop, taste-skill | 75 |
+
+#### 新增项目
+
+| 项目 | Stars | 分类 | 首次出现 |
+|------|-------|------|----------|
+| headroom | ~4.1K | 平台候选 | 2026-06-02 |
+| voxcpm | ~24.2K | 生产可用 | 2026-06-02 |
+| heretic | ~23K | 学习型 | 2026-06-02 |
+| dograh | ~4.1K | 工具型 | 2026-06-02 |
+
+#### 持续跟踪项目状态
+
+| 项目 | Stars | 变化 | 状态 |
+|------|-------|------|------|
+| understand-anything | 48.7K | +1.6K | 持续高热 |
+| codegraph | 36.6K | +1.3K | 持续高热 |
+| ecc | 202K | +2K | 高热，警惕泡沫 |
+| agent-governance-toolkit | 3.7K | +0.1K | 稳健增长 |
+| liteparse | 8.7K | +0.1K | 稳健增长 |
+
+---
+
 ## 2026-06-01（第四十六版）
 
 ### Code Knowledge Graph 赛道爆发 · google/ax 分布式 Agent Runtime 开源 · AI Coding Plugin 生态全面爆发 · Microsoft AGT 覆盖 OWASP Top 10 · herdr Agent 多路复用器

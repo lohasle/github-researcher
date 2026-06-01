@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-06-02
+
+**核心主题：** AI Agent 上下文压缩赛道浮现（Headroom 4.1K 提供 60-95% Token 压缩、MCP 原生、CCR 可逆架构）· TTS 开源模型爆发（VoxCPM 24K Tokenizer-Free + MOSS-TTS 2.8K + dograh 4K 语音平台）· Agent Harness 深度竞争（ECC 202K + oh-my-pi 9.4K + harness 5.1K）· Code Knowledge Graph 持续高热（Understand-Anything 48.7K + codegraph 36.6K）
+
+**关键项目：**
+- 🗜️ Headroom (4.1K) — Agent 上下文压缩层，60-95% Token 节省，MCP 原生
+- 🗣️ VoxCPM (24.2K) — Tokenizer-Free 多语言 TTS，OpenBMB 出品
+- 🧠 Understand-Anything (48.7K) — 代码知识图谱标杆，+22.7K/week
+- 🛡️ Agent Governance Toolkit (3.7K) — Microsoft Agent 治理，覆盖 OWASP Top 10
+- 🎙️ Dograh (4.1K) — 开源语音 AI 平台，Vapi/Retell 替代
+
+→ [查看完整日报](daily/2026-06-02.html)
+
 ## 2026-06-01
 
 **核心主题：** Code Knowledge Graph 赛道爆发（Understand-Anything 47K + codegraph 35K 共享 41K 周增量，AI Agent 代码理解索引层成型）· google/ax 分布式 Agent Runtime 开源（Google 出品，K8s Native）· Microsoft AGT 覆盖 OWASP Top 10（确定性拦截而非 prompt 约束）· herdr Agent 终端多路复用器 · AI Coding Plugin 生态全面爆发（ECC 200K + 6 个 Plugin 项目同日 Trending）

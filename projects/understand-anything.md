@@ -10,7 +10,7 @@ language: "TypeScript"
 score: 92
 tags: ["知识图谱", "代码理解", "Agent工具", "TypeScript", "交互式"]
 url: "https://github.com/Lum1104/Understand-Anything"
-last_seen_date: "2026-06-01"
+last_seen_date: "2026-06-02"
 ---
 
 # Understand-Anything

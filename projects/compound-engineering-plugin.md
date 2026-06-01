@@ -10,7 +10,7 @@ language: "TypeScript"
 score: 78
 tags: ["Claude Code", "Codex", "Cursor", "工程插件", "复合工程"]
 url: "https://github.com/EveryInc/compound-engineering-plugin"
-last_seen_date: "2026-05-28"
+last_seen_date: "2026-06-02"
 ---
 
 # Compound Engineering Plugin

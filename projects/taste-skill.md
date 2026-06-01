@@ -10,7 +10,7 @@ language: "Shell"
 score: 88
 tags: ["AI", "Skills", "质量", "品味", "内容生成"]
 url: "https://github.com/Leonxlnx/taste-skill"
-last_seen_date: "2026-05-30"
+last_seen_date: "2026-06-02"
 ---
 
 # taste-skill

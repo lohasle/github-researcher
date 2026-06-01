@@ -10,7 +10,7 @@ language: "Python"
 score: 86
 tags: ["Agent治理", "安全", "OWASP", "Microsoft", "合规"]
 url: "https://github.com/microsoft/agent-governance-toolkit"
-last_seen_date: "2026-06-01"
+last_seen_date: "2026-06-02"
 ---
 
 # Microsoft Agent Governance Toolkit

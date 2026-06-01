@@ -10,7 +10,7 @@ language: "Python"
 score: 86
 tags: ["安全", "Skills", "MITRE ATT&CK", "NIST", "Agent"]
 url: "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
-last_seen_date: "2026-05-28"
+last_seen_date: "2026-06-02"
 ---
 
 # Anthropic-Cybersecurity-Skills

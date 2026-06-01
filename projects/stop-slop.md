@@ -10,7 +10,7 @@ language: "Markdown"
 score: 76
 tags: ["AI", "Skills", "写作质量", "去AI味"]
 url: "https://github.com/hardikpandya/stop-slop"
-last_seen_date: "2026-05-29"
+last_seen_date: "2026-06-02"
 ---
 
 # stop-slop

@@ -10,7 +10,7 @@ language: "Python"
 score: 75
 tags: ["AI工程", "教育", "Python", "教程", "从零开始"]
 url: "https://github.com/rohitg00/ai-engineering-from-scratch"
-last_seen_date: "2026-05-28"
+last_seen_date: "2026-06-02"
 ---
 
 # ai-engineering-from-scratch

@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026-06-02 GitHub 趋势研究简报 | GitHub Researcher</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📊</text></svg>">
-    <meta name="description" content="AI Agent 上下文压缩赛道浮现：Headroom 4K(+1.5K/week) 提供 60-95% Token 压缩，MCP 原生 · TTS 开源模型爆发：VoxCPM 24K + MOSS-TTS 2.8K + dograh 语音平台 4K · Agent Harness 深度竞争：ECC 202K + oh-my-pi 9.4K + harness 5.1K · Code Knowledge Graph 持续高热">
+    <title>Headroom | GitHub 趋势研究</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>⭐</text></svg>">
     <style>
         :root {
             --primary: #7C3AED;
@@ -170,6 +169,24 @@
         .card-grid { animation-delay: 0.2s; animation-fill-mode: both; }
         .trend-list { animation-delay: 0.25s; animation-fill-mode: both; }
     </style>
+    
+    <style>
+        .project-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 48px; box-shadow: var(--shadow); margin-bottom: 48px; max-width: 860px; margin-left: auto; margin-right: auto; }
+        .project-content h1 { font-size: 26px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 6px; }
+        .project-content h2 { font-size: 18px; font-weight: 700; color: var(--primary); border-left: 4px solid var(--primary); padding-left: 12px; margin: 28px 0 14px; }
+        .project-content h3 { font-size: 15px; font-weight: 700; color: var(--text); margin: 20px 0 10px; }
+        .project-content table { border-collapse: collapse; width: 100%; margin: 14px 0; }
+        .project-content th, .project-content td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; font-size: 13px; }
+        .project-content th { background: var(--primary); color: white; font-weight: 600; }
+        .project-content tr:nth-child(even) td { background: var(--bg); }
+        .project-content blockquote { background: linear-gradient(135deg, #F3E8FF, #ECFEFF); border-left: 4px solid var(--primary); padding: 14px 18px; margin: 14px 0; border-radius: 0 8px 8px 0; }
+        .project-content ul, .project-content ol { padding-left: 22px; margin: 10px 0; }
+        .project-content li { margin: 6px 0; font-size: 14px; }
+        .project-content p { font-size: 14px; margin-bottom: 12px; line-height: 1.7; }
+        .project-content strong { color: var(--primary-dark); }
+        .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 24px; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
     <nav class="nav">
@@ -181,164 +198,83 @@
             <div class="nav-links">
                 <a href="/github-researcher/index.html" id="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>首页</span></a>
                 <a href="/github-researcher/daily.html" id="nav-daily"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg><span>日报</span></a>
-                <a href="/github-researcher/projects.html" id="nav-projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
+                <a href="/github-researcher/projects.html" id="nav-projects" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
                 <a href="/github-researcher/trends.html" id="nav-trends"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>趋势</span></a>
             </div>
         </div>
     </nav>
 <main class="container">
-        <section class="hero">
-            <div class="hero-badge">
-                <span class="dot"></span>
-                2026-06-02
-            </div>
-            <h1>GitHub 趋势研究</h1>
-            <p>AI Agent 上下文压缩赛道浮现：Headroom 4K(+1.5K/week) 提供 60-95% Token 压缩，MCP 原生 · TTS 开源模型爆发：VoxCPM 24K + MOSS-TTS 2.8K + dograh 语音平台 4K · Agent Harness 深度竞争：ECC 202K + oh-my-pi 9.4K + harness 5.1K · Code Knowledge Graph 持续高热</p>
-            <div class="hero-actions">
-                <a href="/github-researcher/daily/2026-06-02.html" class="btn-primary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                    今日简报
-                </a>
-                <a href="/github-researcher/projects.html" class="btn-secondary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="14" y="0" width="7" height="7"/><rect x="0" y="14" width="7" height="7"/></svg>
-                    重点项目
-                </a>
-            </div>
-        </section>
-        <section class="stats-row">
-            <div class="stat-card">
-                <div class="stat-icon">📊</div>
-                <div class="stat-number">173</div>
-                <div class="stat-label">深度分析项目</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🔥</div>
-                <div class="stat-number">57</div>
-                <div class="stat-label">日更日报</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🎯</div>
-                <div class="stat-number">246</div>
-                <div class="stat-label">核心跟踪方向</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">⭐</div>
-                <div class="stat-number">260k+</div>
-                <div class="stat-label">本周总 Star 增速</div>
-            </div>
-        </section>
-        <section class="brief-card">
-            <div class="brief-date">📅 2026-06-02 · 今日核心判断</div>
-            <h2 class="brief-title">AI Agent 上下文压缩赛道浮现：Headroom 4K(+1.5K/week) 提供 60-95% Token 压缩，MCP 原生 · TTS 开源模型爆发：VoxCPM 24K + MOSS-TTS 2.8K + dograh 语音平台 4K · Agent Harness 深度竞争：ECC 202K + oh-my-pi 9.4K + harness 5.1K · Code Knowledge Graph 持续高热</h2>
-            <p class="brief-text">AI Agent 上下文压缩赛道浮现：Headroom 4K(+1.5K/week) 提供 60-95% Token 压缩，MCP 原生 · TTS 开源模型爆发：VoxCPM 24K + MOSS-TTS 2.8K + dograh 语音平台 4K · Agent Harness 深度竞争：ECC 202K + oh-my-pi 9.4K + harness 5.1K · Code Knowledge Graph 持续高热 今日头条趋势:AI Agent 上下文压缩赛道浮现：Headroom 4K Token 压缩 60-95%、可逆 CCR 架构、MCP 原生，Code Knowledge Graph（Understand-Anything 48K + codegraph 36K）持续高热提供索引层。</p>
-            <a href="/github-researcher/daily/2026-06-02.html" class="brief-cta">阅读完整简报 →</a>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">⭐</div>
-                    重点跟踪项目
-                </div>
-                <a href="/github-researcher/projects.html" class="section-link">查看全部 →</a>
-            </div>
-            <div class="card-grid">
-                <div class="card" onclick="window.location='/github-researcher/projects/headroom.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🗜️</div>
-                        <div class="card-stars">4.1K stars</div>
-                    </div>
-                    <div class="card-title">Headroom</div>
-                    <div class="card-desc">AI Agent 上下文压缩层，60-95% Token 节省，支持 Library/Proxy/MCP 三模式</div>
-                    <div class="card-tags"><span class="tag tag-purple">token-optimization</span><span class="tag tag-purple">context-compression</span><span class="tag tag-cyan">mcp</span></div>
-                    <div class="card-actions"><a href="https://github.com/chopratejas/headroom" target="_blank" rel="noopener" class="btn-github" onclick="event.stopPropagation();"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub</a></div>
-                </div>
-                <div class="card" onclick="window.location='/github-researcher/projects/voxcpm.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🗣️</div>
-                        <div class="card-stars">24.2K stars</div>
-                    </div>
-                    <div class="card-title">VoxCPM</div>
-                    <div class="card-desc">Tokenizer-Free TTS 多语言语音生成、创意声音设计与真实克隆</div>
-                    <div class="card-tags"><span class="tag tag-purple">tts</span><span class="tag tag-purple">speech-generation</span><span class="tag tag-purple">voice-cloning</span></div>
-                    <div class="card-actions"><a href="https://github.com/OpenBMB/VoxCPM" target="_blank" rel="noopener" class="btn-github" onclick="event.stopPropagation();"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub</a></div>
-                </div>
-                <div class="card" onclick="window.location='/github-researcher/projects/understand-anything.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🧠</div>
-                        <div class="card-stars">48.7K stars</div>
-                    </div>
-                    <div class="card-title">Understand-Anything</div>
-                    <div class="card-desc">代码交互式知识图谱，多 Agent 管线分析，支持 Claude Code/Codex/Cursor 等</div>
-                    <div class="card-tags"><span class="tag tag-purple">knowledge-graph</span><span class="tag tag-purple">code-understanding</span><span class="tag tag-purple">ai-agent-tool</span></div>
-                    <div class="card-actions"><a href="https://github.com/Lum1104/Understand-Anything" target="_blank" rel="noopener" class="btn-github" onclick="event.stopPropagation();"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub</a></div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">📈</div>
-                    趋势热榜
-                </div>
-                <a href="/github-researcher/trends.html" class="section-link">完整趋势表 →</a>
-            </div>
-            <div class="trend-list">
-                <div class="trend-item">
-                    <div class="trend-rank top">1</div>
-                    <div class="trend-content">
-                        <div class="trend-title">AI Agent 上下文压缩赛道浮现：Headroom 4K Token 压缩 60-95%、可逆 CCR 架构、MCP 原生，Code Knowledge Graph（Understand-Anything 48K + codegraph 36K）持续高热提供索引层</div>
-                        <div class="trend-meta">headroom · understand-anything · codegraph</div>
-                    </div>
-                    <div class="trend-score high">91/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank top">2</div>
-                    <div class="trend-content">
-                        <div class="trend-title">TTS 开源模型爆发：VoxCPM 24K(+4.2K/week) Tokenizer-Free 多语言语音生成 + MOSS-TTS 2.8K 高保真长语音 + dograh 4K 开源语音 AI 平台(Vapi/Retell 替代)</div>
-                        <div class="trend-meta">voxcpm · moss-tts · dograh</div>
-                    </div>
-                    <div class="trend-score high">86/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">3</div>
-                    <div class="trend-content">
-                        <div class="trend-title">Agent Harness 深度竞争与 Plugin 标准化：ECC 202K 跨 7 个 Harness + oh-my-pi 9.4K 终端 Agent + harness 5.1K 元技能 + Compound Engineering 19K + Cursor Plugins 规范</div>
-                        <div class="trend-meta">ecc · oh-my-pi · harness</div>
-                    </div>
-                    <div class="trend-score high">87/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">4</div>
-                    <div class="trend-content">
-                        <div class="trend-title">Agent 治理与安全持续升温：Microsoft AGT 3.6K(+1.6K/week) 确定性拦截 + Anthropic Cybersecurity Skills 13K 754 结构化技能 + Heretic 23K 自动审查移除</div>
-                        <div class="trend-meta">agent-governance-toolkit · anthropic-cybersecurity-skills · heretic</div>
-                    </div>
-                    <div class="trend-score high">83/80</div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">🏷️</div>
-                    核心关注领域
-                </div>
-            </div>
-            <div class="category-row">
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🤖</span> AI Agent / Multi-Agent</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">⚡</span> LLM Infra / MCP / AI Runtime</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🛠️</span> 开发工具链 / IDE / Copilot</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🌐</span> 前端框架 / Serverless / Edge</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">☸️</span> 云原生 / K8s / Service Mesh</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔄</span> 自动化 / Browser Use / RPA+AI</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">💾</span> 数据基础设施 / RAG / 向量 DB</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔌</span> 基础设施标准 / 平台潜力</a>
-            </div>
-        </section>
+    <a href="/github-researcher/projects.html" class="back-link">← 返回重点项目</a>
+    <div class="project-content">
+        <div style="margin-bottom:20px;"><a href="https://github.com/chopratejas/headroom" target="_blank" rel="noopener" class="btn-github" style="padding:10px 20px;font-size:14px;"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg> 查看 GitHub 项目</a></div>
+        <h1 id="headroom-ai-agent">Headroom — AI Agent 上下文压缩层</h1>
+<h2 id="_1">一句话定位</h2>
+<p>AI Agent 与 LLM 之间的 Token 压缩中间件，60-95% Token 节省，支持 Library/Proxy/MCP 三模式接入。</p>
+<h2 id="_2">解决的问题</h2>
+<p>AI Agent 在处理 tool output、日志、RAG 结果、文件内容时，大量 Token 被浪费在冗余信息上。随着 Agent 系统复杂度增加，上下文窗口和成本成为硬约束。</p>
+<h2 id="_3">为什么值得关注</h2>
+<ol>
+<li>触及所有 Agent 开发者的真实痛点 — Token 成本和上下文窗口</li>
+<li>三种接入模式覆盖所有架构：Library 内联、Proxy 透明、MCP Server</li>
+<li>CCR 可逆压缩 — 不丢信息，LLM 按需 retrieve</li>
+<li>已有可信基准测试数据</li>
+</ol>
+<h2 id="_4">热度来源判断</h2>
+<ul>
+<li>4.1K stars，周增量 +1.5K，增长健康</li>
+<li>解决的问题具有普适性，不是小众需求</li>
+<li>MCP 原生支持让集成门槛极低</li>
+</ul>
+<h2 id="_5">关键技术亮点</h2>
+<ol>
+<li><strong>CCR（Compress-Cache-Retrieve）可逆架构</strong>：原始数据本地存储，LLM 需要时可 retrieve，这是与简单截断的关键差异</li>
+<li><strong>ContentRouter</strong>：自动检测内容类型（JSON/代码/文本），选择最优压缩策略</li>
+<li><strong>三引擎压缩</strong>：SmartCrusher (JSON)、CodeCompressor (AST)、Kompress-base (文本，基于 HuggingFace 模型)</li>
+<li><strong>CacheAligner</strong>：稳定前缀使 Provider KV Cache 命中，不仅压缩还优化缓存</li>
+<li><strong>多 Agent 跨进程共享记忆</strong>：Claude/Codex/Gemini 之间自动去重</li>
+</ol>
+<h2 id="_6">架构启发</h2>
+<p><code>Agent → [Headroom 压缩层] → LLM Provider
+         ├─ ContentRouter (内容分类)
+         ├─ SmartCrusher / CodeCompressor / Kompress-base (压缩)
+         ├─ CacheAligner (缓存对齐)
+         └─ CCR Store (可逆存储)</code></p>
+<p>Agent 系统的 Token 管理应该分层：
+- <strong>索引层</strong>（codegraph）→ 减少搜索范围
+- <strong>压缩层</strong>（Headroom）→ 减少每次传输量
+- <strong>缓存层</strong>（CacheAligner）→ 减少重复计算</p>
+<h2 id="_7">定位判断</h2>
+<p>当前：<strong>工具型</strong>
+趋势：<strong>平台候选</strong> — 如果成为 Agent 与 LLM 之间的标准中间件</p>
+<h2 id="_8">风险/局限/泡沫点</h2>
+<ul>
+<li>压缩质量依赖内容类型识别准确性，边界 case 可能出错</li>
+<li>单人/小团队项目，长期维护风险</li>
+<li>LLM Provider 可能原生支持类似能力（如 extended thinking + caching），挤压空间</li>
+<li>「60-95% 压缩」的最佳 case 与平均 case 可能有差距</li>
+</ul>
+<h2 id="_9">与同类项目的关系</h2>
+<ul>
+<li>与 codegraph/Understand-Anything 互补：索引层减少搜索次数，压缩层减少 Token</li>
+<li>与 markitdown 不同维度：markitdown 是格式转换，headroom 是信息压缩</li>
+<li>与 cc-switch 不同层级：cc-switch 是模型切换，headroom 是上下文优化</li>
+</ul>
+<h2 id="_10">是否值得持续跟踪</h2>
+<p><strong>是。</strong> Agent 上下文管理是基础设施级问题。</p>
+<h2 id="_11">后续观察点</h2>
+<ol>
+<li>企业用户采用情况</li>
+<li>是否能保持压缩质量在更多场景下的一致性</li>
+<li>Provider 原生能力演进是否挤压其空间</li>
+<li>社区贡献者增长</li>
+</ol>
+    </div>
 </main>
     <footer class="footer">
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

@@ -4,13 +4,13 @@ slug: "herdr"
 date_added: "2026-06-01"
 category: "工具型"
 emoji: "🐏"
-stars: "3.4K stars"
-stars_delta: "+923/week，Rust 实现，终端 Agent 多路复用器"
+stars: "3.9K stars"
+stars_delta: "+1.2K/week, +199/day, Rust 实现，终端 Agent 多路复用器"
 language: "Rust"
 score: 78
 tags: ["Agent Multiplexer", "Terminal", "Rust", "DevEx", "多Agent管理"]
 url: "https://github.com/ogulcancelik/herdr"
-last_seen_date: "2026-06-01"
+last_seen_date: "2026-06-03"
 ---
 
 # herdr

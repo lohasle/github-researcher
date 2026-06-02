@@ -8,6 +8,44 @@ title: Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
 
+## 2026-06-03（第四十八版）
+
+### Agent 运行时安全沙箱成新赛道 · Agent Terminal 基础设施三层成型 · AI Memory API 标准化加速 · AI 视频生成大爆发 · 服务组合与编排新范式
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agent 运行时安全沙箱成新赛道 | openshell, agent-governance-toolkit | 92 |
+| 2 | Agent Terminal 基础设施三层成型 | herdr, fff, headroom | 89 |
+| 3 | AI Memory API 标准化加速 | supermemory | 85 |
+| 4 | AI 视频生成大爆发 | moneyprinterturbo, hermes-webui | 83 |
+| 5 | 服务组合与编排新范式 | iii | 80 |
+
+#### 新增项目
+
+| 项目 | Stars | 分类 | 首次出现 |
+|------|-------|------|----------|
+| openshell | ~6.6K | 基础设施候选 | 2026-06-03 |
+| fff | ~7.4K | 工具型 | 2026-06-03 |
+| supermemory | ~24.6K | 平台候选 | 2026-06-03 |
+| iii | ~17.5K | 平台候选 | 2026-06-03 |
+| flowsint | ~4.5K | 工具型 | 2026-06-03 |
+
+#### 持续跟踪项目状态
+
+| 项目 | Stars | 变化 | 状态 |
+|------|-------|------|------|
+| ecc | 203.8K | +1.8K | 高热，警惕泡沫 |
+| understand-anything | 50K | +1.3K | 持续高热 |
+| markitdown | 141K | 稳定 | 稳定 |
+| herdr | 3.9K | +500 | 稳健增长 |
+| headroom | 6.1K | +2K | 快速增长 |
+| scrapling | 59K | +1.2K/day | 快速增长 |
+| agent-governance-toolkit | 3.8K | +0.1K | 稳健增长 |
+
+---
+
 ## 2026-06-02（第四十七版）
 
 ### AI Agent 上下文压缩赛道浮现 · TTS 开源模型爆发 · Agent Harness 深度竞争 · Agent 治理与安全持续升温 · AI 写作品质治理

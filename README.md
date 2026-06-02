@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-06-02）
+## 最新研究摘要（2026-06-03）
 
-**AI Agent 上下文压缩赛道浮现：Headroom 4K(+1.5K/week) 提供 60-95% Token 压缩，MCP 原生 · TTS 开源模型爆发：VoxCPM 24K + MOSS-TTS 2.8K + dograh 语音平台 4K · Agent Harness 深度竞争：ECC 202K + oh-my-pi 9.4K + harness 5.1K · Code Knowledge Graph 持续高热**
+**Agent 运行时安全沙箱成新赛道：NVIDIA OpenShell 6.6K Rust 沙箱 + 策略引擎 + GPU 直通 · Agent Terminal 基础设施深化：herdr 3.9K + fff 7.4K 文件搜索工具 · Memory API 标准化加速：supermemory 24.6K · AI 视频生成大爆发：MoneyPrinterTurbo 78K +19K/week**
 
 今日热榜新信号：
-- **Headroom**（4.1K stars）：AI Agent 上下文压缩层，60-95% Token 节省，支持 Library/Proxy/MCP 三模式
-- **VoxCPM**（24.2K stars）：Tokenizer-Free TTS 多语言语音生成、创意声音设计与真实克隆
-- **Understand-Anything**（48.7K stars）：代码交互式知识图谱，多 Agent 管线分析，支持 Claude Code/Codex/Cursor 等
+- **NVIDIA OpenShell**（6.6K stars）：Agent 安全运行时沙箱，Rust 实现，策略引擎 + 凭证隔离 + GPU 直通，NVIDIA 官方出品
+- **fff**（7.4K stars）：AI Agent 专用高速文件搜索工具，Rust 实现，支持 MCP/Nvim/Pi，Frecency 排序
+- **supermemory**（24.6K stars）：AI 时代 Memory 引擎，超快可扩展的记忆 API，为 Agent 提供长期记忆基础设施
 
+**→ [查看 2026-06-03 完整简报](daily/2026-06-03.md)**
 **→ [查看 2026-06-02 完整简报](daily/2026-06-02.md)**
 **→ [查看 2026-06-01 完整简报](daily/2026-06-01.md)**
 **→ [查看 2026-05-31 完整简报](daily/2026-05-31.md)**
-**→ [查看 2026-05-30 完整简报](daily/2026-05-30.md)**
 
 ---
 
@@ -24,23 +24,23 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-06-03](daily/2026-06-03.md) | Agent 运行时安全沙箱成新赛道：NVIDIA OpenShell 6.6K  | 5 个深度分析 |
 | [2026-06-02](daily/2026-06-02.md) | AI Agent 上下文压缩赛道浮现：Headroom 4K(+1.5K/wee | 9 个深度分析 |
 | [2026-06-01](daily/2026-06-01.md) | Code Knowledge Graph 赛道爆发：Understand-Any | 5 个深度分析 |
 | [2026-05-31](daily/2026-05-31.md) | AI Taste 元趋势爆发：taste-skill 29K + stop-sl | 8 个深度分析 |
 | [2026-05-30](daily/2026-05-30.md) | Code Knowledge Graph 双雄争霸：Understand-Any | 8 个深度分析 |
 | [2026-05-29](daily/2026-05-29.md) | Agent Skills 大爆发：taste-skill 26K + stop- | 10 个深度分析 |
 | [2026-05-28](daily/2026-05-28.md) | 五日断网周度复盘 · Agent Harness 格局锁定 · Skills 生 | 4 个深度分析 |
-| [2026-05-27](daily/2026-05-27.md) | Understand-Anything 突破 42K 逼近趋势之巅 · Code | 9 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **AI Agent 上下文压缩赛道浮现：Headroom 4K Token 压缩 60-95%、可逆 CCR 架构、MCP 原生，Code Knowledge Graph（Understand-Anything 48K + codegraph 36K）持续高热提供索引层**：相关项目 headroom, understand-anything, codegraph。
-2. **TTS 开源模型爆发：VoxCPM 24K(+4.2K/week) Tokenizer-Free 多语言语音生成 + MOSS-TTS 2.8K 高保真长语音 + dograh 4K 开源语音 AI 平台(Vapi/Retell 替代)**：相关项目 voxcpm, moss-tts, dograh。
-3. **Agent Harness 深度竞争与 Plugin 标准化：ECC 202K 跨 7 个 Harness + oh-my-pi 9.4K 终端 Agent + harness 5.1K 元技能 + Compound Engineering 19K + Cursor Plugins 规范**：相关项目 ecc, oh-my-pi, harness。
-4. **Agent 治理与安全持续升温：Microsoft AGT 3.6K(+1.6K/week) 确定性拦截 + Anthropic Cybersecurity Skills 13K 754 结构化技能 + Heretic 23K 自动审查移除**：相关项目 agent-governance-toolkit, anthropic-cybersecurity-skills, heretic。
-5. **AI 写作品质治理：stop-slop 8K + taste-skill 30K，AI 生成内容的去模板化工具成为刚需**：相关项目 stop-slop, taste-skill。
+1. **Agent 运行时安全沙箱成新赛道：NVIDIA OpenShell 6.6K 提供 Rust 沙箱 + L7 策略引擎 + 凭证隔离 + GPU 直通，覆盖 OWASP Agentic Top 10；与 Microsoft AGT 形成互补**：相关项目 openshell, agent-governance-toolkit。
+2. **Agent Terminal 基础设施深化：herdr 3.9K(+1.2K/week) Agent 多路复用器 + fff 7.4K(+424/day) AI Agent 文件搜索 + headroom 6.1K Token 压缩，三层 Agent 开发工具栈成型**：相关项目 herdr, fff, headroom。
+3. **AI Memory API 标准化加速：supermemory 24.6K(+677/day) 定位 AI 时代 Memory 引擎，Agent 长期记忆成基础设施层能力**：相关项目 supermemory。
+4. **AI 视频生成大爆发：MoneyPrinterTurbo 78K(+18.9K/week) 一键生成短视频，周增速第一；Hermes WebUI 12.5K(+1.7K/day) Agent Web 化**：相关项目 moneyprinterturbo, hermes-webui。
+5. **服务组合与编排新范式：iii 17.5K Worker/Function/Trigger 三原语统一开发面，零集成实时可观测**：相关项目 iii。
 
 ---
 
@@ -50,6 +50,7 @@
 |------|------|---------|------|
 | [12-Factor Agents](projects/12-factor-agents.md) | 基础设施候选 | 构建足够好到可以交给专业用户使用的 LLM 驱动软件的 12 条工程原则，Age | 持续跟踪 |
 | [Understand-Anything](projects/understand-anything.md) | 平台候选 | 将任意代码转换为交互式知识图谱，支持探索、搜索和问答，兼容 Claude Cod | 持续跟踪 |
+| [NVIDIA OpenShell](projects/openshell.md) | 基础设施候选 | NVIDIA 出品的 Agent 安全运行时沙箱——Rust 实现，四层策略防御 | 持续跟踪 |
 | [agentmemory](projects/agentmemory.md) | 基础设施候选 | AI Coding Agent 的统一持久记忆服务，支持全平台（Claude C | 持续跟踪 |
 | [Claude Plugins Official](projects/claude-plugins-official.md) | 平台候选 | Anthropic 官方管理的高质量 Claude Code 插件目录，Agen | 持续跟踪 |
 | [Copy Fail CVE-2026-31431](projects/copy-fail-cve-2026-31431.md) | 安全 | Linux 内核 `algif_aead` page-cache 损坏漏洞的检测 | 持续跟踪 |
@@ -57,15 +58,14 @@
 | [YellowKey](projects/yellowkey.md) | 安全研究 | Windows BitLocker 绕过漏洞 PoC，声称在 WinRE 中发现 | 持续跟踪 |
 | [CodeGraph](projects/codegraph.md) | 工具型 | 预索引代码知识图谱，为 Claude Code/Codex/Cursor/Ope | 持续跟踪 |
 | [Dirty Frag](projects/dirtyfrag.md) | 安全研究 | 通用 Linux 本地提权漏洞利用（CVE-2026-43284/43500）， | 持续跟踪 |
-| [ECC](projects/ecc.md) | 平台候选 | Agent Harness 性能优化系统，为 Claude Code、Codex | 持续跟踪 |
 
 ---
 
 ## 数据统计
 
-- 📊 项目档案：169 个
-- 📅 日报总数：57 期
-- 🔄 最近更新：2026-06-02
+- 📊 项目档案：174 个
+- 📅 日报总数：58 期
+- 🔄 最近更新：2026-06-03
 
 ---
 

@@ -4,6 +4,21 @@
 
 ---
 
+## 2026-06-03
+
+**核心主题：** Agent 运行时安全沙箱成新赛道（NVIDIA OpenShell 6.6K Rust 沙箱 + 策略引擎 + GPU 直通）· Agent Terminal 基础设施三层成型（herdr 3.9K + fff 7.4K + headroom 6.1K）· AI Memory API 标准化加速（supermemory 24.6K）· AI 视频生成大爆发（MoneyPrinterTurbo 78K +19K/week）
+
+**关键项目：**
+- 🔒 NVIDIA OpenShell (6.6K) — Agent 安全运行时沙箱，四层策略防御，GPU 直通
+- 🔍 fff (7.4K) — AI Agent 专用文件搜索，Frecency 排序，MCP 原生
+- 🧠 supermemory (24.6K) — AI 时代 Memory 引擎，长期记忆 API
+- 🏗️ iii (17.5K) — Worker/Function/Trigger 三原语服务组合平台
+- 🕸️ flowsint (4.5K) — OSINT 图谱调查平台
+
+→ [查看完整日报](daily/2026-06-03.html)
+
+---
+
 ## 2026-06-02
 
 **核心主题：** AI Agent 上下文压缩赛道浮现（Headroom 4.1K 提供 60-95% Token 压缩、MCP 原生、CCR 可逆架构）· TTS 开源模型爆发（VoxCPM 24K Tokenizer-Free + MOSS-TTS 2.8K + dograh 4K 语音平台）· Agent Harness 深度竞争（ECC 202K + oh-my-pi 9.4K + harness 5.1K）· Code Knowledge Graph 持续高热（Understand-Anything 48.7K + codegraph 36.6K）

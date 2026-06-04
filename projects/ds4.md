@@ -4,13 +4,13 @@ slug: "ds4"
 date_added: "2026-05-08"
 category: "基础设施候选"
 emoji: "🔧"
-stars: "~8.6K stars (推算)"
-stars_delta: "5天从0到8K（实测），日增~277，Metal+CUDA双轨推进"
+stars: "12,936 stars"
+stars_delta: "从 8.6K 到 12.9K，持续增长"
 language: "C"
 score: 87
 tags: ["deepseek-v4", "metal", "local-inference", "gguf", "quantization", "macos", "kv-cache"]
 url: "https://github.com/antirez/ds4"
-last_seen_date: "2026-05-18"
+last_seen_date: "2026-06-05"
 ---
 
 # ds4.c

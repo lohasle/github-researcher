@@ -4,6 +4,21 @@
 
 ---
 
+## 2026-06-05
+
+**核心主题：** Agent Skill 从手工编写进化为可训练优化（Microsoft SkillOpt 4.9K 文本空间技能优化器）· 自托管 AI 工作空间现象级项目（Odysseus 50.6K）· Agent 专用语言与运行时涌现（zerolang 4.9K + zero-native 4.1K + forkd 1.3K microVM）· AI 供应链安全成新赛道（Perplexity bumblebee 4.3K）
+
+**关键项目：**
+- 🎯 Microsoft SkillOpt (4.9K) — 文本空间技能优化器，轨迹驱动编辑 + 验证门控更新
+- 🏠 Odysseus (50.6K) — 自托管 AI 工作空间，MIT 协议，5.9K forks
+- 🔤 Vercel zerolang (4.9K) — Agent 编程语言，Vercel Labs 出品
+- 🐝 Perplexity bumblebee (4.3K) — 开发者端点扫描器，AI 时代供应链安全
+- 🍴 forkd (1.3K) — AI Agent 的 fork()，KVM microVM + CoW 快照
+
+→ [查看完整日报](daily/2026-06-05.html)
+
+---
+
 ## 2026-06-03
 
 **核心主题：** Agent 运行时安全沙箱成新赛道（NVIDIA OpenShell 6.6K Rust 沙箱 + 策略引擎 + GPU 直通）· Agent Terminal 基础设施三层成型（herdr 3.9K + fff 7.4K + headroom 6.1K）· AI Memory API 标准化加速（supermemory 24.6K）· AI 视频生成大爆发（MoneyPrinterTurbo 78K +19K/week）

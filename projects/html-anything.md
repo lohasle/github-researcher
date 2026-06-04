@@ -4,13 +4,13 @@ slug: "html-anything"
 date_added: "2026-05-17"
 category: "工具型"
 emoji: "🎨"
-stars: "2,425 stars"
-stars_delta: "新项目，快速上升中"
+stars: "6,052 stars"
+stars_delta: "+3.6K in 2 weeks"
 language: "HTML"
 score: 73
 tags: ["HTML", "Agent", "设计", "内容生成", "Skill", "BYOK"]
 url: "https://github.com/nexu-io/html-anything"
-last_seen_date: "2026-05-18"
+last_seen_date: "2026-06-05"
 ---
 
 # html-anything

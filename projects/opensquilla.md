@@ -4,13 +4,13 @@ slug: "opensquilla"
 date_added: "2026-05-17"
 category: "观察型"
 emoji: "🦑"
-stars: "893 stars"
-stars_delta: "新项目，快速上升中"
+stars: "2,876 stars"
+stars_delta: "+2K in 2 weeks"
 language: "Python"
 score: 74
 tags: ["Agent", "Token效率", "智能密度", "MCP", "Skills"]
 url: "https://github.com/opensquilla/opensquilla"
-last_seen_date: "2026-05-18"
+last_seen_date: "2026-06-05"
 ---
 
 # OpenSquilla

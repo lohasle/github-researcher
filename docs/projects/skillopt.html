@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026-06-05 GitHub 趋势研究简报 | GitHub Researcher</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📊</text></svg>">
-    <meta name="description" content="Agent Skill 从手工编写进化为可训练优化：Microsoft SkillOpt 4.9K 文本空间技能优化器 · 自托管 AI 工作空间现象级项目：Odysseus 50.6K · Agent 专用语言与运行时涌现：zerolang 4.9K + zero-native 4.1K + forkd 1.3K microVM · AI 供应链安全成新赛道：Perplexity bumblebee 4.3K">
+    <title>Microsoft SkillOpt | GitHub 趋势研究</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>⭐</text></svg>">
     <style>
         :root {
             --primary: #7C3AED;
@@ -170,6 +169,24 @@
         .card-grid { animation-delay: 0.2s; animation-fill-mode: both; }
         .trend-list { animation-delay: 0.25s; animation-fill-mode: both; }
     </style>
+    
+    <style>
+        .project-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 48px; box-shadow: var(--shadow); margin-bottom: 48px; max-width: 860px; margin-left: auto; margin-right: auto; }
+        .project-content h1 { font-size: 26px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 6px; }
+        .project-content h2 { font-size: 18px; font-weight: 700; color: var(--primary); border-left: 4px solid var(--primary); padding-left: 12px; margin: 28px 0 14px; }
+        .project-content h3 { font-size: 15px; font-weight: 700; color: var(--text); margin: 20px 0 10px; }
+        .project-content table { border-collapse: collapse; width: 100%; margin: 14px 0; }
+        .project-content th, .project-content td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; font-size: 13px; }
+        .project-content th { background: var(--primary); color: white; font-weight: 600; }
+        .project-content tr:nth-child(even) td { background: var(--bg); }
+        .project-content blockquote { background: linear-gradient(135deg, #F3E8FF, #ECFEFF); border-left: 4px solid var(--primary); padding: 14px 18px; margin: 14px 0; border-radius: 0 8px 8px 0; }
+        .project-content ul, .project-content ol { padding-left: 22px; margin: 10px 0; }
+        .project-content li { margin: 6px 0; font-size: 14px; }
+        .project-content p { font-size: 14px; margin-bottom: 12px; line-height: 1.7; }
+        .project-content strong { color: var(--primary-dark); }
+        .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 24px; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
     <nav class="nav">
@@ -181,164 +198,87 @@
             <div class="nav-links">
                 <a href="/github-researcher/index.html" id="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>首页</span></a>
                 <a href="/github-researcher/daily.html" id="nav-daily"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg><span>日报</span></a>
-                <a href="/github-researcher/projects.html" id="nav-projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
+                <a href="/github-researcher/projects.html" id="nav-projects" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
                 <a href="/github-researcher/trends.html" id="nav-trends"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>趋势</span></a>
             </div>
         </div>
     </nav>
 <main class="container">
-        <section class="hero">
-            <div class="hero-badge">
-                <span class="dot"></span>
-                2026-06-05
-            </div>
-            <h1>GitHub 趋势研究</h1>
-            <p>Agent Skill 从手工编写进化为可训练优化：Microsoft SkillOpt 4.9K 文本空间技能优化器 · 自托管 AI 工作空间现象级项目：Odysseus 50.6K · Agent 专用语言与运行时涌现：zerolang 4.9K + zero-native 4.1K + forkd 1.3K microVM · AI 供应链安全成新赛道：Perplexity bumblebee 4.3K</p>
-            <div class="hero-actions">
-                <a href="/github-researcher/daily/2026-06-05.html" class="btn-primary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                    今日简报
-                </a>
-                <a href="/github-researcher/projects.html" class="btn-secondary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="14" y="0" width="7" height="7"/><rect x="0" y="14" width="7" height="7"/></svg>
-                    重点项目
-                </a>
-            </div>
-        </section>
-        <section class="stats-row">
-            <div class="stat-card">
-                <div class="stat-icon">📊</div>
-                <div class="stat-number">183</div>
-                <div class="stat-label">深度分析项目</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🔥</div>
-                <div class="stat-number">59</div>
-                <div class="stat-label">日更日报</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🎯</div>
-                <div class="stat-number">256</div>
-                <div class="stat-label">核心跟踪方向</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">⭐</div>
-                <div class="stat-number">350k+</div>
-                <div class="stat-label">本周总 Star 增速</div>
-            </div>
-        </section>
-        <section class="brief-card">
-            <div class="brief-date">📅 2026-06-05 · 今日核心判断</div>
-            <h2 class="brief-title">Agent Skill 从手工编写进化为可训练优化：Microsoft SkillOpt 4.9K 文本空间技能优化器 · 自托管 AI 工作空间现象级项目：Odysseus 50.6K · Agent 专用语言与运行时涌现：zerolang 4.9K + zero-native 4.1K + forkd 1.3K microVM · AI 供应链安全成新赛道：Perplexity bumblebee 4.3K</h2>
-            <p class="brief-text">Agent Skill 从手工编写进化为可训练优化：Microsoft SkillOpt 4.9K 文本空间技能优化器 · 自托管 AI 工作空间现象级项目：Odysseus 50.6K · Agent 专用语言与运行时涌现：zerolang 4.9K + zero-native 4.1K + forkd 1.3K microVM · AI 供应链安全成新赛道：Perplexity bumblebee 4.3K 今日头条趋势:Agent Skill 从手工编写进化为可训练优化单元：Microsoft SkillOpt 4.9K 引入文本空间优化，轨迹驱动编辑 + 验证门控更新，产出 best_skill.md 工件。</p>
-            <a href="/github-researcher/daily/2026-06-05.html" class="brief-cta">阅读完整简报 →</a>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">⭐</div>
-                    重点跟踪项目
-                </div>
-                <a href="/github-researcher/projects.html" class="section-link">查看全部 →</a>
-            </div>
-            <div class="card-grid">
-                <div class="card" onclick="window.location='/github-researcher/projects/skillopt.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🎯</div>
-                        <div class="card-stars">4.9K stars</div>
-                    </div>
-                    <div class="card-title">Microsoft SkillOpt</div>
-                    <div class="card-desc">文本空间技能优化器，通过轨迹驱动编辑和验证门控更新训练可复用的自然语言 Agent 技能</div>
-                    <div class="card-tags"><span class="tag tag-purple">agent-skills</span><span class="tag tag-purple">self-evolving-agents</span><span class="tag tag-purple">microsoft</span></div>
-                    <div class="card-actions"><a href="https://github.com/microsoft/SkillOpt" target="_blank" rel="noopener" class="btn-github" onclick="event.stopPropagation();"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub</a></div>
-                </div>
-                <div class="card" onclick="window.location='/github-researcher/projects/odysseus.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🏠</div>
-                        <div class="card-stars">50.6K stars</div>
-                    </div>
-                    <div class="card-title">Odysseus</div>
-                    <div class="card-desc">自托管 AI 工作空间，Python 实现，MIT 协议，5.9K fork 反映真实部署需求</div>
-                    <div class="card-tags"><span class="tag tag-purple">self-hosted</span><span class="tag tag-purple">ai-workspace</span><span class="tag tag-purple">python</span></div>
-                    <div class="card-actions"><a href="https://github.com/pewdiepie-archdaemon/odysseus" target="_blank" rel="noopener" class="btn-github" onclick="event.stopPropagation();"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub</a></div>
-                </div>
-                <div class="card" onclick="window.location='/github-researcher/projects/zerolang.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🔤</div>
-                        <div class="card-stars">4.9K stars</div>
-                    </div>
-                    <div class="card-title">Vercel zerolang</div>
-                    <div class="card-desc">专为 AI Agent 设计的编程语言，Vercel Labs 出品，Apache 2.0</div>
-                    <div class="card-tags"><span class="tag tag-purple">agent-language</span><span class="tag tag-purple">vercel</span><span class="tag tag-purple">programming-language</span></div>
-                    <div class="card-actions"><a href="https://github.com/vercel-labs/zerolang" target="_blank" rel="noopener" class="btn-github" onclick="event.stopPropagation();"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub</a></div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">📈</div>
-                    趋势热榜
-                </div>
-                <a href="/github-researcher/trends.html" class="section-link">完整趋势表 →</a>
-            </div>
-            <div class="trend-list">
-                <div class="trend-item">
-                    <div class="trend-rank top">1</div>
-                    <div class="trend-content">
-                        <div class="trend-title">Agent Skill 从手工编写进化为可训练优化单元：Microsoft SkillOpt 4.9K 引入文本空间优化，轨迹驱动编辑 + 验证门控更新，产出 best_skill.md 工件</div>
-                        <div class="trend-meta">skillopt · html-anything · gsd-core</div>
-                    </div>
-                    <div class="trend-score high">92/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank top">2</div>
-                    <div class="trend-content">
-                        <div class="trend-title">自托管 AI 工作空间出现现象级项目：Odysseus 50.6K stars（Python），打破 SaaS AI 工具垄断预期，自托管 AI 工作站需求验证</div>
-                        <div class="trend-meta">odysseus</div>
-                    </div>
-                    <div class="trend-score high">90/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">3</div>
-                    <div class="trend-content">
-                        <div class="trend-title">Agent 专用语言与运行时涌现：Vercel zerolang 4.9K 定位 Agent 编程语言 + zero-native 4.1K Zig+WebUI 桌面移动端 + forkd 1.3K microVM 隔离 + rmux 1.5K Rust 多路复用</div>
-                        <div class="trend-meta">zerolang · zero-native · forkd</div>
-                    </div>
-                    <div class="trend-score high">88/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">4</div>
-                    <div class="trend-content">
-                        <div class="trend-title">AI 供应链安全成独立赛道：Perplexity bumblebee 4.3K 开发者端点扫描器 + dirtyfrag 4.8K 内核漏洞研究，安全左移到开发工具链</div>
-                        <div class="trend-meta">bumblebee · dirtyfrag</div>
-                    </div>
-                    <div class="trend-score high">84/80</div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">🏷️</div>
-                    核心关注领域
-                </div>
-            </div>
-            <div class="category-row">
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🤖</span> AI Agent / Multi-Agent</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">⚡</span> LLM Infra / MCP / AI Runtime</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🛠️</span> 开发工具链 / IDE / Copilot</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🌐</span> 前端框架 / Serverless / Edge</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">☸️</span> 云原生 / K8s / Service Mesh</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔄</span> 自动化 / Browser Use / RPA+AI</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">💾</span> 数据基础设施 / RAG / 向量 DB</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔌</span> 基础设施标准 / 平台潜力</a>
-            </div>
-        </section>
+    <a href="/github-researcher/projects.html" class="back-link">← 返回重点项目</a>
+    <div class="project-content">
+        <div style="margin-bottom:20px;"><a href="https://github.com/microsoft/SkillOpt" target="_blank" rel="noopener" class="btn-github" style="padding:10px 20px;font-size:14px;"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg> 查看 GitHub 项目</a></div>
+        <h1 id="microsoft-skillopt">Microsoft SkillOpt</h1>
+<h2 id="_1">一句话定位</h2>
+<p>文本空间技能优化器——为冻结的 LLM Agent 训练可复用的自然语言技能，产出可部署的 best_skill.md 工件。</p>
+<h2 id="_2">它解决的问题</h2>
+<p>Agent Skill（如 Claude Code Skills、Codex Skills）目前完全依赖手工编写和人工调优。当 Skill 数量增长、复杂度提升时，手工迭代效率极低，且缺乏系统化的质量保障方法。SkillOpt 把「prompt engineering」升级为「prompt training」。</p>
+<h2 id="2026-06-05">为什么值得关注（2026-06-05）</h2>
+<p>Microsoft 官方出品，MIT 协议，第一个提出系统化 Agent Skill 训练方法的开源项目。4.9K stars + 487 forks 说明社区在积极尝试。这是 Agent Skill 从「手工作坊」到「工业化训练」的关键转折点。</p>
+<h2 id="_3">热度来源判断</h2>
+<ul>
+<li>真实需求：Agent Skill 生态爆发（html-anything 75 种 Skill、9arm-skills、gsd-core 等），但 Skill 质量参差不齐</li>
+<li>Microsoft 背书增加了信任度</li>
+<li>487 forks 反映开发者不只是收藏，在积极实验</li>
+<li>MIT 协议消除了商用障碍</li>
+</ul>
+<h2 id="_4">关键技术亮点</h2>
+<ol>
+<li><strong>文本空间优化</strong>：不修改 LLM 权重，只优化自然语言技能描述。这意味着任何冻结的 LLM 都可以使用</li>
+<li><strong>轨迹驱动编辑（Trajectory-Driven Edits）</strong>：从 Agent 执行轨迹中提取优化信号，自动编辑技能描述</li>
+<li><strong>验证门控更新（Validation-Gated Updates）</strong>：每次技能修改必须通过验证才能合并，防止优化方向跑偏</li>
+<li><strong>可部署工件</strong>：产出 best_skill.md，直接可部署到 Claude Code / Codex / Copilot 等 Agent</li>
+</ol>
+<h2 id="_5">架构启发</h2>
+<ul>
+<li>Skill = 文本空间的「模型参数」。SkillOpt = 文本空间的「训练器」</li>
+<li>验证门控是关键设计：等同于 ML 训练中的 evaluation set</li>
+<li>轨迹数据 = 训练数据。谁掌握了 Agent 执行轨迹，谁就能训练更好的 Skill</li>
+<li>启发：未来可能出现「Skill 训练数据市场」和「Skill 评估基准」</li>
+</ul>
+<pre class="mermaid">flowchart LR
+    A["Agent 执行<br/>产生轨迹"] --> B["SkillOpt<br/>轨迹分析"]
+    B --> C["候选编辑<br/>技能描述"]
+    C --> D{"验证门控"}
+    D -->|通过| E["best_skill.md<br/>可部署工件"]
+    D -->|拒绝| B
+    E --> F["Agent 部署<br/>冻结 LLM"]
+    style B fill:#00bcf2,color:#fff
+    style D fill:#f59e0b,color:#fff
+    style E fill:#76b900,color:#fff
+</pre>
+<h2 id="_6">定位判断</h2>
+<p><strong>平台候选。</strong> 如果 Skill 训练范式成立，SkillOpt 将成为 Agent Skill 生命周期的核心工具——从编写、训练、验证到部署的基础设施。</p>
+<h2 id="_7">风险 / 局限 / 泡沫点</h2>
+<ol>
+<li><strong>实验性项目</strong>：Microsoft Research 出品，可能缺乏长期产品化承诺</li>
+<li><strong>效果未验证</strong>：文本空间优化在复杂场景的效果缺乏大规模验证</li>
+<li><strong>轨迹数据依赖</strong>：需要大量高质量的 Agent 执行轨迹，冷启动困难</li>
+<li><strong>评估标准缺失</strong>：什么是「更好的 Skill」？缺乏行业统一评估基准</li>
+</ol>
+<h2 id="_8">与同类项目的关系</h2>
+<ul>
+<li><strong>html-anything (6.1K)</strong>：Skill 的消费者/应用层（75 种 Skill 的 agentic HTML 编辑器），与 SkillOpt 是上下游关系</li>
+<li><strong>gsd-core (2.7K)</strong>：Spec-driven Agent 开发流程，关注 Skill 的组织和管理，与 SkillOpt 的训练能力互补</li>
+<li><strong>9arm-skills (2.7K)</strong>：Shell 技能集合，SkillOpt 可以用来训练优化这些 Skill</li>
+</ul>
+<h2 id="_9">是否值得持续跟踪</h2>
+<p><strong>强烈建议持续跟踪。</strong> Agent Skill 训练是 Agent 自主演化能力的基础设施级能力。如果 SkillOpt 的方法论成立，将深刻影响整个 Agent Skill 生态。</p>
+<h2 id="_10">后续观察点</h2>
+<ol>
+<li>验证门控的具体实现：是基于规则、模型评估、还是人工审查？</li>
+<li>社区是否开始贡献轨迹数据集</li>
+<li>Microsoft 是否将 SkillOpt 集成到 Copilot 产品线</li>
+<li>出现基于 SkillOpt 训练的高质量 Skill 发布</li>
+</ol>
+<hr />
+<p><em>首次记录：2026-06-05</em></p>
+    </div>
 </main>
     <footer class="footer">
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

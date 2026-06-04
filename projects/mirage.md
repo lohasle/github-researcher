@@ -4,13 +4,13 @@ slug: "mirage"
 date_added: "2026-05-08"
 category: "基础设施候选"
 emoji: "🗂️"
-stars: "2,004 stars"
-stars_delta: "3 天 1.4K（5/6 创建），Agent 基础设施赛道热度"
+stars: "3,043 stars"
+stars_delta: "+1K in 2 weeks"
 language: "TypeScript"
 score: 85
 tags: ["vfs", "ai-agent", "filesystem", "abstraction-layer", "multi-backend", "s3", "slack", "github"]
 url: "https://github.com/strukto-ai/mirage"
-last_seen_date: "2026-05-18"
+last_seen_date: "2026-06-05"
 ---
 
 # Mirage

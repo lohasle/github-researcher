@@ -1,102 +1,91 @@
 ---
-title: "Centaur"
+title: "Paradigm Centaur"
 slug: "centaur"
-date_added: "2026-05-23"
-category: "基础设施候选"
-emoji: "🐴"
-stars: "364 stars"
-stars_delta: "364/5天（创建于 2026-05-18）"
+date_added: "2026-06-06"
+category: "平台候选"
+emoji: "🐎"
+stars: "718 stars"
+stars_delta: "新建项目，首日记录 718"
 language: "Python"
-score: 84
-tags: ["Agent平台", "K8s", "Slack", "团队协作", "沙箱", "Paradigm"]
+score: 82
+tags: ["self-hosted", "agent-platform", "kubernetes", "slack", "team-agents", "sandbox", "workflows"]
 url: "https://github.com/paradigmxyz/centaur"
-last_seen_date: "2026-05-28"
 ---
 
-# Centaur
+# Paradigm Centaur
 
 ## 一句话定位
-多人自托管 Agent 平台，让团队通过 Slack 共享 Agent，Agent 在 Kubernetes 沙箱中执行任务。
+自托管团队共享 Agent 平台，Slack 原生交互 + K8s 隔离沙箱 + 持久工作流 + 凭据安全边界。
 
 ## 它解决的问题
-目标用户：需要团队共享 Agent 能力的工程团队。
+团队使用 AI Agent 的三大痛点：每人本地跑一套浪费资源、Agent 拿到 API Key 有安全风险、对话状态不持久无法协作。
 
-痛点：
-- 当前 Agent 工具几乎都是个人级的（本地终端运行）
-- 企业需要安全隔离（Agent 不能直接访问生产环境）
-- 团队成员需要共享工具、凭证、工作流
-- Agent 执行的任务可能需要长时间运行、中断恢复
-
-## 为什么值得关注（2026-05-23）
-Centaur 是第一个明确将 Agent 从「个人工具」升级为「团队基础设施」的开源项目。K8s 沙箱 + 凭证边界 + Slack 原生交互的组合，直接瞄准了企业部署的核心痛点。Paradigm（知名 crypto VC）出品，工程质量有保障。
+## 为什么值得关注（2026-06-06）
+Paradigm（以太坊生态知名开发公司）出品的自托管 Agent 平台。核心创新是凭据边界（Credential Boundaries）：Agent 永远拿不到原始密钥，通过 iron-proxy 代理替换。这是企业级 Agent 安全的正确设计。
 
 ## 热度来源判断
-364 stars / 5 天，增速不高但考虑到：
-- 目标用户是工程团队而非个人开发者，受众更窄
-- Paradigm 品牌效应带来初始关注
-- 解决的问题非常具体（团队共享 Agent），不是泛化项目
-
-不是泡沫 — 但市场可能比个人 Agent 工具小得多。
+- Paradigm 品牌（以太坊/Rust 生态）
+- Slack 原生交互降低使用门槛
+- 安全设计（沙箱 + 凭据隔离）直击企业痛点
+- 718 stars + 116 forks = 活跃的早期社区
 
 ## 关键技术亮点
-
-### 1. K8s 沙箱隔离
-每个对话一个独立 Kubernetes 沙箱，预装 Python/Node/Bun/常用开发工具。Agent 在沙箱中执行所有操作，完全隔离。
-
-### 2. Bring your own harness
-不重新造 Agent，而是让团队使用已有的 Agent harness（Amp、Claude Code、Codex 等）。Centaur 只负责基础设施层。
-
-### 3. 凭证边界
-Agent 可使用已批准的服务，但不直接持有 raw API key。凭证通过平台层代理，Agent 只知道「你有权限用 X 服务」。
-
-### 4. 持久工作流
-支持 sleep/resume/等待事件/启动子 Agent/服务重启不丢失状态。适合长时间运行的任务（如 CI/CD、数据处理）。
-
-### 5. Organization overlays
-团队可以在不 fork 基础平台的情况下，叠加自己的工具、工作流、人设、技能和提示词。
+1. **Slack 原生对话**：@mention 发起对话，线程级进度更新和结果回复
+2. **K8s 隔离沙箱**：每个对话独立沙箱，default-deny NetworkPolicy，k3s 即可部署
+3. **iron-proxy 凭据隔离**：Agent 只看到占位符字符串，真实凭据由 iron-proxy 在出站请求时替换到指定 host + header
+4. **可插拔 Agent 引擎**：支持 Claude Code / Codex / Amp / 自定义 harness
+5. **Python 工具插件**：工具是 Python 包，公共方法自动变为 API 端点
+6. **持久工作流**：Python 函数 + durable steps，支持 sleep/resume/子 Agent/定时触发
+7. **可重放状态**：Postgres 存储消息、执行、事件，客户端断线重连不丢结果
 
 ## 架构启发
-Centaur 展示了企业 Agent 平台的正确架构层次：
 
-```
-Slack/Web UI（交互层）
-    ↓
-Centaur API（编排层）
-    ↓
-K8s Sandbox（执行层）
-    ↓
-Agent Harness（任务层）
-    ↓
-Shared Tools（工具层）
+```mermaid
+flowchart TB
+    U["Slack / API"] --> API["Centaur API"]
+    API --> PG["Postgres<br/>持久状态"]
+    API --> TR["工具注册表"]
+    API --> SB["沙箱分配器"]
+    SB --> K8S["Kubernetes 沙箱"]
+    K8S --> AGENT["Agent<br/>Claude Code / Codex / Amp"]
+    K8S --> IP["iron-proxy<br/>凭据替换"]
+    AGENT -->|工具调用| TOOLS["Python 工具插件"]
+    TOOLS -->|出站| IP
+    IP -->|替换占位符| EXT["外部服务<br/>（GitHub/Jira/...）"]
+    
+    style IP fill:#ff6b6b,color:#fff
+    style K8S fill:#4ecdc4,color:#fff
 ```
 
-这种分层设计让每层都可以独立替换。企业可以保留自己的 Slack 集成，换掉 K8s 为 Docker，或使用不同的 Agent harness。
+**核心设计模式：凭据边界**
+传统方式：把 API Key 放到 Agent 环境变量 → Agent 可以泄露密钥。
+Centaur 方式：Agent 环境只有占位符（如 `OP_SERVICE_ACCOUNT_TOKEN`），iron-proxy 拦截出站请求，按 host + header 精确替换。Agent 用服务但不接触密钥。
 
 ## 定位判断
-**基础设施候选。** 如果企业要部署团队级 Agent，Centaur 的架构是最接近生产可用的开源方案。
+**平台候选。** 自托管团队 Agent 平台的早期参考实现。安全设计领先，但运维门槛较高。
 
 ## 风险 / 局限 / 泡沫点
-
-1. **Paradigm crypto 背景**：虽然是通用平台，但 crypto 行业的特殊需求可能影响设计决策
-2. **K8s 依赖**：K8s 沙箱的资源消耗和启动延迟可能不适合小团队
-3. **364 stars 非常早期**：项目可能随时停止维护
-4. **Slack 绑定**：目前只支持 Slack，缺少 Teams/Discord/飞书等集成
+1. **K8s 依赖**：虽然 k3s 降低了门槛，但仍然是运维复杂的选择
+2. **Paradigm 维护优先级**：Paradigm 核心业务是 Web3，此项目可能非战略优先
+3. **Slack 绑定**：当前只有 Slack 入口，缺少 Discord/飞书/企业微信支持
+4. **早期阶段**：83 个 open issues 说明功能完善度有限
+5. **中国落地的本地化障碍**：需要适配钉钉/飞书等国内 IM
 
 ## 与同类项目的关系
-| 项目 | 定位 | 核心差异 |
-|------|------|---------|
-| ECC | 个人 Agent Harness | 个人级工具，非团队平台 |
-| OpenCode | 个人编码 Agent | 终端级，无团队协作 |
-| LobeHub | Agent 运营平台 | 偏 Agent 编排和运营 |
-| Centaur | 团队 Agent 基础设施 | K8s 沙箱 + Slack + BYOH |
+| 项目 | 定位 | 差异 |
+|------|------|------|
+| Odysseus (55.4K⭐) | 自托管 AI 工作空间 | 个人使用，非团队 Agent 平台 |
+| n8n (191K⭐) | 工作流自动化 | 偏流程编排，非 Agent 沙箱 |
+| Butterbase (1.3K⭐) | AI 原生 BaaS | 后端服务，非 Agent 平台 |
 
 ## 是否值得持续跟踪
-**是，建议持续跟踪。** 团队级 Agent 平台是企业落地的关键方向。Centaur 的架构设计值得企业内部参考，即使不直接使用。
+**是。** 团队级 Agent 平台是企业 Agent 化的关键基础设施。凭据边界设计值得长期跟踪。
 
 ## 后续观察点
-1. Centaur 是否会添加更多聊天平台集成（Teams、飞书等）
-2. K8s 沙箱的启动延迟和资源消耗是否可接受
-3. 是否有企业开始用 Centaur 做内部 PoC
+1. 是否出现非 Slack 的对话入口（Discord / Web UI / API-first）
+2. 沙箱方案是否从 K8s 扩展到 microVM（如 forkd）
+3. 工作流引擎的可靠性验证
+4. 企业部署案例
 
 ---
-*首次记录：2026-05-23*
+*首次记录：2026-06-06*

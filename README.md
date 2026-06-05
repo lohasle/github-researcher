@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-06-05）
+## 最新研究摘要（2026-06-06）
 
-**Agent Skill 从手工编写进化为可训练优化：Microsoft SkillOpt 4.9K 文本空间技能优化器 · 自托管 AI 工作空间现象级项目：Odysseus 50.6K · Agent 专用语言与运行时涌现：zerolang 4.9K + zero-native 4.1K + forkd 1.3K microVM · AI 供应链安全成新赛道：Perplexity bumblebee 4.3K**
+**AI Code Review 进入混合架构时代：Alibaba open-code-review 2.7K 确定性流水线 + Agent 决策 · Agent Memory 分层操作系统化：Memory OS 7 层架构 + Qdrant 向量记忆 · 本地优先运动席卷硬件外设：OpenLogi 4K 替代 Logitech Options+ · 自托管团队 Agent 平台化：Paradigm Centaur K8s 沙箱 + Slack 原生 · Coding Agent CLI 新格局：Moonshot Kimi Code 1.9K 单二进制分发**
 
 今日热榜新信号：
-- **Microsoft SkillOpt**（4.9K stars）：文本空间技能优化器，通过轨迹驱动编辑和验证门控更新训练可复用的自然语言 Agent 技能
-- **Odysseus**（50.6K stars）：自托管 AI 工作空间，Python 实现，MIT 协议，5.9K fork 反映真实部署需求
-- **Vercel zerolang**（4.9K stars）：专为 AI Agent 设计的编程语言，Vercel Labs 出品，Apache 2.0
+- **Alibaba Open Code Review**（2.7K stars）：阿里内部两年验证的 AI 代码审查工具，确定性工程流水线 + Agent 动态决策混合架构
+- **Memory OS**（869 stars）：Hermes Agent 的 7 层记忆操作系统，Qdrant 向量 + SQLite FTS5 + 自动知识库 + 信任评分
+- **Paradigm Centaur**（718 stars）：自托管团队共享 Agent 平台，Slack 原生 + K8s 沙箱隔离 + 持久工作流 + 凭据安全边界
 
+**→ [查看 2026-06-06 完整简报](daily/2026-06-06.md)**
 **→ [查看 2026-06-05 完整简报](daily/2026-06-05.md)**
 **→ [查看 2026-06-03 完整简报](daily/2026-06-03.md)**
 **→ [查看 2026-06-02 完整简报](daily/2026-06-02.md)**
-**→ [查看 2026-06-01 完整简报](daily/2026-06-01.md)**
 
 ---
 
@@ -24,23 +24,23 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-06-06](daily/2026-06-06.md) | AI Code Review 进入混合架构时代：Alibaba open-cod | 5 个深度分析 |
 | [2026-06-05](daily/2026-06-05.md) | Agent Skill 从手工编写进化为可训练优化：Microsoft Skil | 5 个深度分析 |
 | [2026-06-03](daily/2026-06-03.md) | Agent 运行时安全沙箱成新赛道：NVIDIA OpenShell 6.6K  | 5 个深度分析 |
 | [2026-06-02](daily/2026-06-02.md) | AI Agent 上下文压缩赛道浮现：Headroom 4K(+1.5K/wee | 9 个深度分析 |
 | [2026-06-01](daily/2026-06-01.md) | Code Knowledge Graph 赛道爆发：Understand-Any | 5 个深度分析 |
 | [2026-05-31](daily/2026-05-31.md) | AI Taste 元趋势爆发：taste-skill 29K + stop-sl | 8 个深度分析 |
 | [2026-05-30](daily/2026-05-30.md) | Code Knowledge Graph 双雄争霸：Understand-Any | 8 个深度分析 |
-| [2026-05-29](daily/2026-05-29.md) | Agent Skills 大爆发：taste-skill 26K + stop- | 10 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **Agent Skill 从手工编写进化为可训练优化单元：Microsoft SkillOpt 4.9K 引入文本空间优化，轨迹驱动编辑 + 验证门控更新，产出 best_skill.md 工件**：相关项目 skillopt, html-anything, gsd-core。
-2. **自托管 AI 工作空间出现现象级项目：Odysseus 50.6K stars（Python），打破 SaaS AI 工具垄断预期，自托管 AI 工作站需求验证**：相关项目 odysseus。
-3. **Agent 专用语言与运行时涌现：Vercel zerolang 4.9K 定位 Agent 编程语言 + zero-native 4.1K Zig+WebUI 桌面移动端 + forkd 1.3K microVM 隔离 + rmux 1.5K Rust 多路复用**：相关项目 zerolang, zero-native, forkd。
-4. **AI 供应链安全成独立赛道：Perplexity bumblebee 4.3K 开发者端点扫描器 + dirtyfrag 4.8K 内核漏洞研究，安全左移到开发工具链**：相关项目 bumblebee, dirtyfrag。
-5. **开源情报平台开源 Palantir 替代：Osiris 4.4K + CodexPlusPlus 13.3K Codex 增强，工具增强型项目持续走热**：相关项目 osiris, codexplusplus。
+1. **AI Code Review 进入混合架构时代：Alibaba open-code-review 2.7K 采用确定性工程 + Agent 混合设计，阿里内部两年验证数万开发者，精确行级定位**：相关项目 open-code-review, clawpatch, kimi-code。
+2. **Agent Memory 分层操作系统化：Memory OS 869 stars 提出 7 层记忆架构（Workspace → Session → Structured → Fabric → Vector → Wiki → Context Injection），Qdrant + SQLite FTS5 混合检索**：相关项目 memory-os, mempalace。
+3. **本地优先运动从软件延伸到硬件：OpenLogi 4K 用 Rust 替代 Logitech Options+，Goose 2.1K 本地 WHOOP 健康数据，Skylight RTL-SDR 飞机追踪**：相关项目 openlogi, goose, skylight。
+4. **自托管团队 Agent 平台化：Paradigm Centaur 718 stars Slack 原生 + K8s 沙箱 + 工具插件 + 持久工作流，iron-proxy 凭据隔离**：相关项目 centaur, butterbase, odysseus。
+5. **Coding Agent CLI 竞争新格局：Moonshot Kimi Code 1.9K 单二进制 + 视频输入 + MCP 原生配置，进入 Claude Code / OpenCode 竞争序列**：相关项目 kimi-code, open-code-review。
 
 ---
 
@@ -57,15 +57,15 @@
 | [MoneyPrinterTurbo](projects/moneyprinterturbo.md) | 平台候选 | 利用 AI 大模型一键生成高清短视频，从脚本到成片的完整自动化流程。 | 持续跟踪 |
 | [Microsoft SkillOpt](projects/skillopt.md) | 平台候选 | 文本空间技能优化器——为冻结的 LLM Agent 训练可复用的自然语言技能，产 | 持续跟踪 |
 | [YellowKey](projects/yellowkey.md) | 安全研究 | Windows BitLocker 绕过漏洞 PoC，声称在 WinRE 中发现 | 持续跟踪 |
-| [CodeGraph](projects/codegraph.md) | 工具型 | 预索引代码知识图谱，为 Claude Code/Codex/Cursor/Ope | 持续跟踪 |
+| [Alibaba Open Code Review](projects/open-code-review.md) | 生产可用 | 阿里内部两年验证的 AI 代码审查工具，采用确定性工程流水线 + Agent 动 | 持续跟踪 |
 
 ---
 
 ## 数据统计
 
-- 📊 项目档案：179 个
-- 📅 日报总数：59 期
-- 🔄 最近更新：2026-06-05
+- 📊 项目档案：183 个
+- 📅 日报总数：60 期
+- 🔄 最近更新：2026-06-06
 
 ---
 

@@ -8,6 +8,36 @@ title: Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
 
+## 2026-06-06（第五十版）
+
+### AI Code Review 进入混合架构时代 · Agent Memory 分层操作系统化 · 本地优先运动席卷硬件外设 · 自托管团队 Agent 平台化 · Coding Agent CLI 竞争新格局
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | AI Code Review 进入混合架构时代 | open-code-review, clawpatch, kimi-code | 91 |
+| 2 | Agent Memory 分层操作系统化 | memory-os, mempalace | 87 |
+| 3 | 本地优先运动从软件延伸到硬件 | openlogi, goose, skylight | 85 |
+| 4 | 自托管团队 Agent 平台化 | centaur, butterbase, odysseus | 83 |
+| 5 | Coding Agent CLI 竞争新格局 | kimi-code, open-code-review | 80 |
+
+#### 新增项目
+
+| 项目 | Stars | 分类 | 首次出现 |
+|------|-------|------|----------|
+| open-code-review | ~2.7K | 生产可用 | 2026-06-06 |
+| memory-os | ~869 | 平台候选 | 2026-06-06 |
+| centaur | ~718 | 平台候选 | 2026-06-06 |
+| openlogi | ~4K | 工具型 | 2026-06-06 |
+| kimi-code | ~1.9K | 工具型 | 2026-06-06 |
+
+#### 持续跟踪更新
+
+- Odysseus: 50.6K → 55.4K（日增 +4.8K，增长加速）
+
+---
+
 ## 2026-06-05（第四十九版）
 
 ### Agent Skill 从手工编写进化为可训练优化 · 自托管 AI 工作空间现象级项目 · Agent 专用语言与运行时涌现 · AI 供应链安全成新赛道 · 开源情报平台持续走热

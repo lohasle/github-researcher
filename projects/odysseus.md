@@ -4,13 +4,13 @@ slug: "odysseus"
 date_added: "2026-06-05"
 category: "观察型"
 emoji: "🏠"
-stars: "50.6K stars"
-stars_delta: "新项目，一个月内 50K+，5.9K forks"
+stars: "55.4K stars"
+stars_delta: "日增 +4.8K（06-05 → 06-06）"
 language: "Python"
 score: 86
 tags: ["self-hosted", "ai-workspace", "python", "mit", "privacy"]
 url: "https://github.com/pewdiepie-archdaemon/odysseus"
-last_seen_date: "2026-06-05"
+last_seen_date: "2026-06-06"
 ---
 
 # Odysseus

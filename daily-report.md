@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-06-06
+
+**核心主题：** AI Code Review 进入混合架构时代（Alibaba open-code-review 2.7K 确定性流水线 + Agent 决策）· Agent Memory 分层操作系统化（Memory OS 869 stars 7 层架构 + Qdrant 向量记忆）· 本地优先运动席卷硬件外设（OpenLogi 4K 替代 Logitech Options+）· 自托管团队 Agent 平台化（Paradigm Centaur 718 K8s 沙箱 + Slack 原生）· Coding Agent CLI 新格局（Moonshot Kimi Code 1.9K 单二进制）
+
+**关键项目：**
+- 🔍 Alibaba Open Code Review (2.7K) — 阿里内部两年验证，确定性 + Agent 混合架构，生产可用
+- 🧠 Memory OS (869) — Hermes Agent 7 层记忆操作系统，Qdrant + SQLite FTS5 + 信任评分
+- 🐎 Paradigm Centaur (718) — 自托管团队 Agent 平台，Slack + K8s 沙箱 + iron-proxy 凭据隔离
+- 🖱️ OpenLogi (4K) — Rust 实现 Logitech Options+ 本地替代，HID++ 协议
+- 🌙 Kimi Code CLI (1.9K) — Moonshot 终端编程 Agent，单二进制 + 视频输入
+
+---
+
 ## 2026-06-05
 
 **核心主题：** Agent Skill 从手工编写进化为可训练优化（Microsoft SkillOpt 4.9K 文本空间技能优化器）· 自托管 AI 工作空间现象级项目（Odysseus 50.6K）· Agent 专用语言与运行时涌现（zerolang 4.9K + zero-native 4.1K + forkd 1.3K microVM）· AI 供应链安全成新赛道（Perplexity bumblebee 4.3K）

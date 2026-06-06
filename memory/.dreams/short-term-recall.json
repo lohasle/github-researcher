@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-05T19:00:19.925Z",
+  "updatedAt": "2026-06-06T19:00:21.662Z",
   "entries": {
     "memory:memory/.dreams/session-corpus/2026-04-13.txt:1:1": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-13.txt:1:1",
@@ -23381,6 +23381,722 @@
         "api",
         "key",
         "github"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: Phase 1 通过。进入 Phase 3 今日研究。先采集 GitHub Trending 数据。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:19.301Z",
+      "lastRecalledAt": "2026-06-06T19:00:19.301Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "phase",
+        "通过",
+        "进入",
+        "今日",
+        "研究",
+        "采集",
+        "github",
+        "trending"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: web_search 不可用，切换到 web_fetch 直接抓取 GitHub Trending 页面。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:19.301Z",
+      "lastRecalledAt": "2026-06-06T19:00:19.301Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "web-search",
+        "web-fetch",
+        "不可",
+        "切换",
+        "直接",
+        "抓取",
+        "github",
+        "trending"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: GitHub Trending 页面加载不完整，尝试用 `gh` CLI 获取趋势数据和热门仓库。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:19.301Z",
+      "lastRecalledAt": "2026-06-06T19:00:19.301Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "github",
+        "trending",
+        "完整",
+        "尝试",
+        "cli",
+        "获取",
+        "趋势",
+        "数据"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: Now let me get details on the most interesting recent projects and check what's existing in the repo.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:19.301Z",
+      "lastRecalledAt": "2026-06-06T19:00:19.301Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "now",
+        "let",
+        "get",
+        "details",
+        "interesting",
+        "recent",
+        "projects",
+        "check"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: Good, I have a good understanding of the existing format. Now let me gather more details on the newest trending projects for today.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:19.301Z",
+      "lastRecalledAt": "2026-06-06T19:00:19.301Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "good",
+        "understanding",
+        "existing",
+        "format",
+        "now",
+        "let",
+        "gather",
+        "details"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: Now let me get more details on the newest projects and read READMEs for the most promising ones.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:19.301Z",
+      "lastRecalledAt": "2026-06-06T19:00:19.301Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "now",
+        "let",
+        "get",
+        "details",
+        "newest",
+        "projects",
+        "read",
+        "readmes"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: Good, now let me check what yesterday's report looked like in full, and see what's new for today.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:19.301Z",
+      "lastRecalledAt": "2026-06-06T19:00:19.301Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "good",
+        "now",
+        "let",
+        "check",
+        "what",
+        "yesterday's",
+        "report",
+        "looked"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: Now I have a comprehensive understanding. Let me create today's report and project profiles. Let me focus on the freshest trends:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:19.301Z",
+      "lastRecalledAt": "2026-06-06T19:00:19.301Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "now",
+        "comprehensive",
+        "understanding",
+        "let",
+        "create",
+        "today's",
+        "report",
+        "project"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: Now I have enough data. Let me create the daily report and project files.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:19.301Z",
+      "lastRecalledAt": "2026-06-06T19:00:19.301Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "now",
+        "enough",
+        "data",
+        "let",
+        "create",
+        "report",
+        "project"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: The file got truncated. Let me write the complete version:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:19.301Z",
+      "lastRecalledAt": "2026-06-06T19:00:19.301Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "got",
+        "truncated",
+        "let",
+        "write",
+        "complete",
+        "version"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: Now let me create the project profiles. Phase 4:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:19.301Z",
+      "lastRecalledAt": "2026-06-06T19:00:19.301Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "now",
+        "let",
+        "create",
+        "project",
+        "profiles",
+        "phase"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: Now update existing Centaur project (it already exists, let me check):",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:19.301Z",
+      "lastRecalledAt": "2026-06-06T19:00:19.301Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "now",
+        "update",
+        "existing",
+        "centaur",
+        "project",
+        "already",
+        "exists",
+        "let"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: Good — it was overwritten. Now check the existing odysseus, goose, and mirage profiles for last_seen_date updates:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:19.301Z",
+      "lastRecalledAt": "2026-06-06T19:00:19.301Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "last-seen-date",
+        "good",
+        "was",
+        "overwritten",
+        "now",
+        "check",
+        "existing",
+        "odysseus"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: Now Phase 5: cascade sync. Update trend-index, daily-report, README, and generate HTML.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:19.301Z",
+      "lastRecalledAt": "2026-06-06T19:00:19.301Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "trend-index",
+        "daily-report",
+        "now",
+        "phase",
+        "cascade",
+        "sync",
+        "update",
+        "trend"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: Now update daily-report.md:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:19.301Z",
+      "lastRecalledAt": "2026-06-06T19:00:19.301Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "daily-report.md",
+        "now",
+        "update",
+        "report.md"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: Now run the README and HTML generators:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:19.301Z",
+      "lastRecalledAt": "2026-06-06T19:00:19.301Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "now",
+        "run",
+        "readme",
+        "html",
+        "generators"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: I see some minimal project pages were generated for slug variants. Let me verify the key files:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:19.301Z",
+      "lastRecalledAt": "2026-06-06T19:00:19.301Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "see",
+        "minimal",
+        "project",
+        "pages",
+        "generated",
+        "slug",
+        "variants",
+        "let"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: All files are non-empty and substantial. Now Phase 6: final validation.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:19.301Z",
+      "lastRecalledAt": "2026-06-06T19:00:19.301Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "non-empty",
+        "all",
+        "non",
+        "empty",
+        "substantial",
+        "now",
+        "phase",
+        "final"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "Assistant: Phase 6 validate 通过。现在 git operations:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:19.301Z",
+      "lastRecalledAt": "2026-06-06T19:00:19.301Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "phase",
+        "validate",
+        "通过",
+        "现在",
+        "git",
+        "operations"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "Assistant: Push 成功。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:19.301Z",
+      "lastRecalledAt": "2026-06-06T19:00:19.301Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "push",
+        "成功"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "Assistant: ## 执行报告 ### validate 结果 - **Phase 1**: 通过（0 errors，2 warnings 为 06-04 历史缺口，不影响发布） - **Phase 2**: 无需修复 - **Phase 6**: 通过（pass: true，0 errors） ### 今日研究 - **日期**: 2026-06-06 - **分析项目数**: 28 - **新增项目档案**: open-code-review, memory-os, centaur（重写）, openlogi, kimi-code（共 5 个）",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:19.301Z",
+      "lastRecalledAt": "2026-06-06T19:00:19.301Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "06-04",
+        "open-code-review",
+        "memory-os",
+        "kimi-code",
+        "执行",
+        "报告",
+        "validate",
+        "结果"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "Assistant: |------|------| | 日报 | daily/2026-06-06.md | | 项目档案 | projects/open-code-review.md, projects/memory-os.md, projects/centaur.md, projects/openlogi.md, projects/kimi-code.md | | 更新档案 | projects/odysseus.md | | 索引 | indexes/trend-index.md, daily-report.md | | README | REA",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:19.301Z",
+      "lastRecalledAt": "2026-06-06T19:00:19.301Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "daily/2026-06-06.md",
+        "projects/open-code-review.md",
+        "projects/memory-os.md",
+        "projects/centaur.md",
+        "projects/openlogi.md",
+        "projects/kimi-code.md",
+        "projects/odysseus.md",
+        "indexes/trend-index.md"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: Agent 自主演化能力感兴趣，这个项目的范式值得关注。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:19.301Z",
+      "lastRecalledAt": "2026-06-06T19:00:19.301Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "自主",
+        "演化",
+        "能力",
+        "感兴趣",
+        "这个",
+        "项目",
+        "值得",
+        "关注"
       ]
     }
   }

@@ -1,65 +1,78 @@
 ---
 title: "HyperFrames"
 slug: "hyperframes"
-date_added: "2026-05-02"
+date_added: "2026-06-07"
 category: "工具型"
 emoji: "🎬"
-stars: "13,649 stars"
-stars_delta: "创建即爆款，HeyGen 品牌加持"
+stars: "25K stars"
+stars_delta: "+257/天"
 language: "TypeScript"
-score: 82
-tags: ["video-generation", "html", "agent", "heygen", "automation", "agent-native-media"]
+score: 81
+tags: ["video-generation", "html", "agent-friendly", "deterministic", "heygen"]
 url: "https://github.com/heygen-com/hyperframes"
-last_seen_date: "2026-05-02"
 ---
 
 # HyperFrames
 
 ## 一句话定位
-Write HTML, Render Video — Agent 原生的视频生成框架，用结构化 HTML 描述视频帧，渲染引擎输出最终视频。
+用 HTML + CSS 写视频，Agent 友好的确定性 MP4 渲染框架。Headless Chrome 逐帧捕获 + FFmpeg 编码，同一输入永远产生同一输出。
 
 ## 它解决的问题
-传统视频生成（Sora/Runway）依赖模型直接输出像素，Agent 无法精确控制每一帧的内容和布局。HyperFrames 让 Agent 用熟悉的 HTML/CSS 描述视频帧，实现精确可控的视频生成。
+传统视频制作工具（After Effects/Premiere）不可编程、不可自动化。Remotion 用 React 组件做视频但需要 bundler 和 React 知识。Agent 要做视频，需要一个它已经熟悉的格式——HTML。
 
-目标用户：需要用 AI Agent 批量生成视频内容的开发者和企业。
-
-## 为什么值得关注（2026-05-02）
-13.6K stars，HeyGen 出品，提出了一种全新的 Agent 原生媒体生成范式：HTML → Video。这不是简单的视频 API 封装，而是试图定义 Agent 与视频生成的交互协议。
+## 为什么值得关注（2026-06-07）
+25K stars + 257/天的增速说明"Agent 也能做视频"的需求是真实的。HeyGen（知名 AI 视频公司）出品，已在生产环境使用。关键差异点：**无 build step，index.html 直接预览**，Agent 可以零摩擦生成视频。
 
 ## 热度来源判断
-- **真实因素：** HeyGen 是视频生成领域知名公司，有品牌背书；HTML→Video 的范式创新吸引开发者关注
-- **泡沫因素：** 部分热度来自 HeyGen 的营销推广；实际渲染能力仍依赖 HeyGen 闭源后端
-- **泡沫比例：** 约 30% 营销驱动
+- **HeyGen 品牌**：生产环境验证，tldraw/TanStack 等团队已采用
+- **Agent 生态红利**：`npx skills add heygen-com/hyperframes` 一行安装
+- **真实用例驱动**：产品发布视频、PR walkthrough、数据可视化、社交媒体视频
+- 25K stars 说明不只是开发者好奇
 
 ## 关键技术亮点
-1. **HTML 作为视频描述语言** — Agent 写 HTML/CSS，引擎渲染为视频帧，技术栈与 Web 开发无缝衔接
-2. **Agent 原生 API** — 专为 Coding Agent 设计的接口，可被 Claude Code / Codex / OpenCode 等直接调用
-3. **多格式输出** — 支持 MP4/PPTX/HTML 等格式，覆盖演示和视频场景
+1. **HTML 原生**：composition 就是带 data 属性的 HTML 文件，无 React 依赖
+2. **确定性渲染**：Headless Chrome 逐帧 seek + FFmpeg 编码 = same input → same output
+3. **多动画适配器**：GSAP、CSS animations、Lottie、Three.js、Anime.js、WAAPI
+4. **Agent Skill 集成**：教 Agent 视频制作的完整流程（plan → write HTML → wire animation → lint → preview → render）
+5. **AWS Lambda 分布式渲染**：可部署分布式 render stack
+6. **frame.md 设计系统**：将 web design tokens 转换为视频适用的规格
 
 ## 架构启发
-- **结构化描述 > 端到端生成**：用结构化语言（HTML）作为 Agent 与渲染引擎的中间表示，比直接让模型生成像素更可控、更可解释
-- **Agent 原生媒体管线**：未来可能出现"Agent 写结构化描述 → 引擎渲染"的通用模式，不仅限于视频
+HyperFrames 的核心赌注：**Agent 写 HTML 比写 React 容易得多**。这个赌注如果成立，意味着所有 Agent 友好的工具都应该向"最简输入格式"靠拢。
+
+```mermaid
+flowchart LR
+    A[Agent 描述视频需求] --> B[Plan: 分镜 + 时长]
+    B --> C[Write HTML + CSS]
+    C --> D[Wire seekable animations]
+    D --> E[Add media: video/audio]
+    E --> F[Lint + Preview browser]
+    F --> G[Render: Headless Chrome → FFmpeg]
+    G --> H[MP4 输出]
+```
 
 ## 定位判断
-Agent 原生媒体生成的应用层工具。不是基础设施，不是平台，是一个面向特定场景（视频生成）的 Agent 工具。
+**工具型 → 平台候选** — 当前是工具（CLI），但 frame.md 设计系统 + Catalog 复用组件 + AWS Lambda 渲染 + Playground 社区，正在向平台演化。
 
 ## 风险 / 局限 / 泡沫点
-1. **商业依赖风险** — 渲染引擎依赖 HeyGen 后端，不是真正的端到端开源，离开 HeyGen 服务无法独立运行
-2. **场景局限性** — HTML 描述视频适合结构化内容（PPT、动画），不适合复杂影视内容
-3. **供应商锁定** — 与 HeyGen 商业服务强绑定，开源部分只是 API 前端
+1. **视频质量上限**：HTML 动画能做到的视觉效果远不如 After Effects/专业视频工具
+2. **Headless Chrome 资源消耗**：逐帧捕获对 CPU/内存要求高，长视频渲染慢
+3. **HeyGen 商业利益冲突**：HyperFrames 是 HeyGen 的开源战略，长期方向可能偏向引流到 HeyGen 云服务
+4. **Remotion 生态壁垒**：Remotion 已有成熟的 Lambda 渲染、Studio 编辑器、丰富社区
 
 ## 与同类项目的关系
-- **vs. Sora / Runway** — 端到端像素生成 vs. 结构化描述渲染，不同范式
-- **vs. Video Use (browser-use)** — Video Use 偏视频编辑，HyperFrames 偏视频生成
-- **vs. Remotion** — Remotion 也是用代码生成视频（React），但 HyperFrames 更偏 Agent 集成
+- **vs Remotion**：HTML 原生 vs React 组件；无 build vs 需要 bundler；Apache 2.0 vs Source-available
+- **vs FFmpeg 直接使用**：HyperFrames 在 FFmpeg 之上增加了 HTML composition 层
+- **vs AI 视频生成模型（Sora 等）**：确定性 HTML 渲染 vs 概率性 AI 生成，不同维度
 
 ## 是否值得持续跟踪
-**是，但降低优先级。** 关注 HTML→Video 范式是否被更多项目采纳，而非 HeyGen 本身。
+**是。** Agent 友好的视频生成是一个全新品类，HTML 原生路线降低了 Agent 做视频的门槛。
 
 ## 后续观察点
-1. 是否出现不依赖 HeyGen 后端的开源渲染引擎替代
-2. HTML→Video 范式是否扩散到其他 Agent 框架
-3. HeyGen 是否将渲染引擎开源
+1. frame.md 设计系统是否会成为 Agent 视频生成的标准
+2. 社区 Catalog 组件的增长速度
+3. AWS Lambda 分布式渲染的实际性能表现
+4. 与 HeyGen 云服务的定位分化（开源社区版 vs 商业版）
 
 ---
-*首次记录：2026-05-02*
+*首次记录：2026-06-07*

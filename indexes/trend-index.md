@@ -1,5 +1,6 @@
 ---
 date: '2026-04-10'
+last_updated: '2026-06-07'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -7,6 +8,37 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-06-07（第五十一版）
+
+### Agent 多源感知基础设施化 · AI Memory 本地优先成熟化 · 代码执行沙箱进入 OS 级 · Agent 终端多路复用器新物种 · HTML 原生视频渲染 Agent 化
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agent 多源感知基础设施化 | last30days-skill, agent-reach, mempalace | 90 |
+| 2 | AI Memory 本地优先成熟化 | mempalace, agentscope | 87 |
+| 3 | 代码执行沙箱进入 OS 级 | mxc, agentgateway | 86 |
+| 4 | Agent 终端多路复用器新物种 | herdr, multica-ai | 84 |
+| 5 | HTML 原生视频渲染 Agent 化 | hyperframes, open-notebook | 82 |
+
+#### 新增项目
+
+| 项目 | Stars | 分类 | 首次出现 |
+|------|-------|------|----------|
+| last30days-skill | new | Agent Skill | 2026-06-07 |
+| mxc | ~557 | 基础设施候选 | 2026-06-07 |
+| hyperframes | ~25K | 工具型 | 2026-06-07 |
+
+#### 持续跟踪更新
+
+- herdr: 3.9K → 4.7K（+250/天，6/7 再次上榜 Rust Trending）
+- MemPalace: 再次上榜 Python Trending，本地记忆系统持续高热
+- CopilotKit: 33.1K（+613/天），Agent 前端栈持续高增长
+- open-notebook: 26.5K（+783/天），Notebook LM 开源替代
+
+---
 
 ## 2026-06-06（第五十版）
 

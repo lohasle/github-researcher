@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-06-06）
+## 最新研究摘要（2026-06-07）
 
-**AI Code Review 进入混合架构时代：Alibaba open-code-review 2.7K 确定性流水线 + Agent 决策 · Agent Memory 分层操作系统化：Memory OS 7 层架构 + Qdrant 向量记忆 · 本地优先运动席卷硬件外设：OpenLogi 4K 替代 Logitech Options+ · 自托管团队 Agent 平台化：Paradigm Centaur K8s 沙箱 + Slack 原生 · Coding Agent CLI 新格局：Moonshot Kimi Code 1.9K 单二进制分发**
+**Agent 多源感知基础设施化：last30days-skill 跨平台信号聚合 + Agent-Reach 零 API 费全网读取 · AI Memory 本地优先成熟：MemPalace 96.6% R@5 零 API 调用 · 代码执行沙箱进入 OS 级：Microsoft MXC 跨平台策略驱动隔离 · Agent 多路复用终端：herdr 4.7K tmux+GUI 混合体 · HTML 原生视频渲染：HyperFrames 25K Agent 友好确定性 MP4**
 
 今日热榜新信号：
-- **Alibaba Open Code Review**（2.7K stars）：阿里内部两年验证的 AI 代码审查工具，确定性工程流水线 + Agent 动态决策混合架构
-- **Memory OS**（869 stars）：Hermes Agent 的 7 层记忆操作系统，Qdrant 向量 + SQLite FTS5 + 自动知识库 + 信任评分
-- **Paradigm Centaur**（718 stars）：自托管团队共享 Agent 平台，Slack 原生 + K8s 沙箱隔离 + 持久工作流 + 凭据安全边界
+- **last30days-skill**（new）：AI agent 跨平台搜索技能，聚合 Reddit/X/YouTube/TikTok/Polymarket 等平台信号，按真实互动评分合成研究简报
+- **MemPalace**（new）：本地优先 AI 记忆系统，96.6% R@5 基准测试（零 API 调用），MCP 协议 + 多后端可插拔
+- **Microsoft MXC**（557 stars）：微软跨平台沙箱代码执行系统，策略驱动隔离，多后端（ProcessContainer/Bubblewrap/Seatbelt/MicroVM）
 
+**→ [查看 2026-06-07 完整简报](daily/2026-06-07.md)**
 **→ [查看 2026-06-06 完整简报](daily/2026-06-06.md)**
 **→ [查看 2026-06-05 完整简报](daily/2026-06-05.md)**
 **→ [查看 2026-06-03 完整简报](daily/2026-06-03.md)**
-**→ [查看 2026-06-02 完整简报](daily/2026-06-02.md)**
 
 ---
 
@@ -24,23 +24,23 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-06-07](daily/2026-06-07.md) | Agent 多源感知基础设施化：last30days-skill 跨平台信号聚合 | 5 个深度分析 |
 | [2026-06-06](daily/2026-06-06.md) | AI Code Review 进入混合架构时代：Alibaba open-cod | 5 个深度分析 |
 | [2026-06-05](daily/2026-06-05.md) | Agent Skill 从手工编写进化为可训练优化：Microsoft Skil | 5 个深度分析 |
 | [2026-06-03](daily/2026-06-03.md) | Agent 运行时安全沙箱成新赛道：NVIDIA OpenShell 6.6K  | 5 个深度分析 |
 | [2026-06-02](daily/2026-06-02.md) | AI Agent 上下文压缩赛道浮现：Headroom 4K(+1.5K/wee | 9 个深度分析 |
 | [2026-06-01](daily/2026-06-01.md) | Code Knowledge Graph 赛道爆发：Understand-Any | 5 个深度分析 |
 | [2026-05-31](daily/2026-05-31.md) | AI Taste 元趋势爆发：taste-skill 29K + stop-sl | 8 个深度分析 |
-| [2026-05-30](daily/2026-05-30.md) | Code Knowledge Graph 双雄争霸：Understand-Any | 8 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **AI Code Review 进入混合架构时代：Alibaba open-code-review 2.7K 采用确定性工程 + Agent 混合设计，阿里内部两年验证数万开发者，精确行级定位**：相关项目 open-code-review, clawpatch, kimi-code。
-2. **Agent Memory 分层操作系统化：Memory OS 869 stars 提出 7 层记忆架构（Workspace → Session → Structured → Fabric → Vector → Wiki → Context Injection），Qdrant + SQLite FTS5 混合检索**：相关项目 memory-os, mempalace。
-3. **本地优先运动从软件延伸到硬件：OpenLogi 4K 用 Rust 替代 Logitech Options+，Goose 2.1K 本地 WHOOP 健康数据，Skylight RTL-SDR 飞机追踪**：相关项目 openlogi, goose, skylight。
-4. **自托管团队 Agent 平台化：Paradigm Centaur 718 stars Slack 原生 + K8s 沙箱 + 工具插件 + 持久工作流，iron-proxy 凭据隔离**：相关项目 centaur, butterbase, odysseus。
-5. **Coding Agent CLI 竞争新格局：Moonshot Kimi Code 1.9K 单二进制 + 视频输入 + MCP 原生配置，进入 Claude Code / OpenCode 竞争序列**：相关项目 kimi-code, open-code-review。
+1. **Agent 多源感知基础设施化：跨平台信号聚合（Reddit/X/YouTube/TikTok/Polymarket）成为 Agent Skill 新赛道，last30days-skill 和 Agent-Reach 代表了 Agent 获取外部世界数据的两条路径**：相关项目 last30days-skill, agent-reach, mempalace。
+2. **AI Memory 本地优先成熟化：MemPalace 以 96.6% R@5 证明本地向量检索已可替代云端方案，MCP 协议接入 + 29 个工具 + 多后端可插拔**：相关项目 mempalace, agentscope。
+3. **代码执行沙箱进入操作系统级：Microsoft MXC 跨平台策略驱动隔离容器，从 processcontainer 到 microvm 多后端，统一 JSON Schema 配置**：相关项目 mxc, agentgateway。
+4. **Agent 终端多路复用器新物种：herdr 4.7K tmux 持久化 + GUI 状态感知，250 stars/天，解决多 Agent 并行编排痛点**：相关项目 herdr, multica-ai。
+5. **HTML 原生视频渲染 Agent 化：HyperFrames 25K 用 HTML+CSS 替代 React 组件路线，Agent 可直接生成视频内容**：相关项目 hyperframes, open-notebook。
 
 ---
 
@@ -63,9 +63,9 @@
 
 ## 数据统计
 
-- 📊 项目档案：183 个
-- 📅 日报总数：60 期
-- 🔄 最近更新：2026-06-06
+- 📊 项目档案：185 个
+- 📅 日报总数：61 期
+- 🔄 最近更新：2026-06-07
 
 ---
 

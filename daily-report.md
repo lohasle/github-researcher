@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-06-07
+
+**核心主题：** Agent 多源感知基础设施化（last30days-skill 跨平台信号聚合 + Agent-Reach 零 API 费全网读取）· AI Memory 本地优先成熟化（MemPalace 96.6% R@5 零 API 调用）· 代码执行沙箱进入 OS 级（Microsoft MXC 跨平台策略驱动隔离）· Agent 终端多路复用器新物种（herdr 4.7K +250/天）· HTML 原生视频渲染 Agent 化（HyperFrames 25K Agent 友好确定性 MP4）
+
+**关键项目：**
+- 🔎 last30days-skill (new) — Agent 跨平台搜索 Skill，实体感知路由 + 10+ 平台信号聚合
+- 🧠 MemPalace (持续高热) — 本地优先 AI 记忆，96.6% R@5 基准 + MCP 29 工具
+- 🛡️ Microsoft MXC (557) — 跨平台沙箱执行，策略驱动多后端统一抽象
+- 🔀 herdr (4.7K, +250/天) — Agent 终端多路复用器，tmux + GUI 混合体
+- 🎬 HyperFrames (25K, +257/天) — HTML 原生视频渲染，Agent 友好确定性 MP4
+
+---
+
 ## 2026-06-06
 
 **核心主题：** AI Code Review 进入混合架构时代（Alibaba open-code-review 2.7K 确定性流水线 + Agent 决策）· Agent Memory 分层操作系统化（Memory OS 869 stars 7 层架构 + Qdrant 向量记忆）· 本地优先运动席卷硬件外设（OpenLogi 4K 替代 Logitech Options+）· 自托管团队 Agent 平台化（Paradigm Centaur 718 K8s 沙箱 + Slack 原生）· Coding Agent CLI 新格局（Moonshot Kimi Code 1.9K 单二进制）

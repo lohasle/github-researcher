@@ -4,13 +4,13 @@ slug: "oh-my-pi"
 date_added: "2026-05-29"
 category: "工具型"
 emoji: "⌨️"
-stars: "8.7K stars"
+stars: "11K stars"
 stars_delta: "+2.3K/week"
 language: "TypeScript / Rust"
-score: 88
-tags: ["Coding Agent", "终端", "LSP", "DAP", "Rust", "IDE化"]
+score: 87
+tags: ["Coding Agent", "终端", "LSP", "DAP", "Rust", "IDE化", "Hash-Anchored-Edits"]
 url: "https://github.com/can1357/oh-my-pi"
-last_seen_date: "2026-06-02"
+last_seen_date: "2026-06-08"
 ---
 
 # oh-my-pi
@@ -23,11 +23,12 @@ last_seen_date: "2026-06-02"
 
 目标用户：偏好终端工作流的开发者，尤其是远程开发、SSH 场景。
 
-## 为什么值得关注（2026-05-29）
+## 为什么值得关注（2026-06-08）
 1. Hash-Anchored Edits 将 Grok Code Fast 1 通过率从 6.7% 提升到 68.3%，是编辑精度的数量级提升
 2. 持久 Python + Bun Worker，Agent 内部可回调自身工具，形成闭环
 3. LSP/DAP 全集成，终端 Agent 首次具备与 IDE 等价的代码理解和调试能力
-4. 本周 +2.5K，8.2K 总量，增速健康
+4. **2026-06-08 持续高热**：8.7K → 11K（+2.3K/week），周榜持续上榜
+5. 369 个 open issues 反映了真实活跃用户基础
 
 ## 热度来源判断
 - **真实性高。** 技术深度足够（27K 行 Rust 核心），不是简单包装
@@ -52,9 +53,10 @@ last_seen_date: "2026-06-02"
 
 ## 风险/局限/泡沫点
 1. 依赖 Pi 的 fork，维护负担
-2. 8.2K 对终端 Agent 来说不够大，需要更多真实用户验证
+2. 11K 对终端 Agent 来说仍不够大，需要更多真实用户验证
 3. LSP/DAP 内置意味着每个 LSP server 需要自行管理，复杂度高
 4. 与 Cursor / VS Code 的 Agent 集成竞争，市场空间可能有限
+5. Claude Code 官方快速迭代可能查食其差异化优势
 
 ## 与同类项目的关系
 - **vs Claude Code CLI**：oh-my-pi 更底层，内置更多 IDE 能力
@@ -69,3 +71,14 @@ last_seen_date: "2026-06-02"
 2. LSP/DAP 内置的稳定性
 3. 与 OpenAI Codex / Claude Code 的竞争态势
 4. 是否会发展出自己的插件/扩展生态
+5. 11K 后的增长趋势和商业化路径
+
+---
+
+## 更新记录
+
+### 2026-06-08
+- Stars: 8.7K → 11K（+2.3K/week）
+- Score: 88 → 87（微调，竞争加剧）
+- 369 个 open issues 说明用户基数活跃
+- 持续判断：终端 Agent IDE 化是明确趋势

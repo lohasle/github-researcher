@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-06-08
+
+**核心主题：** Agent Skill 生态核聚变（ECC 209K + hermes-agent 185K + taste-skill 36K 同屏霸榜，Compound Engineering 进入基础设施阶段）· Token 压缩基础设施化（headroom 一周 4.1K→16.8K +300%）· PostgreSQL 成为 Agent 运行时（微软 pg_durable Durable Execution 原生嵌入）· 向量检索 SIMD 新世代（turbovec 日增 1,533 stars 全网第一）· Agentic Backend Platform 浮现（InsForge 11.5K MCP-first 全栈后端）
+
+**关键项目：**
+- 🗜️ headroom (16.8K, +300%/周) — Agent Token 压缩基础设施，从优化变为标配
+- ⚡ turbovec (7K, +1,533/天) — Rust SIMD 向量索引，全网日增速第一
+- 🐘 pg_durable (1.4K, new) — 微软 PostgreSQL Durable Execution 扩展
+- 🏗️ InsForge (11.5K, new) — 面向 Coding Agent 的 MCP-first 全栈后端
+- ⌨️ oh-my-pi (11K, +2.3K/周) — 终端 AI Coding Agent 持续高热
+
+---
+
 ## 2026-06-07
 
 **核心主题：** Agent 多源感知基础设施化（last30days-skill 跨平台信号聚合 + Agent-Reach 零 API 费全网读取）· AI Memory 本地优先成熟化（MemPalace 96.6% R@5 零 API 调用）· 代码执行沙箱进入 OS 级（Microsoft MXC 跨平台策略驱动隔离）· Agent 终端多路复用器新物种（herdr 4.7K +250/天）· HTML 原生视频渲染 Agent 化（HyperFrames 25K Agent 友好确定性 MP4）

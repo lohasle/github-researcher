@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-06-07'
+last_updated: '2026-06-08'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,38 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-06-08（第五十二版）
+
+### Agent Skill 生态核聚变 · Token 压缩基础设施化 · PostgreSQL 作为 Agent 运行时 · 向量检索 SIMD 新世代 · Agentic Backend Platform 浮现
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agent Skill 生态核聚变 | ecc, hermes-agent, taste-skill, impeccable, compound-engineering-plugin | 92 |
+| 2 | Token 压缩基础设施化 | headroom, turbovec | 89 |
+| 3 | 向量检索 SIMD 新世代 | turbovec | 86 |
+| 4 | PostgreSQL 作为 Agent 运行时 | pg-durable, insforge | 85 |
+| 5 | Agentic Backend Platform 浮现 | insforge, copilotkit | 84 |
+
+#### 新增项目
+
+| 项目 | Stars | 分类 | 首次出现 |
+|------|-------|------|----------|
+| pg-durable | ~1.4K | 基础设施候选 | 2026-06-08 |
+| insforge | ~11.5K | 平台候选 | 2026-06-08 |
+
+#### 持续跟踪更新
+
+- headroom: 4.1K → 16.8K（+300%！周增长核爆，Token 压缩从优化变为基础设施）
+- turbovec: 3.4K → 7K（+1,533/天 全网日增速第一，翻倍仅用 10 天）
+- oh-my-pi: 8.7K → 11K（持续高热，终端 Agent IDE 化趋势验证）
+- ecc: 188K → 209K（+10K/week，Agent Harness 持续霸榜）
+- hermes-agent: ~149K → 185K（+11K/week，自进化 Agent 持续高增长）
+- taste-skill: 29K → 36K（+6K/week，AI 品味 Skill 持续高热）
+
+---
 
 ## 2026-06-07（第五十一版）
 

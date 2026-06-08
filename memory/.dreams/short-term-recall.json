@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-07T19:00:20.127Z",
+  "updatedAt": "2026-06-08T19:00:20.621Z",
   "entries": {
     "memory:memory/.dreams/session-corpus/2026-04-13.txt:1:1": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-13.txt:1:1",
@@ -24571,6 +24571,546 @@
         "projects/mempalace.md",
         "indexes/trend-index.md",
         "daily-report.md"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: Git pull 暂时失败（TLS），先继续研究，稍后重试。Phase 1 验证通过，进入 Phase 3。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-08T19:00:18.247Z",
+      "lastRecalledAt": "2026-06-08T19:00:18.247Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-09",
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "git",
+        "pull",
+        "暂时",
+        "失败",
+        "tls",
+        "继续",
+        "研究",
+        "phase"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: gh 可用。开始采集 GitHub Trending 数据：",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-08T19:00:18.247Z",
+      "lastRecalledAt": "2026-06-08T19:00:18.247Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-09",
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "可用",
+        "开始",
+        "采集",
+        "github",
+        "trending",
+        "数据"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: Now let me get details on the top trending projects using `gh` and check the latest daily report format:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-08T19:00:18.247Z",
+      "lastRecalledAt": "2026-06-08T19:00:18.247Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-09",
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "now",
+        "let",
+        "get",
+        "details",
+        "top",
+        "trending",
+        "projects",
+        "check"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: Now I have enough data. Let me create the daily report and project profiles. Starting with the daily MD:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-08T19:00:18.247Z",
+      "lastRecalledAt": "2026-06-08T19:00:18.247Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-09",
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "now",
+        "enough",
+        "data",
+        "let",
+        "create",
+        "report",
+        "project",
+        "profiles"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: Now Phase 4 — create new project profiles and update existing ones:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-08T19:00:18.247Z",
+      "lastRecalledAt": "2026-06-08T19:00:18.247Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-09",
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "now",
+        "phase",
+        "create",
+        "new",
+        "project",
+        "profiles",
+        "update",
+        "existing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: Now update existing project profiles:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-08T19:00:18.247Z",
+      "lastRecalledAt": "2026-06-08T19:00:18.247Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-09",
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "now",
+        "update",
+        "existing",
+        "project",
+        "profiles"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: Phase 4 complete. Now Phase 5 — cascade sync:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-08T19:00:18.247Z",
+      "lastRecalledAt": "2026-06-08T19:00:18.247Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-09",
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "phase",
+        "complete",
+        "now",
+        "cascade",
+        "sync"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: ### 5.1 Update trend-index.md",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-08T19:00:18.247Z",
+      "lastRecalledAt": "2026-06-08T19:00:18.247Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-09",
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "5.1",
+        "trend-index.md",
+        "update",
+        "trend",
+        "index.md"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: ### 5.2 更新 daily-report.md",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-08T19:00:18.247Z",
+      "lastRecalledAt": "2026-06-08T19:00:18.247Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-09",
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "5.2",
+        "daily-report.md",
+        "更新",
+        "report.md"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: ### 5.3 Generate README",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-08T19:00:18.247Z",
+      "lastRecalledAt": "2026-06-08T19:00:18.247Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-09",
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "5.3",
+        "generate",
+        "readme"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: ### 5.4 Generate HTML pages",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-08T19:00:18.247Z",
+      "lastRecalledAt": "2026-06-08T19:00:18.247Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-09",
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "5.4",
+        "generate",
+        "html",
+        "pages"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: ### 5.5 Verify generated files",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-08T19:00:18.247Z",
+      "lastRecalledAt": "2026-06-08T19:00:18.247Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-09",
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "5.5",
+        "verify",
+        "generated"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: All files are non-empty. Now Phase 6 — final validation:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-08T19:00:18.247Z",
+      "lastRecalledAt": "2026-06-08T19:00:18.247Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-09",
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "non-empty",
+        "all",
+        "non",
+        "empty",
+        "now",
+        "phase",
+        "final",
+        "validation"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: validate.py 通过（0 errors, 0 warnings）。开始 Git 操作：",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-08T19:00:18.247Z",
+      "lastRecalledAt": "2026-06-08T19:00:18.247Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-09",
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "validate.py",
+        "通过",
+        "errors",
+        "warnings",
+        "开始",
+        "git",
+        "操作"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: Proxy 是问题根源。Git pull 成功，本地已是最新。现在提交并推送：",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-08T19:00:18.247Z",
+      "lastRecalledAt": "2026-06-08T19:00:18.247Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-09",
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "proxy",
+        "问题",
+        "根源",
+        "git",
+        "pull",
+        "成功",
+        "本地",
+        "已是"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: Push 成功！",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-08T19:00:18.247Z",
+      "lastRecalledAt": "2026-06-08T19:00:18.247Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-09",
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "push",
+        "成功"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: ## 执行报告 ### validate 结果 - Phase 1: ✅ 通过（0 errors, 0 warnings, 61 dailies, 185 projects） - Phase 2: 无需修复（无 gaps） - Phase 6: ✅ 通过（0 errors, 0 warnings, 62 dailies, 187 projects） ### 今日研究 - **日期**: 2026-06-08 - **分析项目数**: 28 - **新增项目档案**: pg-durable, insforge - **更新项目档案**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-08T19:00:18.247Z",
+      "lastRecalledAt": "2026-06-08T19:00:18.247Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-09",
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "pg-durable",
+        "执行",
+        "报告",
+        "validate",
+        "结果",
+        "phase",
+        "通过",
+        "errors"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: 绕过本地代理 TLS 问题） ### 操作详情 - ✅ 使用 gh CLI 获取 GitHub 数据 - ✅ 使用 web_fetch 采集 GitHub Trending（daily + weekly + Python + TypeScript） - ✅ 新增 2 个项目档案（pg-durable, insforge） - ✅ 更新 3 个项目档案（headroom, turbovec, oh-my-pi） - ✅ 更新 trend-index.md（第五十二版） - ✅ 更新 daily-report.md - ✅ 运行 gen",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-08T19:00:18.247Z",
+      "lastRecalledAt": "2026-06-08T19:00:18.247Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-09",
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "web-fetch",
+        "pg-durable",
+        "oh-my-pi",
+        "trend-index.md",
+        "daily-report.md",
+        "本地",
+        "代理",
+        "tls"
       ]
     }
   }

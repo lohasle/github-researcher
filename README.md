@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-06-08）
+## 最新研究摘要（2026-06-09）
 
-**Agent Skill 生态核聚变：ECC 209K + hermes-agent 185K + taste-skill 36K 同屏霸榜，Compound Engineering 从概念进入基础设施阶段 · Token 压缩基础设施化：headroom 一周 4.1K→16.8K +300% 增长 · PostgreSQL 成为 Agent 运行时：微软 pg_durable 将 Durable Execution 原生嵌入数据库 · 向量检索 SIMD 新世代：turbovec 日增 1,533 stars 登顶日增速第一 · Agentic Backend Platform 浮现：InsForge 11.5K 为 Coding Agent 提供全栈后端**
+**Coding Agent 工具链基础设施化：cc-switch 95K + codegraph 44.8K + oh-my-pi 11.3K，Agent IDE 化加速 · NVIDIA OpenShell 定义 Agent 安全会话运行时 · AI Memory 基础设施竞争白热化：supermemory 26K vs MemPalace · 语音 AI 全栈爆发：VoxCPM 27.7K + Open-LLM-VTuber 10.5K + FunASR 17.5K**
 
 今日热榜新信号：
-- **headroom**（16.8K stars）：AI Agent 上下文压缩层，60-95% Token 节省，一周 +300% 增长
-- **turbovec**（7K stars）：Rust + TurboQuant 向量索引库，日增 1,533 stars 全网第一
-- **microsoft/pg_durable**（1.4K stars）：微软 PostgreSQL Durable Execution 扩展，将工作流引擎原生嵌入数据库
+- **codegraph**（44.8K stars）：预索引代码知识图谱，为 Coding Agent 减少调用次数和 token
+- **cc-switch**（95.1K stars）：跨平台桌面 All-in-One 助手，统一管理 Claude Code/Codex/Hermes/OpenCode
+- **supermemory**（26.2K stars）：AI 时代的 Memory API 引擎，快速可扩展
 
+**→ [查看 2026-06-09 完整简报](daily/2026-06-09.md)**
 **→ [查看 2026-06-08 完整简报](daily/2026-06-08.md)**
 **→ [查看 2026-06-07 完整简报](daily/2026-06-07.md)**
 **→ [查看 2026-06-06 完整简报](daily/2026-06-06.md)**
-**→ [查看 2026-06-05 完整简报](daily/2026-06-05.md)**
 
 ---
 
@@ -24,23 +24,23 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-06-09](daily/2026-06-09.md) | Coding Agent 工具链基础设施化：cc-switch 95K + co | 5 个深度分析 |
 | [2026-06-08](daily/2026-06-08.md) | Agent Skill 生态核聚变：ECC 209K + hermes-agen | 5 个深度分析 |
 | [2026-06-07](daily/2026-06-07.md) | Agent 多源感知基础设施化：last30days-skill 跨平台信号聚合 | 5 个深度分析 |
 | [2026-06-06](daily/2026-06-06.md) | AI Code Review 进入混合架构时代：Alibaba open-cod | 5 个深度分析 |
 | [2026-06-05](daily/2026-06-05.md) | Agent Skill 从手工编写进化为可训练优化：Microsoft Skil | 5 个深度分析 |
 | [2026-06-03](daily/2026-06-03.md) | Agent 运行时安全沙箱成新赛道：NVIDIA OpenShell 6.6K  | 5 个深度分析 |
 | [2026-06-02](daily/2026-06-02.md) | AI Agent 上下文压缩赛道浮现：Headroom 4K(+1.5K/wee | 9 个深度分析 |
-| [2026-06-01](daily/2026-06-01.md) | Code Knowledge Graph 赛道爆发：Understand-Any | 5 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **Agent Skill 生态核聚变：ECC/hermes-agent/taste-skill/impeccable/compound-engineering-plugin 同屏霸榜，Skill 数量爆炸性增长标志着 Compound Engineering 从概念进入基础设施阶段**：相关项目 ecc, hermes-agent, taste-skill。
-2. **Token 压缩基础设施化：headroom 一周 +300% 增长（4.1K→16.8K），上下文工程成为 Agent 栈的独立基础设施层**：相关项目 headroom, turbovec。
-3. **PostgreSQL 作为 Agent 运行时：微软 pg_durable 将 Durable Execution 原生嵌入 PG，消除外部编排器需求**：相关项目 pg-durable, insforge。
-4. **向量检索 SIMD 新世代：turbovec 日增 1,533 stars 全网第一，Rust + TurboQuant + AVX-512/NEON 手写内核**：相关项目 turbovec。
-5. **Agentic Backend Platform 浮现：InsForge 11.5K 为 Coding Agent 提供 DB/Auth/Storage/Compute/Hosting/AI Gateway 全栈后端**：相关项目 insforge, copilotkit。
+1. **Coding Agent 工具链基础设施化：cc-switch 95K 多 Agent 管理器 + codegraph 44.8K 代码知识图谱 + oh-my-pi 11.3K 终端 Agent，三层工具栈成型**：相关项目 cc-switch, codegraph, oh-my-pi。
+2. **AI Memory 基础设施竞争白热化：supermemory 26K Memory API + MemPalace 开源记忆系统 + open-notebook 28K NotebookLM 替代，Agent 记忆层进入战国时代**：相关项目 supermemory, mempalace, open-notebook。
+3. **语音 AI 全栈爆发：VoxCPM 27.7K 无 Tokenizer TTS + Open-LLM-VTuber 10.5K 语音交互 VTuber + FunASR 17.5K 工业级 ASR，语音不再是附加功能而是独立赛道**：相关项目 voxcpm, open-llm-vtuber, funasr。
+4. **Agent 安全运行时浮出水面：NVIDIA OpenShell 6.9K 定义安全沙箱 + anthropic sandbox-runtime 4.4K 进程级隔离，Agent 安全成为基础设施层**：相关项目 nvidia-openshell, sandbox-runtime。
+5. **Agent 调研与信息聚合 Skill 成熟：last30days-skill 34.3K 跨平台调研 + Agent-Reach 24K 零 API 费网络搜索，信息获取层被 Skill 化**：相关项目 last30days-skill, agent-reach。
 
 ---
 
@@ -63,9 +63,9 @@
 
 ## 数据统计
 
-- 📊 项目档案：187 个
-- 📅 日报总数：62 期
-- 🔄 最近更新：2026-06-08
+- 📊 项目档案：188 个
+- 📅 日报总数：63 期
+- 🔄 最近更新：2026-06-09
 
 ---
 

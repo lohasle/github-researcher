@@ -4,8 +4,8 @@ slug: "supermemory"
 date_added: "2026-06-03"
 category: "平台候选"
 emoji: "🧠"
-stars: "24.6K stars"
-stars_delta: "+677/day, +1.2K/week, TypeScript 实现"
+stars: "26.2K stars"
+stars_delta: "周增 +2,924 stars"
 language: "TypeScript"
 score: 82
 tags: ["memory", "ai-memory", "agent-infrastructure", "api", "vector-database"]

@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-06-08'
+last_updated: '2026-06-09'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,37 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-06-09（第五十三版）
+
+### Coding Agent 工具链基础设施化 · AI Memory 基础设施竞争白热化 · 语音 AI 全栈爆发 · Agent 安全运行时浮出水面 · Agent 调研 Skill 成熟
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Coding Agent 工具链基础设施化 | cc-switch, codegraph, oh-my-pi | 90 |
+| 2 | AI Memory 基础设施竞争白热化 | supermemory, mempalace, open-notebook | 88 |
+| 3 | 语音 AI 全栈爆发 | voxcpm, open-llm-vtuber, funasr | 86 |
+| 4 | Agent 安全运行时浮出水面 | nvidia-openshell, sandbox-runtime | 85 |
+| 5 | Agent 调研 Skill 成熟 | last30days-skill, agent-reach | 82 |
+
+#### 新增项目
+
+| 项目 | Stars | 分类 | 首次出现 |
+|------|-------|------|----------|
+| nvidia-openshell | 6.9K | 基础设施候选 | 2026-06-09 |
+
+#### 持续跟踪更新
+
+- cc-switch: 68K → 95.1K（周增 +7.9K，Agent 管理层持续爆发）
+- codegraph: 35.3K → 44.8K（周增 +8.7K，代码知识图谱被市场验证）
+- supermemory: 24.6K → 26.2K（周增 +2.9K，Memory API 竞争加剧）
+- voxcpm: 24.2K → 27.7K（周增 +4.3K，Tokenizer-Free TTS 持续高热）
+- ecc: 209K → 210.7K（高位稳定，Agent Harness 事实标准）
+- hermes-agent: 185K → 187.3K（高位稳定，自进化 Agent）
+- headroom: 16.8K → 18.7K（周增 +14.3K，Token 压缩基础设施化持续）
+- markitdown: ~135K → 148.4K（周增 +13.4K，文件转换基础设施）
 
 ## 2026-06-08（第五十二版）
 

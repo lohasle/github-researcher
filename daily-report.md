@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-06-09
+
+**核心主题：** Coding Agent 工具链基础设施化（cc-switch 95K 多 Agent 管理 + codegraph 44.8K 代码知识图谱 + oh-my-pi 11.3K 终端 Agent，三层工具栈成型）· AI Memory 基础设施竞争白热化（supermemory 26K vs MemPalace vs open-notebook 28K，Memory API 进入战国时代）· 语音 AI 全栈爆发（VoxCPM 27.7K + Open-LLM-VTuber 10.5K + FunASR 17.5K）· Agent 安全运行时浮出水面（NVIDIA OpenShell 6.9K + Anthropic sandbox-runtime 4.4K）· Agent 调研 Skill 成熟（last30days-skill 34.3K + Agent-Reach 24K）
+
+**关键项目：**
+- 🕸️ codegraph (44.8K, +8.7K/周) — 代码知识图谱预索引，Coding Agent 优化层
+- 🔀 cc-switch (95.1K, +7.9K/周) — 跨平台多 Coding Agent 统一管理
+- 🧠 supermemory (26.2K, +2.9K/周) — AI 时代 Memory API 引擎
+- 🛡️ NVIDIA OpenShell (6.9K, new) — Agent 安全会话运行时，Rust 实现
+- 🎤 VoxCPM (27.7K, +4.3K/周) — 无 Tokenizer 多语言 TTS
+
+---
+
 ## 2026-06-08
 
 **核心主题：** Agent Skill 生态核聚变（ECC 209K + hermes-agent 185K + taste-skill 36K 同屏霸榜，Compound Engineering 进入基础设施阶段）· Token 压缩基础设施化（headroom 一周 4.1K→16.8K +300%）· PostgreSQL 成为 Agent 运行时（微软 pg_durable Durable Execution 原生嵌入）· 向量检索 SIMD 新世代（turbovec 日增 1,533 stars 全网第一）· Agentic Backend Platform 浮现（InsForge 11.5K MCP-first 全栈后端）

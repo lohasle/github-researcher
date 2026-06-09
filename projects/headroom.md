@@ -5,12 +5,12 @@ date_added: "2026-06-02"
 last_seen_date: "2026-06-02"
 category: "AI Infra"
 emoji: "🗜️"
-stars: "16.8K stars"
-stars_delta: "+13.3K/week（+300%!），爆发式增长"
+stars: "20.4K stars"
+stars_delta: "周增 14,266（全网周增速第一）"
 score: 90
 tags: ["token-optimization", "context-compression", "mcp", "agent-infrastructure", "context-engineering"]
 url: "https://github.com/chopratejas/headroom"
-last_seen_date: "2026-06-08"
+last_seen_date: "2026-06-10"
 ---
 
 # Headroom — AI Agent 上下文压缩层

@@ -4,13 +4,13 @@ slug: "turbovec"
 date_added: "2026-05-29"
 category: "基础设施候选"
 emoji: "⚡"
-stars: "7K stars"
-stars_delta: "+1,533/天（日增速全网第一）"
+stars: "10.1K stars"
+stars_delta: "周增 4,283，日增 ~1,800"
 language: "Rust / Python"
-score: 85
+score: 88
 tags: ["向量索引", "Rust", "SIMD", "量化", "RAG", "TurboQuant", "FAISS替代"]
 url: "https://github.com/RyanCodrai/turbovec"
-last_seen_date: "2026-06-08"
+last_seen_date: "2026-06-10"
 ---
 
 # turbovec

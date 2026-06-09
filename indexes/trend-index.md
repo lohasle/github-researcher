@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-06-09'
+last_updated: '2026-06-10'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,40 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-06-10（第五十四版）
+
+### LLM Token 压缩基础设施化 · Agent Skill 从碎片化到平台化 · 开源知识管理双赛道分化 · 本地 LLM 选型工具链成熟 · Agent 信息获取层基础设施化
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | LLM Token 压缩基础设施化 | headroom, turbovec | 91 |
+| 2 | Agent Skill 从碎片化到平台化 | ecc, taste-skill, impeccable, harness | 87 |
+| 3 | 开源知识管理双赛道分化 | tolaria, open-notebook | 85 |
+| 4 | 本地 LLM 选型工具链成熟 | whichllm, career-ops | 82 |
+| 5 | Agent 信息获取层基础设施化 | last30days-skill, agent-reach | 80 |
+
+#### 新增项目
+
+| 项目 | Stars | 分类 | 首次出现 |
+|------|-------|------|----------|
+| tolaria | 14.3K | 工具型 | 2026-06-10 |
+| whichllm | 4K | 工具型 | 2026-06-10 |
+| career-ops | 51.5K | 工具型 | 2026-06-10 |
+
+#### 持续跟踪更新
+
+- headroom: 16.8K → 20.4K（周增 14,266，全网周增速第一，Token 压缩基础设施化）
+- turbovec: 7K → 10.1K（周增 4,283，Rust SIMD 向量索引持续高热）
+- ecc: 210.7K → 211.8K（高位稳定，Agent Harness 层）
+- hermes-agent: 187.3K → 188.7K（高位稳定，周增 11,747）
+- markitdown: 148.4K → 149.3K（周增 11,177，文件转换基础设施）
+- taste-skill: 36K → 39.5K（周增 7,597，AI 品质控制）
+- impeccable: 33K → 36.8K（周增 3,736，AI 设计语言）
+- last30days-skill: 34.3K → 37.1K（周增 6,616，跨平台调研）
+- agent-reach: 24K → 25.5K（周增 3,006，Agent 网络搜索）
 
 ## 2026-06-09（第五十三版）
 

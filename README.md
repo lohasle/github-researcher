@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-06-09）
+## 最新研究摘要（2026-06-10）
 
-**Coding Agent 工具链基础设施化：cc-switch 95K + codegraph 44.8K + oh-my-pi 11.3K，Agent IDE 化加速 · NVIDIA OpenShell 定义 Agent 安全会话运行时 · AI Memory 基础设施竞争白热化：supermemory 26K vs MemPalace · 语音 AI 全栈爆发：VoxCPM 27.7K + Open-LLM-VTuber 10.5K + FunASR 17.5K**
+**LLM Token 压缩从优化变基础设施：headroom 20.4K 周增 14K 登顶周榜 · 向量索引 Rust 化加速：turbovec 10K 日增 1.8K 超越 FAISS · Agent Skill 碎片化到平台化：ECC 211K + taste-skill 39.5K + impeccable 36.8K 同场竞争 · 开源知识管理觉醒：tolaria 14.3K Git-first + open-notebook 28.5K 双赛道**
 
 今日热榜新信号：
-- **codegraph**（44.8K stars）：预索引代码知识图谱，为 Coding Agent 减少调用次数和 token
-- **cc-switch**（95.1K stars）：跨平台桌面 All-in-One 助手，统一管理 Claude Code/Codex/Hermes/OpenCode
-- **supermemory**（26.2K stars）：AI 时代的 Memory API 引擎，快速可扩展
+- **headroom**（20.4K stars）：Agent Token 压缩基础设施，60-95% token 减少，Library/Proxy/MCP 三模式
+- **turbovec**（10.1K stars）：Rust 向量索引，基于 TurboQuant 算法，内存降 8 倍，搜索速度超 FAISS
+- **tolaria**（14.3K stars）：Git-first / Offline-first 的 Markdown 知识管理桌面应用，Tauri + React
 
+**→ [查看 2026-06-10 完整简报](daily/2026-06-10.md)**
 **→ [查看 2026-06-09 完整简报](daily/2026-06-09.md)**
 **→ [查看 2026-06-08 完整简报](daily/2026-06-08.md)**
 **→ [查看 2026-06-07 完整简报](daily/2026-06-07.md)**
-**→ [查看 2026-06-06 完整简报](daily/2026-06-06.md)**
 
 ---
 
@@ -24,23 +24,23 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-06-10](daily/2026-06-10.md) | LLM Token 压缩从优化变基础设施：headroom 20.4K 周增 1 | 5 个深度分析 |
 | [2026-06-09](daily/2026-06-09.md) | Coding Agent 工具链基础设施化：cc-switch 95K + co | 5 个深度分析 |
 | [2026-06-08](daily/2026-06-08.md) | Agent Skill 生态核聚变：ECC 209K + hermes-agen | 5 个深度分析 |
 | [2026-06-07](daily/2026-06-07.md) | Agent 多源感知基础设施化：last30days-skill 跨平台信号聚合 | 5 个深度分析 |
 | [2026-06-06](daily/2026-06-06.md) | AI Code Review 进入混合架构时代：Alibaba open-cod | 5 个深度分析 |
 | [2026-06-05](daily/2026-06-05.md) | Agent Skill 从手工编写进化为可训练优化：Microsoft Skil | 5 个深度分析 |
 | [2026-06-03](daily/2026-06-03.md) | Agent 运行时安全沙箱成新赛道：NVIDIA OpenShell 6.6K  | 5 个深度分析 |
-| [2026-06-02](daily/2026-06-02.md) | AI Agent 上下文压缩赛道浮现：Headroom 4K(+1.5K/wee | 9 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **Coding Agent 工具链基础设施化：cc-switch 95K 多 Agent 管理器 + codegraph 44.8K 代码知识图谱 + oh-my-pi 11.3K 终端 Agent，三层工具栈成型**：相关项目 cc-switch, codegraph, oh-my-pi。
-2. **AI Memory 基础设施竞争白热化：supermemory 26K Memory API + MemPalace 开源记忆系统 + open-notebook 28K NotebookLM 替代，Agent 记忆层进入战国时代**：相关项目 supermemory, mempalace, open-notebook。
-3. **语音 AI 全栈爆发：VoxCPM 27.7K 无 Tokenizer TTS + Open-LLM-VTuber 10.5K 语音交互 VTuber + FunASR 17.5K 工业级 ASR，语音不再是附加功能而是独立赛道**：相关项目 voxcpm, open-llm-vtuber, funasr。
-4. **Agent 安全运行时浮出水面：NVIDIA OpenShell 6.9K 定义安全沙箱 + anthropic sandbox-runtime 4.4K 进程级隔离，Agent 安全成为基础设施层**：相关项目 nvidia-openshell, sandbox-runtime。
-5. **Agent 调研与信息聚合 Skill 成熟：last30days-skill 34.3K 跨平台调研 + Agent-Reach 24K 零 API 费网络搜索，信息获取层被 Skill 化**：相关项目 last30days-skill, agent-reach。
+1. **LLM Token 压缩基础设施化加速：headroom 20.4K 周增 14,266 全网第一，从可选优化变为 Agent 标配层**：相关项目 headroom, turbovec。
+2. **Agent Skill 生态从碎片化走向平台化：ECC 211K + taste-skill 39.5K + impeccable 36.8K + harness 6.7K，质量分层开始出现**：相关项目 ecc, taste-skill, impeccable。
+3. **开源知识管理双赛道分化：tolaria 14.3K Git-first 本地优先 vs open-notebook 28.5K NotebookLM 替代，AI 时代的 PKM 格局重塑**：相关项目 tolaria, open-notebook。
+4. **本地 LLM 选型工具链成熟：whichllm 4K 证据驱动硬件匹配 + career-ops 51.5K AI 求职系统，AI 正在重塑个人效率工具全栈**：相关项目 whichllm, career-ops。
+5. **Agent 信息获取层基础设施化：last30days-skill 37.1K + Agent-Reach 25.5K，跨平台调研能力成为 Agent 标配**：相关项目 last30days-skill, agent-reach。
 
 ---
 
@@ -63,9 +63,9 @@
 
 ## 数据统计
 
-- 📊 项目档案：188 个
-- 📅 日报总数：63 期
-- 🔄 最近更新：2026-06-09
+- 📊 项目档案：191 个
+- 📅 日报总数：64 期
+- 🔄 最近更新：2026-06-10
 
 ---
 

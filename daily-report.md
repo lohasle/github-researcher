@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-06-10
+
+**核心主题：** LLM Token 压缩基础设施化（headroom 20.4K 周增 14,266 全网第一，从优化变标配）· Agent Skill 从碎片化到平台化（ECC 211K + taste-skill 39.5K + impeccable 36.8K，质量分层出现）· 开源知识管理双赛道分化（tolaria 14.3K Git-first vs open-notebook 28.5K NotebookLM 替代）· 本地 LLM 选型工具链成熟（whichllm 4K 证据驱动匹配 + career-ops 51.5K AI 求职）· Agent 信息获取层基础设施化（last30days-skill 37.1K + Agent-Reach 25.5K）
+
+**关键项目：**
+- 🗜️ headroom (20.4K, 周增 14,266 全网第一) — Agent Token 压缩基础设施
+- ⚡ turbovec (10.1K, 周增 4,283) — Rust SIMD 向量索引，超 FAISS
+- 📚 tolaria (14.3K, 日增 821) — Git-first Markdown 知识管理
+- 🎯 whichllm (4K, 日增 631) — 本地 LLM 硬件匹配
+- 💼 career-ops (51.5K, 日增 1,114) — AI 求职系统
+
+---
+
 ## 2026-06-09
 
 **核心主题：** Coding Agent 工具链基础设施化（cc-switch 95K 多 Agent 管理 + codegraph 44.8K 代码知识图谱 + oh-my-pi 11.3K 终端 Agent，三层工具栈成型）· AI Memory 基础设施竞争白热化（supermemory 26K vs MemPalace vs open-notebook 28K，Memory API 进入战国时代）· 语音 AI 全栈爆发（VoxCPM 27.7K + Open-LLM-VTuber 10.5K + FunASR 17.5K）· Agent 安全运行时浮出水面（NVIDIA OpenShell 6.9K + Anthropic sandbox-runtime 4.4K）· Agent 调研 Skill 成熟（last30days-skill 34.3K + Agent-Reach 24K）

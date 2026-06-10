@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-06-10'
+last_updated: '2026-06-11'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,36 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-06-11（第五十五版）
+
+### Agent 编排分层 · Apple 端侧 AI 开放 · AI 可观测性自愈 · 开发沙箱基础设施化 · AI 设计资产走向生产
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agent 编排分层：顾问模式定义协作新范式 | shadcn/improve, guard-skills, baoyu-design | 92 |
+| 2 | Apple 端侧 AI 生态正式开放 | coreai-models | 90 |
+| 3 | AI 原生可观测性从监控到自愈 | superlog | 86 |
+| 4 | 开发沙箱成为 Agent 基础设施 | sandboxd | 83 |
+| 5 | AI 生成式设计资产走向生产 | diffusionstudio/lottie, baoyu-design | 80 |
+
+#### 新增项目
+
+| 项目 | Stars | 分类 | 首次出现 |
+|------|-------|------|----------|
+| shadcn/improve | 745 | 平台候选 | 2026-06-11 |
+| apple/coreai-models | 605 | 基础设施候选 | 2026-06-11 |
+| superlog | 721 | 平台候选 | 2026-06-11 |
+| sandboxd | 561 | 基础设施候选 | 2026-06-11 |
+| diffusionstudio/lottie | 2,004 | 工具型 | 2026-06-11 |
+
+#### 持续跟踪更新
+
+- headroom: 20.4K → 持续关注
+- turbovec: 10.1K → 持续关注
+- ecc: 211.8K → 高位稳定
 
 ## 2026-06-10（第五十四版）
 

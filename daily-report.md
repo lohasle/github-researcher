@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-06-11
+
+**核心主题：** Agent 编排分层（shadcn/improve 745⭐ 顾问模式引爆 Agent 工作流：昂贵模型审计+计划，便宜模型执行） · Apple 端侧 AI 开放（coreai-models 605⭐ 从模型导出到 Swift 运行时到 Agent Skills 全栈） · AI 可观测性自愈（superlog 721⭐ YC P26 OTel+ClickHouse+Agent 三层融合） · 开发沙箱基础设施化（sandboxd 561⭐ Go/Docker 为 Coding Agent 隔离） · AI 设计资产走向生产（diffusionstudio/lottie 2K⭐）
+
+**关键项目：**
+- 🔍 shadcn/improve (745, 首日) — Agent 顾问模式，audit→plan→execute 编排
+- 🍎 apple/coreai-models (605, 3天) — Apple 端侧 AI 全栈工具链
+- 🔧 superlog (721, 8天) — AI 原生可观测性，OTel + 自愈
+- 📦 sandboxd (561, 8天) — Coding Agent 开发沙箱
+- 🎬 diffusionstudio/lottie (2,004, 7天) — AI 生成 Lottie 动画
+
+---
+
 ## 2026-06-10
 
 **核心主题：** LLM Token 压缩基础设施化（headroom 20.4K 周增 14,266 全网第一，从优化变标配）· Agent Skill 从碎片化到平台化（ECC 211K + taste-skill 39.5K + impeccable 36.8K，质量分层出现）· 开源知识管理双赛道分化（tolaria 14.3K Git-first vs open-notebook 28.5K NotebookLM 替代）· 本地 LLM 选型工具链成熟（whichllm 4K 证据驱动匹配 + career-ops 51.5K AI 求职）· Agent 信息获取层基础设施化（last30days-skill 37.1K + Agent-Reach 25.5K）

@@ -2,11 +2,11 @@
 title: "Headroom"
 slug: "headroom"
 date_added: "2026-06-02"
-last_seen_date: "2026-06-02"
+last_seen_date: "2026-06-12"
 category: "AI Infra"
 emoji: "🗜️"
-stars: "20.4K stars"
-stars_delta: "周增 14,266（全网周增速第一）"
+stars: "23,083 stars"
+stars_delta: "周增 13,062（持续高增长）"
 score: 90
 tags: ["token-optimization", "context-compression", "mcp", "agent-infrastructure", "context-engineering"]
 url: "https://github.com/chopratejas/headroom"

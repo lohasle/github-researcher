@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-06-11'
+last_updated: '2026-06-12'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,37 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-06-12（第五十六版）
+
+### Agent Skills 生态爆发 · LLM Token 压缩基础设施化 · Apple 容器化落地 · Agent 安全面浮出 · Coding Agent 工具链分化
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agent Skills 成为独立生态品类 | agent-skills, taste-skill, last30days-skill, pm-skills | 93 |
+| 2 | LLM Token 压缩成为新基础设施层 | headroom | 91 |
+| 3 | Apple 容器化正式发布 | apple/container | 88 |
+| 4 | AI Agent 安全面正式浮出 | NVIDIA/SkillSpector | 85 |
+| 5 | Coding Agent 工具链持续分化 | cc-switch, agentsview, herdr | 82 |
+
+#### 新增项目
+
+| 项目 | Stars | 分类 | 首次出现 |
+|------|-------|------|----------|
+| addyosmani/agent-skills | 54,532 | 平台候选 | 2026-06-12 |
+| apple/container | 32,164 | 基础设施候选 | 2026-06-12 |
+| NVIDIA/SkillSpector | 2,577 | 工具型 | 2026-06-12 |
+| kenn-io/agentsview | 1,592 | 工具型 | 2026-06-12 |
+
+#### 持续跟踪更新
+
+- headroom: 20.4K → 23.1K（周增 13,062，Token 压缩基础设施持续高增长）
+- hermes-agent: 188.7K → 190.9K（高位稳定，周增 11,519）
+- turbovec: 10.1K → 11K（周增 6,487，Rust 向量索引快速攀升）
+- agent-reach: 25.5K → 26.4K（周增 5,021，Agent 网络搜索稳步增长）
+- CopilotKit: 34.7K（周增 2,686，AG-UI Protocol 稳步推进）
 
 ## 2026-06-11（第五十五版）
 

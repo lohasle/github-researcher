@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-06-12
+
+**核心主题：** Agent Skills 生态爆发（addyosmani/agent-skills 54K⭐ 日+3.3K 引爆工程技能标准化，taste-skill/pm-skills/last30days-skill 覆盖全品类） · LLM Token 压缩基础设施化（headroom 23K⭐ 周+13K 60-95% token 压缩 library/proxy/MCP 三模式） · Apple 容器化落地（apple/container 32K⭐ Swift Apple Silicon 原生 Linux 容器） · Agent 安全面浮出（NVIDIA/SkillSpector 2.6K⭐ 技能安全扫描） · Coding Agent 工具链分化（cc-switch 98K⭐ 多Agent桌面管理 + agentsview 会话分析）
+
+**关键项目：**
+- 🛠️ addyosmani/agent-skills (54,532, 首日) — Agent 工程技能标准化事实标准
+- 🗜️ chopratejas/headroom (23,083, 持续跟踪) — LLM Token 压缩基础设施
+- 🍎 apple/container (32,164, 首日) — Apple 原生 Linux 容器运行时
+- 🛡️ NVIDIA/SkillSpector (2,577, 首日) — Agent 技能安全扫描
+- 📊 kenn-io/agentsview (1,592, 首日) — Coding Agent 会话分析
+
+---
+
 ## 2026-06-11
 
 **核心主题：** Agent 编排分层（shadcn/improve 745⭐ 顾问模式引爆 Agent 工作流：昂贵模型审计+计划，便宜模型执行） · Apple 端侧 AI 开放（coreai-models 605⭐ 从模型导出到 Swift 运行时到 Agent Skills 全栈） · AI 可观测性自愈（superlog 721⭐ YC P26 OTel+ClickHouse+Agent 三层融合） · 开发沙箱基础设施化（sandboxd 561⭐ Go/Docker 为 Coding Agent 隔离） · AI 设计资产走向生产（diffusionstudio/lottie 2K⭐）

@@ -4,10 +4,11 @@ slug: "sandboxd"
 date_added: "2026-06-11"
 category: "基础设施候选"
 emoji: "📦"
-stars: "561 stars"
-stars_delta: "8天增 561"
+stars: "586 stars"
+stars_delta: "日+25"
+last_seen_date: "2026-06-13"
 language: "Go"
-score: 83
+score: 75
 tags: ["dev-sandbox", "docker", "coding-agent", "isolation", "preview", "self-hosted"]
 url: "https://github.com/tastyeffectco/sandboxd"
 ---

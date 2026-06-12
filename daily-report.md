@@ -4,6 +4,20 @@
 
 ---
 
+## 2026-06-13
+
+**核心主题：** Agent 架构分层范式确立（shadcn/improve 2.4K⭐ 贵模型审计+廉模型执行 Advisor-Executor 分离 + ponytail 862⭐ YAGNI 极简主义 47% Token 节省 + gstack 109K⭐ 23 工具角色化） · 端侧 AI 运行时基础设施化（Apple CoreAI Models 826⭐ 端侧模型导出+Swift 运行时 + Xiaomi MiMo-Code 6.7K⭐ 三天爆发） · AI 自愈可观测性崭露头角（Superlog 792⭐ AI Agent+OTel 自动诊断修复） · Coding Agent 工具链全栈化（cc-switch 99K⭐ + rtk 61K⭐ Token 压缩 + RuView 73K⭐ WiFi 感知） · Sandbox 即基础设施（sandboxd 586⭐）
+
+**关键项目：**
+- 📋 shadcn/improve (2,385, 持续跟踪) — Agent 分层范式代表，贵模型审计+廉模型执行
+- 📱 XiaomiMiMo/MiMo-Code (6,687, 首日) — 小米开源编码 Agent
+- 🍎 apple/coreai-models (826, 持续跟踪) — Apple 端侧 AI 运行时
+- 🐴 DietrichGebert/ponytail (862, 首日) — YAGNI 极简主义 Agent Skill
+- 🔍 superlog (792, 持续跟踪) — AI 自愈可观测性
+- 📦 sandboxd (586, 持续跟踪) — 自托管开发沙箱
+
+---
+
 ## 2026-06-12
 
 **核心主题：** Agent Skills 生态爆发（addyosmani/agent-skills 54K⭐ 日+3.3K 引爆工程技能标准化，taste-skill/pm-skills/last30days-skill 覆盖全品类） · LLM Token 压缩基础设施化（headroom 23K⭐ 周+13K 60-95% token 压缩 library/proxy/MCP 三模式） · Apple 容器化落地（apple/container 32K⭐ Swift Apple Silicon 原生 Linux 容器） · Agent 安全面浮出（NVIDIA/SkillSpector 2.6K⭐ 技能安全扫描） · Coding Agent 工具链分化（cc-switch 98K⭐ 多Agent桌面管理 + agentsview 会话分析）

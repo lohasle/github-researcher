@@ -4,10 +4,11 @@ slug: "shadcn-improve"
 date_added: "2026-06-11"
 category: "平台候选"
 emoji: "🔍"
-stars: "745 stars"
-stars_delta: "日增 745（首日）"
+stars: "2,385 stars"
+stars_delta: "日+1,640"
+last_seen_date: "2026-06-13"
 language: "Markdown/Skill"
-score: 92
+score: 88
 tags: ["agent-skills", "code-audit", "agent-orchestration", "model-tiering", "plan-generation"]
 url: "https://github.com/shadcn/improve"
 ---

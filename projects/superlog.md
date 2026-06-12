@@ -4,10 +4,11 @@ slug: "superlog"
 date_added: "2026-06-11"
 category: "平台候选"
 emoji: "🔧"
-stars: "721 stars"
-stars_delta: "8天增 721"
+stars: "792 stars"
+stars_delta: "日+71"
+last_seen_date: "2026-06-13"
 language: "TypeScript"
-score: 86
+score: 78
 tags: ["observability", "opentelemetry", "clickhouse", "ai-agent", "self-healing", "incidents"]
 url: "https://github.com/superloglabs/superlog"
 ---

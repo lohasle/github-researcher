@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-06-12'
+last_updated: '2026-06-13'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,37 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-06-13（第五十七版）
+
+### Agent 架构分层范式确立 · 端侧 AI 运行时基础设施化 · AI 自愈可观测性崭露头角 · Coding Agent 工具链全栈化 · Sandbox 即基础设施
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agent 架构分层范式确立：贵模型审计+廉模型执行 | shadcn-improve, ponytail, gstack | 92 |
+| 2 | 端侧 AI 运行时基础设施化 | coreai-models, mimo-code | 89 |
+| 3 | AI 自愈可观测性崭露头角 | superlog | 84 |
+| 4 | Coding Agent 工具链全栈化 | cc-switch, rtk, ruview | 81 |
+| 5 | Sandbox 即基础设施 | sandboxd | 79 |
+
+#### 新增项目
+
+| 项目 | Stars | 分类 | 首次出现 |
+|------|-------|------|----------|
+| XiaomiMiMo/MiMo-Code | 6,687 | 工具型 | 2026-06-13 |
+| DietrichGebert/ponytail | 862 | 工具型 | 2026-06-13 |
+
+#### 持续跟踪更新
+
+- shadcn/improve: 745 → 2,385（日+1,640，Agent 分层范式代表持续高增长）
+- apple/coreai-models: 605 → 826（日+221，端侧 AI 运行时稳步增长）
+- superlog: 721 → 792（日+71，自愈可观测性方向稳健）
+- sandboxd: 561 → 586（日+25，开发沙箱稳步增长）
+- cc-switch: 98K → 99K（跨 Agent 桌面管理持续增长）
+- rtk: 61K（Token 压缩代理，日活跃）
+- RuView: 73K（WiFi 空间智能，日活跃）
 
 ## 2026-06-12（第五十六版）
 

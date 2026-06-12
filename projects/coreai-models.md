@@ -4,10 +4,11 @@ slug: "coreai-models"
 date_added: "2026-06-11"
 category: "基础设施候选"
 emoji: "🍎"
-stars: "605 stars"
-stars_delta: "3天增 605"
+stars: "826 stars"
+stars_delta: "日+221"
+last_seen_date: "2026-06-13"
 language: "Python/Swift"
-score: 90
+score: 86
 tags: ["apple", "on-device-ai", "coreai", "swift", "model-export", "edge-ai"]
 url: "https://github.com/apple/coreai-models"
 ---

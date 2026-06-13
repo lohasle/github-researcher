@@ -4,6 +4,20 @@
 
 ---
 
+## 2026-06-14
+
+**核心主题：** Agent Skills 全栈基础设施化（agent-skills 58K⭐ 分发层 + NVIDIA SkillSpector 4.4K⭐ 安全层 + headroom 26K⭐ 压缩层 + Agent-Reach 27K⭐ 感知层——四层完整栈形成） · Apple Container 36K⭐ 硅级容器化定局（Swift 原生 + Apple silicon 优化，Mac 容器基础设施从社区走向官方） · Agent 感知层独立（Agent-Reach 27K⭐ 一个 CLI 聚合 7+ 平台数据零 API 费用） · 开源 NotebookLM 赛道升温（open-notebook 30K⭐ + tolaria 16K⭐） · RL 后训练环境接口标准化萌芽（HuggingFace OpenEnv 2.2K⭐）
+
+**关键项目：**
+- 🌐 Panniantong/Agent-Reach (27,338, 首日) — Agent 互联网感知层，多平台数据聚合
+- 🗜️ chopratejas/headroom (26,091, 持续跟踪) — Token 压缩中间件，定位升级为基础设施候选
+- 📓 lfnovo/open-notebook (30,096, 首日) — 开源 NotebookLM 替代，趋于成熟
+- 🍎 apple/container (36,214, 持续跟踪) — 苹果官方轻量 VM 容器
+- 🛡️ NVIDIA/SkillSpector (4,360, 持续跟踪) — Agent Skills 安全扫描器
+- ⚙️ addyosmani/agent-skills (58,243, 持续跟踪) — Agent Skills 分发层
+
+---
+
 ## 2026-06-13
 
 **核心主题：** Agent 架构分层范式确立（shadcn/improve 2.4K⭐ 贵模型审计+廉模型执行 Advisor-Executor 分离 + ponytail 862⭐ YAGNI 极简主义 47% Token 节省 + gstack 109K⭐ 23 工具角色化） · 端侧 AI 运行时基础设施化（Apple CoreAI Models 826⭐ 端侧模型导出+Swift 运行时 + Xiaomi MiMo-Code 6.7K⭐ 三天爆发） · AI 自愈可观测性崭露头角（Superlog 792⭐ AI Agent+OTel 自动诊断修复） · Coding Agent 工具链全栈化（cc-switch 99K⭐ + rtk 61K⭐ Token 压缩 + RuView 73K⭐ WiFi 感知） · Sandbox 即基础设施（sandboxd 586⭐）

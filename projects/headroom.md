@@ -2,12 +2,12 @@
 title: "Headroom"
 slug: "headroom"
 date_added: "2026-06-02"
-last_seen_date: "2026-06-12"
-category: "AI Infra"
+last_seen_date: "2026-06-14"
+category: "基础设施候选"
 emoji: "🗜️"
-stars: "23,083 stars"
-stars_delta: "周增 13,062（持续高增长）"
-score: 90
+stars: "26,091 stars"
+stars_delta: "周增 10,184（持续高增长）"
+score: 91
 tags: ["token-optimization", "context-compression", "mcp", "agent-infrastructure", "context-engineering"]
 url: "https://github.com/chopratejas/headroom"
 last_seen_date: "2026-06-10"
@@ -63,8 +63,8 @@ Agent 系统的 Token 管理应该分层：
 
 ## 定位判断
 
-当前：**平台候选**（+300% 周增长验证了基础设施级需求）
-趋势：**基础设施候选** — Token 压缩正在成为 Agent 栈的标配中间件
+当前：**基础设施候选**（26K stars，持续 10K+/周增速验证了基础设施级需求）
+趋势：**Agent Skills 压缩层标准组件** — Token 压缩已是 Agent 栈标配
 
 ## 风险/局限/泡沫点
 
@@ -100,3 +100,10 @@ Agent 系统的 Token 管理应该分层：
 - Score: 88 → 90
 - 定位调整：工具型 → 平台候选
 - 判断：Token 压缩正在从可选优化变为 Agent 栈标配基础设施
+
+### 2026-06-14
+- Stars: 16.8K → 26.1K（周增 10.2K，持续高增长）
+- Score: 90 → 91
+- 定位调整：平台候选 → 基础设施候选
+- 判断更新：headroom 在 Agent Skills 四层栈（分发/安全/压缩/感知）中占据压缩层核心位置，已成为 Agent 基础设施标准组件
+- 关键信号：连续多周 10K+ 增速不是 star farming，而是真实采用

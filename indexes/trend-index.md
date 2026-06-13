@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-06-13'
+last_updated: '2026-06-14'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,36 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-06-14（第五十八版）
+
+### Agent Skills 全栈基础设施化 · Apple Container 硅级容器化定局 · Agent 感知层独立 · 开源 NotebookLM 赛道升温 · RL 后训练环境接口标准化萌芽
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agent Skills 全栈基础设施化：分发+安全+压缩+感知四层栈 | agent-skills, nvidia-skillspector, headroom, agent-reach | 93 |
+| 2 | Apple Container 硅级容器化定局 | apple-container | 90 |
+| 3 | Agent 感知层独立 | agent-reach, last30days-skill | 87 |
+| 4 | 开源 NotebookLM 赛道升温 | open-notebook, tolaria | 85 |
+| 5 | RL 后训练环境接口标准化萌芽 | openenv | 78 |
+
+#### 新增项目
+
+| 项目 | Stars | 分类 | 首次出现 |
+|------|-------|------|----------|
+| Panniantong/Agent-Reach | 27,338 | 基础设施候选 | 2026-06-14 |
+| lfnovo/open-notebook | 30,096 | 生产可用 | 2026-06-14 |
+
+#### 持续跟踪更新
+
+- addyosmani/agent-skills: 54.5K → 58.2K（周增 8.3K，Agent Skills 分发层核心）
+- chopratejas/headroom: 23K → 26.1K（周增 10.2K，定位升级为基础设施候选）
+- apple/container: 32.2K → 36.2K（周增 7.8K，苹果官方容器持续高增长）
+- NVIDIA/SkillSpector: 2.6K → 4.4K（周增 2.6K，Agent Skills 安全面持续强化）
+- Leonxlnx/taste-skill: 43K（AI 审美技能持续高增长）
+- mvanhorn/last30days-skill: 41K（跨平台研究技能持续高增长）
 
 ## 2026-06-13（第五十七版）
 

@@ -4,10 +4,10 @@ slug: "apple-container"
 date_added: "2026-06-12"
 category: "基础设施候选"
 emoji: "🍎"
-stars: "32,164 stars"
-stars_delta: "日+2,419"
+stars: "36,214 stars"
+stars_delta: "周增 7,781（持续高增长）"
 language: "Swift"
-score: 88
+score: 89
 tags: ["apple", "containers", "swift", "macos", "virtualization", "apple-silicon"]
 url: "https://github.com/apple/container"
 ---

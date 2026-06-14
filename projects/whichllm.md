@@ -4,12 +4,13 @@ slug: "whichllm"
 date_added: "2026-06-10"
 category: "工具型"
 emoji: "🎯"
-stars: "4K stars"
-stars_delta: "日增 631"
+stars: "4,747 stars"
+stars_delta: "周增 1,794"
 language: "Python"
-score: 78
+score: 80
 tags: ["local-llm", "benchmark", "hardware", "model-selection", "gguf"]
 url: "https://github.com/Andyyyy64/whichllm"
+last_seen_date: "2026-06-15"
 ---
 
 # WhichLLM

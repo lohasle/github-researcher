@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-06-14'
+last_updated: '2026-06-15'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,39 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-06-15（第五十九版）
+
+### Agent Skills 杀手级应用涌现 · 上下文工程工具链三位一体 · 本地多模态 AI 运行时扩展 · 安全工具 AI 化 · 垂直领域 AI 基础模型萌芽
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agent Skills 杀手级应用涌现：Skills 从基础设施走向真实应用 | last30days-skill, taste-skill, compound-engineering-plugin | 92 |
+| 2 | 上下文工程工具链三位一体：压缩→索引→缓存完整管道 | headroom, turbovec, lmcache | 89 |
+| 3 | 本地多模态 AI 运行时扩展：从文本到语音、视频 | whichllm, open-llm-vtuber, moneyprinterturbo | 84 |
+| 4 | 安全工具 AI 化与图分析化 | nvidia-skillspector, flowsint, maigret | 80 |
+| 5 | 垂直领域 AI 基础模型萌芽：金融+医疗 | kronos, openmed | 76 |
+
+#### 新增项目
+
+| 项目 | Stars | 分类 | 首次出现 |
+|------|-------|------|----------|
+| LMCache/LMCache | 9,043 | 基础设施候选 | 2026-06-15 |
+
+#### 持续跟踪更新
+
+- mvanhorn/last30days-skill: 29K → 42K（周增 12.6K，GitHub 全站周榜 #1，Agent Skills 第一个杀手级应用）
+- Leonxlnx/taste-skill: 29K → 43.6K（周增 8K，AI 输出质量控制持续爆发）
+- RyanCodrai/turbovec: 10.1K → 11.5K（周增 6.5K，上下文工程索引层）
+- chopratejas/headroom: 26K → 27.5K（周增 10.4K，上下文工程压缩层）
+- Andyyyy64/whichllm: 4K → 4.7K（周增 1.8K，本地 LLM 硬件选型）
+
+#### 判断修正
+
+- last30days-skill: 从「Agent Skill」升级为「生产可用」，评分 86 → 90。理由：42K stars + 12.6K/周增速证明杀手级用例验证完成
+- 上下文工程：昨日判断为「Agent Skills 基础设施化」，今日修正为三层管道（压缩→索引→缓存），headroom + turbovec + LMCache 构成完整工具链
 
 ## 2026-06-14（第五十八版）
 

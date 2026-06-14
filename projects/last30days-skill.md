@@ -4,12 +4,14 @@ slug: "last30days-skill"
 date_added: "2026-06-07"
 category: "Agent Skill"
 emoji: "🔎"
-stars: "new"
-stars_delta: "GitHub Trending 首日上榜"
+stars: "41,943 stars"
+stars_delta: "周增 12,602，GitHub 全站周榜 #1"
 language: "Python"
-score: 86
-tags: ["agent-skill", "multi-source", "social-search", "research", "cross-platform"]
+score: 90
+category: "生产可用"
+tags: ["agent-skill", "multi-source", "social-search", "research", "cross-platform", "killer-app"]
 url: "https://github.com/mvanhorn/last30days-skill"
+last_seen_date: "2026-06-15"
 ---
 
 # last30days-skill

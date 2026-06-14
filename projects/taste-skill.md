@@ -4,13 +4,13 @@ slug: "taste-skill"
 date_added: "2026-05-24"
 category: "工具型"
 emoji: "🎨"
-stars: "29K stars"
-stars_delta: "+9K/week，AI Taste 元趋势爆发"
+stars: "43,637 stars"
+stars_delta: "周增 8,097，持续爆发"
 language: "Shell"
 score: 88
 tags: ["AI", "Skills", "质量", "品味", "内容生成"]
 url: "https://github.com/Leonxlnx/taste-skill"
-last_seen_date: "2026-06-02"
+last_seen_date: "2026-06-15"
 ---
 
 # taste-skill

@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026-06-15 GitHub 趋势研究简报 | GitHub Researcher</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📊</text></svg>">
-    <meta name="description" content="Agent Skills 杀手级应用涌现（last30days-skill 42K⭐ + taste-skill 44K⭐ 周增均超 8K——Skills 从基础设施走向真实应用） · 上下文工程工具链三位一体（headroom 压缩 + turbovec 向量索引 + LMCache KV 缓存——压缩→索引→缓存完整管道成型） · 本地多模态 AI 运行时扩展（whichllm 选型 + Open-LLM-VTuber 语音 + MoneyPrinterTurbo 视频）">
+    <title>LMCache | GitHub 趋势研究</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>⭐</text></svg>">
     <style>
         :root {
             --primary: #7C3AED;
@@ -170,6 +169,24 @@
         .card-grid { animation-delay: 0.2s; animation-fill-mode: both; }
         .trend-list { animation-delay: 0.25s; animation-fill-mode: both; }
     </style>
+    
+    <style>
+        .project-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 48px; box-shadow: var(--shadow); margin-bottom: 48px; max-width: 860px; margin-left: auto; margin-right: auto; }
+        .project-content h1 { font-size: 26px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 6px; }
+        .project-content h2 { font-size: 18px; font-weight: 700; color: var(--primary); border-left: 4px solid var(--primary); padding-left: 12px; margin: 28px 0 14px; }
+        .project-content h3 { font-size: 15px; font-weight: 700; color: var(--text); margin: 20px 0 10px; }
+        .project-content table { border-collapse: collapse; width: 100%; margin: 14px 0; }
+        .project-content th, .project-content td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; font-size: 13px; }
+        .project-content th { background: var(--primary); color: white; font-weight: 600; }
+        .project-content tr:nth-child(even) td { background: var(--bg); }
+        .project-content blockquote { background: linear-gradient(135deg, #F3E8FF, #ECFEFF); border-left: 4px solid var(--primary); padding: 14px 18px; margin: 14px 0; border-radius: 0 8px 8px 0; }
+        .project-content ul, .project-content ol { padding-left: 22px; margin: 10px 0; }
+        .project-content li { margin: 6px 0; font-size: 14px; }
+        .project-content p { font-size: 14px; margin-bottom: 12px; line-height: 1.7; }
+        .project-content strong { color: var(--primary-dark); }
+        .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 24px; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
     <nav class="nav">
@@ -181,164 +198,75 @@
             <div class="nav-links">
                 <a href="/github-researcher/index.html" id="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>首页</span></a>
                 <a href="/github-researcher/daily.html" id="nav-daily"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg><span>日报</span></a>
-                <a href="/github-researcher/projects.html" id="nav-projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
+                <a href="/github-researcher/projects.html" id="nav-projects" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
                 <a href="/github-researcher/trends.html" id="nav-trends"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>趋势</span></a>
             </div>
         </div>
     </nav>
 <main class="container">
-        <section class="hero">
-            <div class="hero-badge">
-                <span class="dot"></span>
-                2026-06-15
-            </div>
-            <h1>GitHub 趋势研究</h1>
-            <p>Agent Skills 杀手级应用涌现（last30days-skill 42K⭐ + taste-skill 44K⭐ 周增均超 8K——Skills 从基础设施走向真实应用） · 上下文工程工具链三位一体（headroom 压缩 + turbovec 向量索引 + LMCache KV 缓存——压缩→索引→缓存完整管道成型） · 本地多模态 AI 运行时扩展（whichllm 选型 + Open-LLM-VTuber 语音 + MoneyPrinterTurbo 视频）</p>
-            <div class="hero-actions">
-                <a href="/github-researcher/daily/2026-06-15.html" class="btn-primary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                    今日简报
-                </a>
-                <a href="/github-researcher/projects.html" class="btn-secondary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="14" y="0" width="7" height="7"/><rect x="0" y="14" width="7" height="7"/></svg>
-                    重点项目
-                </a>
-            </div>
-        </section>
-        <section class="stats-row">
-            <div class="stat-card">
-                <div class="stat-icon">📊</div>
-                <div class="stat-number">219</div>
-                <div class="stat-label">深度分析项目</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🔥</div>
-                <div class="stat-number">69</div>
-                <div class="stat-label">日更日报</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🎯</div>
-                <div class="stat-number">306</div>
-                <div class="stat-label">核心跟踪方向</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">⭐</div>
-                <div class="stat-number">700k+</div>
-                <div class="stat-label">本周总 Star 增速</div>
-            </div>
-        </section>
-        <section class="brief-card">
-            <div class="brief-date">📅 2026-06-15 · 今日核心判断</div>
-            <h2 class="brief-title">Agent Skills 杀手级应用涌现（last30days-skill 42K⭐ + taste-skill 44K⭐ 周增均超 8K——Skills 从基础设施走向真实应用） · 上下文工程工具链三位一体（headroom 压缩 + turbovec 向量索引 + LMCache KV 缓存——压缩→索引→缓存完整管道成型） · 本地多模态 AI 运行时扩展（whichllm 选型 + Open-LLM-VTuber 语音 + MoneyPrinterTurbo 视频）</h2>
-            <p class="brief-text">Agent Skills 杀手级应用涌现（last30days-skill 42K⭐ + taste-skill 44K⭐ 周增均超 8K——Skills 从基础设施走向真实应用） · 上下文工程工具链三位一体（headroom 压缩 + turbovec 向量索引 + LMCache KV 缓存——压缩→索引→缓存完整管道成型） · 本地多模态 AI 运行时扩展（whichllm 选型 + Open-LLM-VTuber 语音 + MoneyPrinterTurbo 视频） 今日头条趋势:Agent Skills 杀手级应用涌现：last30days-skill 42K⭐ 周增 12.6K 证明 Skill 不是实验概念而是有真实杀手级用例（跨平台研究聚合），taste-skill 44K⭐ 周增 8K 让 AI 输出质量可控，compound-engineering-plugin 21K⭐ 将工程实践编码为插件。Skills 从'有没有'进入'好不好用'阶段。</p>
-            <a href="/github-researcher/daily/2026-06-15.html" class="brief-cta">阅读完整简报 →</a>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">⭐</div>
-                    重点跟踪项目
-                </div>
-                <a href="/github-researcher/projects.html" class="section-link">查看全部 →</a>
-            </div>
-            <div class="card-grid">
-                <div class="card" onclick="window.location='/github-researcher/projects/last30days-skill.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🔎</div>
-                        <div class="card-stars">41,943 stars</div>
-                    </div>
-                    <div class="card-title">mvanhorn/last30days-skill</div>
-                    <div class="card-desc">Agent Skills 第一个杀手级应用——跨 10+ 平台聚合研究数据，周增 12.6K 持续爆发</div>
-                    <div class="card-tags"><span class="tag tag-purple">agent-skill</span><span class="tag tag-purple">cross-platform</span><span class="tag tag-purple">research</span></div>
-                    <div class="card-actions"></div>
-                </div>
-                <div class="card" onclick="window.location='/github-researcher/projects/lmcache.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">⚡</div>
-                        <div class="card-stars">9,043 stars</div>
-                    </div>
-                    <div class="card-title">LMCache/LMCache</div>
-                    <div class="card-desc">LLM 推理 KV Cache 加速层，PagedAttention 之后的推理基础设施新原语</div>
-                    <div class="card-tags"><span class="tag tag-purple">llm-inference</span><span class="tag tag-purple">kv-cache</span><span class="tag tag-purple">vllm</span></div>
-                    <div class="card-actions"></div>
-                </div>
-                <div class="card" onclick="window.location='/github-researcher/projects/taste-skill.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🎨</div>
-                        <div class="card-stars">43,637 stars</div>
-                    </div>
-                    <div class="card-title">Leonxlnx/taste-skill</div>
-                    <div class="card-desc">AI 输出质量守门员——阻止 AI 生成 generic slop，周增 8K 持续爆发</div>
-                    <div class="card-tags"><span class="tag tag-purple">ai-quality</span><span class="tag tag-purple">agent-skill</span><span class="tag tag-purple">output-control</span></div>
-                    <div class="card-actions"></div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">📈</div>
-                    趋势热榜
-                </div>
-                <a href="/github-researcher/trends.html" class="section-link">完整趋势表 →</a>
-            </div>
-            <div class="trend-list">
-                <div class="trend-item">
-                    <div class="trend-rank top">1</div>
-                    <div class="trend-content">
-                        <div class="trend-title">Agent Skills 杀手级应用涌现：last30days-skill 42K⭐ 周增 12.6K 证明 Skill 不是实验概念而是有真实杀手级用例（跨平台研究聚合），taste-skill 44K⭐ 周增 8K 让 AI 输出质量可控，compound-engineering-plugin 21K⭐ 将工程实践编码为插件。Skills 从'有没有'进入'好不好用'阶段</div>
-                        <div class="trend-meta">last30days-skill · taste-skill · compound-engineering-plugin</div>
-                    </div>
-                    <div class="trend-score high">92/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank top">2</div>
-                    <div class="trend-content">
-                        <div class="trend-title">上下文工程工具链三位一体：headroom 27K⭐ 做 Token 压缩（60-95% 节省），turbovec 11.5K⭐ 做向量索引（Rust+SIMD+TurboQuant），LMCache 9K⭐ 做 KV Cache 加速——压缩→索引→缓存形成完整 context engineering 管道，LLM 推理成本控制从单点优化走向系统化</div>
-                        <div class="trend-meta">headroom · turbovec · lmcache</div>
-                    </div>
-                    <div class="trend-score high">89/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">3</div>
-                    <div class="trend-content">
-                        <div class="trend-title">本地多模态 AI 运行时扩展：whichllm 4.7K⭐ 做本地 LLM 硬件选型，Open-LLM-VTuber 11.3K⭐ 做语音交互+Live2D，MoneyPrinterTurbo 87.8K⭐ 做短视频生成——本地 AI 从文本推理扩展到语音、视频、多模态交互，端侧 AI 运行时生态加速成型</div>
-                        <div class="trend-meta">whichllm · open-llm-vtuber · moneyprinterturbo</div>
-                    </div>
-                    <div class="trend-score high">84/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">4</div>
-                    <div class="trend-content">
-                        <div class="trend-title">安全工具 AI 化与图分析化：NVIDIA SkillSpector 5.2K⭐ 扫描 Agent Skill 漏洞，flowsint 6.6K⭐ 做图形化安全调查，maigret 33K⭐ 做 OSINT 用户名追踪——AI 安全从理论走向工具化，安全从业者的 AI 原生工具栈初步浮现</div>
-                        <div class="trend-meta">nvidia-skillspector · flowsint · maigret</div>
-                    </div>
-                    <div class="trend-score high">80/80</div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">🏷️</div>
-                    核心关注领域
-                </div>
-            </div>
-            <div class="category-row">
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🤖</span> AI Agent / Multi-Agent</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">⚡</span> LLM Infra / MCP / AI Runtime</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🛠️</span> 开发工具链 / IDE / Copilot</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🌐</span> 前端框架 / Serverless / Edge</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">☸️</span> 云原生 / K8s / Service Mesh</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔄</span> 自动化 / Browser Use / RPA+AI</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">💾</span> 数据基础设施 / RAG / 向量 DB</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔌</span> 基础设施标准 / 平台潜力</a>
-            </div>
-        </section>
+    <a href="/github-researcher/projects.html" class="back-link">← 返回重点项目</a>
+    <div class="project-content">
+        <div style="margin-bottom:20px;"><a href="https://github.com/LMCache/LMCache" target="_blank" rel="noopener" class="btn-github" style="padding:10px 20px;font-size:14px;"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg> 查看 GitHub 项目</a></div>
+        <h1 id="lmcache">LMCache</h1>
+<h2 id="_1">一句话定位</h2>
+<p>LLM 推理的 KV Cache 加速层——将注意力计算的中间结果（Key-Value Cache）从推理引擎中解耦，实现跨请求缓存复用，大幅提升推理吞吐。</p>
+<h2 id="_2">它解决的问题</h2>
+<p>LLM 推理的核心瓶颈之一是 KV Cache 的内存占用和重复计算。同一个 system prompt + few-shot 上下文在不同请求中被重复计算成百上千次。PagedAttention（vLLM）解决了单次推理内的内存碎片问题，但跨请求的缓存复用仍是空白。LMCache 填补的就是这个空白。</p>
+<p>目标用户：LLM 推理服务提供方、企业 AI 平台团队、MaaS 运营商。</p>
+<h2 id="2026-06-15">为什么值得关注（2026-06-15）</h2>
+<p>本周 GitHub Python 周榜上榜，9,043 stars 且增速稳定。在上下文工程工具链（headroom 压缩 + turbovec 索引 + LMCache 缓存）三位一体中担任缓存层角色。KV Cache 管理是 vLLM/PagedAttention 之后推理优化的下一个前沿。</p>
+<h2 id="_3">热度来源判断</h2>
+<p>真实需求驱动。LLM 推理成本是企业落地的核心障碍。KV Cache 复用可以直接降低 GPU 占用和推理延迟，ROI 明确。vLLM 生态的扩展为这类项目提供了天然的集成入口。</p>
+<h2 id="_4">关键技术亮点</h2>
+<ol>
+<li><strong>跨请求 KV Cache 复用</strong>：相同前缀（system prompt、few-shot 模板）的 KV Cache 计算一次、复用多次</li>
+<li><strong>vLLM 生态集成</strong>：与 PagedAttention 兼容，可作为 vLLM 的扩展模块使用</li>
+<li><strong>多层级缓存策略</strong>：GPU 内存 → CPU 内存 → 分布式存储，按延迟/成本分层</li>
+<li><strong>Prefix Caching 优化</strong>：自动检测输入前缀匹配，避免重复计算</li>
+</ol>
+<h2 id="_5">架构启发</h2>
+<p>缓存层的解耦是推理基础设施成熟化的标志。从 GPU 内存 → 进程内缓存 → 跨进程缓存 → 分布式缓存，这个层次结构与 CPU 缓存（L1→L2→L3→RAM）的演进如出一辙。推理引擎不再需要自己管理所有缓存逻辑，而是可以依赖独立的缓存层。</p>
+<pre class="mermaid">flowchart TD
+    A[推理请求] --> B{KV Cache 命中?}
+    B -- 命中 --> C[直接复用缓存]
+    B -- 未命中 --> D[计算 KV Cache]
+    D --> E[存入 LMCache]
+    E --> F[执行推理]
+    C --> F
+    F --> G[返回结果]
+    G --> H[更新缓存元数据]
+</pre>
+<h2 id="_6">定位判断</h2>
+<p>LLM 推理基础设施栈中的缓存层。类比数据库生态中的 Redis——不是必需，但在规模化场景下是刚需。当前处于从"vLLM 插件"向"独立缓存基础设施"演进的关键期。</p>
+<h2 id="_7">风险 / 局限 / 泡沫点</h2>
+<ol>
+<li><strong>vLLM 强依赖</strong>：与 vLLM 深度绑定，如果 vLLM 内置了类似功能（如 vLLM 已在开发 prefix caching），项目价值会被稀释</li>
+<li><strong>缓存失效复杂性</strong>：模型版本更新、tokenizer 变更都会导致缓存全部失效，管理复杂度高</li>
+<li><strong>收益场景有限</strong>：KV Cache 复用的收益主要在多请求共享相同前缀的场景（如 RAG、Agent system prompt），对于完全不同的请求收益有限</li>
+</ol>
+<h2 id="_8">与同类项目的关系</h2>
+<ul>
+<li><strong>vLLM (PagedAttention)</strong>：互补关系，vLLM 管理单次推理的内存碎片，LMCache 管理跨请求的缓存复用</li>
+<li><strong>TensorRT-LLM</strong>：NVIDIA 的推理引擎内置了 KV Cache 管理，但非开源生态</li>
+<li><strong>SGLang</strong>：另一条推理优化路线（RadixAttention），与 LMCache 的缓存策略不同但目标一致</li>
+</ul>
+<h2 id="_9">是否值得持续跟踪</h2>
+<p><strong>是。</strong> KV Cache 管理是 LLM 推理优化的核心赛道，LMCache 代表了缓存层独立化的早期尝试。如果 vLLM 不内置等效功能，LMCache 有潜力成为推理栈的标准组件。</p>
+<h2 id="_10">后续观察点</h2>
+<ol>
+<li>vLLM 是否在核心代码中内置 prefix caching，以及 LMCache 的应对策略</li>
+<li>大规模生产环境的 benchmark 数据（当前主要是小规模测试）</li>
+<li>是否支持 TensorRT-LLM、SGLang 等其他推理引擎</li>
+</ol>
+<hr />
+<p><em>首次记录：2026-06-15</em></p>
+    </div>
 </main>
     <footer class="footer">
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

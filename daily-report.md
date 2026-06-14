@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-06-15
+
+**核心主题：** Agent Skills 杀手级应用涌现（last30days-skill 42K⭐ 周增 12.6K 全站周榜 #1——证明 Skill 有真实杀手级用例 + taste-skill 44K⭐ 周增 8K 质量控制 Skill 同样有市场） · 上下文工程工具链三位一体（headroom 压缩 + turbovec 向量索引 + LMCache KV 缓存——压缩→索引→缓存完整管道成型，LLM 推理成本优化进入系统工程阶段） · 本地多模态 AI 运行时扩展（whichllm 选型 + Open-LLM-VTuber 语音 + MoneyPrinterTurbo 视频——端侧 AI 从文本扩展到多模态） · 安全工具 AI 化（SkillSpector + flowsint + maigret） · 垂直领域 AI 基础模型萌芽（Kronos 金融 + openmed 医疗）
+
+**关键项目：**
+- 🔎 mvanhorn/last30days-skill (41,943, 持续跟踪) — Agent Skills 第一个杀手级应用
+- ⚡ LMCache/LMCache (9,043, 首日) — LLM 推理 KV Cache 加速层
+- 🎨 Leonxlnx/taste-skill (43,637, 持续跟踪) — AI 输出质量守门员
+- 🚀 RyanCodrai/turbovec (11,493, 持续跟踪) — Rust 向量索引引擎
+- 🖥️ Andyyyy64/whichllm (4,747, 持续跟踪) — 本地 LLM 硬件选型
+
+---
+
 ## 2026-06-14
 
 **核心主题：** Agent Skills 全栈基础设施化（agent-skills 58K⭐ 分发层 + NVIDIA SkillSpector 4.4K⭐ 安全层 + headroom 26K⭐ 压缩层 + Agent-Reach 27K⭐ 感知层——四层完整栈形成） · Apple Container 36K⭐ 硅级容器化定局（Swift 原生 + Apple silicon 优化，Mac 容器基础设施从社区走向官方） · Agent 感知层独立（Agent-Reach 27K⭐ 一个 CLI 聚合 7+ 平台数据零 API 费用） · 开源 NotebookLM 赛道升温（open-notebook 30K⭐ + tolaria 16K⭐） · RL 后训练环境接口标准化萌芽（HuggingFace OpenEnv 2.2K⭐）

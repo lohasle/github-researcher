@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>apple/coreai-models | GitHub 趋势研究</title>
+    <title>omnigent-ai/omnigent | GitHub 趋势研究</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>⭐</text></svg>">
     <style>
         :root {
@@ -206,53 +206,69 @@
 <main class="container">
     <a href="/github-researcher/projects.html" class="back-link">← 返回重点项目</a>
     <div class="project-content">
-        <div style="margin-bottom:20px;"><a href="https://github.com/apple/coreai-models" target="_blank" rel="noopener" class="btn-github" style="padding:10px 20px;font-size:14px;"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg> 查看 GitHub 项目</a></div>
-        <h1 id="apple-core-ai-models">Apple Core AI Models</h1>
+        <div style="margin-bottom:20px;"><a href="https://github.com/omnigent-ai/omnigent" target="_blank" rel="noopener" class="btn-github" style="padding:10px 20px;font-size:14px;"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg> 查看 GitHub 项目</a></div>
+        <h1 id="omnigent">Omnigent</h1>
 <h2 id="_1">一句话定位</h2>
-<p>Apple 端侧 AI 开发者基础设施——模型导出配方（HuggingFace → Core AI <code>.aimodel</code>）+ Python 构建块 + Swift 运行时 + Agent Skills，macOS/iOS 27.0+ 上运行。</p>
+<p>开源 AI Agent meta-harness——用统一的编排层管理 Claude Code、Codex、Cursor、Pi 和自定义 agent，支持跨设备实时协作、策略治理和沙箱隔离。</p>
 <h2 id="_2">它解决的问题</h2>
-<p>开发者想在 Apple 设备上跑开源 AI 模型（LLM、扩散模型等），但缺乏标准化的导出→部署→运行链路。Apple Core AI framework 提供了底层能力，但缺开发者工具链。coreai-models 填补了这个空白。</p>
+<p>当团队同时使用 3-5 种 Coding Agent（Claude Code、Codex、Cursor、Pi 等）时，每个 agent 有自己的协议、自己的沙箱、自己的会话管理。无法跨 agent 协作、无法统一治理、无法从手机继续终端会话。这是一个真实的多 agent 管理痛点。</p>
 <h2 id="2026-06-19">为什么值得关注（2026-06-19）</h2>
 <ul>
-<li>Apple 官方仓库，非社区第三方——意味着长期维护和生态投入</li>
-<li>包含 Agent Skills（working-with-coreai, model-authoring, model-compression）</li>
-<li>支持 Claude Code 插件市场注册——Apple 开始适配 Agent 生态</li>
-<li>macOS/iOS 27.0+ 要求说明 Apple 在 WWDC 2026 后全面推进端侧 AI</li>
+<li>7 天 3,785 stars，212 个 issue 说明有真实用户在用</li>
+<li>Apache 2.0 License，macOS 桌面应用已可下载</li>
+<li>首次提出 "meta-harness" 概念——不替换你的 agent，统一编排它们</li>
+<li>支持 Modal/Daytona/Islo 云沙箱，从 CLI 或 server 按需启动</li>
 </ul>
 <h2 id="_3">热度来源判断</h2>
-<p>Apple 品牌效应 + 开发者对端侧 AI 的真实需求。1,064 stars 对于 Apple 官方仓库来说不算爆发，但这是基础设施层，不是应用层——长期价值远高于 star 数暗示的。</p>
+<p>真实需求驱动。多 agent 管理是每个重度 AI 开发者已经遇到的痛点。热度不是炒作，但 alpha 阶段（212 issue）说明工程成熟度还有距离。</p>
 <h2 id="_4">关键技术亮点</h2>
 <ol>
-<li><strong>模型导出配方</strong> — 从 HuggingFace 模型到 Core AI <code>.aimodel</code> 格式的标准化流水线</li>
-<li><strong>Python 构建块</strong> — PyTorch 模型作者可以直接用 Python 写 Core AI 兼容模型</li>
-<li><strong>Swift 运行时</strong> — <code>coreai-models</code> Swift Package，直接集成到 iOS/macOS App</li>
-<li><strong>Agent Skills 集成</strong> — 3 个官方 Skill 让 Coding Agent 像专家一样使用 Core AI</li>
+<li><strong>Transport 抽象层</strong> — Claude Code、Codex、Cursor 的差异被封装在 adapter 中，上层 API 统一</li>
+<li><strong>Policy 引擎</strong> — 可在 server/agent/chat 三个粒度配置审批、预算上限、工具限制</li>
+<li><strong>Session 持久化</strong> — 终端 → 浏览器 → 手机，会话状态完整同步</li>
+<li><strong>Cloud Sandbox</strong> — 支持 Modal/Daytona/Islo，disposable 环境隔离</li>
 </ol>
 <h2 id="_5">架构启发</h2>
-<p>Apple 的端侧 AI 策略是 <strong>全栈控制</strong>：芯片（Apple Silicon）→ OS（macOS/iOS 27 Core AI framework）→ 工具链（coreai-models）→ 开发体验（Agent Skills）。这种垂直整合是 Apple 一贯的策略，但在 AI 时代意味着开发者如果绑定 Core AI，就绑定了整个 Apple 生态。</p>
+<p>meta-harness 模式的核心 trade-off：<strong>抽象层次越高，兼容性越脆弱</strong>。omnigent 需要追踪 5+ 个 agent 的协议变化，任何一个 agent 的 breaking change 都可能破坏编排层。这与 Kubernetes 管理 CRD 的挑战类似。</p>
+<pre class="mermaid">graph TD
+    U["User<br/>CLI / Browser / Mobile"] --> O["Omnigent Server"]
+    O --> P["Policy Engine"]
+    O --> S["Session Manager"]
+    O --> CS["Cloud Sandbox<br/>Modal / Daytona / Islo"]
+
+    S --> A1["Claude Code Adapter"]
+    S --> A2["Codex Adapter"]
+    S --> A3["Cursor Adapter"]
+    S --> A4["Pi Adapter"]
+    S --> A5["Custom Agent (YAML)"]
+
+    A1 --> R1["Claude Code Session"]
+    A2 --> R2["Codex Session"]
+    A3 --> R3["Cursor Session"]
+</pre>
 <h2 id="_6">定位判断</h2>
-<p>coreai-models 是 <strong>Apple 端侧 AI 的 Xcode</strong>——不是模型本身，而是让开发者能高效使用模型的工具链。如果 Apple 端侧 AI 生态成熟，coreai-models 将成为不可或缺的基础设施。</p>
+<p>在 Agent 生态中，omnigent 试图成为 <strong>Agent 层的 Kubernetes</strong>——不提供 agent 本身，但提供编排、治理、调度能力。如果成功，它将成为基础设施。如果失败，它会被各 agent 原生的编排能力取代。</p>
 <h2 id="_7">风险 / 局限 / 泡沫点</h2>
 <ol>
-<li><strong>平台锁定</strong> — <code>.aimodel</code> 格式只支持 Apple 平台</li>
-<li><strong>macOS/iOS 27.0+ 要求</strong> — 需要最新系统版本，用户覆盖率有限</li>
-<li><strong>模型覆盖</strong> — 目前支持的模型数量未知，可能有限</li>
-<li><strong>与 ONNX/MLX 竞争</strong> — 已有跨平台方案</li>
+<li><strong>alpha 阶段，212 个 issue</strong> — 不适合生产环境</li>
+<li><strong>Adapter 维护成本</strong> — 每个支持的 agent 协议变化都需要适配</li>
+<li><strong>Python 3.12+ 限定</strong> — 部署门槛比 Go/Node 高</li>
+<li><strong>竞争风险</strong> — 如果 Claude Code 原生支持多 agent 编排，omnigent 价值大减</li>
 </ol>
 <h2 id="_8">与同类项目的关系</h2>
 <ul>
-<li><strong>vs MLX</strong> — MLX 是 Apple 的机器学习框架，coreai-models 是部署工具链，互补关系</li>
-<li><strong>vs ONNX Runtime</strong> — ONNX 跨平台，Core AI 只支持 Apple 但体验更好</li>
-<li><strong>vs llama.cpp</strong> — llama.cpp 通用但需要自己管理模型格式，Core AI 标准化但锁定 Apple</li>
+<li><strong>vs OpenClaw</strong> — OpenClaw 是个人助理，omnigent 是团队编排层，定位不同</li>
+<li><strong>vs vercel/eve</strong> — eve 是 filesystem-first 的开发框架，omnigent 是 runtime-first 的编排层</li>
+<li><strong>vs Claude Code 内置 subagent</strong> — Claude Code 的 subagent 是单 agent 内部，omnigent 是跨 agent</li>
 </ul>
 <h2 id="_9">是否值得持续跟踪</h2>
-<p><strong>是。</strong> Apple 官方出品 + Agent Skills 集成 = 端侧 AI 基础设施的重要变量。</p>
+<p><strong>是，强烈建议持续跟踪。</strong> meta-harness 是 Agent 生态的关键缺失层，如果 omnigent 能稳定到 beta，将有很大的平台化潜力。</p>
 <h2 id="_10">后续观察点</h2>
 <ol>
-<li>支持的模型列表增长速度</li>
-<li>是否有企业级使用案例</li>
-<li>Agent Skills 是否扩展到更多场景</li>
-<li>与 MLX 的长期关系</li>
+<li>issue 关闭速度和 beta 发布时间线</li>
+<li>是否有企业用户案例</li>
+<li>Adapter 数量和维护活跃度</li>
+<li>是否被某个大 agent（Claude Code/Codex）原生集成</li>
 </ol>
 <hr />
 <p><em>首次记录：2026-06-19</em></p>

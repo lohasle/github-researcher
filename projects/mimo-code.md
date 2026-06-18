@@ -4,10 +4,11 @@ slug: "mimo-code"
 date_added: "2026-06-13"
 category: "工具型"
 emoji: "📱"
-stars: "6,687 stars"
-stars_delta: "三天+6,687"
+stars: "9,772 stars"
+stars_delta: "周+3,085"
+last_seen_date: "2026-06-19"
 language: "TypeScript"
-score: 82
+score: 85
 tags: ["coding-agent", "xiaomi", "chinese-tech", "typescript"]
 url: "https://github.com/XiaomiMiMo/MiMo-Code"
 ---

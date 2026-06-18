@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-06-19
+
+**核心主题：** Agent Skill 经济学验证完成（ponytail 36K⭐ 一周暴涨 42 倍——benchmark 证明 Skill 是可量化的生产力工具） · Agent 编排层混战开启（omnigent meta-harness + vercel/eve filesystem-first + flock chat-driven dev team——三条路线争夺 Agent 运行时标准） · 端侧 AI 与上下文工程双线推进（Apple CoreAI SDK 开源 + Microsoft FastContext 论文——端侧推理与上下文委托模式同步成熟） · 终端多路复用器 AI 化（coder/boo 基于 libghostty） · Agent 安全新范式（burner-agents 一次性身份 swarm）
+
+**关键项目：**
+- 🐴 DietrichGebert/ponytail (36,393, 持续跟踪) — Agent Skill 经济学标杆，一周 42 倍
+- 🤖 omnigent-ai/omnigent (3,785, 首日) — Agent meta-harness 统一编排
+- 🌙 vercel/eve (1,327, 首日) — Filesystem-first Agent 框架
+- ⚡ microsoft/fastcontext (587, 首日) — Context 委托子模型
+- 🍎 apple/coreai-models (1,064, 首日) — 端侧 AI 开发者基础设施
+
+---
+
 ## 2026-06-15
 
 **核心主题：** Agent Skills 杀手级应用涌现（last30days-skill 42K⭐ 周增 12.6K 全站周榜 #1——证明 Skill 有真实杀手级用例 + taste-skill 44K⭐ 周增 8K 质量控制 Skill 同样有市场） · 上下文工程工具链三位一体（headroom 压缩 + turbovec 向量索引 + LMCache KV 缓存——压缩→索引→缓存完整管道成型，LLM 推理成本优化进入系统工程阶段） · 本地多模态 AI 运行时扩展（whichllm 选型 + Open-LLM-VTuber 语音 + MoneyPrinterTurbo 视频——端侧 AI 从文本扩展到多模态） · 安全工具 AI 化（SkillSpector + flowsint + maigret） · 垂直领域 AI 基础模型萌芽（Kronos 金融 + openmed 医疗）

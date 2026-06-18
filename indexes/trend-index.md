@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-06-15'
+last_updated: '2026-06-19'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,45 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-06-19（第六十版）
+
+### Agent Skill 经济学验证完成 · Agent 编排层混战开启 · 端侧 AI 与上下文工程双线推进 · 终端多路复用器 AI 化 · Agent 安全与隐私新范式
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agent Skill 经济学验证完成：ponytail 一周 42 倍 + benchmark 证明 Skill 可量化 | ponytail, shadcn-improve, builderio-skills | 93 |
+| 2 | Agent 编排层混战开启：meta-harness vs filesystem-first vs chat-driven | omnigent, vercel-eve, flock | 90 |
+| 3 | 端侧 AI 与上下文工程双线推进：Apple SDK + Microsoft 论文 | apple-coreai-models, microsoft-fastcontext | 87 |
+| 4 | 终端多路复用器 AI 化：terminal 作为 Agent 接口 | coder-boo | 82 |
+| 5 | Agent 安全与隐私新范式：disposable agents + 统一多模态 RL | burner-agents, tencent-unirl | 78 |
+
+#### 新增项目
+
+| 项目 | Stars | 分类 | 首次出现 |
+|------|-------|------|----------|
+| omnigent-ai/omnigent | 3,785 | 平台候选 | 2026-06-19 |
+| vercel/eve | 1,327 | 平台候选 | 2026-06-19 |
+| microsoft/fastcontext | 587 | 基础设施候选 | 2026-06-19 |
+| apple/coreai-models | 1,064 | 基础设施候选 | 2026-06-19 |
+| duckbugio/flock | 698 | 工具型 | 2026-06-19 |
+| coder/boo | 661 | 工具型 | 2026-06-19 |
+| NotPBShaw/burner-agents | 554 | 观察型 | 2026-06-19 |
+
+#### 持续跟踪更新
+
+- DietrichGebert/ponytail: 862 → 36,393（周增 35,531，42 倍爆发！Agent Skill 经济学标杆）
+- shadcn/improve: 2,385 → 5,462（周增 3,077，持续爆发）
+- XiaomiMiMo/MiMo-Code: 6,687 → 9,772（周增 3,085，小米编码 Agent 持续增长）
+- superloglabs/superlog: 792 → 875（周增 83，AI 可观测性稳步增长）
+- tastyeffectco/sandboxd: 586 → 671（周增 85，开发沙箱稳步增长）
+
+#### 判断修正
+
+- **ponytail 判断升级**：6/13 评为“工具型”（80 分），今日升级为“工具型 → 生产可用过渡”（92 分）。benchmark 数据（54% LOC 削减、100% 安全）证明了 Skill 的可量化价值。
+- **Agent 编排层判断**：从“值得关注”升级为“混战开启”。三条路线（meta-harness / filesystem-first / chat-driven）在同一周爆发，预示编排层竞争进入实质阶段。
 
 ## 2026-06-15（第五十九版）
 

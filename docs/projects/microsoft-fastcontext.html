@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>apple/coreai-models | GitHub 趋势研究</title>
+    <title>microsoft/fastcontext | GitHub 趋势研究</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>⭐</text></svg>">
     <style>
         :root {
@@ -206,53 +206,66 @@
 <main class="container">
     <a href="/github-researcher/projects.html" class="back-link">← 返回重点项目</a>
     <div class="project-content">
-        <div style="margin-bottom:20px;"><a href="https://github.com/apple/coreai-models" target="_blank" rel="noopener" class="btn-github" style="padding:10px 20px;font-size:14px;"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg> 查看 GitHub 项目</a></div>
-        <h1 id="apple-core-ai-models">Apple Core AI Models</h1>
+        <div style="margin-bottom:20px;"><a href="https://github.com/microsoft/fastcontext" target="_blank" rel="noopener" class="btn-github" style="padding:10px 20px;font-size:14px;"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg> 查看 GitHub 项目</a></div>
+        <h1 id="microsoft-fastcontext">Microsoft FastContext</h1>
 <h2 id="_1">一句话定位</h2>
-<p>Apple 端侧 AI 开发者基础设施——模型导出配方（HuggingFace → Core AI <code>.aimodel</code>）+ Python 构建块 + Swift 运行时 + Agent Skills，macOS/iOS 27.0+ 上运行。</p>
+<p>Microsoft Research 出品的仓库探索子模型——用专用小模型（4B-30B）做 repo 探索，返回精确 file:line 引用，主 Coding Agent 只看关键代码，大幅节省 context window。</p>
 <h2 id="_2">它解决的问题</h2>
-<p>开发者想在 Apple 设备上跑开源 AI 模型（LLM、扩散模型等），但缺乏标准化的导出→部署→运行链路。Apple Core AI framework 提供了底层能力，但缺开发者工具链。coreai-models 填补了这个空白。</p>
+<p>现代 Coding Agent 用同一个模型既探索仓库又写代码。探索阶段的 Read/Grep/Glob 调用消耗大量 token，留在 history 中污染后续推理。对于大型仓库，探索可能消耗 50%+ 的 context budget。</p>
 <h2 id="2026-06-19">为什么值得关注（2026-06-19）</h2>
 <ul>
-<li>Apple 官方仓库，非社区第三方——意味着长期维护和生态投入</li>
-<li>包含 Agent Skills（working-with-coreai, model-authoring, model-compression）</li>
-<li>支持 Claude Code 插件市场注册——Apple 开始适配 Agent 生态</li>
-<li>macOS/iOS 27.0+ 要求说明 Apple 在 WWDC 2026 后全面推进端侧 AI</li>
+<li>Microsoft Research 出品，arXiv 论文（2606.14066）+ 模型权重 + 代码全发</li>
+<li>2026-06-15 刚发布，已有 587 stars</li>
+<li>训练了 4B 到 30B 多个尺寸的探索模型，用 SFT + task-grounded RL</li>
+<li>在 SWE-bench Multilingual、SWE-bench Pro、SWE-QA 上验证</li>
 </ul>
 <h2 id="_3">热度来源判断</h2>
-<p>Apple 品牌效应 + 开发者对端侧 AI 的真实需求。1,064 stars 对于 Apple 官方仓库来说不算爆发，但这是基础设施层，不是应用层——长期价值远高于 star 数暗示的。</p>
+<p>学术论文驱动 + 微软品牌背书。587 stars 不算爆发，但 context engineering 是 Coding Agent 的刚需，引用率会持续增长。</p>
 <h2 id="_4">关键技术亮点</h2>
 <ol>
-<li><strong>模型导出配方</strong> — 从 HuggingFace 模型到 Core AI <code>.aimodel</code> 格式的标准化流水线</li>
-<li><strong>Python 构建块</strong> — PyTorch 模型作者可以直接用 Python 写 Core AI 兼容模型</li>
-<li><strong>Swift 运行时</strong> — <code>coreai-models</code> Swift Package，直接集成到 iOS/macOS App</li>
-<li><strong>Agent Skills 集成</strong> — 3 个官方 Skill 让 Coding Agent 像专家一样使用 Core AI</li>
+<li><strong>探索-解决分离</strong> — FastContext 只做探索（read-only），主 Agent 只做编辑</li>
+<li><strong>并行工具调用</strong> — 独立的 Read/Glob/Grep 可在同一 turn 并行发起</li>
+<li><strong>Compact evidence</strong> — 返回 <code>&lt;final_answer&gt;</code> 块，只有 file path + line range</li>
+<li><strong>RL 训练</strong> — SFT + task-grounded RL 训练探索策略，不是简单蒸馏</li>
 </ol>
 <h2 id="_5">架构启发</h2>
-<p>Apple 的端侧 AI 策略是 <strong>全栈控制</strong>：芯片（Apple Silicon）→ OS（macOS/iOS 27 Core AI framework）→ 工具链（coreai-models）→ 开发体验（Agent Skills）。这种垂直整合是 Apple 一贯的策略，但在 AI 时代意味着开发者如果绑定 Core AI，就绑定了整个 Apple 生态。</p>
+<p>FastContext 定义了 <strong>Context 委托模式（Context Delegation Pattern）</strong>：主 Agent 把 context 获取委托给专用子模型，就像资深工程师让实习生先做代码调研。这种分离降低了主模型的 context 压力，也使探索可复用。</p>
+<pre class="mermaid">sequenceDiagram
+    participant Main as 主 Agent<br/>(expensive)
+    participant FC as FastContext<br/>(4B-30B)
+    participant Repo as Repository
+
+    Main->>FC: "哪里处理用户认证？"
+    FC->>Repo: Glob: **/*.py
+    FC->>Repo: Grep: "auth"
+    FC->>Repo: Read: src/auth.py
+    FC->>Repo: Read: tests/test_auth.py
+    FC-->>Main: final_answer:<br/>src/auth.py:42-58<br/>tests/test_auth.py:101-119
+    Main->>Repo: 编辑 src/auth.py:42-58
+</pre>
 <h2 id="_6">定位判断</h2>
-<p>coreai-models 是 <strong>Apple 端侧 AI 的 Xcode</strong>——不是模型本身，而是让开发者能高效使用模型的工具链。如果 Apple 端侧 AI 生态成熟，coreai-models 将成为不可或缺的基础设施。</p>
+<p>FastContext 可能成为 <strong>Coding Agent 的标准 context 管理组件</strong>。它不替代任何 Agent，而是作为插件嵌入 Claude Code、Codex、Cursor 等。如果 context 委托模式被广泛采纳，FastContext 有潜力成为事实标准。</p>
 <h2 id="_7">风险 / 局限 / 泡沫点</h2>
 <ol>
-<li><strong>平台锁定</strong> — <code>.aimodel</code> 格式只支持 Apple 平台</li>
-<li><strong>macOS/iOS 27.0+ 要求</strong> — 需要最新系统版本，用户覆盖率有限</li>
-<li><strong>模型覆盖</strong> — 目前支持的模型数量未知，可能有限</li>
-<li><strong>与 ONNX/MLX 竞争</strong> — 已有跨平台方案</li>
+<li><strong>需要额外推理资源</strong> — 4B 模型也需要 GPU/CPU 推理</li>
+<li><strong>探索质量上限</strong> — 小模型可能遗漏复杂跨文件依赖</li>
+<li><strong>竞品风险</strong> — Claude Code 内置 subagent 已有类似功能</li>
+<li><strong>场景有限</strong> — 只适用于有明确 file:line 答案的查询</li>
 </ol>
 <h2 id="_8">与同类项目的关系</h2>
 <ul>
-<li><strong>vs MLX</strong> — MLX 是 Apple 的机器学习框架，coreai-models 是部署工具链，互补关系</li>
-<li><strong>vs ONNX Runtime</strong> — ONNX 跨平台，Core AI 只支持 Apple 但体验更好</li>
-<li><strong>vs llama.cpp</strong> — llama.cpp 通用但需要自己管理模型格式，Core AI 标准化但锁定 Apple</li>
+<li><strong>vs Claude Code subagent</strong> — Claude Code 内置 subagent 是通用型，FastContext 是专用型 + RL 训练</li>
+<li><strong>vs headroom（context 压缩）</strong> — 互补关系：headroom 压缩 history，FastContext 委托探索</li>
+<li><strong>vs turbovec（向量索引）</strong> — turbovec 是语义搜索，FastContext 是 agentic 探索 + 引用</li>
 </ul>
 <h2 id="_9">是否值得持续跟踪</h2>
-<p><strong>是。</strong> Apple 官方出品 + Agent Skills 集成 = 端侧 AI 基础设施的重要变量。</p>
+<p><strong>强烈建议。</strong> Context 委托模式是 Coding Agent 架构的关键创新，FastContext 是这个模式的第一个学术论文级实现。</p>
 <h2 id="_10">后续观察点</h2>
 <ol>
-<li>支持的模型列表增长速度</li>
-<li>是否有企业级使用案例</li>
-<li>Agent Skills 是否扩展到更多场景</li>
-<li>与 MLX 的长期关系</li>
+<li>是否被 Claude Code / Codex / Cursor 原生集成</li>
+<li>SWE-bench 成绩提升的具体数据</li>
+<li>社区是否贡献更多训练数据</li>
+<li>是否出现 FastContext-as-a-Service</li>
 </ol>
 <hr />
 <p><em>首次记录：2026-06-19</em></p>

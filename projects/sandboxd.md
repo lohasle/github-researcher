@@ -4,9 +4,9 @@ slug: "sandboxd"
 date_added: "2026-06-11"
 category: "基础设施候选"
 emoji: "📦"
-stars: "586 stars"
-stars_delta: "日+25"
-last_seen_date: "2026-06-13"
+stars: "671 stars"
+stars_delta: "周+85"
+last_seen_date: "2026-06-19"
 language: "Go"
 score: 75
 tags: ["dev-sandbox", "docker", "coding-agent", "isolation", "preview", "self-hosted"]

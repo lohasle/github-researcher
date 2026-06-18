@@ -4,10 +4,11 @@ slug: "ponytail"
 date_added: "2026-06-13"
 category: "工具型"
 emoji: "🐴"
-stars: "862 stars"
-stars_delta: "日+862"
+stars: "36,393 stars"
+stars_delta: "周+35,531 (42x)"
+last_seen_date: "2026-06-19"
 language: "JavaScript"
-score: 80
+score: 92
 tags: ["agent-skill", "yagni", "minimalism", "code-quality", "token-optimization"]
 url: "https://github.com/DietrichGebert/ponytail"
 ---

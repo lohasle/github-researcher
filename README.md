@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-06-19）
+## 最新研究摘要（2026-06-20）
 
-**Agent Skill 经济学验证完成（ponytail 36K⭐ 一周暴涨 42 倍——Skill 不是实验品而是生产力工具） · Agent 编排层混战开启（omnigent meta-harness + vercel/eve filesystem-first + flock chat-driven dev team——三条路线争夺 Agent 运行时标准） · 大厂端侧 AI 与上下文工程双线推进（Apple CoreAI SDK 开源 + Microsoft FastContext 论文——端侧推理与上下文委托模式同步成熟）**
+**LLM Token 经济学基础设施爆发（headroom 38K⭐ 日增 3,938——压缩即基础设施 + codebase-memory-mcp 8K 用知识图谱替代 grep） · Agent Skill 安全生态成型（NVIDIA SkillSpector 64 类漏洞检测——Skill 供应链安全的 SAST 时刻） · Agent 框架第二轮混战（Astro flue 沙箱框架 + BuilderIO agent-native 应用框架 + Kilo 22.9K 开源 Coding Agent——三种范式争夺开发者心智） · 基础模型超越文本（Google TimesFM 2.5 时间序列基础模型已部署 BigQuery/Sheets/Vertex） · Coding Agent 可观测性赛道启动（agentsview 2.9K 本地化 20+ Agent 分析）**
 
 今日热榜新信号：
-- **DietrichGebert/ponytail**（36,393 stars）：Agent Skill 经济学标杆——一周从 862 到 36K，54% 代码削减 benchmark 证明 Skill 是可量化的生产力工具
-- **omnigent-ai/omnigent**（3,785 stars）：Agent meta-harness——统一编排 Claude Code/Codex/Cursor/Pi，跨设备实时协作，策略治理 + 沙箱
-- **vercel/eve**（1,327 stars）：Vercel 出品的 filesystem-first agent 框架——agent 能力映射到目录结构，tools/skills/channels/schedules 即文件
+- **chopratejas/headroom**（38,394 stars）：LLM Token 压缩基础设施——60-95% 压缩 + Proxy/Library/MCP 三模式 + 跨 Agent 内存 + 输出 token 削减
+- **DeusData/codebase-memory-mcp**（8,119 stars）：代码知识图谱 MCP——tree-sitter 158 语言索引 + sub-ms 查询 + 120x token 削减 + 单静态二进制
+- **NVIDIA/SkillSpector**（8,251 stars）：Agent Skill 安全扫描器——64 类漏洞 × 16 分类 + AST + taint tracking + YARA + MCP 投毒检测
 
+**→ [查看 2026-06-20 完整简报](daily/2026-06-20.md)**
 **→ [查看 2026-06-19 完整简报](daily/2026-06-19.md)**
 **→ [查看 2026-06-15 完整简报](daily/2026-06-15.md)**
 **→ [查看 2026-06-14 完整简报](daily/2026-06-14.md)**
-**→ [查看 2026-06-13 完整简报](daily/2026-06-13.md)**
 
 ---
 
@@ -24,23 +24,23 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-06-20](daily/2026-06-20.md) | LLM Token 经济学基础设施爆发（headroom 38K⭐ 日增 3,9 | 5 个深度分析 |
 | [2026-06-19](daily/2026-06-19.md) | Agent Skill 经济学验证完成（ponytail 36K⭐ 一周暴涨 4 | 4 个深度分析 |
 | [2026-06-15](daily/2026-06-15.md) | Agent Skills 杀手级应用涌现（last30days-skill 42 | 4 个深度分析 |
 | [2026-06-14](daily/2026-06-14.md) | Agent Skills 全栈基础设施化：分发层(agent-skills 58 | 6 个深度分析 |
 | [2026-06-13](daily/2026-06-13.md) | Agent 架构分层加速：shadcn/improve 贵模型审计+廉模型执行分 | 6 个深度分析 |
 | [2026-06-12](daily/2026-06-12.md) | Agent Skills 生态爆发：addyosmani/agent-skill | 5 个深度分析 |
 | [2026-06-11](daily/2026-06-11.md) | Agent 编排分层：shadcn/improve 745⭐ 顾问模式引爆 Ag | 5 个深度分析 |
-| [2026-06-10](daily/2026-06-10.md) | LLM Token 压缩从优化变基础设施：headroom 20.4K 周增 1 | 5 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **Agent Skill 经济学验证完成：ponytail 从 862⭐ 暴涨到 36K⭐（一周 42 倍），shadcn/improve 从 2.4K 到 5.5K，BuilderIO/skills 1.3K——Skill 不是实验概念而是可量化生产力的工具层。ponytail 的 benchmark（-54% LOC、-22% tokens、-20% cost、-27% time、100% safe）首次为 Skill 提供了严格的 A/B 数据**：相关项目 ponytail, shadcn-improve, builderio-skills。
-2. **Agent 编排层混战开启：omnigent（meta-harness 统一 Claude Code/Codex/Cursor）3.8K⭐，vercel/eve（filesystem-first agent framework）1.3K⭐，flock（chat-driven AI dev team）698⭐——三条完全不同的路线争夺 Agent 运行时标准。编排层从'框架之争'进入'范式之争'**：相关项目 omnigent, vercel-eve, flock。
-3. **端侧 AI 与上下文工程双线推进：Apple 开源 coreai-models（Swift 运行时 + 模型导出配方 + Agent Skills），Microsoft 发布 FastContext（4B-30B 仓库探索子模型 + RL 训练 + arXiv 论文）——大厂同时押注端侧推理和上下文委托，Coding Agent 的 context 管理从 hack 走向系统化**：相关项目 apple-coreai-models, microsoft-fastcontext。
-4. **终端多路复用器 AI 化：coder/boo 基于 libghostty 用 Zig 构建终端复用器，每个 session 的屏幕状态可被 AI agent 精确读取——terminal 作为 Agent 接口的新范式**：相关项目 coder-boo。
-5. **Agent 安全与隐私新范式：burner-agents 用一次性身份 swarm 做不可归因 web 交互，Tencent UniRL 统一多模态 RL 训练框架——Agent 安全从防御走向隔离-销毁模式，多模态 RL 从研究走向工程**：相关项目 burner-agents, tencent-unirl。
+1. **LLM Token 经济学基础设施爆发：headroom 38K⭐ 日增 3,938（60-95% 压缩 + 跨 Agent 内存 + 输出 token 削减 + CacheAligner），codebase-memory-mcp 8K⭐ 日增 1,055（tree-sitter 知识图谱 + 158 语言 + sub-ms 查询 + 120x token 削减）。压缩和索引不再是优化，而是 Agent 时代的基础设施层**：相关项目 headroom, codebase-memory-mcp, agentsview。
+2. **Agent Skill 安全生态成型：NVIDIA SkillSpector 8.2K⭐ 周增 5,505，64 类漏洞检测覆盖 16 分类（prompt injection / 数据泄露 / 供应链 / 权限越界 / MCP 投毒），研究显示 26.1% Skills 有漏洞、5.2% 恶意——Skill 供应链安全的 SAST 时刻到来**：相关项目 nvidia-skillspector, headroom, agent-reach。
+3. **Agent 框架第二轮混战：Astro 团队 flue（沙箱 Agent 框架 + 持久执行 + CRDT 多人协作）5.8K⭐，BuilderIO agent-native（Agent 原生应用框架 + 共享 action + MCP/A2A/AG-UI 全协议）1K⭐，Kilo Code 22.9K⭐ 日增 1,217（开源 Coding Agent + VS Code/JetBrains/CLI 三端 + 500+ 模型）——三种完全不同的 Agent 范式在同一天热门**：相关项目 withastro-flue, builderio-agent-native, kilo-code。
+4. **基础模型超越文本：Google TimesFM 2.5（200M 参数 + 16K context + 连续分位数预测）日增 1,516⭐，已在 BigQuery ML / Google Sheets / Vertex Model Garden 生产部署。时间序列基础模型不再是研究——是 Google 生产线上的工具**：相关项目 google-timesfm, lightricks-ltx-2。
+5. **Coding Agent 可观测性赛道启动：agentsview 2.9K⭐ 周增 1,382，支持 20+ Agent 的会话搜索/分析/成本统计，ccusage 的 100x 替代。单一二进制、全本地化、DuckDB mirror——轻量级 Agent 可观测性的最佳实践**：相关项目 agentsview, headroom。
 
 ---
 
@@ -51,21 +51,21 @@
 | [12-Factor Agents](projects/12-factor-agents.md) | 基础设施候选 | 构建足够好到可以交给专业用户使用的 LLM 驱动软件的 12 条工程原则，Age | 持续跟踪 |
 | [DietrichGebert/ponytail](projects/ponytail.md) | 工具型 | 让 AI Agent 像最懒的资深工程师一样思考——YAGNI 极简主义 Ski | 持续跟踪 |
 | [Understand-Anything](projects/understand-anything.md) | 平台候选 | 将任意代码转换为交互式知识图谱，支持探索、搜索和问答，兼容 Claude Cod | 持续跟踪 |
-| [Headroom](projects/headroom.md) | 基础设施候选 | AI Agent 与 LLM 之间的 Token 压缩中间件，60-95% To | 持续跟踪 |
 | [NVIDIA OpenShell](projects/openshell.md) | 基础设施候选 | NVIDIA 出品的 Agent 安全运行时沙箱——Rust 实现，四层策略防御 | 持续跟踪 |
 | [agentmemory](projects/agentmemory.md) | 基础设施候选 | AI Coding Agent 的统一持久记忆服务，支持全平台（Claude C | 持续跟踪 |
 | [Claude Plugins Official](projects/claude-plugins-official.md) | 平台候选 | Anthropic 官方管理的高质量 Claude Code 插件目录，Agen | 持续跟踪 |
 | [Copy Fail CVE-2026-31431](projects/copy-fail-cve-2026-31431.md) | 安全 | Linux 内核 `algif_aead` page-cache 损坏漏洞的检测 | 持续跟踪 |
 | [last30days-skill](projects/last30days-skill.md) | 生产可用 | AI agent 跨平台搜索技能，聚合 Reddit/X/YouTube/Tik | 持续跟踪 |
 | [MoneyPrinterTurbo](projects/moneyprinterturbo.md) | 平台候选 | 利用 AI 大模型一键生成高清短视频，从脚本到成片的完整自动化流程。 | 持续跟踪 |
+| [Microsoft SkillOpt](projects/skillopt.md) | 平台候选 | 文本空间技能优化器——为冻结的 LLM Agent 训练可复用的自然语言技能，产 | 持续跟踪 |
 
 ---
 
 ## 数据统计
 
-- 📊 项目档案：212 个
-- 📅 日报总数：70 期
-- 🔄 最近更新：2026-06-19
+- 📊 项目档案：215 个
+- 📅 日报总数：71 期
+- 🔄 最近更新：2026-06-20
 
 ---
 

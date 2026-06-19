@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-06-20
+
+**核心主题：** LLM Token 经济学基础设施爆发（headroom 38K⭐ 日增 3,938——压缩即基础设施 + codebase-memory-mcp 8K 用知识图谱替代 grep 120x token 削减） · Agent Skill 安全生态成型（NVIDIA SkillSpector 64 类漏洞检测——Skill 供应链安全的 SAST 时刻，26.1% Skills 有漏洞） · Agent 框架第二轮混战（Astro flue 沙箱 + BuilderIO agent-native 应用框架 + Kilo Code 22.9K 开源 Coding Agent） · 基础模型超越文本（Google TimesFM 2.5 时间序列基础模型已部署 BigQuery/Sheets/Vertex） · Coding Agent 可观测性赛道启动（agentsview 2.9K 本地化 20+ Agent 分析）
+
+**关键项目：**
+- 🗜️ chopratejas/headroom (38,394, 持续跟踪) — Token 压缩基础设施，日增 3,938
+- 🧠 DeusData/codebase-memory-mcp (8,119, 首日) — 代码知识图谱 MCP，120x token 削减
+- 🛡️ NVIDIA/SkillSpector (8,251, 持续跟踪) — Agent Skill 安全扫描器，64 类检测
+- 🌀 withastro/flue (5,803, 首日) — Astro 团队沙箱 Agent 框架
+- 🏗️ BuilderIO/agent-native (1,002, 首日) — Agent 原生应用框架
+
+---
+
 ## 2026-06-19
 
 **核心主题：** Agent Skill 经济学验证完成（ponytail 36K⭐ 一周暴涨 42 倍——benchmark 证明 Skill 是可量化的生产力工具） · Agent 编排层混战开启（omnigent meta-harness + vercel/eve filesystem-first + flock chat-driven dev team——三条路线争夺 Agent 运行时标准） · 端侧 AI 与上下文工程双线推进（Apple CoreAI SDK 开源 + Microsoft FastContext 论文——端侧推理与上下文委托模式同步成熟） · 终端多路复用器 AI 化（coder/boo 基于 libghostty） · Agent 安全新范式（burner-agents 一次性身份 swarm）

@@ -2,15 +2,26 @@
 title: "Headroom"
 slug: "headroom"
 date_added: "2026-06-02"
-last_seen_date: "2026-06-14"
+last_seen_date: "2026-06-20"
 category: "基础设施候选"
 emoji: "🗜️"
-stars: "26,091 stars"
-stars_delta: "周增 10,184（持续高增长）"
-score: 91
+stars: "38,394 stars"
+stars_delta: "日增 3,938，周增 12,303（爆发式增长）"
+score: 93
 tags: ["token-optimization", "context-compression", "mcp", "agent-infrastructure", "context-engineering"]
 url: "https://github.com/chopratejas/headroom"
 last_seen_date: "2026-06-10"
+## 2026-06-20 更新
+
+stars 从 26K 飙升到 38K（日增 3,938）。新增关键特性：
+- **输出 Token 削减**：不只压缩输入，还削减模型输出（verbosity steering + effort routing），31.7% 输出 token 节省
+- **headroom learn --verbosity**：从历史会话学习用户的简洁度偏好
+- **headroom copilot-auth**：支持 GitHub Copilot CLI 订阅流量压缩
+- **OpenClaw 兼容**：以 ContextEngine 插件形式集成
+- **holdout 对照组**：`HEADROOM_OUTPUT_HOLDOUT=0.1` 保留 10% 不压缩作为对照
+
+**判断升级：** Headroom 已经从"基础设施候选"进入"生产可用"阶段。38K stars + 日增 3,938 意味着它正在成为 Agent 栈的标准组件。
+
 ---
 
 # Headroom — AI Agent 上下文压缩层

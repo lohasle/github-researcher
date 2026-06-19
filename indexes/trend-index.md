@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-06-19'
+last_updated: '2026-06-20'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,47 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-06-20（第六十一版）
+
+### LLM Token 经济学基础设施爆发 · Agent Skill 安全生态成型 · Agent 框架第二轮混战 · 基础模型超越文本 · Coding Agent 可观测性赛道启动
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | LLM Token 经济学基础设施爆发：headroom 38K 日增 3,938 + codebase-memory-mcp 8K 知识图谱 120x token 削减 | headroom, codebase-memory-mcp, agentsview | 94 |
+| 2 | Agent Skill 安全生态成型：NVIDIA SkillSpector 8.2K 64 类漏洞检测，26.1% Skills 有漏洞 | nvidia-skillspector, headroom, agent-reach | 90 |
+| 3 | Agent 框架第二轮混战：Astro flue 沙箱框架 + BuilderIO agent-native + Kilo Code 22.9K | withastro-flue, builderio-agent-native, kilo-code | 88 |
+| 4 | 基础模型超越文本：Google TimesFM 2.5 已部署 BigQuery/Sheets/Vertex | google-timesfm, lightricks-ltx-2 | 83 |
+| 5 | Coding Agent 可观测性赛道启动：agentsview 2.9K 周增 1,382，20+ Agent 支持 | agentsview, headroom | 80 |
+
+#### 今日新增项目
+
+| 项目 | Stars | 日增 | 分类 | Score |
+|------|-------|------|------|-------|
+| DeusData/codebase-memory-mcp | 8,119 | +1,055 | 基础设施候选 | 88 |
+| withastro/flue | 5,803 | +305 | 平台候选 | 84 |
+| BuilderIO/agent-native | 1,002 | +210 | 平台候选 | 82 |
+| google-research/timesfm | 24,043 | +1,516 | 生产可用 | 85 |
+| Kilo-Org/kilocode | 22,883 | +1,217 | 平台候选 | 83 |
+
+#### 今日更新项目
+
+| 项目 | 变化 |
+|------|------|
+| chopratejas/headroom | 26K→38K（score 91→93，加入输出 token 削减 + Copilot 支持） |
+| NVIDIA/SkillSpector | 4.4K→8.2K（score 82→86，64 类检测全揭示） |
+| kenn-io/agentsview | 1.6K→2.9K（score 78→80，加入成本分析 + PG/DuckDB 后端） |
+
+#### 关键判断更新
+
+- **headroom** 从"基础设施候选"升级为"基础设施候选 → 生产可用"过渡
+- **codebase-memory-mcp** 定义了 Coding Agent 的"知识层"，与 headroom 互补
+- **NVIDIA SkillSpector** 64 类检测 + SARIF 输出 = Skill 供应链的 SAST
+- **Astro flue** 的沙箱 + 持久执行是 Agent 框架中最有想象力的方向
+
+---
 
 ## 2026-06-19（第六十版）
 

@@ -2,14 +2,25 @@
 title: "NVIDIA SkillSpector"
 slug: "nvidia-skillspector"
 date_added: "2026-06-12"
+last_seen_date: "2026-06-20"
 category: "工具型"
 emoji: "🛡️"
-stars: "4,360 stars"
-stars_delta: "周增 2,616（持续增长）"
+stars: "8,251 stars"
+stars_delta: "周增 5,505（爆发式增长）"
 language: "Python"
-score: 82
+score: 86
 tags: ["agent-security", "nvidia", "vulnerability-scanning", "supply-chain", "skills"]
 url: "https://github.com/NVIDIA/SkillSpector"
+## 2026-06-20 更新
+
+stars 从 4,360 翻倍到 8,251（周增 5,505）。重要新增信息：
+- **64 类漏洞检测覆盖 16 分类**（此前记录不详）—— 包括 prompt injection (P1-P8)、数据泄露 (E1-E4)、权限越界 (PE1-PE3)、供应链 (SC1-SC6)、过度自主 (EA1-EA4)、输出处理 (OH1-OH3)、系统提示泄露 (P6-P8)、内存投毒 (MP1-MP3)、工具滥用 (TM1-TM3)、Rogue Agent (RA1-RA2)、触发器滥用 (TR1-TR3)、危险代码 AST (AST1-AST8)、Taint Tracking (TT1-TT5)、YARA 签名 (YR1-YR4)、MCP 最小权限 (LP1-LP4)、MCP 工具投毒 (TP1-TP4)
+- **SARIF 输出**：支持 CI/CD 集成
+- **多 LLM 语义评估**：OpenAI / Anthropic / NVIDIA Build / 本地 Ollama
+- **研究数据**：26.1% Skills 含漏洞，5.2% 疑似恶意
+
+**判断升级：** 这不是通用代码扫描器，而是 Agent Skill 的 SAST。NVIDIA 出品 + Apache 2.0 + SARIF = 企业可在 CI/CD 中直接集成。
+
 ---
 
 # NVIDIA SkillSpector

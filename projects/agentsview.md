@@ -2,14 +2,27 @@
 title: "agentsview"
 slug: "agentsview"
 date_added: "2026-06-12"
+last_seen_date: "2026-06-20"
 category: "工具型"
 emoji: "📊"
-stars: "1,592 stars"
-stars_delta: "日+98"
+stars: "2,935 stars"
+stars_delta: "周增 1,382"
 language: "Go"
-score: 78
+score: 80
 tags: ["coding-agent", "analytics", "session-intelligence", "local-first", "ccusage"]
 url: "https://github.com/kenn-io/agentsview"
+---
+
+## 2026-06-20 更新
+
+stars 从 1,592 到 2,935（周增 1,382，接近翻倍）。新增：
+- LiteLLM 价格匹配 + prompt caching 感知成本计算
+- PostgreSQL 后端支持（PG_SERVE=1）
+- DuckDB mirror + Quack 协议远程查询
+- Session archetype 分类（automation/quick/standard/deep/marathon）
+- stats 命令含 heatmap、tool/model/agent mix
+- 可选 Git outcome metrics（commit/LOC/PR）
+
 ---
 
 # agentsview

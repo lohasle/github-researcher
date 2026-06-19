@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>headroom | GitHub 趋势研究</title>
+    <title>Google TimesFM | GitHub 趋势研究</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>⭐</text></svg>">
     <style>
         :root {
@@ -206,88 +206,103 @@
 <main class="container">
     <a href="/github-researcher/projects.html" class="back-link">← 返回重点项目</a>
     <div class="project-content">
-        
-        <h1 id="headroom-ai-agent">Headroom — AI Agent 上下文压缩层</h1>
+        <div style="margin-bottom:20px;"><a href="https://github.com/google-research/timesfm" target="_blank" rel="noopener" class="btn-github" style="padding:10px 20px;font-size:14px;"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg> 查看 GitHub 项目</a></div>
+        <h1 id="google-timesfm">Google TimesFM</h1>
 <h2 id="_1">一句话定位</h2>
-<p>AI Agent 与 LLM 之间的 Token 压缩中间件，60-95% Token 节省，支持 Library/Proxy/MCP 三模式接入。</p>
+<p>Google Research 开发的时间序列基础模型（decoder-only），200M 参数、16K context、已在 BigQuery ML / Google Sheets / Vertex Model Garden 生产部署。</p>
 <h2 id="_2">解决的问题</h2>
-<p>AI Agent 在处理 tool output、日志、RAG 结果、文件内容时，大量 Token 被浪费在冗余信息上。随着 Agent 系统复杂度增加，上下文窗口和成本成为硬约束。</p>
-<h2 id="_3">为什么值得关注</h2>
+<p>传统时间序列预测（ARIMA、Prophet 等）需要为每个场景单独训练模型，泛化能力差。Foundation Model 范式（一个预训练模型适配多种时间序列）大大降低了预测门槛。TimesFM 是 Google 的方案——decoder-only 架构，类似 LLM 但面向数值序列。</p>
+<h2 id="2026-06-20">为什么值得关注（2026-06-20）</h2>
+<p>日增 1,516 stars 达到 24,043。v2.5 发布（200M 参数从 500M 降下来，16K context 从 2048 提上去），且 Google 已经在三个产品线生产部署——这证明模型已经过了工程验证。ICML 2024 论文 + HuggingFace 模型 + LoRA 微调示例 + Flax/Torch 双后端 + AGENTS.md/SKILL.md 支持。</p>
+<h2 id="_3">热度来源判断</h2>
+<p><strong>Google 品牌 + 生产部署 + 论文背书。</strong> 这三点叠加使 TimesFM 成为时间序列基础模型的事实标杆。日增 1,516 反映的是企业和研究者对"超越 LLM 的基础模型"的兴趣。</p>
+<h2 id="_4">关键技术亮点</h2>
 <ol>
-<li>触及所有 Agent 开发者的真实痛点 — Token 成本和上下文窗口</li>
-<li>三种接入模式覆盖所有架构：Library 内联、Proxy 透明、MCP Server</li>
-<li>CCR 可逆压缩 — 不丢信息，LLM 按需 retrieve</li>
-<li>已有可信基准测试数据</li>
+<li>
+<p><strong>Decoder-only 架构：</strong> 与 GPT 类似的自回归架构，但面向时间序列。这意味着 LLM 的 scaling law 可能也适用于时间序列。</p>
+</li>
+<li>
+<p><strong>v2.5 关键改进：</strong> 参数从 500M→200M（更轻），context 从 2048→16K（更长），新增连续分位数预测（optional 30M quantile head），去掉频率指示器。</p>
+</li>
+<li>
+<p><strong>Google 生产部署：</strong> BigQuery ML（企业级 SQL）、Google Sheets（日常表格）、Vertex Model Garden（Docker 化端点）。三线部署证明工程成熟。</p>
+</li>
+<li>
+<p><strong>协变量支持：</strong> 通过 XReg 支持外部协变量，不再是纯单变量预测。</p>
+</li>
+<li>
+<p><strong>LoRA 微调：</strong> HuggingFace Transformers + PEFT 的 LoRA 微调示例。</p>
+</li>
 </ol>
-<h2 id="_4">热度来源判断</h2>
-<ul>
-<li><strong>2026-06-08 爆发</strong>：16.8K stars，一周从 4.1K 增至 16.8K（+300%！），周增量 +13.3K</li>
-<li>爆发触发因素：Agent Skill 生态核聚变，Token 压缩从可选优化变为标配基础设施</li>
-<li>解决的问题具有普适性——Token 是 Agent 时代的计算成本单位</li>
-<li>MCP 原生支持让集成门槛极低</li>
-<li>GitHub 周榜 #1 位置</li>
-</ul>
-<h2 id="_5">关键技术亮点</h2>
+<h2 id="_5">架构启发</h2>
+<p>TimesFM 证明了"基础模型"范式可以从文本扩展到数值序列。这对架构师的启发是：
+- "预训练 + 微调" 不只是 LLM 的专利
+- 时间序列预测的"模型即服务"正在成为现实
+- 企业可以跳过训练步骤，直接用 foundation model 做预测</p>
+<h2 id="_6">定位判断</h2>
+<p><strong>时间序列基础模型的生产标杆。</strong> 不再是研究项目——是 Google 生产线上的工具。在企业场景中可直接替代部分传统预测管道。</p>
+<h2 id="_7">风险 / 局限 / 泡沫点</h2>
 <ol>
-<li><strong>CCR（Compress-Cache-Retrieve）可逆架构</strong>：原始数据本地存储，LLM 需要时可 retrieve，这是与简单截断的关键差异</li>
-<li><strong>ContentRouter</strong>：自动检测内容类型（JSON/代码/文本），选择最优压缩策略</li>
-<li><strong>三引擎压缩</strong>：SmartCrusher (JSON)、CodeCompressor (AST)、Kompress-base (文本，基于 HuggingFace 模型)</li>
-<li><strong>CacheAligner</strong>：稳定前缀使 Provider KV Cache 命中，不仅压缩还优化缓存</li>
-<li><strong>多 Agent 跨进程共享记忆</strong>：Claude/Codex/Gemini 之间自动去重</li>
+<li><strong>不是 Google 官方支持产品：</strong> README 明确说明"open version is not an officially supported Google product"。</li>
+<li><strong>场景限制：</strong> 基础模型不可能覆盖所有时间序列场景（如极端稀疏数据、高频交易）。</li>
+<li><strong>竞争激烈：</strong> Lag-Llama、Chronos（Amazon）、Moirai（Salesforce）等也在争夺这个赛道。</li>
+<li><strong>部署复杂度：</strong> 虽然 HuggingFace 模型可用，但企业级部署仍需要 MLOps 投入。</li>
 </ol>
-<h2 id="_6">架构启发</h2>
-<p><code>Agent → [Headroom 压缩层] → LLM Provider
-         ├─ ContentRouter (内容分类)
-         ├─ SmartCrusher / CodeCompressor / Kompress-base (压缩)
-         ├─ CacheAligner (缓存对齐)
-         └─ CCR Store (可逆存储)</code></p>
-<p>Agent 系统的 Token 管理应该分层：
-- <strong>索引层</strong>（codegraph）→ 减少搜索范围
-- <strong>压缩层</strong>（Headroom）→ 减少每次传输量
-- <strong>缓存层</strong>（CacheAligner）→ 减少重复计算</p>
-<h2 id="_7">定位判断</h2>
-<p>当前：<strong>基础设施候选</strong>（26K stars，持续 10K+/周增速验证了基础设施级需求）
-趋势：<strong>Agent Skills 压缩层标准组件</strong> — Token 压缩已是 Agent 栈标配</p>
-<h2 id="_8">风险/局限/泡沫点</h2>
-<ul>
-<li>压缩质量依赖内容类型识别准确性，边界 case 可能出错</li>
-<li>单人/小团队项目，长期维护风险</li>
-<li>LLM Provider 可能原生支持类似能力（如 extended thinking + caching），挤压空间</li>
-<li>「60-95% 压缩」的最佳 case 与平均 case 可能有差距</li>
-</ul>
-<h2 id="_9">与同类项目的关系</h2>
-<ul>
-<li>与 codegraph/Understand-Anything 互补：索引层减少搜索次数，压缩层减少 Token</li>
-<li>与 markitdown 不同维度：markitdown 是格式转换，headroom 是信息压缩</li>
-<li>与 cc-switch 不同层级：cc-switch 是模型切换，headroom 是上下文优化</li>
-</ul>
-<h2 id="_10">是否值得持续跟踪</h2>
-<p><strong>是。</strong> Agent 上下文管理是基础设施级问题。</p>
-<h2 id="_11">后续观察点</h2>
+<h2 id="_8">与同类项目的关系</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>团队</th>
+<th>参数</th>
+<th>Context</th>
+<th>生产部署</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TimesFM 2.5</td>
+<td>Google</td>
+<td>200M</td>
+<td>16K</td>
+<td>BigQuery/Sheets/Vertex</td>
+</tr>
+<tr>
+<td>Chronos</td>
+<td>Amazon</td>
+<td>710M</td>
+<td>5K</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Moirai</td>
+<td>Salesforce</td>
+<td>311M</td>
+<td>1K</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Lag-Llama</td>
+<td>ServiceNow</td>
+<td>8M</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<p>TimesFM 在参数效率（200M vs 710M）、context 长度（16K vs 5K）和生产部署上全面领先。</p>
+<h2 id="_9">是否值得持续跟踪</h2>
+<p><strong>是。</strong> 作为 Google 生产线部署的基础模型，TimesFM 值得持续跟踪。特别是关注其与企业数据平台的集成进展。</p>
+<h2 id="_10">后续观察点</h2>
 <ol>
-<li>企业用户采用情况</li>
-<li>是否能保持压缩质量在更多场景下的一致性</li>
-<li>Provider 原生能力演进是否挤压其空间</li>
-<li>社区贡献者增长——当前 13.3K/week 增速是否可持续</li>
-<li>16.8K 之后是否进入稳定使用阶段还是 star farming</li>
+<li>BigQuery ML 中的使用数据（预测调用量）</li>
+<li>社区微调模型的性能对比</li>
+<li>是否有多模态时间序列计划（如时间序列 + 文本）</li>
+<li>竞品（Chronos/Moirai）的迭代节奏</li>
+<li>企业落地案例</li>
 </ol>
 <hr />
-<h2 id="_12">更新记录</h2>
-<h3 id="2026-06-08">2026-06-08</h3>
-<ul>
-<li>Stars: 4.1K → 16.8K（+300%，周增量 +13.3K）</li>
-<li>Score: 88 → 90</li>
-<li>定位调整：工具型 → 平台候选</li>
-<li>判断：Token 压缩正在从可选优化变为 Agent 栈标配基础设施</li>
-</ul>
-<h3 id="2026-06-14">2026-06-14</h3>
-<ul>
-<li>Stars: 16.8K → 26.1K（周增 10.2K，持续高增长）</li>
-<li>Score: 90 → 91</li>
-<li>定位调整：平台候选 → 基础设施候选</li>
-<li>判断更新：headroom 在 Agent Skills 四层栈（分发/安全/压缩/感知）中占据压缩层核心位置，已成为 Agent 基础设施标准组件</li>
-<li>关键信号：连续多周 10K+ 增速不是 star farming，而是真实采用</li>
-</ul>
+<p><em>首次记录：2026-06-20</em></p>
     </div>
 </main>
     <footer class="footer">

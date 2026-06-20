@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-06-20'
+last_updated: '2026-06-21'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,38 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-06-21（第六十二版）
+
+### Agent Skill 训练正式化 · Agent 元框架混战升级 · 本地推理引擎专业化 · Epic Games 开源下一代 VCS · Coding Agent 增强工具爆发
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agent Skill 训练范式正式化：SkillOpt 8.4K 文本空间训练 epoch/lr/val gate 6×52 cell 全第一 + Sleep 离线进化 | skillopt, shadcn-improve, ponytail | 93 |
+| 2 | Agent 元框架/meta-harness 混战升级：Omnigent 4.2K + Vercel Eve 1.8K + ECC 218K 三种哲学 | omnigent, vercel-eve, ecc | 90 |
+| 3 | 本地推理引擎专业化：antirez ds4 14.8K DeepSeek V4 专用 + SSD 流式 KV cache | ds4, zerolang | 88 |
+| 4 | Epic Games 开源下一代 VCS：Lore 5.1K 内容寻址 + Merkle Tree + 大二进制优先 | epicgames-lore | 85 |
+| 5 | Coding Agent 增强工具爆发：CodexPlusPlus 20.4K + html-anything 7K + ponytail 43K YAGNI 注入 | codexplusplus, html-anything, ponytail | 82 |
+
+#### 今日新增项目
+
+| 项目 | Stars | 分类 | Score |
+|------|-------|------|-------|
+| EpicGames/lore | 5,105 | 基础设施候选 | 57 |
+| BigPizzaV3/CodexPlusPlus | 20,363 | 工具型 | 48 |
+
+#### 今日更新项目
+
+| 项目 | 变化 |
+|------|------|
+| microsoft/SkillOpt | 4.9K→8.4K（score 90→90，v0.1.0 PyPI + Sleep preview + 52 cell 全第一） |
+| antirez/ds4 | 12.9K→14.8K（score 87→87，分布式推理 + SSD 流式 + beta 进展） |
+| omnigent-ai/omnigent | 3.8K→4.2K（score 87→84，沙箱 + 策略治理 + 手机协作） |
+| vercel/eve | 1.3K→1.8K（score 85→85，文件系统优先 Agent 框架正式发布） |
+
+---
 
 ## 2026-06-20（第六十一版）
 

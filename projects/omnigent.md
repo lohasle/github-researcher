@@ -4,10 +4,10 @@ slug: "omnigent"
 date_added: "2026-06-19"
 category: "平台候选"
 emoji: "🤖"
-stars: "3,785 stars"
-stars_delta: "7天+3,785"
+stars: "4,186 stars"
+stars_delta: "从 3.8K 到 4.2K，持续增长"
 language: "Python"
-score: 87
+score: 84
 tags: ["agent-orchestration", "meta-harness", "multi-agent", "policy", "sandbox"]
 url: "https://github.com/omnigent-ai/omnigent"
 ---

@@ -4,13 +4,13 @@ slug: "skillopt"
 date_added: "2026-06-05"
 category: "平台候选"
 emoji: "🎯"
-stars: "4.9K stars"
-stars_delta: "新项目，487 forks"
+stars: "8,448 stars"
+stars_delta: "6月持续增长，从 4.9K → 8.4K（+72%），816 forks"
 language: "Python"
 score: 90
 tags: ["agent-skills", "self-evolving-agents", "microsoft", "text-space-optimization", "skill-training"]
 url: "https://github.com/microsoft/SkillOpt"
-last_seen_date: "2026-06-05"
+last_seen_date: "2026-06-21"
 ---
 
 # Microsoft SkillOpt
@@ -21,8 +21,10 @@ last_seen_date: "2026-06-05"
 ## 它解决的问题
 Agent Skill（如 Claude Code Skills、Codex Skills）目前完全依赖手工编写和人工调优。当 Skill 数量增长、复杂度提升时，手工迭代效率极低，且缺乏系统化的质量保障方法。SkillOpt 把「prompt engineering」升级为「prompt training」。
 
-## 为什么值得关注（2026-06-05）
-Microsoft 官方出品，MIT 协议，第一个提出系统化 Agent Skill 训练方法的开源项目。4.9K stars + 487 forks 说明社区在积极尝试。这是 Agent Skill 从「手工作坊」到「工业化训练」的关键转折点。
+## 为什么值得关注（2026-06-21 更新）
+Microsoft 官方出品，MIT 协议，第一个提出系统化 Agent Skill 训练方法的开源项目。6月21日已达 8,448 stars + 816 forks。**v0.1.0 已发布 PyPI**，可 `pip install skillopt`。新增 **Sleep 模块（preview）**——夜间离线审查历史会话、重放循环任务、验证 skill 更新。在 6 benchmark × 7 model × 3 harness = 52 个评估单元中**全部排名第一**。GPT-5.5 上平均提升 +23.5（直接 chat）、+24.8（Codex）、+19.1（Claude Code）。
+
+gbrain、gbrain-evals、darwin-skill 已宣布集成 SkillOpt。
 
 ## 热度来源判断
 - 真实需求：Agent Skill 生态爆发（html-anything 75 种 Skill、9arm-skills、gsd-core 等），但 Skill 质量参差不齐
@@ -59,10 +61,11 @@ flowchart LR
 **平台候选。** 如果 Skill 训练范式成立，SkillOpt 将成为 Agent Skill 生命周期的核心工具——从编写、训练、验证到部署的基础设施。
 
 ## 风险 / 局限 / 泡沫点
-1. **实验性项目**：Microsoft Research 出品，可能缺乏长期产品化承诺
-2. **效果未验证**：文本空间优化在复杂场景的效果缺乏大规模验证
+1. ~~**实验性项目**~~：已发布 v0.1.0 到 PyPI，但 Sleep 模块仍是 preview
+2. **52 cell 全第一的泛化性**：benchmark 覆盖面虽广但仍有领域局限，真实生产场景效果待验证
 3. **轨迹数据依赖**：需要大量高质量的 Agent 执行轨迹，冷启动困难
-4. **评估标准缺失**：什么是「更好的 Skill」？缺乏行业统一评估基准
+4. **Sleep 模块安全风险**：夜间自动进化 Agent skill 的安全性需要独立验证——自动修改 skill 可能引入意外行为
+5. **评估标准缺失**：什么是「更好的 Skill」？缺乏行业统一评估基准
 
 ## 与同类项目的关系
 - **html-anything (6.1K)**：Skill 的消费者/应用层（75 种 Skill 的 agentic HTML 编辑器），与 SkillOpt 是上下游关系

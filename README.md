@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-06-20）
+## 最新研究摘要（2026-06-21）
 
-**LLM Token 经济学基础设施爆发（headroom 38K⭐ 日增 3,938——压缩即基础设施 + codebase-memory-mcp 8K 用知识图谱替代 grep） · Agent Skill 安全生态成型（NVIDIA SkillSpector 64 类漏洞检测——Skill 供应链安全的 SAST 时刻） · Agent 框架第二轮混战（Astro flue 沙箱框架 + BuilderIO agent-native 应用框架 + Kilo 22.9K 开源 Coding Agent——三种范式争夺开发者心智） · 基础模型超越文本（Google TimesFM 2.5 时间序列基础模型已部署 BigQuery/Sheets/Vertex） · Coding Agent 可观测性赛道启动（agentsview 2.9K 本地化 20+ Agent 分析）**
+**Agent Skill 训练正式化——SkillOpt 用 epoch/lr/val gate 训练 skill 文档（6 benchmark × 52 cell 全第一 + Sleep 离线进化） · Agent 元框架混战升级（Omnigent 4.2K meta-harness + Vercel Eve 1.8K 文件系统优先 + ECC 218K 登顶） · 本地推理引擎专业化（antirez/ds4 14.8K DeepSeek V4 专用 inference + SSD 流式 KV cache） · Epic Games 开源下一代 VCS（Lore 5.1K 内容寻址 + Merkle Tree + 大二进制优先） · Agent 增强工具爆发（CodexPlusPlus 20.4K + html-anything 7K + shadcn/improve 5.8K）**
 
 今日热榜新信号：
-- **chopratejas/headroom**（38,394 stars）：LLM Token 压缩基础设施——60-95% 压缩 + Proxy/Library/MCP 三模式 + 跨 Agent 内存 + 输出 token 削减
-- **DeusData/codebase-memory-mcp**（8,119 stars）：代码知识图谱 MCP——tree-sitter 158 语言索引 + sub-ms 查询 + 120x token 削减 + 单静态二进制
-- **NVIDIA/SkillSpector**（8,251 stars）：Agent Skill 安全扫描器——64 类漏洞 × 16 分类 + AST + taint tracking + YARA + MCP 投毒检测
+- **EpicGames/lore**（5,105 stars）：Epic Games 下一代开源 VCS——内容寻址 + Merkle Tree + 大二进制优先 + 按需 hydration + 全 API 覆盖
+- **BigPizzaV3/CodexPlusPlus**（20,363 stars）：CodexApp 增强工具——Rust 实现，专注让 Codex 更好用、更舒服、更高效
+- **microsoft/SkillOpt**（8,448 stars）：微软 Agent Skill 优化器——像训练神经网络一样训练 skill 文档，epoch/lr/val gate + Sleep 离线进化
 
+**→ [查看 2026-06-21 完整简报](daily/2026-06-21.md)**
 **→ [查看 2026-06-20 完整简报](daily/2026-06-20.md)**
 **→ [查看 2026-06-19 完整简报](daily/2026-06-19.md)**
 **→ [查看 2026-06-15 完整简报](daily/2026-06-15.md)**
-**→ [查看 2026-06-14 完整简报](daily/2026-06-14.md)**
 
 ---
 
@@ -24,23 +24,23 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-06-21](daily/2026-06-21.md) | Agent Skill 训练正式化——SkillOpt 用 epoch/lr/v | 5 个深度分析 |
 | [2026-06-20](daily/2026-06-20.md) | LLM Token 经济学基础设施爆发（headroom 38K⭐ 日增 3,9 | 5 个深度分析 |
 | [2026-06-19](daily/2026-06-19.md) | Agent Skill 经济学验证完成（ponytail 36K⭐ 一周暴涨 4 | 4 个深度分析 |
 | [2026-06-15](daily/2026-06-15.md) | Agent Skills 杀手级应用涌现（last30days-skill 42 | 4 个深度分析 |
 | [2026-06-14](daily/2026-06-14.md) | Agent Skills 全栈基础设施化：分发层(agent-skills 58 | 6 个深度分析 |
 | [2026-06-13](daily/2026-06-13.md) | Agent 架构分层加速：shadcn/improve 贵模型审计+廉模型执行分 | 6 个深度分析 |
 | [2026-06-12](daily/2026-06-12.md) | Agent Skills 生态爆发：addyosmani/agent-skill | 5 个深度分析 |
-| [2026-06-11](daily/2026-06-11.md) | Agent 编排分层：shadcn/improve 745⭐ 顾问模式引爆 Ag | 5 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **LLM Token 经济学基础设施爆发：headroom 38K⭐ 日增 3,938（60-95% 压缩 + 跨 Agent 内存 + 输出 token 削减 + CacheAligner），codebase-memory-mcp 8K⭐ 日增 1,055（tree-sitter 知识图谱 + 158 语言 + sub-ms 查询 + 120x token 削减）。压缩和索引不再是优化，而是 Agent 时代的基础设施层**：相关项目 headroom, codebase-memory-mcp, agentsview。
-2. **Agent Skill 安全生态成型：NVIDIA SkillSpector 8.2K⭐ 周增 5,505，64 类漏洞检测覆盖 16 分类（prompt injection / 数据泄露 / 供应链 / 权限越界 / MCP 投毒），研究显示 26.1% Skills 有漏洞、5.2% 恶意——Skill 供应链安全的 SAST 时刻到来**：相关项目 nvidia-skillspector, headroom, agent-reach。
-3. **Agent 框架第二轮混战：Astro 团队 flue（沙箱 Agent 框架 + 持久执行 + CRDT 多人协作）5.8K⭐，BuilderIO agent-native（Agent 原生应用框架 + 共享 action + MCP/A2A/AG-UI 全协议）1K⭐，Kilo Code 22.9K⭐ 日增 1,217（开源 Coding Agent + VS Code/JetBrains/CLI 三端 + 500+ 模型）——三种完全不同的 Agent 范式在同一天热门**：相关项目 withastro-flue, builderio-agent-native, kilo-code。
-4. **基础模型超越文本：Google TimesFM 2.5（200M 参数 + 16K context + 连续分位数预测）日增 1,516⭐，已在 BigQuery ML / Google Sheets / Vertex Model Garden 生产部署。时间序列基础模型不再是研究——是 Google 生产线上的工具**：相关项目 google-timesfm, lightricks-ltx-2。
-5. **Coding Agent 可观测性赛道启动：agentsview 2.9K⭐ 周增 1,382，支持 20+ Agent 的会话搜索/分析/成本统计，ccusage 的 100x 替代。单一二进制、全本地化、DuckDB mirror——轻量级 Agent 可观测性的最佳实践**：相关项目 agentsview, headroom。
+1. **Agent Skill 训练范式正式化：SkillOpt 8.4K⭐（微软出品）将 skill 文档视为可训练状态——epoch、learning rate、validation gate、rejected-edit buffer，像训练神经网络一样训练 skill，6 benchmark × 52 cell 全第一。新增 Sleep 模块实现夜间离线 skill 进化。shadcn/improve 5.8K⭐ 用强模型审计代码库为弱模型写执行计划——模型分工协作。Skill 不再是手写提示词，而是可优化、可验证、可部署的训练产物**：相关项目 skillopt, shadcn-improve, ponytail。
+2. **Agent 元框架/meta-harness 混战升级：Omnigent 4.2K⭐（Claude Code/Codex/Cursor 统一编排 + 沙箱 + 策略治理 + 手机协作），Vercel Eve 1.8K⭐（文件系统即 Agent 接口——instructions.md / tools/ / skills/ / channels/ / schedules/），ECC 218K⭐ 登顶最大 Agent harness。三种完全不同的 Agent 框架哲学在同一天热门：元编排 vs 文件系统约定 vs 性能优化**：相关项目 omnigent, vercel-eve, affaan-m-ecc。
+3. **本地推理引擎专业化：antirez/ds4（DwarfStar）14.8K⭐——DeepSeek V4 Flash/PRO 专用本地推理引擎，不通用、不包装，一个模型做到极致。SSD 流式 KV cache 重新定义'模型是否需要装入 RAM'的边界——从硬性截止变成速度连续谱。Metal/CUDA/ROCm 三后端 + 自带 GGUF + coding agent 集成**：相关项目 ds4, zerolang。
+4. **Epic Games 开源下一代 VCS：Lore 5.1K⭐——内容寻址 + Merkle Tree + 大二进制优先 + 去重 + 按需 hydration。不是 git 替代品，而是面向游戏/娱乐产业的 VCS，解决 git 处理大二进制文件的根本性痛点。UEFN 内置 VCS 的开源版本。C/C++/C#/Rust/Go/Python/JS 全 API 覆盖**：相关项目 epicgames-lore。
+5. **Coding Agent 增强工具爆发：CodexPlusPlus 20.4K⭐（CodexApp 增强——Rust 重写体验优化），html-anything 7K⭐（75 Skills × 9 Surfaces 的 Agentic HTML 编辑器，零 API key + 本地运行）， ponytail 43K⭐（让 AI agent 像最懒的 senior dev 一样思考——YAGNI 理念注入）。Agent 不需要更强，需要更好的工具和约束**：相关项目 codexplusplus, html-anything, ponytail。
 
 ---
 
@@ -63,9 +63,9 @@
 
 ## 数据统计
 
-- 📊 项目档案：215 个
-- 📅 日报总数：71 期
-- 🔄 最近更新：2026-06-20
+- 📊 项目档案：217 个
+- 📅 日报总数：72 期
+- 🔄 最近更新：2026-06-21
 
 ---
 

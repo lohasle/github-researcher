@@ -4,8 +4,8 @@ slug: "vercel-eve"
 date_added: "2026-06-19"
 category: "平台候选"
 emoji: "🌙"
-stars: "1,327 stars"
-stars_delta: "3天+1,327"
+stars: "1,848 stars"
+stars_delta: "从 1.3K 到 1.8K，5天+39%"
 language: "TypeScript"
 score: 85
 tags: ["agent-framework", "filesystem-first", "vercel", "typescript"]

@@ -2,17 +2,26 @@
 title: "codebase-memory-mcp"
 slug: "codebase-memory-mcp"
 date_added: "2026-06-20"
-last_seen_date: "2026-06-20"
+last_seen_date: "2026-06-22"
 category: "基础设施候选"
 emoji: "🧠"
-stars: "8,119 stars"
-stars_delta: "日增 1,055，周增 3,244"
+stars: "10,179 stars"
+stars_delta: "日增 1,029，周增 5K+"
 language: "C"
 score: 88
 tags: ["code-intelligence", "knowledge-graph", "mcp", "tree-sitter", "agent-infrastructure", "hybrid-lsp"]
 url: "https://github.com/DeusData/codebase-memory-mcp"
 ---
 
+## 2026-06-22 更新
+
+stars 从 8K 增长到 10K（日增 1,029）。持续稳定增长表明这不是短期热度。新增观察：
+- 基础设施即代码索引：Dockerfile/K8s manifests/Kustomize overlays 作为图节点
+- 3D 交互式图谱可视化 UI（localhost:9749）
+- .codebase-memory/graph.db.zst 可提交到仓库让队友跳过 reindex
+- 11 agent 自动检测配置
+- Hybrid LSP 语义类型解析扩展到 11 语言
+- arXiv 预印本背书（2603.27277）
 # codebase-memory-mcp
 
 ## 一句话定位

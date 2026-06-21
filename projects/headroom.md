@@ -5,22 +5,28 @@ date_added: "2026-06-02"
 last_seen_date: "2026-06-20"
 category: "基础设施候选"
 emoji: "🗜️"
-stars: "38,394 stars"
-stars_delta: "日增 3,938，周增 12,303（爆发式增长）"
-score: 93
-tags: ["token-optimization", "context-compression", "mcp", "agent-infrastructure", "context-engineering"]
+stars: "44,115 stars"
+stars_delta: "日增 2,617，周增 15K+（持续爆发）"
+score: 94
+tags: ["token-optimization", "context-compression", "mcp", "agent-infrastructure", "context-engineering", "cross-agent-memory"]
 url: "https://github.com/chopratejas/headroom"
-last_seen_date: "2026-06-10"
-## 2026-06-20 更新
+last_seen_date: "2026-06-22"
+## 2026-06-22 更新
 
-stars 从 26K 飙升到 38K（日增 3,938）。新增关键特性：
+stars 从 38K 继续飙升到 44K（日增 2,617）。新增关键特性：
 - **输出 Token 削减**：不只压缩输入，还削减模型输出（verbosity steering + effort routing），31.7% 输出 token 节省
 - **headroom learn --verbosity**：从历史会话学习用户的简洁度偏好
 - **headroom copilot-auth**：支持 GitHub Copilot CLI 订阅流量压缩
 - **OpenClaw 兼容**：以 ContextEngine 插件形式集成
 - **holdout 对照组**：`HEADROOM_OUTPUT_HOLDOUT=0.1` 保留 10% 不压缩作为对照
+- **headroom wrap 热同步**：运行中的 proxy 不需重启即可应用新环境变量
+- **6 种压缩算法体系化**：SmartCrusher（JSON）+ CodeCompressor（AST）+ Kompress-v2-base（HF 模型）+ CacheAligner + CCR + Image
 
-**判断升级：** Headroom 已经从"基础设施候选"进入"生产可用"阶段。38K stars + 日增 3,938 意味着它正在成为 Agent 栈的标准组件。
+**判断维持升级：** Headroom 已稳固确立为 Agent 基础设施层标准组件。44K stars + 日均 2K+ 增速 + cross-agent memory + headroom learn 表明它正在从"压缩工具"进化为"Agent 记忆与优化平台"。Context Engineering 作为新工程学科的定位越来越清晰。
+
+## 2026-06-20 更新
+
+stars 从 26K 飙升到 38K（日增 3,938）。判断升级为"生产可用"阶段。
 
 ---
 

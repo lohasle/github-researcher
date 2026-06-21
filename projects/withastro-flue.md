@@ -2,11 +2,11 @@
 title: "Astro flue"
 slug: "withastro-flue"
 date_added: "2026-06-20"
-last_seen_date: "2026-06-20"
+last_seen_date: "2026-06-22"
 category: "平台候选"
 emoji: "🌀"
-stars: "5,803 stars"
-stars_delta: "日增 305"
+stars: "6,282 stars"
+stars_delta: "日增 280"
 language: "TypeScript"
 score: 84
 tags: ["agent-framework", "sandbox", "durable-execution", "astro", "typescript", "crdt"]

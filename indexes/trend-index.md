@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-06-21'
+last_updated: '2026-06-22'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,39 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-06-22（第六十三版）
+
+### Agent 上下文压缩标准化 · 多 Agent 并行编排成熟化 · AI Gateway 性能战打响 · Agent 框架两条路线分化 · Agentic 内容生产工业化
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agent 上下文压缩层确立为基础设施：Headroom 44K 日增 2.6K + 6 算法 + cross-agent memory + 输出 token 削减 | headroom, codebase-memory-mcp | 94 |
+| 2 | 多 Agent 并行编排格局成型：Orca 5.7K ADE + herdr 6.6K 终端 multiplexer + jcode 7.5K Rust + claude-squad 7.8K | stablyai-orca, herdr, jcode, claude-squad | 91 |
+| 3 | AI Gateway 性能竞赛：Bifrost 5.9K Go 11µs overhead 50x LiteLLM + freellmapi 11.3K 免费 LLM 聚合 | maximhq-bifrost, freellmapi | 87 |
+| 4 | Agent 框架两条路线分化：flue 6.2K 完整环境 vs agent-native 1.2K 应用原生 + DeerFlow SuperAgent | withastro-flue, builderio-agent-native, deer-flow | 85 |
+| 5 | Agentic 内容生产工业化：OpenMontage 8.4K 52 tools + Palmier-Pro 4.9K + voicebox 31.5K | openmontage, palmier-pro, voicebox | 82 |
+
+#### 今日新增项目
+
+| 项目 | Stars | 分类 | Score |
+|------|-------|------|-------|
+| stablyai/orca | 5,784 | 平台候选 | 86 |
+| maximhq/bifrost | 5,937 | 基础设施候选 | 85 |
+| calesthio/OpenMontage | 8,487 | 平台候选 | 80 |
+| 1jehuang/jcode | 7,516 | 工具型 | 78 |
+
+#### 今日更新项目
+
+| 项目 | 变化 |
+|------|------|
+| chopratejas/headroom | 38K→44K（score 93→94，输出 token 削减 + cross-agent memory + 6 算法体系化） |
+| DeusData/codebase-memory-mcp | 8K→10K（score 88→88，IaC 索引 + 3D 可视化 + 11 语言 LSP） |
+| withastro/flue | 5.8K→6.2K（score 84→84，持续稳定增长） |
+
+---
 
 ## 2026-06-21（第六十二版）
 

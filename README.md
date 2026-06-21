@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-06-21）
+## 最新研究摘要（2026-06-22）
 
-**Agent Skill 训练正式化——SkillOpt 用 epoch/lr/val gate 训练 skill 文档（6 benchmark × 52 cell 全第一 + Sleep 离线进化） · Agent 元框架混战升级（Omnigent 4.2K meta-harness + Vercel Eve 1.8K 文件系统优先 + ECC 218K 登顶） · 本地推理引擎专业化（antirez/ds4 14.8K DeepSeek V4 专用 inference + SSD 流式 KV cache） · Epic Games 开源下一代 VCS（Lore 5.1K 内容寻址 + Merkle Tree + 大二进制优先） · Agent 增强工具爆发（CodexPlusPlus 20.4K + html-anything 7K + shadcn/improve 5.8K）**
+**Agent 上下文压缩进入标准化期——Headroom 44K⭐ 日增 2.6K 确立 Agent 基础设施层地位（6 算法 + proxy/MCP/library 三模式 + 输出 token 削减） · 多 Agent 并行编排成熟化（Orca 5.7K ADE + herdr 6.6K 终端 multiplexer + jcode 7.5K Rust harness + claude-squad 7.8K） · AI Gateway 性能战打响（Bifrost 5.9K Go 网关 11µs overhead + freellmapi 11.3K 免费 LLM 聚合代理） · Agent 沙箱框架分化（Astro flue 6.2K 持久执行 + BuilderIO agent-native 框架 + DeerFlow SuperAgent harness） · Agentic 内容生产工业化（OpenMontage 8.4K 52 工具 + Palmier-Pro 4.9K AI 视频编辑）**
 
 今日热榜新信号：
-- **EpicGames/lore**（5,105 stars）：Epic Games 下一代开源 VCS——内容寻址 + Merkle Tree + 大二进制优先 + 按需 hydration + 全 API 覆盖
-- **BigPizzaV3/CodexPlusPlus**（20,363 stars）：CodexApp 增强工具——Rust 实现，专注让 Codex 更好用、更舒服、更高效
-- **microsoft/SkillOpt**（8,448 stars）：微软 Agent Skill 优化器——像训练神经网络一样训练 skill 文档，epoch/lr/val gate + Sleep 离线进化
+- **chopratejas/headroom**（44,115 stars）：AI Agent 上下文压缩层——6 算法 + proxy/MCP/library + 输出 token 削减 + cross-agent memory
+- **stablyai/orca**（5,784 stars）：并行 Agent 开发环境——worktree 隔离 + 30+ agent 兼容 + 移动端 + 设计模式 + SSH 远程
+- **maximhq/bifrost**（5,937 stars）：高性能 AI Gateway——Go 实现，11µs overhead@5k RPS，23+ provider，semantic caching + MCP + governance
 
+**→ [查看 2026-06-22 完整简报](daily/2026-06-22.md)**
 **→ [查看 2026-06-21 完整简报](daily/2026-06-21.md)**
 **→ [查看 2026-06-20 完整简报](daily/2026-06-20.md)**
 **→ [查看 2026-06-19 完整简报](daily/2026-06-19.md)**
-**→ [查看 2026-06-15 完整简报](daily/2026-06-15.md)**
 
 ---
 
@@ -24,23 +24,23 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-06-22](daily/2026-06-22.md) | Agent 上下文压缩进入标准化期——Headroom 44K⭐ 日增 2.6K | 5 个深度分析 |
 | [2026-06-21](daily/2026-06-21.md) | Agent Skill 训练正式化——SkillOpt 用 epoch/lr/v | 5 个深度分析 |
 | [2026-06-20](daily/2026-06-20.md) | LLM Token 经济学基础设施爆发（headroom 38K⭐ 日增 3,9 | 5 个深度分析 |
 | [2026-06-19](daily/2026-06-19.md) | Agent Skill 经济学验证完成（ponytail 36K⭐ 一周暴涨 4 | 4 个深度分析 |
 | [2026-06-15](daily/2026-06-15.md) | Agent Skills 杀手级应用涌现（last30days-skill 42 | 4 个深度分析 |
 | [2026-06-14](daily/2026-06-14.md) | Agent Skills 全栈基础设施化：分发层(agent-skills 58 | 6 个深度分析 |
 | [2026-06-13](daily/2026-06-13.md) | Agent 架构分层加速：shadcn/improve 贵模型审计+廉模型执行分 | 6 个深度分析 |
-| [2026-06-12](daily/2026-06-12.md) | Agent Skills 生态爆发：addyosmani/agent-skill | 5 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **Agent Skill 训练范式正式化：SkillOpt 8.4K⭐（微软出品）将 skill 文档视为可训练状态——epoch、learning rate、validation gate、rejected-edit buffer，像训练神经网络一样训练 skill，6 benchmark × 52 cell 全第一。新增 Sleep 模块实现夜间离线 skill 进化。shadcn/improve 5.8K⭐ 用强模型审计代码库为弱模型写执行计划——模型分工协作。Skill 不再是手写提示词，而是可优化、可验证、可部署的训练产物**：相关项目 skillopt, shadcn-improve, ponytail。
-2. **Agent 元框架/meta-harness 混战升级：Omnigent 4.2K⭐（Claude Code/Codex/Cursor 统一编排 + 沙箱 + 策略治理 + 手机协作），Vercel Eve 1.8K⭐（文件系统即 Agent 接口——instructions.md / tools/ / skills/ / channels/ / schedules/），ECC 218K⭐ 登顶最大 Agent harness。三种完全不同的 Agent 框架哲学在同一天热门：元编排 vs 文件系统约定 vs 性能优化**：相关项目 omnigent, vercel-eve, affaan-m-ecc。
-3. **本地推理引擎专业化：antirez/ds4（DwarfStar）14.8K⭐——DeepSeek V4 Flash/PRO 专用本地推理引擎，不通用、不包装，一个模型做到极致。SSD 流式 KV cache 重新定义'模型是否需要装入 RAM'的边界——从硬性截止变成速度连续谱。Metal/CUDA/ROCm 三后端 + 自带 GGUF + coding agent 集成**：相关项目 ds4, zerolang。
-4. **Epic Games 开源下一代 VCS：Lore 5.1K⭐——内容寻址 + Merkle Tree + 大二进制优先 + 去重 + 按需 hydration。不是 git 替代品，而是面向游戏/娱乐产业的 VCS，解决 git 处理大二进制文件的根本性痛点。UEFN 内置 VCS 的开源版本。C/C++/C#/Rust/Go/Python/JS 全 API 覆盖**：相关项目 epicgames-lore。
-5. **Coding Agent 增强工具爆发：CodexPlusPlus 20.4K⭐（CodexApp 增强——Rust 重写体验优化），html-anything 7K⭐（75 Skills × 9 Surfaces 的 Agentic HTML 编辑器，零 API key + 本地运行）， ponytail 43K⭐（让 AI agent 像最懒的 senior dev 一样思考——YAGNI 理念注入）。Agent 不需要更强，需要更好的工具和约束**：相关项目 codexplusplus, html-anything, ponytail。
+1. **Agent 上下文压缩层正式确立为基础设施：Headroom 44K⭐ 日增 2,617——这不是优化工具，而是 Agent 栈的必选组件。6 种压缩算法（SmartCrusher/CodeCompressor/Kompress-v2/CacheAligner/CCR/Image）+ 3 种部署模式（library/proxy/MCP）+ 输出 token 削减（verbosity steering + effort routing）。Cross-agent memory 让 Claude/Codex/Cursor 共享记忆。headroom learn 从失败会话中挖掘修正。从'可选优化'变成'标准管道'**：相关项目 headroom, codebase-memory-mcp。
+2. **多 Agent 并行编排格局成型：Orca 5.7K⭐（ADE for parallel agents——worktree 隔离 + 移动端 + 设计模式 + 30+ agent 兼容）、herdr 6.6K⭐（Rust 终端 agent multiplexer）、jcode 7.5K⭐（Rust coding agent harness）、claude-squad 7.8K⭐（多 AI 终端管理）。加上 ruvnet/ruflo 60.7K⭐ Claude 多 swarm 编排。一个 Agent 干活 → 多 Agent 并行干活 + 隔离 + 审查 + 合并**：相关项目 stablyai-orca, herdr, jcode。
+3. **AI Gateway 性能竞赛开启：Bifrost 5.9K⭐ Go 实现——11µs overhead@5k RPS，号称 50x faster than LiteLLM。23+ provider 统一 API + semantic caching + MCP gateway + governance + cluster mode。同时 freellmapi 11.3K⭐ 聚合 16 个 LLM 免费层。从'用什么模型'变成'怎么高效路由模型'——Gateway 正在成为 AI 平台架构的核心组件**：相关项目 maximhq-bifrost, freellmapi。
+4. **Agent 框架两条路线分化：Astro flue 6.2K⭐（programmable TypeScript harness——sandbox + durable execution + CRDT + channels + subagents）vs BuilderIO agent-native 1.2K⭐（agent-native application framework）。加上 DeerFlow SuperAgent harness（字节出品）。一条路线是'给 Agent 完整工作环境'，另一条是'让应用原生支持 Agent'。同时 system_prompts_leaks 44K⭐ 说明 prompt 工程仍是最火的知识需求**：相关项目 withastro-flue, builderio-agent-native, deer-flow。
+5. **Agentic 内容生产工业化：OpenMontage 8.4K⭐（12 pipelines × 52 tools × 500+ agent skills 的视频生产系统）、Palmier-Pro 4.9K⭐（macOS AI 视频编辑器）、voicebox 31.5K⭐（开源 AI 语音工作室）。这不是视频工具——这是'AI Agent 作为生产线工人'的工业化实践。Penpot 52K⭐ 开源设计工具也在持续增长。内容生产正在从'AI 辅助'变成'AI 主导'**：相关项目 openmontage, palmier-pro, voicebox。
 
 ---
 
@@ -63,9 +63,9 @@
 
 ## 数据统计
 
-- 📊 项目档案：217 个
-- 📅 日报总数：72 期
-- 🔄 最近更新：2026-06-21
+- 📊 项目档案：221 个
+- 📅 日报总数：73 期
+- 🔄 最近更新：2026-06-22
 
 ---
 

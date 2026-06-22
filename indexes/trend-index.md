@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-06-22'
+last_updated: '2026-06-23'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,41 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-06-23（第六十四版）
+
+### Agent Skills 经济爆发 · Agent 权限与集成层出现 · Agentic Code Review 工具分化 · AI 金融分析工业化 · Agentic 内容生产加速验证
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agent Skills 经济全面爆发：gstack 113K（YC CEO 23角色化工具栈）+ mattpocock/skills 141K + Cybersecurity-Skills 18.6K 817技能 | garrytan-gstack, anthropic-cybersecurity-skills | 95 |
+| 2 | Agent 权限与集成层出现：corsair 2.8K 四档权限 + multi-tenancy + webhook + 凭证隔离 | corsairdev-corsair | 88 |
+| 3 | Agentic Code Review 工具分化：hunk 5.4K review-first diff viewer + gstack /review | modem-dev-hunk, garrytan-gstack | 86 |
+| 4 | AI 金融分析工业化：daily_stock_analysis 45.7K 41.8K forks（forks/stars=0.92 部署率极高） | zhulinsen-daily-stock-analysis | 84 |
+| 5 | Agentic 内容生产加速：OpenMontage 日增 3.3K→11.7K + Palmier-Pro 日增 2.3K→7.2K | openmontage, palmier-pro | 83 |
+
+#### 今日新增项目
+
+| 项目 | Stars | 分类 | Score |
+|------|-------|------|-------|
+| garrytan/gstack | 113,069 | 平台候选 | 92 |
+| corsairdev/corsair | 2,856 | 基础设施候选 | 85 |
+| modem-dev/hunk | 5,431 | 工具型 | 80 |
+| ZhuLinsen/daily_stock_analysis | 45,733 | 工具型 | 82 |
+
+#### 今日更新项目
+
+| 项目 | 变化 |
+|------|------|
+| mukul975/Anthropic-Cybersecurity-Skills | 11.4K→18.6K（score 86→87，817 skills +3 新领域 + F3 映射） |
+| chopratejas/headroom | 44K→46.9K（score 94，日增 2.8K 持续加速） |
+| DeusData/codebase-memory-mcp | 10.2K→11.4K（score 88，日增 1.2K） |
+| calesthio/OpenMontage | 8.4K→11.7K（score 80，日增 3.3K 增速扩大） |
+| stablyai/orca | 5.7K→6K（score 86，稳定增长） |
+
+---
 
 ## 2026-06-22（第六十三版）
 

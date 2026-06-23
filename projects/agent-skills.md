@@ -4,10 +4,10 @@ slug: "agent-skills"
 date_added: "2026-06-12"
 category: "平台候选"
 emoji: "🛠️"
-stars: "58,243 stars"
-stars_delta: "周增 8,340（持续高增长）"
+stars: "65,910 stars"
+stars_delta: "周增 7,667（持续高增长，58K→65.9K）"
 language: "Shell"
-score: 88
+score: 90
 tags: ["agent-skills", "coding-agent", "engineering", "standardization", "skill-marketplace"]
 url: "https://github.com/addyosmani/agent-skills"
 ---

@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-06-24
+
+**核心主题：** Agent 感知层成熟化（alibaba/page-agent 19.2K⭐ 零依赖注入式 DOM 控制 + Agent-Reach 38.6K⭐ 一键全网读取 + firecrawl 138K⭐ 抓取层——三层架构 firecrawl→Agent-Reach→page-agent 形成） · Agent Skills 工业化（addyosmani/agent-skills 65.9K⭐ 24skills×8commands 覆盖 SDLC，Google Chrome 架构师方法论产品化） · Agent 自我进化框架涌现（hermes-agent 自创建技能+自改进+跨会话记忆 + deer-flow 2.0 字节跳动 SuperAgent：subagents+sandbox+memory+skills 全栈） · Code Intelligence MCP 标准化加速（codebase-memory-mcp 12.8K⭐ 周增7.6K tree-sitter+知识图谱+158语言+sub-ms查询 · arXiv 论文验证 83% 质量/10× 更少 tokens） · Agent 安全审计新品类（NVIDIA/SkillSpector 9.8K⭐ Skills 杀毒）
+
+**关键项目：**
+- 🎯 alibaba/page-agent (19,240, 首日) — 注入式 GUI Agent，纯 DOM 文本操作
+- 🛠️ addyosmani/agent-skills (65,910, 更新) — 24 production-grade skills，SDLC 方法论产品化
+- 🌍 koala73/worldmonitor (59,022, 首日) — 实时全球情报仪表盘，6 站点变体单代码库
+- 🎙️ jamiepine/voicebox (33,079, 首日) — 开源 AI 语音工作室，7 TTS 引擎 + MCP
+- 🦌 bytedance/deer-flow (trending, 首日) — 字节跳动 SuperAgent harness
+
+---
+
 ## 2026-06-23
 
 **核心主题：** Agent Skills 经济爆发（gstack 113K⭐ YC CEO 23角色化工具栈 + mattpocock/skills 141K⭐ + Anthropic-Cybersecurity-Skills 18.6K⭐ 817技能6框架） · Agent 权限与集成层正式出现（corsair 2.8K⭐ open/cautious/strict/readonly 四模式 + multi-tenancy + webhook——Agent 的 API Gateway with human-in-the-loop） · Agentic Code Review 工具分化（hunk 5.4K⭐ review-first diff viewer） · AI 金融分析工业化（daily_stock_analysis 45.7K⭐ 41.8K forks forks/stars=0.92 部署率极高） · Agentic 内容生产加速（OpenMontage 日增 3.3K→11.7K + Palmier-Pro 日增 2.3K→7.2K）

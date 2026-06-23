@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-06-23'
+last_updated: '2026-06-24'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,40 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-06-24（第六十五版）
+
+### Agent 感知层成熟化 · Agent Skills 工业化阶段确认 · Agent 自我进化框架涌现 · Code Intelligence MCP 标准化加速 · Agent 安全审计新品类
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agent 感知层成熟化：firecrawl 138K（抓取层）+ Agent-Reach 38.6K（平台适配层）+ page-agent 19.2K（DOM 操作层）三层架构形成 | alibaba-page-agent, agent-reach | 92 |
+| 2 | Agent Skills 工业化阶段确认：addyosmani/agent-skills 65.9K 24skills×8commands 覆盖完整 SDLC | agent-skills | 90 |
+| 3 | Agent 自我进化框架涌现：hermes-agent（自创建技能+自改进）+ deer-flow 2.0（字节跳动 SuperAgent harness） | hermes-agent, bytedance-deer-flow | 87 |
+| 4 | Code Intelligence MCP 标准化加速：codebase-memory-mcp 12.8K 周增 7.6K tree-sitter+知识图谱+158语言 | codebase-memory-mcp | 85 |
+| 5 | Agent 安全审计新品类：SkillSpector 9.8K（Skills 杀毒）+ page-agent DOM 注入面 | nvidia-skillspector | 83 |
+
+#### 今日新增项目
+
+| 项目 | Stars | 分类 | Score |
+|------|-------|------|-------|
+| alibaba/page-agent | 19,240 | 平台候选 | 86 |
+| koala73/worldmonitor | 59,022 | 工具型 | 82 |
+| jamiepine/voicebox | 33,079 | 工具型 | 80 |
+| bytedance/deer-flow | trending | 平台候选 | 84 |
+
+#### 今日更新项目
+
+| 项目 | 变化 | 备注 |
+|------|------|------|
+| addyosmani/agent-skills | 58K→65.9K | score 88→90，Skills 工业化龙头 |
+| Agent-Reach | 27.3K→38.6K | score 87→89，Agent 感知层标配 |
+| codebase-memory-mcp | 10.2K→12.8K | last_seen 06-24，持续高增长 |
+| OpenMontage | 11.8K→15.4K | 日增 3.6K，增速继续扩大 |
+
+---
 
 ## 2026-06-23（第六十四版）
 

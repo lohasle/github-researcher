@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-06-24'
+last_updated: '2026-06-25'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,38 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-06-25（第六十六版）
+
+### Agent '懒惰工程'范式大规模验证 · Meta-harness 编排层竞争白热化 · 大厂 Coding Agent 终端争夺战 · OCR 长程解析突破 · Agent Skills 生态独立化确认
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agent '懒惰工程'范式大规模验证：ponytail 55K⭐ 7级'懒惰阶梯'实现 54% 代码削减+100% 安全保持 | ponytail, shadcn-improve | 93 |
+| 2 | Meta-harness 编排层竞争白热化：omnigent 4.7K⭐（Python+多设备+治理）vs vercel/eve 2.5K⭐（TS+filesystem-first） | omnigent, vercel-eve | 90 |
+| 3 | 大厂 Coding Agent 终端争夺战：MiMo-Code 10.6K⭐（持久内存+Goal/Stop）vs shadcn/improve 6.1K⭐（审计→计划→执行分层） | mimo-code, shadcn-improve | 89 |
+| 4 | OCR 长程解析突破：baidu/Unlimited-OCR 6.3K⭐ one-shot long-horizon parsing，超越 DeepSeek-OCR | baidu-unlimited-ocr | 87 |
+| 5 | Agent Skills 生态独立化确认：BuilderIO/skills 2.6K⭐ 入场，Skills 成为 B2D 分发渠道 | builderio-skills, shadcn-improve, ponytail | 86 |
+
+#### 今日新增项目
+
+| 项目 | Stars | 分类 | Score |
+|------|-------|------|-------|
+| baidu/Unlimited-OCR | 6,273 | 基础设施候选 | 86 |
+
+#### 今日更新项目
+
+| 项目 | Stars 变化 | 更新 |
+|------|-----------|------|
+| ponytail | 36K→55K (+18.6K) | benchmark 更新、score 92→93 |
+| omnigent | 4.2K→4.7K (+500) | 文档分析更新 |
+| vercel-eve | 1.8K→2.5K (+700) | filesystem-first 架构分析 |
+| shadcn-improve | 5.5K→6.1K (+600) | reconcile/branch/execute 命令 |
+| mimo-code | 9.8K→10.6K (+800) | Goal/Stop、Compose Mode 分析 |
+
+---
 
 ## 2026-06-24（第六十五版）
 

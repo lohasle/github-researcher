@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-06-25
+
+**核心主题：** Agent '懒惰工程'范式大规模验证（ponytail 55K⭐ 7级懒惰阶梯实现 54% 代码削减+100% 安全保持——'Agent 更克制 > Agent 更聪明'设计哲学确认） · Meta-harness 编排层竞争白热化（omnigent 4.7K⭐ Python+多设备+治理 vs vercel/eve 2.5K⭐ TS+filesystem-first——'Agent 的 Kubernetes'品类形成） · 大厂 Coding Agent 终端争夺战（MiMo-Code 10.6K⭐ 持久内存+Goal/Stop 自治 vs shadcn/improve 6.1K⭐ 审计→计划→执行模型分层协作） · OCR 长程解析突破（baidu/Unlimited-OCR 6.3K⭐ one-shot long-horizon parsing，超越 DeepSeek-OCR） · Agent Skills 生态独立化确认（BuilderIO/skills 2.6K⭐ 入场，Skills 成为 B2D 分发渠道）
+
+**关键项目：**
+- 🐴 DietrichGebert/ponytail (54,972, 更新) — 7级懒惰阶梯，54% 代码削减+100% 安全
+- 🤖 omnigent-ai/omnigent (4,713, 更新) — Meta-harness，编排 CC+Codex+Cursor+Pi
+- 🌙 vercel/eve (2,526, 更新) — Filesystem-first agent 框架
+- 📄 baidu/Unlimited-OCR (6,273, 首日) — One-shot 长程 OCR
+- 🔍 shadcn/improve (6,147, 更新) — 审计→计划→执行分层 Skill
+
+---
+
 ## 2026-06-24
 
 **核心主题：** Agent 感知层成熟化（alibaba/page-agent 19.2K⭐ 零依赖注入式 DOM 控制 + Agent-Reach 38.6K⭐ 一键全网读取 + firecrawl 138K⭐ 抓取层——三层架构 firecrawl→Agent-Reach→page-agent 形成） · Agent Skills 工业化（addyosmani/agent-skills 65.9K⭐ 24skills×8commands 覆盖 SDLC，Google Chrome 架构师方法论产品化） · Agent 自我进化框架涌现（hermes-agent 自创建技能+自改进+跨会话记忆 + deer-flow 2.0 字节跳动 SuperAgent：subagents+sandbox+memory+skills 全栈） · Code Intelligence MCP 标准化加速（codebase-memory-mcp 12.8K⭐ 周增7.6K tree-sitter+知识图谱+158语言+sub-ms查询 · arXiv 论文验证 83% 质量/10× 更少 tokens） · Agent 安全审计新品类（NVIDIA/SkillSpector 9.8K⭐ Skills 杀毒）

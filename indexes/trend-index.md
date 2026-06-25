@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-06-25'
+last_updated: '2026-06-26'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,42 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-06-26（第六十七版）
+
+### Agent × Design System 标准化接口 · Agentic 视频生产大爆发 · Agent 安全治理工具化 · Agent 记忆层竞速 · Apple container 基础设施级增长
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agent × Design System 标准化：Google Labs design.md 19K⭐ DESIGN.md 规范（YAML tokens + Markdown 理由），填补 Agent 与设计系统的结构化理解缺口 | design-md | 90 |
+| 2 | Agentic 视频生产大爆发：OpenMontage 4天从 8.5K 暴涨至 22K（+158%），12 pipeline × 52 tools 验证 Agent 不止写代码 | openmontage | 88 |
+| 3 | Agent 安全治理工具化：SkillSpector 10.7K⭐（68 类漏洞检测）+ Cybersecurity-Skills 21K⭐（817 安全 Skills），安全从理念变成工具链 | nvidia-skillspector, anthropic-cybersecurity-skills | 87 |
+| 4 | Agent 记忆层竞速：TencentDB-Agent-Memory 6.2K⭐ 全本地 4 层管线 vs codebase-memory-mcp 14.7K⭐ tree-sitter 知识图谱 | codebase-memory-mcp, tencentdb-agent-memory | 85 |
+| 5 | Apple container 基础设施级增长：43K⭐ 日增 1,366，Apple 官方开源基础设施项目稳步攀升 | apple-container | 84 |
+
+#### 今日新增项目
+
+| 项目 | Stars | 分类 | Score |
+|------|-------|------|-------|
+| google-labs-code/design.md | 19,005 | 平台候选 | 90 |
+| TencentCloud/TencentDB-Agent-Memory | 6,157 | 基础设施候选 | 82 |
+
+#### 今日更新项目
+
+| 项目 | Stars 变化 | 更新 |
+|------|-----------|------|
+| OpenMontage | 8.5K→22K (+158%) | 爆发式增长、双渲染引擎、score 80→86 |
+| codebase-memory-mcp | 12.8K→14.7K | 周增 9.6K，MCP 代码智能确认 |
+| NVIDIA/SkillSpector | 8.3K→10.7K | MCP Server 模式、68 类漏洞 |
+| stablyai/orca | 5.8K→7.4K | 持续增长 |
+| apple/container | 36K→43K | 健康增长曲线 |
+| Anthropic-Cybersecurity-Skills | 18.6K→21.2K | 安全闭环定位 |
+| alibaba/page-agent | 19.2K→19.8K | 稳步增长 |
+| withastro/flue | 6.3K→6.7K | 稳步增长 |
+
+---
 
 ## 2026-06-25（第六十六版）
 

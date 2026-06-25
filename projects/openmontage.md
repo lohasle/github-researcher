@@ -2,13 +2,13 @@
 title: "OpenMontage"
 slug: "openmontage"
 date_added: "2026-06-22"
-last_seen_date: "2026-06-22"
+last_seen_date: "2026-06-26"
 category: "平台候选"
 emoji: "🎬"
-stars: "8,487 stars"
-stars_delta: "日增 993，周增 4K+"
+stars: "21,941 stars"
+stars_delta: "日增 3,553，周增 12,948"
 language: "Python"
-score: 80
+score: 86
 tags: ["agentic-video", "content-production", "pipeline", "agent-skills", "video", "automation"]
 url: "https://github.com/calesthio/OpenMontage"
 ---
@@ -18,6 +18,14 @@ url: "https://github.com/calesthio/OpenMontage"
 ## 一句话定位
 
 开源 Agentic 视频生产系统——12 pipelines × 52 tools × 500+ agent skills，将 AI coding assistant 变成完整的视频生产工作室。
+
+## 2026-06-26 更新
+
+stars 从 8,487（6/22）暴涨到 21,941（6/26），4天 +158%。日增速从 993 提升到 3,553（3.6x）。重要新增信息：
+- **双渲染引擎**：Remotion（React-based，数据驱动场景）+ HyperFrames（HTML/CSS/GSAP，动效驱动场景），Agent 在 proposal 阶段自动选择
+- **免费路径验证**：Piper TTS（离线）+ Archive.org/NASA/Wikimedia + Remotion = $0.15/视频
+- **YouTube 持续输出**：每条视频附带完整 prompt + pipeline + 成本，形成 demo→adoption 正循环
+- **pipeline = skill + tools + stages** 架构与 coding agent 的 harness 模式完全同构
 
 ## 它解决的问题
 

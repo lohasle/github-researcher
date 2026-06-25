@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026-06-26 GitHub 趋势研究简报 | GitHub Researcher</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📊</text></svg>">
-    <meta name="description" content="Agent × Design System 标准化接口——Google Labs design.md 19K⭐ 定义 AI Agent 的设计系统规范（DESIGN.md = YAML tokens + Markdown 理由 = Agent 可读的设计宪法），填补 Agent 与 UI 之间的结构化理解缺口 · Agentic 视频生产大爆发——OpenMontage 4天从 8.5K 暴涨至 22K（+13.5K），12 pipeline × 52 tools × 500+ skills 验证 Agent 不止写代码还能做视频 · Agent 安全治理工具化——NVIDIA SkillSpector 10.7K⭐ 68 类漏洞检测 + Anthropic-Cybersecurity-Skills 21K⭐ 817 条安全 Skills，Agent 安全从理念变成可执行工具链 · Agent 记忆层竞速——TencentDB-Agent-Memory 6.2K⭐ 全本地 4 层记忆管线 vs codebase-memory-mcp 14.7K⭐ 知识图谱索引">
+    <title>TencentDB-Agent-Memory | GitHub 趋势研究</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>⭐</text></svg>">
     <style>
         :root {
             --primary: #7C3AED;
@@ -170,6 +169,24 @@
         .card-grid { animation-delay: 0.2s; animation-fill-mode: both; }
         .trend-list { animation-delay: 0.25s; animation-fill-mode: both; }
     </style>
+    
+    <style>
+        .project-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 48px; box-shadow: var(--shadow); margin-bottom: 48px; max-width: 860px; margin-left: auto; margin-right: auto; }
+        .project-content h1 { font-size: 26px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 6px; }
+        .project-content h2 { font-size: 18px; font-weight: 700; color: var(--primary); border-left: 4px solid var(--primary); padding-left: 12px; margin: 28px 0 14px; }
+        .project-content h3 { font-size: 15px; font-weight: 700; color: var(--text); margin: 20px 0 10px; }
+        .project-content table { border-collapse: collapse; width: 100%; margin: 14px 0; }
+        .project-content th, .project-content td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; font-size: 13px; }
+        .project-content th { background: var(--primary); color: white; font-weight: 600; }
+        .project-content tr:nth-child(even) td { background: var(--bg); }
+        .project-content blockquote { background: linear-gradient(135deg, #F3E8FF, #ECFEFF); border-left: 4px solid var(--primary); padding: 14px 18px; margin: 14px 0; border-radius: 0 8px 8px 0; }
+        .project-content ul, .project-content ol { padding-left: 22px; margin: 10px 0; }
+        .project-content li { margin: 6px 0; font-size: 14px; }
+        .project-content p { font-size: 14px; margin-bottom: 12px; line-height: 1.7; }
+        .project-content strong { color: var(--primary-dark); }
+        .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 24px; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
     <nav class="nav">
@@ -181,164 +198,121 @@
             <div class="nav-links">
                 <a href="/github-researcher/index.html" id="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>首页</span></a>
                 <a href="/github-researcher/daily.html" id="nav-daily"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg><span>日报</span></a>
-                <a href="/github-researcher/projects.html" id="nav-projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
+                <a href="/github-researcher/projects.html" id="nav-projects" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
                 <a href="/github-researcher/trends.html" id="nav-trends"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>趋势</span></a>
             </div>
         </div>
     </nav>
 <main class="container">
-        <section class="hero">
-            <div class="hero-badge">
-                <span class="dot"></span>
-                2026-06-26
-            </div>
-            <h1>GitHub 趋势研究</h1>
-            <p>Agent × Design System 标准化接口——Google Labs design.md 19K⭐ 定义 AI Agent 的设计系统规范（DESIGN.md = YAML tokens + Markdown 理由 = Agent 可读的设计宪法），填补 Agent 与 UI 之间的结构化理解缺口 · Agentic 视频生产大爆发——OpenMontage 4天从 8.5K 暴涨至 22K（+13.5K），12 pipeline × 52 tools × 500+ skills 验证 Agent 不止写代码还能做视频 · Agent 安全治理工具化——NVIDIA SkillSpector 10.7K⭐ 68 类漏洞检测 + Anthropic-Cybersecurity-Skills 21K⭐ 817 条安全 Skills，Agent 安全从理念变成可执行工具链 · Agent 记忆层竞速——TencentDB-Agent-Memory 6.2K⭐ 全本地 4 层记忆管线 vs codebase-memory-mcp 14.7K⭐ 知识图谱索引</p>
-            <div class="hero-actions">
-                <a href="/github-researcher/daily/2026-06-26.html" class="btn-primary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                    今日简报
-                </a>
-                <a href="/github-researcher/projects.html" class="btn-secondary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="14" y="0" width="7" height="7"/><rect x="0" y="14" width="7" height="7"/></svg>
-                    重点项目
-                </a>
-            </div>
-        </section>
-        <section class="stats-row">
-            <div class="stat-card">
-                <div class="stat-icon">📊</div>
-                <div class="stat-number">261</div>
-                <div class="stat-label">深度分析项目</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🔥</div>
-                <div class="stat-number">77</div>
-                <div class="stat-label">日更日报</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🎯</div>
-                <div class="stat-number">346</div>
-                <div class="stat-label">核心跟踪方向</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">⭐</div>
-                <div class="stat-number">80K+</div>
-                <div class="stat-label">本周总 Star 增速</div>
-            </div>
-        </section>
-        <section class="brief-card">
-            <div class="brief-date">📅 2026-06-26 · 今日核心判断</div>
-            <h2 class="brief-title">Agent × Design System 标准化接口——Google Labs design.md 19K⭐ 定义 AI Agent 的设计系统规范（DESIGN.md = YAML tokens + Markdown 理由 = Agent 可读的设计宪法），填补 Agent 与 UI 之间的结构化理解缺口 · Agentic 视频生产大爆发——OpenMontage 4天从 8.5K 暴涨至 22K（+13.5K），12 pipeline × 52 tools × 500+ skills 验证 Agent 不止写代码还能做视频 · Agent 安全治理工具化——NVIDIA SkillSpector 10.7K⭐ 68 类漏洞检测 + Anthropic-Cybersecurity-Skills 21K⭐ 817 条安全 Skills，Agent 安全从理念变成可执行工具链 · Agent 记忆层竞速——TencentDB-Agent-Memory 6.2K⭐ 全本地 4 层记忆管线 vs codebase-memory-mcp 14.7K⭐ 知识图谱索引</h2>
-            <p class="brief-text">Agent × Design System 标准化接口——Google Labs design.md 19K⭐ 定义 AI Agent 的设计系统规范（DESIGN.md = YAML tokens + Markdown 理由 = Agent 可读的设计宪法），填补 Agent 与 UI 之间的结构化理解缺口 · Agentic 视频生产大爆发——OpenMontage 4天从 8.5K 暴涨至 22K（+13.5K），12 pipeline × 52 tools × 500+ skills 验证 Agent 不止写代码还能做视频 · Agent 安全治理工具化——NVIDIA SkillSpector 10.7K⭐ 68 类漏洞检测 + Anthropic-Cybersecurity-Skills 21K⭐ 817 条安全 Skills，Agent 安全从理念变成可执行工具链 · Agent 记忆层竞速——TencentDB-Agent-Memory 6.2K⭐ 全本地 4 层记忆管线 vs codebase-memory-mcp 14.7K⭐ 知识图谱索引 今日头条趋势:Agent × Design System 标准化接口：Google Labs design.md 19K⭐（+1,407/day）提出 DESIGN.md 规范——YAML frontmatter 定义 design tokens（colors/typography/spacing/rounded/components），Markdown body 解释设计理由。这不只是一个 lint 工具——而是 Agent 与设计系统之间的'契约文件'，类似 ROBOTS.TXT 之于爬虫。配合 npx lint/diff/export 工具链，Agent 可以理解'为什么用这个颜色'而不仅是'用什么颜色'。这是 Agent 从'像素级实现'升级到'设计系统级理解'的关键一步。</p>
-            <a href="/github-researcher/daily/2026-06-26.html" class="brief-cta">阅读完整简报 →</a>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">⭐</div>
-                    重点跟踪项目
-                </div>
-                <a href="/github-researcher/projects.html" class="section-link">查看全部 →</a>
-            </div>
-            <div class="card-grid">
-                <div class="card" onclick="window.location='/github-researcher/projects/design-md.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🎨</div>
-                        <div class="card-stars">19,005 stars</div>
-                    </div>
-                    <div class="card-title">google-labs-code/design.md</div>
-                    <div class="card-desc">Agent 的设计系统规范——YAML tokens + Markdown 理由 = Agent 可读的设计宪法</div>
-                    <div class="card-tags"><span class="tag tag-purple">design-system</span><span class="tag tag-purple">agent-spec</span><span class="tag tag-purple">google-labs</span></div>
-                    <div class="card-actions"></div>
-                </div>
-                <div class="card" onclick="window.location='/github-researcher/projects/openmontage.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🎬</div>
-                        <div class="card-stars">21,941 stars</div>
-                    </div>
-                    <div class="card-title">calesthio/OpenMontage</div>
-                    <div class="card-desc">开源 Agentic 视频生产系统——12 pipeline × 52 tools × 500+ skills，$0.15/视频</div>
-                    <div class="card-tags"><span class="tag tag-purple">agentic-video</span><span class="tag tag-purple">content-production</span><span class="tag tag-purple">pipeline</span></div>
-                    <div class="card-actions"></div>
-                </div>
-                <div class="card" onclick="window.location='/github-researcher/projects/tencentdb-agent-memory.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">💾</div>
-                        <div class="card-stars">6,157 stars</div>
-                    </div>
-                    <div class="card-title">TencentCloud/TencentDB-Agent-Memory</div>
-                    <div class="card-desc">全本地 Agent 长期记忆——4 层渐进式管线，零外部 API 依赖</div>
-                    <div class="card-tags"><span class="tag tag-purple">agent-memory</span><span class="tag tag-purple">tencent</span><span class="tag tag-purple">local-first</span></div>
-                    <div class="card-actions"></div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">📈</div>
-                    趋势热榜
-                </div>
-                <a href="/github-researcher/trends.html" class="section-link">完整趋势表 →</a>
-            </div>
-            <div class="trend-list">
-                <div class="trend-item">
-                    <div class="trend-rank top">1</div>
-                    <div class="trend-content">
-                        <div class="trend-title">Agent × Design System 标准化接口：Google Labs design.md 19K⭐（+1,407/day）提出 DESIGN.md 规范——YAML frontmatter 定义 design tokens（colors/typography/spacing/rounded/components），Markdown body 解释设计理由。这不只是一个 lint 工具——而是 Agent 与设计系统之间的'契约文件'，类似 ROBOTS.TXT 之于爬虫。配合 npx lint/diff/export 工具链，Agent 可以理解'为什么用这个颜色'而不仅是'用什么颜色'。这是 Agent 从'像素级实现'升级到'设计系统级理解'的关键一步</div>
-                        <div class="trend-meta">design-md</div>
-                    </div>
-                    <div class="trend-score high">90/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank top">2</div>
-                    <div class="trend-content">
-                        <div class="trend-title">Agentic 视频生产大爆发：OpenMontage 4天从 8.5K 暴涨至 22K（+13.5K/4天，日增 3,553），周榜 #1（+12,948/week）。12 pipeline（动画解说/纪录片/混剪/产品广告/角色动画等）× 52 tools × 500+ agent skills，支持 Claude Code/Cursor/Copilot/Windsurf/Codex 全 Agent。免费路径（Piper TTS + Archive.org + Remotion）成本 $0.15/视频，付费路径 $0.69-$1.33/视频。这不是'AI 生成视频'——而是 Agent 编排完整视频生产管线</div>
-                        <div class="trend-meta">openmontage</div>
-                    </div>
-                    <div class="trend-score high">88/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">3</div>
-                    <div class="trend-content">
-                        <div class="trend-title">Agent 安全治理工具化：NVIDIA SkillSpector 10.7K⭐（68 类漏洞 × 17 分类，AST+Taint+YARA+MCP 最小权限）+ Anthropic-Cybersecurity-Skills 21K⭐（817 条安全 Skills × 6 框架映射）。两者形成闭环：SkillSpector 做事前安全扫描（类似 SAST），Cybersecurity-Skills 做事后安全执行（类似 RUNTIME 保护）。Agent 安全从'讨论理念'变成'有工具链可用'的阶段</div>
-                        <div class="trend-meta">nvidia-skillspector · anthropic-cybersecurity-skills</div>
-                    </div>
-                    <div class="trend-score high">87/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">4</div>
-                    <div class="trend-content">
-                        <div class="trend-title">Agent 记忆层竞速：TencentCloud/TencentDB-Agent-Memory 6.2K⭐ 全本地 4 层渐进式记忆管线（零外部 API 依赖），DeusData/codebase-memory-mcp 14.7K⭐（周增 9.6K）tree-sitter 知识图谱（Linux 内核 28M LOC 3分钟索引）。Agent 记忆正分化为两个方向：通用会话记忆（TencentDB）vs 代码结构记忆（codebase-memory-mcp）。两者解决不同问题——前者是'Agent 记住对话'，后者是'Agent 理解代码库'</div>
-                        <div class="trend-meta">codebase-memory-mcp · tencentdb-agent-memory</div>
-                    </div>
-                    <div class="trend-score high">85/80</div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">🏷️</div>
-                    核心关注领域
-                </div>
-            </div>
-            <div class="category-row">
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🤖</span> AI Agent / Multi-Agent</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">⚡</span> LLM Infra / MCP / AI Runtime</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🛠️</span> 开发工具链 / IDE / Copilot</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🌐</span> 前端框架 / Serverless / Edge</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">☸️</span> 云原生 / K8s / Service Mesh</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔄</span> 自动化 / Browser Use / RPA+AI</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">💾</span> 数据基础设施 / RAG / 向量 DB</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔌</span> 基础设施标准 / 平台潜力</a>
-            </div>
-        </section>
+    <a href="/github-researcher/projects.html" class="back-link">← 返回重点项目</a>
+    <div class="project-content">
+        <div style="margin-bottom:20px;"><a href="https://github.com/TencentCloud/TencentDB-Agent-Memory" target="_blank" rel="noopener" class="btn-github" style="padding:10px 20px;font-size:14px;"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg> 查看 GitHub 项目</a></div>
+        <h1 id="tencentdb-agent-memory">TencentDB-Agent-Memory</h1>
+<h2 id="_1">一句话定位</h2>
+<p>腾讯云出品的 AI Agent 长期记忆解决方案——全本地 4 层渐进式管线，零外部 API 依赖，为 Agent 提供跨会话的持久记忆能力。</p>
+<h2 id="_2">它解决的问题</h2>
+<p>AI Agent（Claude Code、Cursor、Codex 等）的上下文窗口有限，会话结束后记忆丢失。现有方案要么依赖云端 API（隐私风险）、要么只是简单的向量检索（语义不精确）、要么无法处理复杂的时间衰减和优先级。</p>
+<p>目标用户：需要 Agent 长期运行且保持记忆的开发者和企业。</p>
+<h2 id="2026-06-26">为什么值得关注（2026-06-26）</h2>
+<ul>
+<li>腾讯云官方出品，TypeScript 实现，6,157⭐ 稳步增长</li>
+<li>"全本地"和"零外部 API 依赖"是核心差异化——在隐私敏感场景下有优势</li>
+<li>4 层渐进式管线设计不常见，暗示比简单的向量检索更精细</li>
+<li>Agent 记忆层是 2026 H1 的热门赛道——codebase-memory-mcp 14.7K⭐ 也在这个方向</li>
+</ul>
+<h2 id="_3">热度来源判断</h2>
+<p><strong>企业级需求 + 腾讯品牌背书。</strong> Agent 记忆是真实痛点，"全本地"标签吸引隐私敏感用户。日增 67 stars 不算爆发，但稳健。需要更多技术细节公开后判断是否是真实工程创新还是腾讯云导流项目。</p>
+<h2 id="_4">关键技术亮点</h2>
+<h3 id="1-4">1. 4 层渐进式记忆管线</h3>
+<p>从 README 推断，管线包含多层处理（具体架构尚未完全公开）：
+- 层级 1：原始信息采集（会话记录、用户输入）
+- 层级 2：信息提取与摘要
+- 层级 3：长期记忆固化
+- 层级 4：记忆检索与注入</p>
+<h3 id="2">2. 全本地执行</h3>
+<ul>
+<li>零外部 API 调用——所有处理在本地完成</li>
+<li>适合隐私敏感场景（企业内部 Agent、个人助手）</li>
+<li>无网络延迟和 API 费用</li>
+</ul>
+<h3 id="3-typescript">3. TypeScript 原生</h3>
+<ul>
+<li>与 Claude Code、Cursor 等 TS 生态 Agent 无缝集成</li>
+<li>npm 安装即可使用</li>
+</ul>
+<h2 id="_5">架构启发</h2>
+<p><strong>Agent 记忆层的品类分化：</strong>
+- 通用会话记忆（TencentDB-Agent-Memory）：对话上下文、用户偏好、决策历史
+- 代码结构记忆（codebase-memory-mcp）：函数调用链、类继承、路由、依赖</p>
+<p>这两个方向的技术路径完全不同：
+- 会话记忆 → 信息检索 + 摘要 + 时间衰减
+- 结构记忆 → 静态分析 + 图数据库 + 符号查询</p>
+<p>Agent 框架需要同时支持两种记忆类型。</p>
+<h2 id="_6">定位判断</h2>
+<p><strong>Agent 记忆基础设施的早期竞争者。</strong> 与 codebase-memory-mcp 形成互补关系，但技术细节公开度不足，需要持续观察。</p>
+<h2 id="_7">风险 / 局限 / 泡沫点</h2>
+<ol>
+<li><strong>技术细节不足</strong>：4 层管线的具体架构未完全公开，无法深度评估工程创新</li>
+<li><strong>腾讯云导流风险</strong>：可能是 TencentDB 云服务的入口产品，未来可能需要腾讯云账号</li>
+<li><strong>社区活跃度待验证</strong>：contributors 数量少，主要是内部团队</li>
+<li><strong>生态封闭风险</strong>：如果深度绑定腾讯云生态，可能限制开源社区 adoption</li>
+</ol>
+<h2 id="_8">与同类项目的关系</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>记忆类型</th>
+<th>技术路径</th>
+<th>定位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>codebase-memory-mcp 14.7K⭐</td>
+<td>代码结构</td>
+<td>tree-sitter + 图数据库</td>
+<td>Coding Agent 基础设施</td>
+</tr>
+<tr>
+<td>TencentDB-Agent-Memory 6.2K⭐</td>
+<td>通用会话</td>
+<td>4 层渐进式管线</td>
+<td>通用 Agent 记忆</td>
+</tr>
+<tr>
+<td>Mem0</td>
+<td>通用会话</td>
+<td>向量检索 + LLM 摘要</td>
+<td>Agent 记忆 SaaS</td>
+</tr>
+<tr>
+<td>Letta (前 MemGPT)</td>
+<td>通用会话</td>
+<td>分层记忆（core/archival/recall）</td>
+<td>Agent 记忆框架</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_9">是否值得持续跟踪</h2>
+<p><strong>✅ 建议跟踪，但需更多信息。</strong> 等 4 层管线架构详情公开后重新评估。</p>
+<h2 id="_10">后续观察点</h2>
+<ol>
+<li>4 层管线的具体技术架构是否公开</li>
+<li>是否真正保持"零外部依赖"还是后续接入腾讯云服务</li>
+<li>benchmark 数据：记忆检索精度、延迟、token 消耗</li>
+<li>社区 adoption：非腾讯系项目是否使用</li>
+<li>与 codebase-memory-mcp 是否出现功能重叠</li>
+</ol>
+<hr />
+<p><em>首次记录：2026-06-26</em></p>
+    </div>
 </main>
     <footer class="footer">
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

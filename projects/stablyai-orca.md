@@ -2,11 +2,11 @@
 title: "Orca"
 slug: "stablyai-orca"
 date_added: "2026-06-22"
-last_seen_date: "2026-06-22"
+last_seen_date: "2026-06-26"
 category: "平台候选"
 emoji: "🐬"
-stars: "5,784 stars"
-stars_delta: "日增 134，周增 2K+"
+stars: "7,380 stars"
+stars_delta: "日增 700，周增 1,397"
 language: "TypeScript"
 score: 86
 tags: ["agent-ide", "parallel-agents", "worktree", "multi-agent", "mobile", "ade"]

@@ -4,8 +4,8 @@ slug: "apple-container"
 date_added: "2026-06-12"
 category: "基础设施候选"
 emoji: "🍎"
-stars: "36,214 stars"
-stars_delta: "周增 7,781（持续高增长）"
+stars: "43,151 stars"
+stars_delta: "日增 1,366，持续攀升（2周 +6,937）"
 language: "Swift"
 score: 89
 tags: ["apple", "containers", "swift", "macos", "virtualization", "apple-silicon"]

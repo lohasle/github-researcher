@@ -2,11 +2,11 @@
 title: "NVIDIA SkillSpector"
 slug: "nvidia-skillspector"
 date_added: "2026-06-12"
-last_seen_date: "2026-06-20"
+last_seen_date: "2026-06-26"
 category: "工具型"
 emoji: "🛡️"
-stars: "8,251 stars"
-stars_delta: "周增 5,505（爆发式增长）"
+stars: "10,661 stars"
+stars_delta: "周增 ~2,410，持续高增长"
 language: "Python"
 score: 86
 tags: ["agent-security", "nvidia", "vulnerability-scanning", "supply-chain", "skills"]

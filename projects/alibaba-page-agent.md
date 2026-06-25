@@ -2,10 +2,11 @@
 title: "alibaba/page-agent"
 slug: "alibaba-page-agent"
 date_added: "2026-06-24"
+last_seen_date: "2026-06-26"
 category: "平台候选"
 emoji: "🎯"
-stars: "19,240 stars"
-stars_delta: "日增 425 · 周趋势"
+stars: "19,760 stars"
+stars_delta: "日增 196"
 language: "TypeScript"
 score: 86
 tags: ["gui-agent", "dom-manipulation", "web-automation", "mcp", "browser-use", "in-page"]

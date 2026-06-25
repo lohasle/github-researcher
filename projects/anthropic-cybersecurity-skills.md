@@ -4,13 +4,13 @@ slug: "anthropic-cybersecurity-skills"
 date_added: "2026-05-25"
 category: "工具型"
 emoji: "🔐"
-stars: "18,601 stars"
-stars_delta: "6月15日 11.4K → 6月23日 18.6K（+7.2K/8天），日增约 900"
+stars: "21,152 stars"
+stars_delta: "6月15日 11.4K → 6月26日 21.2K（+9.8K/11天），日增约 890"
 language: "Python"
 score: 87
 tags: ["安全", "Agent-Skills", "MITRE ATT&CK", "NIST", "MCP", "Agent", "F3", "supply-chain", "AI-security"]
 url: "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
-last_seen_date: "2026-06-23"
+last_seen_date: "2026-06-26"
 ---
 
 # Anthropic-Cybersecurity-Skills

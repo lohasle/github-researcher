@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-06-26
+
+**核心主题：** Agent × Design System 标准化接口（Google Labs design.md 19K⭐ 定义 Agent 的设计系统规范——YAML tokens + Markdown 理由 = Agent 可读的设计宪法，类似 ROBOTS.TXT 之于爬虫） · Agentic 视频生产大爆发（OpenMontage 4天从 8.5K 暴涨至 22K +158%，12 pipeline × 52 tools × 500+ skills，$0.15/视频成本验证 Agent 编排完整视频生产管线） · Agent 安全治理工具化（NVIDIA SkillSpector 10.7K⭐ 68 类漏洞检测 + MCP Server 运行时护栏 + Anthropic-Cybersecurity-Skills 21K⭐ 817 安全 Skills × 6 框架映射，形成事前扫描+事后执行安全闭环） · Agent 记忆层竞速（TencentDB-Agent-Memory 6.2K⭐ 全本地 4 层管线 vs codebase-memory-mcp 14.7K⭐ tree-sitter 知识图谱——会话记忆 vs 代码结构记忆分化） · Apple container 基础设施级增长（43K⭐ 日增 1,366，Apple 官方开源 Linux 容器运行时稳步攀升）
+
+**关键项目：**
+- 🎨 google-labs-code/design.md (19,005, 首日) — Agent 设计系统规范，YAML tokens + Markdown 理由
+- 🎬 OpenMontage (21,941, 更新) — Agentic 视频生产系统爆发，4天 +158%
+- 💾 TencentDB-Agent-Memory (6,157, 首日) — 全本地 Agent 长期记忆，4 层渐进式管线
+- 🛡️ NVIDIA/SkillSpector (10,661, 更新) — MCP Server 模式，68 类漏洞检测
+- 🍎 apple/container (43,151, 更新) — Apple 官方容器运行时持续高增长
+
+---
+
 ## 2026-06-25
 
 **核心主题：** Agent '懒惰工程'范式大规模验证（ponytail 55K⭐ 7级懒惰阶梯实现 54% 代码削减+100% 安全保持——'Agent 更克制 > Agent 更聪明'设计哲学确认） · Meta-harness 编排层竞争白热化（omnigent 4.7K⭐ Python+多设备+治理 vs vercel/eve 2.5K⭐ TS+filesystem-first——'Agent 的 Kubernetes'品类形成） · 大厂 Coding Agent 终端争夺战（MiMo-Code 10.6K⭐ 持久内存+Goal/Stop 自治 vs shadcn/improve 6.1K⭐ 审计→计划→执行模型分层协作） · OCR 长程解析突破（baidu/Unlimited-OCR 6.3K⭐ one-shot long-horizon parsing，超越 DeepSeek-OCR） · Agent Skills 生态独立化确认（BuilderIO/skills 2.6K⭐ 入场，Skills 成为 B2D 分发渠道）

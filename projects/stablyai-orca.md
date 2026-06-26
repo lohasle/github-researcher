@@ -2,11 +2,11 @@
 title: "Orca"
 slug: "stablyai-orca"
 date_added: "2026-06-22"
-last_seen_date: "2026-06-26"
+last_seen_date: "2026-06-27"
 category: "平台候选"
 emoji: "🐬"
-stars: "7,380 stars"
-stars_delta: "日增 700，周增 1,397"
+stars: "7,901 stars"
+stars_delta: "日增 571，周增 2,100+"
 language: "TypeScript"
 score: 86
 tags: ["agent-ide", "parallel-agents", "worktree", "multi-agent", "mobile", "ade"]
@@ -23,9 +23,17 @@ url: "https://github.com/stablyai/orca"
 
 使用 Claude Code、Codex 等 CLI agent 时，开发者只能在一个终端中运行一个 agent。如果想让多个 agent 并行处理不同任务（或对同一任务给出不同方案），需要手动管理多个终端窗口和 git 分支。Orca 将这个流程产品化：一个界面管理所有 agent，每个 agent 独立 worktree，结果可视化对比。
 
-## 为什么值得关注（2026-06-22）
+## 为什么值得关注（2026-06-27 更新）
 
-5,784 stars 日增 134，在多 Agent 编排赛道中定位最清晰。不是另一个 Agent 框架——而是**Agent 的 IDE**（ADE, Agent Development Environment）。30+ CLI agent 兼容（Claude Code/Codex/Cursor/Grok/Copilot/OpenCode/Amp/Antigravity/Pi/Hermes/Devin/Goose 等全系列）。移动端伴侣（iOS + Android）可以远程监控和指导 agent。日级发布节奏。
+7,901 stars（日增 571），5 天从 5.8K 增长到 7.9K。在多 Agent 编排赛道中定位最清晰——不是另一个 Agent 框架，而是**Agent 的 IDE**（ADE, Agent Development Environment）。30+ CLI agent 兼容（Claude Code/Codex/Cursor/Grok/Copilot/OpenCode/Amp/Antigravity/Pi/Hermes/Devin/Goose/Auggie/Charm/Cline/Codebuff/Kimi/Qwen Code 等全系列）。移动端伴侣（iOS + Android）可以远程监控和指导 agent。日级发布节奏。
+
+### 最近动态（2026-06-27）
+- Star 持续稳定增长，5 天 +2.1K（+36%）
+- 新增 Annotate AI Diffs（在 diff 行上批注并回发给 agent）
+- 新增 Drag Files to Agents（拖拽文件/图片到 agent prompt）
+- 新增 Account Switcher & Usage Tracking（Claude/Codex 用量和 rate-limit 追踪）
+- Homebrew + AUR 安装支持
+- Computer Use 功能（agent 操作桌面应用）
 
 ## 热度来源判断
 

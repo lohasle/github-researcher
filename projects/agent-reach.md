@@ -4,11 +4,12 @@ slug: "agent-reach"
 date_added: "2026-06-14"
 category: "基础设施候选"
 emoji: "🌐"
-stars: "38,576 stars"
-stars_delta: "周增 8,108（持续高增长）"
+stars: "42,263 stars"
+stars_delta: "日增 1,164，周增 12K+"
 language: "Python"
-score: 89
-tags: ["agent-perception", "multi-platform", "web-scraping", "zero-api-fee", "agent-infrastructure"]
+score: 90
+last_seen_date: "2026-06-27"
+tags: ["agent-perception", "multi-platform", "web-scraping", "zero-api-fee", "agent-infrastructure", "capability-layer"]
 url: "https://github.com/Panniantong/Agent-Reach"
 ---
 
@@ -26,8 +27,15 @@ AI Agent 需要访问多个社交和内容平台的数据来做判断，但：
 
 Agent-Reach 用一个统一 CLI 解决了这些问题。
 
-## 为什么值得关注（2026-06-14）
-GitHub Trending 周榜第五，周增 5.4K stars。更重要的是它代表了 Agent 技术栈中"感知层"的独立——类似自动驾驶中的感知模块，Agent 感知层正在从 Agent 核心中分离出来成为独立组件。
+## 为什么值得关注（2026-06-27 更新）
+GitHub Trending 持续在榜，42,263⭐（日增 1,164），从 6 月 14 日的 38K 增长到 42K+。更重要的是它代表了 Agent 技术栈中"感知层"的独立——类似自动驾驶中的感知模块，Agent 感知层正在从 Agent 核心中分离出来成为独立组件。
+
+### 最近动态（2026-06-27）
+- 平台覆盖扩展至 10+（新增 LinkedIn、V2EX、雪球、小宇宙播客）
+- 多后端路由架构成熟——B站 yt-dlp 被风控封死后自动切换 bili-cli，用户零操作
+- 新增 `agent-reach doctor` 自诊断系统
+- 安全模式 `--safe` + Dry Run `--dry-run` 支持
+- 设计理念明确为"能力层（capability layer）"定位
 
 ## 热度来源判断
 - **真实需求驱动**：Agent 开发者确实需要多平台数据，这是刚需
@@ -36,10 +44,12 @@ GitHub Trending 周榜第五，周增 5.4K stars。更重要的是它代表了 A
 - **Claude Code / Cursor 生态红利**：作为 Agent skill 分发
 
 ## 关键技术亮点
-1. **统一接口覆盖异构平台**：7+ 平台用同一 CLI 接口，输出统一格式
-2. **结构化输出**：直接产出 Agent 可消费的 JSON/Markdown，无需二次解析
-3. **零 API 费用架构**：直接抓取页面数据，不依赖官方 API
-4. **多平台广度**：同时覆盖中西方主流平台，跨文化数据获取
+1. **统一接口覆盖异构平台**：10+ 平台用同一 CLI 接口（Web/YouTube/Twitter/Reddit/B站/小红书/GitHub/LinkedIn/V2EX/雪球/RSS/小宇宙），输出统一格式
+2. **多后端路由架构**：每个平台有"首选 + 备选"后端，某个失效自动切换（2026-06 实例：B站 yt-dlp 被风控 412 封死 → 切换 bili-cli，用户零操作）
+3. **结构化输出**：直接产出 Agent 可消费的 JSON/Markdown，无需二次解析
+4. **零 API 费用架构**：全部开源工具，零付费 API
+5. **自诊断系统**：`agent-reach doctor` 一条命令告诉你每个渠道的状态、当前走哪条路
+6. **能力层定位**：不负责底层读取本身，负责选型 + 安装 + 体检 + 路由
 
 ## 架构启发
 Agent 技术栈正在分化出明确的"感知层"：
@@ -87,3 +97,4 @@ flowchart LR
 
 ---
 *首次记录：2026-06-14*
+*最近更新：2026-06-27 — stars 更新至 42K，平台扩展至 10+，多后端路由成熟，新增安全模式*

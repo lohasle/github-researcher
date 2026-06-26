@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-06-26）
+## 最新研究摘要（2026-06-27）
 
-**Agent × Design System 标准化接口——Google Labs design.md 19K⭐ 定义 AI Agent 的设计系统规范（DESIGN.md = YAML tokens + Markdown 理由 = Agent 可读的设计宪法），填补 Agent 与 UI 之间的结构化理解缺口 · Agentic 视频生产大爆发——OpenMontage 4天从 8.5K 暴涨至 22K（+13.5K），12 pipeline × 52 tools × 500+ skills 验证 Agent 不止写代码还能做视频 · Agent 安全治理工具化——NVIDIA SkillSpector 10.7K⭐ 68 类漏洞检测 + Anthropic-Cybersecurity-Skills 21K⭐ 817 条安全 Skills，Agent 安全从理念变成可执行工具链 · Agent 记忆层竞速——TencentDB-Agent-Memory 6.2K⭐ 全本地 4 层记忆管线 vs codebase-memory-mcp 14.7K⭐ 知识图谱索引**
+**Agent 感知层大整合——Agent-Reach 42K⭐ 给 Agent 装上全互联网感知（7+ 平台零 API 费用），page-agent 20K⭐ 操控网页 UI，Agent 的'眼睛+手'标准化 · LLM 零成本基建加速——FreeLLMAPI 从 783→13K⭐（2 个月 17 倍），16 家 Provider 聚合 ~1.7B tokens/月 · Agent 并行编排日常化——Orca 7.9K⭐ ADE + multica 开源 Agent 管理平台 + gstack 23 工具链**
 
 今日热榜新信号：
-- **google-labs-code/design.md**（19,005 stars）：Agent 的设计系统规范——YAML tokens + Markdown 理由 = Agent 可读的设计宪法
-- **calesthio/OpenMontage**（21,941 stars）：开源 Agentic 视频生产系统——12 pipeline × 52 tools × 500+ skills，$0.15/视频
-- **TencentCloud/TencentDB-Agent-Memory**（6,157 stars）：全本地 Agent 长期记忆——4 层渐进式管线，零外部 API 依赖
+- **Panniantong/Agent-Reach**（42,263 stars）：Agent 互联网感知层——7+ 平台统一 CLI，零 API 费用，42K⭐ 基础设施级增长
+- **tashfeenahmed/freellmapi**（13,142 stars）：16 家免费 LLM Provider 聚合代理——~1.7B tokens/月，2 个月 17 倍增长
+- **stablyai/orca**（7,901 stars）：并行 Agent 开发环境（ADE）——30+ CLI agent 兼容，worktree 隔离 + 移动端
 
+**→ [查看 2026-06-27 完整简报](daily/2026-06-27.md)**
 **→ [查看 2026-06-26 完整简报](daily/2026-06-26.md)**
 **→ [查看 2026-06-25 完整简报](daily/2026-06-25.md)**
 **→ [查看 2026-06-24 完整简报](daily/2026-06-24.md)**
-**→ [查看 2026-06-23 完整简报](daily/2026-06-23.md)**
 
 ---
 
@@ -24,23 +24,23 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-06-27](daily/2026-06-27.md) | Agent 感知层大整合——Agent-Reach 42K⭐ 给 Agent 装 | 5 个深度分析 |
 | [2026-06-26](daily/2026-06-26.md) | Agent × Design System 标准化接口——Google Labs | 5 个深度分析 |
 | [2026-06-25](daily/2026-06-25.md) | Agent '懒惰工程'范式大规模验证——ponytail 55K⭐ 用 7 级 | 5 个深度分析 |
 | [2026-06-24](daily/2026-06-24.md) | Agent 感知层成熟化——alibaba/page-agent 19.2K⭐  | 5 个深度分析 |
 | [2026-06-23](daily/2026-06-23.md) | Agent Skills 经济爆发——gstack 113K⭐（Garry Ta | 5 个深度分析 |
 | [2026-06-22](daily/2026-06-22.md) | Agent 上下文压缩进入标准化期——Headroom 44K⭐ 日增 2.6K | 5 个深度分析 |
 | [2026-06-21](daily/2026-06-21.md) | Agent Skill 训练正式化——SkillOpt 用 epoch/lr/v | 5 个深度分析 |
-| [2026-06-20](daily/2026-06-20.md) | LLM Token 经济学基础设施爆发（headroom 38K⭐ 日增 3,9 | 5 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **Agent × Design System 标准化接口：Google Labs design.md 19K⭐（+1,407/day）提出 DESIGN.md 规范——YAML frontmatter 定义 design tokens（colors/typography/spacing/rounded/components），Markdown body 解释设计理由。这不只是一个 lint 工具——而是 Agent 与设计系统之间的'契约文件'，类似 ROBOTS.TXT 之于爬虫。配合 npx lint/diff/export 工具链，Agent 可以理解'为什么用这个颜色'而不仅是'用什么颜色'。这是 Agent 从'像素级实现'升级到'设计系统级理解'的关键一步**：相关项目 design-md。
-2. **Agentic 视频生产大爆发：OpenMontage 4天从 8.5K 暴涨至 22K（+13.5K/4天，日增 3,553），周榜 #1（+12,948/week）。12 pipeline（动画解说/纪录片/混剪/产品广告/角色动画等）× 52 tools × 500+ agent skills，支持 Claude Code/Cursor/Copilot/Windsurf/Codex 全 Agent。免费路径（Piper TTS + Archive.org + Remotion）成本 $0.15/视频，付费路径 $0.69-$1.33/视频。这不是'AI 生成视频'——而是 Agent 编排完整视频生产管线**：相关项目 openmontage。
-3. **Agent 安全治理工具化：NVIDIA SkillSpector 10.7K⭐（68 类漏洞 × 17 分类，AST+Taint+YARA+MCP 最小权限）+ Anthropic-Cybersecurity-Skills 21K⭐（817 条安全 Skills × 6 框架映射）。两者形成闭环：SkillSpector 做事前安全扫描（类似 SAST），Cybersecurity-Skills 做事后安全执行（类似 RUNTIME 保护）。Agent 安全从'讨论理念'变成'有工具链可用'的阶段**：相关项目 nvidia-skillspector, anthropic-cybersecurity-skills。
-4. **Agent 记忆层竞速：TencentCloud/TencentDB-Agent-Memory 6.2K⭐ 全本地 4 层渐进式记忆管线（零外部 API 依赖），DeusData/codebase-memory-mcp 14.7K⭐（周增 9.6K）tree-sitter 知识图谱（Linux 内核 28M LOC 3分钟索引）。Agent 记忆正分化为两个方向：通用会话记忆（TencentDB）vs 代码结构记忆（codebase-memory-mcp）。两者解决不同问题——前者是'Agent 记住对话'，后者是'Agent 理解代码库'**：相关项目 codebase-memory-mcp, tencentdb-agent-memory。
-5. **Apple container 基础设施级增长：43,151⭐（+6,937/2周，日增 1,366），Apple 官方开源 Linux 容器运行时（Swift+轻量 VM+Apple Silicon 原生）。大厂开源基础设施项目的星级增速验证了'Apple 做开发者基础设施'不是实验——而是战略级投入。配合 Orca 7.4K⭐（并行 Agent IDE）和 design.md 19K⭐（Agent 设计规范），Apple 生态正在为 Agent 时代重构开发工具链**：相关项目 apple-container。
+1. **Agent 感知层大规模整合：Agent-Reach 42K⭐（+1,164/day）提供 Twitter/Reddit/YouTube/B站/小红书/GitHub 等 7+ 平台统一 CLI，零 API 费用。alibaba/page-agent 20K⭐（+554/day）让 Agent 用自然语言控制网页 UI。aws/agent-toolkit-for-aws 1.3K⭐ 提供官方 MCP servers。Agent 技术栈正在分化出独立的'感知层'和'操作层'——类似自动驾驶感知/决策/执行分离**：相关项目 agent-reach, alibaba-page-agent。
+2. **LLM 零成本基础设施加速：FreeLLMAPI 13,142⭐（+586/day）从 5 月 1 日的 783⭐ 暴涨至 13K（2 个月 17 倍），聚合 16 家免费 Provider（Google/Groq/Cerebras/NVIDIA/Mistral/Cloudflare/Z.ai 等）~1.7B tokens/月。OpenAI/Anthropic 双兼容（/v1/chat/completions + /v1/messages），Claude Code 可直接对接。加密 key + 智能 failover + 每 key 用量追踪。LLM 调用的边际成本趋近于零**：相关项目 freellmapi。
+3. **Agent 并行编排进入日常工具层：stablyai/orca 7,901⭐（+571/day）ADE 支持 30+ CLI agent 并行（worktree 隔离 + 移动端监控 + SSH 远程）。multica-ai/multica 开源 Agent 管理平台（任务分配 + 进度追踪 + 技能复用）。garrytan/gstack 提供 Garry Tan 的 23 个 Claude Code 工具（CEO/Designer/Eng Manager 角色）。从'单 Agent 工具'到'多 Agent 编排平台'的跃迁正在发生**：相关项目 stablyai-orca。
+4. **DESIGN.md + OpenMontage 持续领跑验证：design.md 21,112⭐（+2,319/day）连续 3 天日增 2K+，验证 Agent × Design System 标准化不是一日热点。OpenMontage 23,506⭐（+1,674/day）Agentic 视频生产持续高增长。两者代表 Agent 生态两个方向：标准化接口 + 内容生产能力**：相关项目 design-md, openmontage。
+5. **Agent 垂直应用全面渗透：ai-berkshire 3,065⭐（+1,270/day）基于 Claude Code 的价值投资研究框架（巴菲特/芒格方法论 + 多 Agent 对抗分析）。ai-website-cloner 21,299⭐（+1,076/day）一键克隆网站。TREK 7,593⭐（+1,063/day）自托管旅行规划。open-seo 3,046⭐（+635/day）开源 Semrush 替代。ainovel-cli 1,085⭐ 多 Agent 小说生成。Agent 正在渗透每个垂直领域**：相关项目 ai-berkshire, ai-website-cloner-template。
 
 ---
 
@@ -53,19 +53,19 @@
 | [gstack](projects/garrytan-gstack.md) | 平台候选 | YC CEO Garry Tan 的 Claude Code 工具栈——23 个 | 持续跟踪 |
 | [Understand-Anything](projects/understand-anything.md) | 平台候选 | 将任意代码转换为交互式知识图谱，支持探索、搜索和问答，兼容 Claude Cod | 持续跟踪 |
 | [NVIDIA OpenShell](projects/openshell.md) | 基础设施候选 | NVIDIA 出品的 Agent 安全运行时沙箱——Rust 实现，四层策略防御 | 持续跟踪 |
+| [Agent-Reach](projects/agent-reach.md) | 基础设施候选 | AI Agent 的互联网感知层——一个 CLI 聚合 Twitter/Redd | 持续跟踪 |
 | [agent-skills](projects/agent-skills.md) | 平台候选 | 为 AI Coding Agent 提供生产级工程技能的标准化集合，由前端架构师 | 持续跟踪 |
 | [agentmemory](projects/agentmemory.md) | 基础设施候选 | AI Coding Agent 的统一持久记忆服务，支持全平台（Claude C | 持续跟踪 |
 | [Claude Plugins Official](projects/claude-plugins-official.md) | 平台候选 | Anthropic 官方管理的高质量 Claude Code 插件目录，Agen | 持续跟踪 |
 | [Copy Fail CVE-2026-31431](projects/copy-fail-cve-2026-31431.md) | 安全 | Linux 内核 `algif_aead` page-cache 损坏漏洞的检测 | 持续跟踪 |
-| [design.md](projects/design-md.md) | 平台候选 | Google Labs 提出的 DESIGN.md 文件格式规范——用 YAML | 持续跟踪 |
 
 ---
 
 ## 数据统计
 
 - 📊 项目档案：232 个
-- 📅 日报总数：77 期
-- 🔄 最近更新：2026-06-26
+- 📅 日报总数：78 期
+- 🔄 最近更新：2026-06-27
 
 ---
 

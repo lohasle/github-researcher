@@ -2,11 +2,11 @@
 title: "OpenMontage"
 slug: "openmontage"
 date_added: "2026-06-22"
-last_seen_date: "2026-06-26"
+last_seen_date: "2026-06-27"
 category: "平台候选"
 emoji: "🎬"
-stars: "21,941 stars"
-stars_delta: "日增 3,553，周增 12,948"
+stars: "23,506 stars"
+stars_delta: "日增 1,674，5 天从 8.5K→23.5K"
 language: "Python"
 score: 86
 tags: ["agentic-video", "content-production", "pipeline", "agent-skills", "video", "automation"]

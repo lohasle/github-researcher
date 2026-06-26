@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-06-26'
+last_updated: '2026-06-27'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,39 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-06-27（第六十八版）
+
+### Agent 感知层大整合 · LLM 零成本基建加速 · Agent 并行编排日常化 · DESIGN.md 持续领跑 · Agent 垂直应用全面渗透
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agent 感知层大整合：Agent-Reach 42K⭐（7+平台零API）+ page-agent 20K⭐（自然语言操控网页UI），Agent '眼睛+手'标准化 | agent-reach, alibaba-page-agent | 90 |
+| 2 | LLM 零成本基建加速：FreeLLMAPI 13K⭐ 2个月17倍增长，16 Provider ~1.7B tokens/月，OpenAI+Anthropic双兼容 | freellmapi | 87 |
+| 3 | Agent 并行编排日常化：Orca 7.9K⭐ ADE + multica 开源管理平台 + gstack 23工具链 | stablyai-orca | 86 |
+| 4 | DESIGN.md + OpenMontage 持续领跑：design.md 21K⭐ 连续3天日增2K+，OpenMontage 23.5K⭐ 持续高增长 | design-md, openmontage | 88 |
+| 5 | Agent 垂直应用全面渗透：ai-berkshire/TREK/open-seo/ainovel-cli 等，Agent 渗透每个垂直领域 | ai-berkshire, ai-website-cloner-template | 82 |
+
+#### 今日新增项目
+
+| 项目 | Stars | 分类 | Score |
+|------|-------|------|-------|
+| xbtlin/ai-berkshire | 3,065 | 学习型 | 72 |
+| every-app/open-seo | 3,046 | 工具型 | 75 |
+
+#### 今日更新项目
+
+| 项目 | Stars 变化 | 更新 |
+|------|-----------|------|
+| Panniantong/Agent-Reach | 38.6K→42.3K (+10%) | 平台扩展至10+，多后端路由成熟，score 89→90 |
+| tashfeenahmed/freellmapi | 783→13,142 (17倍) | Provider 14→16，Anthropic兼容，score 76→85 |
+| stablyai/orca | 7.4K→7.9K | 新增 Annotate Diffs、Account Switcher |
+| google-labs-code/design.md | 19K→21.1K | 连续3天日增2K+，验证标准化趋势 |
+| calesthio/OpenMontage | 21.9K→23.5K | 持续高增长 |
+
+---
 
 ## 2026-06-26（第六十七版）
 

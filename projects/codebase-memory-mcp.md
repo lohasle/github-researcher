@@ -2,15 +2,24 @@
 title: "codebase-memory-mcp"
 slug: "codebase-memory-mcp"
 date_added: "2026-06-20"
-last_seen_date: "2026-06-26"
+last_seen_date: "2026-06-28"
 category: "基础设施候选"
 emoji: "🧠"
-stars: "14,709 stars"
-stars_delta: "周增 9,589（日均 ~1.4K）"
+stars: "17,459 stars"
+stars_delta: "周增 7,592（日均 ~1.1K），总计从 8K→17.5K（8 天翻倍）"
 language: "C"
-score: 88
+score: 89
 tags: ["code-intelligence", "knowledge-graph", "mcp", "tree-sitter", "agent-infrastructure", "hybrid-lsp"]
 url: "https://github.com/DeusData/codebase-memory-mcp"
+---
+
+## 2026-06-28 更新
+
+stars 从 14.7K→17.5K（周增 2.8K）。与 cognee 并列为本周 "Agent 大脑层" 双子星。趋势确认：代码智能 MCP 正在从创新变为标配。新增观察：
+- 与 cognee 的互补关系明确（代码理解 vs 通用记忆）
+- 企业 PoC 信号积极
+- 建议 codebase-memory-mcp + cognee 组合使用作为 Agent 知识层
+
 ---
 
 ## 2026-06-22 更新

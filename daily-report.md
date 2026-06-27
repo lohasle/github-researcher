@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-06-28
+
+**核心主题：** 代码智能层大爆发（codebase-memory-mcp 17.5K⭐ 周增 7.6K，tree-sitter 知识图谱让 Agent 理解全局代码——158 语言/亚毫秒查询/99% token 节省。cognee 23.9K⭐ 周增 5.1K，自托管知识图谱 Agent 记忆平台。两者代表 Agent '大脑层'从实验走向生产） · Agent 安全治理层崛起（no-mistakes 3.8K⭐ git push 防护门——disposable worktree + AI 验证流水线全绿才放行。Anthropic-Cybersecurity-Skills 22.2K⭐ 817 条安全技能映射 MITRE ATT&CK/NIST CSF 等 6 大框架。Agent 生态从'能跑就行'进入'安全可控'阶段） · Agent-Native 应用框架首次定义（BuilderIO/agent-native 2.7K⭐ defineAction 一次定义六端复用——UI/Agent/HTTP/MCP/A2A/CLI。UI 与 Agent 等公民的架构模式，可能定义 Agent 时代全栈应用默认架构） · OpenMontage 周增 17.2K（25.1K⭐ GitHub 本周增长第一，首个开源 Agentic 视频生产系统 12 pipeline/52 tools。design.md 22.3K⭐ 连续 4 天日增 1.5K+） · Voice I/O 成熟（voicebox 34.9K⭐ 本地 AI 语音工作室 7 TTS 引擎/MCP server/voice cloning，ElevenLabs 开源替代）
+
+**关键项目：**
+- 🧠 DeusData/codebase-memory-mcp (17,459, 更新) — 代码库知识图谱 MCP，tree-sitter 158 语言
+- 🕸️ topoteretes/cognee (23,943, 新增) — 自托管 Agent 记忆平台，知识图谱+向量搜索
+- 🛡️ kunchenguid/no-mistakes (3,790, 新增) — Git push AI 防护门，disposable worktree 验证
+- 🏗️ BuilderIO/agent-native (2,707, 新增) — Agent-Native 全栈框架，defineAction 六端复用
+- 🎙️ jamiepine/voicebox (34,860, 新增) — 本地 AI 语音工作室，7 TTS + MCP server
+
+---
+
 ## 2026-06-27
 
 **核心主题：** Agent 感知层大规模整合（Agent-Reach 42K⭐ 给 Agent 装上全互联网感知——7+平台零API费用统一CLI，多后端路由架构成熟。alibaba/page-agent 20K⭐ 让Agent用自然语言控制网页UI。aws/agent-toolkit-for-aws 1.3K⭐ 提供官方MCP servers。Agent技术栈正在分化出独立的“感知层”和“操作层”——类似自动驾驶感知/决策/执行分离） · LLM 零成本基建加速（FreeLLMAPI 从783⭐暴涨至13,142⭐，2个月17倍增长，聚合16家免费Provider ~1.7B tokens/月。OpenAI+Anthropic双兼容意味着Claude Code可直接对接免费pool。LLM调用的边际成本趋近于零） · Agent 并行编排日常化（stablyai/orca 7.9K⭐ ADE支持30+CLI agent并行+移动端监控。multica开源Agent管理平台。gstack提供Garry Tan的23个角色化工具。从“单Agent工具”到“多Agent编排平台”的跃迁） · DESIGN.md + OpenMontage 持续领跑验证（design.md 21K⭐连续3天日增2K+，验证Agent×Design System标准化不是一日热点。OpenMontage 23.5K⭐ Agentic视频生产持续高增长） · Agent 垂直应用全面渗透（ai-berkshire/TREK/open-seo/ainovel-cli等，Agent正在渗透每个垂直领域）

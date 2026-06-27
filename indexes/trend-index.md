@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-06-27'
+last_updated: '2026-06-28'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,40 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-06-28（第六十九版）
+
+### 代码智能层大爆发 · Agent 安全治理层崛起 · Agent-Native 应用框架首次定义 · OpenMontage 周增 17K · Voice I/O 成熟
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | 代码智能与记忆层大爆发：codebase-memory-mcp 17.5K⭐ 周增 7.6K（tree-sitter 知识图谱/158 语言/亚毫秒查询），cognee 23.9K⭐ 周增 5.1K（Agent 记忆平台/知识图谱+向量搜索）。Agent '大脑层'从实验走向生产 | codebase-memory-mcp, cognee | 91 |
+| 2 | Agent 安全治理层崛起：no-mistakes 3.8K⭐ git push AI 防护门（disposable worktree+验证流水线），Anthropic-Cybersecurity-Skills 22.2K⭐ 817 条安全技能映射 6 大框架。Agent 生态进入'安全可控'阶段 | no-mistakes, anthropic-cybersecurity-skills | 87 |
+| 3 | Agent-Native 应用框架首次定义：BuilderIO/agent-native 2.7K⭐ defineAction 六端复用，UI 与 Agent 等公民，Agent 可自修改应用 | agent-native | 85 |
+| 4 | OpenMontage + design.md 持续领跑：OpenMontage 25.1K⭐ **周增 17.2K** GitHub 增长第一，design.md 22.3K⭐ 连续 4 天日增 1.5K+ | openmontage, design-md | 88 |
+| 5 | Voice I/O 成熟 + Agent 垂直应用深化：voicebox 34.9K⭐ 本地 AI 语音工作室（7 TTS/MCP server），ai-berkshire 4K⭐，open-seo 3.3K⭐ | voicebox, ai-berkshire | 83 |
+
+#### 今日新增项目
+
+| 项目 | Stars | 分类 | Score |
+|------|-------|------|-------|
+| topoteretes/cognee | 23,943 | 基础设施候选 | 87 |
+| kunchenguid/no-mistakes | 3,790 | 工具型 | 82 |
+| BuilderIO/agent-native | 2,707 | 平台候选 | 84 |
+| jamiepine/voicebox | 34,860 | 工具型 | 83 |
+
+#### 今日更新项目
+
+| 项目 | Stars 变化 | 更新 |
+|------|-----------|------|
+| DeusData/codebase-memory-mcp | 14.7K→17.5K (+19%) | 与 cognee 互补关系确认，score 88→89 |
+| calesthio/OpenMontage | 23.5K→25.1K | 周增 17.2K，GitHub 本周增长第一 |
+| google-labs-code/design.md | 21.1K→22.3K | 连续 4 天日增 1.5K+，验证长期趋势 |
+| stablyai/orca | 7.9K→8.3K | 新增 SSH worktree、CLI scripting |
+
+---
 
 ## 2026-06-27（第六十八版）
 

@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-06-27）
+## 最新研究摘要（2026-06-28）
 
-**Agent 感知层大整合——Agent-Reach 42K⭐ 给 Agent 装上全互联网感知（7+ 平台零 API 费用），page-agent 20K⭐ 操控网页 UI，Agent 的'眼睛+手'标准化 · LLM 零成本基建加速——FreeLLMAPI 从 783→13K⭐（2 个月 17 倍），16 家 Provider 聚合 ~1.7B tokens/月 · Agent 并行编排日常化——Orca 7.9K⭐ ADE + multica 开源 Agent 管理平台 + gstack 23 工具链**
+**代码智能层大爆发——codebase-memory-mcp 17.5K⭐ tree-sitter 知识图谱让 Agent 理解全局代码（158 语言/亚毫秒查询/99% token 节省），cognee 23.9K⭐ 自托管知识图谱 Agent 记忆平台（周增 5K），Agent 的'大脑'基建成熟 · Agent 安全治理层崛起——no-mistakes 3.8K⭐ git push 防护门（disposable worktree + AI 验证流水线），Anthropic-Cybersecurity-Skills 22.2K⭐ 817 条安全技能映射 MITRE ATT&CK · Agent-Native 应用框架首次定义——BuilderIO/agent-native 2.7K⭐ 'UI + Agent 等公民'架构模式 · 本周 85K+ Star 增量，Agent 生态进入分层整合期**
 
 今日热榜新信号：
-- **Panniantong/Agent-Reach**（42,263 stars）：Agent 互联网感知层——7+ 平台统一 CLI，零 API 费用，42K⭐ 基础设施级增长
-- **tashfeenahmed/freellmapi**（13,142 stars）：16 家免费 LLM Provider 聚合代理——~1.7B tokens/月，2 个月 17 倍增长
-- **stablyai/orca**（7,901 stars）：并行 Agent 开发环境（ADE）——30+ CLI agent 兼容，worktree 隔离 + 移动端
+- **DeusData/codebase-memory-mcp**（17,459 stars）：代码库知识图谱 MCP——tree-sitter AST 158 语言，亚毫秒查询，99% token 节省
+- **topoteretes/cognee**（23,943 stars）：自托管 Agent 记忆平台——知识图谱 + 向量搜索，remember/recall/forget API
+- **kunchenguid/no-mistakes**（3,790 stars）：Git push AI 防护门——disposable worktree + 验证流水线，全绿才放行
 
+**→ [查看 2026-06-28 完整简报](daily/2026-06-28.md)**
 **→ [查看 2026-06-27 完整简报](daily/2026-06-27.md)**
 **→ [查看 2026-06-26 完整简报](daily/2026-06-26.md)**
 **→ [查看 2026-06-25 完整简报](daily/2026-06-25.md)**
-**→ [查看 2026-06-24 完整简报](daily/2026-06-24.md)**
 
 ---
 
@@ -24,23 +24,23 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-06-28](daily/2026-06-28.md) | 代码智能层大爆发——codebase-memory-mcp 17.5K⭐ tre | 5 个深度分析 |
 | [2026-06-27](daily/2026-06-27.md) | Agent 感知层大整合——Agent-Reach 42K⭐ 给 Agent 装 | 5 个深度分析 |
 | [2026-06-26](daily/2026-06-26.md) | Agent × Design System 标准化接口——Google Labs | 5 个深度分析 |
 | [2026-06-25](daily/2026-06-25.md) | Agent '懒惰工程'范式大规模验证——ponytail 55K⭐ 用 7 级 | 5 个深度分析 |
 | [2026-06-24](daily/2026-06-24.md) | Agent 感知层成熟化——alibaba/page-agent 19.2K⭐  | 5 个深度分析 |
 | [2026-06-23](daily/2026-06-23.md) | Agent Skills 经济爆发——gstack 113K⭐（Garry Ta | 5 个深度分析 |
 | [2026-06-22](daily/2026-06-22.md) | Agent 上下文压缩进入标准化期——Headroom 44K⭐ 日增 2.6K | 5 个深度分析 |
-| [2026-06-21](daily/2026-06-21.md) | Agent Skill 训练正式化——SkillOpt 用 epoch/lr/v | 5 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **Agent 感知层大规模整合：Agent-Reach 42K⭐（+1,164/day）提供 Twitter/Reddit/YouTube/B站/小红书/GitHub 等 7+ 平台统一 CLI，零 API 费用。alibaba/page-agent 20K⭐（+554/day）让 Agent 用自然语言控制网页 UI。aws/agent-toolkit-for-aws 1.3K⭐ 提供官方 MCP servers。Agent 技术栈正在分化出独立的'感知层'和'操作层'——类似自动驾驶感知/决策/执行分离**：相关项目 agent-reach, alibaba-page-agent。
-2. **LLM 零成本基础设施加速：FreeLLMAPI 13,142⭐（+586/day）从 5 月 1 日的 783⭐ 暴涨至 13K（2 个月 17 倍），聚合 16 家免费 Provider（Google/Groq/Cerebras/NVIDIA/Mistral/Cloudflare/Z.ai 等）~1.7B tokens/月。OpenAI/Anthropic 双兼容（/v1/chat/completions + /v1/messages），Claude Code 可直接对接。加密 key + 智能 failover + 每 key 用量追踪。LLM 调用的边际成本趋近于零**：相关项目 freellmapi。
-3. **Agent 并行编排进入日常工具层：stablyai/orca 7,901⭐（+571/day）ADE 支持 30+ CLI agent 并行（worktree 隔离 + 移动端监控 + SSH 远程）。multica-ai/multica 开源 Agent 管理平台（任务分配 + 进度追踪 + 技能复用）。garrytan/gstack 提供 Garry Tan 的 23 个 Claude Code 工具（CEO/Designer/Eng Manager 角色）。从'单 Agent 工具'到'多 Agent 编排平台'的跃迁正在发生**：相关项目 stablyai-orca。
-4. **DESIGN.md + OpenMontage 持续领跑验证：design.md 21,112⭐（+2,319/day）连续 3 天日增 2K+，验证 Agent × Design System 标准化不是一日热点。OpenMontage 23,506⭐（+1,674/day）Agentic 视频生产持续高增长。两者代表 Agent 生态两个方向：标准化接口 + 内容生产能力**：相关项目 design-md, openmontage。
-5. **Agent 垂直应用全面渗透：ai-berkshire 3,065⭐（+1,270/day）基于 Claude Code 的价值投资研究框架（巴菲特/芒格方法论 + 多 Agent 对抗分析）。ai-website-cloner 21,299⭐（+1,076/day）一键克隆网站。TREK 7,593⭐（+1,063/day）自托管旅行规划。open-seo 3,046⭐（+635/day）开源 Semrush 替代。ainovel-cli 1,085⭐ 多 Agent 小说生成。Agent 正在渗透每个垂直领域**：相关项目 ai-berkshire, ai-website-cloner-template。
+1. **代码智能与记忆层大爆发：codebase-memory-mcp 17.5K⭐（周增 7.6K）将代码库索引为持久知识图谱，158 语言 tree-sitter AST + Hybrid LSP 语义类型解析，亚毫秒查询，99% token 节省，单静态二进制零依赖。cognee 23.9K⭐（周增 5.1K）自托管 Agent 记忆平台，remember/recall/forget 四操作 + 知识图谱 + 向量搜索。两者代表 Agent 生态的'大脑层'从实验走向生产**：相关项目 codebase-memory-mcp, cognee。
+2. **Agent 安全治理层崛起：no-mistakes 3.8K⭐（周增 1.7K）在 git push 前建 disposable worktree 跑 AI 验证流水线，全绿才放行。Anthropic-Cybersecurity-Skills 22.2K⭐（周增 5.1K）817 条结构化安全技能映射 6 大框架（MITRE ATT&CK/NIST CSF/MITRE ATLAS）。OpenSpec 57K⭐ spec-driven development 持续增长。Agent 生态从'能跑就行'进入'安全可控'阶段**：相关项目 no-mistakes, anthropic-cybersecurity-skills。
+3. **Agent-Native 应用框架首次定义：BuilderIO/agent-native 2.7K⭐（周增 1.6K）提出 defineAction 一次定义、UI/Agent/HTTP/MCP/A2A/CLI 六端复用。SQL-backed state + 人类 Agent 实时协作 + Agent 可自修改应用。这不是又一个 Chat UI，而是'Agent 与 UI 等公民'的架构模式定义**：相关项目 agent-native。
+4. **OpenMontage + design.md 持续领跑验证：OpenMontage 25.1K⭐（周增 17.2K！）首个开源 Agentic 视频生产系统（12 pipeline/52 tools/500+ skills），可从 YouTube 参考视频生成完整制作方案。design.md 22.3K⭐（日增 1,542）Agent 设计系统规范持续高增长。内容生产能力标准化趋势确立**：相关项目 openmontage, design-md。
+5. **Agent 垂直应用深化 + Voice I/O 成熟：voicebox 34.9K⭐（周增 3.8K）本地 AI 语音工作室（7 TTS 引擎/23 语言/voice cloning/MCP server），ElevenLabs + WisprFlow 开源替代。ai-berkshire 4K⭐ AI 价值投资。open-seo 3.3K⭐ 开源 SEO 工具。daily_stock_analysis 50.5K⭐ LLM 多市场股票分析。Agent 渗透每个垂直领域，且都开始有开源基础设施级方案**：相关项目 voicebox, ai-berkshire。
 
 ---
 
@@ -63,9 +63,9 @@
 
 ## 数据统计
 
-- 📊 项目档案：232 个
-- 📅 日报总数：78 期
-- 🔄 最近更新：2026-06-27
+- 📊 项目档案：236 个
+- 📅 日报总数：79 期
+- 🔄 最近更新：2026-06-28
 
 ---
 

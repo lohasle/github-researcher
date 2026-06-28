@@ -2,11 +2,11 @@
 title: "codebase-memory-mcp"
 slug: "codebase-memory-mcp"
 date_added: "2026-06-20"
-last_seen_date: "2026-06-28"
+last_seen_date: "2026-06-29"
 category: "基础设施候选"
 emoji: "🧠"
-stars: "17,459 stars"
-stars_delta: "周增 7,592（日均 ~1.1K），总计从 8K→17.5K（8 天翻倍）"
+stars: "19,466 stars"
+stars_delta: "周增 11.5K（日均 ~1.4K），总计从 8K→19.5K（9 天增长 145%）。arXiv 论文发表（2603.27277）：31 仓库测试 83% 答案质量/10× 更少 token/2.1× 更少工具调用"
 language: "C"
 score: 89
 tags: ["code-intelligence", "knowledge-graph", "mcp", "tree-sitter", "agent-infrastructure", "hybrid-lsp"]

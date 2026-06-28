@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-06-29
+
+**核心主题：** AI 安全攻防工具化加速（strix 开源 AI 渗透测试 Agent——Docker 沙箱+多 Agent 协作+真实 PoC 验证。claude-bug-bounty 3.6K⭐ 终端化漏洞猎捕。配合 no-mistakes+Anthropic-Cyber-Skills 形成'防御→渗透→猎捕→技能'完整闭环） · 代码智能层持续高增长（codebase-memory-mcp 19.5K⭐ 日增 1.2K，arXiv 论文发表 31 仓库测试 83% 质量/10× token 节省。design.md 22.8K⭐ 连续 5 天 Trending。Agent 认知基建三件套'代码理解+设计规范+技能注入'成型） · AI 金融 Agent 爆发（ai-berkshire 5.2K⭐ 日增 1,456 四大师方法论多 Agent 对抗。daily_stock_analysis 51K⭐。Vibe-Trading 个人交易 Agent） · 本地 Voice I/O 成熟（FluidVoice 3.7K⭐ macOS 最快离线听写 Parakeet 零延迟。voicebox 35.4K⭐ 开源语音工作室） · LLM 路由层整合（OmniRoute 7.3K⭐ 160+ Provider 聚合 RTK 压缩 15-95% token）
+
+**关键项目：**
+- 🗡️ usestrix/strix (新增) — AI 渗透测试 Agent，Docker 沙箱+多 Agent 协作+PoC 验证
+- 🎙️ altic-dev/FluidVoice (3,657, 新增) — macOS 最快离线听写，Parakeet 零延迟+本地 AI 增强
+- 📈 xbtlin/ai-berkshire (5,235, 新增) — AI 价值投资研究框架，四大师方法论多 Agent 对抗
+- 🔀 diegosouzapw/OmniRoute (7,335, 新增) — 免费 AI 网关，160+ Provider 聚合+RTK 压缩
+- 🧠 DeusData/codebase-memory-mcp (19,466, 更新) — 代码库知识图谱 MCP，持续高增
+
+---
+
 ## 2026-06-28
 
 **核心主题：** 代码智能层大爆发（codebase-memory-mcp 17.5K⭐ 周增 7.6K，tree-sitter 知识图谱让 Agent 理解全局代码——158 语言/亚毫秒查询/99% token 节省。cognee 23.9K⭐ 周增 5.1K，自托管知识图谱 Agent 记忆平台。两者代表 Agent '大脑层'从实验走向生产） · Agent 安全治理层崛起（no-mistakes 3.8K⭐ git push 防护门——disposable worktree + AI 验证流水线全绿才放行。Anthropic-Cybersecurity-Skills 22.2K⭐ 817 条安全技能映射 MITRE ATT&CK/NIST CSF 等 6 大框架。Agent 生态从'能跑就行'进入'安全可控'阶段） · Agent-Native 应用框架首次定义（BuilderIO/agent-native 2.7K⭐ defineAction 一次定义六端复用——UI/Agent/HTTP/MCP/A2A/CLI。UI 与 Agent 等公民的架构模式，可能定义 Agent 时代全栈应用默认架构） · OpenMontage 周增 17.2K（25.1K⭐ GitHub 本周增长第一，首个开源 Agentic 视频生产系统 12 pipeline/52 tools。design.md 22.3K⭐ 连续 4 天日增 1.5K+） · Voice I/O 成熟（voicebox 34.9K⭐ 本地 AI 语音工作室 7 TTS 引擎/MCP server/voice cloning，ElevenLabs 开源替代）

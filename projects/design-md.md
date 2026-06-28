@@ -2,11 +2,11 @@
 title: "design.md"
 slug: "design-md"
 date_added: "2026-06-26"
-last_seen_date: "2026-06-27"
+last_seen_date: "2026-06-29"
 category: "平台候选"
 emoji: "🎨"
-stars: "21,112 stars"
-stars_delta: "日增 2,319，连续 3 天日增 2K+"
+stars: "22,807 stars"
+stars_delta: "日增 727，周增 6,014。连续 5 天 Trending，DESIGN.md 规范被 Coding Agent 普遍采纳"
 language: "TypeScript"
 score: 90
 tags: ["design-system", "agent-spec", "google-labs", "design-tokens", "linting", "claude-code", "tailwind"]

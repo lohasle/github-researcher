@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026-06-29 GitHub 趋势研究简报 | GitHub Researcher</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📊</text></svg>">
-    <meta name="description" content="AI 安全攻防工具化加速——strix AI 自主渗透测试（Docker 沙箱+多 Agent 协作+PoC 验证），claude-bug-bounty 终端化漏洞猎捕，Agent 安全从'治理规范'走向'自动化攻防' · 代码智能层继续高增——codebase-memory-mcp 19.5K⭐（日增 1.2K）知识图谱代码理解已成 Agent 基建标配，design.md 22.8K⭐ 设计系统 Agent 规范确立 · AI 金融 Agent 全面爆发——ai-berkshire 1,456⭐/日 多大师方法论并行研究，daily_stock_analysis 51K⭐，Vibe-Trading 个人交易 Agent 登场 · 本地 AI Voice I/O 成熟——FluidVoice 3.7K⭐ macOS 离线听写（Parakeet 零延迟+本地 AI 增强），voicebox 35.4K⭐ 开源语音工作室 · OmniRoute 7.3K⭐ 免费 LLM 网关聚合 160+ Provider">
+    <title>OmniRoute | GitHub 趋势研究</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>⭐</text></svg>">
     <style>
         :root {
             --primary: #7C3AED;
@@ -170,6 +169,24 @@
         .card-grid { animation-delay: 0.2s; animation-fill-mode: both; }
         .trend-list { animation-delay: 0.25s; animation-fill-mode: both; }
     </style>
+    
+    <style>
+        .project-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 48px; box-shadow: var(--shadow); margin-bottom: 48px; max-width: 860px; margin-left: auto; margin-right: auto; }
+        .project-content h1 { font-size: 26px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 6px; }
+        .project-content h2 { font-size: 18px; font-weight: 700; color: var(--primary); border-left: 4px solid var(--primary); padding-left: 12px; margin: 28px 0 14px; }
+        .project-content h3 { font-size: 15px; font-weight: 700; color: var(--text); margin: 20px 0 10px; }
+        .project-content table { border-collapse: collapse; width: 100%; margin: 14px 0; }
+        .project-content th, .project-content td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; font-size: 13px; }
+        .project-content th { background: var(--primary); color: white; font-weight: 600; }
+        .project-content tr:nth-child(even) td { background: var(--bg); }
+        .project-content blockquote { background: linear-gradient(135deg, #F3E8FF, #ECFEFF); border-left: 4px solid var(--primary); padding: 14px 18px; margin: 14px 0; border-radius: 0 8px 8px 0; }
+        .project-content ul, .project-content ol { padding-left: 22px; margin: 10px 0; }
+        .project-content li { margin: 6px 0; font-size: 14px; }
+        .project-content p { font-size: 14px; margin-bottom: 12px; line-height: 1.7; }
+        .project-content strong { color: var(--primary-dark); }
+        .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 24px; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
     <nav class="nav">
@@ -181,164 +198,97 @@
             <div class="nav-links">
                 <a href="/github-researcher/index.html" id="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>首页</span></a>
                 <a href="/github-researcher/daily.html" id="nav-daily"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg><span>日报</span></a>
-                <a href="/github-researcher/projects.html" id="nav-projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
+                <a href="/github-researcher/projects.html" id="nav-projects" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
                 <a href="/github-researcher/trends.html" id="nav-trends"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>趋势</span></a>
             </div>
         </div>
     </nav>
 <main class="container">
-        <section class="hero">
-            <div class="hero-badge">
-                <span class="dot"></span>
-                2026-06-29
-            </div>
-            <h1>GitHub 趋势研究</h1>
-            <p>AI 安全攻防工具化加速——strix AI 自主渗透测试（Docker 沙箱+多 Agent 协作+PoC 验证），claude-bug-bounty 终端化漏洞猎捕，Agent 安全从'治理规范'走向'自动化攻防' · 代码智能层继续高增——codebase-memory-mcp 19.5K⭐（日增 1.2K）知识图谱代码理解已成 Agent 基建标配，design.md 22.8K⭐ 设计系统 Agent 规范确立 · AI 金融 Agent 全面爆发——ai-berkshire 1,456⭐/日 多大师方法论并行研究，daily_stock_analysis 51K⭐，Vibe-Trading 个人交易 Agent 登场 · 本地 AI Voice I/O 成熟——FluidVoice 3.7K⭐ macOS 离线听写（Parakeet 零延迟+本地 AI 增强），voicebox 35.4K⭐ 开源语音工作室 · OmniRoute 7.3K⭐ 免费 LLM 网关聚合 160+ Provider</p>
-            <div class="hero-actions">
-                <a href="/github-researcher/daily/2026-06-29.html" class="btn-primary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                    今日简报
-                </a>
-                <a href="/github-researcher/projects.html" class="btn-secondary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="14" y="0" width="7" height="7"/><rect x="0" y="14" width="7" height="7"/></svg>
-                    重点项目
-                </a>
-            </div>
-        </section>
-        <section class="stats-row">
-            <div class="stat-card">
-                <div class="stat-icon">📊</div>
-                <div class="stat-number">276</div>
-                <div class="stat-label">深度分析项目</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🔥</div>
-                <div class="stat-number">80</div>
-                <div class="stat-label">日更日报</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🎯</div>
-                <div class="stat-number">361</div>
-                <div class="stat-label">核心跟踪方向</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">⭐</div>
-                <div class="stat-number">90K+</div>
-                <div class="stat-label">本周总 Star 增速</div>
-            </div>
-        </section>
-        <section class="brief-card">
-            <div class="brief-date">📅 2026-06-29 · 今日核心判断</div>
-            <h2 class="brief-title">AI 安全攻防工具化加速——strix AI 自主渗透测试（Docker 沙箱+多 Agent 协作+PoC 验证），claude-bug-bounty 终端化漏洞猎捕，Agent 安全从'治理规范'走向'自动化攻防' · 代码智能层继续高增——codebase-memory-mcp 19.5K⭐（日增 1.2K）知识图谱代码理解已成 Agent 基建标配，design.md 22.8K⭐ 设计系统 Agent 规范确立 · AI 金融 Agent 全面爆发——ai-berkshire 1,456⭐/日 多大师方法论并行研究，daily_stock_analysis 51K⭐，Vibe-Trading 个人交易 Agent 登场 · 本地 AI Voice I/O 成熟——FluidVoice 3.7K⭐ macOS 离线听写（Parakeet 零延迟+本地 AI 增强），voicebox 35.4K⭐ 开源语音工作室 · OmniRoute 7.3K⭐ 免费 LLM 网关聚合 160+ Provider</h2>
-            <p class="brief-text">AI 安全攻防工具化加速——strix AI 自主渗透测试（Docker 沙箱+多 Agent 协作+PoC 验证），claude-bug-bounty 终端化漏洞猎捕，Agent 安全从'治理规范'走向'自动化攻防' · 代码智能层继续高增——codebase-memory-mcp 19.5K⭐（日增 1.2K）知识图谱代码理解已成 Agent 基建标配，design.md 22.8K⭐ 设计系统 Agent 规范确立 · AI 金融 Agent 全面爆发——ai-berkshire 1,456⭐/日 多大师方法论并行研究，daily_stock_analysis 51K⭐，Vibe-Trading 个人交易 Agent 登场 · 本地 AI Voice I/O 成熟——FluidVoice 3.7K⭐ macOS 离线听写（Parakeet 零延迟+本地 AI 增强），voicebox 35.4K⭐ 开源语音工作室 · OmniRoute 7.3K⭐ 免费 LLM 网关聚合 160+ Provider 今日头条趋势:AI 安全攻防工具化加速：strix 开源 AI 渗透测试 Agent（Docker 沙箱隔离+多 Agent 团队协作+真实 PoC 验证非误报），claude-bug-bounty 3.6K⭐ 终端化 Bug Bounty 猎捕（20 漏洞类别+自动报告）。配合上周的 no-mistakes（git push 防护门）和 Anthropic-Cybersecurity-Skills（817 条安全技能），Agent 安全生态已形成完整的'左移防御→渗透测试→漏洞猎捕'工具链。</p>
-            <a href="/github-researcher/daily/2026-06-29.html" class="brief-cta">阅读完整简报 →</a>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">⭐</div>
-                    重点跟踪项目
-                </div>
-                <a href="/github-researcher/projects.html" class="section-link">查看全部 →</a>
-            </div>
-            <div class="card-grid">
-                <div class="card" onclick="window.location='/github-researcher/projects/strix.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🗡️</div>
-                        <div class="card-stars">new stars</div>
-                    </div>
-                    <div class="card-title">usestrix/strix</div>
-                    <div class="card-desc">开源 AI 渗透测试 Agent——Docker 沙箱+多 Agent 协作+真实 PoC 验证</div>
-                    <div class="card-tags"><span class="tag tag-purple">security</span><span class="tag tag-purple">pentesting</span><span class="tag tag-purple">ai-agent</span></div>
-                    <div class="card-actions"></div>
-                </div>
-                <div class="card" onclick="window.location='/github-researcher/projects/fluidvoice.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🎙️</div>
-                        <div class="card-stars">3,657 stars</div>
-                    </div>
-                    <div class="card-title">altic-dev/FluidVoice</div>
-                    <div class="card-desc">macOS 最快离线听写——Parakeet 零延迟+本地 AI 增强+语音控制 Mac</div>
-                    <div class="card-tags"><span class="tag tag-purple">voice</span><span class="tag tag-purple">dictation</span><span class="tag tag-purple">macos</span></div>
-                    <div class="card-actions"></div>
-                </div>
-                <div class="card" onclick="window.location='/github-researcher/projects/ai-berkshire.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">📈</div>
-                        <div class="card-stars">5,235 stars</div>
-                    </div>
-                    <div class="card-title">xbtlin/ai-berkshire</div>
-                    <div class="card-desc">AI 价值投资研究框架——四大师方法论+多 Agent 对抗分析</div>
-                    <div class="card-tags"><span class="tag tag-purple">finance</span><span class="tag tag-purple">value-investing</span><span class="tag tag-purple">multi-agent</span></div>
-                    <div class="card-actions"></div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">📈</div>
-                    趋势热榜
-                </div>
-                <a href="/github-researcher/trends.html" class="section-link">完整趋势表 →</a>
-            </div>
-            <div class="trend-list">
-                <div class="trend-item">
-                    <div class="trend-rank top">1</div>
-                    <div class="trend-content">
-                        <div class="trend-title">AI 安全攻防工具化加速：strix 开源 AI 渗透测试 Agent（Docker 沙箱隔离+多 Agent 团队协作+真实 PoC 验证非误报），claude-bug-bounty 3.6K⭐ 终端化 Bug Bounty 猎捕（20 漏洞类别+自动报告）。配合上周的 no-mistakes（git push 防护门）和 Anthropic-Cybersecurity-Skills（817 条安全技能），Agent 安全生态已形成完整的'左移防御→渗透测试→漏洞猎捕'工具链</div>
-                        <div class="trend-meta">strix · claude-bug-bounty</div>
-                    </div>
-                    <div class="trend-score high">89/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank top">2</div>
-                    <div class="trend-content">
-                        <div class="trend-title">代码智能层持续高增长验证：codebase-memory-mcp 19.5K⭐（从 17.5K 到 19.5K，两日增 2K）tree-sitter 知识图谱成 Agent 代码理解标配。design.md 22.8K⭐（日增 727）DESIGN.md 规范被 Coding Agent 普遍采纳。vercel-labs/skills 24K⭐ 开源 Agent Skills 工具持续增长。三者共同构成 Agent 时代的'代码理解→设计规范→技能注入'认知基建</div>
-                        <div class="trend-meta">codebase-memory-mcp · design-md</div>
-                    </div>
-                    <div class="trend-score high">90/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">3</div>
-                    <div class="trend-content">
-                        <div class="trend-title">AI 金融 Agent 全面爆发：ai-berkshire 5.2K⭐（日增 1,456）基于 Claude Code/Codex 的价值投资研究框架（巴菲特/芒格/段永平/李录四大师方法论+多 Agent 对抗分析）。daily_stock_analysis 51K⭐ LLM 多市场股票分析。HKUDS/Vibe-Trading 个人交易 Agent。金融领域成为 Agent 垂直应用增长最快的赛道之一</div>
-                        <div class="trend-meta">ai-berkshire · vibe-trading</div>
-                    </div>
-                    <div class="trend-score high">84/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">4</div>
-                    <div class="trend-content">
-                        <div class="trend-title">本地优先 AI Voice I/O 成熟：FluidVoice 3.7K⭐（日增 491）macOS 最快离线听写（Parakeet 零延迟+Fluid Intelligence 本地 AI 增强+Command Mode 语音控制 Mac）。voicebox 35.4K⭐（周增 3.9K）开源 AI 语音工作室（7 TTS 引擎/voice cloning/MCP server）。从'云端语音 API'到'本地语音基建'的范式转移正在发生</div>
-                        <div class="trend-meta">fluidvoice · voicebox</div>
-                    </div>
-                    <div class="trend-score high">82/80</div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">🏷️</div>
-                    核心关注领域
-                </div>
-            </div>
-            <div class="category-row">
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🤖</span> AI Agent / Multi-Agent</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">⚡</span> LLM Infra / MCP / AI Runtime</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🛠️</span> 开发工具链 / IDE / Copilot</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🌐</span> 前端框架 / Serverless / Edge</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">☸️</span> 云原生 / K8s / Service Mesh</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔄</span> 自动化 / Browser Use / RPA+AI</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">💾</span> 数据基础设施 / RAG / 向量 DB</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔌</span> 基础设施标准 / 平台潜力</a>
-            </div>
-        </section>
+    <a href="/github-researcher/projects.html" class="back-link">← 返回重点项目</a>
+    <div class="project-content">
+        <div style="margin-bottom:20px;"><a href="https://github.com/diegosouzapw/OmniRoute" target="_blank" rel="noopener" class="btn-github" style="padding:10px 20px;font-size:14px;"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg> 查看 GitHub 项目</a></div>
+        <h1 id="omniroute-ai-160-provider">OmniRoute — 免费 AI 网关：160+ Provider 统一接入</h1>
+<h2 id="_1">一句话定位</h2>
+<p>聚合 160+ AI Provider（50+ 免费），一个端点接入 Claude/GPT/Gemini，RTK+Caveman 压缩节省 15-95% token，支持 Claude Code、Codex、Cursor 等主流 Coding Agent。</p>
+<h2 id="_2">它解决的问题</h2>
+<p><strong>目标用户：</strong> 独立开发者、Coding Agent 用户、成本敏感团队
+<strong>痛点：</strong> LLM API 费用高、多家 Provider 免费额度未充分利用、不同 Agent 工具需要不同 API 配置、token 消耗快触及限额</p>
+<h2 id="2026-06-29">为什么值得关注（2026-06-29）</h2>
+<p>GitHub Trending Daily 上榜（TS 榜），周增 2,554 stars。代表了"LLM 路由层"从实验走向实用——与 FreeLLMAPI（13K⭐）共同构成免费 LLM 接入生态。差异化在于多协议支持（MCP/A2A）和桌面端/PWA 客户端。</p>
+<h2 id="_3">热度来源判断</h2>
+<p>成本驱动+Coding Agent 生态红利。Claude Code / Codex 用户基数大，免费 token 聚合方案有真实需求。RTK+Caveman 压缩技术（声称节省 15-95% token）对重度 Agent 用户有显著价值。~1.6B 免费 token/月的聚合额度有真实吸引力。</p>
+<h2 id="_4">关键技术亮点</h2>
+<ol>
+<li><strong>160+ Provider 聚合</strong>：50+ 免费层 Provider，统一 API 端点</li>
+<li><strong>RTK + Caveman 堆叠压缩</strong>：声称节省 15-95% token（RTK 压缩重复模式，Caveman 压缩冗余语法）</li>
+<li><strong>智能自动故障转移</strong>：Provider 不可用时自动切换到下一个</li>
+<li><strong>多协议支持</strong>：MCP（Model Context Protocol）+ A2A（Agent-to-Agent）</li>
+<li><strong>多端覆盖</strong>：Desktop 应用 + PWA + Docker + npm 包</li>
+</ol>
+<h2 id="_5">架构启发</h2>
+<p>OmniRoute 代表了 Agent 技术栈中的"路由层"：</p>
+<pre class="mermaid">flowchart TB
+    subgraph "Agent 层"
+        A1[Claude Code]
+        A2[Codex CLI]
+        A3[Cursor]
+        A4[Cline]
+    end
+    
+    subgraph "路由层 (OmniRoute)"
+        R1[统一端点]
+        R2[RTK+Caveman 压缩]
+        R3[智能故障转移]
+        R4[用量追踪]
+    end
+    
+    subgraph "Provider 层"
+        P1[免费 Provider ×50+]
+        P2[付费 Provider ×110+]
+    end
+    
+    A1 --> R1
+    A2 --> R1
+    A3 --> R1
+    A4 --> R1
+    R1 --> R2
+    R2 --> R3
+    R3 --> P1
+    R3 --> P2
+</pre>
+<h2 id="_6">定位判断</h2>
+<p>工具型。是 Agent 技术栈"路由层"的实用工具，但护城河较浅（Provider 列表和免费额度是公开信息，压缩算法是核心差异化）。</p>
+<h2 id="_7">风险 / 局限 / 泡沫点</h2>
+<ol>
+<li><strong>Provider 稳定性风险</strong>：免费 Provider 随时可能改政策/限流/下线</li>
+<li><strong>压缩质量风险</strong>：激进的 token 压缩可能影响 Agent 理解质量</li>
+<li><strong>合规风险</strong>：聚合多家 Provider 的免费额度可能违反各 Provider ToS</li>
+<li><strong>维护负担</strong>：160+ Provider 的 API 变更追踪和适配是持续的工程成本</li>
+<li><strong>单点依赖</strong>：如果 OmniRoute 自身服务中断，所有依赖它的 Agent 都会受影响</li>
+</ol>
+<h2 id="_8">与同类项目的关系</h2>
+<ul>
+<li><strong>vs FreeLLMAPI（13K⭐）</strong>：定位相似，FreeLLMAPI 更偏后端聚合，OmniRoute 更偏全栈（Desktop+PWA+Docker）</li>
+<li><strong>vs OpenRouter</strong>：OpenRouter 是商业产品（付费统一 API），OmniRoute 专注免费层聚合</li>
+</ul>
+<h2 id="_9">是否值得持续跟踪</h2>
+<p><strong>观察型。</strong> 作为"LLM 路由层"趋势的参与者跟踪，但需关注其长期可持续性（Provider 政策变化、压缩质量验证）。</p>
+<h2 id="_10">后续观察点</h2>
+<ol>
+<li>免费 Provider 的实际可用性（可用率、限流频率）</li>
+<li>RTK+Caveman 压缩对不同任务质量的影响（是否导致 Agent 误解）</li>
+<li>是否被更大项目集成或收购</li>
+<li>Provider 政策变化对服务可用性的影响</li>
+</ol>
+<hr />
+<p><em>首次记录：2026-06-29</em></p>
+    </div>
 </main>
     <footer class="footer">
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

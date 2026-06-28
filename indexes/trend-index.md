@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-06-28'
+last_updated: '2026-06-29'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,40 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-06-29（第七十版）
+
+### AI 安全攻防工具化 · 代码智能层持续高增 · AI 金融 Agent 爆发 · 本地 Voice I/O 成熟 · LLM 路由层整合
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | AI 安全攻防工具化加速：strix AI 渗透测试 Agent（Docker 沙箱+多 Agent 协作+PoC 验证），claude-bug-bounty 3.6K⭐ 终端化漏洞猎捕。配合 no-mistakes+Anthropic-Cyber-Skills 形成完整'防御→渗透→猎捕→技能'闭环 | strix, claude-bug-bounty | 89 |
+| 2 | 代码智能层持续高增长：codebase-memory-mcp 19.5K⭐（日增 1.2K）arXiv 论文发表（31 仓库测试 83% 质量/10× token 节省），design.md 22.8K⭐ Agent 设计规范被普遍采纳，vercel-labs/skills 24K⭐ | codebase-memory-mcp, design-md | 90 |
+| 3 | AI 金融 Agent 全面爆发：ai-berkshire 5.2K⭐ 日增 1,456 四大师方法论多 Agent 对抗，daily_stock_analysis 51K⭐，Vibe-Trading 个人交易 Agent | ai-berkshire, vibe-trading | 84 |
+| 4 | 本地 AI Voice I/O 成熟：FluidVoice 3.7K⭐ 日增 491 macOS 最快离线听写（Parakeet 零延迟+本地 AI 增强），voicebox 35.4K⭐ 开源语音工作室 | fluidvoice, voicebox | 82 |
+| 5 | Agent 路由层与免费 LLM 网关整合：OmniRoute 7.3K⭐ 160+ Provider 聚合（RTK 压缩 15-95% token），Agent-Reach 44.4K⭐ 感知层，orca 8.6K⭐ 多 Agent 编排 | omniroute, agent-reach | 80 |
+
+#### 今日新增项目
+
+| 项目 | Stars | 分类 | Score |
+|------|-------|------|-------|
+| usestrix/strix | trending | 工具型 | 84 |
+| altic-dev/FluidVoice | 3,657 | 工具型 | 78 |
+| xbtlin/ai-berkshire | 5,235 | 观察型 | 76 |
+| diegosouzapw/OmniRoute | 7,335 | 工具型 | 75 |
+
+#### 持续跟踪项目更新
+
+| 项目 | 昨日 Stars | 今日 Stars | 变化 |
+|------|-----------|-----------|------|
+| codebase-memory-mcp | 17,459 | 19,466 | +2,007 |
+| design.md | 22,316 | 22,807 | +491 |
+| Agent-Reach | 42,263 | 44,384 | +2,121 |
+| stablyai/orca | 7,901 | 8,583 | +682 |
+
+---
 
 ## 2026-06-28（第六十九版）
 

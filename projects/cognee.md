@@ -2,13 +2,13 @@
 title: "cognee"
 slug: "cognee"
 date_added: "2026-06-28"
-last_seen_date: "2026-06-28"
+last_seen_date: "2026-07-03"
 category: "基础设施候选"
 emoji: "🕸️"
-stars: "23,943 stars"
-stars_delta: "周增 5,072（日均 ~725）"
+stars: "26,607 stars"
+stars_delta: "周增 5,171，总计从 23.9K→26.6K"
 language: "Python"
-score: 87
+score: 88
 tags: ["agent-memory", "knowledge-graph", "vector-search", "self-hosted", "rag", "cognitive-science", "mcp"]
 url: "https://github.com/topoteretes/cognee"
 ---

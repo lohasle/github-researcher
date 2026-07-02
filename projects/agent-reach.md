@@ -4,11 +4,11 @@ slug: "agent-reach"
 date_added: "2026-06-14"
 category: "基础设施候选"
 emoji: "🌐"
-stars: "44,384 stars"
-stars_delta: "周增 7,676，持续高增长"
+stars: "49,078 stars"
+stars_delta: "周增 8,791，接近 5 万 star 门槛"
 language: "Python"
 score: 90
-last_seen_date: "2026-06-29"
+last_seen_date: "2026-07-03"
 tags: ["agent-perception", "multi-platform", "web-scraping", "zero-api-fee", "agent-infrastructure", "capability-layer"]
 url: "https://github.com/Panniantong/Agent-Reach"
 ---

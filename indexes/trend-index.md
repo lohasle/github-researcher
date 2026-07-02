@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-07-02'
+last_updated: '2026-07-03'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,33 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-07-03（第七十二版）
+
+### Agentic Video Production 元年 · 代码知识图谱爆发 · Agent 多路复用基础设施化 · Agent 全网感知层成熟 · AI 安全与 token 经济学
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agentic Video Production 元年到来：OpenMontage 31.7K⭐（周+12.6K 榜首）定义 agentic 视频生产系统——12 管线/52 工具/500+ Agent 技能。video-use 13.7K⭐ 让 coding agent 剪视频。Agent 从代码生产扩展到内容生产 | openmontage, video-use | 90 |
+| 2 | 代码知识图谱爆发式增长：codebase-memory-mcp 24.6K⭐（周+9.7K 近乎翻倍）158 语言/亚毫秒查询/99% token 节省。cognee 26.6K⭐ 自托管 Agent 记忆平台。Agent 记忆层从可选变必选 | codebase-memory-mcp, cognee | 89 |
+| 3 | Agent 多路复用与编排基础设施化：herdr 10.1K⭐ Rust 终端多路复用，Orca 11K⭐ 多 Agent ADE，gstack 119K⭐ 角色化工具栈，codex-plugin-cc 22.5K⭐ 跨 Agent 桥接 | herdr, orca, gstack, codex-plugin-cc | 87 |
+| 4 | Agent 全网感知层成熟：Agent-Reach 49K⭐（周+8.8K）零 API 费用覆盖 Twitter/Reddit/YouTube/Bilibili。MediaCrawler 55K⭐ 多平台数据采集 | agent-reach, media-crawler | 86 |
+| 5 | AI 安全与 token 经济学：strix 32K⭐（日+2.2K）AI 渗透测试。caveman 80.7K⭐ token 压缩 65%。no-mistakes 4.9K⭐ git push 防护 | strix, caveman, no-mistakes | 84 |
+
+#### 今日新增/更新项目
+
+| 项目 | Stars | 分类 | Score | 变化 |
+|------|-------|------|-------|------|
+| calesthio/OpenMontage | 31,677 | 平台候选 | 85 | 更新（周+12.6K 榜首） |
+| ogulcancelik/herdr | 10,108 | 工具型 | 78 | 更新（周+2.4K） |
+| DeusData/codebase-memory-mcp | 24,603 | 基础设施候选 | 92 | 更新（周+9.7K Score↑3） |
+| Panniantong/Agent-Reach | 49,078 | 基础设施候选 | 90 | 更新（周+8.8K） |
+| topoteretes/cognee | 26,607 | 基础设施候选 | 88 | 更新（周+5.2K Score↑1） |
+| usestrix/strix | 31,977 | 工具型 | 84 | 更新（日+2.2K） |
+
+---
 
 ## 2026-07-02（第七十一版）
 

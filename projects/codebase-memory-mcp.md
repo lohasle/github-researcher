@@ -2,15 +2,24 @@
 title: "codebase-memory-mcp"
 slug: "codebase-memory-mcp"
 date_added: "2026-06-20"
-last_seen_date: "2026-06-29"
+last_seen_date: "2026-07-03"
 category: "基础设施候选"
 emoji: "🧠"
-stars: "19,466 stars"
-stars_delta: "周增 11.5K（日均 ~1.4K），总计从 8K→19.5K（9 天增长 145%）。arXiv 论文发表（2603.27277）：31 仓库测试 83% 答案质量/10× 更少 token/2.1× 更少工具调用"
+stars: "24,603 stars"
+stars_delta: "周增 9,697（近乎翻倍），从 14.9K→24.6K。总计从 8K→24.6K（13 天增长 208%）"
 language: "C"
-score: 89
+score: 92
 tags: ["code-intelligence", "knowledge-graph", "mcp", "tree-sitter", "agent-infrastructure", "hybrid-lsp"]
 url: "https://github.com/DeusData/codebase-memory-mcp"
+---
+
+## 2026-07-03 更新
+
+stars 达到 24,603（周增 9,697，近乎翻倍）。GitHub Trending 全球 Top 4。增长继续加速，"基础设施候选" 定位进一步确认。关键变化：
+- 与 cognee（26.6K⭐ 周+5.2K）形成 "代码记忆 + 通用记忆" 双子星格局
+- "Agent 记忆层从可选变必选" 已成为行业共识
+- Score 提升至 92（↑3），原因：增速翻倍 + Trending 榜首级别曝光 + 在 Agent 技术栈中的基础设施地位被广泛认可
+
 ---
 
 ## 2026-06-28 更新

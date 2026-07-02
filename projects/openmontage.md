@@ -2,13 +2,13 @@
 title: "OpenMontage"
 slug: "openmontage"
 date_added: "2026-06-22"
-last_seen_date: "2026-06-27"
+last_seen_date: "2026-07-03"
 category: "平台候选"
 emoji: "🎬"
-stars: "23,506 stars"
-stars_delta: "日增 1,674，5 天从 8.5K→23.5K"
+stars: "31,677 stars"
+stars_delta: "周增 12,624（榜首），总计从 8.5K→31.7K（11 天增长 273%）"
 language: "Python"
-score: 86
+score: 85
 tags: ["agentic-video", "content-production", "pipeline", "agent-skills", "video", "automation"]
 url: "https://github.com/calesthio/OpenMontage"
 ---
@@ -19,9 +19,17 @@ url: "https://github.com/calesthio/OpenMontage"
 
 开源 Agentic 视频生产系统——12 pipelines × 52 tools × 500+ agent skills，将 AI coding assistant 变成完整的视频生产工作室。
 
+## 2026-07-03 更新
+
+stars 达到 31,677（周增 12,624），登顶 GitHub Trending 周榜榜首。从 6/22 首次记录到今天 11 天增长 273%。关键判断升级：OpenMontage 定义了 "Agentic Video Production" 赛道，video-use（browser-use 团队，13.7K⭐）同期增长形成双轨验证。Agent 能力边界从代码生产扩展到内容生产——这不是 "AI 视频生成" 赛道（Sora/Runway），而是 "Agent 驱动的视频 pipeline" 赛道。
+
+评分调整：Score 85（↓1），因为 31.7K star 证明了热度，但 "500+ skills" 可维护性和实际输出质量仍待验证，"平台候选" 定位需更多非 star 指标支撑。
+
+---
+
 ## 2026-06-26 更新
 
-stars 从 8,487（6/22）暴涨到 21,941（6/26），4天 +158%。日增速从 993 提升到 3,553（3.6x）。重要新增信息：
+stars 从 8,487（6/22）暴涨到 21,941（6/26），4天 +158%。重要新增信息：
 - **双渲染引擎**：Remotion（React-based，数据驱动场景）+ HyperFrames（HTML/CSS/GSAP，动效驱动场景），Agent 在 proposal 阶段自动选择
 - **免费路径验证**：Piper TTS（离线）+ Archive.org/NASA/Wikimedia + Remotion = $0.15/视频
 - **YouTube 持续输出**：每条视频附带完整 prompt + pipeline + 成本，形成 demo→adoption 正循环

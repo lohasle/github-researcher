@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-07-03
+
+**核心主题：** Agentic Video Production 元年——OpenMontage 31.7K⭐（周+12.6K 榜首）12 管线/52 工具/500+ Agent 技能，video-use 13.7K⭐ 让 coding agent 剪视频，Agent 从代码生产扩展到内容生产 · 代码知识图谱爆发——codebase-memory-mcp 24.6K⭐（周+9.7K 爆发式增长）158 语言/亚毫秒查询/99% token 节省，cognee 26.6K⭐ 自托管记忆平台，Agent 记忆层从可选变必选 · Agent 多路复用基础设施化——herdr 10.1K⭐ Rust 终端 Agent 多路复用器，Orca 11K⭐ 多 Agent 并行 ADE，gstack 119K⭐ 现象级 Agent 工具栈 · Agent 全网感知——Agent-Reach 49K⭐（周+8.8K）CLI 零 API 费用覆盖 Twitter/Reddit/YouTube/Bilibili
+
+**关键项目：**
+- 🧠 DeusData/codebase-memory-mcp (24,603, 更新) — 代码知识图谱 MCP，周增 9.7K 近乎翻倍，Score 92
+- 🎬 calesthio/OpenMontage (31,677, 更新) — Agentic 视频生产系统，周增 12.6K 登顶榜首
+- 🐏 ogulcancelik/herdr (10,108, 更新) — Rust 终端 Agent 多路复用器
+
+---
+
 ## 2026-07-02
 
 **核心主题：** Agent Skills 成为新标准层（Anthropic 发起的开放规范被 nvidia/microsoft/google/vercel 采纳，obra/superpowers 升级为完整开发方法论。Agent 生态“npm 时刻”到来） · Meta 开源 Astryx 设计系统（内部 8 年/13000+ 应用/150+ 组件/StyleX/agent-ready，与 design.md 形成“组件层 vs 描述层”双轨） · Agent IDE 激战（Orca 10.8K⭐ 多 Agent ADE，herdr 9.9K⭐ Rust 终端多路复用，codex-plugin-cc 22.4K⭐ 跨 Agent 桥接） · AI 安全持续高温（strix 31K⭐ 日+2.2K，caveman 79.8K⭐ token 压缩 65%） · Agent 数据层深化（Agent-Reach 48.9K⭐ 周+8.8K，cognee 26.5K⭐，codebase-memory-mcp 24.4K⭐）

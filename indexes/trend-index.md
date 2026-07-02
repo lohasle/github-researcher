@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-06-29'
+last_updated: '2026-07-02'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,41 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-07-02（第七十一版）
+
+### Agent Skills 标准化 · Meta Astryx 设计系统开源 · Agent IDE 激战 · AI 安全持续高温 · Agent 数据层深化
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agent Skills 成为新标准层：Anthropic 发起的开放 Agent Skills 规范被 nvidia/microsoft/google/vercel 采纳。obra/superpowers 将 Skills 升级为完整开发方法论。Agent 生态正在形成类似 npm/pip 的“技能包”分发层 | agentskills, superpowers, nvidia-skills | 92 |
+| 2 | Meta 开源 Astryx 设计系统：内部 8 年/13000+ 应用/150+ 组件/StyleX/agent-ready。与 design.md（24.3K⭐）形成 Agent 前端“描述层 vs 组件层”双轨 | astryx, design-md | 88 |
+| 3 | Agent IDE 与编排层激战：Orca（10.8K⭐ 周+3.5K）多 Agent 并行 ADE，herdr（9.9K⭐）Rust 终端多路复用，codex-plugin-cc（22.4K⭐）跨 Agent 桥接，ECC harness 优化 | orca, herdr, codex-plugin-cc | 87 |
+| 4 | AI 安全攻防持续高温：strix 31K⭐（日+2.2K）AI 渗透测试 Agent，caveman 79.8K⭐ token 压缩 65%，no-mistakes 4.8K⭐ git push 防护 | strix, caveman, no-mistakes | 85 |
+| 5 | Agent 数据感知与记忆层深化：Agent-Reach 48.9K⭐（周+8.8K），cognee 26.5K⭐，codebase-memory-mcp 24.4K⭐（周+4.9K） | agent-reach, cognee, codebase-memory-mcp | 86 |
+
+#### 今日新增项目
+
+| 项目 | Stars | 分类 | Score |
+|------|-------|------|-------|
+| facebook/astryx | 3,274 | 平台候选 | 88 |
+| agentskills/agentskills | trending | 基础设施候选 | 90 |
+| openai/codex-plugin-cc | 22,353 | 工具型 | 82 |
+| google/agents-cli | 4,627 | 工具型 | 80 |
+
+#### 持续跟踪项目更新
+
+| 项目 | 上次 Stars | 今日 Stars | 变化 |
+|------|-----------|-----------|------|
+| usestrix/strix | trending | 31,051 | 首次量化 |
+| stablyai/orca | 8,583 | 10,771 | +2,188 |
+| DeusData/codebase-memory-mcp | 19,466 | 24,357 | +4,891 |
+| Panniantong/Agent-Reach | 44,400 | 48,858 | +4,458 |
+| diegosouzapw/OmniRoute | 7,335 | 10,062 | +2,727 |
+
+---
 
 ## 2026-06-29（第七十版）
 

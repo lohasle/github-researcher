@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-07-02
+
+**核心主题：** Agent Skills 成为新标准层（Anthropic 发起的开放规范被 nvidia/microsoft/google/vercel 采纳，obra/superpowers 升级为完整开发方法论。Agent 生态“npm 时刻”到来） · Meta 开源 Astryx 设计系统（内部 8 年/13000+ 应用/150+ 组件/StyleX/agent-ready，与 design.md 形成“组件层 vs 描述层”双轨） · Agent IDE 激战（Orca 10.8K⭐ 多 Agent ADE，herdr 9.9K⭐ Rust 终端多路复用，codex-plugin-cc 22.4K⭐ 跨 Agent 桥接） · AI 安全持续高温（strix 31K⭐ 日+2.2K，caveman 79.8K⭐ token 压缩 65%） · Agent 数据层深化（Agent-Reach 48.9K⭐ 周+8.8K，cognee 26.5K⭐，codebase-memory-mcp 24.4K⭐）
+
+**关键项目：**
+- 🎨 facebook/astryx (新增) — Meta 设计系统开源，150+ 组件/agent-ready/StyleX
+- 📋 agentskills/agentskills (新增) — Agent Skills 开放规范，多巨头联合采纳
+- 🐬 stablyai/orca (10,771, 更新) — 多 Agent 并行 ADE，周+3.5K
+- 🔌 openai/codex-plugin-cc (22,353, 新增) — 跨 Agent 桥接插件，Claude Code 调用 Codex
+- ☁️ google/agents-cli (4,627, 新增) — Google 官方 Agent CLI + Skills
+
+---
+
 ## 2026-06-29
 
 **核心主题：** AI 安全攻防工具化加速（strix 开源 AI 渗透测试 Agent——Docker 沙箱+多 Agent 协作+真实 PoC 验证。claude-bug-bounty 3.6K⭐ 终端化漏洞猎捕。配合 no-mistakes+Anthropic-Cyber-Skills 形成'防御→渗透→猎捕→技能'完整闭环） · 代码智能层持续高增长（codebase-memory-mcp 19.5K⭐ 日增 1.2K，arXiv 论文发表 31 仓库测试 83% 质量/10× token 节省。design.md 22.8K⭐ 连续 5 天 Trending。Agent 认知基建三件套'代码理解+设计规范+技能注入'成型） · AI 金融 Agent 爆发（ai-berkshire 5.2K⭐ 日增 1,456 四大师方法论多 Agent 对抗。daily_stock_analysis 51K⭐。Vibe-Trading 个人交易 Agent） · 本地 Voice I/O 成熟（FluidVoice 3.7K⭐ macOS 最快离线听写 Parakeet 零延迟。voicebox 35.4K⭐ 开源语音工作室） · LLM 路由层整合（OmniRoute 7.3K⭐ 160+ Provider 聚合 RTK 压缩 15-95% token）

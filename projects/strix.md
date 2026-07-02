@@ -2,10 +2,11 @@
 title: "strix"
 slug: "strix"
 date_added: "2026-06-29"
+last_seen_date: "2026-07-02"
 category: "工具型"
 emoji: "🗡️"
-stars: "trending"
-stars_delta: "GitHub Trending Daily"
+stars: "31,051 stars"
+stars_delta: "周增 2,804，日增 2,167（持续 Trending）"
 language: "Python"
 score: 84
 tags: ["security", "pentesting", "ai-agent", "devsecops", "automation", "docker"]

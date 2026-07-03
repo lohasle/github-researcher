@@ -4,10 +4,10 @@ slug: "astryx"
 date_added: "2026-07-02"
 category: "平台候选"
 emoji: "🎨"
-stars: "3,274 stars"
-stars_delta: "首日 1,105 stars/day"
+stars: "4,520 stars"
+stars_delta: "首日 1,105 stars/day → 7/4 已达 4,520 stars（3 天增长 317%），日增 943 stars 持续高增速"
 language: "TypeScript"
-score: 88
+last_seen_date: "2026-07-04"
 tags: ["design-system", "react", "stylex", "agent-ready", "frontend", "meta"]
 url: "https://github.com/facebook/astryx"
 ---

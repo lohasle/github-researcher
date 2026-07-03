@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-07-04
+
+**核心主题：** Agent 安全运行时双雄对垒——腾讯 CubeSandbox 7.1K⭐（Rust+KVM 亚 60ms 启动/5MB 开销/E2B 兼容）vs NVIDIA OpenShell 7.3K⭐（Rust+四层策略隔离/GPU 直通），两大巨头同时押注 Agent 安全沙箱，microVM+Rust 路线成标准 · 前端 Agent-Ready 设计系统——Meta Astryx 4.5K⭐（日+943 8 年内部/13K+ 应用/150+ 组件/StyleX）开源，Google design.md 24.6K⭐，设计系统从人用到人+Agent 共用 · Agent 多路复用持续升温——herdr 10.7K⭐ Rust 终端多路复用，Orca 11.6K⭐ 多 Agent 并行 ADE · Agent 感知层 MCP 化——chrome-devtools-mcp 45.4K⭐，page-agent 22.3K⭐ · Token 经济学常态化——caveman 82.8K⭐ 日+2,851 持续霸榜
+
+**关键项目：**
+- 🧊 TencentCloud/CubeSandbox (7,146, 更新) — Agent 安全沙箱，Score↑8 至 88，E2B 兼容+凭据保险库
+- 🛡️ NVIDIA/OpenShell (7,374, 更新) — Agent 安全运行时，Helm K8s+GPU 直通
+- 🎨 facebook/astryx (4,520, 更新) — Meta 设计系统开源，日+943 增速第二
+
+---
+
 ## 2026-07-03
 
 **核心主题：** Agentic Video Production 元年——OpenMontage 31.7K⭐（周+12.6K 榜首）12 管线/52 工具/500+ Agent 技能，video-use 13.7K⭐ 让 coding agent 剪视频，Agent 从代码生产扩展到内容生产 · 代码知识图谱爆发——codebase-memory-mcp 24.6K⭐（周+9.7K 爆发式增长）158 语言/亚毫秒查询/99% token 节省，cognee 26.6K⭐ 自托管记忆平台，Agent 记忆层从可选变必选 · Agent 多路复用基础设施化——herdr 10.1K⭐ Rust 终端 Agent 多路复用器，Orca 11K⭐ 多 Agent 并行 ADE，gstack 119K⭐ 现象级 Agent 工具栈 · Agent 全网感知——Agent-Reach 49K⭐（周+8.8K）CLI 零 API 费用覆盖 Twitter/Reddit/YouTube/Bilibili

@@ -4,9 +4,9 @@ slug: "herdr"
 date_added: "2026-06-01"
 category: "工具型"
 emoji: "🐏"
-stars: "10,108 stars"
-stars_delta: "周增 2,401，6/7→7/3 从 4.7K→10.1K（26 天增长 115%）"
-last_seen_date: "2026-07-03"
+stars: "10,702 stars"
+stars_delta: "从 10.1K→10.7K（日+513），周增稳定在 500+，持续 Trending"
+last_seen_date: "2026-07-04"
 language: "Rust"
 score: 78
 tags: ["Agent Multiplexer", "Terminal", "Rust", "DevEx", "多Agent管理"]

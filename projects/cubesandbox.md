@@ -2,14 +2,14 @@
 title: "CubeSandbox"
 slug: "cubesandbox"
 date_added: "2026-04-25"
-last_seen_date: "2026-04-29"
+last_seen_date: "2026-07-04"
 category: "基础设施候选"
 emoji: "📦"
-stars: "4,578 stars"
-stars_delta: "快速增长"
+stars: "7,146 stars"
+stars_delta: "从 4.5K→7.1K（70 天增长 56%），周增稳定。E2B 兼容+凭据保险库+Snapshot 功能持续迭代"
 language: "Rust"
-score: 80
-tags: ["Sandbox", "AI-Agent", "Tencent", "Rust", "Isolation", "Runtime"]
+score: 88
+tags: ["Sandbox", "AI-Agent", "Tencent", "Rust", "KVM", "E2B", "Runtime", "Security"]
 url: "https://github.com/TencentCloud/CubeSandbox"
 ---
 
@@ -21,16 +21,19 @@ url: "https://github.com/TencentCloud/CubeSandbox"
 ## 它解决的问题
 AI Agent 需要执行代码、访问文件系统、调用外部工具，但直接在宿主机上执行有安全风险。Docker 等传统沙箱启动慢、资源消耗大。Agent 需要一个轻量、即时、并发的隔离执行环境。
 
-## 为什么值得关注（2026-04-25）
-Agent 沙箱是 Agent 从开发走向生产的关键基础设施。腾讯背书意味着大厂已经认可"Agent 沙箱"作为基础设施投入。Rust 实现保证了性能。3.9K stars 说明社区也有强烈需求。
+## 为什么值得关注（2026-07-04 更新）
+Agent 沙箱是 Agent 从开发走向生产的关键基础设施。70 天内从 4.5K 增长到 7.1K，持续保持 Trending。新增 Snapshot/Clone/Rollback 功能、凭据保险库、Egress 控制。与 NVIDIA OpenShell 形成"腾讯 vs NVIDIA"的 Agent 安全沙箱双雄格局，两大巨头同时押注验证了赛道确定性。
 
 ## 热度来源判断
 热度真实。腾讯背书 + Rust 实现 + Agent 安全刚需，三重驱动。Fork 数（250）与 Star 比例健康。
 
 ## 关键技术亮点
-1. **即时启动**：对比 Docker 的秒级启动，面向 Agent 的高频执行场景优化
-2. **并发支持**：多 Agent 同时执行的场景下保持隔离
-3. **Rust 实现的轻量级**：资源占用远低于 Docker/gVisor，适合大规模部署
+1. **KVM+RustVMM microVM**：亚 60ms 冷启动（bare metal benchmark），<5MB 内存开销
+2. **E2B SDK 兼容**：零代码改动迁移，swap 一个 URL 环境变量即可
+3. **凭据保险库**：API keys 不进入沙箱/model context/logs，通过安全代理注入
+4. **Snapshot/Clone/Rollback**：百毫秒级检查点，支持 fork 和回滚
+5. **Web Console**：浏览器管理沙箱、模板、节点（:12088）
+6. **模板系统**：OCI 镜像一键转模板，支持 Template Store
 
 ## 架构启发
 CubeSandbox 代表了 Agent Runtime 的隔离层。与 Docker（重隔离）、WebAssembly（语言限制）形成差异化定位：
@@ -54,8 +57,9 @@ graph TD
 
 ## 风险 / 局限 / 泡沫点
 1. **腾讯开源维护风险**：腾讯开源项目历史上维护投入波动较大
-2. **与 Docker/gVisor 隔离性对比**：轻量化的代价可能是隔离性降低，需要独立安全审计
-3. **生态锁定风险**：如果深度绑定腾讯云服务，会限制通用性
+2. **生产环境验证不足**：虽然有 SWE-Bench RL demo，但缺乏大规模生产案例
+3. **需要 KVM 支持**：要求 x86_64 Linux + KVM，限制了部署场景（云 VM 需要 PVM 或嵌套虚拟化）
+4. **与 OpenShell 的竞争**：NVIDIA 入局可能分流开发者注意力
 
 ## 与同类项目的关系
 - **E2B Sandbox**：商业化的 AI Agent 沙箱，云服务模式

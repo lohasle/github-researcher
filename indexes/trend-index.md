@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-07-03'
+last_updated: '2026-07-04'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,32 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-07-04（第七十三版）
+
+### Agent 安全运行时双雄对垒 · 前端 Agent-Ready 设计系统 · Agent 多路复用持续升温 · Agent 感知层 MCP 化 · Token 经济学常态化
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agent 安全运行时双雄对垒：腾讯 CubeSandbox 7.1K⭐（Rust+KVM 亚 60ms/E2B 兼容）vs NVIDIA OpenShell 7.3K⭐（四层策略隔离/GPU 直通）。两大巨头同时押注 Agent 安全沙箱 | cubesandbox, nvidia-openshell | 91 |
+| 2 | 前端 Agent-Ready 设计系统：Meta Astryx 4.5K⭐（日+943）8 年内部/13K+ 应用/150+ 组件/StyleX。Google design.md 24.6K⭐。设计系统从人用到人+Agent 共用 | astryx, design-md | 87 |
+| 3 | Agent 多路复用持续升温：herdr 10.7K⭐（日+513），Orca 11.6K⭐（日+736），codex-plugin-cc 23.1K⭐。Agent 编排层从工具变基础设施 | herdr, stablyai-orca, codex-plugin-cc | 86 |
+| 4 | Agent 感知层 MCP 化：chrome-devtools-mcp 45.4K⭐（日+404），page-agent 22.3K⭐（日+949）。浏览器自动化从脚本模式转向 MCP 原生 Agent 模式 | chrome-devtools-mcp, alibaba-page-agent | 84 |
+| 5 | Token 经济学常态化：caveman 82.8K⭐（日+2,851 持续霸榜）token 压缩 65% 已成标配。strix 34.4K⭐ AI 渗透测试。no-mistakes 5K⭐ git 防护 | caveman, strix, no-mistakes | 83 |
+
+#### 今日新增/更新项目
+
+| 项目 | Stars | 分类 | Score | 变化 |
+|------|-------|------|-------|------|
+| TencentCloud/CubeSandbox | 7,146 | 基础设施候选 | 88 | 更新（Score↑8，新增 Snapshot/E2B 兼容/凭据保险库） |
+| NVIDIA/OpenShell | 7,374 | 基础设施候选 | 87 | 更新（新增 Helm K8s/OpenShift/GPU 直通） |
+| facebook/astryx | 4,520 | 平台候选 | 82 | 更新（日+943 增速第二，3 天 317% 增长） |
+| ogulcancelik/herdr | 10,702 | 工具型 | 78 | 更新（日+513，持续 Trending） |
+| DeusData/codebase-memory-mcp | 25,503 | 基础设施候选 | 92 | 更新（日+900，周+9.8K） |
+
+---
 
 ## 2026-07-03（第七十二版）
 

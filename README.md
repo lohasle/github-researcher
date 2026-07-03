@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-07-03）
+## 最新研究摘要（2026-07-04）
 
-**Agentic Video Production 元年——OpenMontage 31.7K⭐（周+12.6K）12 管线/52 工具/500+ Agent 技能，video-use 13.7K⭐ 让 coding agent 剪视频，Agent 从代码生产扩展到内容生产 · 代码知识图谱爆发——codebase-memory-mcp 24.6K⭐（周+9.7K 爆发式增长）158 语言/亚毫秒查询/99% token 节省，cognee 26.6K⭐ 自托管记忆平台，Agent 记忆层从可选变必选 · Agent 多路复用基础设施化——herdr 10.1K⭐ Rust 终端 Agent 多路复用器，Orca 11K⭐ 多 Agent 并行 ADE，gstack 119K⭐ 现象级 Agent 工具栈 · Agent 全网感知——Agent-Reach 49K⭐（周+8.8K）CLI 零 API 费用覆盖 Twitter/Reddit/YouTube/Bilibili**
+**Agent 安全运行时双雄对垒——腾讯 CubeSandbox 7.1K⭐（Rust+KVM 亚 60ms 启动/5MB 开销/E2B 兼容）vs NVIDIA OpenShell 7.3K⭐（Rust+YAML 策略引擎/四层隔离/GPU 直通），两大巨头同时押注 Agent 安全沙箱，microVM 路线正在成为标准 · 前端 Agent-Ready 设计系统——Meta Astryx 4.5K⭐（日+943 8 年内部/13K+ 应用/150+ 组件/StyleX）开源，Google design.md 24.6K⭐，设计系统从'人用'到'人+Agent 共用'范式转移 · Agent 多路复用持续升温——herdr 10.7K⭐（日+513）Rust 终端多路复用，Orca 11.6K⭐（日+736）多 Agent 并行 ADE，Agent 编排层从工具变基础设施 · Token 经济学常态化——caveman 82.8K⭐ 日+2,851 持续霸榜，token 压缩从技巧变标配**
 
 今日热榜新信号：
-- **DeusData/codebase-memory-mcp**（24,603 stars）：代码库知识图谱 MCP——158 语言/亚毫秒查询/99% token 节省/零依赖单二进制
-- **calesthio/OpenMontage**（31,677 stars）：Agentic 视频生产系统——12 管线/52 工具/500+ Agent 技能，coding agent 变视频工作室
-- **ogulcancelik/herdr**（10,108 stars）：Rust 终端 Agent 多路复用器——一个终端同时运行多个 coding agent
+- **TencentCloud/CubeSandbox**（7,146 stars）：腾讯出品 AI Agent 安全沙箱——Rust+KVM 亚 60ms 冷启动/<5MB 开销/E2B 兼容/凭据保险库
+- **NVIDIA/OpenShell**（7,374 stars）：NVIDIA 出品 Agent 安全运行时——四层策略隔离/YAML 声明式/GPU 直通/多租户
+- **facebook/astryx**（4,520 stars）：Meta 8 年内部设计系统开源——150+ 组件/StyleX/agent-ready/no build plugin
 
+**→ [查看 2026-07-04 完整简报](daily/2026-07-04.md)**
 **→ [查看 2026-07-03 完整简报](daily/2026-07-03.md)**
 **→ [查看 2026-07-02 完整简报](daily/2026-07-02.md)**
 **→ [查看 2026-06-29 完整简报](daily/2026-06-29.md)**
-**→ [查看 2026-06-28 完整简报](daily/2026-06-28.md)**
 
 ---
 
@@ -24,23 +24,23 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-07-04](daily/2026-07-04.md) | Agent 安全运行时双雄对垒——腾讯 CubeSandbox 7.1K⭐（Ru | 3 个深度分析 |
 | [2026-07-03](daily/2026-07-03.md) | Agentic Video Production 元年——OpenMontage | 3 个深度分析 |
 | [2026-07-02](daily/2026-07-02.md) | Agent Skills 成为新标准层——Anthropic 发起的 Agent | 5 个深度分析 |
 | [2026-06-29](daily/2026-06-29.md) | AI 安全攻防工具化加速——strix AI 自主渗透测试（Docker 沙箱+ | 5 个深度分析 |
 | [2026-06-28](daily/2026-06-28.md) | 代码智能层大爆发——codebase-memory-mcp 17.5K⭐ tre | 5 个深度分析 |
 | [2026-06-27](daily/2026-06-27.md) | Agent 感知层大整合——Agent-Reach 42K⭐ 给 Agent 装 | 5 个深度分析 |
 | [2026-06-26](daily/2026-06-26.md) | Agent × Design System 标准化接口——Google Labs | 5 个深度分析 |
-| [2026-06-25](daily/2026-06-25.md) | Agent '懒惰工程'范式大规模验证——ponytail 55K⭐ 用 7 级 | 5 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **Agentic Video Production 元年到来：OpenMontage 31.7K⭐（周+12.6K 榜首）定义 agentic 视频生产系统——12 管线/52 工具/500+ Agent 技能，把 AI coding assistant 变成视频工作室。video-use 13.7K⭐（browser-use 团队）让 coding agent 直接编辑视频。Agent 能力边界从'写代码→浏览网页'扩展到'生产多媒体内容'，这是 Agent 从工具到平台的质变信号**：相关项目 openmontage, video-use。
-2. **代码知识图谱爆发式增长：codebase-memory-mcp 24.6K⭐（周+9.7K！近乎翻倍）——C 语言实现/158 语言支持/亚毫秒查询/99% token 节省/零依赖单二进制。cognee 26.6K⭐ 自托管 Agent 记忆平台知识图谱引擎。Agent 记忆层从'可选附加'变成'必选基础设施'，代码理解工具成为 Agent 技术栈的硬需求**：相关项目 codebase-memory-mcp, cognee。
-3. **Agent 多路复用与编排基础设施化：herdr 10.1K⭐ Rust 终端 Agent 多路复用器（一个终端跑多 Agent），Orca 11K⭐ 多 Agent 并行 ADE，gstack 119K⭐ 现象级 Agent 工具栈（23 个角色化工具），codex-plugin-cc 22.5K⭐ 跨 Agent 桥接。Agent 编排从'单 CLI'进化为'多 Agent OS 层'，开发者需要的是 fleet management 而非 single agent**：相关项目 herdr, orca, gstack。
-4. **Agent 全网感知层成熟：Agent-Reach 49K⭐（周+8.8K）给 Agent 全互联网感知能力——Twitter/Reddit/YouTube/GitHub/Bilibili/小红书 一个 CLI 零 API 费用。配合 MediaCrawler 55K⭐ 多平台数据采集，Agent 不再是'闭眼写代码'而是'睁眼看世界'。感知层正在与 MCP/记忆层/编排层形成完整的 Agent 技术栈**：相关项目 agent-reach, media-crawler。
-5. **AI 安全与 token 经济学持续发酵：strix 32K⭐（日+2.2K）AI 渗透测试 Agent 持续增长。caveman 80.7K⭐ token 压缩 65% 成为现象级。no-mistakes 4.9K⭐ git push 防护。安全与成本优化是 Agent 大规模部署的两条并行刚需——没有安全不敢用，没有成本控制用不起**：相关项目 strix, caveman, no-mistakes。
+1. **Agent 安全运行时双雄对垒：腾讯 CubeSandbox 7.1K⭐（Rust+KVM 亚 60ms 冷启动/<5MB 内存开销/E2B 兼容/凭据保险库）vs NVIDIA OpenShell 7.3K⭐（四层策略隔离 filesystem/network/process/inference/YAML 声明式/GPU 直通）。两大科技巨头同时押注 Agent 安全沙箱，microVM+Rust 路线正在成为 Agent 基础设施标准。Agent 执行安全不再是可选项**：相关项目 cubesandbox, nvidia-openshell。
+2. **前端 Agent-Ready 设计系统范式转移：Meta Astryx 4.5K⭐（日+943 增速第一）8 年内部验证/13K+ 应用/150+ 组件/StyleX/no build plugin。Google design.md 24.6K⭐ 定义视觉身份规范。设计系统从'人用'进化为'人+Agent 共用'，API/docs/CLI 一体化设计让 AI 和人用同一套参考构建**：相关项目 astryx, design-md。
+3. **Agent 多路复用与编排持续升温：herdr 10.7K⭐（日+513）Rust 终端多路复用，Orca 11.6K⭐（日+736）多 Agent 并行 ADE，codex-plugin-cc 23.1K⭐ 跨 Agent 桥接。Agent 编排层从单工具进化为 fleet management 基础设施，开发者需要的是 Agent OS 而非 Agent CLI**：相关项目 herdr, stablyai-orca, codex-plugin-cc。
+4. **Agent 感知层 MCP 化加速：chrome-devtools-mcp 45.4K⭐（日+404）DevTools for coding agents，alibaba/page-agent 22.3K⭐（日+949）页面内 GUI Agent。浏览器自动化正在从 Playwright/Puppeteer 脚本模式转向 MCP 原生 Agent 模式，感知层与 MCP 协议深度绑定**：相关项目 chrome-devtools-mcp, alibaba-page-agent。
+5. **Token 经济学常态化与安全持续发酵：caveman 82.8K⭐（日+2,851 持续霸榜）token 压缩 65% 已成 Agent 技能标配。strix 34.4K⭐（日+2,804）AI 渗透测试。no-mistakes 5K⭐ git 防护。token 优化+安全合规是 Agent 大规模生产的双飞翼**：相关项目 caveman, strix, no-mistakes。
 
 ---
 
@@ -64,8 +64,8 @@
 ## 数据统计
 
 - 📊 项目档案：244 个
-- 📅 日报总数：82 期
-- 🔄 最近更新：2026-07-03
+- 📅 日报总数：83 期
+- 🔄 最近更新：2026-07-04
 
 ---
 

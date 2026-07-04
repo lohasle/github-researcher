@@ -2,11 +2,11 @@
 title: "OpenMontage"
 slug: "openmontage"
 date_added: "2026-06-22"
-last_seen_date: "2026-07-03"
+last_seen_date: "2026-07-05"
 category: "平台候选"
 emoji: "🎬"
-stars: "31,677 stars"
-stars_delta: "周增 12,624（榜首），总计从 8.5K→31.7K（11 天增长 273%）"
+stars: "33,050 stars"
+stars_delta: "周增 9,213，总计从 8.5K→33.1K（13 天增长 289%）"
 language: "Python"
 score: 85
 tags: ["agentic-video", "content-production", "pipeline", "agent-skills", "video", "automation"]
@@ -18,6 +18,15 @@ url: "https://github.com/calesthio/OpenMontage"
 ## 一句话定位
 
 开源 Agentic 视频生产系统——12 pipelines × 52 tools × 500+ agent skills，将 AI coding assistant 变成完整的视频生产工作室。
+
+## 2026-07-05 更新
+
+stars 达到 33,050（周增 9,213）。持续在 GitHub Trending Top 10。关键信号：
+- video-use（browser-use 团队，14.7K⭐ 周+4.1K）同步增长，双轨验证 Agent 视频生产赛道
+- Agent 应用层从代码/文本扩展到多媒体生产的信号更加明确
+- 评分维持 85，平台候选定位不变
+
+---
 
 ## 2026-07-03 更新
 

@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-07-04'
+last_updated: '2026-07-05'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,30 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-07-05（第七十四版）
+
+### 代码智能 MCP 爆发 · Agent 视频生产系统崛起 · 前端 Agent-Ready 加速 · Agent 终端多路复用成熟化 · 安全+隐私双线并进
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | 代码智能 MCP 爆发：codebase-memory-mcp 26.1K⭐（周+10.2K 增速 Top 3）C 语言/tree-sitter+知识图谱/亚毫秒查询/99% token 缩减/158 语言/14 MCP tools/11 Agent 自动配置 | codebase-memory-mcp | 92 |
+| 2 | Agent 视频生产系统崛起：OpenMontage 33K⭐（周+9.2K）12 pipeline/52 tool/500+ skill，video-use 14.7K⭐ Agent 编辑视频 | openmontage, video-use | 87 |
+| 3 | 前端 Agent-Ready 加速：Astryx 5.3K⭐（日+1,013 TS 榜首）Meta 8 年设计系统开源，API+docs+CLI 一体化 | astryx | 86 |
+| 4 | Agent 终端多路复用成熟化：herdr 11.4K⭐（日+706/周+3K）增速加快，Socket API+插件系统，tmux-for-agents 路线清晰 | herdr | 85 |
+| 5 | 安全+隐私双线并进：strix 35.9K⭐（日+1,910）AI 渗透测试，meetily 隐私优先本地会议助手，system_prompts_leaks 48.8K⭐ prompt 审计 | strix, meetily | 83 |
+
+#### 今日新增/更新项目
+
+| 项目 | Stars | 分类 | Score | 变化 |
+|------|-------|------|-------|------|
+| DeusData/codebase-memory-mcp | 26,117 | 基础设施候选 | 92 | 更新（周+10.2K，增速创新高） |
+| calesthio/OpenMontage | 33,050 | 平台候选 | 85 | 更新（周+9.2K） |
+| ogulcancelik/herdr | 11,372 | 工具型 | 83 | 更新（Score↑5，日+706 增速加快） |
+
+---
 
 ## 2026-07-04（第七十三版）
 

@@ -3,14 +3,25 @@ title: "herdr"
 slug: "herdr"
 date_added: "2026-06-01"
 category: "工具型"
-emoji: "🐏"
-stars: "10,702 stars"
-stars_delta: "从 10.1K→10.7K（日+513），周增稳定在 500+，持续 Trending"
-last_seen_date: "2026-07-04"
+emoji: "🦬"
+stars: "11,372 stars"
+stars_delta: "从 10.7K→11.4K（日+706），周增 3K，增速在加快"
+last_seen_date: "2026-07-05"
 language: "Rust"
-score: 78
+score: 83
 tags: ["Agent Multiplexer", "Terminal", "Rust", "DevEx", "多Agent管理"]
 url: "https://github.com/ogulcancelik/herdr"
+---
+
+## 2026-07-05 更新
+
+stars 达到 11,372（日+706，周+3K）。增速从日 +513 加速到 +706，增长率 38%。Score 上调至 83（↑5），原因：
+- 增速持续加速，不是短期脉冲
+- Agent 终端多路复用赛道被验证为持续需求
+- Socket API + 插件系统的可编程能力为平台化打开空间
+- 与 Orca（12K⭐ ADE）、codex-plugin-cc（24.3K⭐ 跨 Agent 桥接）形成 Agent 管理三层生态
+- tmux-for-agents 定位深入人心
+
 ---
 
 ## 2026-07-03 更新

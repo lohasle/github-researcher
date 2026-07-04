@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-07-05
+
+**核心主题：** 代码智能 MCP 爆发——codebase-memory-mcp 26.1K⭐（周+10.2K 增速 Top 3）C 语言编写/tree-sitter AST+知识图谱/亚毫秒查询/99% token 缩减/158 语言/14 MCP tools/单二进制零依赖，代码理解从文件搜索进化为图谱查询 · Agent 视频生产系统崛起——OpenMontage 33K⭐（周+9.2K）12 pipeline/52 tool/500+ agent skill 将 Coding Agent 变成视频工作室，video-use 14.7K⭐ 让 Agent 编辑视频 · 前端 Agent-Ready 加速——Astryx 5.3K⭐（日+1,013 TS 榜首）Meta 8 年设计系统开源 · Agent 终端多路复用成熟化——herdr 11.4K⭐（日+706 增速加快）tmux-for-agents · 安全+隐私双线并进——strix 35.9K⭐ AI 渗透测试，meetily 本地会议助手
+
+**关键项目：**
+- 🧠 DeusData/codebase-memory-mcp (26,117, 更新) — 代码智能 MCP，周+10.2K，Score 92
+- 🎬 calesthio/OpenMontage (33,050, 更新) — Agent 视频生产系统，周+9.2K，Score 85
+- 🦬 ogulcancelik/herdr (11,372, 更新) — Agent 终端多路复用，Score↑5 至 83
+
+---
+
 ## 2026-07-04
 
 **核心主题：** Agent 安全运行时双雄对垒——腾讯 CubeSandbox 7.1K⭐（Rust+KVM 亚 60ms 启动/5MB 开销/E2B 兼容）vs NVIDIA OpenShell 7.3K⭐（Rust+四层策略隔离/GPU 直通），两大巨头同时押注 Agent 安全沙箱，microVM+Rust 路线成标准 · 前端 Agent-Ready 设计系统——Meta Astryx 4.5K⭐（日+943 8 年内部/13K+ 应用/150+ 组件/StyleX）开源，Google design.md 24.6K⭐，设计系统从人用到人+Agent 共用 · Agent 多路复用持续升温——herdr 10.7K⭐ Rust 终端多路复用，Orca 11.6K⭐ 多 Agent 并行 ADE · Agent 感知层 MCP 化——chrome-devtools-mcp 45.4K⭐，page-agent 22.3K⭐ · Token 经济学常态化——caveman 82.8K⭐ 日+2,851 持续霸榜

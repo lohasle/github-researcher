@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-07-05'
+last_updated: '2026-07-06'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,33 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-07-06（第七十五版）
+
+### 推测解码训练框架基建化 · Agent 文档自动化成新赛道 · Loop Engineering 方法论化 · Node.js 工具链 Rust 化 · 表格基础模型实用化
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | 推测解码训练框架基建化：DeepSeek DeepSpec 6.2K⭐（10 天创建/DSpark+DFlash+Eagle3 三算法/完整 pipeline/38TB 数据集/含论文+checkpoint），推理加速从调 API 走向可训练全栈基础设施 | deepspec | 90 |
+| 2 | Agent 文档自动化成新赛道：langchain-ai/openwiki 5K⭐（14 天/CLI+GitHub Action/自动 AGENTS.md 注入/Multi-LLM），代码文档从人写人读→Agent 写 Agent 读 | openwiki | 87 |
+| 3 | Loop Engineering 方法论化：cobusgreyling/loop-engineering 5.9K⭐（loop-init/audit/cost/sync/context 五件套），Agent 编排从 ad-hoc prompting 走向系统化工程方法论 | loop-engineering | 85 |
+| 4 | Node.js 工具链 Rust 化加速：nubjs/nub 2.6K⭐（Rust/bun-like DX on stock node/24× faster run/19× faster npx），不替换 runtime 只加速工具链 | nub | 83 |
+| 5 | 表格基础模型从研究走向实用：Google tabfm 1.3K⭐（scikit-learn 兼容/零样本分类+回归/JAX+PyTorch 双后端），同时 Ponytail 74.8K⭐ 持续验证 YAGNI Agent 理念 | tabfm, ponytail | 80 |
+
+#### 今日新增/更新项目
+
+| 项目 | Stars | 分类 | Score | 变化 |
+|------|-------|------|-------|------|
+| deepseek-ai/DeepSpec | 6,238 | 基础设施候选 | 90 | 新增 |
+| langchain-ai/openwiki | 5,014 | 工具型 | 87 | 新增 |
+| cobusgreyling/loop-engineering | 5,896 | 平台候选 | 85 | 新增 |
+| nubjs/nub | 2,629 | 工具型 | 83 | 新增 |
+| DietrichGebert/ponytail | 74,748 | 工具型 | 80 | 更新（持续高位，YAGNI Agent 验证） |
+| google-research/tabfm | 1,264 | 学习型 | 75 | 新增 |
+
+---
 
 ## 2026-07-05（第七十四版）
 

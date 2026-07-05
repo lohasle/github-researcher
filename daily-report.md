@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-07-06
+
+**核心主题：** 推测解码训练框架基建化——DeepSeek DeepSpec 6.2K⭐（10 天创建/DSpark+DFlash+Eagle3 三算法/完整 pipeline/38TB 数据/含论文+checkpoint），推理加速从调 API 走向可训练全栈基础设施 · Agent 文档自动化成新赛道——langchain-ai/openwiki 5K⭐（14 天/CLI+GitHub Action/自动 AGENTS.md 注入/Multi-LLM），代码文档从人写人读→Agent 写 Agent 读 · Loop Engineering 方法论化——cobusgreyling/loop-engineering 5.9K⭐（loop-init/audit/cost/sync/context 五件套），Agent 编排从 ad-hoc prompting 走向系统化工程方法论 · Node.js 工具链 Rust 化——nubjs/nub 2.6K⭐（Rust/24× faster/不替换 runtime 只加速工具链）
+
+**关键项目：**
+- ⚡ deepseek-ai/DeepSpec (6,238, 新增) — 推测解码训练全栈框架，Score 90
+- 📚 langchain-ai/openwiki (5,014, 新增) — Agent 文档自动化系统，Score 87
+- 🔄 cobusgreyling/loop-engineering (5,896, 新增) — Agent 编排方法论+工具链，Score 85
+
+---
+
 ## 2026-07-05
 
 **核心主题：** 代码智能 MCP 爆发——codebase-memory-mcp 26.1K⭐（周+10.2K 增速 Top 3）C 语言编写/tree-sitter AST+知识图谱/亚毫秒查询/99% token 缩减/158 语言/14 MCP tools/单二进制零依赖，代码理解从文件搜索进化为图谱查询 · Agent 视频生产系统崛起——OpenMontage 33K⭐（周+9.2K）12 pipeline/52 tool/500+ agent skill 将 Coding Agent 变成视频工作室，video-use 14.7K⭐ 让 Agent 编辑视频 · 前端 Agent-Ready 加速——Astryx 5.3K⭐（日+1,013 TS 榜首）Meta 8 年设计系统开源 · Agent 终端多路复用成熟化——herdr 11.4K⭐（日+706 增速加快）tmux-for-agents · 安全+隐私双线并进——strix 35.9K⭐ AI 渗透测试，meetily 本地会议助手

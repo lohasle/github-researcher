@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026-07-06 GitHub 趋势研究简报 | GitHub Researcher</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📊</text></svg>">
-    <meta name="description" content="推测解码训练框架基建化——DeepSeek DeepSpec 6.2K⭐（10 天创建/含 DSpark+DFlash+Eagle3 三算法/完整 train→eval pipeline/38TB 数据集/多模型支持），推理加速从黑盒 API 走向可训练全栈基础设施 · Agent 文档自动化成新赛道——langchain-ai/openwiki 5K⭐（14 天创建/CLI+GitHub Action/自动 AGENTS.md 注入/Multi-LLM 支持），代码文档从人写走向 Agent 写+Agent 读 · Loop Engineering 方法论化——cobusgreyling/loop-engineering 5.9K⭐（loop-audit/loop-init/loop-cost/loop-sync/loop-context 五件套），Agent 编排从 ad-hoc prompting 走向系统化工程方法论 · Node.js 工具链 Rust 化加速——nubjs/nub 2.6K⭐（Rust 编写/bun-like DX on stock node/24× faster script runner/19× faster npx），Node.js 生态开始用 Rust 重写工具链">
+    <title>Nub | GitHub 趋势研究</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>⭐</text></svg>">
     <style>
         :root {
             --primary: #7C3AED;
@@ -170,6 +169,24 @@
         .card-grid { animation-delay: 0.2s; animation-fill-mode: both; }
         .trend-list { animation-delay: 0.25s; animation-fill-mode: both; }
     </style>
+    
+    <style>
+        .project-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 48px; box-shadow: var(--shadow); margin-bottom: 48px; max-width: 860px; margin-left: auto; margin-right: auto; }
+        .project-content h1 { font-size: 26px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 6px; }
+        .project-content h2 { font-size: 18px; font-weight: 700; color: var(--primary); border-left: 4px solid var(--primary); padding-left: 12px; margin: 28px 0 14px; }
+        .project-content h3 { font-size: 15px; font-weight: 700; color: var(--text); margin: 20px 0 10px; }
+        .project-content table { border-collapse: collapse; width: 100%; margin: 14px 0; }
+        .project-content th, .project-content td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; font-size: 13px; }
+        .project-content th { background: var(--primary); color: white; font-weight: 600; }
+        .project-content tr:nth-child(even) td { background: var(--bg); }
+        .project-content blockquote { background: linear-gradient(135deg, #F3E8FF, #ECFEFF); border-left: 4px solid var(--primary); padding: 14px 18px; margin: 14px 0; border-radius: 0 8px 8px 0; }
+        .project-content ul, .project-content ol { padding-left: 22px; margin: 10px 0; }
+        .project-content li { margin: 6px 0; font-size: 14px; }
+        .project-content p { font-size: 14px; margin-bottom: 12px; line-height: 1.7; }
+        .project-content strong { color: var(--primary-dark); }
+        .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 24px; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
     <nav class="nav">
@@ -181,164 +198,206 @@
             <div class="nav-links">
                 <a href="/github-researcher/index.html" id="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>首页</span></a>
                 <a href="/github-researcher/daily.html" id="nav-daily"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg><span>日报</span></a>
-                <a href="/github-researcher/projects.html" id="nav-projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
+                <a href="/github-researcher/projects.html" id="nav-projects" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
                 <a href="/github-researcher/trends.html" id="nav-trends"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>趋势</span></a>
             </div>
         </div>
     </nav>
 <main class="container">
-        <section class="hero">
-            <div class="hero-badge">
-                <span class="dot"></span>
-                2026-07-06
-            </div>
-            <h1>GitHub 趋势研究</h1>
-            <p>推测解码训练框架基建化——DeepSeek DeepSpec 6.2K⭐（10 天创建/含 DSpark+DFlash+Eagle3 三算法/完整 train→eval pipeline/38TB 数据集/多模型支持），推理加速从黑盒 API 走向可训练全栈基础设施 · Agent 文档自动化成新赛道——langchain-ai/openwiki 5K⭐（14 天创建/CLI+GitHub Action/自动 AGENTS.md 注入/Multi-LLM 支持），代码文档从人写走向 Agent 写+Agent 读 · Loop Engineering 方法论化——cobusgreyling/loop-engineering 5.9K⭐（loop-audit/loop-init/loop-cost/loop-sync/loop-context 五件套），Agent 编排从 ad-hoc prompting 走向系统化工程方法论 · Node.js 工具链 Rust 化加速——nubjs/nub 2.6K⭐（Rust 编写/bun-like DX on stock node/24× faster script runner/19× faster npx），Node.js 生态开始用 Rust 重写工具链</p>
-            <div class="hero-actions">
-                <a href="/github-researcher/daily/2026-07-06.html" class="btn-primary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                    今日简报
-                </a>
-                <a href="/github-researcher/projects.html" class="btn-secondary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="14" y="0" width="7" height="7"/><rect x="0" y="14" width="7" height="7"/></svg>
-                    重点项目
-                </a>
-            </div>
-        </section>
-        <section class="stats-row">
-            <div class="stat-card">
-                <div class="stat-icon">📊</div>
-                <div class="stat-number">291</div>
-                <div class="stat-label">深度分析项目</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🔥</div>
-                <div class="stat-number">85</div>
-                <div class="stat-label">日更日报</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🎯</div>
-                <div class="stat-number">386</div>
-                <div class="stat-label">核心跟踪方向</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">⭐</div>
-                <div class="stat-number">115K+</div>
-                <div class="stat-label">本周总 Star 增速</div>
-            </div>
-        </section>
-        <section class="brief-card">
-            <div class="brief-date">📅 2026-07-06 · 今日核心判断</div>
-            <h2 class="brief-title">推测解码训练框架基建化——DeepSeek DeepSpec 6.2K⭐（10 天创建/含 DSpark+DFlash+Eagle3 三算法/完整 train→eval pipeline/38TB 数据集/多模型支持），推理加速从黑盒 API 走向可训练全栈基础设施 · Agent 文档自动化成新赛道——langchain-ai/openwiki 5K⭐（14 天创建/CLI+GitHub Action/自动 AGENTS.md 注入/Multi-LLM 支持），代码文档从人写走向 Agent 写+Agent 读 · Loop Engineering 方法论化——cobusgreyling/loop-engineering 5.9K⭐（loop-audit/loop-init/loop-cost/loop-sync/loop-context 五件套），Agent 编排从 ad-hoc prompting 走向系统化工程方法论 · Node.js 工具链 Rust 化加速——nubjs/nub 2.6K⭐（Rust 编写/bun-like DX on stock node/24× faster script runner/19× faster npx），Node.js 生态开始用 Rust 重写工具链</h2>
-            <p class="brief-text">推测解码训练框架基建化——DeepSeek DeepSpec 6.2K⭐（10 天创建/含 DSpark+DFlash+Eagle3 三算法/完整 train→eval pipeline/38TB 数据集/多模型支持），推理加速从黑盒 API 走向可训练全栈基础设施 · Agent 文档自动化成新赛道——langchain-ai/openwiki 5K⭐（14 天创建/CLI+GitHub Action/自动 AGENTS.md 注入/Multi-LLM 支持），代码文档从人写走向 Agent 写+Agent 读 · Loop Engineering 方法论化——cobusgreyling/loop-engineering 5.9K⭐（loop-audit/loop-init/loop-cost/loop-sync/loop-context 五件套），Agent 编排从 ad-hoc prompting 走向系统化工程方法论 · Node.js 工具链 Rust 化加速——nubjs/nub 2.6K⭐（Rust 编写/bun-like DX on stock node/24× faster script runner/19× faster npx），Node.js 生态开始用 Rust 重写工具链 今日头条趋势:推测解码训练框架基建化：DeepSeek DeepSpec 6.2K⭐（10 天创建/MIT License）含 DSpark+DFlash+Eagle3 三种 draft model 算法/完整 data prep→train→eval pipeline/支持 Qwen3-4B/8B/14B+Gemma-4-12B/38TB 数据集/含论文+checkpoint。推理加速从调 API 黑盒走向可训练、可评估、可复现的全栈基础设施。</p>
-            <a href="/github-researcher/daily/2026-07-06.html" class="brief-cta">阅读完整简报 →</a>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">⭐</div>
-                    重点跟踪项目
-                </div>
-                <a href="/github-researcher/projects.html" class="section-link">查看全部 →</a>
-            </div>
-            <div class="card-grid">
-                <div class="card" onclick="window.location='/github-researcher/projects/deepspec.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">⚡</div>
-                        <div class="card-stars">6,238 stars</div>
-                    </div>
-                    <div class="card-title">deepseek-ai/DeepSpec</div>
-                    <div class="card-desc">推测解码全栈训练框架——DSpark/DFlash/Eagle3 三算法/完整 pipeline/38TB 数据/多模型支持/含论文+checkpoint</div>
-                    <div class="card-tags"><span class="tag tag-purple">speculative-decoding</span><span class="tag tag-purple">inference-acceleration</span><span class="tag tag-purple">training</span></div>
-                    <div class="card-actions"></div>
-                </div>
-                <div class="card" onclick="window.location='/github-researcher/projects/openwiki.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">📚</div>
-                        <div class="card-stars">5,014 stars</div>
-                    </div>
-                    <div class="card-title">langchain-ai/openwiki</div>
-                    <div class="card-desc">Agent 驱动的代码库文档系统——CLI+GitHub Action/自动 AGENTS.md 注入/Multi-LLM/每日自动 PR 更新</div>
-                    <div class="card-tags"><span class="tag tag-purple">documentation</span><span class="tag tag-purple">agent</span><span class="tag tag-purple">cli</span></div>
-                    <div class="card-actions"></div>
-                </div>
-                <div class="card" onclick="window.location='/github-researcher/projects/loop-engineering.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🔄</div>
-                        <div class="card-stars">5,896 stars</div>
-                    </div>
-                    <div class="card-title">cobusgreyling/loop-engineering</div>
-                    <div class="card-desc">Loop Engineering 方法论+工具链——loop-init/audit/cost/sync/context 五件套，系统化设计 Agent 编排循环</div>
-                    <div class="card-tags"><span class="tag tag-purple">loop-engineering</span><span class="tag tag-purple">agent-orchestration</span><span class="tag tag-purple">methodology</span></div>
-                    <div class="card-actions"></div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">📈</div>
-                    趋势热榜
-                </div>
-                <a href="/github-researcher/trends.html" class="section-link">完整趋势表 →</a>
-            </div>
-            <div class="trend-list">
-                <div class="trend-item">
-                    <div class="trend-rank top">1</div>
-                    <div class="trend-content">
-                        <div class="trend-title">推测解码训练框架基建化：DeepSeek DeepSpec 6.2K⭐（10 天创建/MIT License）含 DSpark+DFlash+Eagle3 三种 draft model 算法/完整 data prep→train→eval pipeline/支持 Qwen3-4B/8B/14B+Gemma-4-12B/38TB 数据集/含论文+checkpoint。推理加速从调 API 黑盒走向可训练、可评估、可复现的全栈基础设施</div>
-                        <div class="trend-meta">deepspec</div>
-                    </div>
-                    <div class="trend-score high">90/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank top">2</div>
-                    <div class="trend-content">
-                        <div class="trend-title">Agent 文档自动化成新赛道：langchain-ai/openwiki 5K⭐（14 天创建）CLI+GitHub Action 自动生成+每日 PR 更新/自动注入 AGENTS.md 和 CLAUDE.md/Multi-LLM（GLM 5.2/Kimi K2.6/Sonnet 5/OpenRouter）/LangSmith tracing。代码文档范式从人写人读→Agent 写 Agent 读</div>
-                        <div class="trend-meta">openwiki</div>
-                    </div>
-                    <div class="trend-score high">87/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">3</div>
-                    <div class="trend-content">
-                        <div class="trend-title">Loop Engineering 方法论化：cobusgreyling/loop-engineering 5.9K⭐（loop-init 脚手架/loop-audit 评分/loop-cost 成本追踪/loop-sync 状态同步/loop-context 上下文管理），受 Addy Osmani+Boris Cherny 启发，Agent 编排从 ad-hoc prompting 走向系统化设计方法论，已有 npm 包+GitHub Actions</div>
-                        <div class="trend-meta">loop-engineering</div>
-                    </div>
-                    <div class="trend-score high">85/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">4</div>
-                    <div class="trend-content">
-                        <div class="trend-title">Node.js 工具链 Rust 化加速：nubjs/nub 2.6K⭐（Rust 编写）bun-like DX on stock node/24× faster pnpm run/19× faster npx/2.5× faster pnpm install/内置 Node 版本管理/Corepack shim。一个工具替代 node+tsx+npx+nodemon+nvm+corepack，不替换 runtime 只加速工具链</div>
-                        <div class="trend-meta">nub</div>
-                    </div>
-                    <div class="trend-score high">83/80</div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">🏷️</div>
-                    核心关注领域
-                </div>
-            </div>
-            <div class="category-row">
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🤖</span> AI Agent / Multi-Agent</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">⚡</span> LLM Infra / MCP / AI Runtime</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🛠️</span> 开发工具链 / IDE / Copilot</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🌐</span> 前端框架 / Serverless / Edge</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">☸️</span> 云原生 / K8s / Service Mesh</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔄</span> 自动化 / Browser Use / RPA+AI</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">💾</span> 数据基础设施 / RAG / 向量 DB</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔌</span> 基础设施标准 / 平台潜力</a>
-            </div>
-        </section>
+    <a href="/github-researcher/projects.html" class="back-link">← 返回重点项目</a>
+    <div class="project-content">
+        <div style="margin-bottom:20px;"><a href="https://github.com/nubjs/nub" target="_blank" rel="noopener" class="btn-github" style="padding:10px 20px;font-size:14px;"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg> 查看 GitHub 项目</a></div>
+        <h1 id="nub-nodejs-rust">Nub — Node.js Rust 工具链</h1>
+<blockquote>
+<p><strong>一句话定位：</strong> 用 Rust 编写的 Node.js 全能工具箱，在保持 stock Node.js runtime 不变的前提下，提供 Bun 式开发体验——24× 更快的脚本运行、19× 更快的 npx、2.5× 更快的包安装。</p>
+</blockquote>
+<h2 id="_1">解决的问题</h2>
+<p>Node.js 开发者工具链碎片化严重：运行 TS 需要 tsx/ts-node，运行脚本需要 npm/pnpm，执行临时包需要 npx，管理 Node 版本需要 nvm/fnm，管理包管理器需要 corepack。每个工具都有自己的安装、配置和学习成本。</p>
+<p>Bun 用一个二进制解决了这些问题，但代价是<strong>替换了整个 runtime</strong>——企业需要重新验证兼容性，风险高。Nub 的策略是：只替换工具链，不替换 runtime。</p>
+<h2 id="_2">为什么值得关注</h2>
+<ul>
+<li><strong>不替换 runtime</strong>：保持 stock Node.js 不变，企业 adoption 零风险</li>
+<li><strong>33 天 2.6K⭐</strong>：2026-06-03 创建，Rust 编写</li>
+<li><strong>性能数据亮眼</strong>：24× faster run、19× faster npx、2.5× faster install</li>
+<li><strong>一站式替代</strong>：node + tsx + npx + nodemon + nvm + corepack 一个工具搞定</li>
+<li><strong>多平台支持</strong>：macOS/Linux/Windows/Homebrew/Nix/mise/npm 全覆盖</li>
+<li><strong>GitHub Actions 兼容</strong>：<code>nubjs/setup-nub</code> 直接替代 <code>actions/setup-node</code></li>
+</ul>
+<h2 id="_3">热度来源判断</h2>
+<ul>
+<li>Node.js 生态 Rust 化趋势（Deno/Bun/Nub 都在用底层语言重写）</li>
+<li>开发者对工具链速度的永恒追求</li>
+<li>colinhacks（Zod 作者）的影响力</li>
+<li>对 Bun 策略的差异化（不替换 runtime）</li>
+</ul>
+<h2 id="_4">关键技术亮点</h2>
+<ol>
+<li><strong>Rust 核心</strong>：所有子命令用 Rust 实现，启动开销极低</li>
+<li><strong>透明 runtime 层</strong>：TS 文件直接通过 Node.js 运行，不做 runtime hack</li>
+<li><strong>Corepack shim</strong>：<code>nub pm shim</code> 自动配置 pnpm/yarn 等包管理器</li>
+<li><strong>内置版本管理</strong>：<code>nub node install 26</code> 替代 nvm，无需额外工具</li>
+<li><strong>Watch 模式</strong>：原生文件监听，替代 nodemon</li>
+</ol>
+<p><code>nub index.ts          # TS→JS 转译 + Node.js 运行（24× faster）
+nub run dev            # 脚本运行（24× faster than pnpm run）
+nubx prisma generate   # 临时包执行（19× faster than npx）
+nub install            # 包安装（2.5× faster than pnpm）
+nub watch src/server.ts # 文件监听 + 自动重启
+nub node install 26    # Node 版本管理
+nub pm shim            # 包管理器 shim</code></p>
+<h2 id="_5">架构启发</h2>
+<p>Nub 代表了一个重要趋势：<strong>JavaScript 工具链的 Rust/Zig 化已成定局</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>语言</th>
+<th>替换什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bun</td>
+<td>Zig</td>
+<td>Node.js runtime</td>
+</tr>
+<tr>
+<td>Deno</td>
+<td>Rust</td>
+<td>Node.js runtime</td>
+</tr>
+<tr>
+<td>Nub</td>
+<td>Rust</td>
+<td>Node.js 工具链（不替换 runtime）</td>
+</tr>
+<tr>
+<td>esbuild</td>
+<td>Go</td>
+<td>Webpack/Babel</td>
+</tr>
+<tr>
+<td>Turbopack</td>
+<td>Rust</td>
+<td>Webpack</td>
+</tr>
+<tr>
+<td>SWC</td>
+<td>Rust</td>
+<td>Babel</td>
+</tr>
+</tbody>
+</table>
+<p>Nub 的独特之处是找到了一个甜蜜点：<strong>用 Rust 加速工具链，但保留 Node.js runtime 的兼容性</strong>。这是企业最安全的加速路径。</p>
+<h2 id="_6">定位判断</h2>
+<ul>
+<li><strong>不是</strong>新 runtime（不做 JS 引擎）</li>
+<li><strong>不是</strong>包管理器替代品（调用底层 npm/pnpm）</li>
+<li><strong>是</strong>Node.js 开发者工具链的统一加速层</li>
+</ul>
+<p>定位：<strong>工具型</strong> — 优秀的开发者体验工具，企业 adoption 门槛极低。</p>
+<h2 id="_7">风险/局限/泡沫点</h2>
+<ul>
+<li><strong>项目极早期</strong>（33 天）：生产稳定性未经验证</li>
+<li><strong>维护团队小</strong>：bus factor 风险</li>
+<li><strong>与 Node.js 生态耦合</strong>：Node.js 上游变更可能影响兼容性</li>
+<li><strong>竞争激烈</strong>：Bun 生态在扩展，pnpm 在加速，nx 等 monorepo 工具也在演进</li>
+<li><strong>性能数据需独立验证</strong>：24× 等数字可能基于特定场景</li>
+</ul>
+<h2 id="_8">与同类项目的关系</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>定位</th>
+<th>关系</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bun</td>
+<td>Zig runtime + 工具链</td>
+<td>竞争：Bun 替换 runtime，Nub 不替换</td>
+</tr>
+<tr>
+<td>pnpm</td>
+<td>包管理器</td>
+<td>Nub 内部调用 pnpm，是加速层而非替代</td>
+</tr>
+<tr>
+<td>tsx</td>
+<td>TS 运行器</td>
+<td>Nub 替代 tsx</td>
+</tr>
+<tr>
+<td>nvm/fnm</td>
+<td>Node 版本管理</td>
+<td>Nub 内置版本管理替代它们</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_9">评分</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>分数</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热度质量</td>
+<td>7</td>
+<td>33 天 2.6K，Rust 语言吸引力</td>
+</tr>
+<tr>
+<td>技术创新度</td>
+<td>7</td>
+<td>不替换 runtime 的加速策略是差异化亮点</td>
+</tr>
+<tr>
+<td>工程成熟度</td>
+<td>6</td>
+<td>33 天极早期，需更多生产验证</td>
+</tr>
+<tr>
+<td>架构启发价值</td>
+<td>8</td>
+<td>JS 工具链 Rust 化趋势的代表案例</td>
+</tr>
+<tr>
+<td>企业落地潜力</td>
+<td>8</td>
+<td>不替换 runtime = 零兼容性风险</td>
+</tr>
+<tr>
+<td>中期趋势概率</td>
+<td>8</td>
+<td>JS 工具链底层语言重写是确定趋势</td>
+</tr>
+<tr>
+<td>平台化潜力</td>
+<td>6</td>
+<td>工具链可以扩展（plugin 系统）</td>
+</tr>
+<tr>
+<td>基础设施潜力</td>
+<td>5</td>
+<td>工具层，不是基础设施层</td>
+</tr>
+</tbody>
+</table>
+<p><strong>总分：55/80</strong></p>
+<p><strong>项目归类：工具型</strong></p>
+<p><strong>是否建议持续跟踪：是</strong> — JS 工具链 Rust 化趋势的重要数据点，关注生产环境稳定性反馈。</p>
+    </div>
 </main>
     <footer class="footer">
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

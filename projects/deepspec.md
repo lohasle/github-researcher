@@ -2,10 +2,10 @@
 title: "DeepSpec"
 slug: "deepspec"
 date_added: "2026-07-06"
-last_seen_date: "2026-07-06"
+last_seen_date: "2026-07-07"
 category: "基础设施候选"
 emoji: "⚡"
-stars: "6,238"
+stars: "6,319"
 score: 90
 tags: ["speculative-decoding", "inference-acceleration", "training", "llm", "deepseek"]
 url: "https://github.com/deepseek-ai/DeepSpec"

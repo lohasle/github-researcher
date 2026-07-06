@@ -4,6 +4,18 @@
 
 ---
 
+## 2026-07-07
+
+**核心主题：** Agent 约束即性能——Ponytail 75.8K⭐（25 天/MIT/54% less code/20% cheaper/27% faster/100% safe）系统化 YAGNI 约束而非提示词技巧，证明“约束输出”比“增强能力”带来更大收益 · OCR 长程解析突破——Baidu Unlimited-OCR 13.5K⭐（19 天/One-shot Long-horizon Parsing/超越 DeepSeek-OCR），VLM 吃掉传统 OCR pipeline · 贵模型规划+便宜模型执行——shadcn/improve 7K⭐（27 天/9 类并行子 Agent 审计/计划即产品），LLM 成本梯度利用范式固化成可安装 Skill · 多 Agent 元编排成赛道——Omnigent 6.4K⭐（26 天/统一编排 6+ Agent/云沙箱+策略治理），ECC 226K⭐+cc-switch 114K⭐ 验证元编排需求
+
+**关键项目：**
+- 🐴 DietrichGebert/ponytail (75,876, 更新) — YAGNI Agent Skill，54% less code，Score 92
+- 📄 baidu/Unlimited-OCR (13,490, 新增) — One-shot 长程 OCR，Score 88
+- 🔍 shadcn/improve (7,049, 新增) — 贵模型规划+便宜模型执行，Score 89
+- 🎭 omnigent-ai/omnigent (6,422, 更新) — 多 Agent 元编排框架，Score 86
+
+---
+
 ## 2026-07-06
 
 **核心主题：** 推测解码训练框架基建化——DeepSeek DeepSpec 6.2K⭐（10 天创建/DSpark+DFlash+Eagle3 三算法/完整 pipeline/38TB 数据/含论文+checkpoint），推理加速从调 API 走向可训练全栈基础设施 · Agent 文档自动化成新赛道——langchain-ai/openwiki 5K⭐（14 天/CLI+GitHub Action/自动 AGENTS.md 注入/Multi-LLM），代码文档从人写人读→Agent 写 Agent 读 · Loop Engineering 方法论化——cobusgreyling/loop-engineering 5.9K⭐（loop-init/audit/cost/sync/context 五件套），Agent 编排从 ad-hoc prompting 走向系统化工程方法论 · Node.js 工具链 Rust 化——nubjs/nub 2.6K⭐（Rust/24× faster/不替换 runtime 只加速工具链）

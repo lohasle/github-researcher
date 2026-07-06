@@ -2,10 +2,10 @@
 title: "OpenWiki"
 slug: "openwiki"
 date_added: "2026-07-06"
-last_seen_date: "2026-07-06"
+last_seen_date: "2026-07-07"
 category: "工具型"
 emoji: "📚"
-stars: "5,014"
+stars: "7,394"
 score: 87
 tags: ["documentation", "agent", "cli", "automation", "langchain"]
 url: "https://github.com/langchain-ai/openwiki"

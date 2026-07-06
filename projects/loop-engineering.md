@@ -2,10 +2,10 @@
 title: "Loop Engineering"
 slug: "loop-engineering"
 date_added: "2026-07-06"
-last_seen_date: "2026-07-06"
+last_seen_date: "2026-07-07"
 category: "平台候选"
 emoji: "🔄"
-stars: "5,896"
+stars: "6,184"
 score: 85
 tags: ["loop-engineering", "agent-orchestration", "methodology", "devtools"]
 url: "https://github.com/cobusgreyling/loop-engineering"

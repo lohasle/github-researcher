@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-07-06'
+last_updated: '2026-07-07'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,35 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-07-07（第七十六版）
+
+### Agent 约束即性能 · OCR 长程解析突破 · 贵模型规划+便宜模型执行 · 多 Agent 元编排成赛道 · 中国大厂编码 Agent 密集开源
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agent 约束即性能：Ponytail 75.8K⭐（25 天/MIT/16 种 Agent 兼容）54% less code/20% cheaper/27% faster/100% safe，系统化 YAGNI 约束而非提示词技巧 | ponytail | 92 |
+| 2 | OCR 长程解析突破：Baidu Unlimited-OCR 13.5K⭐（19 天/MIT/One-shot Long-horizon Parsing）超越 DeepSeek-OCR，VLM 吃掉传统 OCR pipeline | unlimited-ocr | 88 |
+| 3 | 贵模型规划+便宜模型执行：shadcn/improve 7K⭐（27 天/MIT/9 类并行审计/计划即产品）将 LLM 成本梯度利用范式固化成 Skill | improve | 89 |
+| 4 | 多 Agent 元编排成赛道：Omnigent 6.4K⭐（26 天/Apache-2.0/统一编排 6+ Agent）同时 ECC 226K⭐+cc-switch 114K⭐ 验证元编排需求 | omnigent | 86 |
+| 5 | 中国大厂编码 Agent 密集开源：MiMo-Code 11.5K⭐（27 天/MIT/模型+Agent 协同进化），百度+DeepSeek+小米生态成型 | mimo-code | 84 |
+
+#### 今日新增/更新项目
+
+| 项目 | Stars | 分类 | Score | 变化 |
+|------|-------|------|-------|------|
+| DietrichGebert/ponytail | 75,876 | 工具型 | 92 | 更新（25 天 76K，登顶 Trending） |
+| baidu/Unlimited-OCR | 13,490 | 基础设施候选 | 88 | 新增 |
+| shadcn/improve | 7,049 | 工具型 | 89 | 新增 |
+| omnigent-ai/omnigent | 6,422 | 平台候选 | 86 | 更新（4.7K→6.4K） |
+| XiaomiMiMo/MiMo-Code | 11,530 | 工具型 | 84 | 更新（10.6K→11.5K） |
+| langchain-ai/openwiki | 7,394 | 工具型 | 87 | 更新（5K→7.4K） |
+| cobusgreyling/loop-engineering | 6,184 | 平台候选 | 85 | 更新（5.9K→6.2K） |
+| deepseek-ai/DeepSpec | 6,319 | 基础设施候选 | 90 | 更新（6.2K→6.3K） |
+
+---
 
 ## 2026-07-06（第七十五版）
 

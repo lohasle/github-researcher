@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-07-07'
+last_updated: '2026-07-10'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,34 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-07-10（第七十七版）
+
+### AI 红队元兵器 · 科研全闭环 Agent · Agent Harness 生态收敛 · 分布式 GPU 推理网络萌芽
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | AI 红队元兵器：T3MP3ST 4.2K⭐（8 天/AGPL-3.0/多 Agent kill chain/90.1% XBOW 基准/verify-claims 复现机制），把已有编码 Agent 变零日猎人 | t3mp3st | 87 |
+| 2 | 科研全闭环 Agent：OpenScience 1.9K⭐（7 天/Apache-2.0/290+ 技能/30+ 科学数据库/全研究循环自动化），AI4Science 从概念走向产品 | openscience | 84 |
+| 3 | Agent Harness 生态收敛：ECC 228K⭐+Hermes 212K⭐+OpenCode 184K⭐+OpenClaw 382K⭐，编码 Agent 基础设施格局定型 | ecc, hermes-agent, opencode | 85 |
+| 4 | 分布式 GPU 推理网络萌芽：Talos 815⭐（8 天/MIT/WebSocket+uptime 奖励），去中心化推理算力市场早期信号 | talos | 72 |
+| 5 | Vercel Eve 稳步增长：3.4K⭐（24 天/filesystem-first/日均 ~40 Star），Agent 框架标准化持续推进 | vercel-eve | 83 |
+
+#### 今日新增/更新项目
+
+| 项目 | Stars | 分类 | Score | 变化 |
+|------|-------|------|-------|------|
+| elder-plinius/T3MP3ST | 4,152 | 工具型 | 87 | 新增 |
+| synthetic-sciences/openscience | 1,935 | 平台候选 | 84 | 新增 |
+| jmerelnyc/Talos | 815 | 学习型 | 72 | 新增 |
+| vercel/eve | 3,360 | 平台候选 | 85 | 更新（2.5K→3.4K） |
+| affaan-m/ECC | 227,840 | 基础设施候选 | 95 | 更新（226K→228K） |
+| NousResearch/hermes-agent | 212,171 | 平台候选 | 92 | 更新（持续增长） |
+| anomalyco/opencode | 184,211 | 平台候选 | 90 | 更新（持续增长） |
+
+---
 
 ## 2026-07-07（第七十六版）
 

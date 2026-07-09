@@ -4,6 +4,18 @@
 
 ---
 
+## 2026-07-10
+
+**核心主题：** AI 红队元兵器——T3MP3ST 4.2K⭐（8 天/AGPL-3.0/多 Agent kill chain/90.1% XBOW 基准/verify-claims 复现机制），把已有编码 Agent 变零日猎人，安全 Agent 赛道正式从工具脚本走向元框架 · 科研全闭环 Agent——OpenScience 1.9K⭐（7 天/Apache-2.0/290+ 技能/30+ 科学数据库），从读文献到跑实验到写论文一站完成 · Agent Harness 生态收敛——ECC 228K+Hermes 212K+OpenCode 184K+OpenClaw 382K，编码 Agent 基础设施格局基本成型
+
+**关键项目：**
+- 🌩️ elder-plinius/T3MP3ST (4,152, 新增) — 多 Agent 攻击性安全元框架，Score 87
+- 🔬 synthetic-sciences/openscience (1,935, 新增) — 开源 AI 科研工作台，Score 84
+- ⚡ jmerelnyc/Talos (815, 新增) — 分布式 GPU 推理网络 worker，Score 72
+- 🌙 vercel/eve (3,360, 更新) — filesystem-first Agent 框架，Score 85
+
+---
+
 ## 2026-07-07
 
 **核心主题：** Agent 约束即性能——Ponytail 75.8K⭐（25 天/MIT/54% less code/20% cheaper/27% faster/100% safe）系统化 YAGNI 约束而非提示词技巧，证明“约束输出”比“增强能力”带来更大收益 · OCR 长程解析突破——Baidu Unlimited-OCR 13.5K⭐（19 天/One-shot Long-horizon Parsing/超越 DeepSeek-OCR），VLM 吃掉传统 OCR pipeline · 贵模型规划+便宜模型执行——shadcn/improve 7K⭐（27 天/9 类并行子 Agent 审计/计划即产品），LLM 成本梯度利用范式固化成可安装 Skill · 多 Agent 元编排成赛道——Omnigent 6.4K⭐（26 天/统一编排 6+ Agent/云沙箱+策略治理），ECC 226K⭐+cc-switch 114K⭐ 验证元编排需求

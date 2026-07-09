@@ -4,8 +4,8 @@ slug: "vercel-eve"
 date_added: "2026-06-19"
 category: "平台候选"
 emoji: "🌙"
-stars: "2,526 stars"
-stars_delta: "9天2.5K，日均280+"
+stars: "3,360 stars"
+stars_delta: "24天3.4K，日均140+（趋稳）"
 language: "TypeScript"
 score: 85
 tags: ["agent-framework", "filesystem-first", "vercel", "typescript"]
@@ -19,6 +19,13 @@ Vercel 出品的 filesystem-first AI Agent 框架——agent 的能力（tools/s
 
 ## 它解决的问题
 构建 AI Agent 通常需要学习框架特定的 DSL 或配置格式。eve 的方案是：你不需要学框架，只需要按目录约定放文件——`tools/` 是工具，`skills/` 是技能，`channels/` 是消息通道，`schedules/` 是定时任务。
+
+## 最近动态（2026-07-10）
+- Star 数从 2,526（6-19）增长到 3,360（7-10），21 天增 834 Star
+- 日均增速从初期 280+ 回落到 ~40/天——从爆发期进入稳步期
+- Issues 增长到 223 个，社区活跃但可能暴露出早期质量问题
+- 持续活跃推送（pushed_at: 2026-07-09），开发节奏健康
+- 核心判断不变：filesystem-first 是 Agent 开发的优雅范式，但需要看生态是否跟进
 
 ## 为什么值得关注（2026-06-19）
 - Vercel 出品，品牌信任 + npm 生态 + Vercel 部署链路
@@ -74,4 +81,4 @@ eve 是 **Agent 开发框架层的 Next.js**——通过约定优于配置大幅
 4. 是否出现基于 eve 构建的生产 Agent
 
 ---
-*首次记录：2026-06-19*
+*首次记录：2026-06-19 · 更新：2026-07-10*

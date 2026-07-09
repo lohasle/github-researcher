@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-07-07）
+## 最新研究摘要（2026-07-10）
 
-**Agent 约束即性能——Ponytail 75.8K⭐（25 天创建/MIT/54% less code/20% cheaper/27% faster/100% safe），用 YAGNI 理念约束 Agent 行为成为最热项目 · OCR 长程解析突破——Baidu Unlimited-OCR 13.5K⭐（19 天创建/One-shot Long-horizon Parsing/超越 DeepSeek-OCR/vLLM+Transformers 双引擎），OCR 从分页拼接走向整文档一次解析 · 贵模型规划+便宜模型执行——shadcn/improve 7K⭐（27 天创建/MIT/审计→计划→委派执行/9 类并行子 Agent），将 LLM 成本梯度利用范式固化成 Skill · 多 Agent 元编排——Omnigent 6.4K⭐（26 天创建/Apache-2.0/Claude Code+Codex+Cursor+自定义 Agent 统一编排/云沙箱+策略治理+实时协作）**
+**AI 红队元兵器——T3MP3ST 4.2K⭐（8天/AGPL-3.0/多Agent攻击性安全框架/复现率100%/XBOW基准90.1%/复现式声明验证），把已有编码Agent变零日猎人 · 科研全闭环Agent——OpenScience 1.9K⭐（7天/Apache-2.0/290+技能/30+科学数据库/全研究循环自动化），从读文献到跑实验到写论文一站完成 · Agent Harness生态收敛——ECC 228K⭐+Hermes 212K⭐+OpenCode 184K⭐+OpenClaw 382K⭐，编码Agent基础设施格局基本成型**
 
 今日热榜新信号：
-- **DietrichGebert/ponytail**（75,876 stars）：YAGNI Agent Skill——让 AI Agent 像最懒的资深开发一样思考，54% less code/20% cheaper/27% faster/100% safe
-- **baidu/Unlimited-OCR**（13,490 stars）：One-shot Long-horizon OCR——单次推理处理整篇文档，超越 DeepSeek-OCR，vLLM+Transformers 双引擎
-- **shadcn/improve**（7,049 stars）：贵模型审计→计划→便宜模型执行——9 类并行子 Agent 审计+自动生成自包含实现计划
+- **elder-plinius/T3MP3ST**（4,152 stars）：多Agent攻击性安全元框架——把已有编码Agent变零日猎人，kill chain自动化+复现式声明验证+keyless设计
+- **synthetic-sciences/openscience**（1,935 stars）：开源AI科研工作台——290+技能/30+科学数据库/全研究循环自动化（文献→假设→实验→论文）
+- **jmerelnyc/Talos**（815 stars）：分布式GPU推理网络worker——去中心化推理算力市场，WebSocket+uptime奖励机制
 
+**→ [查看 2026-07-10 完整简报](daily/2026-07-10.md)**
 **→ [查看 2026-07-07 完整简报](daily/2026-07-07.md)**
 **→ [查看 2026-07-06 完整简报](daily/2026-07-06.md)**
 **→ [查看 2026-07-05 完整简报](daily/2026-07-05.md)**
-**→ [查看 2026-07-04 完整简报](daily/2026-07-04.md)**
 
 ---
 
@@ -24,23 +24,23 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-07-10](daily/2026-07-10.md) | AI 红队元兵器——T3MP3ST 4.2K⭐（8天/AGPL-3.0/多Age | 3 个深度分析 |
 | [2026-07-07](daily/2026-07-07.md) | Agent 约束即性能——Ponytail 75.8K⭐（25 天创建/MIT/ | 5 个深度分析 |
 | [2026-07-06](daily/2026-07-06.md) | 推测解码训练框架基建化——DeepSeek DeepSpec 6.2K⭐（10  | 3 个深度分析 |
 | [2026-07-05](daily/2026-07-05.md) | 代码智能 MCP 爆发——codebase-memory-mcp 26K⭐（周+ | 3 个深度分析 |
 | [2026-07-04](daily/2026-07-04.md) | Agent 安全运行时双雄对垒——腾讯 CubeSandbox 7.1K⭐（Ru | 3 个深度分析 |
 | [2026-07-03](daily/2026-07-03.md) | Agentic Video Production 元年——OpenMontage | 3 个深度分析 |
 | [2026-07-02](daily/2026-07-02.md) | Agent Skills 成为新标准层——Anthropic 发起的 Agent | 5 个深度分析 |
-| [2026-06-29](daily/2026-06-29.md) | AI 安全攻防工具化加速——strix AI 自主渗透测试（Docker 沙箱+ | 5 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **Agent 约束即性能：Ponytail 75.8K⭐（25 天创建/MIT License/16 种 Agent 兼容）以 YAGNI 理念为核心——让 Agent 像最懒的资深开发一样思考，54% less code / 20% cheaper / 27% faster / 100% safe。不是提示词技巧而是系统工程化的 Agent Skill，在真实 Claude Code 会话中经基准验证，证明'约束输出'比'增强能力'带来更大收益**：相关项目 ponytail。
-2. **OCR 长程解析突破：Baidu Unlimited-OCR 13.5K⭐（19 天创建/MIT/超越 DeepSeek-OCR）支持 One-shot Long-horizon Parsing，单次推理处理整篇文档。vLLM+Transformers 双引擎/HuggingFace Spaces 在线 Demo/Baidu Cloud 部署。OCR 从传统分页→拼接走向端到端一次解析**：相关项目 unlimited-ocr。
-3. **贵模型规划+便宜模型执行：shadcn/improve 7K⭐（27 天/MIT）用最强模型审计代码库→生成计划→便宜模型执行。9 类并行子 Agent 审计（correctness/security/perf/tests/tech-debt/deps/DX/docs/direction），计划即产品，从 Anthropic 到开源社区验证 LLM 成本梯度利用范式**：相关项目 improve。
-4. **多 Agent 元编排成赛道：Omnigent 6.4K⭐（26 天/Apache-2.0）统一编排 Claude Code/Codex/Cursor/OpenCode/Hermes/Pi/自定义 Agent，跨设备实时协作+云沙箱+策略治理。同时 ECC 226K⭐ 和 cc-switch 113K⭐ 验证 Agent Harness 生态已从单工具竞争走向元编排层**：相关项目 omnigent。
-5. **终端 AI 编码助手新入局：Xiaomi MiMo-Code 11.5K⭐（27 天/MIT）模型+Agent 协同进化理念/持久记忆/免费 MiMo Auto 通道/支持导入 Claude Code 配置。大厂（小米+百度+DeepSeek）密集开源编码 Agent 和基础设施，中国 AI 编码生态加速成型**：相关项目 mimo-code。
+1. **AI 红队元兵器：T3MP3ST 4.2K⭐（8天创建/AGPL-3.0/TypeScript）是多Agent攻击性安全元框架，把Claude Code/Codex/Hermes或本地Ollama模型变成零日漏洞猎人。kill chain自动化（recon→exploit→report），35个内置工具（全量83个），XBOW 104题基准90.1%@pass1超官方85%。核心创新：①verify-claims复现机制（24/24绿）②keyless设计（无额外API key）③egress-scope containment（默认开启目标域约束）。Pliny出品，安全Agent赛道正式从工具脚本走向元框架**：相关项目 t3mp3st。
+2. **科研全闭环Agent：OpenScience 1.9K⭐（7天/Apache-2.0/TypeScript+Bun）是开源AI科研工作台——给个目标，自动完成读文献→假设→写代码→跑实验→分析→写论文全循环。290+技能（DeepSpeed/PEFT/TRL训练+分子生物学+化学信息学+LaTeX）、30+科学数据库（UniProt/PDB/ChEMBL/arXiv等）直连、浏览器UI含终端/编辑器/分子渲染。Atlas平台可选但BYOK永远免费。AI4Science从论文概念走向可用工具**：相关项目 openscience。
+3. **Agent Harness生态收敛：四大头部项目格局稳定——ECC 228K⭐（Agent性能优化系统/技能+记忆+安全）、Hermes-Agent 212K⭐（成长型Agent/NousResearch）、OpenCode 184K⭐（开源编码Agent/anomalyco）、OpenClaw 382K⭐（个人AI助手/跨平台）。合计100万+Star，编码Agent从单工具竞争走向基础设施层定型。叠加Omnigent 6.9K⭐（元编排）和Vercel Eve 3.4K⭐（框架标准化），Agent生态进入'上层应用爆发期'**：相关项目 ecc, hermes-agent, opencode。
+4. **分布式GPU推理网络萌芽：Talos 815⭐（8天/MIT/Python）是GPU worker客户端，连接Talos网络执行开源模型推理任务并通过WebSocket报告uptime获取奖励。去中心化推理+经济激励模型，类似Folding@Home但面向LLM推理。体量虽小但方向值得关注——如果CDN模式可以用于GPU推理，算力供给端可能被重塑**：相关项目 talos。
+5. **Vercel Eve从炒作到务实：filesystem-first Agent框架3.4K⭐（24天/Apache-2.0），从6月19日2.5K到今天3.4K稳步增长。核心设计——agent能力（tools/skills/channels/schedules）映射到约定目录结构，文件系统就是开发界面。npx eve init一键创建+文档内置npm包（Coding Agent可直接读取）。不追求全能，做Agent领域的Next.js**：相关项目 vercel-eve。
 
 ---
 
@@ -63,9 +63,9 @@
 
 ## 数据统计
 
-- 📊 项目档案：250 个
-- 📅 日报总数：86 期
-- 🔄 最近更新：2026-07-07
+- 📊 项目档案：253 个
+- 📅 日报总数：87 期
+- 🔄 最近更新：2026-07-10
 
 ---
 

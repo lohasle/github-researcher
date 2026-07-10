@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-07-10'
+last_updated: '2026-07-11'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,65 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-07-11（第七十八版）
+
+### LLM 可解释性工具化 · 教育知识图谱数据基础设施 · DevTools Rust化加速 · Agent Skill走向方法论 · 纯C跑744B MoE
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | LLM 可解释性工具化：Anthropic Jacobian Lens 1.1K⭐（9天/Python/MIT）是论文《Verbalizable Representations Form a Global Workspace》配套实现，平均雅可比矩阵传输逐层读出模型内部表示 | jacobian-lens | 82 |
+| 2 | 教育知识图谱数据基础设施：Marble os-taxonomy 2.1K⭐（3天/1590微主题/3221前置依赖DAG/多国课程标准对齐），开源结构化课程图谱 | os-taxonomy | 78 |
+| 3 | DevTools Rust化加速：Nub 2.8K⭐（38天/Rust/24×更快npm run/19×更快npx），Rust正在从底层渗透到开发者日常工具链 | nub | 80 |
+| 4 | Agent Skill走向方法论：Loop Engineering 6.9K⭐+Ponytail 80K⭐+Omnigent 7K⭐，从单点竞争走向系统性编排范式 | loop-engineering, ponytail, omnigent | 86 |
+| 5 | 纯C推理744B MoE：Colibri 2.1K⭐（10天/C语言/零依赖/GLM-5.2 744B MoE在25GB RAM消费机运行），本地推理工程极限 | colibri | 88 |
+
+#### 今日新增/更新项目
+
+| 项目 | Stars | 分类 | Score | 变化 |
+|------|-------|------|-------|------|
+| anthropics/jacobian-lens | 1,058 | 学习型 | 82 | 新增 |
+| JustVugg/colibri | 2,065 | 基础设施候选 | 88 | 新增 |
+| inkeep/open-knowledge | 2,545 | 工具型 | 82 | 新增 |
+| withmarbleapp/os-taxonomy | 2,071 | 观察型 | 78 | 新增 |
+| DietrichGebert/ponytail | 80,115 | 工具型 | 93 | 更新（76K→80K） |
+| headroomlabs-ai/headroom | 58,381 | 基础设施候选 | 90 | 更新（52K→58K） |
+| omnigent-ai/omnigent | 7,000 | 平台候选 | 86 | 更新（6.4K→7K） |
+| cobusgreyling/loop-engineering | 6,946 | 工具型 | 85 | 更新（6K→6.9K） |
+| XiaomiMiMo/MiMo-Code | 11,764 | 工具型 | 84 | 更新（10K→11.8K） |
+| deepseek-ai/DeepSpec | 6,523 | 基础设施候选 | 90 | 更新（5K→6.5K） |
+| nubjs/nub | 2,802 | 工具型 | 80 | 更新（2.5K→2.8K） |
+
+---
+
+## 2026-07-11（第七十八版）
+
+### LLM 可解释性工具化 · 教育知识图谱数据基座 · DevTools Rust 化 · Agent Skill 方法论分层 · DNS 可观测性 TUI
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | LLM 可解释性工具化：Anthropic Jacobian Lens 1.1K⭐（9天/Python/全局工作空间论文/平均雅可比矩阵传输/逐层 token 读出），从 logit lens 到 Jacobian Lens 的第三代方法 | jacobian-lens | 82 |
+| 2 | 教育知识图谱数据基座：Marble os-taxonomy 2.1K⭐（3天/1590微主题/3221前置依赖 DAG/8学科/多国标准对齐），开源结构化课程图谱 | os-taxonomy | 78 |
+| 3 | DevTools Rust 化加速：Nub 2.8K⭐（38天/Rust/24×更快 npm run/19×更快 npx/18×更快 install），不替代 Node.js 只加速工作流 | nub | 80 |
+| 4 | Agent Skill 方法论分层：Loop Engineering 6.9K⭐（设计循环）+ Ponytail 80K⭐（约束输出）+ Omnigent 7K⭐（元编排），从单 Skill 竞争走向方法论分层 | loop-engineering, ponytail, omnigent | 86 |
+| 5 | DNS 可观测性 TUI：dnsglobe 793⭐（6天/Rust/ratatui/34解析器/世界地图），Rust+ratatui 成为 CLI 精品工具事实标准 | dnsglobe | 72 |
+
+#### 今日新增/更新项目
+
+| 项目 | Stars | 分类 | Score | 变化 |
+|------|-------|------|-------|------|
+| anthropics/jacobian-lens | 1,058 | 学习型 | 82 | 新增 |
+| withmarbleapp/os-taxonomy | 2,071 | 观察型 | 78 | 新增 |
+| nubjs/nub | 2,802 | 工具型 | 83 | 更新（2.6K→2.8K） |
+| cobusgreyling/loop-engineering | 6,946 | 平台候选 | 85 | 更新（6.2K→6.9K） |
+| omnigent-ai/omnigent | 7,000 | 平台候选 | 84 | 更新（6.4K→7K） |
+| DietrichGebert/ponytail | 80,115 | 工具型 | 93 | 更新（76K→80K） |
+
+---
 
 ## 2026-07-10（第七十七版）
 

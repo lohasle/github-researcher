@@ -4,9 +4,9 @@ slug: "ponytail"
 date_added: "2026-06-13"
 category: "工具型"
 emoji: "🐴"
-stars: "75,876 stars"
-stars_delta: "25天76K，日均3K+"
-last_seen_date: "2026-07-07"
+stars: "80,115 stars"
+stars_delta: "30天80K，日均~2.7K；近4天+4.2K"
+last_seen_date: "2026-07-11"
 language: "JavaScript"
 score: 93
 tags: ["agent-skill", "yagni", "minimalism", "code-quality", "token-optimization"]

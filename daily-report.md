@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-07-11
+
+**核心主题：** LLM 可解释性工具化——Anthropic Jacobian Lens 1.1K⭐（9天/Python/全局工作空间论文/平均雅可比矩阵传输/逐层 token 读出），论文配套参考实现 · 教育知识图谱数据基座——Marble os-taxonomy 2.1K⭐（3天/1590微主题/3221前置依赖 DAG/8学科/多国标准对齐），开源结构化课程图谱 · Agent Skill 方法论分层——Loop Engineering 6.9K⭐（设计循环）+Ponytail 80K⭐（约束输出）+Omnigent 7K⭐（元编排），从单 Skill 竞争走向方法论分层
+
+**关键项目：**
+- 🔬 anthropics/jacobian-lens (1,058, 新增) — LLM 可解释性工具，平均雅可比矩阵传输，Score 82
+- 📚 withmarbleapp/os-taxonomy (2,071, 新增) — 开源结构化课程知识图谱，Score 78
+- 🐴 DietrichGebert/ponytail (80,115, 更新) — YAGNI Agent Skill，30天80K，Score 93
+
+---
+
 ## 2026-07-10
 
 **核心主题：** AI 红队元兵器——T3MP3ST 4.2K⭐（8 天/AGPL-3.0/多 Agent kill chain/90.1% XBOW 基准/verify-claims 复现机制），把已有编码 Agent 变零日猎人，安全 Agent 赛道正式从工具脚本走向元框架 · 科研全闭环 Agent——OpenScience 1.9K⭐（7 天/Apache-2.0/290+ 技能/30+ 科学数据库），从读文献到跑实验到写论文一站完成 · Agent Harness 生态收敛——ECC 228K+Hermes 212K+OpenCode 184K+OpenClaw 382K，编码 Agent 基础设施格局基本成型

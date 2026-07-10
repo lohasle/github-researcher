@@ -5,7 +5,8 @@ date_added: "2026-07-06"
 last_seen_date: "2026-07-07"
 category: "平台候选"
 emoji: "🔄"
-stars: "6,184"
+stars: "6,946"
+last_seen_date: "2026-07-11"
 score: 85
 tags: ["loop-engineering", "agent-orchestration", "methodology", "devtools"]
 url: "https://github.com/cobusgreyling/loop-engineering"

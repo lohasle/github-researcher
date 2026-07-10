@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-07-10）
+## 最新研究摘要（2026-07-11）
 
-**AI 红队元兵器——T3MP3ST 4.2K⭐（8天/AGPL-3.0/多Agent攻击性安全框架/复现率100%/XBOW基准90.1%/复现式声明验证），把已有编码Agent变零日猎人 · 科研全闭环Agent——OpenScience 1.9K⭐（7天/Apache-2.0/290+技能/30+科学数据库/全研究循环自动化），从读文献到跑实验到写论文一站完成 · Agent Harness生态收敛——ECC 228K⭐+Hermes 212K⭐+OpenCode 184K⭐+OpenClaw 382K⭐，编码Agent基础设施格局基本成型**
+**LLM 可解释性工具化——Anthropic Jacobian Lens 1.1K⭐（9天/Python/全局工作空间理论/平均输入-输出雅可比矩阵/逐层逐位置 token 读出），论文配套参考实现，让任意中间层激活投影到词表空间 · 教育知识图谱数据基础设施——Marble os-taxonomy 2.1K⭐（3天/1590微主题/3221前置依赖边/8学科/课程对齐），开源结构化课程图谱 · DevTools Rust 化加速——Nub 2.8K⭐（38天/Rust/24×更快脚本运行/19×更快npx/18×更快pnpm install），用 Rust 增强而非替代 Node.js · Agent Skill 生态走向方法论——Loop Engineering 6.9K⭐+Ponytail 80K⭐+Omnigent 7K⭐，从单 Skill 竞争走向系统性编排范式**
 
 今日热榜新信号：
-- **elder-plinius/T3MP3ST**（4,152 stars）：多Agent攻击性安全元框架——把已有编码Agent变零日猎人，kill chain自动化+复现式声明验证+keyless设计
-- **synthetic-sciences/openscience**（1,935 stars）：开源AI科研工作台——290+技能/30+科学数据库/全研究循环自动化（文献→假设→实验→论文）
-- **jmerelnyc/Talos**（815 stars）：分布式GPU推理网络worker——去中心化推理算力市场，WebSocket+uptime奖励机制
+- **anthropics/jacobian-lens**（1,058 stars）：LLM 可解释性工具——平均雅可比矩阵传输+unembedding 解码，逐层读出模型内部表示
+- **withmarbleapp/os-taxonomy**（2,071 stars）：开源结构化课程知识图谱——1590微主题/3221前置依赖/8学科/对齐国家课程标准
+- **DietrichGebert/ponytail**（80,115 stars）：YAGNI 极简 Agent Skill——54% less code / 20% cheaper / 27% faster，30天80K⭐
 
+**→ [查看 2026-07-11 完整简报](daily/2026-07-11.md)**
 **→ [查看 2026-07-10 完整简报](daily/2026-07-10.md)**
 **→ [查看 2026-07-07 完整简报](daily/2026-07-07.md)**
 **→ [查看 2026-07-06 完整简报](daily/2026-07-06.md)**
-**→ [查看 2026-07-05 完整简报](daily/2026-07-05.md)**
 
 ---
 
@@ -24,23 +24,23 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-07-11](daily/2026-07-11.md) | LLM 可解释性工具化——Anthropic Jacobian Lens 1.1 | 3 个深度分析 |
 | [2026-07-10](daily/2026-07-10.md) | AI 红队元兵器——T3MP3ST 4.2K⭐（8天/AGPL-3.0/多Age | 3 个深度分析 |
 | [2026-07-07](daily/2026-07-07.md) | Agent 约束即性能——Ponytail 75.8K⭐（25 天创建/MIT/ | 5 个深度分析 |
 | [2026-07-06](daily/2026-07-06.md) | 推测解码训练框架基建化——DeepSeek DeepSpec 6.2K⭐（10  | 3 个深度分析 |
 | [2026-07-05](daily/2026-07-05.md) | 代码智能 MCP 爆发——codebase-memory-mcp 26K⭐（周+ | 3 个深度分析 |
 | [2026-07-04](daily/2026-07-04.md) | Agent 安全运行时双雄对垒——腾讯 CubeSandbox 7.1K⭐（Ru | 3 个深度分析 |
 | [2026-07-03](daily/2026-07-03.md) | Agentic Video Production 元年——OpenMontage | 3 个深度分析 |
-| [2026-07-02](daily/2026-07-02.md) | Agent Skills 成为新标准层——Anthropic 发起的 Agent | 5 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **AI 红队元兵器：T3MP3ST 4.2K⭐（8天创建/AGPL-3.0/TypeScript）是多Agent攻击性安全元框架，把Claude Code/Codex/Hermes或本地Ollama模型变成零日漏洞猎人。kill chain自动化（recon→exploit→report），35个内置工具（全量83个），XBOW 104题基准90.1%@pass1超官方85%。核心创新：①verify-claims复现机制（24/24绿）②keyless设计（无额外API key）③egress-scope containment（默认开启目标域约束）。Pliny出品，安全Agent赛道正式从工具脚本走向元框架**：相关项目 t3mp3st。
-2. **科研全闭环Agent：OpenScience 1.9K⭐（7天/Apache-2.0/TypeScript+Bun）是开源AI科研工作台——给个目标，自动完成读文献→假设→写代码→跑实验→分析→写论文全循环。290+技能（DeepSpeed/PEFT/TRL训练+分子生物学+化学信息学+LaTeX）、30+科学数据库（UniProt/PDB/ChEMBL/arXiv等）直连、浏览器UI含终端/编辑器/分子渲染。Atlas平台可选但BYOK永远免费。AI4Science从论文概念走向可用工具**：相关项目 openscience。
-3. **Agent Harness生态收敛：四大头部项目格局稳定——ECC 228K⭐（Agent性能优化系统/技能+记忆+安全）、Hermes-Agent 212K⭐（成长型Agent/NousResearch）、OpenCode 184K⭐（开源编码Agent/anomalyco）、OpenClaw 382K⭐（个人AI助手/跨平台）。合计100万+Star，编码Agent从单工具竞争走向基础设施层定型。叠加Omnigent 6.9K⭐（元编排）和Vercel Eve 3.4K⭐（框架标准化），Agent生态进入'上层应用爆发期'**：相关项目 ecc, hermes-agent, opencode。
-4. **分布式GPU推理网络萌芽：Talos 815⭐（8天/MIT/Python）是GPU worker客户端，连接Talos网络执行开源模型推理任务并通过WebSocket报告uptime获取奖励。去中心化推理+经济激励模型，类似Folding@Home但面向LLM推理。体量虽小但方向值得关注——如果CDN模式可以用于GPU推理，算力供给端可能被重塑**：相关项目 talos。
-5. **Vercel Eve从炒作到务实：filesystem-first Agent框架3.4K⭐（24天/Apache-2.0），从6月19日2.5K到今天3.4K稳步增长。核心设计——agent能力（tools/skills/channels/schedules）映射到约定目录结构，文件系统就是开发界面。npx eve init一键创建+文档内置npm包（Coding Agent可直接读取）。不追求全能，做Agent领域的Next.js**：相关项目 vercel-eve。
+1. **LLM 可解释性工具化：Anthropic Jacobian Lens 1.1K⭐（9天/Python/MIT）是论文《Verbalizable Representations Form a Global Workspace in Language Models》的配套参考实现。核心方法——对残差流向量用平均输入-输出雅可比矩阵做线性传输，再用模型自身 unembedding 解码为 token 排名列表。逐层逐位置读出模型'想说的话'，解释力远超 logit lens。1000 条 128 token 序列即可拟合，质量在 ~100 条就饱和。从纯学术到可安装可复现的工具化产品**：相关项目 jacobian-lens。
+2. **教育知识图谱数据基础设施：Marble os-taxonomy 2.1K⭐（3天/JavaScript/1590微主题/3221前置依赖 DAG/8学科/对齐 NGSS+Common Core+UK NC）把小学课程拆成细粒度可教学单元，组成前置依赖图，对齐国家标准。不是 AI 项目但为 AI 教育提供了结构化数据基座——个性化学习路径、自适应课程、AI 辅导都有了可编程的知识地图**：相关项目 os-taxonomy。
+3. **DevTools Rust 化加速：Nub 2.8K⭐（38天/Rust）不替代 Node.js runtime，而是在 stock node 上叠加 Bun 式 DX——24× 更快 npm run、19× 更快 npx、18× 更快 pnpm install、内置 Node 版本管理、Corepack shim。一个二进制替代 tsx+nvm+fnm+corepack+nodemon。Rust 正在从底层基础设施渗透到开发者日常工具链**：相关项目 nub。
+4. **Agent Skill 生态走向方法论：Loop Engineering 6.9K⭐（30天/7个 npm 包/5个构建块+记忆/loop-audit+loop-init+loop-cost+loop-sync+loop-context+loop-mcp-server+loop-worktree）把'怎么驱动 Agent'从 prompting 技巧提升为系统化工程——设计循环而非写提示，自动评分而非人工判断。叠加 Ponytail 80K⭐（YAGNI 约束）和 Omnigent 7K⭐（元编排），Agent Skill 赛道从单点竞争走向方法论分层**：相关项目 loop-engineering, ponytail, omnigent。
+5. **DNS 可观测性 TUI：dnsglobe 793⭐（6天/Rust/ratatui）在全球地图上实时展示 DNS 记录在 34 个公共解析器上的传播过程。小而美的开发者工具——用 TUI 把抽象的网络基础设施行为可视化。Rust+ratatui 成为 CLI 工具精品化的事实标准**：相关项目 dnsglobe。
 
 ---
 
@@ -63,9 +63,9 @@
 
 ## 数据统计
 
-- 📊 项目档案：253 个
-- 📅 日报总数：87 期
-- 🔄 最近更新：2026-07-10
+- 📊 项目档案：257 个
+- 📅 日报总数：88 期
+- 🔄 最近更新：2026-07-11
 
 ---
 

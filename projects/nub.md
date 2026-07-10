@@ -5,7 +5,8 @@ date_added: "2026-07-06"
 last_seen_date: "2026-07-06"
 category: "工具型"
 emoji: "🦀"
-stars: "2,629"
+stars: "2,802"
+last_seen_date: "2026-07-11"
 score: 83
 tags: ["nodejs", "rust", "toolchain", "developer-tools", "performance"]
 url: "https://github.com/nubjs/nub"

@@ -4,9 +4,9 @@ slug: "mimo-code"
 date_added: "2026-06-13"
 category: "工具型"
 emoji: "📱"
-stars: "11,530 stars"
-stars_delta: "27天11.5K，日均427+"
-last_seen_date: "2026-07-07"
+stars: "11,815 stars"
+stars_delta: "32天11.8K，日均369+"
+last_seen_date: "2026-07-12"
 language: "TypeScript"
 score: 85
 tags: ["coding-agent", "xiaomi", "chinese-tech", "typescript", "persistent-memory", "goal-stop"]

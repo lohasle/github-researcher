@@ -4,8 +4,9 @@ slug: "colibri"
 date_added: "2026-07-11"
 category: "基础设施候选"
 emoji: "🐦"
-stars: "2,065 stars"
-stars_delta: "10天内2K+，C语言项目中小众高增长"
+stars: "3,850 stars"
+stars_delta: "11天3.9K，日均350+，C语言项目高增长"
+last_seen_date: "2026-07-12"
 language: "C"
 score: 88
 tags: ["llm-inference", "moe", "glm-5.2", "pure-c", "edge-ai", "quantization", "speculative-decoding"]
@@ -20,7 +21,9 @@ url: "https://github.com/JustVugg/colibri"
 ## 它解决的问题
 前沿大模型（700B+参数）的推理通常需要数据中心级 GPU 集群。普通开发者无法在本地运行这类模型。Colibri 证明：利用 MoE 架构的稀疏激活特性 + 精巧的 I/O 工程化，可以在一台没有 GPU 的消费级机器上正确运行 744B 前沿模型。
 
-## 为什么值得关注（2026-07-11）
+## 为什么值得关注（2026-07-12 更新）
+
+**Stars 暴涨**：从昨日 2,065 暴涨至 3,850（+87%），社区传播效应显著。核心原因可能是 Colibri 的 I/O-first 设计模式引发了广泛讨论。
 这是2026年本地推理的工程标本。不是一个产品，而是一份"如何用工程智慧突破硬件限制"的参考实现。2400行C代码，无BLAS/无Python运行时/无GPU依赖，token级验证精确。每一个设计决策都有实测数据支撑。
 
 ## 热度来源判断

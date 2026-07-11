@@ -2,15 +2,28 @@
 title: "codebase-memory-mcp"
 slug: "codebase-memory-mcp"
 date_added: "2026-06-20"
-last_seen_date: "2026-07-05"
+last_seen_date: "2026-07-12"
 category: "基础设施候选"
 emoji: "🧠"
-stars: "26,117 stars"
-stars_delta: "从 25.5K→26.1K（日+614），周增 10.2K（本周 GitHub 增速 Top 3）。总计从 8K→26.1K（15 天增长 226%）"
+stars: "30,110 stars"
+stars_delta: "从 26.1K→30.1K（周增约 4K），总计从 8K→30.1K。增速趋稳但持续走高，进入基础设施级稳定增长期"
 language: "C"
 score: 92
 tags: ["code-intelligence", "knowledge-graph", "mcp", "tree-sitter", "agent-infrastructure", "hybrid-lsp"]
 url: "https://github.com/DeusData/codebase-memory-mcp"
+---
+
+## 2026-07-12 更新
+
+stars 达到 30,110（从 7/5 的 26,117 增至 30,110，周增约 4K）。v0.9.0 发布（2026-07-08），30 名贡献者，220 open issues，5604 测试通过。SLSA 3 安全等级。arXiv 论文（2603.27277）发表。关键判断维持：Score 92（不变），基础设施候选定位进一步确认。
+
+重要变化：
+- 增速从爆发期进入稳定增长期，但周增 4K 仍是 MCP 生态顶级水平
+- v0.9.0 功能趋于稳定，工程成熟度评分提升
+- Hybrid LSP 已覆盖 10 语言（Python/TS/JS/JSX/TSX/PHP/C#/Go/C/C++/Java/Kotlin/Rust/Perl）
+- Infrastructure-as-code indexing：Dockerfile/K8s manifests/Kustomize overlays 被索引为图节点
+- 已成为 MCP 生态 Code Intelligence 赛道的事实标准
+
 ---
 
 ## 2026-07-05 更新

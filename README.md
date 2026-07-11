@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-07-11）
+## 最新研究摘要（2026-07-12）
 
-**LLM 可解释性工具化——Anthropic Jacobian Lens 1.1K⭐（9天/Python/全局工作空间理论/平均输入-输出雅可比矩阵/逐层逐位置 token 读出），论文配套参考实现，让任意中间层激活投影到词表空间 · 教育知识图谱数据基础设施——Marble os-taxonomy 2.1K⭐（3天/1590微主题/3221前置依赖边/8学科/课程对齐），开源结构化课程图谱 · DevTools Rust 化加速——Nub 2.8K⭐（38天/Rust/24×更快脚本运行/19×更快npx/18×更快pnpm install），用 Rust 增强而非替代 Node.js · Agent Skill 生态走向方法论——Loop Engineering 6.9K⭐+Ponytail 80K⭐+Omnigent 7K⭐，从单 Skill 竞争走向系统性编排范式**
+**Agent Skills 三巨头格局成型——Superpowers 252K+ECC 228K+mattpocock/skills 165K，Agent Skill 从'提示词技巧'升维为独立赛道 · Code Intelligence MCP 基础设施化——codebase-memory-mcp 30K⭐（158语言/tree-sitter+Hybrid LSP/纯C零依赖/11 Agent 自动配置），从工具变为 Agent 必备底座 · 实用工具回归——Knockoff 1.7K⭐（6天/过滤亚马逊伪品牌/Chrome+Firefox/Safari/全本地运行），不蹭 AI 概念解决真实痛点获多家媒体报道**
 
 今日热榜新信号：
-- **anthropics/jacobian-lens**（1,058 stars）：LLM 可解释性工具——平均雅可比矩阵传输+unembedding 解码，逐层读出模型内部表示
-- **withmarbleapp/os-taxonomy**（2,071 stars）：开源结构化课程知识图谱——1590微主题/3221前置依赖/8学科/对齐国家课程标准
-- **DietrichGebert/ponytail**（80,115 stars）：YAGNI 极简 Agent Skill——54% less code / 20% cheaper / 27% faster，30天80K⭐
+- **DeusData/codebase-memory-mcp**（30,110 stars）：Code Intelligence MCP——tree-sitter+Hybrid LSP 将代码库索引为知识图谱，纯 C 零依赖，11 Agent 自动配置
+- **Shpigford/knockoff**（1,761 stars）：Chrome/Firefox/Safari 扩展——过滤亚马逊伪品牌商品，全本地运行无追踪，6 天多家媒体报道
+- **jackwener/OpenCLI**（26,487 stars）：将任意网站变为 CLI——Browser Use 已登录浏览器自动化，支持 11+ Agent 集成
 
+**→ [查看 2026-07-12 完整简报](daily/2026-07-12.md)**
 **→ [查看 2026-07-11 完整简报](daily/2026-07-11.md)**
 **→ [查看 2026-07-10 完整简报](daily/2026-07-10.md)**
 **→ [查看 2026-07-07 完整简报](daily/2026-07-07.md)**
-**→ [查看 2026-07-06 完整简报](daily/2026-07-06.md)**
 
 ---
 
@@ -24,23 +24,23 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-07-12](daily/2026-07-12.md) | Agent Skills 三巨头格局成型——Superpowers 252K+E | 3 个深度分析 |
 | [2026-07-11](daily/2026-07-11.md) | LLM 可解释性工具化——Anthropic Jacobian Lens 1.1 | 3 个深度分析 |
 | [2026-07-10](daily/2026-07-10.md) | AI 红队元兵器——T3MP3ST 4.2K⭐（8天/AGPL-3.0/多Age | 3 个深度分析 |
 | [2026-07-07](daily/2026-07-07.md) | Agent 约束即性能——Ponytail 75.8K⭐（25 天创建/MIT/ | 5 个深度分析 |
 | [2026-07-06](daily/2026-07-06.md) | 推测解码训练框架基建化——DeepSeek DeepSpec 6.2K⭐（10  | 3 个深度分析 |
 | [2026-07-05](daily/2026-07-05.md) | 代码智能 MCP 爆发——codebase-memory-mcp 26K⭐（周+ | 3 个深度分析 |
 | [2026-07-04](daily/2026-07-04.md) | Agent 安全运行时双雄对垒——腾讯 CubeSandbox 7.1K⭐（Ru | 3 个深度分析 |
-| [2026-07-03](daily/2026-07-03.md) | Agentic Video Production 元年——OpenMontage | 3 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **LLM 可解释性工具化：Anthropic Jacobian Lens 1.1K⭐（9天/Python/MIT）是论文《Verbalizable Representations Form a Global Workspace in Language Models》的配套参考实现。核心方法——对残差流向量用平均输入-输出雅可比矩阵做线性传输，再用模型自身 unembedding 解码为 token 排名列表。逐层逐位置读出模型'想说的话'，解释力远超 logit lens。1000 条 128 token 序列即可拟合，质量在 ~100 条就饱和。从纯学术到可安装可复现的工具化产品**：相关项目 jacobian-lens。
-2. **教育知识图谱数据基础设施：Marble os-taxonomy 2.1K⭐（3天/JavaScript/1590微主题/3221前置依赖 DAG/8学科/对齐 NGSS+Common Core+UK NC）把小学课程拆成细粒度可教学单元，组成前置依赖图，对齐国家标准。不是 AI 项目但为 AI 教育提供了结构化数据基座——个性化学习路径、自适应课程、AI 辅导都有了可编程的知识地图**：相关项目 os-taxonomy。
-3. **DevTools Rust 化加速：Nub 2.8K⭐（38天/Rust）不替代 Node.js runtime，而是在 stock node 上叠加 Bun 式 DX——24× 更快 npm run、19× 更快 npx、18× 更快 pnpm install、内置 Node 版本管理、Corepack shim。一个二进制替代 tsx+nvm+fnm+corepack+nodemon。Rust 正在从底层基础设施渗透到开发者日常工具链**：相关项目 nub。
-4. **Agent Skill 生态走向方法论：Loop Engineering 6.9K⭐（30天/7个 npm 包/5个构建块+记忆/loop-audit+loop-init+loop-cost+loop-sync+loop-context+loop-mcp-server+loop-worktree）把'怎么驱动 Agent'从 prompting 技巧提升为系统化工程——设计循环而非写提示，自动评分而非人工判断。叠加 Ponytail 80K⭐（YAGNI 约束）和 Omnigent 7K⭐（元编排），Agent Skill 赛道从单点竞争走向方法论分层**：相关项目 loop-engineering, ponytail, omnigent。
-5. **DNS 可观测性 TUI：dnsglobe 793⭐（6天/Rust/ratatui）在全球地图上实时展示 DNS 记录在 34 个公共解析器上的传播过程。小而美的开发者工具——用 TUI 把抽象的网络基础设施行为可视化。Rust+ratatui 成为 CLI 工具精品化的事实标准**：相关项目 dnsglobe。
+1. **Agent Skills 三巨头格局成型：obra/superpowers 252K⭐ + affaan-m/ECC 228K⭐ + mattpocock/skills 165K⭐，三者合计 64 万 star。Superpowers 偏框架与方法论，ECC 偏 Agent 性能优化与安全，mattpocock/skills 偏实战 Skill 分发。Agent Skill 已从'给 Claude Code 写提示词'升维为一个独立赛道——有框架、有评估、有分发、有方法论**：相关项目 superpowers, ecc, mattpocock-skills。
+2. **Code Intelligence MCP 基础设施化：DeusData/codebase-memory-mcp 30K⭐（纯 C/tree-sitter 158 语言/Hybrid LSP 10 语言/14 MCP 工具/11 Agent 自动配置/arXiv 论文/120× fewer tokens），从可选工具变成 Agent 认知代码库的必备底座。v0.9.0 发布、SLSA 3 安全等级、5604 测试通过——这是基础设施级别的工程成熟度**：相关项目 codebase-memory-mcp。
+3. **Agent 互联网感知层闭合：Agent-Reach 54K⭐（7+ 平台/零 API 费）+ OpenCLI 26K⭐（任意网站→CLI/Browser Use/已登录浏览器自动化）+ Firecrawl 149K⭐（Web scrape/search at scale），三者形成 Agent 获取外部数据的完整光谱——从结构化平台到任意网站到大规模爬取**：相关项目 agent-reach, opencli, firecrawl。
+4. **实用工具回归：Knockoff 1.7K⭐（6天/过滤亚马逊伪品牌/Chrome+Firefox+Safari/全本地/无追踪）6 天内获 Fast Company/Gizmodo/404 Media/Lifehacker 等多家媒体报道。不蹭任何 AI 概念，解决真实消费痛点。信号：开发者社区对'真正解决问题的小工具'仍有巨大需求**：相关项目 knockoff。
+5. **分布式 GPU 推理网络萌芽：Talos 971⭐（9天/Python/WebSocket/开放模型推理/GPU worker+uptime 报告+payouts），把消费级 GPU 连接成推理网络。配合 Ollama 176K⭐（支持 Kimi-K2.6/GLM-5.1 等新模型），去中心化推理基础设施正在从概念走向可工程化**：相关项目 talos。
 
 ---
 
@@ -63,9 +63,9 @@
 
 ## 数据统计
 
-- 📊 项目档案：257 个
-- 📅 日报总数：88 期
-- 🔄 最近更新：2026-07-11
+- 📊 项目档案：261 个
+- 📅 日报总数：89 期
+- 🔄 最近更新：2026-07-12
 
 ---
 

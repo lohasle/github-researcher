@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-07-11'
+last_updated: '2026-07-12'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,61 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-07-12（第七十九版）
+
+### 推测解码双引擎 · ChatGPT→Coding Agent 桥接 · Terminal Coding Agent 升温 · Local LLM 运维知识沉淀
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | 推测解码工程化闭环：DeepSpec 6.5K⭐（训练侧/DSpark+DFlash+Eagle3 三算法统一 pipeline）+ Colibri 3.9K⭐（推理侧/纯C/MTP 2.8 tok/fwd），speculative decoding 从论文走向工程 | deepspec, colibri | 90 |
+| 2 | ChatGPT→Coding Agent 桥接：DevSpace 3.2K⭐（28天/自托管 MCP server/让 ChatGPT Web 直接操作本地代码），Agent 交付新路径 | devspace | 78 |
+| 3 | Terminal-native Coding Agent 升温：MiMo Code 11.8K⭐（32天/模型+Agent 协同进化/持久记忆），大厂入场 | mimo-code | 82 |
+| 4 | Local LLM 运维知识沉淀：local-llm 1.3K⭐（9天/Shell/本地大模型运维百科），local LLM 进入工程化阶段 | local-llm | 75 |
+| 5 | TUI 工具精品化持续：dnsglobe 814⭐（7天/Rust/ratatui/34 resolver 全球 DNS 传播地图） | dnsglobe | 72 |
+
+#### 今日新增/更新项目
+
+| 项目 | Stars | 分类 | Score | 变化 |
+|------|-------|------|-------|------|
+| Waishnav/devspace | 3,161 | 工具型 | 78 | 新增 |
+| jamesob/local-llm | 1,348 | 学习型 | 75 | 新增 |
+| JustVugg/colibri | 3,850 | 基础设施候选 | 88 | 更新（stars +87%） |
+| deepseek-ai/DeepSpec | 6,541 | 基础设施候选 | 90 | 更新 |
+| XiaomiMiMo/MiMo-Code | 11,815 | 工具型 | 82 | 更新 |
+
+---
+
+## 2026-07-12（第七十九版）
+
+### Agent Skills 三巨头格局成型 · Code Intelligence MCP 基础设施化 · Agent 互联网感知层闭合 · 实用工具回归 · 分布式 GPU 推理网络萌芽
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agent Skills 三巨头格局成型：Superpowers 252K+ECC 228K+mattpocock/skills 165K，合计 64 万 star | superpowers, ecc, mattpocock-skills | 90 |
+| 2 | Code Intelligence MCP 基础设施化：codebase-memory-mcp 30K⭐（纯C/158语言/SLSA 3） | codebase-memory-mcp | 92 |
+| 3 | Agent 互联网感知层闭合：Agent-Reach 54K+OpenCLI 26K+Firecrawl 149K | agent-reach, opencli, firecrawl | 88 |
+| 4 | 实用工具回归：Knockoff 1.7K⭐（6天/过滤亚马逊伪品牌/全本地无追踪） | knockoff | 76 |
+| 5 | 分布式 GPU 推理网络萌芽：Talos 971⭐（9天/WebSocket/开放模型推理） | talos | 70 |
+
+#### 今日新增/更新项目
+
+| 项目 | Stars | 分类 | Score | 变化 |
+|------|-------|------|-------|------|
+| Shpigford/knockoff | 1,761 | 工具型 | 35 | 新增 |
+| jackwener/OpenCLI | 26,487 | 工具型 | 56 | 新增 |
+| DeusData/codebase-memory-mcp | 30,110 | 基础设施候选 | 92 | 更新（26.1K→30.1K） |
+| affaan-m/ECC | 228,578 | 平台候选 | 90 | 更新 |
+| obra/superpowers | 252,402 | 平台候选 | 90 | 更新 |
+| mattpocock/skills | 165,664 | 工具型 | 85 | 更新 |
+| Panniantong/Agent-Reach | 54,902 | 基础设施候选 | 90 | 更新 |
+| jmerlynyc/Talos | 971 | 观察型 | 70 | 更新 |
+
+---
 
 ## 2026-07-11（第七十八版）
 

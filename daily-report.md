@@ -4,6 +4,28 @@
 
 ---
 
+## 2026-07-12
+
+**核心主题：** 推测解码双引擎——DeepSpec 6.5K⭐（训练侧/DSpark+DFlash+Eagle3 三算法统一训练 pipeline/38TB target cache/9 benchmark）与 Colibri 3.9K⭐（推理侧/纯C/744B MoE on 25GB RAM/MTP 2.8 tok/fwd）合流，speculative decoding 从论文走向工程 · ChatGPT→Coding Agent 桥接——DevSpace 3.2K⭐（自托管 MCP server/让 ChatGPT Web 操作本地代码）开辟 Agent 交付新路径 · Local LLM 知识沉淀——local-llm 1.3K⭐（9天/Shell/本地大模型运维百科）标志 local LLM 进入工程化阶段
+
+**关键项目：**
+- ⚡ deepseek-ai/DeepSpec (6,541, 更新) — 推测解码全栈训练框架，Score 90
+- 🐦 JustVugg/colibri (3,850, 更新) — 纯C 744B MoE 推理标本，stars +87%，Score 88
+- 🚀 Waishnav/devspace (3,161, 新增) — ChatGPT→Coding Agent MCP 桥接，Score 78
+
+---
+
+## 2026-07-12
+
+**核心主题：** Agent Skills 三巨头格局成型——Superpowers 252K+ECC 228K+mattpocock/skills 165K，合计 64 万 star，Agent Skill 从'提示词技巧'升维为独立赛道 · Code Intelligence MCP 基础设施化——codebase-memory-mcp 30K⭐（纯C/tree-sitter 158语言/Hybrid LSP/v0.9.0/SLSA 3/5604 测试），从工具变为 Agent 必备底座 · 实用工具回归——Knockoff 1.7K⭐（6天/过滤亚马逊伪品牌/全本地无追踪），不蹭 AI 概念解决真实痛点获多家媒体报道
+
+**关键项目：**
+- 🧠 DeusData/codebase-memory-mcp (30,110, 更新) — Code Intelligence MCP 基础设施，Score 92
+- 🛒 Shpigford/knockoff (1,761, 新增) — 亚马逊伪品牌过滤器，Score 35
+- 🔌 jackwener/OpenCLI (26,487, 新增) — 任意网站→CLI + Browser Use，Score 56
+
+---
+
 ## 2026-07-11
 
 **核心主题：** LLM 可解释性工具化——Anthropic Jacobian Lens 1.1K⭐（9天/Python/全局工作空间论文/平均雅可比矩阵传输/逐层 token 读出），论文配套参考实现 · 教育知识图谱数据基座——Marble os-taxonomy 2.1K⭐（3天/1590微主题/3221前置依赖 DAG/8学科/多国标准对齐），开源结构化课程图谱 · Agent Skill 方法论分层——Loop Engineering 6.9K⭐（设计循环）+Ponytail 80K⭐（约束输出）+Omnigent 7K⭐（元编排），从单 Skill 竞争走向方法论分层

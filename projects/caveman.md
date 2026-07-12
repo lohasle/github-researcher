@@ -4,8 +4,8 @@ slug: "caveman"
 date_added: "2026-04-27"
 category: "工具型"
 emoji: "🪨"
-stars: "47.1k stars"
-stars_delta: "22天47K，增速极快但已放缓"
+stars: "88,504 stars"
+stars_delta: "周增 4,696，从 47.1K→88.5K（77 天增长 88%），token 压缩持续高增长"
 language: "Python"
 score: 72
 tags: ["claude-code", "token-optimization", "skill", "prompt-engineering", "meme"]

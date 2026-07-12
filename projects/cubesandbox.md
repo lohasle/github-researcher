@@ -2,11 +2,11 @@
 title: "CubeSandbox"
 slug: "cubesandbox"
 date_added: "2026-04-25"
-last_seen_date: "2026-07-04"
+last_seen_date: "2026-07-13"
 category: "基础设施候选"
 emoji: "📦"
-stars: "7,146 stars"
-stars_delta: "从 4.5K→7.1K（70 天增长 56%），周增稳定。E2B 兼容+凭据保险库+Snapshot 功能持续迭代"
+stars: "9,795 stars"
+stars_delta: "从 7.1K→9.8K（周增 2.4K），v0.5 发布：AutoPause+Terraform+ARM64。CNCF Landscape 收录"
 language: "Rust"
 score: 88
 tags: ["Sandbox", "AI-Agent", "Tencent", "Rust", "KVM", "E2B", "Runtime", "Security"]

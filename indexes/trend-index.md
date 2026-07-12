@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-07-12'
+last_updated: '2026-07-13'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,42 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-07-13（第八十版）
+
+### Agent 沙箱基础设施收敛 · 本地优先 AI 应用爆发 · Agent Fleet 管理赛道成型 · AI 网关功能叠加
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | Agent 沙箱基础设施收敛：CubeSandbox 9.8K⭐（腾讯/Rust/KVM/E2B兼容/凭据保险库/Snapshot）+ chrome-devtools-mcp 46.8K⭐ + page-agent 26.2K⭐，Agent 执行层（沙箱+浏览器+页面操作）已形成完整基础设施栈 | cubesandbox, chrome-devtools-mcp, alibaba-page-agent | 90 |
+| 2 | 本地优先 AI 应用爆发：Meetily 23.5K⭐（Rust/Whisper+Parakeet 实时转录/说话人分离/Ollama 摘要/100%本地）周增 8.6K 登顶 Trending，隐私法规+本地模型成熟=本地优先赛道起飞 | meetily | 86 |
+| 3 | Agent Fleet 管理赛道成型：herdr 15.8K⭐（终端 Agent 多路复用）+ Orca 16.8K⭐（并行 Agent ADE）+ OfficeCLI 15.4K⭐（Agent 的 Office 套件），Agent 工具链从单体脚本走向 fleet 管理 | herdr, stablyai-orca, officecli | 88 |
+| 4 | AI 网关层功能叠加：OmniRoute 16.2K⭐（231+ Provider/50+免费/RTK+Caveman 压缩省15-95% Token/自动 fallback/MCP+A2A），AI Gateway 进入功能竞争深水区 | omniroute | 82 |
+| 5 | System Prompt 泄露与 Agent 安全：system_prompts_leaks 56.7K⭐（Claude/GPT/Gemini/Grok/Cursor 等全主流 AI system prompt 提取）周增 7.7K，Agent 安全攻击面映射 | system-prompts-leaks | 78 |
+
+#### 今日新增/更新项目
+
+| 项目 | Stars | 分类 | Score | 变化 |
+|------|-------|------|-------|------|
+| Zackriya-Solutions/meetily | 23,536 | 工具型 | 86 | 新增 |
+| iOfficeAI/OfficeCLI | 15,395 | 工具型 | 83 | 新增 |
+| TencentCloud/CubeSandbox | 9,795 | 基础设施候选 | 88 | 更新（7.1K→9.8K） |
+| ogulcancelik/herdr | 15,766 | 工具型 | 83 | 更新（11.4K→15.8K） |
+| stablyai/orca | 16,835 | 平台候选 | 86 | 更新（10.8K→16.8K） |
+| diegosouzapw/OmniRoute | 16,171 | 工具型 | 80 | 更新（7.3K→16.2K） |
+| JuliusBrussee/caveman | 88,504 | 工具型 | 72 | 更新（47.1K→88.5K） |
+| TencentCloud/CubeSandbox | 9,795 | 基础设施候选 | 88 | 更新（7.1K→9.8K） |
+
+#### 判断修正
+
+| 项目 | 原判断 | 修正判断 | 修正原因 |
+|------|--------|----------|----------|
+| OmniRoute | Score 75 | Score 80 | Provider 从 160+ 扩展到 231+，RTK+Caveman 压缩组合验证有效，增速翻倍说明产品市场契合 |
+| herdr | Score 83 | Score 85 | Socket API 让 Agent 互调是架构层突破，从'人的工具'升级为'Agent 协作基础设施' |
+
+---
 
 ## 2026-07-12（第七十九版）
 

@@ -4,13 +4,24 @@ slug: "herdr"
 date_added: "2026-06-01"
 category: "工具型"
 emoji: "🦬"
-stars: "11,372 stars"
-stars_delta: "从 10.7K→11.4K（日+706），周增 3K，增速在加快"
-last_seen_date: "2026-07-05"
+stars: "15,766 stars"
+stars_delta: "从 11.4K→15.8K（周增 4.3K），增速持续加速，Homebrew + mise 安装渠道开通"
+last_seen_date: "2026-07-13"
 language: "Rust"
 score: 83
 tags: ["Agent Multiplexer", "Terminal", "Rust", "DevEx", "多Agent管理"]
 url: "https://github.com/ogulcancelik/herdr"
+---
+
+## 2026-07-13 更新
+
+stars 达到 15,766（周增 4,349，+38%）。增速持续加速。Score 上调至 85（↑2），原因：
+- Socket API 让 Agent 自身可以调用 herdr——创建 pane、读取输出、互相等待，这把 tmux 模型从人的工具变成 Agent 协作基础设施
+- Homebrew + mise 双包管理器上架，分发渠道成熟
+- 插件系统 + marketplace 上线，社区贡献开始
+- 与 Orca（16.8K⭐ ADE）+ OfficeCLI（15.4K⭐ Office 操作）共同定义了'Agent 工作环境'三层架构
+- 键盘 + 鼠标双 first-class 交互设计
+
 ---
 
 ## 2026-07-05 更新

@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-07-13
+
+**核心主题：** Agent 沙箱基础设施收敛——CubeSandbox 9.8K⭐（腾讯/Rust/KVM/E2B兼容）成为 Agent 安全隔离标准方案 · 本地优先 AI 应用爆发——Meetily 23.5K⭐（Rust/纯本地/8.6K周增）引领隐私优先的 AI 会议助手赛道 · Agent 多路复用与编排成熟——herdr 15.8K⭐（终端 Agent 多路复用）+ Orca 16.8K⭐（并行 Agent ADE）+ OfficeCLI 15.4K⭐（Office 文件自动化），Agent 工具链从单体走向 fleet 管理
+
+**关键项目：**
+- 🎙️ Zackriya-Solutions/meetily (23,536, 新增) — 隐私优先 AI 会议助手，Score 86
+- 📦 TencentCloud/CubeSandbox (9,795, 更新) — Agent 安全沙箱，Score 88
+- 📊 iOfficeAI/OfficeCLI (15,395, 新增) — Agent 专用 Office 套件，Score 83
+
+---
+
 ## 2026-07-12
 
 **核心主题：** 推测解码双引擎——DeepSpec 6.5K⭐（训练侧/DSpark+DFlash+Eagle3 三算法统一训练 pipeline/38TB target cache/9 benchmark）与 Colibri 3.9K⭐（推理侧/纯C/744B MoE on 25GB RAM/MTP 2.8 tok/fwd）合流，speculative decoding 从论文走向工程 · ChatGPT→Coding Agent 桥接——DevSpace 3.2K⭐（自托管 MCP server/让 ChatGPT Web 操作本地代码）开辟 Agent 交付新路径 · Local LLM 知识沉淀——local-llm 1.3K⭐（9天/Shell/本地大模型运维百科）标志 local LLM 进入工程化阶段

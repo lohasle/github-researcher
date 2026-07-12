@@ -4,18 +4,18 @@ slug: "omniroute"
 date_added: "2026-06-29"
 category: "工具型"
 emoji: "🔀"
-stars: "7,335 stars"
-stars_delta: "141/day, 2,554/week"
+stars: "16,171 stars"
+stars_delta: "从 7.3K→16.2K（周增 4.4K），增速翻倍。231+ Provider，RTK+Caveman 压缩省 15-95% Token"
 language: "TypeScript"
-score: 75
+score: 80
 tags: ["ai-gateway", "llm-routing", "cost-optimization", "claude-code", "proxy", "mcp"]
 url: "https://github.com/diegosouzapw/OmniRoute"
 ---
 
-# OmniRoute — 免费 AI 网关：160+ Provider 统一接入
+# OmniRoute — 免费 AI 网关：231+ Provider 统一接入
 
 ## 一句话定位
-聚合 160+ AI Provider（50+ 免费），一个端点接入 Claude/GPT/Gemini，RTK+Caveman 压缩节省 15-95% token，支持 Claude Code、Codex、Cursor 等主流 Coding Agent。
+聚合 231+ AI Provider（50+ 免费），一个端点接入 Claude/GPT/Gemini，RTK+Caveman 压缩节省 15-95% token，支持 Claude Code、Codex、Cursor 等主流 Coding Agent。
 
 ## 它解决的问题
 **目标用户：** 独立开发者、Coding Agent 用户、成本敏感团队

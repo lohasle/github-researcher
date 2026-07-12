@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-07-12）
+## 最新研究摘要（2026-07-13）
 
-**Agent Skills 三巨头格局成型——Superpowers 252K+ECC 228K+mattpocock/skills 165K，Agent Skill 从'提示词技巧'升维为独立赛道 · Code Intelligence MCP 基础设施化——codebase-memory-mcp 30K⭐（158语言/tree-sitter+Hybrid LSP/纯C零依赖/11 Agent 自动配置），从工具变为 Agent 必备底座 · 实用工具回归——Knockoff 1.7K⭐（6天/过滤亚马逊伪品牌/Chrome+Firefox/Safari/全本地运行），不蹭 AI 概念解决真实痛点获多家媒体报道**
+**Agent 沙箱基础设施收敛——CubeSandbox 9.8K⭐（腾讯/Rust/KVM/E2B兼容）成为 Agent 安全隔离标准方案 · 本地优先 AI 应用爆发——Meetily 23.5K⭐（Rust/纯本地/8.6K周增）引领隐私优先的 AI 会议助手赛道 · Agent 多路复用与编排成熟——herdr 15.8K⭐（终端 Agent 多路复用）+ Orca 16.8K⭐（并行 Agent ADE）+ OfficeCLI 15.4K⭐（Office 文件自动化），Agent 工具链从单体走向fleet 管理**
 
 今日热榜新信号：
-- **DeusData/codebase-memory-mcp**（30,110 stars）：Code Intelligence MCP——tree-sitter+Hybrid LSP 将代码库索引为知识图谱，纯 C 零依赖，11 Agent 自动配置
-- **Shpigford/knockoff**（1,761 stars）：Chrome/Firefox/Safari 扩展——过滤亚马逊伪品牌商品，全本地运行无追踪，6 天多家媒体报道
-- **jackwener/OpenCLI**（26,487 stars）：将任意网站变为 CLI——Browser Use 已登录浏览器自动化，支持 11+ Agent 集成
+- **Zackriya-Solutions/meetily**（23,536 stars）：隐私优先的 AI 会议助手——Rust 实现、Whisper/Parakeet 实时转录、说话人分离、Ollama 本地摘要、100% 本地处理
+- **TencentCloud/CubeSandbox**（9,795 stars）：腾讯出品的 Agent 沙箱——Rust/KVM/E2B 兼容/凭据保险库/Snapshot，Agent 安全隔离的基础设施
+- **iOfficeAI/OfficeCLI**（15,395 stars）：为 AI Agent 打造的 Office 套件——读写编辑 Word/Excel/PowerPoint，单二进制，无需安装 Office
 
+**→ [查看 2026-07-13 完整简报](daily/2026-07-13.md)**
 **→ [查看 2026-07-12 完整简报](daily/2026-07-12.md)**
 **→ [查看 2026-07-11 完整简报](daily/2026-07-11.md)**
 **→ [查看 2026-07-10 完整简报](daily/2026-07-10.md)**
-**→ [查看 2026-07-07 完整简报](daily/2026-07-07.md)**
 
 ---
 
@@ -24,23 +24,23 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-07-13](daily/2026-07-13.md) | Agent 沙箱基础设施收敛——CubeSandbox 9.8K⭐（腾讯/Rus | 3 个深度分析 |
 | [2026-07-12](daily/2026-07-12.md) | Agent Skills 三巨头格局成型——Superpowers 252K+E | 3 个深度分析 |
 | [2026-07-11](daily/2026-07-11.md) | LLM 可解释性工具化——Anthropic Jacobian Lens 1.1 | 3 个深度分析 |
 | [2026-07-10](daily/2026-07-10.md) | AI 红队元兵器——T3MP3ST 4.2K⭐（8天/AGPL-3.0/多Age | 3 个深度分析 |
 | [2026-07-07](daily/2026-07-07.md) | Agent 约束即性能——Ponytail 75.8K⭐（25 天创建/MIT/ | 5 个深度分析 |
 | [2026-07-06](daily/2026-07-06.md) | 推测解码训练框架基建化——DeepSeek DeepSpec 6.2K⭐（10  | 3 个深度分析 |
 | [2026-07-05](daily/2026-07-05.md) | 代码智能 MCP 爆发——codebase-memory-mcp 26K⭐（周+ | 3 个深度分析 |
-| [2026-07-04](daily/2026-07-04.md) | Agent 安全运行时双雄对垒——腾讯 CubeSandbox 7.1K⭐（Ru | 3 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **Agent Skills 三巨头格局成型：obra/superpowers 252K⭐ + affaan-m/ECC 228K⭐ + mattpocock/skills 165K⭐，三者合计 64 万 star。Superpowers 偏框架与方法论，ECC 偏 Agent 性能优化与安全，mattpocock/skills 偏实战 Skill 分发。Agent Skill 已从'给 Claude Code 写提示词'升维为一个独立赛道——有框架、有评估、有分发、有方法论**：相关项目 superpowers, ecc, mattpocock-skills。
-2. **Code Intelligence MCP 基础设施化：DeusData/codebase-memory-mcp 30K⭐（纯 C/tree-sitter 158 语言/Hybrid LSP 10 语言/14 MCP 工具/11 Agent 自动配置/arXiv 论文/120× fewer tokens），从可选工具变成 Agent 认知代码库的必备底座。v0.9.0 发布、SLSA 3 安全等级、5604 测试通过——这是基础设施级别的工程成熟度**：相关项目 codebase-memory-mcp。
-3. **Agent 互联网感知层闭合：Agent-Reach 54K⭐（7+ 平台/零 API 费）+ OpenCLI 26K⭐（任意网站→CLI/Browser Use/已登录浏览器自动化）+ Firecrawl 149K⭐（Web scrape/search at scale），三者形成 Agent 获取外部数据的完整光谱——从结构化平台到任意网站到大规模爬取**：相关项目 agent-reach, opencli, firecrawl。
-4. **实用工具回归：Knockoff 1.7K⭐（6天/过滤亚马逊伪品牌/Chrome+Firefox+Safari/全本地/无追踪）6 天内获 Fast Company/Gizmodo/404 Media/Lifehacker 等多家媒体报道。不蹭任何 AI 概念，解决真实消费痛点。信号：开发者社区对'真正解决问题的小工具'仍有巨大需求**：相关项目 knockoff。
-5. **分布式 GPU 推理网络萌芽：Talos 971⭐（9天/Python/WebSocket/开放模型推理/GPU worker+uptime 报告+payouts），把消费级 GPU 连接成推理网络。配合 Ollama 176K⭐（支持 Kimi-K2.6/GLM-5.1 等新模型），去中心化推理基础设施正在从概念走向可工程化**：相关项目 talos。
+1. **Agent 沙箱基础设施收敛：CubeSandbox 9.8K⭐（腾讯出品/Rust/KVM/E2B兼容/凭据保险库/Snapshot），从可选隔离方案演进为 Agent 安全执行的标准底座。配合 chrome-devtools-mcp 46.8K⭐ 和 page-agent 26.2K⭐，Agent 执行层（沙箱+浏览器+页面操作）已形成完整基础设施栈**：相关项目 cubesandbox, chrome-devtools-mcp, alibaba-page-agent。
+2. **本地优先 AI 应用爆发：Meetily 23.5K⭐（Rust/Whisper+Parakeet 实时转录/说话人分离/Ollama 摘要/纯本地）周增 8.6K，登顶 GitHub Trending。不依赖云端的 AI 应用正在从'理念'变为'可交付产品'——隐私法规收紧 + 本地模型成熟（Ollama 176K⭐）= 本地优先赛道起飞**：相关项目 meetily。
+3. **Agent 多路复用与 Fleet 管理成熟：herdr 15.8K⭐（终端 Agent 多路复用器/Rust）+ Orca 16.8K⭐（并行 Agent ADE/支持桌面+移动）+ OfficeCLI 15.4K⭐（Agent 专用的 Office 读写编辑），三者分别解决 Agent 的'多实例管理'、'并行编排'和'文件操作'问题。Agent 工具链从单体脚本走向 fleet 管理平台**：相关项目 herdr, stablyai-orca, officecli。
+4. **AI 网关层混战升级：OmniRoute 16.2K⭐（231+ provider/50+ 免费/RTK+Caveman 压缩/自动 fallback）周增 4.4K。AI 网关赛道已进入功能竞争深水区——不是简单的 API 代理，而是叠加 token 压缩、智能路由、MCP/A2A 协议支持的综合平台**：相关项目 omniroute。
+5. **System Prompt 泄露成为安全研究热点：system_prompts_leaks 56.7K⭐（Claude/GPT/Gemini/Grok/Cursor 等主流 AI 的 system prompt 提取）周增 7.7K。这不是单纯的'窥探'——它是 Agent 安全研究的重要组成部分，暴露了 prompt injection、越狱攻击的真实攻击面**：相关项目 system-prompts-leaks。
 
 ---
 
@@ -63,9 +63,9 @@
 
 ## 数据统计
 
-- 📊 项目档案：261 个
-- 📅 日报总数：89 期
-- 🔄 最近更新：2026-07-12
+- 📊 项目档案：264 个
+- 📅 日报总数：90 期
+- 🔄 最近更新：2026-07-13
 
 ---
 

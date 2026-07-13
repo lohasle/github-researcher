@@ -5,9 +5,9 @@ date_added: "2026-04-26"
 category: "平台候选"
 emoji: "🧠"
 stars: "84,555 stars"
-stars_delta: "+5,419/week"
+stars_delta: "日增 1,028，持续 Trending Daily Top 3"
 language: "Python"
-score: 89
+score: 92
 last_seen_date: "2026-07-14"
 tags: ["graphrag", "agent-skill", "claude-code", "codex", "cursor", "gemini-cli"]
 url: "https://github.com/safishamsi/graphify"

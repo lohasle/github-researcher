@@ -2,11 +2,11 @@
 title: "Orca"
 slug: "stablyai-orca"
 date_added: "2026-06-22"
-last_seen_date: "2026-07-13"
+last_seen_date: "2026-07-14"
 category: "平台候选"
 emoji: "🐬"
-stars: "16,835 stars"
-stars_delta: "从 10.8K→16.8K（周增 4.4K，+56%），持续高增长。YC 支持加速生态建设"
+stars: "18,148 stars"
+stars_delta: "从 16.8K→18.1K（周增 4.5K），持续高增长"
 language: "TypeScript"
 score: 86
 tags: ["agent-ide", "parallel-agents", "worktree", "multi-agent", "mobile", "ade"]
@@ -106,4 +106,10 @@ graph LR
 4. Worktree 并行模式在大型团队中的实际效果验证
 
 ---
+## 最近动态（2026-07-14）
+- Stars 从 16.8K → 18.1K，持续周增 4.5K
+- 今日作为 Agent Fleet 管理赛道代表再次入选趋势简报
+- 移动端已发布 iOS/Android，Computer Use 功能已集成
+- 30+ CLI Agent 兼容列表持续扩展
+
 *首次记录：2026-06-22*

@@ -2,13 +2,13 @@
 title: "strix"
 slug: "strix"
 date_added: "2026-06-29"
-last_seen_date: "2026-07-03"
+last_seen_date: "2026-07-14"
 category: "工具型"
 emoji: "🗡️"
-stars: "31,977 stars"
-stars_delta: "日增 2,167（持续 Trending Daily 榜首级别）"
+stars: "41,188 stars"
+stars_delta: "周增 4,143，从 31.9K→41.2K"
 language: "Python"
-score: 84
+score: 85
 tags: ["security", "pentesting", "ai-agent", "devsecops", "automation", "docker"]
 url: "https://github.com/usestrix/strix"
 ---
@@ -73,4 +73,10 @@ flowchart LR
 4. 沙箱安全性的审计结果
 
 ---
+## 最近动态（2026-07-14）
+- Stars 从 31.9K → 41.2K，周增 4,143，持续 Trending Weekly
+- 今日作为 AI 安全赛道"攻方"代表入选，与 Hallmark（守方）形成安全双翼
+- Multi-Agent 编排模式（侦察/利用/验证分工）确认可复用到其他领域
+- CI/CD 集成已落地，支持 PR 级安全拦截
+
 *首次记录：2026-06-29*

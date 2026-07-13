@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-07-14
+
+**核心主题：** 代码知识图谱范式替代 RAG——Graphify 84.5K⭐（tree-sitter AST/非向量/跨40+语言/LOCOMO recall@10: 0.497 = mem0 的 10 倍）重新定义 Agent 上下文理解 · AI 安全攻防双爆发——Strix 41.2K⭐（AI 渗透测试/Multi-Agent/真实 PoC）+ Hallmark 5K⭐（反 AI-slop/57 道 slop-test 门禁），Agent 安全攻守双翼 · Agent 原生创作工具——OpenCut 66K⭐（Rust 重写/MCP Server/Headless 批渲染），创作工具从 GUI-first 到 API-first
+
+**关键项目：**
+- 🕸️ Graphify-Labs/graphify (84,555, 更新) — 代码知识图谱 Skill，Score 92
+- 🎬 OpenCut-app/OpenCut (66,019, 新增) — Agent 原生视频编辑器，Score 85
+- ✨ Nutlope/hallmark (5,044, 新增) — 反 AI-slop 设计 Skill，Score 78
+- 📈 HKUDS/Vibe-Trading (21,656, 新增) — 多市场交易 Agent，Score 80
+- 🗡️ usestrix/strix (41,188, 更新) — AI 渗透测试 Agent，Score 85
+
+---
+
 ## 2026-07-13
 
 **核心主题：** Agent 沙箱基础设施收敛——CubeSandbox 9.8K⭐（腾讯/Rust/KVM/E2B兼容）成为 Agent 安全隔离标准方案 · 本地优先 AI 应用爆发——Meetily 23.5K⭐（Rust/纯本地/8.6K周增）引领隐私优先的 AI 会议助手赛道 · Agent 多路复用与编排成熟——herdr 15.8K⭐（终端 Agent 多路复用）+ Orca 16.8K⭐（并行 Agent ADE）+ OfficeCLI 15.4K⭐（Office 文件自动化），Agent 工具链从单体走向 fleet 管理

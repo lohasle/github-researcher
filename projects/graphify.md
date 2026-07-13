@@ -2,12 +2,13 @@
 title: "Graphify"
 slug: "graphify"
 date_added: "2026-04-26"
-category: "工具型"
+category: "平台候选"
 emoji: "🧠"
-stars: "~41k stars（预估）"
-stars_delta: "逼近41K，日增约460，预估突破41K"
+stars: "84,555 stars"
+stars_delta: "+5,419/week"
 language: "Python"
-score: 82
+score: 89
+last_seen_date: "2026-07-14"
 tags: ["graphrag", "agent-skill", "claude-code", "codex", "cursor", "gemini-cli"]
 url: "https://github.com/safishamsi/graphify"
 ---

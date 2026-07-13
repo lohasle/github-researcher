@@ -4,19 +4,19 @@
 
 ---
 
-## 最新研究摘要（2026-07-13）
+## 最新研究摘要（2026-07-14）
 
-**Agent 沙箱基础设施收敛——CubeSandbox 9.8K⭐（腾讯/Rust/KVM/E2B兼容）成为 Agent 安全隔离标准方案 · 本地优先 AI 应用爆发——Meetily 23.5K⭐（Rust/纯本地/8.6K周增）引领隐私优先的 AI 会议助手赛道 · Agent 多路复用与编排成熟——herdr 15.8K⭐（终端 Agent 多路复用）+ Orca 16.8K⭐（并行 Agent ADE）+ OfficeCLI 15.4K⭐（Office 文件自动化），Agent 工具链从单体走向fleet 管理**
+**AI 代码知识图谱——Graphify 84.5K⭐（tree-sitter AST/非向量/跨40+语言）将代码库变成可查询图谱，重新定义 Agent 上下文理解 · AI 安全攻防双爆发——Strix 41K⭐（AI 渗透测试/Multi-Agent/真实 PoC）+ Hallmark 5K⭐（反 AI-slop 设计 Skill），Agent 安全与质量守卫形成双翼 · 开源视频编辑器冲击 CapCut——OpenCut 66K⭐（Rust 重写/插件优先/MCP Server/Headless 渲染），Agent 原生创作工具浮出水面**
 
 今日热榜新信号：
-- **Zackriya-Solutions/meetily**（23,536 stars）：隐私优先的 AI 会议助手——Rust 实现、Whisper/Parakeet 实时转录、说话人分离、Ollama 本地摘要、100% 本地处理
-- **TencentCloud/CubeSandbox**（9,795 stars）：腾讯出品的 Agent 沙箱——Rust/KVM/E2B 兼容/凭据保险库/Snapshot，Agent 安全隔离的基础设施
-- **iOfficeAI/OfficeCLI**（15,395 stars）：为 AI Agent 打造的 Office 套件——读写编辑 Word/Excel/PowerPoint，单二进制，无需安装 Office
+- **Graphify-Labs/graphify**（84,555 stars）：AI 编程助手的代码知识图谱 Skill——tree-sitter AST 解析，跨 40+ 语言，把代码库变成可遍历的图谱，非向量索引
+- **OpenCut-app/OpenCut**（66,019 stars）：开源 CapCut 替代——Rust 核心重写，插件优先架构，内建 MCP Server，Headless 批渲染，Agent 原生视频编辑器
+- **Nutlope/hallmark**（5,044 stars）：反 AI-slop 设计 Skill——57 道 slop-test 门禁 + pre-emit 自批评，让 AI 生成的 UI 拒绝千篇一律
 
+**→ [查看 2026-07-14 完整简报](daily/2026-07-14.md)**
 **→ [查看 2026-07-13 完整简报](daily/2026-07-13.md)**
 **→ [查看 2026-07-12 完整简报](daily/2026-07-12.md)**
 **→ [查看 2026-07-11 完整简报](daily/2026-07-11.md)**
-**→ [查看 2026-07-10 完整简报](daily/2026-07-10.md)**
 
 ---
 
@@ -24,23 +24,23 @@
 
 | 日期 | 核心主题 | 重点项目数 |
 |------|---------|----------|
+| [2026-07-14](daily/2026-07-14.md) | AI 代码知识图谱——Graphify 84.5K⭐（tree-sitter A | 3 个深度分析 |
 | [2026-07-13](daily/2026-07-13.md) | Agent 沙箱基础设施收敛——CubeSandbox 9.8K⭐（腾讯/Rus | 3 个深度分析 |
 | [2026-07-12](daily/2026-07-12.md) | Agent Skills 三巨头格局成型——Superpowers 252K+E | 3 个深度分析 |
 | [2026-07-11](daily/2026-07-11.md) | LLM 可解释性工具化——Anthropic Jacobian Lens 1.1 | 3 个深度分析 |
 | [2026-07-10](daily/2026-07-10.md) | AI 红队元兵器——T3MP3ST 4.2K⭐（8天/AGPL-3.0/多Age | 3 个深度分析 |
 | [2026-07-07](daily/2026-07-07.md) | Agent 约束即性能——Ponytail 75.8K⭐（25 天创建/MIT/ | 5 个深度分析 |
 | [2026-07-06](daily/2026-07-06.md) | 推测解码训练框架基建化——DeepSeek DeepSpec 6.2K⭐（10  | 3 个深度分析 |
-| [2026-07-05](daily/2026-07-05.md) | 代码智能 MCP 爆发——codebase-memory-mcp 26K⭐（周+ | 3 个深度分析 |
 
 ---
 
 ## 当前最值得关注的趋势
 
-1. **Agent 沙箱基础设施收敛：CubeSandbox 9.8K⭐（腾讯出品/Rust/KVM/E2B兼容/凭据保险库/Snapshot），从可选隔离方案演进为 Agent 安全执行的标准底座。配合 chrome-devtools-mcp 46.8K⭐ 和 page-agent 26.2K⭐，Agent 执行层（沙箱+浏览器+页面操作）已形成完整基础设施栈**：相关项目 cubesandbox, chrome-devtools-mcp, alibaba-page-agent。
-2. **本地优先 AI 应用爆发：Meetily 23.5K⭐（Rust/Whisper+Parakeet 实时转录/说话人分离/Ollama 摘要/纯本地）周增 8.6K，登顶 GitHub Trending。不依赖云端的 AI 应用正在从'理念'变为'可交付产品'——隐私法规收紧 + 本地模型成熟（Ollama 176K⭐）= 本地优先赛道起飞**：相关项目 meetily。
-3. **Agent 多路复用与 Fleet 管理成熟：herdr 15.8K⭐（终端 Agent 多路复用器/Rust）+ Orca 16.8K⭐（并行 Agent ADE/支持桌面+移动）+ OfficeCLI 15.4K⭐（Agent 专用的 Office 读写编辑），三者分别解决 Agent 的'多实例管理'、'并行编排'和'文件操作'问题。Agent 工具链从单体脚本走向 fleet 管理平台**：相关项目 herdr, stablyai-orca, officecli。
-4. **AI 网关层混战升级：OmniRoute 16.2K⭐（231+ provider/50+ 免费/RTK+Caveman 压缩/自动 fallback）周增 4.4K。AI 网关赛道已进入功能竞争深水区——不是简单的 API 代理，而是叠加 token 压缩、智能路由、MCP/A2A 协议支持的综合平台**：相关项目 omniroute。
-5. **System Prompt 泄露成为安全研究热点：system_prompts_leaks 56.7K⭐（Claude/GPT/Gemini/Grok/Cursor 等主流 AI 的 system prompt 提取）周增 7.7K。这不是单纯的'窥探'——它是 Agent 安全研究的重要组成部分，暴露了 prompt injection、越狱攻击的真实攻击面**：相关项目 system-prompts-leaks。
+1. **AI 代码知识图谱：Graphify 84.5K⭐（tree-sitter AST 解析/非向量索引/跨 40+ 语言/EXTRACTED vs INFERRED 边标注），把代码库变成可遍历、可查询的知识图谱。这不是 RAG 的改良——是对 RAG 的范式替代，Agent 上下文理解从'嵌入+搜索'进化为'图谱+遍历'**：相关项目 graphify。
+2. **AI 安全攻防双爆发：Strix 41K⭐（开源 AI 渗透测试/Multi-Agent 编排/真实 PoC 验证/CI/CD 集成）周增 4.1K + Hallmark 5K⭐（反 AI-slop 设计 Skill/57 道 slop-test 门禁/pre-emit 自批评），一个攻一个守。Agent 安全是 2026 下半年的核心基建赛道**：相关项目 strix, hallmark。
+3. **Agent 原生创作工具：OpenCut 66K⭐（开源 CapCut 替代/Rust 核心重写/插件优先/MCP Server/Headless 批渲染/脚本化）日增 1K+。当视频编辑器内建 MCP Server，意味着 Agent 可以直接编排视频生产流水线——这不只是工具，是 Agent 创作基础设施**：相关项目 opencut。
+4. **AI 交易 Agent 走向多市场：Vibe-Trading 21.6K⭐（个人交易 Agent/多市场覆盖：美股+港股+A股+印度 NSE/BSE/多 LLM Provider）日增 1.1K。继 ai-hedge-fund 和 TradingAgents 之后，Vibe-Trading 把多 Agent 辩论+多市场数据源+实盘执行整合为完整产品**：相关项目 vibe-trading。
+5. **Agent Skill 生态爆发：Graphify（代码知识图谱 Skill）+ Hallmark（反 AI-slop 设计 Skill）+ archify（架构图 Skill 4.2K⭐）+ marketingskills 38.5K⭐（营销 Skill），Agent Skill 正在从'提示词模板'演化为'可分发的专业能力包'，Skill 商店形态初现**：相关项目 graphify, hallmark, archify。
 
 ---
 
@@ -63,9 +63,9 @@
 
 ## 数据统计
 
-- 📊 项目档案：264 个
-- 📅 日报总数：90 期
-- 🔄 最近更新：2026-07-13
+- 📊 项目档案：267 个
+- 📅 日报总数：91 期
+- 🔄 最近更新：2026-07-14
 
 ---
 

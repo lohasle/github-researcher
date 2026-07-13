@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026-07-14 GitHub 趋势研究简报 | GitHub Researcher</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📊</text></svg>">
-    <meta name="description" content="AI 代码知识图谱——Graphify 84.5K⭐（tree-sitter AST/非向量/跨40+语言）将代码库变成可查询图谱，重新定义 Agent 上下文理解 · AI 安全攻防双爆发——Strix 41K⭐（AI 渗透测试/Multi-Agent/真实 PoC）+ Hallmark 5K⭐（反 AI-slop 设计 Skill），Agent 安全与质量守卫形成双翼 · 开源视频编辑器冲击 CapCut——OpenCut 66K⭐（Rust 重写/插件优先/MCP Server/Headless 渲染），Agent 原生创作工具浮出水面">
+    <title>2026-07-14 GitHub 趋势研究简报 | GitHub 趋势研究</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='20' font-size='20'>📅</text></svg>">
     <style>
         :root {
             --primary: #7C3AED;
@@ -170,6 +169,23 @@
         .card-grid { animation-delay: 0.2s; animation-fill-mode: both; }
         .trend-list { animation-delay: 0.25s; animation-fill-mode: both; }
     </style>
+    <style>
+        .daily-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 48px; box-shadow: var(--shadow); margin-bottom: 48px; max-width: 860px; margin-left: auto; margin-right: auto; }
+        .daily-content h1 { font-size: 28px; font-weight: 800; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 8px; }
+        .daily-content h2 { font-size: 20px; font-weight: 700; color: var(--primary); border-left: 4px solid var(--primary); padding-left: 12px; margin: 28px 0 14px; }
+        .daily-content h3 { font-size: 16px; font-weight: 700; color: var(--text); margin: 20px 0 10px; }
+        .daily-content table { border-collapse: collapse; width: 100%; margin: 14px 0; }
+        .daily-content th, .daily-content td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; font-size: 13px; }
+        .daily-content th { background: var(--primary); color: white; font-weight: 600; }
+        .daily-content tr:nth-child(even) td { background: var(--bg); }
+        .daily-content blockquote { background: linear-gradient(135deg, #F3E8FF, #ECFEFF); border-left: 4px solid var(--primary); padding: 14px 18px; margin: 14px 0; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+        .daily-content ul, .daily-content ol { padding-left: 22px; margin: 10px 0; }
+        .daily-content li { margin: 6px 0; font-size: 14px; }
+        .daily-content p { font-size: 14px; margin-bottom: 12px; line-height: 1.7; }
+        .daily-content strong { color: var(--primary-dark); }
+        .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 24px; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
     <nav class="nav">
@@ -180,165 +196,403 @@
             </a>
             <div class="nav-links">
                 <a href="/github-researcher/index.html" id="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>首页</span></a>
-                <a href="/github-researcher/daily.html" id="nav-daily"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg><span>日报</span></a>
+                <a href="/github-researcher/daily.html" id="nav-daily" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg><span>日报</span></a>
                 <a href="/github-researcher/projects.html" id="nav-projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>项目</span></a>
                 <a href="/github-researcher/trends.html" id="nav-trends"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>趋势</span></a>
             </div>
         </div>
     </nav>
 <main class="container">
-        <section class="hero">
-            <div class="hero-badge">
-                <span class="dot"></span>
-                2026-07-14
-            </div>
-            <h1>GitHub 趋势研究</h1>
-            <p>AI 代码知识图谱——Graphify 84.5K⭐（tree-sitter AST/非向量/跨40+语言）将代码库变成可查询图谱，重新定义 Agent 上下文理解 · AI 安全攻防双爆发——Strix 41K⭐（AI 渗透测试/Multi-Agent/真实 PoC）+ Hallmark 5K⭐（反 AI-slop 设计 Skill），Agent 安全与质量守卫形成双翼 · 开源视频编辑器冲击 CapCut——OpenCut 66K⭐（Rust 重写/插件优先/MCP Server/Headless 渲染），Agent 原生创作工具浮出水面</p>
-            <div class="hero-actions">
-                <a href="/github-researcher/daily/2026-07-14.html" class="btn-primary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                    今日简报
-                </a>
-                <a href="/github-researcher/projects.html" class="btn-secondary">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="14" y="0" width="7" height="7"/><rect x="0" y="14" width="7" height="7"/></svg>
-                    重点项目
-                </a>
-            </div>
-        </section>
-        <section class="stats-row">
-            <div class="stat-card">
-                <div class="stat-icon">📊</div>
-                <div class="stat-number">321</div>
-                <div class="stat-label">深度分析项目</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🔥</div>
-                <div class="stat-number">91</div>
-                <div class="stat-label">日更日报</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🎯</div>
-                <div class="stat-number">416</div>
-                <div class="stat-label">核心跟踪方向</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">⭐</div>
-                <div class="stat-number">130K+</div>
-                <div class="stat-label">本周总 Star 增速</div>
-            </div>
-        </section>
-        <section class="brief-card">
-            <div class="brief-date">📅 2026-07-14 · 今日核心判断</div>
-            <h2 class="brief-title">AI 代码知识图谱——Graphify 84.5K⭐（tree-sitter AST/非向量/跨40+语言）将代码库变成可查询图谱，重新定义 Agent 上下文理解 · AI 安全攻防双爆发——Strix 41K⭐（AI 渗透测试/Multi-Agent/真实 PoC）+ Hallmark 5K⭐（反 AI-slop 设计 Skill），Agent 安全与质量守卫形成双翼 · 开源视频编辑器冲击 CapCut——OpenCut 66K⭐（Rust 重写/插件优先/MCP Server/Headless 渲染），Agent 原生创作工具浮出水面</h2>
-            <p class="brief-text">AI 代码知识图谱——Graphify 84.5K⭐（tree-sitter AST/非向量/跨40+语言）将代码库变成可查询图谱，重新定义 Agent 上下文理解 · AI 安全攻防双爆发——Strix 41K⭐（AI 渗透测试/Multi-Agent/真实 PoC）+ Hallmark 5K⭐（反 AI-slop 设计 Skill），Agent 安全与质量守卫形成双翼 · 开源视频编辑器冲击 CapCut——OpenCut 66K⭐（Rust 重写/插件优先/MCP Server/Headless 渲染），Agent 原生创作工具浮出水面 今日头条趋势:AI 代码知识图谱：Graphify 84.5K⭐（tree-sitter AST 解析/非向量索引/跨 40+ 语言/EXTRACTED vs INFERRED 边标注），把代码库变成可遍历、可查询的知识图谱。这不是 RAG 的改良——是对 RAG 的范式替代，Agent 上下文理解从'嵌入+搜索'进化为'图谱+遍历'。</p>
-            <a href="/github-researcher/daily/2026-07-14.html" class="brief-cta">阅读完整简报 →</a>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">⭐</div>
-                    重点跟踪项目
-                </div>
-                <a href="/github-researcher/projects.html" class="section-link">查看全部 →</a>
-            </div>
-            <div class="card-grid">
-                <div class="card" onclick="window.location='/github-researcher/projects/graphify.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🕸️</div>
-                        <div class="card-stars">84,555 stars</div>
-                    </div>
-                    <div class="card-title">Graphify-Labs/graphify</div>
-                    <div class="card-desc">AI 编程助手的代码知识图谱 Skill——tree-sitter AST 解析，跨 40+ 语言，把代码库变成可遍历的图谱，非向量索引</div>
-                    <div class="card-tags"><span class="tag tag-purple">knowledge-graph</span><span class="tag tag-purple">code-intelligence</span><span class="tag tag-purple">tree-sitter</span></div>
-                    <div class="card-actions"></div>
-                </div>
-                <div class="card" onclick="window.location='/github-researcher/projects/opencut.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">🎬</div>
-                        <div class="card-stars">66,019 stars</div>
-                    </div>
-                    <div class="card-title">OpenCut-app/OpenCut</div>
-                    <div class="card-desc">开源 CapCut 替代——Rust 核心重写，插件优先架构，内建 MCP Server，Headless 批渲染，Agent 原生视频编辑器</div>
-                    <div class="card-tags"><span class="tag tag-purple">video-editor</span><span class="tag tag-purple">rust</span><span class="tag tag-cyan">mcp-server</span></div>
-                    <div class="card-actions"></div>
-                </div>
-                <div class="card" onclick="window.location='/github-researcher/projects/hallmark.html'" style="cursor:pointer">
-                    <div class="card-top">
-                        <div class="card-emoji">✨</div>
-                        <div class="card-stars">5,044 stars</div>
-                    </div>
-                    <div class="card-title">Nutlope/hallmark</div>
-                    <div class="card-desc">反 AI-slop 设计 Skill——57 道 slop-test 门禁 + pre-emit 自批评，让 AI 生成的 UI 拒绝千篇一律</div>
-                    <div class="card-tags"><span class="tag tag-purple">design</span><span class="tag tag-purple">ai-quality</span><span class="tag tag-purple">agent-skill</span></div>
-                    <div class="card-actions"></div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">📈</div>
-                    趋势热榜
-                </div>
-                <a href="/github-researcher/trends.html" class="section-link">完整趋势表 →</a>
-            </div>
-            <div class="trend-list">
-                <div class="trend-item">
-                    <div class="trend-rank top">1</div>
-                    <div class="trend-content">
-                        <div class="trend-title">AI 代码知识图谱：Graphify 84.5K⭐（tree-sitter AST 解析/非向量索引/跨 40+ 语言/EXTRACTED vs INFERRED 边标注），把代码库变成可遍历、可查询的知识图谱。这不是 RAG 的改良——是对 RAG 的范式替代，Agent 上下文理解从'嵌入+搜索'进化为'图谱+遍历'</div>
-                        <div class="trend-meta">graphify</div>
-                    </div>
-                    <div class="trend-score high">92/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank top">2</div>
-                    <div class="trend-content">
-                        <div class="trend-title">AI 安全攻防双爆发：Strix 41K⭐（开源 AI 渗透测试/Multi-Agent 编排/真实 PoC 验证/CI/CD 集成）周增 4.1K + Hallmark 5K⭐（反 AI-slop 设计 Skill/57 道 slop-test 门禁/pre-emit 自批评），一个攻一个守。Agent 安全是 2026 下半年的核心基建赛道</div>
-                        <div class="trend-meta">strix · hallmark</div>
-                    </div>
-                    <div class="trend-score high">87/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">3</div>
-                    <div class="trend-content">
-                        <div class="trend-title">Agent 原生创作工具：OpenCut 66K⭐（开源 CapCut 替代/Rust 核心重写/插件优先/MCP Server/Headless 批渲染/脚本化）日增 1K+。当视频编辑器内建 MCP Server，意味着 Agent 可以直接编排视频生产流水线——这不只是工具，是 Agent 创作基础设施</div>
-                        <div class="trend-meta">opencut</div>
-                    </div>
-                    <div class="trend-score high">85/80</div>
-                </div>
-                <div class="trend-item">
-                    <div class="trend-rank ">4</div>
-                    <div class="trend-content">
-                        <div class="trend-title">AI 交易 Agent 走向多市场：Vibe-Trading 21.6K⭐（个人交易 Agent/多市场覆盖：美股+港股+A股+印度 NSE/BSE/多 LLM Provider）日增 1.1K。继 ai-hedge-fund 和 TradingAgents 之后，Vibe-Trading 把多 Agent 辩论+多市场数据源+实盘执行整合为完整产品</div>
-                        <div class="trend-meta">vibe-trading</div>
-                    </div>
-                    <div class="trend-score high">80/80</div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="icon">🏷️</div>
-                    核心关注领域
-                </div>
-            </div>
-            <div class="category-row">
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🤖</span> AI Agent / Multi-Agent</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">⚡</span> LLM Infra / MCP / AI Runtime</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🛠️</span> 开发工具链 / IDE / Copilot</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🌐</span> 前端框架 / Serverless / Edge</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">☸️</span> 云原生 / K8s / Service Mesh</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔄</span> 自动化 / Browser Use / RPA+AI</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">💾</span> 数据基础设施 / RAG / 向量 DB</a>
-                <a href="/github-researcher/projects.html" class="category-pill"><span class="emoji">🔌</span> 基础设施标准 / 平台潜力</a>
-            </div>
-        </section>
+    <a href="/github-researcher/daily.html" class="back-link">← 返回日报索引</a>
+    <div class="daily-content">
+        <h1 id="2026-07-14-github">2026-07-14 GitHub 趋势研究简报</h1>
+<h2 id="_1">今日核心判断</h2>
+<p>今天是 2026 年 7 月 14 日，周一。GitHub Trending 释放出以下关键信号：</p>
+<ol>
+<li>
+<p><strong>Graphify 代表的代码知识图谱是对 RAG 的范式替代信号</strong>——不是嵌入+相似度搜索，而是 tree-sitter AST 精确解析+图遍历。84.5K⭐ + 日增 1K，LOCOMO benchmark recall@10 达到 0.497（mem0 的 10 倍），且代码解析零 LLM 调用。这意味着 Agent 的代码理解能力可以从"概率猜测"跃迁到"精确遍历"，对 Coding Agent 架构产生深远影响</p>
+</li>
+<li>
+<p><strong>AI 安全赛道攻防双翼齐飞</strong>——Strix（攻：AI 渗透测试 / Multi-Agent / 真实 PoC）41K⭐ + Hallmark（守：反 AI-slop 设计质量门禁）5K⭐。当 Agent 可以自主执行安全测试并生成可验证的 PoC，当 AI 生成代码的质量可以被 57 道门禁自动拦截，Agent 供应链的"开发-测试-部署"安全闭环正在成型</p>
+</li>
+<li>
+<p><strong>OpenCut 的 MCP Server 是 Agent 创作基础设施的里程碑</strong>——66K⭐ 的开源视频编辑器正在 Rust 重写，核心亮点不是"替代 CapCut"，而是内建 MCP Server + Headless 批渲染 + 脚本化编辑。这意味着 Agent 可以通过 MCP 协议直接编排视频生产流水线，创作工具正在从"人用手操作"变为"Agent 用 API 驱动"</p>
+</li>
+</ol>
+<h2 id="_2">趋势深度分析</h2>
+<h3 id="1agent-graphify-845k">🏆 趋势 1：代码知识图谱——Agent 上下文理解的范式跃迁（Graphify 84.5K⭐）</h3>
+<pre class="mermaid">graph TD
+    subgraph "传统 RAG 路径（概率性）"
+        A1["代码文件"] --> A2["Chunking"]
+        A2 --> A3["Embedding"]
+        A3 --> A4["Vector Store"]
+        A4 --> A5["相似度搜索"]
+        A5 --> A6["Top-K 片段"]
+        A6 --> A7["LLM 生成答案"]
+    end
+
+    subgraph "Graphify 路径（确定性）"
+        B1["代码文件"] --> B2["tree-sitter AST"]
+        B2 --> B3["符号提取"]
+        B3 --> B4["跨文件边解析<br/>calls/imports/inherits"]
+        B4 --> B5["知识图谱<br/>graph.json"]
+        B5 --> B6["图遍历查询<br/>explain/path/query"]
+        B6 --> B7["精确答案 + 边标注"]
+    end
+
+    style A4 fill:#fcc
+    style B5 fill:#cfc
+    style B7 fill:#cfc
+</pre>
+<p><strong>关键对比：</strong></p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>传统 RAG</th>
+<th>Graphify</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>索引方式</td>
+<td>Chunk + Embedding</td>
+<td>tree-sitter AST 精确解析</td>
+</tr>
+<tr>
+<td>查询方式</td>
+<td>相似度搜索</td>
+<td>图遍历（explain/path/query）</td>
+</tr>
+<tr>
+<td>LLM 依赖</td>
+<td>全程依赖</td>
+<td>代码解析零调用</td>
+</tr>
+<tr>
+<td>结果可解释性</td>
+<td>黑盒</td>
+<td>EXTRACTED vs INFERRED 标注</td>
+</tr>
+<tr>
+<td>跨语言支持</td>
+<td>受限</td>
+<td>40+ 语言</td>
+</tr>
+<tr>
+<td>LOCOMO recall@10</td>
+<td>mem0: 0.048</td>
+<td>0.497（10x 提升）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>架构师判断：</strong> Graphify 不是 RAG 的优化，而是范式替代。当 Agent 可以精确遍历代码知识图谱而不是猜测相似片段，Coding Agent 的准确率和可解释性将大幅提升。这对 Cursor、Claude Code、Copilot 等工具的上下文引擎构成直接竞争压力。</p>
+<hr />
+<h3 id="2ai-strix-41k-hallmark-5k">🏆 趋势 2：AI 安全攻防——Strix 41K⭐ + Hallmark 5K⭐</h3>
+<pre class="mermaid">flowchart LR
+    subgraph "攻：Strix 41K⭐"
+        S1["Multi-Agent<br/>渗透测试编排"] --> S2["侦察/利用/验证<br/>专业化分工"]
+        S2 --> S3["真实 PoC<br/>非误报"]
+        S3 --> S4["CI/CD 集成<br/>PR 级拦截"]
+    end
+
+    subgraph "守：Hallmark 5K⭐"
+        H1["AI 生成 UI"] --> H2["57 道 slop-test<br/>反模式检测"]
+        H2 --> H3["pre-emit 自批评"]
+        H3 --> H4["拒绝千篇一律<br/>保证设计多样性"]
+    end
+
+    S4 --> R["Agent 供应链<br/>安全闭环"]
+    H4 --> R
+</pre>
+<p><strong>Strix 的突破点：</strong> 不是 SAST（静态分析）的 AI 包装，而是真正运行动态测试——Multi-Agent 分工侦察/利用/验证，每个漏洞都有可复现的 PoC。Docker 沙箱隔离 + CI/CD 集成意味着每次 PR 都可以触发安全测试。</p>
+<p><strong>Hallmark 的突破点：</strong> 不是"设计模板库"，而是"质量门禁"——57 道反 AI-slop 检测 + pre-emit 自批评，强制 AI 生成的 UI 产生设计多样性。支持 study 模式（从截图提取设计 DNA），这是设计领域的 RAG/CAG。</p>
+<hr />
+<h3 id="3agent-opencut-66k">🏆 趋势 3：Agent 原生创作工具——OpenCut 66K⭐</h3>
+<p>OpenCut 正在从"开源视频编辑器"进化为"Agent 创作基础设施"：</p>
+<ul>
+<li><strong>Rust 核心重写</strong>：跨平台单代码库（桌面/移动/浏览器）</li>
+<li><strong>插件优先架构</strong>：第三方插件一等公民</li>
+<li><strong>MCP Server</strong>：Agent 可直接调用视频编辑能力</li>
+<li><strong>Headless 模式</strong>：自动化、批量渲染</li>
+<li><strong>脚本化编辑</strong>：编辑器内建脚本面板</li>
+</ul>
+<p><strong>架构启发：</strong> 当创作工具内建 MCP Server，意味着视频生产可以从"人在 GUI 里操作"变为"Agent 通过协议驱动"。批量生成、个性化定制、模板化生产的成本将趋近于零。</p>
+<hr />
+<h3 id="4ai-agent">趋势 4：AI 交易 Agent 多市场覆盖</h3>
+<p>Vibe-Trading 21.6K⭐（日增 1.1K）的关键进化：
+- 多市场覆盖：美股 + 港股 + A股 + 印度 NSE/BSE
+- 多 LLM Provider：OpenAI/Claude/Kimi/GLM/Codex
+- 460 个 Alpha 因子（含 SEC 基本面因子）
+- Swarm 模式：多 Agent 辩论决策
+- Docker 一键部署</p>
+<p><strong>风险提示：</strong> 交易 Agent 是"后果不可逆"场景，Agent 决策的可解释性和风控机制比收益率更重要。</p>
+<hr />
+<h3 id="5agent-skill">趋势 5：Agent Skill 生态——从提示词到能力包</h3>
+<p>Agent Skill 正在形成独立生态层：</p>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Stars</th>
+<th>定位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Graphify</td>
+<td>84.5K</td>
+<td>代码理解 Skill</td>
+</tr>
+<tr>
+<td>marketingskills</td>
+<td>38.5K</td>
+<td>营销 Skills 包</td>
+</tr>
+<tr>
+<td>Hallmark</td>
+<td>5K</td>
+<td>设计质量 Skill</td>
+</tr>
+<tr>
+<td>archify</td>
+<td>4.2K</td>
+<td>架构图 Skill</td>
+</tr>
+</tbody>
+</table>
+<p>Skill 不再是"提示词模板"，而是带有工具链、检测逻辑、输出规范的完整能力包。Skill 商店形态初现——类似 Chrome 扩展生态的早期。</p>
+<hr />
+<h2 id="trending">今日 Trending 速览</h2>
+<h3 id="top-10">日榜 Top 10</h3>
+<table>
+<thead>
+<tr>
+<th>排名</th>
+<th>项目</th>
+<th>语言</th>
+<th>Stars</th>
+<th>日增</th>
+<th>一句话</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>OpenCut-app/OpenCut</td>
+<td>TypeScript</td>
+<td>66K</td>
+<td>+1,077</td>
+<td>开源 CapCut 替代，Rust 重写</td>
+</tr>
+<tr>
+<td>2</td>
+<td>HKUDS/Vibe-Trading</td>
+<td>Python</td>
+<td>21.7K</td>
+<td>+1,148</td>
+<td>个人交易 Agent，多市场覆盖</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Graphify-Labs/graphify</td>
+<td>Python</td>
+<td>84.6K</td>
+<td>+1,028</td>
+<td>代码知识图谱 Skill</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Nutlope/hallmark</td>
+<td>CSS</td>
+<td>5K</td>
+<td>+802</td>
+<td>反 AI-slop 设计 Skill</td>
+</tr>
+<tr>
+<td>5</td>
+<td>coreyhaines31/marketingskills</td>
+<td>JavaScript</td>
+<td>38.5K</td>
+<td>+260</td>
+<td>营销 Skills for Agent</td>
+</tr>
+<tr>
+<td>6</td>
+<td>moeru-ai/airi</td>
+<td>TypeScript</td>
+<td>41.8K</td>
+<td>+57</td>
+<td>自托管 AI 伴侣</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Raphire/Win11Debloat</td>
+<td>PowerShell</td>
+<td>50.8K</td>
+<td>+74</td>
+<td>Windows 去臃肿脚本</td>
+</tr>
+<tr>
+<td>8</td>
+<td>github/spec-kit</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Spec 驱动开发工具包</td>
+</tr>
+<tr>
+<td>9</td>
+<td>OpenCut-app/OpenCut</td>
+<td>TypeScript</td>
+<td>66K</td>
+<td>+1,077</td>
+<td>（重复确认热度）</td>
+</tr>
+<tr>
+<td>10</td>
+<td>tt-a1i/archify</td>
+<td>JavaScript</td>
+<td>4.2K</td>
+<td>-</td>
+<td>Agent 架构图生成 Skill</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_3">周榜关键项目</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>Stars</th>
+<th>周增</th>
+<th>趋势</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Meetily</td>
+<td>24.1K</td>
+<td>+7,440</td>
+<td>本地优先 AI 会议助手（持续）</td>
+</tr>
+<tr>
+<td>system_prompts_leaks</td>
+<td>57.3K</td>
+<td>+7,155</td>
+<td>System Prompt 安全研究</td>
+</tr>
+<tr>
+<td>OmniRoute</td>
+<td>16.8K</td>
+<td>+4,506</td>
+<td>AI 网关（231+ provider）</td>
+</tr>
+<tr>
+<td>RuView</td>
+<td>80.5K</td>
+<td>+3,763</td>
+<td>WiFi 感知（持续）</td>
+</tr>
+<tr>
+<td>OfficeCLI</td>
+<td>16.1K</td>
+<td>+6,978</td>
+<td>Agent Office 套件</td>
+</tr>
+<tr>
+<td>openai/codex-plugin-cc</td>
+<td>28.4K</td>
+<td>+2,803</td>
+<td>Codex ↔ Claude Code</td>
+</tr>
+<tr>
+<td>Orca</td>
+<td>18.1K</td>
+<td>+4,481</td>
+<td>并行 Agent ADE</td>
+</tr>
+<tr>
+<td>Strix</td>
+<td>41.2K</td>
+<td>+4,143</td>
+<td>AI 渗透测试</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_4">风险与机遇</h2>
+<h3 id="_5">机遇</h3>
+<ul>
+<li><strong>Graphify 的图遍历方法可能成为 Agent 上下文管理的新标准</strong>——优于 RAG，且零 LLM 调用</li>
+<li><strong>Agent Skill 生态正在形成独立分发渠道</strong>——Skill 商店是下一个平台机会</li>
+<li><strong>创作工具 + MCP = Agent 原生创作流水线</strong>——OpenCut 的 MCP Server 是早期信号</li>
+<li><strong>安全 Agent 的 Multi-Agent 编排模式可复用到其他领域</strong>——Strix 的侦察/利用/验证分工模式</li>
+</ul>
+<h3 id="_6">风险</h3>
+<ul>
+<li><strong>交易 Agent 的真实可盈利性存疑</strong>——回测表现 ≠ 实盘表现，市场 regime 切换会失效</li>
+<li><strong>Skill 生态碎片化风险</strong>——每个 Skill 有自己的安装方式和依赖，缺乏统一标准</li>
+<li><strong>OpenCut 重写期间无法接受外部贡献</strong>——架构尚未稳定，社区热情可能流失</li>
+</ul>
+<hr />
+<h2 id="_7">重点项目档案</h2>
+<p>今日新增 3 个项目档案、更新 3 个已有档案，详见 projects/ 目录。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>操作</th>
+<th>分类</th>
+<th>评分</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Graphify-Labs/graphify</td>
+<td>更新</td>
+<td>平台候选</td>
+<td>92</td>
+</tr>
+<tr>
+<td>OpenCut-app/OpenCut</td>
+<td>新增</td>
+<td>平台候选</td>
+<td>85</td>
+</tr>
+<tr>
+<td>Nutlope/hallmark</td>
+<td>新增</td>
+<td>工具型</td>
+<td>78</td>
+</tr>
+<tr>
+<td>HKUDS/Vibe-Trading</td>
+<td>新增</td>
+<td>工具型</td>
+<td>80</td>
+</tr>
+<tr>
+<td>usestrix/strix</td>
+<td>更新</td>
+<td>工具型</td>
+<td>85</td>
+</tr>
+<tr>
+<td>stablyai/orca</td>
+<td>更新</td>
+<td>平台候选</td>
+<td>84</td>
+</tr>
+</tbody>
+</table>
+    </div>
 </main>
     <footer class="footer">
         <p>由 <strong>GitHub Researcher Agent</strong> 自动生成 · <a href="https://github.com/lohasle/github-researcher">GitHub 仓库</a> · <a href="https://lohasle.github.io/github-researcher/">在线浏览</a></p>
         <p style="margin-top:8px; opacity:0.7;">持续跟踪 · 每日更新 · 架构视角</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true,theme:'neutral',securityLevel:'loose'});</script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-07-13'
+last_updated: '2026-07-14'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,39 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-07-14（第八十一版）
+
+### 代码知识图谱范式替代 RAG · AI 安全攻防双爆发 · Agent 原生创作工具 · AI 交易 Agent 多市场覆盖 · Agent Skill 生态初现
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | 代码知识图谱范式替代：Graphify 84.5K⭐（tree-sitter AST/非向量/跨40+语言/EXTRACTED vs INFERRED），LOCOMO recall@10: 0.497（mem0 的 10 倍），零 LLM 调用 | graphify | 92 |
+| 2 | AI 安全攻防双爆发：Strix 41.2K⭐（AI 渗透/Multi-Agent/真实 PoC）+ Hallmark 5K⭐（反 AI-slop/57 道 slop-test），Agent 安全攻守双翼 | strix, hallmark | 87 |
+| 3 | Agent 原生创作工具：OpenCut 66K⭐（Rust 重写/MCP Server/Headless 批渲染），Agent 可直接编排视频生产 | opencut | 85 |
+| 4 | AI 交易 Agent 多市场：Vibe-Trading 21.7K⭐（美股+港股+A股+印度/460 因子/Swarm 辩论）⚠️ 高风险 | vibe-trading | 80 |
+| 5 | Agent Skill 生态：Graphify+Hallmark+archify+marketingskills，Skill 从提示词到能力包 | graphify, hallmark | 83 |
+
+#### 今日新增/更新项目
+
+| 项目 | Stars | 分类 | Score | 变化 |
+|------|-------|------|-------|------|
+| Graphify-Labs/graphify | 84,555 | 平台候选 | 92 | 更新（Score 89→92） |
+| OpenCut-app/OpenCut | 66,019 | 平台候选 | 85 | 新增 |
+| Nutlope/hallmark | 5,044 | 工具型 | 78 | 新增 |
+| HKUDS/Vibe-Trading | 21,656 | 工具型 | 80 | 新增 |
+| usestrix/strix | 41,188 | 工具型 | 85 | 更新（31.9K→41.2K） |
+| stablyai/orca | 18,148 | 平台候选 | 84 | 更新（16.8K→18.1K） |
+
+#### 判断修正
+
+| 项目 | 原判断 | 修正判断 | 修正理由 |
+|------|--------|----------|----------|
+| Graphify | Score 89 / 平台候选 | Score 92 / 平台候选 | Benchmark 数据证明图谱遍历大幅优于向量检索（recall@10: 0.497 vs mem0 0.048），且零 LLM 调用。从"Skill 分发平台"升级为"代码理解范式替代" |
+| Strix | Score 84 | Score 85 | 周增 4.1K 持续上榜，CI/CD 集成落地确认 |
+| OpenCut | 未跟踪 | Score 85 / 平台候选 | MCP Server + Headless 渲染组合具有 Agent 创作基础设施潜力 |
 
 ## 2026-07-13（第八十版）
 

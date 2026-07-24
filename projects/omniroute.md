@@ -2,30 +2,30 @@
 title: "OmniRoute"
 slug: "omniroute"
 date_added: "2026-06-29"
-category: "工具型"
-emoji: "🔀"
-stars: "16,171 stars"
-stars_delta: "从 7.3K→16.2K（周增 4.4K），增速翻倍。231+ Provider，RTK+Caveman 压缩省 15-95% Token"
+category: "基础设施候选"
+emoji: "🌐"
+stars: "27,919 stars"
+stars_delta: "从 16.2K→27.9K（周增 8.7K），增速翻倍。290+ Provider，500+ 模型，90+ 免费层，RTK+Caveman 压缩省 15-95% Token"
 language: "TypeScript"
-score: 80
-tags: ["ai-gateway", "llm-routing", "cost-optimization", "claude-code", "proxy", "mcp"]
+score: 86
+tags: ["ai-gateway", "llm-routing", "cost-optimization", "claude-code", "proxy", "mcp", "token-compression", "free-tier"]
 url: "https://github.com/diegosouzapw/OmniRoute"
 ---
 
 # OmniRoute — 免费 AI 网关：231+ Provider 统一接入
 
 ## 一句话定位
-聚合 231+ AI Provider（50+ 免费），一个端点接入 Claude/GPT/Gemini，RTK+Caveman 压缩节省 15-95% token，支持 Claude Code、Codex、Cursor 等主流 Coding Agent。
+聚合 290+ AI Provider（90+ 免费）、500+ 模型的免费 MIT AI 网关，一个端点接入所有主流 LLM，RTK+Caveman 压缩节省 15-95% Token，支持 Claude Code、Codex、Cursor、Cline、Copilot 等主流工具。
 
 ## 它解决的问题
 **目标用户：** 独立开发者、Coding Agent 用户、成本敏感团队
 **痛点：** LLM API 费用高、多家 Provider 免费额度未充分利用、不同 Agent 工具需要不同 API 配置、token 消耗快触及限额
 
-## 为什么值得关注（2026-06-29）
-GitHub Trending Daily 上榜（TS 榜），周增 2,554 stars。代表了"LLM 路由层"从实验走向实用——与 FreeLLMAPI（13K⭐）共同构成免费 LLM 接入生态。差异化在于多协议支持（MCP/A2A）和桌面端/PWA 客户端。
+## 为什么值得关注（2026-07-24 更新）
+GitHub Trending Weekly 上榜，周增 8,673 stars（从 16.2K → 27.9K），增速再次翻倍。Provider 数从 231 扩展到 290+，模型从 400+ 扩展到 500+，免费层从 50+ 扩展到 90+。500+ 贡献者维护，43 种语言 README。**已从工具型升级为基础设施候选——LLM 时代的 API 网关。**
 
 ## 热度来源判断
-成本驱动+Coding Agent 生态红利。Claude Code / Codex 用户基数大，免费 token 聚合方案有真实需求。RTK+Caveman 压缩技术（声称节省 15-95% token）对重度 Agent 用户有显著价值。~1.6B 免费 token/月的聚合额度有真实吸引力。
+成本驱动 + Coding Agent 生态红利 + 多模型格局确认。当 LLM Provider 超过 500 个时，路由/聚合/降级/压缩自然成为基础设施层（类比微服务时代的 Kong/Nginx）。500+ 贡献者说明社区对 LLM 路由有强烈需求。免费层堆叠（90+ Provider）+ Token 压缩（15-95%）是核心价值主张。
 
 ## 关键技术亮点
 1. **160+ Provider 聚合**：50+ 免费层 Provider，统一 API 端点

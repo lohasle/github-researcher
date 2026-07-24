@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-07-24
+
+**核心主题：** Human-Agent 协作通信基础设施——Block/Buzz 8.1K⭐（Nostr relay 底座/人类与 Agent 共享频道/签名事件审计链/自托管），重新定义团队工作流的底层协议 · 代码知识图谱进入主流——code-review-graph 26K⭐（tree-sitter AST/MCP 集成/周增 6.3K），Agent 上下文管理从 RAG 搜索转向图谱遍历 · AI 网关聚合层爆发——OmniRoute 27.9K⭐（290+ Provider/500+ 模型/免费层堆叠/Token 压缩 15-95%），LLM 路由成为开发者基础设施刚需
+
+**关键项目：**
+- 🐝 block/buzz (8,122, 新增) — Human-Agent 协作通信基础设施，Score 90
+- 🔍 tirth8205/code-review-graph (26,051, 新增) — 代码知识图谱 MCP 工具，Score 89
+- 🌐 diegosouzapw/OmniRoute (27,919, 更新) — AI 网关聚合层，Score 80→86
+- 🧭 citrolabs/ego-lite (2,046, 新增) — 人机并行浏览器，Score 82
+- 🌙 MoonshotAI/kimi-code (4,872, 更新) — Moonshot Coding Agent CLI，Score 77→80
+
+---
+
 ## 2026-07-14
 
 **核心主题：** 代码知识图谱范式替代 RAG——Graphify 84.5K⭐（tree-sitter AST/非向量/跨40+语言/LOCOMO recall@10: 0.497 = mem0 的 10 倍）重新定义 Agent 上下文理解 · AI 安全攻防双爆发——Strix 41.2K⭐（AI 渗透测试/Multi-Agent/真实 PoC）+ Hallmark 5K⭐（反 AI-slop/57 道 slop-test 门禁），Agent 安全攻守双翼 · Agent 原生创作工具——OpenCut 66K⭐（Rust 重写/MCP Server/Headless 批渲染），创作工具从 GUI-first 到 API-first

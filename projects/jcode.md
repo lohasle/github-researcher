@@ -1,74 +1,95 @@
 ---
 title: "jcode"
 slug: "jcode"
-date_added: "2026-06-22"
-last_seen_date: "2026-06-22"
+date_added: "2026-07-24"
 category: "工具型"
-emoji: "🔧"
-stars: "7,516 stars"
-stars_delta: "日增 189，周增 3K+"
+emoji: "⚡"
+stars: "11,093 stars"
+stars_delta: "周增 2,586"
 language: "Rust"
-score: 78
-tags: ["coding-agent", "rust", "harness", "terminal", "minimal"]
+score: 84
+tags: ["rust", "agent-harness", "performance", "memory-graph", "multi-session", "coding-agent"]
 url: "https://github.com/1jehuang/jcode"
 ---
 
 # jcode
 
 ## 一句话定位
-
-Rust 实现的 Coding Agent Harness——轻量、高性能，antirez 风格的 minimal 工具哲学，专注做好一件事。
+用 Rust 从头重写的 Coding Agent 运行时（Harness），以极端性能优化和语义记忆系统为核心差异化，设计为多会话并行工作流的基础。
 
 ## 它解决的问题
+现有 Coding Agent 运行时（Claude Code、Cursor Agent、OpenCode、GitHub Copilot CLI）在资源效率上严重浪费——单会话占用数百 MB 内存，启动延迟数秒。当开发者需要多会话并行（如同时开发多个功能、review + write 并行）时，10 个会话轻松吃掉 2-3 GB 内存。Node.js/TypeScript 实现的运行时无法从根本上解决 GC 和启动开销问题。
 
-现有 coding agent（Claude Code、Codex 等）的 harness 层通常是 TypeScript/Python 实现，启动慢、内存占用高。jcode 用 Rust 实现了一个 minimal harness，追求极致的启动速度和运行效率，适合终端原生工作流。
-
-## 为什么值得关注（2026-06-22）
-
-7,516 stars 日增 189。Rust trending 持续上榜。在 coding agent 赛道中，大部分项目关注 agent 能力（更强的 LLM、更多的工具），jcode 关注的是 **harness 层的工程效率**——这是被忽视的基础层。作者 1jehuang + Claude 协作开发，说明 agent-assisted 开发已经在产出生产级 Rust 项目。
+## 为什么值得关注（2026-07-24）
+周增 2,586 stars，Rust Trending 上榜。作者自测的性能对比数据令人震惊：单会话 PSS 仅 27.8 MB（Claude Code 386.6 MB 的 1/14），10 会话仅 117 MB（Claude Code 2.3 GB 的 1/20），启动到首帧 14ms（Claude Code 3437ms 的 1/245）。
 
 ## 热度来源判断
-
-Rust 生态对高性能终端工具有天然亲和力。"Coding Agent Harness"这个定位在 2026 年仍然有热度溢价。日增 189 稳定而非爆发，说明是真实用户驱动。
+- **性能对比有冲击力**：直接对标 Claude Code、Cursor Agent、OpenCode 等主流工具，数据极端
+- **Rust 重写叙事**：开发者社区对"用 Rust 重写一切"有天然热情
+- **多会话场景痛点真实**：Agent fleet 管理趋势下，运行时效率是多会话可行的前提
+- **语义记忆系统**：自动提取+向量嵌入+余弦检索的记忆图谱，不是简单的 session history
+- **独立开发者作品**：单人项目（1jehuang），但有产品质量
 
 ## 关键技术亮点
-
-1. **Rust 实现**：启动速度极快，内存占用极低
-2. **Minimal 设计**：harness 只做 harness 该做的事——不塞功能
-3. **Agent 兼容**：可作为多种 LLM 的 coding agent harness
-4. **终端原生**：为终端工作流优化，不依赖 GUI
+1. **Rust 运行时**：从零用 Rust 实现，无 Node.js/TypeScript 依赖。PSS（Proportional Set Size）在 10 会话下仅 117 MB
+2. **本地嵌入语义记忆**：每个 turn/response 自动向量化并存储到记忆图谱。对话时通过余弦相似度自动检索相关历史。可选 Memory Sideagent 验证相关性
+3. **Memory Consolidation**：后台 Ambient Mode 自动整理记忆——重组、检查过期、检测冲突
+4. **mermaid-rs-renderer**：自研 Mermaid 渲染库，无浏览器/TypeScript 依赖，渲染速度提升 1800x。可在终端内联渲染 Mermaid 图
+5. **侧面板系统**：辅助信息（文件预览、diff 查看器等）不占用主屏幕，通过负空间利用展示 Info Widgets
+6. **多会话优化**：每新增会话仅增加 ~9.9 MB（vs Claude Code ~212.7 MB）
 
 ## 架构启发
 
-jcode 体现了**"Less is More"的 harness 设计哲学**——在所有 agent 项目都在加功能（sandbox/memory/skills/channels）的时候，jcode 选择只做 harness 层。这和 antirez 的 redis/ds4 设计哲学一脉相承。对于不需要完整框架的场景，minimal harness 反而更实用。
+```mermaid
+flowchart TB
+    subgraph "jcode Rust 进程"
+        UI[TUI 渲染引擎<br/>14ms 首帧]
+        MEM[语义记忆引擎<br/>本地嵌入 + 余弦检索]
+        SIDE[侧面板系统<br/>文件/Diff/Widget]
+        MERM[mermaid-rs-renderer<br/>内联图表]
+    end
+
+    subgraph "记忆流水线"
+        T1[Turn/Response] -->|自动嵌入| VEC[向量存储]
+        VEC -->|余弦相似度| RET[相关记忆检索]
+        RET -->|注入上下文| CTX[对话]
+        T1 -->|定期提取| EXT[Memory Sideagent]
+        EXT -->|存入| MG[记忆图谱]
+        MG -->|Ambient Mode| CON[整理/去冲突]
+    end
+
+    UI --> MEM
+    UI --> SIDE
+    UI --> MERM
+```
+
+**核心 insight：** 当 Agent 从"单会话交互"走向"多会话并行 fleet"，运行时的内存和启动延迟不是性能优化——是可用性的硬约束。Rust 不是锦上添花，是让 fleet 模式从理论可行到日常可用的关键。
 
 ## 定位判断
-
-在 Agent 生态中，jcode 占据**轻量 harness** 这个细分位置。它不会替代 Claude Code 或 Cursor，但对于喜欢终端工作流 + 追求极简的开发者，是有价值的工具。
+工具型。jcode 作为独立 Harness 的定位清晰，但面临"Claude Code/Cursor 会不会也优化性能"的持续压力。差异化在于语义记忆系统和极致多会话支持。
 
 ## 风险 / 局限 / 泡沫点
-
-1. **功能边界模糊**：harness 具体包含哪些能力、不包含哪些——定义不清晰
-2. **生态薄弱**：没有 plugin/skill/工具生态，单打独斗
-3. **竞争激烈**：Claude Code、Codex 等自带 harness，独立 harness 需要证明额外价值
-4. **Claude 作为共同作者**：大量代码由 Claude 生成——代码质量和可维护性需要验证
+1. **单人项目**：所有代码由 1jehuang 一人维护，bus factor = 1
+2. **Benchmark 可信度**：性能对比由作者自行执行，测试方法论和条件未独立验证。需谨慎看待"245x faster"等 headline
+3. **功能深度未知**：性能优秀，但在实际复杂编码任务中的表现（vs Claude Code 的成熟工具链）尚待验证
+4. **生态依赖**：仍需接入外部 LLM（Claude/GPT），自身不做模型
+5. **Claude Code / Cursor 可能跟进优化**：如果主流工具也做内存优化和 Rust 重写，jcode 的差异化会被抹平
 
 ## 与同类项目的关系
-
-- **Claude Code**：完整的 coding agent，自带 harness——jcode 是更轻量的替代
-- **herdr**（6.6K Rust）：Rust 终端 agent multiplexer——herdr 管理多个 agent，jcode 是单个 agent 的 harness
-- **withastro/flue**（6.2K TS）：完整的 agent 框架——flue 是 full-featured，jcode 是 minimal
+- **vs Claude Code**：Claude Code 功能最全面但资源最重。jcode 在性能上有数量级优势
+- **vs earendil-works/pi**：pi（76.7K⭐）是 TypeScript 实现的 Agent 工具包，功能更全但资源占用高（144 MB vs 27.8 MB 单会话）
+- **vs OpenCode**：OpenCode 也是 TS 实现，10 会话 3.2 GB，jcode 的 1/28
+- **vs Codex CLI**：OpenAI 出品，140 MB 单会话
 
 ## 是否值得持续跟踪
-
-**暂时观察。** jcode 的 minimal 哲学有价值，但在 agent 框架混战中，独立 harness 的生存空间需要更多验证。
+**是。** Rust Agent 运行时是多会话 fleet 场景的关键基础设施。关注独立验证的 benchmark 结果和生产环境实际表现。
 
 ## 后续观察点
-
-1. 功能边界是否清晰化——harness 的精确定义
-2. 是否形成独特的用户群体
-3. 性能 benchmark 对比（vs Claude Code / Codex 原生 harness）
-4. 作者是否持续投入
+1. 独立第三方对 benchmark 的复现结果
+2. 在真实复杂项目中的编码能力表现（不只是性能指标）
+3. 社区贡献者增长情况（目前是单人项目）
+4. Claude Code / Cursor 是否推出类似的性能优化（竞争反应）
+5. Memory Graph 的实际效果（是否真的提升了跨会话连续性）
 
 ---
-*首次记录：2026-06-22*
+*首次记录：2026-07-24*

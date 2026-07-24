@@ -1,6 +1,6 @@
 ---
 date: '2026-04-10'
-last_updated: '2026-07-14'
+last_updated: '2026-07-24'
 summary: GitHub 趋势项目排名变化追踪，持续更新
 title: Trend Index — 趋势指数
 ---
@@ -8,6 +8,45 @@ title: Trend Index — 趋势指数
 # Trend Index — 趋势指数
 
 > 记录项目排名、趋势变化、关键判断修正
+
+## 2026-07-24（第八十二版）
+
+### 人机协同工作空间基础设施化 · 代码知识图谱赛道升温 · Rust Agent Harness 性能碾压 · Agent OS 库化 · 混合架构 Code Review 落地
+
+#### 今日五大趋势
+
+| 排名 | 趋势方向 | 代表项目 | 趋势分 |
+|------|----------|----------|--------|
+| 1 | 人机协同工作空间：Block Buzz 8.1K⭐（Nostr Relay 协议/Agent 与人类共享身份/Git NIP-34/ACP 接入），Block Inc. 出品 | buzz | 88 |
+| 2 | 代码知识图谱赛道升温：Code-Review-Graph 26K⭐（Tree-sitter AST/MCP/82x Token 削减/30+ 语言），与 Graphify 94.8K 同赛道双重验证 | code-review-graph | 86 |
+| 3 | Rust Agent Harness 性能碾压：jcode 11K⭐（14ms 启动/10 会话 117MB/语义记忆图谱），Rust 重写不是优化是降维打击 | jcode | 84 |
+| 4 | Agent OS 库化：agentOS 4.1K⭐（WebAssembly+V8/6ms 冷启动/进程内运行），Agent 后端从 Sandbox 走向 In-Process | agentos | 82 |
+| 5 | 混合架构 Code Review：Alibaba OCR 12K⭐（确定性管道+LLM/行级精准/阿里 2 年验证/Token 仅 1/9），生产落地证明 | open-code-review | 80 |
+
+#### 今日新增/更新项目
+
+| 项目 | Stars | 分类 | Score | 变化 |
+|------|-------|------|-------|------|
+| block/buzz | 8,122 | 平台候选 | 88 | 新增 |
+| tirth8205/code-review-graph | 26,051 | 平台候选 | 86 | 新增 |
+| 1jehuang/jcode | 11,093 | 工具型 | 84 | 新增 |
+| rivet-dev/agentos | 4,096 | 基础设施候选 | 82 | 新增 |
+| diegosouzapw/OmniRoute | 27,919 | 平台候选 | 84 | 更新（16.2K→27.9K） |
+| citrolabs/ego-lite | 2,046 | 工具型 | 80 | 新增 |
+| alibaba/open-code-review | 12,046 | 工具型 | 80 | 更新 |
+| Graphify-Labs/graphify | 94,872 | 平台候选 | 92 | 更新（84.5K→94.8K） |
+| earendil-works/pi | 76,758 | 平台候选 | 86 | 更新 |
+| MoonshotAI/kimi-code | 4,872 | 工具型 | 78 | 更新（1.9K→4.9K） |
+
+#### 判断修正
+
+| 项目 | 原判断 | 修正判断 | 修正理由 |
+|------|--------|----------|----------|
+| Graphify | 同赛道唯一头部 | 同赛道头部但不再唯一 | code-review-graph 26K 证明赛道成立，但 Graphify 的 94.8K 和 40+ 语言仍保持明显领先 |
+| OmniRoute | 工具型 (Score 80) | 平台候选 (Score 84) | Provider 数翻倍至 290+，贡献者 500+，已成为 LLM 时代 API 网关层 |
+| alibaba/open-code-review | 未深度跟踪 | Score 80 / 工具型 | 混合架构+阿里内部 2 年验证，生产级 Code Review 的 Token 效率和 Precision 有结构性优势 |
+
+---
 
 ## 2026-07-14（第八十一版）
 

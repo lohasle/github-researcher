@@ -4,10 +4,10 @@ slug: "kimi-code"
 date_added: "2026-06-06"
 category: "工具型"
 emoji: "🌙"
-stars: "1.9K stars"
-stars_delta: "新建项目，首日记录 1.9K"
+stars: "4,872 stars"
+stars_delta: "从 1.9K → 4.9K（周增 1,610）"
 language: "TypeScript"
-score: 77
+score: 80
 tags: ["coding-agent", "moonshot", "cli", "kimi", "mcp", "tui"]
 url: "https://github.com/MoonshotAI/kimi-code"
 ---
@@ -20,14 +20,15 @@ Moonshot AI 出品的终端编程 Agent，单二进制分发，Kimi 模型驱动
 ## 它解决的问题
 Coding Agent CLI 市场需要更多竞争。Claude Code 昂贵，OpenCode 需要复杂配置。用户需要一个轻量、快速启动、兼容多模型的终端编程 Agent。
 
-## 为什么值得关注（2026-06-06）
-Moonshot AI（月之暗面）是中国大模型第一梯队。Kimi Code CLI 代表了中国大模型公司进入 Coding Agent 赛道的信号。单二进制分发 + 视频输入是差异化亮点。
+## 为什么值得关注（2026-07-24 更新）
+GitHub Trending Weekly 上榜，周增 1,610 stars（从 1.9K → 4.9K）。Moonshot 同时推出 kimi-code（TS）和 kimi-cli（Python, 10.7K⭐）两个项目，显示了对 Coding Agent 赛道的重大投入。单二进制分发 + 视频输入 + Subagent 编排是核心差异化。ACP（Agent Client Protocol）支持让它可集成 Zed / JetBrains IDE。
 
 ## 热度来源判断
-- Moonshot / Kimi 品牌效应
-- 单二进制分发降低安装门槛
-- 中国开发者的本土化需求
-- MIT 协议
+- Moonshot / Kimi 品牌效应 + 大规模投入（双项目并行）
+- 单二进制分发降低安装门槛（无需 Node.js）
+- 视频输入功能在 Coding Agent 中是独创
+- MCP 原生配置（/mcp-config 对话式配置）
+- 中国开发者的本土化需求 + Kimi 模型免费额度
 - 1.9K stars + 191 forks = 活跃早期社区
 
 ## 关键技术亮点
